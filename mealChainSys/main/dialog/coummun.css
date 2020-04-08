@@ -1,0 +1,21 @@
+/* .notColor .btn-group .btn-group-justified .btn .  {
+	border-bottom-color: #ED8283;
+	border-bottom-style: groove;
+	border-bottom-width: 2px;
+} */
+ .btn-group .btn.active {
+	background-color: #407422;
+	color: #FFFFFF;;
+} 
+.btn-color {
+	background-color: #666666;
+	color: #9F9EA0;
+}
+
+.btn-col{
+	color: #060606;
+}
+.image-radius{
+	border-radius: 30px;
+	/* #8BA5AC */
+}

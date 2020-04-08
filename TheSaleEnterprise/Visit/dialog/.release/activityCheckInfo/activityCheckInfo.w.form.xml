@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cnaYRfe" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cnaYRfe" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.btn-default4.cnaYRfe{color: rgb(250, 121, 34); background-color: rgb(255, 255, 255); border-color: rgb(250, 121, 34)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cnaYRfe" class="cnaYRfe"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="newDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Visit/dialog/activityCheckNew.w&quot;}" __cid="cnaYRfe" class="cnaYRfe">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cnaYRfe" __cid="cnaYRfe"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cnaYRfe" style="display:none;" __cid="cnaYRfe">
+      <xhtml:div class="x-dialog-title cnaYRfe" __cid="cnaYRfe">
+        <xhtml:button class="close cnaYRfe" __cid="cnaYRfe">
+          <xhtml:span __cid="cnaYRfe" class="cnaYRfe">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cnaYRfe" __cid="cnaYRfe"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cnaYRfe" __cid="cnaYRfe"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcqqyiIf-iosstatusbar cnaYRfe" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cnaYRfe"> 
+    <div class="x-panel-top cnaYRfe" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnaYRfe"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cnaYRfe" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;市场活动检查&quot;}" __cid="cnaYRfe"> 
+        <div class="x-titlebar-left cnaYRfe" xid="left2" __cid="cnaYRfe"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cnaYRfe" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cnaYRfe"> 
+            <i xid="i1" __cid="cnaYRfe" class="cnaYRfe"/>  
+            <span xid="span4" __cid="cnaYRfe" class="cnaYRfe">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cnaYRfe" xid="title2" __cid="cnaYRfe">市场活动检查</div>  
+        <div class="x-titlebar-right  cnaYRfe" xid="right2" __cid="cnaYRfe">
+          <div class="empty cnaYRfe" __cid="cnaYRfe"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-scroll-view cnaYRfe" xid="content6" _xid="C7DFADB3D7F00001A85171B66873D660" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnaYRfe"> 
+      <div class="x-scroll cnaYRfe" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cnaYRfe"> 
+        <div class="x-content-center x-pull-down container cnaYRfe" xid="div1" __cid="cnaYRfe"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down cnaYRfe" xid="i2" __cid="cnaYRfe"/>  
+          <span class="x-pull-down-label cnaYRfe" xid="span1" __cid="cnaYRfe">下拉刷新...</span> 
+        </div>  
+        <div class="x-scroll-content cnaYRfe" xid="div2" __cid="cnaYRfe"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cnaYRfe" xid="list4" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;LData&quot;}" __cid="cnaYRfe"> 
+            <ul class="x-list-template hide cnaYRfe" xid="listTemplateUl4" bind-foreach="{data:$model.foreach_list4($element),afterRender:$model.foreach_afterRender_list4.bind($model,$element)}" __cid="cnaYRfe"> 
+              <li xid="li4" class="border-Two cnaYRfe" __cid="cnaYRfe"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cnaYRfe" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cnaYRfe"> 
+                  <div class="x-col cnaYRfe" xid="col29" __cid="cnaYRfe"> 
+                    <div component="$model/UI2/system/components/bootstrap/row/row" class="row cnaYRfe" xid="row2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cnaYRfe"> 
+                      <div class="col col-xs-8 font-One cnaYRfe" xid="col27" style="height:40px;" __cid="cnaYRfe"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output font-One cnaYRfe" xid="output15" style="float:left;" data-bind="component:{ref:ref(&quot;sn&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cnaYRfe"/>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default4 cnaYRfe" xid="button7" style="height:25px;float:left;margin-top:7px;margin-left:5px;    padding: 2px 12px;" bind-text=" val(&quot;type&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;button&quot;,&quot;target&quot;:&quot;content4&quot;}" __cid="cnaYRfe"> 
+                          <i xid="i10" __cid="cnaYRfe" class="cnaYRfe"/>  
+                          <span xid="span14" bind-text="ref(&quot;col2&quot;)" style="display:block;margin-top:-7px;" __cid="cnaYRfe" class="cnaYRfe"/>
+                        </a> 
+                      </div>  
+                      <div class="col col-xs-4 cnaYRfe" xid="col28" style="text-align:right;height:40px;" __cid="cnaYRfe"> 
+                        <img alt="" xid="image1" bind-attr-src=" val(&quot;imgSrc&quot;)" __cid="cnaYRfe" class="cnaYRfe"/>
+                      </div>  
+                      <div class="col col-xs-12 cnaYRfe" xid="col6" __cid="cnaYRfe"> 
+                        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cnaYRfe" xid="labelEdit9" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cnaYRfe"> 
+                          <label class="x-label cnaYRfe" xid="label8" style="width:80px;" __cid="cnaYRfe">活动产品：</label>  
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cnaYRfe" xid="output13" data-bind="component:{ref:ref(&quot;pro&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cnaYRfe"/>
+                        </div> 
+                      </div>  
+                      <div class="col col-xs-12 cnaYRfe" xid="col7" __cid="cnaYRfe"> 
+                        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cnaYRfe" xid="labelEdit7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cnaYRfe"> 
+                          <label class="x-label cnaYRfe" xid="label7" style="width:80px;" __cid="cnaYRfe">费用类型：</label>  
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cnaYRfe" xid="output16" data-bind="component:{ref:ref(&quot;feetype&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cnaYRfe"/>
+                        </div> 
+                      </div>  
+                      <div class="col col-xs-12 cnaYRfe" xid="col8" __cid="cnaYRfe"> 
+                        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cnaYRfe" xid="labelEdit8" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cnaYRfe"> 
+                          <label class="x-label cnaYRfe" xid="label9" style="width:80px;" __cid="cnaYRfe">活动时间：</label>  
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cnaYRfe" xid="output14" data-bind="component:{ref:ref(&quot;start&quot;),name:'$model/UI2/system/components/justep/output/output'}" data-events="onRender:output14Render" __cid="cnaYRfe"/>
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div>
+        </div>  
+        <div class="x-content-center x-pull-up cnaYRfe" xid="div3" __cid="cnaYRfe"> 
+          <span class="x-pull-up-label cnaYRfe" xid="span2" __cid="cnaYRfe">加载更多...</span> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cnaYRfe" class="cnaYRfe">.x-panel.pcqqyiIf-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcqqyiIf-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcqqyiIf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcqqyiIf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcqqyiIf-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcqqyiIf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcqqyiIf-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcqqyiIf-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcqqyiIf-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="wReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:wReceiverReceive" __cid="cnaYRfe" class="cnaYRfe"/> 
+</div>

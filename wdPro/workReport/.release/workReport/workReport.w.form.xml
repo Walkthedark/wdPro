@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cEnuAfe" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cEnuAfe" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">html.cEnuAfe{font-size: 62.5% !important} body.cEnuAfe{font-size: 1.6rem "Microsoft YaHei", arial, tahoma, 宋体, sans-serif !important}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cEnuAfe" class="cEnuAfe"/>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cEnuAfe" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cEnuAfe"> 
+    <div class="x-contents-content active cEnuAfe" xid="content1" style="background-color:#F3F4F3;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cEnuAfe">
+      <div xid="div3" class="list-group-item cEnuAfe" __cid="cEnuAfe"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cEnuAfe" xid="row4" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEnuAfe"> 
+          <div class="x-col cEnuAfe" xid="col15" style="text-align:center;" bind-click="col15Click" __cid="cEnuAfe"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top btn-only-icon cEnuAfe" xid="button20" style="background-color:#94AED2;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-contact&quot;,&quot;label&quot;:&quot;客户&quot;}" __cid="cEnuAfe"> 
+              <i xid="i19" class="icon-android-contact cEnuAfe" style="font-size:16px;color:#FFFEFF;font-weight:bold;" __cid="cEnuAfe"/>  
+              <span xid="span22" style="color:#505150;" __cid="cEnuAfe" class="cEnuAfe">客户</span>
+            </a>  
+            <h4 xid="h41" __cid="cEnuAfe" class="cEnuAfe">
+              <span xid="span1" style="height:100%;font-size:16px;color:#3E3E3E;" __cid="cEnuAfe" class="cEnuAfe">我的汇报</span>
+            </h4>
+          </div>  
+          <div class="x-col cEnuAfe" xid="col16" style="text-align:center;" bind-click="col16Click" __cid="cEnuAfe"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top btn-only-icon cEnuAfe" xid="button19" style="background-color:#94AED2;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-at&quot;,&quot;label&quot;:&quot;联系人&quot;}" __cid="cEnuAfe"> 
+              <i xid="i21" class="icon-at cEnuAfe" style="font-size:16px;color:#FFFEFF;font-weight:bold;" __cid="cEnuAfe"/>  
+              <span xid="span23" style="color:#505150;" __cid="cEnuAfe" class="cEnuAfe">联系人</span>
+            </a>  
+            <h4 xid="h42" __cid="cEnuAfe" class="cEnuAfe"> 
+              <span xid="span2" style="height:100%;font-size:16px;color:#3E3E3E;" __cid="cEnuAfe" class="cEnuAfe">抄给我的</span>
+            </h4>
+          </div>  
+          <div class="x-col cEnuAfe" xid="col14" style="text-align:center;" bind-click="col14Click" __cid="cEnuAfe"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top btn-only-icon cEnuAfe" xid="button22" style="background-color:#94AED2;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-contacts&quot;,&quot;label&quot;:&quot;近期生日&quot;}" __cid="cEnuAfe"> 
+              <i xid="i20" class="icon-android-contacts cEnuAfe" style="font-size:16px;color:#FFFEFF;font-weight:bold;" __cid="cEnuAfe"/>  
+              <span xid="span25" style="color:#505150;" __cid="cEnuAfe" class="cEnuAfe">近期生日</span>
+            </a>  
+            <h4 xid="h43" __cid="cEnuAfe" class="cEnuAfe"> 
+              <span xid="span3" style="height:100%;font-size:16px;color:#3E3E3E;" __cid="cEnuAfe" class="cEnuAfe">他人汇报</span>
+            </h4>
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cEnuAfe" xid="row1" style="height:5px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEnuAfe"> 
+        <div class="x-col cEnuAfe" xid="col1" __cid="cEnuAfe"/>  
+        <div class="x-col cEnuAfe" xid="col2" __cid="cEnuAfe"/>  
+        <div class="x-col cEnuAfe" xid="col3" __cid="cEnuAfe"/>
+      </div>
+      <div xid="div2" class="list-group-item cEnuAfe" style="background-color:#F3F4F3;border-style:none none none none;border-width:thin thin thin thin;border-color:#D7D7DA #D7D7DA #D7D7DA #D7D7DA;" __cid="cEnuAfe"> 
+        <span xid="span7" style="color:#6B6C6C;" __cid="cEnuAfe" class="cEnuAfe">客户信息</span> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cEnuAfe" xid="row5" style="height:5px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEnuAfe"> 
+        <div class="x-col cEnuAfe" xid="col10" __cid="cEnuAfe"/>  
+        <div class="x-col cEnuAfe" xid="col11" __cid="cEnuAfe"/>  
+        <div class="x-col cEnuAfe" xid="col12" __cid="cEnuAfe"/>
+      </div>
+      <div xid="div1" class="list-group-item cEnuAfe" __cid="cEnuAfe"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cEnuAfe" xid="row2" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEnuAfe"> 
+          <div class="x-col cEnuAfe" xid="col5" style="text-align:center;" bind-click="col5Click" __cid="cEnuAfe"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top btn-only-icon cEnuAfe" xid="button1" style="background-color:#20B2AA" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-alarm&quot;,&quot;label&quot;:&quot;客户&quot;}" __cid="cEnuAfe"> 
+              <i xid="i3" class="icon-android-alarm cEnuAfe" style="font-size:16px;color:#FFFEFF;font-weight:bold;" __cid="cEnuAfe"/>  
+              <span xid="span10" style="color:#505150;" __cid="cEnuAfe" class="cEnuAfe">客户</span>
+            </a>  
+            <h4 xid="h44" __cid="cEnuAfe" class="cEnuAfe"> 
+              <span xid="span6" style="height:100%;font-size:16px;color:#3E3E3E;" __cid="cEnuAfe" class="cEnuAfe">新增行为</span>
+            </h4> 
+          </div>  
+          <div class="x-col cEnuAfe" xid="col4" style="text-align:center;" bind-click="col4Click" __cid="cEnuAfe"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top btn-only-icon cEnuAfe" xid="button3" style="background-color:#DC143C" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-storage&quot;,&quot;label&quot;:&quot;联系人&quot;}" __cid="cEnuAfe"> 
+              <i xid="i2" class="icon-android-storage cEnuAfe" style="font-size:16px;color:#FFFEFF;font-weight:bold;" __cid="cEnuAfe"/>  
+              <span xid="span9" style="color:#505150;" __cid="cEnuAfe" class="cEnuAfe">联系人</span>
+            </a>  
+            <h4 xid="h46" __cid="cEnuAfe" class="cEnuAfe"> 
+              <span xid="span4" style="height:100%;font-size:16px;color:#3E3E3E;" __cid="cEnuAfe" class="cEnuAfe">新增计划</span>
+            </h4> 
+          </div>  
+          <div class="x-col cEnuAfe" xid="col6" style="text-align:center;" bind-click="col6Click" __cid="cEnuAfe"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top btn-only-icon cEnuAfe" xid="button2" style="background-color:#4169E1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-note&quot;,&quot;label&quot;:&quot;近期生日&quot;}" __cid="cEnuAfe"> 
+              <i xid="i1" class="icon-android-note cEnuAfe" style="font-size:16px;color:#FFFEFF;font-weight:bold;" __cid="cEnuAfe"/>  
+              <span xid="span8" style="color:#505150;" __cid="cEnuAfe" class="cEnuAfe">近期生日</span>
+            </a>  
+            <h4 xid="h45" __cid="cEnuAfe" class="cEnuAfe"> 
+              <span xid="span5" style="height:100%;font-size:16px;color:#3E3E3E;" __cid="cEnuAfe" class="cEnuAfe">新增待定</span>
+            </h4> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div4" class="list-group-item cEnuAfe" __cid="cEnuAfe"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cEnuAfe" xid="row3" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEnuAfe"> 
+          <div class="x-col cEnuAfe" xid="col9" style="text-align:center;" __cid="cEnuAfe"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top btn-only-icon cEnuAfe" xid="button6" style="background-color:#FF7F50" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-location&quot;,&quot;label&quot;:&quot;客户&quot;}" __cid="cEnuAfe"> 
+              <i xid="i6" class="icon-android-location cEnuAfe" style="font-size:16px;color:#FFFEFF;font-weight:bold;" __cid="cEnuAfe"/>  
+              <span xid="span16" style="color:#505150;" __cid="cEnuAfe" class="cEnuAfe">客户</span>
+            </a>  
+            <h4 xid="h48" __cid="cEnuAfe" class="cEnuAfe"> 
+              <span xid="span13" style="height:100%;font-size:16px;color:#3E3E3E;" __cid="cEnuAfe" class="cEnuAfe">新增签到</span>
+            </h4> 
+          </div>  
+          <div class="x-col cEnuAfe" xid="col8" style="text-align:center;" __cid="cEnuAfe"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top btn-only-icon cEnuAfe" xid="button5" style="background-color:#7B68EE" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-calendar&quot;,&quot;label&quot;:&quot;联系人&quot;}" __cid="cEnuAfe"> 
+              <i xid="i5" class="icon-calendar cEnuAfe" style="font-size:16px;color:#FFFEFF;font-weight:bold;" __cid="cEnuAfe"/>  
+              <span xid="span15" style="color:#505150;" __cid="cEnuAfe" class="cEnuAfe">联系人</span>
+            </a>  
+            <h4 xid="h49" __cid="cEnuAfe" class="cEnuAfe"> 
+              <span xid="span11" style="height:100%;font-size:16px;color:#3E3E3E;" __cid="cEnuAfe" class="cEnuAfe">写日总结</span>
+            </h4> 
+          </div>  
+          <div class="x-col cEnuAfe" xid="col7" style="text-align:center;" __cid="cEnuAfe"></div> 
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>

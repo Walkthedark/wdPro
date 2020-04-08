@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window caQFFRb" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="caQFFRb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/select/checkboxGroup,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <style>.x-control-group-title.caQFFRb{background-color: rgb(143, 196, 28); margin-bottom: 0.625em; padding: 0.625em; border-radius: 4px; color: rgb(255, 255, 255); font-weight: bold; font-size: 1.125em; cursor: pointer} .x-radio-group-vertical.caQFFRb .x-radio.caQFFRb, .x-checkbox-group-vertical.caQFFRb .x-checkbox.caQFFRb{display: block; margin-bottom: 0.625em; border: 1px solid rgb(204, 204, 204); padding: 10px; font-size: 15px} .x-radio.caQFFRb input[type="radio"].caQFFRb + label.caQFFRb, .x-checkbox.caQFFRb input[type="checkbox"].caQFFRb + label.caQFFRb{display: inline-block; left: 1.65em; position: relative; text-align: left; margin: 0 1.65em 0 0; min-height: 1em; width: 100%} .btn-btn5.caQFFRb{margin-top: 10px; margin-left: 10px; color: rgb(62, 62, 62); height: 40px; font-size: 16px; background-color: rgb(224, 236, 245); font-size: 16px; float: left; text-align: center; border: 1px solid rgb(62, 62, 62)}</style>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="periodReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" __cid="caQFFRb" class="caQFFRb"></span>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="caQFFRb" class="caQFFRb"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc3yqEZf-iosstatusbar caQFFRb" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="caQFFRb"> 
+    <div class="x-panel-top caQFFRb" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="caQFFRb"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title caQFFRb" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;邀请人&#34;}" __cid="caQFFRb"> 
+        <div class="x-titlebar-left caQFFRb" xid="left2" __cid="caQFFRb"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label caQFFRb" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;返回&#34;}" __cid="caQFFRb"> 
+            <i xid="i1" __cid="caQFFRb" class="caQFFRb"></i>  
+            <span xid="span4" __cid="caQFFRb" class="caQFFRb">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title caQFFRb" xid="title2" __cid="caQFFRb">邀请人</div>  
+        <div class="x-titlebar-right  caQFFRb" xid="right2" __cid="caQFFRb">
+          <div class="empty caQFFRb" __cid="caQFFRb"></div>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link caQFFRb" xid="button3" style="display:none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&#34;label&#34;:&#34;全选&#34;}" __cid="caQFFRb"> 
+            <i xid="i3" __cid="caQFFRb" class="caQFFRb"></i>  
+            <span xid="span3" __cid="caQFFRb" class="caQFFRb">全选</span> 
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content caQFFRb" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="caQFFRb"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list caQFFRb" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;YHData&#34;,&#34;filter&#34;:&#34; $row.val(\&#34;pid\&#34;) == 0&#34;}" __cid="caQFFRb"> 
+        <ul class="x-list-template hide caQFFRb" xid="listTemplateUl1" __cid="caQFFRb" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+          <li xid="li1" __cid="caQFFRb" class="caQFFRb"> 
+            <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group caQFFRb" xid="YHcontrolGroup" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&#34;collapsed&#34;:true,&#34;collapsible&#34;:true,&#34;title&#34;:&#34;title&#34;}" __cid="caQFFRb"> 
+              <div class="x-control-group-title caQFFRb" xid="controlGroupTitle1" __cid="caQFFRb"> 
+                <span xid="titleSpan" __cid="caQFFRb" class="caQFFRb" data-bind="text:ref(&#34;name&#34;)">title</span> 
+              </div>  
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row hide caQFFRb" xid="row3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="caQFFRb"> 
+                <div class="col col-xs-12 caQFFRb" xid="col7" __cid="caQFFRb"> 
+                  <span component="$model/UI2/system/components/justep/select/checkboxGroup" class="x-checkbox-group x-checkbox-group-vertical caQFFRb" xid="transferCheckboxGroup" name="staff" data-bind="component:{ref:ref(&#34;check&#34;),name:'$model/UI2/system/components/justep/select/checkboxGroup'},checked:$model.RData == true,foreach:{data:$model.getItems($object.val(&#34;id&#34;)),afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" __cid="caQFFRb">
+                    <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox caQFFRb" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox',label:ref(&#34;userName&#34;),value:ref(&#34;check&#34;)}" __cid="caQFFRb">
+                      <input type="checkbox" __cid="caQFFRb" class="caQFFRb">
+                      <label __cid="caQFFRb" class="caQFFRb"></label>
+                    </span>
+                  </span> 
+                </div> 
+              </div> 
+            </div> 
+          </li> 
+        </ul> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row caQFFRb" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caQFFRb"> 
+        <div class="x-col x-col-20 caQFFRb" xid="col4" __cid="caQFFRb"></div>  
+        <div class="x-col caQFFRb" xid="col5" __cid="caQFFRb"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default caQFFRb" xid="button2" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&#34;label&#34;:&#34;保 存&#34;}" __cid="caQFFRb"> 
+            <i xid="i2" __cid="caQFFRb" class="caQFFRb"></i>  
+            <span xid="span1" __cid="caQFFRb" class="caQFFRb">保 存</span> 
+          </a> 
+        </div>  
+        <div class="x-col x-col-20 caQFFRb" xid="col6" __cid="caQFFRb"></div> 
+      </div> 
+    </div>  
+    <style __cid="caQFFRb" class="caQFFRb">.x-panel.pc3yqEZf-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pc3yqEZf-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc3yqEZf-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc3yqEZf-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3yqEZf-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc3yqEZf-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3yqEZf-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3yqEZf-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3yqEZf-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

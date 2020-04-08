@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cIbyyma" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cIbyyma" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cIbyyma" class="cIbyyma"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc3UZN7z-iosstatusbar cIbyyma" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cIbyyma"> 
+    <div class="x-panel-top cIbyyma" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cIbyyma"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cIbyyma" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;我的工作日报&#34;}" __cid="cIbyyma"> 
+        <div class="x-titlebar-left cIbyyma" xid="left2" __cid="cIbyyma"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cIbyyma" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;返回&#34;}" __cid="cIbyyma"> 
+            <i xid="i1" __cid="cIbyyma" class="cIbyyma"></i>  
+            <span xid="span4" __cid="cIbyyma" class="cIbyyma">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cIbyyma" xid="title2" __cid="cIbyyma">我的工作日报</div>  
+        <div class="x-titlebar-right  cIbyyma" xid="right2" __cid="cIbyyma">
+          <div class="empty cIbyyma" __cid="cIbyyma"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cIbyyma" xid="content6" style="background-color:#f0f0f0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cIbyyma"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cIbyyma" xid="row1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cIbyyma"> 
+        <div class="x-col cIbyyma" xid="col17" __cid="cIbyyma"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cIbyyma" xid="row4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cIbyyma"> 
+            <div class="col col-xs-12 cIbyyma" xid="col15" __cid="cIbyyma"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cIbyyma" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cIbyyma"> 
+                <label class="x-label cIbyyma" xid="label2" style="width:80px;" __cid="cIbyyma">日期：</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cIbyyma" xid="input1" data-bind="component:{ref:$model.infoData.ref(&#34;rq&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cIbyyma"> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cIbyyma" xid="col16" __cid="cIbyyma"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cIbyyma" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cIbyyma"> 
+                <label class="x-label cIbyyma" xid="label3" style="width:80px;" __cid="cIbyyma">类型：</label>  
+                <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cIbyyma" xid="select2" data-bind="component:{ref:$model.infoData.ref(&#34;lx&#34;),name:'$model/UI2/system/components/justep/select/select'},options:typeList.datas,optionsValue:'id',optionsText:'title',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cIbyyma"></select> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cIbyyma" xid="col3" __cid="cIbyyma"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cIbyyma" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cIbyyma"> 
+                <label class="x-label cIbyyma" xid="label5" style="width:80px;" __cid="cIbyyma">内容：</label>  
+                <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit cIbyyma" xid="textarea1" data-bind="component:{ref:$model.infoData.ref(&#34;nr&#34;),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cIbyyma"></textarea> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cIbyyma" xid="row2" style="margin-top:5px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cIbyyma"> 
+        <div class="x-col cIbyyma" xid="col4" __cid="cIbyyma"> 
+          <span xid="span1" __cid="cIbyyma" class="cIbyyma">上传照片（最多录入6张。）</span> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cIbyyma" xid="row3" style="margin-top:5px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cIbyyma"> 
+        <div class="x-col cIbyyma" xid="col5" __cid="cIbyyma"> 
+          <div class="imgline cIbyyma" xid="div74" id="workReportImg" __cid="cIbyyma"> 
+            <div class="lfloat simg plusbtn cIbyyma" xid="div57" id="workReportImg1" __cid="cIbyyma">+
+              <input id="upload6" type="file" class="upfile cIbyyma" accept="image/*,video/*;" capture="camera" xid="file1" __cid="cIbyyma"> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cIbyyma" xid="row5" style="padding:20px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cIbyyma"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label cIbyyma" xid="button4" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&#34;label&#34;:&#34;提 交&#34;}" __cid="cIbyyma"> 
+          <i xid="i4" __cid="cIbyyma" class="cIbyyma"></i>  
+          <span xid="span5" __cid="cIbyyma" class="cIbyyma">提 交</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cIbyyma" class="cIbyyma">.x-panel.pc3UZN7z-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pc3UZN7z-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc3UZN7z-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc3UZN7z-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3UZN7z-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc3UZN7z-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3UZN7z-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3UZN7z-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3UZN7z-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

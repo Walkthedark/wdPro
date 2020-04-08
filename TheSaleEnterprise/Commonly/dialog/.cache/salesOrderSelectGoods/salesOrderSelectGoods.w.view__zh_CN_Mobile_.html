@@ -1,0 +1,324 @@
+<!DOCTYPE HTML>
+<div class="main13 cVZV3ie" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cVZV3ie" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/justep/tabs/tabs,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <style>.bg-white.cVZV3ie{background-color: rgb(255, 255, 255)} .text-black.cVZV3ie{color: rgb(85, 85, 85)} .row.cVZV3ie{margin: 0} .x-cards.cVZV3ie{padding-top: 15px} .tb-box.cVZV3ie{margin-bottom: 10px; border-top: 1px solid rgb(220, 220, 220); border-bottom: 1px solid rgb(220, 220, 220)} .tb-del-line.cVZV3ie{text-decoration: line-through} .x-card.cVZV3ie .panel-heading.cVZV3ie{padding: 5px 15px} .x-card.cVZV3ie .panel-heading.cVZV3ie i.cVZV3ie{margin-right: 13px} .tb-img-shop.cVZV3ie{width: 20px; height: 20px} .tb-img-good.cVZV3ie{width: 100%; height: 6em} .tb-nomargin.cVZV3ie{margin: 0} .tb-nopadding.cVZV3ie{padding: 0} .tb-goodList.cVZV3ie{margin-bottom: 5px} .tb-goodList.cVZV3ie:last-child{margin-bottom: 0px} .tb-goodList.cVZV3ie .x-col.cVZV3ie:first-child{padding-top: 35px} .tb-goodList.cVZV3ie .x-col.cVZV3ie:nth-child(2){width: 100px; padding-right: 5px} .tb-goodList.cVZV3ie .h5.cVZV3ie{height: 30px; overflow: hidden; text-overflow: ellipsis} .tb-goodList.cVZV3ie .h6.cVZV3ie{margin-top: 3px; margin-bottom: 3px} .tb-numberOperation.cVZV3ie{width: 100%; height: 30px} .tb-numberOperation.cVZV3ie .btn.cVZV3ie{border-radius: 0} .tb-numberOperation.cVZV3ie span.cVZV3ie{padding: 4px 15px; border-top: 1px solid rgb(225, 225, 225); border-bottom: 1px solid rgb(225, 225, 225)} .x-panel-bottom.cVZV3ie{border-top: 1px solid rgb(220, 220, 220)} .x-panel-bottom.cVZV3ie .h4.cVZV3ie{margin: 5px 0} .tb-settlement.cVZV3ie{line-height: 40px; background-color: rgb(253, 80, 1); color: rgb(255, 255, 255); font-size: 16px} .sumbtn.cVZV3ie{border: 0px; width: 3em; border-top: 1px solid rgb(103, 201, 255); border-bottom: 1px solid rgb(103, 201, 255); border-radius: 0px; padding: 5px 0px; text-align: center} .addbtn.cVZV3ie{border: 1px solid rgb(103, 201, 255); border-top-left-radius: 0em; border-top-right-radius: 2em; border-bottom-right-radius: 2em; border-bottom-left-radius: 0em} .subbtn.cVZV3ie{border: 1px solid rgb(103, 201, 255); border-top-left-radius: 2em; border-top-right-radius: 0em; border-bottom-right-radius: 0em; border-bottom-left-radius: 2em} .btn-group.cVZV3ie{height: 40px; border-top: 1px solid rgb(231, 231, 231); border-bottom: 1px solid rgb(231, 231, 231)} .tb-nopadding.cVZV3ie{padding: 0}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cVZV3ie" class="cVZV3ie"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-card x-has-iosstatusbar pcvMziim-iosstatusbar cVZV3ie" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cVZV3ie"> 
+    <div class="x-panel-top cVZV3ie" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVZV3ie"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cVZV3ie" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;选择商品&#34;}" __cid="cVZV3ie"> 
+        <div class="x-titlebar-left cVZV3ie" __cid="cVZV3ie"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cVZV3ie" xid="button8" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;返回&#34;}" __cid="cVZV3ie"> 
+            <i xid="i4" __cid="cVZV3ie" class="cVZV3ie"></i>  
+            <span xid="span4" __cid="cVZV3ie" class="cVZV3ie">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cVZV3ie" __cid="cVZV3ie">选择商品</div>  
+        <div class="x-titlebar-right  cVZV3ie" __cid="cVZV3ie">
+          <div class="empty cVZV3ie" __cid="cVZV3ie"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div xid="content" class="x-panel-content x-cards cVZV3ie" supportpulldown="true" _xid="C834728599800001DC911AE01391B120" style="padding-top:0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVZV3ie"> 
+      <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs cVZV3ie" xid="tabs1" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="cVZV3ie"> 
+        <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel pcziQVfi-iosstatusbar cVZV3ie" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cVZV3ie"> 
+          <div class="x-panel-top cVZV3ie" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVZV3ie"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cVZV3ie" xid="row15" style="margin:0px;padding:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVZV3ie"> 
+              <div xid="col21" style="text-align:center;margin:0px;padding:0px;" class="x-col cVZV3ie" __cid="cVZV3ie"> 
+                <div class="subNavLine cVZV3ie" style="" id="subNavLine1" xid="div2" __cid="cVZV3ie"> 
+                  <div class="active cVZV3ie" xid="allGoods" __cid="cVZV3ie" data-bind="event:{click:$model._callModelFn.bind($model, 'allGoodsClick')}"> 
+                    <span xid="span5" __cid="cVZV3ie" class="cVZV3ie">全部商品</span> 
+                  </div>  
+                  <div xid="buyGoods" __cid="cVZV3ie" class="cVZV3ie" data-bind="event:{click:$model._callModelFn.bind($model, 'buyGoodsClick')}"> 
+                    <span xid="span12" __cid="cVZV3ie" class="cVZV3ie">买过</span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group cVZV3ie" xid="buttonGroup1" style="width:100%;color:#000" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cVZV3ie"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cVZV3ie" xid="typeBtn" style="width:33.3%;color:#000" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:typeBtnClick" data-config="{&#34;icon&#34;:&#34;icon-arrow-down-b&#34;,&#34;label&#34;:&#34;商品分类&#34;}" __cid="cVZV3ie"> 
+                <i xid="i13" class="icon-arrow-down-b text-danger cVZV3ie" style="color:#000" __cid="cVZV3ie"></i>  
+                <span xid="span16" __cid="cVZV3ie" class="cVZV3ie">商品分类</span> 
+              </a>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cVZV3ie" xid="labelBtn" style="width:33.3%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:labelBtnClick" data-config="{&#34;icon&#34;:&#34;icon-arrow-down-b&#34;,&#34;label&#34;:&#34;商品标签&#34;}" __cid="cVZV3ie"> 
+                <i xid="i11" class="icon-arrow-down-b text-danger cVZV3ie" style="color:#000" __cid="cVZV3ie"></i>  
+                <span class="text-danger cVZV3ie" xid="span19" style="color:#000" __cid="cVZV3ie">商品标签</span> 
+              </a>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cVZV3ie" xid="salesBtn" style="width:33.3%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:salesBtnClick" data-config="{&#34;icon&#34;:&#34;icon-arrow-down-b&#34;,&#34;label&#34;:&#34;促销状态&#34;}" __cid="cVZV3ie"> 
+                <i xid="i12" class="icon-arrow-down-b text-danger cVZV3ie" style="color:#000" __cid="cVZV3ie"></i>  
+                <span class="text-danger cVZV3ie" xid="span35" style="color:#000" __cid="cVZV3ie">促销状态</span> 
+              </a> 
+            </div> 
+          </div>  
+          <div class="x-panel-content cVZV3ie" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVZV3ie"> 
+            <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cVZV3ie" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;active&#34;:0}" __cid="cVZV3ie"> 
+              <div class="x-contents-content active cVZV3ie" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cVZV3ie"> 
+                <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcN36Bra-iosstatusbar cVZV3ie" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cVZV3ie"> 
+                  <div class="x-panel-content cVZV3ie" xid="content5" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVZV3ie"> 
+                    <div component="$model/UI2/system/components/justep/list/list" class="x-list bg-white cVZV3ie" xid="goodsList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;goodsData&#34;,&#34;disableInfiniteLoad&#34;:true,&#34;disablePullToRefresh&#34;:true}" __cid="cVZV3ie"> 
+                      <ul class="x-list-template x-min-height hide cVZV3ie" xid="listTemplateUl4" componentname="$UI/system/components/justep/list/list#listTemplateUl" id="undefined_listTemplateUl4" __cid="cVZV3ie" data-bind="foreach:{data:$model.foreach_goodsList($element),afterRender:$model.foreach_afterRender_goodsList.bind($model,$element)}"> 
+                        <li xid="li4" class="x-min-height tb-goodList cVZV3ie" componentname="li(html)" id="undefined_li4" __cid="cVZV3ie"> 
+                          <div component="$model/UI2/system/components/justep/row/row" class="x-row cVZV3ie" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVZV3ie"> 
+                            <div class="x-col x-col-fixed cVZV3ie" xid="col1" style="width:auto;" __cid="cVZV3ie"></div>  
+                            <div class="x-col x-col-fixed tb-nopadding cVZV3ie" xid="col2" __cid="cVZV3ie"> 
+                              <img src="" alt="" xid="image1" class="tb-img-good cVZV3ie" __cid="cVZV3ie" data-bind="attr:{src:$model.getImageUrl( val(&#34;url&#34;))},event:{click:$model._callModelFn.bind($model, 'listClick')}"> 
+                            </div>  
+                            <div class="x-col  tb-nopadding cVZV3ie" xid="col3" __cid="cVZV3ie"> 
+                              <span class="x-flex text-black h4 tb-nomargin cVZV3ie" xid="span26" style="height:2em;" __cid="cVZV3ie" data-bind="text:val(&#34;pro_name&#34;)"></span>  
+                              <div class="text-muted cVZV3ie" xid="div5" __cid="cVZV3ie"> 
+                                <span xid="span28" class="text-info h5 cVZV3ie" __cid="cVZV3ie" data-bind="text:val(&#34;spec&#34;)"></span> 
+                              </div>  
+                              <div class="text-muted cVZV3ie" xid="div14" __cid="cVZV3ie"> 
+                                <span xid="span37" class="text-danger cVZV3ie" style="line-height:2em;height:3em;" __cid="cVZV3ie">￥</span>  
+                                <span xid="span36" class="h4 text-danger cVZV3ie" style="line-height:2em;height:3em;" __cid="cVZV3ie" data-bind="text:val(&#34;price&#34;)"></span>  
+                                <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-sm btn-only-icon pull-right cVZV3ie" xid="button2" style="line-height:2em;border-radius:90px;height:3em;width:3em;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addBtnClick" data-config="{&#34;icon&#34;:&#34;icon-android-add&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cVZV3ie"> 
+                                  <i xid="i6" class="icon-android-add cVZV3ie" __cid="cVZV3ie"></i>  
+                                  <span xid="span29" __cid="cVZV3ie" class="cVZV3ie"></span> 
+                                </a> 
+                              </div> 
+                            </div> 
+                          </div> 
+                        </li> 
+                      </ul> 
+                    </div> 
+                  </div>  
+                  <div class="x-panel-bottom cVZV3ie" xid="bottom2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVZV3ie"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row tb-nopadding cVZV3ie" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVZV3ie"> 
+                      <div class="x-col cVZV3ie" xid="col8" __cid="cVZV3ie"> 
+                        <div class="text-right cVZV3ie" xid="div9" __cid="cVZV3ie"> 
+                          <span xid="span15" class="text-muted cVZV3ie" __cid="cVZV3ie">合计：</span> 
+                        </div>  
+                        <div class="text-right cVZV3ie" xid="div10" __cid="cVZV3ie"></div> 
+                      </div>  
+                      <div class="x-col x-col-33 text-center tb-settlement cVZV3ie" xid="col9" __cid="cVZV3ie" data-bind="event:{click:$model._callModelFn.bind($model, 'settlementClick')}"> 
+                        <span xid="span10" __cid="cVZV3ie" class="cVZV3ie">确定</span> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <style __cid="cVZV3ie" class="cVZV3ie">.x-panel.pcN36Bra-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcN36Bra-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcN36Bra-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcN36Bra-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcN36Bra-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcN36Bra-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcN36Bra-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcN36Bra-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcN36Bra-iosstatusbar >.x-panel-content {top: 0px;}</style>
+                </div> 
+              </div>  
+              <div class="x-contents-content  x-content-on-remoting-sibling cVZV3ie" xid="content3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cVZV3ie"> 
+                <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pciMJVre-iosstatusbar cVZV3ie" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cVZV3ie"> 
+                  <div class="x-panel-content cVZV3ie" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVZV3ie"> 
+                    <div component="$model/UI2/system/components/justep/list/list" class="x-list bg-white cVZV3ie" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;hasBugGoods&#34;,&#34;disableInfiniteLoad&#34;:true,&#34;disablePullToRefresh&#34;:true}" __cid="cVZV3ie"> 
+                      <ul class="x-list-template x-min-height hide cVZV3ie" xid="listTemplateUl1" componentname="$UI/system/components/justep/list/list#listTemplateUl" id="undefined_listTemplateUl4" __cid="cVZV3ie" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+                        <li xid="li1" class="x-min-height tb-goodList cVZV3ie" componentname="li(html)" id="undefined_li4" __cid="cVZV3ie"> 
+                          <div component="$model/UI2/system/components/justep/row/row" class="x-row cVZV3ie" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVZV3ie"> 
+                            <div class="x-col x-col-fixed cVZV3ie" xid="col7" style="width:auto;" __cid="cVZV3ie"></div>  
+                            <div class="x-col x-col-fixed tb-nopadding cVZV3ie" xid="col5" __cid="cVZV3ie"> 
+                              <img src="" alt="" xid="image2" class="tb-img-good cVZV3ie" __cid="cVZV3ie" data-bind="attr:{src:$model.getImageUrl( val(&#34;url&#34;))},event:{click:$model._callModelFn.bind($model, 'listClick')}"> 
+                            </div>  
+                            <div class="x-col  tb-nopadding cVZV3ie" xid="col6" __cid="cVZV3ie"> 
+                              <span class="x-flex text-black h4 tb-nomargin cVZV3ie" xid="span17" style="height:2em;" __cid="cVZV3ie" data-bind="text:val(&#34;pro_name&#34;)"></span> 
+                            </div> 
+                          </div>  
+                          <div component="$model/UI2/system/components/justep/list/list" class="x-list bg-white cVZV3ie" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;hasBugSpec&#34;,&#34;disableInfiniteLoad&#34;:true,&#34;disablePullToRefresh&#34;:true,&#34;filter&#34;:&#34;$row.val(\&#34;pro_id\&#34;)== val(\&#34;pro_id\&#34;)&#34;}" __cid="cVZV3ie"> 
+                            <ul class="x-list-template x-min-height hide cVZV3ie" xid="listTemplateUl3" componentname="$UI/system/components/justep/list/list#listTemplateUl" id="undefined_listTemplateUl4" __cid="cVZV3ie" data-bind="foreach:{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)}"> 
+                              <li xid="li2" class="x-min-height tb-goodList cVZV3ie" componentname="li(html)" id="undefined_li4" __cid="cVZV3ie"> 
+                                <div component="$model/UI2/system/components/justep/row/row" class="x-row cVZV3ie" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVZV3ie"> 
+                                  <div class="x-col  tb-nopadding cVZV3ie" xid="col12" __cid="cVZV3ie"> 
+                                    <span class="x-flex text-black h5 tb-nomargin cVZV3ie" xid="span21" __cid="cVZV3ie" data-bind="text:val(&#34;spec&#34;)"></span>  
+                                    <div class="text-muted cVZV3ie" xid="div11" __cid="cVZV3ie"> 
+                                      <span xid="span22" class="text-danger cVZV3ie" __cid="cVZV3ie">￥</span>  
+                                      <span xid="span25" class="h4 text-danger cVZV3ie" __cid="cVZV3ie" data-bind="text:val(&#34;price&#34;)"></span> 
+                                    </div>  
+                                    <div class="text-muted h6 cVZV3ie" xid="div8" __cid="cVZV3ie"> 
+                                      <span xid="span27" __cid="cVZV3ie" class="cVZV3ie">库存:</span>  
+                                      <span xid="span30" __cid="cVZV3ie" class="cVZV3ie" data-bind="text:val(&#34;story&#34;)"></span>  
+                                      <span xid="span31" __cid="cVZV3ie" class="cVZV3ie" data-bind="text:val(&#34;unitm&#34;)"></span>  
+                                      <span xid="span32" __cid="cVZV3ie" class="cVZV3ie" data-bind="text:val(&#34;is&#34;)"></span>  
+                                      <a component="$model/UI2/system/components/justep/button/button" class="btn x-blue btn-sm btn-only-icon pull-right addbtn cVZV3ie" xid="button9" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addSpec1BtnClick" data-config="{&#34;icon&#34;:&#34;icon-android-add&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cVZV3ie"> 
+                                        <i xid="i9" class="icon-android-add cVZV3ie" __cid="cVZV3ie"></i>  
+                                        <span xid="span24" __cid="cVZV3ie" class="cVZV3ie"></span> 
+                                      </a>  
+                                      <input component="$model/UI2/system/components/justep/input/input" class="pull-right btn-sm sumbtn cVZV3ie" xid="input2" data-bind="component:{ref:ref(&#34;qty&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cVZV3ie">  
+                                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-sm btn-only-icon pull-right subbtn cVZV3ie" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:subSpec1BtnClick" data-config="{&#34;icon&#34;:&#34;icon-android-remove&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cVZV3ie"> 
+                                        <i xid="i7" class="icon-android-remove cVZV3ie" __cid="cVZV3ie"></i>  
+                                        <span xid="span23" __cid="cVZV3ie" class="cVZV3ie"></span> 
+                                      </a> 
+                                    </div> 
+                                  </div> 
+                                </div> 
+                              </li> 
+                            </ul> 
+                          </div> 
+                        </li> 
+                      </ul> 
+                    </div> 
+                  </div>  
+                  <div class="x-panel-bottom cVZV3ie" xid="bottom3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVZV3ie"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row tb-nopadding cVZV3ie" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVZV3ie"> 
+                      <div class="x-col cVZV3ie" xid="col13" __cid="cVZV3ie"> 
+                        <div class="text-right cVZV3ie" xid="div13" __cid="cVZV3ie"> 
+                          <span xid="span33" class="text-muted cVZV3ie" __cid="cVZV3ie">合计：</span> 
+                        </div>  
+                        <div class="text-right cVZV3ie" xid="div12" __cid="cVZV3ie"></div> 
+                      </div>  
+                      <div class="x-col x-col-33 text-center tb-settlement cVZV3ie" xid="col14" __cid="cVZV3ie" data-bind="event:{click:$model._callModelFn.bind($model, 'col14Click')}"> 
+                        <span xid="span34" __cid="cVZV3ie" class="cVZV3ie">确定</span> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <style __cid="cVZV3ie" class="cVZV3ie">.x-panel.pciMJVre-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pciMJVre-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pciMJVre-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pciMJVre-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciMJVre-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pciMJVre-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciMJVre-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciMJVre-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciMJVre-iosstatusbar >.x-panel-content {top: 0px;}</style>
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <style __cid="cVZV3ie" class="cVZV3ie">.x-panel.pcziQVfi-iosstatusbar >.x-panel-top {height: 90px;}.x-panel.pcziQVfi-iosstatusbar >.x-panel-content { top: 90px;bottom: nullpx;}.x-panel.pcziQVfi-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcziQVfi-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcziQVfi-iosstatusbar >.x-panel-top {height: 110px;}.iosstatusbar .x-panel.pcziQVfi-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcziQVfi-iosstatusbar >.x-panel-content { top: 110px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcziQVfi-iosstatusbar >.x-panel-top {height: 90px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcziQVfi-iosstatusbar >.x-panel-content {top: 90px;}</style>
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cVZV3ie" class="cVZV3ie">.x-panel.pcvMziim-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcvMziim-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcvMziim-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcvMziim-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvMziim-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcvMziim-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvMziim-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvMziim-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvMziim-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cVZV3ie" xid="popOver1" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;direction&#34;:&#34;auto&#34;,&#34;dismissible&#34;:false,&#34;position&#34;:&#34;bottom&#34;}" __cid="cVZV3ie"> 
+    <div class="x-popOver-overlay cVZV3ie" xid="div15" __cid="cVZV3ie"></div>  
+    <div class="x-popOver-content cVZV3ie" xid="div16" style="background-color:white;" __cid="cVZV3ie"> 
+      <div xid="div6" style="padding:4px;background-color:white;" __cid="cVZV3ie" class="cVZV3ie"> 
+        <div class="media-left cVZV3ie" xid="mediaLeft2" __cid="cVZV3ie"> 
+          <img src="" alt="" xid="image4" class="tb-img-good cVZV3ie" style="width:6em;" __cid="cVZV3ie" data-bind="attr:{src:$model.getImageUrl( $model.cData.val(&#34;url&#34;))}"> 
+        </div>  
+        <div class="media-body cVZV3ie" xid="mediaBody2" __cid="cVZV3ie"> 
+          <span class="text-black h4 cVZV3ie" xid="span42" __cid="cVZV3ie" data-bind="text:$model.cData.val(&#34;pro_name&#34;)"></span>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn pull-right cVZV3ie" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button5Click" data-config="{&#34;icon&#34;:&#34;linear linear-cross&#34;}" __cid="cVZV3ie"> 
+            <i xid="i8" class="linear linear-cross cVZV3ie" __cid="cVZV3ie"></i>  
+            <span xid="span43" __cid="cVZV3ie" class="cVZV3ie"></span> 
+          </a> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/bootstrap/row/row" class="row cVZV3ie" xid="row8" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cVZV3ie"> 
+        <div class="col col-xs-12 cVZV3ie" xid="col4" __cid="cVZV3ie"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVZV3ie" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVZV3ie"> 
+            <label xid="label4" style="font-size:1.2em;width:3.8em;" class="x-label cVZV3ie" __cid="cVZV3ie">单位：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cVZV3ie" xid="output5" style="color:blue" data-bind="component:{ref:$model.cData.ref(&#34;unitm&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cVZV3ie"></div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list bg-white cVZV3ie" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;specData&#34;,&#34;disableInfiniteLoad&#34;:true,&#34;disablePullToRefresh&#34;:true}" __cid="cVZV3ie"> 
+        <ul class="x-list-template x-min-height hide cVZV3ie" xid="listTemplateUl2" componentname="$UI/system/components/justep/list/list#listTemplateUl" id="undefined_listTemplateUl4" __cid="cVZV3ie" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}"> 
+          <li xid="li5" class="x-min-height tb-goodList cVZV3ie" componentname="li(html)" id="undefined_li4" __cid="cVZV3ie"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cVZV3ie" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVZV3ie"> 
+              <div class="x-col  tb-nopadding cVZV3ie" xid="col10" __cid="cVZV3ie"> 
+                <span class="x-flex text-black h5 tb-nomargin cVZV3ie" xid="span3" __cid="cVZV3ie" data-bind="text:val(&#34;spec&#34;)"></span>  
+                <div class="text-muted cVZV3ie" xid="div1" __cid="cVZV3ie"> 
+                  <span xid="span6" class="text-danger cVZV3ie" __cid="cVZV3ie">￥</span>  
+                  <span xid="span8" class="h4 text-danger cVZV3ie" __cid="cVZV3ie" data-bind="text:val(&#34;price&#34;)"></span> 
+                </div>  
+                <div class="text-muted h6 cVZV3ie" xid="div3" __cid="cVZV3ie"> 
+                  <span xid="span9" __cid="cVZV3ie" class="cVZV3ie">库存:</span>  
+                  <span xid="span1" __cid="cVZV3ie" class="cVZV3ie" data-bind="text:val(&#34;story&#34;)"></span>  
+                  <span xid="span20" __cid="cVZV3ie" class="cVZV3ie" data-bind="text:val(&#34;unitm&#34;)"></span>  
+                  <span xid="span11" __cid="cVZV3ie" class="cVZV3ie" data-bind="text:val(&#34;is&#34;)"></span>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn x-blue btn-sm btn-only-icon pull-right addbtn cVZV3ie" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addSpecBtnClick" data-config="{&#34;icon&#34;:&#34;icon-android-add&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cVZV3ie"> 
+                    <i xid="i2" class="icon-android-add cVZV3ie" __cid="cVZV3ie"></i>  
+                    <span xid="span7" __cid="cVZV3ie" class="cVZV3ie"></span> 
+                  </a>  
+                  <input component="$model/UI2/system/components/justep/input/input" class="pull-right btn-sm sumbtn cVZV3ie" xid="input1" data-bind="component:{ref:ref(&#34;qty&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cVZV3ie">  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-sm btn-only-icon pull-right subbtn cVZV3ie" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:subSpecBtnClick" data-config="{&#34;icon&#34;:&#34;icon-android-remove&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cVZV3ie"> 
+                    <i xid="i1" class="icon-android-remove cVZV3ie" __cid="cVZV3ie"></i>  
+                    <span xid="span18" __cid="cVZV3ie" class="cVZV3ie"></span> 
+                  </a> 
+                </div> 
+              </div> 
+            </div> 
+          </li> 
+        </ul> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cVZV3ie" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVZV3ie"> 
+        <div class="x-col cVZV3ie" xid="col11" __cid="cVZV3ie"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn x-blue cVZV3ie" xid="button7" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button7Click" data-config="{&#34;label&#34;:&#34;确定&#34;}" __cid="cVZV3ie"> 
+            <i xid="i3" __cid="cVZV3ie" class="cVZV3ie"></i>  
+            <span xid="span2" __cid="cVZV3ie" class="cVZV3ie">确定</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiver1Receive" __cid="cVZV3ie" class="cVZV3ie"></span>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cVZV3ie" xid="popOverType" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;anchor&#34;:&#34;typeBtn&#34;,&#34;direction&#34;:&#34;left-bottom&#34;,&#34;dismissible&#34;:true,&#34;opacity&#34;:0.7,&#34;position&#34;:&#34;center&#34;}" __cid="cVZV3ie"> 
+    <div class="x-popOver-overlay cVZV3ie" xid="div4" style="top:137px;" __cid="cVZV3ie"></div>  
+    <div class="x-popOver-content cVZV3ie" xid="div7" style="padding-left:10px;width:100%;background-color:white;" __cid="cVZV3ie"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cVZV3ie" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVZV3ie"> 
+        <div class="x-col cVZV3ie" xid="col15" __cid="cVZV3ie"> 
+          <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radio-group x-radio-group-vertical cVZV3ie" xid="radioGroup1" data-bind="component:{ref:$model.selectData.ref(&#34;type&#34;),name:'$model/UI2/system/components/justep/select/radioGroup'},foreach:{data:TypeList.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" __cid="cVZV3ie">
+            <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cVZV3ie" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref(&#34;title&#34;),value:ref(&#34;id&#34;)}" __cid="cVZV3ie">
+              <input type="radio" __cid="cVZV3ie" class="cVZV3ie">
+              <label __cid="cVZV3ie" class="cVZV3ie"></label>
+            </span>
+          </span> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cVZV3ie" xid="row10" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVZV3ie"> 
+        <div class="x-col cVZV3ie" xid="col18" __cid="cVZV3ie"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-danger cVZV3ie" xid="button3" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&#34;label&#34;:&#34;清除&#34;}" __cid="cVZV3ie"> 
+            <i xid="i5" __cid="cVZV3ie" class="cVZV3ie"></i>  
+            <span xid="span13" __cid="cVZV3ie" class="cVZV3ie">清除</span> 
+          </a> 
+        </div>  
+        <div class="x-col cVZV3ie" xid="col19" __cid="cVZV3ie"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary cVZV3ie" xid="button10" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button10Click" data-config="{&#34;label&#34;:&#34;确定&#34;}" __cid="cVZV3ie"> 
+            <i xid="i10" __cid="cVZV3ie" class="cVZV3ie"></i>  
+            <span xid="span14" __cid="cVZV3ie" class="cVZV3ie">确定</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cVZV3ie" xid="popOverLabel" style="background-color:white;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;anchor&#34;:&#34;typeBtn&#34;,&#34;direction&#34;:&#34;left-bottom&#34;,&#34;opacity&#34;:0.7}" __cid="cVZV3ie"> 
+    <div class="x-popOver-overlay cVZV3ie" xid="div17" style="top:137px;" __cid="cVZV3ie"></div>  
+    <div class="x-popOver-content cVZV3ie" xid="div18" style="width:100%;background-color:white;" __cid="cVZV3ie"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cVZV3ie" xid="row12" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVZV3ie"> 
+        <div class="x-col cVZV3ie" xid="col23" __cid="cVZV3ie"> 
+          <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radio-group x-radio-group-vertical cVZV3ie" xid="radioGroup2" data-bind="component:{ref:$model.selectData.ref(&#34;label&#34;),name:'$model/UI2/system/components/justep/select/radioGroup'},foreach:{data:labelList.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" __cid="cVZV3ie">
+            <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cVZV3ie" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref(&#34;title&#34;),value:ref(&#34;id&#34;)}" __cid="cVZV3ie">
+              <input type="radio" __cid="cVZV3ie" class="cVZV3ie">
+              <label __cid="cVZV3ie" class="cVZV3ie"></label>
+            </span>
+          </span> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cVZV3ie" xid="row11" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVZV3ie"> 
+        <div class="x-col cVZV3ie" xid="col22" __cid="cVZV3ie"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-danger cVZV3ie" xid="button11" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button11Click" data-config="{&#34;label&#34;:&#34;清除&#34;}" __cid="cVZV3ie"> 
+            <i xid="i15" __cid="cVZV3ie" class="cVZV3ie"></i>  
+            <span xid="span39" __cid="cVZV3ie" class="cVZV3ie">清除</span> 
+          </a> 
+        </div>  
+        <div class="x-col cVZV3ie" xid="col24" __cid="cVZV3ie"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary cVZV3ie" xid="button12" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button12Click" data-config="{&#34;label&#34;:&#34;确定&#34;}" __cid="cVZV3ie"> 
+            <i xid="i14" __cid="cVZV3ie" class="cVZV3ie"></i>  
+            <span xid="span38" __cid="cVZV3ie" class="cVZV3ie">确定</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cVZV3ie" xid="popOverSales" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;anchor&#34;:&#34;typeBtn&#34;,&#34;direction&#34;:&#34;left-bottom&#34;,&#34;opacity&#34;:0.7}" __cid="cVZV3ie"> 
+    <div class="x-popOver-overlay cVZV3ie" xid="div19" style="top:137px;" __cid="cVZV3ie"></div>  
+    <div class="x-popOver-content tb-sorting cVZV3ie" xid="div20" style="background-color:white;width:100%;" __cid="cVZV3ie"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cVZV3ie" xid="conditionList" dataItemAlias="conditionRow" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;salesList&#34;}" __cid="cVZV3ie"> 
+        <ul class="x-list-template hide cVZV3ie" xid="ul1" __cid="cVZV3ie" data-bind="foreach:{data:$model.foreach_conditionList($element),afterRender:$model.foreach_afterRender_conditionList.bind($model,$element),as:'conditionRow'}"> 
+          <li class="list-group-item cVZV3ie" xid="li3" __cid="cVZV3ie" data-bind="css:{'current':conditionRow.val('fState')==1},event:{click:$model._callModelFn.bind($model, 'li3Click')}"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon pull-right tb-liBtn cVZV3ie" xid="button13" style="background-color:transparent;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:val(&#34;val&#34;)=='1'" data-config="{&#34;icon&#34;:&#34;icon-checkmark&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cVZV3ie"> 
+              <i xid="i16" class="icon-checkmark text-danger cVZV3ie" __cid="cVZV3ie"></i>  
+              <span xid="span40" __cid="cVZV3ie" class="cVZV3ie"></span> 
+            </a>  
+            <span xid="span41" __cid="cVZV3ie" class="cVZV3ie" data-bind="text:val(&#34;title&#34;)"></span> 
+          </li> 
+        </ul> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cVZV3ie" xid="row13" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVZV3ie"> 
+        <div class="x-col cVZV3ie" xid="col26" __cid="cVZV3ie"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-danger cVZV3ie" xid="button15" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button15Click" data-config="{&#34;label&#34;:&#34;清除&#34;}" __cid="cVZV3ie"> 
+            <i xid="i17" __cid="cVZV3ie" class="cVZV3ie"></i>  
+            <span xid="span44" __cid="cVZV3ie" class="cVZV3ie">清除</span> 
+          </a> 
+        </div>  
+        <div class="x-col cVZV3ie" xid="col25" __cid="cVZV3ie"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary cVZV3ie" xid="button14" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button14Click" data-config="{&#34;label&#34;:&#34;确定&#34;}" __cid="cVZV3ie"> 
+            <i xid="i18" __cid="cVZV3ie" class="cVZV3ie"></i>  
+            <span xid="span45" __cid="cVZV3ie" class="cVZV3ie">确定</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cNVnUfy" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cNVnUfy" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-radio.cNVnUfy input[type="radio"].cNVnUfy:checked + label.cNVnUfy:before, .x-checkbox.cNVnUfy input[type="checkbox"].cNVnUfy:checked + label.cNVnUfy:before{background-color: rgb(250, 121, 34)} .btn-default.cNVnUfy{color: rgb(255, 255, 255); background-color: rgb(143, 196, 28); border-color: rgb(143, 196, 28)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cNVnUfy" class="cNVnUfy"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pca6BV3y-iosstatusbar cNVnUfy" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cNVnUfy"> 
+    <div class="x-panel-top cNVnUfy" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cNVnUfy"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cNVnUfy" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;企业营销门户 EMP&quot;}" __cid="cNVnUfy"> 
+        <div class="x-titlebar-left cNVnUfy" xid="left2" __cid="cNVnUfy"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cNVnUfy" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cNVnUfy"> 
+            <i xid="i1" __cid="cNVnUfy" class="cNVnUfy"/>  
+            <span xid="span4" __cid="cNVnUfy" class="cNVnUfy">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cNVnUfy" xid="title2" __cid="cNVnUfy">企业营销门户 EMP</div>  
+        <div class="x-titlebar-right  cNVnUfy" xid="right2" __cid="cNVnUfy">
+          <div class="empty cNVnUfy" __cid="cNVnUfy"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cNVnUfy" xid="content6" style="background-color:#f0f0f0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cNVnUfy"> 
+      <div component="$model/UI2/system/components/bootstrap/row/row" class="row  cNVnUfy" xid="row2" style="background-color:#FFFFFF;padding:10px;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cNVnUfy"> 
+        <div class="col col-xs-7 cNVnUfy" xid="col4" style="padding:20px;" __cid="cNVnUfy"> 
+          <span xid="span1" class="font-One cNVnUfy" __cid="cNVnUfy">每天16：00待办任务提醒</span> 
+        </div>  
+        <div class="col col-xs-5 cNVnUfy" xid="col5" style="padding:20px;" __cid="cNVnUfy"> 
+          <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radio-group cNVnUfy" xid="radioGroup1" bind-foreach="{data:CData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-bind="component:{ref:$model.cDate.ref(&quot;set1&quot;),name:'$model/UI2/system/components/justep/select/radioGroup'}" __cid="cNVnUfy">
+            <xhtml:span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/radio" class="x-radio cNVnUfy" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref(&quot;text&quot;),value:ref(&quot;id&quot;)}" __cid="cNVnUfy">
+              <xhtml:input type="radio" __cid="cNVnUfy" class="cNVnUfy"/>
+              <xhtml:label __cid="cNVnUfy" class="cNVnUfy"/>
+            </xhtml:span>
+          </span> 
+        </div>  
+        <div class="col col-xs-7 cNVnUfy" xid="col1" style="padding:20px;" __cid="cNVnUfy"> 
+          <span xid="span3" class="font-One cNVnUfy" __cid="cNVnUfy">每5分钟待办任务提醒</span> 
+        </div>  
+        <div class="col col-xs-5 cNVnUfy" xid="col2" style="padding:20px;" __cid="cNVnUfy"> 
+          <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radio-group cNVnUfy" xid="radioGroup2" bind-foreach="{data:CData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-bind="component:{ref:$model.cDate.ref(&quot;set2&quot;),name:'$model/UI2/system/components/justep/select/radioGroup'}" __cid="cNVnUfy">
+            <xhtml:span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/radio" class="x-radio cNVnUfy" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref(&quot;text&quot;),value:ref(&quot;id&quot;)}" __cid="cNVnUfy">
+              <xhtml:input type="radio" __cid="cNVnUfy" class="cNVnUfy"/>
+              <xhtml:label __cid="cNVnUfy" class="cNVnUfy"/>
+            </xhtml:span>
+          </span> 
+        </div>  
+        <div class="col col-xs-12 cNVnUfy" xid="col3" style="padding:20px;text-align:center;" __cid="cNVnUfy"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label cNVnUfy" xid="button2" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;label&quot;:&quot;保 存&quot;}" __cid="cNVnUfy"> 
+            <i xid="i2" __cid="cNVnUfy" class="cNVnUfy"/>  
+            <span xid="span5" __cid="cNVnUfy" class="cNVnUfy">保 存</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cNVnUfy" class="cNVnUfy">.x-panel.pca6BV3y-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pca6BV3y-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pca6BV3y-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pca6BV3y-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pca6BV3y-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pca6BV3y-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pca6BV3y-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pca6BV3y-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pca6BV3y-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cbuEjQn" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cbuEjQn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/timer/timer,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/textarea/textarea,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.btn-color.cbuEjQn{color: rgb(228, 96, 41)} .div-back.cbuEjQn{background-image: url($model/UI2/propertyElevatorMag/common/img/daka.png); background-repeat: no-repeat; background-position: top center; background-size: cover} .div_zuyou.cbuEjQn{top: 0px; bottom: 0px; left: 0px; right: 0px; margin-left: auto; margin-right: auto} .div_Shadow.cbuEjQn{-moz-box-shadow: 2px 2px 5px rgb(111, 179, 21); -webkit-box-shadow: 2px 2px 5px rgb(111, 179, 21); box-shadow: 2px 2px 5px rgb(111, 179, 21)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cbuEjQn" class="cbuEjQn"/>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cbuEjQn" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cbuEjQn"> 
+    <div class="x-contents-content active cbuEjQn" xid="content1" style="background-color:#F4F4F4;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cbuEjQn">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cbuEjQn" xid="row1" style="height:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cbuEjQn"></div>
+      <div xid="div1" class="list-group-item cbuEjQn" style="padding:0px 0px 0px 0px;border-top-style:none;" __cid="cbuEjQn"> 
+        <div class="media cbuEjQn" xid="media1" __cid="cbuEjQn"> 
+          <div class="media-left cbuEjQn" xid="mediaLeft1" __cid="cbuEjQn"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cbuEjQn" xid="button6" style="line-height:30px;color:#B1B1B1;font-size:14px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;维保服务评价&quot;}" __cid="cbuEjQn"> 
+              <i xid="i6" __cid="cbuEjQn" class="cbuEjQn"/>  
+              <span xid="span6" __cid="cbuEjQn" class="cbuEjQn">维保服务评价</span>
+            </a>
+          </div>  
+          <div class="media-body cbuEjQn" xid="mediaBody1" style="text-align:center;" __cid="cbuEjQn"> 
+            <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cbuEjQn" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cbuEjQn"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon btn-color cbuEjQn" xid="button8" style="font-size:18px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button8Click" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-star&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cbuEjQn"> 
+                <i xid="i8" class="dataControl dataControl-star cbuEjQn" __cid="cbuEjQn"/>  
+                <span xid="span8" __cid="cbuEjQn" class="cbuEjQn"/>
+              </a>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon btn-color cbuEjQn" xid="button9" style="font-size:18px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button9Click" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-star&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cbuEjQn"> 
+                <i xid="i9" class="dataControl dataControl-star cbuEjQn" __cid="cbuEjQn"/>  
+                <span xid="span9" __cid="cbuEjQn" class="cbuEjQn"/>
+              </a>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon btn-color cbuEjQn" xid="button10" style="font-size:18px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button10Click" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-star&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cbuEjQn"> 
+                <i xid="i10" class="dataControl dataControl-star cbuEjQn" __cid="cbuEjQn"/>  
+                <span xid="span10" __cid="cbuEjQn" class="cbuEjQn"/>
+              </a>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon btn-color cbuEjQn" xid="button1" style="font-size:18px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-star&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cbuEjQn"> 
+                <i xid="i1" class="dataControl dataControl-star cbuEjQn" __cid="cbuEjQn"/>  
+                <span xid="span1" __cid="cbuEjQn" class="cbuEjQn"/>
+              </a>
+            </div>
+          </div>  
+          <div class="media-right cbuEjQn" xid="mediaRight1" __cid="cbuEjQn"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cbuEjQn" xid="button7" style="width:60px;line-height:30px;color:#B1B1B1;font-size:14px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;优秀&quot;}" __cid="cbuEjQn"> 
+              <i xid="i7" __cid="cbuEjQn" class="cbuEjQn"/>  
+              <span xid="span7" __cid="cbuEjQn" class="cbuEjQn">优秀</span>
+            </a>
+          </div>
+        </div>
+      </div>  
+      <div xid="div3" class="list-group-item cbuEjQn" style="padding:0px 0px 0px 0px" __cid="cbuEjQn"> 
+        <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control cbuEjQn" xid="textarea1" style="height:200px;background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" data-config="{&quot;placeHolder&quot;:&quot;您的评价对维保工人有很大的作用哦！&quot;}" __cid="cbuEjQn"/>
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cbuEjQn" xid="row7" style="position:fixed;bottom:30px;left:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cbuEjQn"> 
+        <div class="x-col cbuEjQn" xid="col17" __cid="cbuEjQn"/>  
+        <div class="x-col cbuEjQn" xid="col18" style="text-align:center;" __cid="cbuEjQn"> 
+          <div xid="addLogDiv" style="height:100%;width:100%;" __cid="cbuEjQn" class="cbuEjQn"> 
+            <div xid="addLogDiv1" style="height:80px;width:80px;background-color:transparent;" class=" div_zuyou div-back  cbuEjQn" bind-click="addLogDiv_infoClick" __cid="cbuEjQn"> 
+              <span xid="span12" style="line-height:80px;color:#FFFFFF;" __cid="cbuEjQn" class="cbuEjQn">发布</span>
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-col cbuEjQn" xid="col19" __cid="cbuEjQn"/>
+      </div> 
+    </div>
+  </div>  
+  <span component="$model/UI2/system/components/justep/timer/timer" xid="timer1" data-bind="component:{name:'$model/UI2/system/components/justep/timer/timer'}" data-events="onStop:timer1Stop" data-config="{&quot;enabled&quot;:false,&quot;times&quot;:3}" __cid="cbuEjQn" class="cbuEjQn"/>
+</div>

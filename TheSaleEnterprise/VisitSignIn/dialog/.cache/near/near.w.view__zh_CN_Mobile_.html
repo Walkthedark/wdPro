@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cNvIZba" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cNvIZba" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cNvIZba" class="cNvIZba"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="customerDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/VisitSignIn/dialog/nearCustomer.w&#34;}" __cid="cNvIZba" class="cNvIZba">
+    <div class="x-dialog-overlay cNvIZba" __cid="cNvIZba"></div>
+    <div class="x-dialog cNvIZba" style="display:none;" __cid="cNvIZba">
+      <div class="x-dialog-title cNvIZba" __cid="cNvIZba">
+        <button class="close cNvIZba" __cid="cNvIZba">
+          <span __cid="cNvIZba" class="cNvIZba">×</span>
+        </button>
+        <div class="x-dialog-title-text cNvIZba" __cid="cNvIZba"></div>
+      </div>
+      <div class="x-dialog-body cNvIZba" __cid="cNvIZba"></div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="activityCheckDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/VisitSignIn/dialog/nearActivity.w&#34;}" __cid="cNvIZba" class="cNvIZba">
+    <div class="x-dialog-overlay cNvIZba" __cid="cNvIZba"></div>
+    <div class="x-dialog cNvIZba" style="display:none;" __cid="cNvIZba">
+      <div class="x-dialog-title cNvIZba" __cid="cNvIZba">
+        <button class="close cNvIZba" __cid="cNvIZba">
+          <span __cid="cNvIZba" class="cNvIZba">×</span>
+        </button>
+        <div class="x-dialog-title-text cNvIZba" __cid="cNvIZba"></div>
+      </div>
+      <div class="x-dialog-body cNvIZba" __cid="cNvIZba"></div>
+    </div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcI7Fvaa-iosstatusbar cNvIZba" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cNvIZba"> 
+    <div class="x-panel-top cNvIZba" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cNvIZba"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cNvIZba" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;附近&#34;}" __cid="cNvIZba"> 
+        <div class="x-titlebar-left cNvIZba" xid="left2" __cid="cNvIZba"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cNvIZba" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;返回&#34;}" __cid="cNvIZba"> 
+            <i xid="i1" __cid="cNvIZba" class="cNvIZba"></i>  
+            <span xid="span4" __cid="cNvIZba" class="cNvIZba">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cNvIZba" xid="title2" __cid="cNvIZba">附近</div>  
+        <div class="x-titlebar-right  cNvIZba" xid="right2" __cid="cNvIZba">
+          <div class="empty cNvIZba" __cid="cNvIZba"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cNvIZba" xid="content6" style="background-color:#f0f0f0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cNvIZba"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row mar2 cNvIZba" xid="row1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'},event:{click:$model._callModelFn.bind($model, 'row1Click')}" __cid="cNvIZba"> 
+        <div class="x-col border-Two cNvIZba" xid="col1" __cid="cNvIZba"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cNvIZba" xid="row2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cNvIZba"> 
+            <div class="col col-xs-2 cNvIZba" xid="col2" style="height:40;" __cid="cNvIZba"> 
+              <img src="@justepContextPath@/v_b582003dd5bb43f3bd909891f5a2d05fl_zh_CNs_d_m/TheSaleEnterprise/VisitSignIn/img/006.png" alt="" xid="image1" style="width:40px;" __cid="cNvIZba" class="cNvIZba"> 
+            </div>  
+            <div class="col col-xs-7 cNvIZba" xid="col3" style="height:40;" __cid="cNvIZba"> 
+              <label xid="label1" style="margin-top:10px;" class="font-One cNvIZba" __cid="cNvIZba">附近的客户</label> 
+            </div>  
+            <div class="col col-xs-3 cNvIZba" xid="col4" style="text-align:right;height:40;" __cid="cNvIZba"> 
+              <img src="@justepContextPath@/v_a6fadb097b3b450989229768ab14316bl_zh_CNs_d_m/TheSaleEnterprise/VisitSignIn/img/007.png" alt="" xid="image2" style="width:30px;margin-top:10px;" __cid="cNvIZba" class="cNvIZba"> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cNvIZba" xid="row3" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'},event:{click:$model._callModelFn.bind($model, 'row3Click')}" __cid="cNvIZba"> 
+        <div class="x-col border-Two cNvIZba" xid="col8" __cid="cNvIZba"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cNvIZba" xid="row4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cNvIZba"> 
+            <div class="col col-xs-2 cNvIZba" xid="col6" style="height:40;" __cid="cNvIZba"> 
+              <img src="@justepContextPath@/v_6d948c69b1e04f46b15ed0828a5e04f3l_zh_CNs_d_m/TheSaleEnterprise/VisitSignIn/img/006.png" alt="" xid="image3" style="width:40px;" __cid="cNvIZba" class="cNvIZba"> 
+            </div>  
+            <div class="col col-xs-7 cNvIZba" xid="col7" style="height:40;" __cid="cNvIZba"> 
+              <label xid="label2" style="margin-top:10px;" class="font-One cNvIZba" __cid="cNvIZba">附近的市场活动</label> 
+            </div>  
+            <div class="col col-xs-3 cNvIZba" xid="col5" style="text-align:right;height:40;" __cid="cNvIZba"> 
+              <img src="@justepContextPath@/v_59bbc80cbff541c88a34ccf7afb003b6l_zh_CNs_d_m/TheSaleEnterprise/VisitSignIn/img/007.png" alt="" xid="image4" style="width:30px;margin-top:10px;" __cid="cNvIZba" class="cNvIZba"> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cNvIZba" class="cNvIZba">.x-panel.pcI7Fvaa-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcI7Fvaa-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcI7Fvaa-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcI7Fvaa-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcI7Fvaa-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcI7Fvaa-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcI7Fvaa-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcI7Fvaa-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcI7Fvaa-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

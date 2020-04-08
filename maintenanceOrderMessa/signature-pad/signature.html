@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Signature Pad</title>
+    <link rel="stylesheet" href="assets/jquery.signaturepad.css">
+    <!--[if lt IE 9]><script src="assets/flashcanvas.js"></script><![endif]-->
+    <script src="jquery.js"></script>
+    <style type="text/css">
+        .signature { text-align: center; width: 100%; height: 100%; }
+        .pad { border: solid 1px #808080; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div id="signature" class="signature">
+        <input type="button" onclick="clearSignature()" value="清除" />
+        <!-- <input type="button" onclick="saveSignature()" value="保存坐标" /> -->
+        <input type="button" onclick="saveSignatureImage()" value="保存签名" />
+        <input type="hidden" class="output" />
+        <canvas class="pad" width="500" height="400"></canvas>
+    </div>
+    <div class="signature-image"></div>
+    <script src="jquery.signaturepad.js"></script>
+    <script src="assets/json2.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#signature').signaturePad({
+                drawOnly: true,
+                validateFields: true,
+                lineWidth: 0,
+                output: null,
+                sigNav: null,
+                name: null,
+                typed: null,
+                typeIt: null,
+                drawIt: null,
+                typeItDesc: null,
+                drawItDesc: null
+            });
+        })
+
+        function clearSignature() {
+            $('#signature').signaturePad().clearCanvas();
+            $('.signature-image').html("");
+        }
+
+        function saveSignature() {
+            alert($('#signature').signaturePad().getSignatureString());
+        }
+
+        function saveSignatureImage() {
+            var data = $('#signature').signaturePad().getSignatureImage();
+
+            var image = document.createElement("img");
+            image.src = data; 
+            $(".signature-image")[0].appendChild(image);
+        }
+    </script>
+
+</body>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cmm6Jba" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cmm6Jba" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">body.cmm6Jba{font: 14px/ 1.5 "Microsoft YaHei", arial, tahoma, 宋体, sans-serif} .x-label.cmm6Jba{color: rgb(53, 53, 53)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cmm6Jba" class="cmm6Jba"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcu63mie-iosstatusbar cmm6Jba" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cmm6Jba"> 
+    <div class="x-panel-content cmm6Jba" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmm6Jba"> 
+      <div xid="div1" __cid="cmm6Jba" class="cmm6Jba"> 
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cmm6Jba" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;ListData&quot;}" __cid="cmm6Jba"> 
+          <ul class="x-list-template hide cmm6Jba" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cmm6Jba"> 
+            <li xid="li1" __cid="cmm6Jba" class="cmm6Jba"> 
+              <div xid="div22" class="list-group-item cmm6Jba" style="padding:5px 5px 5px 5px;" __cid="cmm6Jba"> 
+                <div class="media cmm6Jba" xid="media9" __cid="cmm6Jba"> 
+                  <div class="media-body cmm6Jba" xid="mediaBody9" __cid="cmm6Jba"> 
+                    <h5 xid="h518" style="color:#181919;" bind-text=" val(&quot;name&quot;)" __cid="cmm6Jba" class="cmm6Jba">潜在用友客户</h5> 
+                  </div>  
+                  <div class="media-right cmm6Jba" xid="mediaRight8" __cid="cmm6Jba"> 
+                    <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cmm6Jba" xid="radio1" name="chooseValue" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;name&quot;:&quot;chooseValue&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" data-events="onChange:radio1Change" __cid="cmm6Jba">
+                      <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="radio" name="chooseValue" __cid="cmm6Jba" class="cmm6Jba"/>
+                      <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cmm6Jba" class="cmm6Jba"/>
+                    </span>
+                  </div> 
+                </div> 
+              </div> 
+            </li> 
+          </ul> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cmm6Jba" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmm6Jba"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cmm6Jba" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cmm6Jba"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label cmm6Jba" xid="button1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cmm6Jba"> 
+          <i xid="i1" __cid="cmm6Jba" class="cmm6Jba"/>  
+          <span xid="span1" __cid="cmm6Jba" class="cmm6Jba">取消</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cmm6Jba" xid="okBtn" style="background-color:#4B76AE;color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:okBtnClick" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cmm6Jba"> 
+          <i xid="i2" __cid="cmm6Jba" class="cmm6Jba"/>  
+          <span xid="span2" __cid="cmm6Jba" class="cmm6Jba">确定</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cmm6Jba" class="cmm6Jba">.x-panel.pcu63mie-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcu63mie-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcu63mie-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcu63mie-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcu63mie-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcu63mie-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcu63mie-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcu63mie-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcu63mie-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div> 
+</div>

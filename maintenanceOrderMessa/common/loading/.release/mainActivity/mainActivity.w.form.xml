@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window crIjAv2" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="crIjAv2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">body.crIjAv2, html.crIjAv2{height: 100%; display: flex; justify-content: center; align-items: center} .div-btn.crIjAv2{width: 100%; max-width: 560px} .div-btn.crIjAv2 div.crIjAv2{margin: 10px 0} .test-div.crIjAv2{width: 300px; height: 300px; margin: 20px auto; border: 1px solid rgb(170, 170, 170); position: relative}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="crIjAv2" class="crIjAv2"/>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full crIjAv2" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="crIjAv2"> 
+    <div class="x-contents-content active crIjAv2" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="crIjAv2">
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default crIjAv2" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;label&quot;:&quot;button&quot;}" __cid="crIjAv2"> 
+        <i xid="i1" __cid="crIjAv2" class="crIjAv2"/>  
+        <span xid="span1" __cid="crIjAv2" class="crIjAv2"/>
+      </a>
+    </div>
+  </div>
+</div>

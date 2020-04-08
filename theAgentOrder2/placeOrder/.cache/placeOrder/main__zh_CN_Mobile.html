@@ -1,0 +1,962 @@
+<!DOCTYPE HTML>
+<html style="width:100%;height:100%" class="no-js">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+        <script src="../../../v_4249393320c7471f8654f23b47742a87l_zh_CNs_d_m/system/lib/base/modernizr-2.8.3.min.js"></script>
+		<script id="__varReplace">
+    	
+    	    	window.__justep = window.__justep || {};
+				window.__justep.isDebug = true;
+				window.__justep.__packageMode = "1";
+				window.__justep.__isPackage = false;;
+				window.__justep.url = location.href;
+				window.__justep.versionInfo = {};
+		 
+    	</script>
+        <script id="__updateVersion">
+        
+				(function(url, mode){
+					if (("@"+"mode@") === mode) mode = "3";
+					if (("@"+"versionUrl@") === url) url = "system/service/common/app.j";
+					if ((mode!=="1" && (mode!="2") && (mode!="3"))) return;
+					var async = (mode=="1");
+					var x5Version = "noApp";
+					var x5AppAgents = /x5app\/([0-9.]*)/.exec(navigator.userAgent);
+					if(x5AppAgents && x5AppAgents.length > 1){
+					   	x5Version = x5AppAgents[1] || "";
+					} 
+					function createXhr(){
+						try {	
+							return new XMLHttpRequest();
+						}catch (tryMS) {	
+							var version = ["MSXML2.XMLHttp.6.0",
+							               "MSXML2.XMLHttp.3.0",
+							               "MSXML2.XMLHttp",
+							               "Miscrosoft.XMLHTTP"];
+							for(var i = 0; i < version.length; i++){
+								try{
+							    	return new ActiveXObject(version[i]);
+								}catch(e){}
+							}
+						}
+						throw new Error("您的系统或浏览器不支持XHR对象！");
+					}
+					
+					function createGuid(){	
+						var guid = '';	
+						for (var i = 1; i <= 32; i++){		
+							var n = Math.floor(Math.random()*16.0).toString(16);		
+							guid += n;		
+							if((i==8)||(i==12)||(i==16)||(i==20))			
+								guid += '-';	
+						}	
+						return guid;
+					}
+					
+					function parseUrl(href){
+						href = href.split("#")[0];
+						var items = href.split("?");
+						href = items[0];
+						var query = items[1] || "";
+						items = href.split("/");
+						var baseItems = [];
+						var pathItems = [];
+						var isPath = false;
+						for (var i=0; i<items.length; i++){
+							if (mode == "3"){
+								if (items[i] && (items[i].indexOf("v_") === 0) 
+										&& (items[i].indexOf("l_") !== -1)
+										&& (items[i].indexOf("s_") !== -1)
+										&& (items[i].indexOf("d_") !== -1)
+										|| (items[i]=="v_")){
+									isPath = true;
+									continue;
+								}
+							}else{
+								if (items[i] && (items[i].indexOf("v-")===0) && (items[i].charAt(items[i].length-1)=="-") ){
+									isPath = true;
+									continue;
+								}
+							}
+							if (isPath){
+								pathItems.push(items[i]);
+							}else{
+								baseItems.push(items[i]);	
+							}
+							
+						}
+						var base = baseItems.join("/");
+						if (base.charAt(base.length-1)!=="/") base += "/";
+						
+						var path = pathItems.join("/");
+						if (path.charAt(0) !== "/") path = "/" + path;
+						return [base, path, query];
+					}
+					
+					
+					var items = parseUrl(window.location.href);
+					var base = items[0];
+					var path = items[1];
+					var query = items[2];
+					var xhr = createXhr();
+					url += ((url.indexOf("?")!=-1) ? "&" : "?") +"_=" + createGuid();
+					if (mode === "3"){
+						url += "&url=" + path;
+						if (query)
+							url += "&" + query;
+					}
+					xhr.open('GET', base + url, async);
+					
+					if (async){
+						xhr.onreadystatechange=function(){
+							if((xhr.readyState == 4) && (xhr.status == 200) && xhr.responseText){
+								var versionInfo = JSON.parse(xhr.responseText);
+								window.__justep.versionInfo = versionInfo;
+								window.__justep.versionInfo.baseUrl = base;
+								if (query){
+									path = path + "?" + query;
+								}
+								path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+								var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+								versionInfo.resourceInfo.indexPageURL = indexUrl;
+								if(versionInfo.resourceInfo.resourceUpdateMode != "md5"){
+									if (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1){
+										versionInfo.resourceInfo.isNewVersion = true;
+									};
+								}
+							}
+						}
+					}
+					
+					try{
+						xhr.send(null);
+						if (!async && (xhr.status == 200) && xhr.responseText){
+							var versionInfo = JSON.parse(xhr.responseText);
+							window.__justep.versionInfo = versionInfo;
+							window.__justep.versionInfo.baseUrl = base;
+							if ((mode==="3") && window.__justep.isDebug){
+								/* 模式3且是调试模式不重定向 */
+							}else{
+								if (query){
+									path = path + "?" + query;
+								}
+								if(versionInfo.resourceInfo.resourceUpdateMode == "md5"){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									versionInfo.resourceInfo.indexPageURL = indexUrl; 
+								}else if (versionInfo.resourceInfo && versionInfo.resourceInfo.version && (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1)){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									window.location.href = indexUrl;
+								}
+							}
+						}
+					}catch(e2){}
+				}("@versionUrl@", "@mode@"));
+                 
+        </script>
+    <link rel="stylesheet" href="../../../v_2779e84c8a61460497a0800026f5916bl_zh_CNs_d_m/system/components/bootstrap.min.css" include="$model/UI2/system/components/bootstrap/lib/css/bootstrap,$model/UI2/system/components/bootstrap/lib/css/bootstrap-theme"><link rel="stylesheet" href="../../../v_51d4c442e9ee43d2b1399bc92fb6b8c6l_zh_CNs_d_m/system/components/comp.min.css" include="$model/UI2/system/components/justep/lib/css2/dataControl,$model/UI2/system/components/justep/input/css/datePickerPC,$model/UI2/system/components/justep/messageDialog/css/messageDialog,$model/UI2/system/components/justep/lib/css3/round,$model/UI2/system/components/justep/input/css/datePicker,$model/UI2/system/components/justep/row/css/row,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/attachment/css/attachment,$model/UI2/system/components/justep/barcode/css/barcodeImage,$model/UI2/system/components/bootstrap/dropdown/css/dropdown,$model/UI2/system/components/justep/contents/css/contents,$model/UI2/system/components/justep/common/css/forms,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/locker/css/locker,$model/UI2/system/components/justep/menu/css/menu,$model/UI2/system/components/justep/scrollView/css/scrollView,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/dialog/css/dialog,$model/UI2/system/components/justep/bar/css/bar,$model/UI2/system/components/justep/popMenu/css/popMenu,$model/UI2/system/components/justep/lib/css/icons,$model/UI2/system/components/justep/lib/css4/e-commerce,$model/UI2/system/components/justep/toolBar/css/toolBar,$model/UI2/system/components/justep/popOver/css/popOver,$model/UI2/system/components/justep/panel/css/panel,$model/UI2/system/components/bootstrap/carousel/css/carousel,$model/UI2/system/components/justep/wing/css/wing,$model/UI2/system/components/bootstrap/scrollSpy/css/scrollSpy,$model/UI2/system/components/justep/titleBar/css/titleBar,$model/UI2/system/components/justep/lib/css1/linear,$model/UI2/system/components/justep/numberSelect/css/numberList,$model/UI2/system/components/justep/list/css/list,$model/UI2/system/components/justep/dataTables/css/dataTables"></head>
+	
+    <body style="width:100%;height:100%;margin: 0;">
+        <script intro="none"></script>
+    	<div id="applicationHost" class="applicationHost" style="width:100%;height:100%;" __component-context__="block"><div xid="window" class="window cimqMZf" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cimqMZf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <style>@font-face {font-family: "FZXYSJW"; src: url(../../../v_d2d2fd7c5292430c90d3124b4975a3ecl_zh_CNs_d_m/theAgentOrder2/common/css/FZXYSJW.TTF)} .btn.cimqMZf{font-family: "FZXYSJW" !important} span.cimqMZf, h5.cimqMZf, h4.cimqMZf, label.cimqMZf{font-family: "FZXYSJW" !important} html.cimqMZf, body.cimqMZf{position: relative; height: 100%} body.cimqMZf{background: rgb(238, 238, 238); font-size: 14px; color: rgb(0, 0, 0); margin: 0; padding: 0} .order_btn.cimqMZf{background-color: rgb(23, 1, 83)} .info.cimqMZf{color: grey; font-size: 1.1em; font-weight: normal} .text-white.cimqMZf{color: rgb(255, 255, 255)} .text-black.cimqMZf{color: rgb(33, 33, 33); height: 25px} .panel.panel-default.cimqMZf{margin-bottom: 10px} .panel-heading.cimqMZf{border-color: rgb(223, 223, 223)} .row.cimqMZf{margin: 0} .tb-noborder.cimqMZf{border: 0} .tb-img-shop.cimqMZf{width: 20px; height: 20px} .tb-img-good.cimqMZf{} .sumbtn.cimqMZf{border: 0px; width: 3em; border-top: 1px solid rgb(103, 201, 255); border-bottom: 1px solid rgb(103, 201, 255); border-radius: 0px; padding: 5px 0px; text-align: center} .addbtn.cimqMZf{border: 1px solid rgb(103, 201, 255); border-top-left-radius: 0em; border-top-right-radius: 2em; border-bottom-right-radius: 2em; border-bottom-left-radius: 0em} .div_radius.cimqMZf{border-radius: 10px} .inp_radius.cimqMZf{} .form-control.cimqMZf{border: none; border: 0; border-radius: 0; color: rgb(153, 153, 153)} .subbtn.cimqMZf{border: 1px solid rgb(103, 201, 255); border-top-left-radius: 2em; border-top-right-radius: 0em; border-bottom-right-radius: 0em; border-bottom-left-radius: 2em} .tb-goodList.cimqMZf{margin-bottom: 5px} .tb-goodList.cimqMZf:last-child{margin-bottom: 0px} .tb-goodList.cimqMZf .x-col.cimqMZf:first-child{padding-top: 35px} .tb-goodList.cimqMZf .x-col.cimqMZf:nth-child(2){width: 100px; padding-right: 5px} .tb-goodList.cimqMZf .h5.cimqMZf{height: 30px; overflow: hidden; text-overflow: ellipsis} .tb-goodList.cimqMZf .h6.cimqMZf{margin-top: 3px; margin-bottom: 3px} .tb-numberOperation.cimqMZf{width: 100%; height: 30px} .tb-numberOperation.cimqMZf .btn.cimqMZf{border-radius: 0} .tb-numberOperation.cimqMZf span.cimqMZf{padding: 4px 15px; border-top: 1px solid rgb(225, 225, 225); border-bottom: 1px solid rgb(225, 225, 225)} .x-panel-bottom.cimqMZf .h4.cimqMZf{margin: 5px 0} .index-title.cimqMZf{box-shadow: 0px 2px 2px rgb(23, 1, 83)} .tb-settlement.cimqMZf{line-height: 40px; background-color: rgb(0, 191, 255); color: rgb(255, 255, 255); font-size: 16px} html.cimqMZf{font-size: 62.5% !important} body.cimqMZf{font-size: 1.6rem "Microsoft YaHei", arial, tahoma, 宋体, sans-serif !important} .current2.cimqMZf{border-style: solid solid solid solid !important; border-width: medium medium medium medium !important; border-color: black black black black !important; color: rgb(142, 142, 142) !important} .x-popOver-content.cimqMZf{width: 300px; background-color: rgb(255, 255, 255)} .x-popOver.cimqMZf .x-popOver-overlay.cimqMZf{background-color: rgb(0, 0, 0)} .x-popOver.cimqMZf .x-popOver-content.cimqMZf{width: 100%; background-color: rgb(255, 255, 255); bottom: 0 !important} .tb-colorImg.cimqMZf{left: 10px; width: 60px; height: 70px} .tb-title.cimqMZf{padding: 20px 0 0 130px} .tb-close.cimqMZf{font-size: 30px} .tb-colorList.cimqMZf .col.cimqMZf{padding-left: 0; padding-right: 10px; margin-bottom: 10px} .tb-colorList.cimqMZf .col.cimqMZf div.cimqMZf{line-height: 30px; background-color: rgb(239, 239, 239); border-radius: 5px}</style>  
+  <title class="color_css cimqMZf" __cid="cimqMZf">代客户下单</title>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cimqMZf" class="cimqMZf"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcy6n2Aj-iosstatusbar cimqMZf" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cimqMZf"> 
+    <div class="x-panel-content cimqMZf" xid="content6" style="background-color:#F1EFF5;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cimqMZf"> 
+      <div xid="div17" style="padding:5px 5px 5px 5px;" __cid="cimqMZf" class="cimqMZf">
+        <div xid="div18" class="list-group-item div_radius cimqMZf" __cid="cimqMZf">
+          <div class="media cimqMZf" xid="media2" __cid="cimqMZf" data-bind="event:{click:$model._callModelFn.bind($model, 'row9Click')}"> 
+            <div class="media-body cimqMZf" xid="mediaBody4" __cid="cimqMZf"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cimqMZf" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cimqMZf"> 
+                <label xid="label4" style="width:6em;" __cid="cimqMZf" class="cimqMZf">客户信息：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cimqMZf" xid="output5" data-bind="component:{ref:$model.clientData.ref(&#34;client_name&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cimqMZf"></div>
+              </div> 
+            </div>  
+            <div class="media-right cimqMZf" xid="mediaRight2" style="line-height:30px" __cid="cimqMZf"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn-only-icon cimqMZf" xid="button7" style="color:#A9A8AC;font-weight:bold;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;linear linear-chevronright&#34;}" __cid="cimqMZf"> 
+                <i xid="i7" class="linear linear-chevronright cimqMZf" __cid="cimqMZf"></i>  
+                <span xid="span8" __cid="cimqMZf" class="cimqMZf"></span>
+              </a> 
+            </div> 
+          </div>
+        </div>
+        <div xid="div23" class="list-group-item div_radius cimqMZf" __cid="cimqMZf">
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cimqMZf" xid="labelEdit7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cimqMZf"> 
+            <label xid="label7" style="width:6em;" __cid="cimqMZf" class="cimqMZf">收货信息</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cimqMZf" xid="output7" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cimqMZf"></div>
+          </div>
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cimqMZf" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;addressData&#34;,&#34;limit&#34;:1}" __cid="cimqMZf"> 
+            <ul class="x-list-template hide cimqMZf" xid="listTemplateUl1" __cid="cimqMZf" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+              <li xid="li1" __cid="cimqMZf" class="cimqMZf" data-bind="event:{click:$model._callModelFn.bind($model, 'button14Click')}"> 
+                <div xid="div12" style="padding:5px 5px 5px 5px;border-style:none none none none;" __cid="cimqMZf" class="cimqMZf"> 
+                  <div class="media cimqMZf" xid="media1" __cid="cimqMZf"> 
+                    <div class="media-left cimqMZf" xid="mediaLeft3" __cid="cimqMZf"> 
+                      <img class="media-object cimqMZf" src="../../../v_b67c8345cdd14be8adb87b5797cf45adl_zh_CNs_d_m/TheSaleEnterprise/img/address.png" alt="" xid="image2" height="30px" style="width:30px;height:30px;margin-top:12px;" __cid="cimqMZf">
+                    </div>  
+                    <div class="media-body cimqMZf" xid="mediaBody3" __cid="cimqMZf"> 
+                      <h5 xid="h51" class="media-heading cimqMZf" __cid="cimqMZf"> 
+                        <span xid="span26" style="font-size:16px;color:#272727;" __cid="cimqMZf" class="cimqMZf" data-bind="text:val(&#34;consignee&#34;)">胡云卓玛</span>  
+                        <span xid="span27" style="color:#787878;" __cid="cimqMZf" class="cimqMZf" data-bind="text:val(&#34;phone&#34;)">18921619426</span>  
+                        <span xid="span30" style="color:#FF6760;margin-left:10px;background-color:#FFEDF3;width:88px;" __cid="cimqMZf" class="cimqMZf" data-bind="visible:val(&#34;is_default&#34;)==1">默认</span>
+                      </h5>  
+                      <h5 xid="h52" class="media-heading cimqMZf" style="color:#838383;" __cid="cimqMZf" data-bind="text:val(&#34;address&#34;)">上海市，浦东新区宁国路，二岗明珠楼</h5>  
+                      <h5 xid="h53" class="media-heading cimqMZf" style="color:#D67D51;" __cid="cimqMZf">收获不便时请联系管理员</h5>
+                    </div>  
+                    <div class="media-right cimqMZf" xid="mediaRight1" __cid="cimqMZf"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon cimqMZf" xid="button14" style="margin-top:12px;color:#A9A8AC;font-weight:bold;color:#A9A8AC;font-weight:bold;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button14Click" data-config="{&#34;icon&#34;:&#34;linear linear-chevronright&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cimqMZf"> 
+                        <i xid="i14" class="linear linear-chevronright cimqMZf" __cid="cimqMZf"></i>  
+                        <span xid="span28" __cid="cimqMZf" class="cimqMZf"></span>
+                      </a> 
+                    </div> 
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div>  
+          <div xid="div19" style="display:none" __cid="cimqMZf" class="cimqMZf" data-bind="visible:$model.addressData.getCount() ==0"> 
+            <div class="media cimqMZf" xid="media5" __cid="cimqMZf"> 
+              <div class="media-left cimqMZf" xid="mediaLeft6" __cid="cimqMZf"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon text-black cimqMZf" xid="button18" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-ios7-location&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cimqMZf"> 
+                  <i xid="i16" class="icon-ios7-location cimqMZf" __cid="cimqMZf"></i>  
+                  <span xid="span23" __cid="cimqMZf" class="cimqMZf"></span>
+                </a> 
+              </div>  
+              <div class="media-body cimqMZf" xid="mediaBody7" __cid="cimqMZf"> 
+                <h5 class="text-black cimqMZf" style="width:100%;" xid="h54" __cid="cimqMZf">未填写地址,请去填写地址</h5>
+              </div>  
+              <div class="media-right cimqMZf" xid="mediaRight5" __cid="cimqMZf"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon text-black cimqMZf" xid="button16" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button14Click" data-config="{&#34;icon&#34;:&#34;icon-ios7-arrow-forward&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cimqMZf"> 
+                  <i xid="i18" class="icon-ios7-arrow-forward cimqMZf" __cid="cimqMZf"></i>  
+                  <span xid="span24" __cid="cimqMZf" class="cimqMZf"></span>
+                </a> 
+              </div> 
+            </div> 
+          </div>
+        </div>
+        <div xid="div30" style="padding:5px 10px 5px 10px;" class="list-group-item div_radius cimqMZf" __cid="cimqMZf"> 
+          <div class="media cimqMZf" xid="media8" __cid="cimqMZf"> 
+            <div class="media-left cimqMZf" xid="mediaLeft9" __cid="cimqMZf"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn cimqMZf" xid="button26" style="color:black" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&#34;label&#34;:&#34;发货仓库&#34;}" __cid="cimqMZf"> 
+                <i xid="i26" __cid="cimqMZf" class="cimqMZf"></i>  
+                <span xid="span41" __cid="cimqMZf" class="cimqMZf">发货仓库</span>
+              </a> 
+            </div>  
+            <div class="media-body cimqMZf" xid="mediaBody10" style="text-align:right;" __cid="cimqMZf"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-icon-right cimqMZf" xid="button25" style="color:#212121;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;linear linear-chevronright&#34;,&#34;label&#34;:&#34;默认仓库&#34;}" __cid="cimqMZf"> 
+                <i xid="i25" style="color:black;font-weight:bold;" class="linear linear-chevronright cimqMZf" __cid="cimqMZf"></i>  
+                <span xid="span45" __cid="cimqMZf" class="cimqMZf">默认仓库</span>
+              </a> 
+            </div> 
+          </div> 
+        </div>
+        <div xid="div10" class="div_radius list-group-item cimqMZf" style="padding:5px;width:100%;" __cid="cimqMZf"> 
+          <div xid="div7" __cid="cimqMZf" class="cimqMZf"> 
+            <div xid="div27" __cid="cimqMZf" class="cimqMZf">
+              <div class="media cimqMZf" xid="media3" __cid="cimqMZf"> 
+                <div class="media-left cimqMZf" xid="mediaLeft4" __cid="cimqMZf"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn cimqMZf" xid="button1" style="color:black" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&#34;label&#34;:&#34;商品清单&#34;}" __cid="cimqMZf"> 
+                    <i xid="i1" __cid="cimqMZf" class="cimqMZf"></i>  
+                    <span xid="span4" __cid="cimqMZf" class="cimqMZf">商品清单</span>
+                  </a>
+                </div>  
+                <div class="media-body cimqMZf" xid="mediaBody5" style="text-align:right;" __cid="cimqMZf"></div>  
+                <div class="media-right cimqMZf" xid="mediaRight3" __cid="cimqMZf"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn cimqMZf" xid="button4" style="color:#A9A8AC;font-weight:bold;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&#34;icon&#34;:&#34;icon-arrow-down-b&#34;}" __cid="cimqMZf"> 
+                    <i xid="i4" class="icon-arrow-down-b cimqMZf" __cid="cimqMZf"></i>  
+                    <span xid="span5" __cid="cimqMZf" class="cimqMZf"></span>
+                  </a>
+                </div>
+              </div>
+            </div>  
+            <div xid="div29" style="text-align:center;" __cid="cimqMZf" class="cimqMZf">
+              <div component="$model/UI2/system/components/justep/button/buttonGroup" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cimqMZf" class="cimqMZf"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cimqMZf" xid="button24" style="border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#7B7B7B #7B7B7B #7B7B7B #7B7B7B;background-color:white;color:#7B7B7B" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&#34;icon&#34;:&#34;glyphicon glyphicon-unchecked&#34;,&#34;label&#34;:&#34;选择商品&#34;}" __cid="cimqMZf"> 
+                  <i xid="i24" class="glyphicon glyphicon-unchecked cimqMZf" __cid="cimqMZf"></i>  
+                  <span xid="span40" __cid="cimqMZf" class="cimqMZf">选择商品</span>
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cimqMZf" xid="button23" style="border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#7B7B7B #7B7B7B #7B7B7B #7B7B7B;background-color:white;color:#7B7B7B;margin-left:5px;margin-right:5px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;glyphicon glyphicon-barcode&#34;,&#34;label&#34;:&#34;扫描条码&#34;}" __cid="cimqMZf"> 
+                  <i xid="i23" class="glyphicon glyphicon-barcode cimqMZf" __cid="cimqMZf"></i>  
+                  <span xid="span39" __cid="cimqMZf" class="cimqMZf">扫描条码</span>
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cimqMZf" xid="button22" style="border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#7B7B7B #7B7B7B #7B7B7B #7B7B7B;background-color:white;color:#7B7B7B" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button22Click" data-config="{&#34;icon&#34;:&#34;glyphicon glyphicon-plus&#34;,&#34;label&#34;:&#34;添加赠品&#34;}" __cid="cimqMZf"> 
+                  <i xid="i22" class="glyphicon glyphicon-plus cimqMZf" __cid="cimqMZf"></i>  
+                  <span xid="span38" __cid="cimqMZf" class="cimqMZf">添加赠品</span>
+                </a>
+              </div>
+            </div>
+            <div xid="div28" __cid="cimqMZf" class="cimqMZf">
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cimqMZf" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;goodsDataM&#34;}" __cid="cimqMZf"> 
+                <ul class="x-list-template hide cimqMZf" xid="listTemplateUl2" __cid="cimqMZf" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}"> 
+                  <li xid="li3" __cid="cimqMZf" class="cimqMZf"> 
+                    <div xid="div6" style="padding:5px;border-right-style:none;border-left-style:none;" class="list-group-item cimqMZf" __cid="cimqMZf" data-bind="event:{click:$model._callModelFn.bind($model, 'div6Click')}"> 
+                      <div class="media-left cimqMZf" xid="mediaLeft2" __cid="cimqMZf"> 
+                        <img src="" alt="" xid="image4" class="tb-img-good div_radius cimqMZf" style="width:66px;height:66px;" __cid="cimqMZf" data-bind="attr:{src:val(&#34;goods_img&#34;)}">
+                      </div>  
+                      <div class="media-body cimqMZf" xid="mediaBody2" __cid="cimqMZf"> 
+                        <div xid="div9" style="padding:3px 3px 3px 3px;" __cid="cimqMZf" class="cimqMZf"> 
+                          <span class="text-black h5 cimqMZf" xid="span33" __cid="cimqMZf" data-bind="text:val(&#34;goods_name&#34;)"></span>
+                        </div>  
+                        <div class="text-muted cimqMZf" xid="div1" __cid="cimqMZf"> 
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn  btn-xs cimqMZf" xid="button13" style="background-color:#F9F8F9;color:#D67D51;margin-left:5px;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;border-color:#D67D51 #D67D51 #D67D51 #D67D51;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:val(&#34;specification&#34;),visible:val(&#34;specification&#34;) != &#34;&#34;" data-config="{&#34;label&#34;:&#34;button&#34;}" __cid="cimqMZf"> 
+                            <i xid="i13" __cid="cimqMZf" class="cimqMZf"></i>  
+                            <span xid="span17" __cid="cimqMZf" class="cimqMZf"></span>
+                          </a> 
+                        </div>  
+                        <div class="text-muted cimqMZf" xid="div2" __cid="cimqMZf"> 
+                          <div component="$model/UI2/system/components/justep/row/row" class="x-row cimqMZf" xid="row4" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cimqMZf"> 
+                            <div class="x-col x-col-33 cimqMZf" xid="col18" __cid="cimqMZf"> 
+                              <span xid="span32" class="text-danger pull-left   cimqMZf" style="font-size:16px;" __cid="cimqMZf">￥</span>  
+                              <span xid="span21" class=" text-danger pull-left cimqMZf" style="font-size:16px;" __cid="cimqMZf" data-bind="text:val(&#34;price&#34;)">0.00</span>
+                            </div>  
+                            <div class="x-col cimqMZf" xid="col19" __cid="cimqMZf"> 
+                              <div class="tb-numberOperation cimqMZf" xid="div8" style="text-align:right;" __cid="cimqMZf"> 
+                                <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-sm btn-only-icon pull-right cimqMZf" xid="button11" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{click:$model._callModelFn.bind($model, 'addBtnClick')}" data-config="{&#34;icon&#34;:&#34;icon-android-add&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cimqMZf"> 
+                                  <i xid="i12" class="icon-android-add cimqMZf" __cid="cimqMZf"></i>  
+                                  <span xid="span29" __cid="cimqMZf" class="cimqMZf"></span>
+                                </a>  
+                                <span xid="span16" class="pull-right cimqMZf" style="line-height:0.8;height:30px;" __cid="cimqMZf" data-bind="text:val(&#34;goods_num&#34;)"></span>  
+                                <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-sm btn-only-icon pull-right cimqMZf" xid="button12" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{click:$model._callModelFn.bind($model, 'reductionBtnClick')}" data-config="{&#34;icon&#34;:&#34;icon-android-remove&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cimqMZf"> 
+                                  <i xid="i11" class="icon-android-remove cimqMZf" __cid="cimqMZf"></i>  
+                                  <span xid="span10" __cid="cimqMZf" class="cimqMZf"></span>
+                                </a> 
+                              </div> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div xid="div16" class="list-group-item cimqMZf" style="padding:0px 0px 0px 20px;border-right-style:none;border-left-style:none;" __cid="cimqMZf"> 
+                      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cimqMZf" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cimqMZf"> 
+                        <label class="x-label cimqMZf" xid="label2" __cid="cimqMZf">商品备注</label>  
+                        <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cimqMZf" xid="input1" data-bind="component:{ref:ref(&#34;remark&#34;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;placeHolder&#34;:&#34;请输入&#34;}" __cid="cimqMZf">
+                      </div> 
+                    </div>  
+                    <div class="panel-heading cimqMZf" xid="div26" __cid="cimqMZf" data-bind="visible:val(&#34;sales_flag&#34;) == 0,event:{click:$model._callModelFn.bind($model, 'div7Click')}"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-icon-right pull-right cimqMZf" xid="button21" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-ios7-arrow-right&#34;,&#34;label&#34;:&#34;请选择赠品&#34;}" __cid="cimqMZf"> 
+                        <i class="icon-ios7-arrow-right text-muted cimqMZf" xid="i21" __cid="cimqMZf"></i>  
+                        <span xid="span25" style="color:#8B8B8B;" __cid="cimqMZf" class="cimqMZf">请选择赠品</span>
+                      </a>  
+                      <span xid="span25" __cid="cimqMZf" class="cimqMZf">满赠</span>  
+                      <div component="$model/UI2/system/components/justep/list/list" class="x-list cimqMZf" xid="list6" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;$model.pdata&#34;,&#34;filter&#34;:&#34; val(\&#34;goods_id\&#34;) ==  $row.val(\&#34;pid\&#34;)&#34;}" __cid="cimqMZf"> 
+                        <ul class="x-list-template hide cimqMZf" xid="listTemplateUl6" __cid="cimqMZf" data-bind="foreach:{data:$model.foreach_list6($element),afterRender:$model.foreach_afterRender_list6.bind($model,$element)}"> 
+                          <li xid="li8" __cid="cimqMZf" class="cimqMZf"> 
+                            <div class="media cimqMZf" xid="media7" __cid="cimqMZf"> 
+                              <div class="media-left cimqMZf" xid="mediaLeft8" __cid="cimqMZf"> 
+                                <a href="#" xid="a1" __cid="cimqMZf" class="cimqMZf"> 
+                                  <img class="media-object cimqMZf" src="" alt="" xid="image5" height="40px" style="width:40px;height:46px;" __cid="cimqMZf" data-bind="attr:{src:val(&#34;goods_img&#34;)}">
+                                </a> 
+                              </div>  
+                              <div class="media-body cimqMZf" xid="mediaBody9" __cid="cimqMZf"> 
+                                <h4 class="media-heading  cimqMZf" xid="h49" style="width:100%;font-size:14px;color:#727274;" __cid="cimqMZf" data-bind="text:val(&#34;goods_name&#34;)">Media heading</h4>
+                              </div> 
+                            </div> 
+                          </li> 
+                        </ul> 
+                      </div> 
+                    </div>
+                  </li> 
+                </ul> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cimqMZf" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;data2&#34;}" __cid="cimqMZf"> 
+                <ul class="x-list-template hide cimqMZf" xid="listTemplateUl5" __cid="cimqMZf" data-bind="foreach:{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)}"> 
+                  <li xid="li2" __cid="cimqMZf" class="cimqMZf"> 
+                    <div xid="div36" style="padding:5px;border-right-style:none;border-left-style:none;" class="list-group-item cimqMZf" __cid="cimqMZf" data-bind="event:{click:$model._callModelFn.bind($model, 'div6Click')}"> 
+                      <div class="media-left cimqMZf" xid="mediaLeft11" __cid="cimqMZf"> 
+                        <img src="" alt="" xid="image8" class="tb-img-good div_radius cimqMZf" style="width:66px;height:66px;" __cid="cimqMZf" data-bind="attr:{src:val(&#34;goods_img&#34;)}">  
+                        <img src="../../../v_b534ef613e1c4385b9eba088fc3d87a2l_zh_CNs_d_m/theAgentOrder/img/gifts.png" alt="" xid="image9" style="position:relative;right:6px;bottom:5px;width:56px;height:38px;left:3px;top:-55px;" class="tb-img-good div_radius cimqMZf" __cid="cimqMZf">
+                      </div>  
+                      <div class="media-body cimqMZf" xid="mediaBody11" __cid="cimqMZf"> 
+                        <div xid="div33" style="padding:3px 3px 3px 3px;" __cid="cimqMZf" class="cimqMZf"> 
+                          <span class="text-black h5 cimqMZf" xid="span59" __cid="cimqMZf" data-bind="text:val(&#34;goods_name&#34;)"></span>
+                        </div>  
+                        <div class="text-muted cimqMZf" xid="div38" __cid="cimqMZf"> 
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn  btn-xs cimqMZf" xid="button28" style="background-color:#F9F8F9;color:#D67D51;margin-left:5px;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;border-color:#D67D51 #D67D51 #D67D51 #D67D51;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:val(&#34;specification&#34;),visible:val(&#34;specification&#34;) != &#34;&#34;" data-config="{&#34;label&#34;:&#34;button&#34;}" __cid="cimqMZf"> 
+                            <i xid="i28" __cid="cimqMZf" class="cimqMZf"></i>  
+                            <span xid="span55" __cid="cimqMZf" class="cimqMZf"></span>
+                          </a> 
+                        </div>  
+                        <div class="text-muted cimqMZf" xid="div37" __cid="cimqMZf"> 
+                          <div component="$model/UI2/system/components/justep/row/row" class="x-row cimqMZf" xid="row6" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cimqMZf"> 
+                            <div class="x-col x-col-33 cimqMZf" xid="col7" __cid="cimqMZf"> 
+                              <span xid="span57" class="text-danger pull-left   cimqMZf" style="font-size:16px;" __cid="cimqMZf">￥</span>  
+                              <span xid="span54" class=" text-danger pull-left cimqMZf" style="font-size:16px;" __cid="cimqMZf">0.00</span>
+                            </div>  
+                            <div class="x-col cimqMZf" xid="col13" __cid="cimqMZf"> 
+                              <div class="tb-numberOperation cimqMZf" xid="div35" style="text-align:right;" __cid="cimqMZf"> 
+                                <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-sm btn-only-icon pull-right cimqMZf" xid="button30" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{click:$model._callModelFn.bind($model, 'button30Click')}" data-config="{&#34;icon&#34;:&#34;icon-android-add&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cimqMZf"> 
+                                  <i xid="i29" class="icon-android-add cimqMZf" __cid="cimqMZf"></i>  
+                                  <span xid="span52" __cid="cimqMZf" class="cimqMZf"></span>
+                                </a>  
+                                <span xid="span56" class="pull-right cimqMZf" style="line-height:0.8;height:30px;" __cid="cimqMZf" data-bind="text:val(&#34;goods_num&#34;)"></span>  
+                                <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-sm btn-only-icon pull-right cimqMZf" xid="button29" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{click:$model._callModelFn.bind($model, 'button29Click')}" data-config="{&#34;icon&#34;:&#34;icon-android-remove&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cimqMZf"> 
+                                  <i xid="i8" class="icon-android-remove cimqMZf" __cid="cimqMZf"></i>  
+                                  <span xid="span58" __cid="cimqMZf" class="cimqMZf"></span>
+                                </a> 
+                              </div> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div>
+            </div>  
+            <div xid="div31" class="list-group-item cimqMZf" style="padding:0px 0px 0px 0px;" __cid="cimqMZf">
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cimqMZf" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cimqMZf"> 
+                <div class="x-col cimqMZf" xid="col3" style="text-align:center;" __cid="cimqMZf"> 
+                  <span xid="span49" __cid="cimqMZf" class="cimqMZf" data-bind="text:$model.goodsDataM.getCount()">0</span>  
+                  <h5 xid="h55" __cid="cimqMZf" class="cimqMZf">
+                    <span xid="span9" style="color:#7F7F7F;" __cid="cimqMZf" class="cimqMZf">商品种类</span>
+                  </h5>
+                </div>  
+                <div class="x-col cimqMZf" xid="col5" style="text-align:center;" __cid="cimqMZf">
+                  <span xid="span46" __cid="cimqMZf" class="cimqMZf" data-bind="text:$model.sumdata.val(&#34;Value&#34;)">0</span>  
+                  <h5 xid="h56" __cid="cimqMZf" class="cimqMZf"> 
+                    <span xid="span50" style="color:#7F7F7F;" __cid="cimqMZf" class="cimqMZf">商品数量</span>
+                  </h5>
+                </div>  
+                <div class="x-col cimqMZf" xid="col6" style="text-align:center;" __cid="cimqMZf">
+                  <span xid="span48" __cid="cimqMZf" class="cimqMZf" data-bind="text:$model.orderFlagData.val(&#34;flag&#34;) == 0?$model.goodsDataM.sum(&#34;fsumMoney&#34;): $model.orderFlagData.val(&#34;newPrice&#34;)">0.00</span>  
+                  <h5 xid="h57" __cid="cimqMZf" class="cimqMZf"> 
+                    <span xid="span51" style="color:#7F7F7F;" __cid="cimqMZf" class="cimqMZf">金额合计</span>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>  
+          <div xid="div15" style="padding:5px 10px 5px 10px;" __cid="cimqMZf" class="cimqMZf">
+            <div class="media cimqMZf" xid="media4" __cid="cimqMZf"> 
+              <div class="media-left cimqMZf" xid="mediaLeft5" __cid="cimqMZf"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn cimqMZf" xid="button6" style="color:black" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&#34;label&#34;:&#34;发票信息&#34;}" __cid="cimqMZf"> 
+                  <i xid="i6" __cid="cimqMZf" class="cimqMZf"></i>  
+                  <span xid="span19" __cid="cimqMZf" class="cimqMZf">发票信息</span>
+                </a>
+              </div>  
+              <div class="media-body cimqMZf" xid="mediaBody6" style="text-align:right;" __cid="cimqMZf"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn  btn-icon-right cimqMZf" xid="button15" style="color:#212121;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{click:$model._callModelFn.bind($model, 'button17Click')}" data-config="{&#34;icon&#34;:&#34;linear linear-chevronright&#34;,&#34;label&#34;:&#34;不开发票&#34;}" __cid="cimqMZf"> 
+                  <i xid="i15" style="color:black;font-weight:bold;" class="linear linear-chevronright cimqMZf" __cid="cimqMZf"></i>  
+                  <span xid="span20" __cid="cimqMZf" class="cimqMZf">不开发票</span>
+                </a>
+              </div> 
+            </div>
+          </div>
+          <div xid="div13" style="padding:5px 10px 5px 20px;" __cid="cimqMZf" class="cimqMZf">
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cimqMZf" xid="labelEdit14" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cimqMZf"> 
+              <label class="x-label cimqMZf" xid="label15" style="width:7em;" __cid="cimqMZf">订单特批价</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cimqMZf" xid="input3" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-events="onBlur:input3Blur" data-config="{&#34;placeHolder&#34;:&#34;请输入&#34;}" __cid="cimqMZf">  
+              <label class="x-label cimqMZf" xid="label16" style="width:1em;color:#A9A8AC;font-weight:bold;" __cid="cimqMZf">元</label>
+            </div>
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cimqMZf" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cimqMZf"> 
+              <label class="x-label cimqMZf" xid="label5" style="width:7em;" __cid="cimqMZf">实收金额</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cimqMZf" xid="input4" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-events="onBlur:input4Blur" data-config="{&#34;dataType&#34;:&#34;Float&#34;,&#34;placeHolder&#34;:&#34;请输入&#34;}" __cid="cimqMZf">  
+              <label class="x-label cimqMZf" xid="label3" style="width:1em;color:#A9A8AC;font-weight:bold;" __cid="cimqMZf">元</label>
+            </div>
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cimqMZf" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cimqMZf"> 
+              <label class="x-label cimqMZf" xid="label10" __cid="cimqMZf">收款账户</label>  
+              <div class="x-edit cimqMZf" xid="div34" style="text-align:right;" __cid="cimqMZf" data-bind="event:{click:$model._callModelFn.bind($model, 'div34Click')}">
+                <a component="$model/UI2/system/components/justep/button/button" class="btn  btn-icon-right cimqMZf" xid="button27" style="color:#212121;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;linear linear-chevronright&#34;,&#34;label&#34;:&#34;现金&#34;}" __cid="cimqMZf"> 
+                  <i xid="i30" style="color:black;font-weight:bold;" class="linear linear-chevronright cimqMZf" __cid="cimqMZf"></i>  
+                  <span xid="span53" __cid="cimqMZf" class="cimqMZf">现金</span>
+                </a>
+              </div>
+            </div>
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cimqMZf" xid="labelEdit18" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cimqMZf"> 
+              <label class="x-label cimqMZf" xid="label21" style="width:7em;" __cid="cimqMZf">交货日期</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cimqMZf" xid="input5" data-bind="component:{ref:$model.data1.ref(&#34;col1&#34;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;dataType&#34;:&#34;Date&#34;,&#34;min&#34;:&#34;js:new Date()&#34;,&#34;placeHolder&#34;:&#34;请选择&#34;}" __cid="cimqMZf">
+            </div>
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cimqMZf" xid="labelEdit20" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cimqMZf"> 
+              <label class="x-label cimqMZf" xid="label23" style="width:7em;" __cid="cimqMZf">订单备注</label>  
+              <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit cimqMZf" xid="textarea4" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" data-config="{&#34;placeHolder&#34;:&#34;请输入&#34;}" __cid="cimqMZf"></textarea>
+            </div> 
+          </div> 
+        </div> 
+      </div>
+    </div>  
+    <div class="x-panel-bottom cimqMZf" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cimqMZf">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row tb-nopadding cimqMZf" xid="row2" style="padding-right:0px;;padding-top:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cimqMZf"> 
+        <div class="x-col x-col-20 x-col-center cimqMZf" xid="col4" __cid="cimqMZf"></div>  
+        <div class="x-col cimqMZf" xid="col4" __cid="cimqMZf"> 
+          <div class="text-right cimqMZf" xid="div14" __cid="cimqMZf"> 
+            <span xid="span35" class="text-muted cimqMZf" __cid="cimqMZf">合计：</span>  
+            <span xid="span31" class="text-danger cimqMZf" __cid="cimqMZf">￥</span>  
+            <span xid="sum" class="h4 text-danger cimqMZf" __cid="cimqMZf" data-bind="text:$model.orderFlagData.val(&#34;flag&#34;) == 0?$model.goodsDataM.sum(&#34;fsumMoney&#34;): $model.orderFlagData.val(&#34;newPrice&#34;)">0.00</span>
+          </div>  
+          <div class="text-right cimqMZf" xid="div11" __cid="cimqMZf"> 
+            <span xid="span34" __cid="cimqMZf" class="cimqMZf">共</span>  
+            <span xid="span1" __cid="cimqMZf" class="cimqMZf" data-bind="text:$model.goodsDataM.getCount()"></span>  
+            <span xid="span7" __cid="cimqMZf" class="cimqMZf">种</span>  
+            <span xid="span37" __cid="cimqMZf" class="cimqMZf" data-bind="text:$model.sumdata.val(&#34;Value&#34;)"></span>  
+            <span xid="span7" __cid="cimqMZf" class="cimqMZf">件商品</span>
+          </div> 
+        </div>  
+        <div class="x-col x-col-33 text-center tb-settlement cimqMZf" xid="col9" style="padding-right:0px" __cid="cimqMZf" data-bind="event:{click:$model._callModelFn.bind($model, 'settlementClick')}"> 
+          <span xid="span36" __cid="cimqMZf" class="cimqMZf">下单</span>
+        </div> 
+      </div>
+    </div>
+    <style __cid="cimqMZf" class="cimqMZf">.x-panel.pcy6n2Aj-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcy6n2Aj-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcy6n2Aj-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcy6n2Aj-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcy6n2Aj-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcy6n2Aj-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcy6n2Aj-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcy6n2Aj-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcy6n2Aj-iosstatusbar >.x-panel-content {top: 0px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="invoiceWinDiaLog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;src&#34;:&#34;$model/UI2/theAgentOrder2/placeOrder/orderDialog/dialog/invoice.w&#34;}" __cid="cimqMZf" class="cimqMZf">
+    <div class="x-dialog-overlay cimqMZf" __cid="cimqMZf"></div>
+    <div class="x-dialog cimqMZf" style="display:none;" __cid="cimqMZf">
+      <div class="x-dialog-title cimqMZf" __cid="cimqMZf">
+        <button class="close cimqMZf" __cid="cimqMZf">
+          <span __cid="cimqMZf" class="cimqMZf">×</span>
+        </button>
+        <div class="x-dialog-title-text cimqMZf" __cid="cimqMZf"></div>
+      </div>
+      <div class="x-dialog-body cimqMZf" __cid="cimqMZf"></div>
+    </div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cimqMZf" xid="popOver2" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;position&#34;:&#34;bottom&#34;}" __cid="cimqMZf"> 
+    <div class="x-popOver-overlay cimqMZf" xid="div20" __cid="cimqMZf"></div>  
+    <div class="x-popOver-content cimqMZf" xid="div24" style="width:100%;height:70%;" __cid="cimqMZf"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcauEN32-iosstatusbar cimqMZf" xid="panel4" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cimqMZf"> 
+        <div class="x-panel-content cimqMZf" xid="content3" style="background-color:#F4F2F8;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cimqMZf"> 
+          <div xid="div22" class="list-group-item cimqMZf" style="padding:10px 10px 10px 10px;" __cid="cimqMZf"> 
+            <div class="media cimqMZf" xid="media6" __cid="cimqMZf"> 
+              <div class="media-left cimqMZf" xid="mediaLeft7" __cid="cimqMZf"> 
+                <img alt="" xid="image3" height="60px" style="width:70px;height:60px" __cid="cimqMZf" class="cimqMZf" data-bind="attr:{src:$model.goodsDataM.val(&#34;goods_img&#34;)}">
+              </div>  
+              <div class="media-body cimqMZf" xid="mediaBody8" __cid="cimqMZf"> 
+                <h4 class="media-heading cimqMZf" xid="h43" style="font-size:16px;color:#3C3C3D;" __cid="cimqMZf" data-bind="text:$model.goodsDataM.val(&#34;goods_name&#34;)">请选择赠品</h4>  
+                <h4 class="media-heading cimqMZf" xid="h44" style="font-size:14px;color:#727274;" __cid="cimqMZf">请选择赠品</h4>
+              </div>  
+              <div class="media-right cimqMZf" xid="mediaRight6" __cid="cimqMZf"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right tb-close text-black cimqMZf" xid="button19" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver2.hide'}" data-config="{&#34;icon&#34;:&#34;icon-ios7-close-outline&#34;}" __cid="cimqMZf"> 
+                  <i xid="i19" class="icon-ios7-close-outline cimqMZf" __cid="cimqMZf"></i>  
+                  <span xid="span22" __cid="cimqMZf" class="cimqMZf"></span>
+                </a> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cimqMZf" xid="list4" dataItemAlias="jkjkjk" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;protionData&#34;}" __cid="cimqMZf"> 
+            <ul class="x-list-template hide cimqMZf" xid="listTemplateUl4" __cid="cimqMZf" data-bind="foreach:{data:$model.foreach_list4($element),afterRender:$model.foreach_afterRender_list4.bind($model,$element),as:'jkjkjk'}"> 
+              <li xid="li6" class="col col-xs-4 cimqMZf" style="padding:0px 0px 0px 0px;" __cid="cimqMZf"> 
+                <div xid="div21" class="list-group-item cimqMZf" style="padding:5px 5px 5px 5px;background-color:transparent;" __cid="cimqMZf"> 
+                  <div xid="div25" style="background-color:white;border-style:solid solid solid solid;border-width:medium medium medium medium;border-color:#FBF9FF #FBF9FF #FBF9FF #FBF9FF;" __cid="cimqMZf" class="cimqMZf" data-bind="css:{'current2':val(&#34;goods_id&#34;) == $model.protionData.val(&#34;goods_id&#34;)}"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cimqMZf" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cimqMZf"> 
+                      <div class="x-col cimqMZf" xid="col10" style="text-align:center;" __cid="cimqMZf"> 
+                        <img class="  cimqMZf" src="" alt="" xid="image6" height="60px" style="width:60px;" __cid="cimqMZf" data-bind="attr:{src:val(&#34;goods_img&#34;)}">  
+                        <h4 class="media-heading cimqMZf" xid="h45" style="font-size:14px;color:#727274;text-align:center;" __cid="cimqMZf" data-bind="text:val(&#34;goods_name&#34;)">Media heading</h4>
+                      </div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="x-panel-bottom cimqMZf" xid="bottom3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cimqMZf"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cimqMZf" xid="row1" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cimqMZf"> 
+            <div xid="col11" style="width:0.5em;" __cid="cimqMZf" class="cimqMZf"></div>  
+            <div class="x-col  cimqMZf" xid="col12" style="padding:3px 0px 3px 0px;" __cid="cimqMZf"> 
+              <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cimqMZf" xid="buttonGroup2" style="background-color:#47D1D1;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cimqMZf"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cimqMZf" xid="button20" style="color:#FBF9FF;font-size:14px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button20Click" data-config="{&#34;label&#34;:&#34;确定选择&#34;}" __cid="cimqMZf"> 
+                  <i xid="i20" __cid="cimqMZf" class="cimqMZf"></i>  
+                  <span xid="span44" __cid="cimqMZf" class="cimqMZf">确定选择</span>
+                </a> 
+              </div> 
+            </div>  
+            <div xid="col1" style="width:0.5em;" __cid="cimqMZf" class="cimqMZf"></div>
+          </div> 
+        </div>  
+        <style __cid="cimqMZf" class="cimqMZf">.x-panel.pcauEN32-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcauEN32-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcauEN32-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcauEN32-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcauEN32-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcauEN32-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcauEN32-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcauEN32-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcauEN32-iosstatusbar >.x-panel-content {top: 0px;}</style>
+      </div> 
+    </div> 
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="deleteOrderwinDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;routable&#34;:true,&#34;src&#34;:&#34;$model/UI2/theAgentOrder2/placeOrder/dialog/deleteGoodsInfo.w&#34;}" __cid="cimqMZf" class="cimqMZf">
+    <div class="x-dialog-overlay cimqMZf" __cid="cimqMZf"></div>
+    <div class="x-dialog cimqMZf" style="display:none;" __cid="cimqMZf">
+      <div class="x-dialog-title cimqMZf" __cid="cimqMZf">
+        <button class="close cimqMZf" __cid="cimqMZf">
+          <span __cid="cimqMZf" class="cimqMZf">×</span>
+        </button>
+        <div class="x-dialog-title-text cimqMZf" __cid="cimqMZf"></div>
+      </div>
+      <div class="x-dialog-body cimqMZf" __cid="cimqMZf"></div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="giftWinDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;routable&#34;:true,&#34;src&#34;:&#34;$model/UI2/theAgentOrder2/placeOrder/orderDialog/giftClassMain.w&#34;}" __cid="cimqMZf" class="cimqMZf">
+    <div class="x-dialog-overlay cimqMZf" __cid="cimqMZf"></div>
+    <div class="x-dialog cimqMZf" style="display:none;" __cid="cimqMZf">
+      <div class="x-dialog-title cimqMZf" __cid="cimqMZf">
+        <button class="close cimqMZf" __cid="cimqMZf">
+          <span __cid="cimqMZf" class="cimqMZf">×</span>
+        </button>
+        <div class="x-dialog-title-text cimqMZf" __cid="cimqMZf"></div>
+      </div>
+      <div class="x-dialog-body cimqMZf" __cid="cimqMZf"></div>
+    </div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cimqMZf" xid="popOver4" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;direction&#34;:&#34;auto&#34;}" __cid="cimqMZf"> 
+    <div class="x-popOver-overlay cimqMZf" xid="div32" __cid="cimqMZf"></div>  
+    <div class="x-popOver-content div_radius cimqMZf" xid="div39" style="height:60%;width:75%;" __cid="cimqMZf"> 
+      <div xid="div41" style="height:100%;width:100%;" __cid="cimqMZf" class="cimqMZf"> 
+        <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcuUvEry-iosstatusbar cimqMZf" xid="panel5" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cimqMZf"> 
+          <div class="x-panel-top cimqMZf" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cimqMZf"> 
+            <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cimqMZf" xid="titleBar2" style="background-color:#E1D6BD;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cimqMZf"> 
+              <div class="x-titlebar-left cimqMZf" xid="left2" __cid="cimqMZf"></div>  
+              <div class="x-titlebar-title cimqMZf" xid="title2" __cid="cimqMZf">收货账户</div>  
+              <div class="x-titlebar-right  cimqMZf" xid="right2" __cid="cimqMZf">
+                <div class="empty cimqMZf" __cid="cimqMZf"></div>
+              </div>
+            </div> 
+          </div>  
+          <div class="x-panel-content cimqMZf" xid="content8" style="background-color:#EEEEEE;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cimqMZf"> 
+            <div xid="div40" style="padding:8px 3px 3px 5px;" __cid="cimqMZf" class="cimqMZf"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cimqMZf" xid="list7" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;PaymenTypeData&#34;}" __cid="cimqMZf"> 
+                <ul class="x-list-template hide cimqMZf" xid="listTemplateUl7" __cid="cimqMZf" data-bind="foreach:{data:$model.foreach_list7($element),afterRender:$model.foreach_afterRender_list7.bind($model,$element)}"> 
+                  <li xid="li4" __cid="cimqMZf" class="cimqMZf" data-bind="event:{click:$model._callModelFn.bind($model, 'li4Click')}"> 
+                    <div xid="div32" class="list-group-item cimqMZf" __cid="cimqMZf"> 
+                      <div class="media cimqMZf" xid="media11" __cid="cimqMZf"> 
+                        <div class="media-body cimqMZf" xid="mediaBody12" __cid="cimqMZf"> 
+                          <h4 class="media-heading cimqMZf" xid="h41" style="text-align:center;font-size:18px;color:#484848;" __cid="cimqMZf" data-bind="text:val(&#34;name&#34;)">Media heading</h4>
+                        </div> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div> 
+          </div>  
+          <style __cid="cimqMZf" class="cimqMZf">.x-panel.pcuUvEry-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcuUvEry-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcuUvEry-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcuUvEry-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuUvEry-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcuUvEry-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuUvEry-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuUvEry-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuUvEry-iosstatusbar >.x-panel-content {top: 48px;}</style>
+        </div> 
+      </div> 
+    </div> 
+  </div>
+</div></div>
+        
+        <div id="downloadGCF" style="display:none;padding:50px;">
+        	<span>您使用的浏览器需要下载插件才能使用, </span>
+        	<a id="downloadGCFLink" href="#">下载地址</a>
+        	<p>(安装后请重新打开浏览器)</p>
+        </div>
+    	<script>
+    	
+    	            //判断浏览器, 判断GCF
+    	 			var browser = {
+    			        isIe: function () {
+    			            return navigator.appVersion.indexOf("MSIE") != -1;
+    			        },
+    			        navigator: navigator.appVersion,
+    			        getVersion: function() {
+    			            var version = 999; // we assume a sane browser
+    			            if (navigator.appVersion.indexOf("MSIE") != -1)
+    			                // bah, IE again, lets downgrade version number
+    			                version = parseFloat(navigator.appVersion.split("MSIE")[1]);
+    			            return version;
+    			        }
+    			    };
+    				function isGCFInstalled(){
+    			      try{
+    			        var i = new ActiveXObject('ChromeTab.ChromeFrame');
+    			        if (i) {
+    			          return true;
+    			        }
+    			      }catch(e){}
+    			      return false;
+    				}
+    	            //判断浏览器, 判断GCF
+    	            var __continueRun = true;
+    				if (browser.isIe() && (browser.getVersion() < 10) && !isGCFInstalled()) {
+    					document.getElementById("applicationHost").style.display = 'none';
+    					document.getElementById("downloadGCF").style.display = 'block';
+    					var downloadLink = "/" + location.pathname.match(/[^\/]+/)[0] + "/v8.msi";
+    					document.getElementById("downloadGCFLink").href = downloadLink; 
+    					__continueRun = false;
+    	            }
+		 	
+    	</script>
+        <script id="_metaJS" src="../../../v_88435f52d00d44b7af562d3fc045501al_zh_CNs_d_m/system/config/meta.js"> </script>
+        <script id="_requireJS" src="../../../v_8304413fb04d4e579f7c6611dc12f95fl_zh_CNs_d_m/system/lib/require/require.2.1.10.js"> </script>
+        <script src="../../../v_c36949e93d384cda96c65389043631acl_zh_CNs_d_m/system/core.min.js"></script><script src="../../../v_f07fd42071fd4e11a00c4d8cce5ff80cl_zh_CNs_d_m/system/common.min.js"></script><script src="../../../v_bb73acab331744989b6ee846286b8a08l_zh_CNs_d_m/system/components/comp.min.js"></script><script id="_mainScript">
+        
+			if (__continueRun) {
+                window.__justep.cssReady = function(fn){
+                	var promises = [];
+                	for (var p in window.__justep.__ResourceEngine.__loadingCss){
+                		if(window.__justep.__ResourceEngine.__loadingCss.hasOwnProperty(p))
+                			promises.push(window.__justep.__ResourceEngine.__loadingCss[p].promise());
+                	}
+                	$.when.apply($, promises).done(fn);
+                };
+                
+            	window.__justep.__ResourceEngine = {
+            		readyRegExp : navigator.platform === 'PLAYSTATION 3' ? /^complete$/ : /^(complete|loaded)$/,
+            		url: window.location.href,	
+            		/*contextPath: 不包括语言 */
+            		contextPath: "",
+            		serverPath: "",
+            		__loadedJS: [],
+            		__loadingCss: {},
+            		onLoadCss: function(url, node){
+            			if (!this.__loadingCss[url]){
+            				this.__loadingCss[url] = $.Deferred();	
+                			if (node.attachEvent &&
+                                    !(node.attachEvent.toString && node.attachEvent.toString().indexOf('[native code') < 0) &&
+                                    !(typeof opera !== 'undefined' && opera.toString() === '[object Opera]')) {
+                                node.attachEvent('onreadystatechange', this.onLinkLoad.bind(this));
+                            } else {
+                                node.addEventListener('load', this.onLinkLoad.bind(this), false);
+                                node.addEventListener('error', this.onLinkError.bind(this), false);
+                            }
+            			}
+            		},
+            		
+            		onLinkLoad: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+            	        if (evt.type === 'load' ||
+                                (this.readyRegExp.test(target.readyState))) {
+            	        	var url = target.getAttribute("href");
+            	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+            	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+            	        	}
+                        }
+            		},
+            		
+            		onLinkError: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+        	        	var url = target.getAttribute("href");
+        	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+        	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+        	        	}
+            		},
+            		
+            		initContextPath: function(){
+            			var baseURL = document.getElementById("_requireJS").src;
+            			var before = location.protocol + "//" + location.host;
+            			var after = "/system/lib/require/require.2.1.10";
+            			var i = baseURL.indexOf(after);
+            			if (i !== -1){
+    	        			var middle = baseURL.substring(before.length, i);
+    						var items = middle.split("/");
+    						
+    						
+    						if ((items[items.length-1].indexOf("v_") === 0) 
+    								&& (items[items.length-1].indexOf("l_") !== -1)
+    								&& (items[items.length-1].indexOf("s_") !== -1)
+    								&& (items[items.length-1].indexOf("d_") !== -1)
+    								|| (items[items.length-1]=="v_")){
+    							items.splice(items.length-1, 1);
+    						}
+    						
+    						
+    						if (items.length !== 1){
+    							window.__justep.__ResourceEngine.contextPath = items.join("/");
+    						}else{
+    							window.__justep.__ResourceEngine.contextPath = before;
+    						}
+    						var index = window.__justep.__ResourceEngine.contextPath.lastIndexOf("/");
+    						if (index != -1){
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath.substr(0, index);
+    						}else{
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath;
+    						}
+            			}else{
+            				throw new Error(baseURL + " hasn't  " + after);
+            			}
+            		},
+            	
+            		loadJs: function(urls){
+            			if (urls && urls.length>0){
+            				var loadeds = this._getResources("script", "src").concat(this.__loadedJS);
+    	       				for (var i=0; i<urls.length; i++){
+								var url = urls[i];
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					this.__loadedJS[this.__loadedJS.length] = url;
+    	        					/*
+    	        					var script = document.createElement("script");
+    	        					script.src = url;
+    	        					document.head.appendChild(script);
+    	        					*/
+    	        					//$("head").append("<script  src='" + url + "'/>");
+									var url = require.toUrl("$UI" + url);
+    	        					$.ajax({
+    	        						url: url,
+    	        						dataType: "script",
+    	        						cache: true,
+    	        						async: false,
+    	        						success: function(){}
+    	        						});
+    	        				} 
+    	       				}
+            			}
+            		},
+            		
+            		loadCss: function(styles){
+           				var loadeds = this._getResources("link", "href");
+            			if (styles && styles.length>0){
+            				for (var i=0; i<styles.length; i++){
+    	       					var url = window.__justep.__ResourceEngine.contextPath + styles[i].url.replace("/UI2/", "/");
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					var include = styles[i].include || "";
+    	        					var link = $("<link type='text/css' rel='stylesheet' href='" + url + "' include='" + include + "'/>");
+    	        					this.onLoadCss(url, link[0]);
+    	        					$("head").append(link);
+    	        				} 
+            				}
+            			}
+            			
+            		},
+            		
+            		
+            		_isLoaded: function(url, loadeds){
+            			if (url){
+            				var newUrl = "";
+            				var items = url.split("/");
+            				var isVls = false;
+            				for (var i=0; i<items.length; i++){
+            					if (isVls){
+                					newUrl += "/" + items[i];
+            					}else{
+                					if (items[i] && (items[i].indexOf("v_")===0)
+            								&& (items[i].indexOf("l_")!==-1)
+            								&& (items[i].indexOf("s_")!==-1)
+            								&& (items[i].indexOf("d_")!==-1)
+            								|| (items[i]=="v_")){
+                						isVls = true;
+                					}
+            					}
+            				}
+            				if (!newUrl)
+            					newUrl = url;
+            				
+            				for (var i=0; i<loadeds.length; i++){
+								var originUrl = this._getOriginUrl(loadeds[i]);
+								if (originUrl && (originUrl.indexOf(newUrl)!==-1)){
+									return true;
+								}
+    						}
+            			}
+    					return false;
+            		},
+
+					_getOriginUrl: function(url){
+						var result = "";
+						if (url && (url.indexOf(".md5_")!==-1)){
+							url = url.split("#")[0];
+							url = url.split("?")[0];
+							var items = url.split(".");
+							for (var i=0; i<items.length; i++){
+								if ((i===items.length-2) && (items[i].indexOf("md5_")!==-1)){
+									continue;
+								}else{
+									if (i>0) result += ".";
+									result += items[i];
+								}
+							}
+						}else{
+							result = url;
+						}
+						return result;
+					},
+            		
+            		_getResources: function(tag, attr){
+    					var result = [];
+    					var scripts = $(tag);
+    					for (var i=0; i<scripts.length; i++){
+    						var v = scripts[i][attr];
+    						if (v){
+    							result[result.length] = v;
+    						}
+    					}
+    					return result;
+            		}
+            	};
+            	
+            	window.__justep.__ResourceEngine.initContextPath();
+    			requirejs.config({
+    				baseUrl: window.__justep.__ResourceEngine.contextPath + '/v_f8717439436b4ba785e66e3546de8a3al_zh_CNs_d_m/theAgentOrder2/placeOrder',
+    			    paths: {
+    			    	/* 解决require.normalizeName与require.toUrl嵌套后不一致的bug   */
+    			    	'$model/UI2/v_': window.__justep.__ResourceEngine.contextPath + '/v_f8717439436b4ba785e66e3546de8a3al_zh_CNs_d_m',
+    			    	'$model/UI2': window.__justep.__ResourceEngine.contextPath + '/v_f8717439436b4ba785e66e3546de8a3al_zh_CNs_d_m',
+    			    	'$model': window.__justep.__ResourceEngine.serverPath,
+    			        'text': window.__justep.__ResourceEngine.contextPath + '/v_f8717439436b4ba785e66e3546de8a3al_zh_CNs_d_m/system/lib/require/text.2.0.10',
+    			        'bind': window.__justep.__ResourceEngine.contextPath + '/v_f8717439436b4ba785e66e3546de8a3al_zh_CNs_d_m/system/lib/bind/bind',
+    			        'jquery': window.__justep.__ResourceEngine.contextPath + '/v_f8717439436b4ba785e66e3546de8a3al_zh_CNs_d_m/system/lib/jquery/jquery-1.11.1.min'
+    			    },
+    			    map: {
+    				        '*': {
+    				            res: '$model/UI2/system/lib/require/res',
+    				            service: '$model/UI2/system/lib/require/service',
+    				            cordova: '$model/UI2/system/lib/require/cordova',
+    				            w: '$model/UI2/system/lib/require/w',
+    				            css: '$model/UI2/system/lib/require/css'
+    				        }
+    				},
+    				waitSeconds: 300
+    			});
+    			
+    			requirejs(['require', 'jquery', '$model/UI2/system/lib/base/composition', '$model/UI2/system/lib/base/url', '$model/UI2/system/lib/route/hashbangParser', '$model/UI2/system/components/justep/versionChecker/versionChecker', '$model/UI2/system/components/justep/loadingBar/loadingBar', '$model/UI2/system/lib/jquery/domEvent',  '$model/UI2/system/lib/cordova/cordova'],  function (require, $, composition, URL, HashbangParser,versionChecker) { 
+    				document.addEventListener('deviceready', function() {
+    	                if (navigator && navigator.splashscreen && navigator.splashscreen.hide) {
+    	                	/*延迟隐藏，视觉效果更理想*/
+    	                	setTimeout(function() {navigator.splashscreen.hide();}, 800);
+    	                }
+    	            }, false);
+					setTimeout(function(){
+						versionChecker.check();
+					},2000);
+    				var context = {};
+    				context.model = '$model/UI2/theAgentOrder2/placeOrder/placeOrder.w' + (document.location.search || "");
+    				context.view = $('#applicationHost').children()[0];
+    				var element = document.getElementById('applicationHost');
+
+					    				
+    				
+    				var ownerid = new URL(window.__justep.__ResourceEngine.url).getParam("$ownerid");
+    				var pwindow = opener;
+    				if (!pwindow && window.parent && window.parent.window){
+    					pwindow = window.parent.window;
+    				}
+    				if(ownerid && pwindow 
+    						&& pwindow.__justep && pwindow.__justep.windowOpeners
+    						&& pwindow.__justep.windowOpeners[ownerid]
+    						&& $.isFunction(pwindow.__justep.windowOpeners[ownerid].sendToWindow)){
+    					window.__justep.setParams = function(params){
+    						/* 给windowOpener提供再次传参数的接口  */
+    						params = params || {};
+    						composition.setParams(document.getElementById('applicationHost'), params);
+    					};
+    					var winOpener = pwindow.__justep.windowOpeners[ownerid];
+    					if(winOpener) winOpener.window = window;
+    					$(window).unload(function(event){
+    						if(winOpener && winOpener.dispatchCloseEvent) winOpener.dispatchCloseEvent();
+    					});
+    					var params = winOpener.sendToWindow();
+						context.owner = winOpener;
+						context.params = params || {};
+	        			composition.compose(element, context);
+    				}else{
+        				var params =  {};
+    					var state = new HashbangParser(window.location.hash).parse().__state;
+    					if (state){
+    						params = state.get("");
+    						try{
+    							params = JSON.parse(params);
+    							if (params.hasOwnProperty("__singleValue__")){
+    								params = params.__singleValue__;
+    							}
+    						}catch(e1){}
+    					}
+    					context.noUpdateState = true;
+        				context.params = params;
+        				composition.compose(element, context);
+    				}
+    			});    
+            }
+		 	
+        </script>
+    </body>
+</html>

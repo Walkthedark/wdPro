@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cNfm26b" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cNfm26b" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <style>.btn_radius.cNfm26b{border-radius: 15px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cNfm26b" class="cNfm26b"></div>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cNfm26b" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;active&#34;:0}" __cid="cNfm26b"> 
+    <div class="x-contents-content active cNfm26b" xid="content1" style="background-color:#F2F1F2;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cNfm26b"> 
+      <div xid="div1" style="background-color:white;" __cid="cNfm26b" class="cNfm26b">
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cNfm26b" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNfm26b"> 
+          <div class="x-col cNfm26b" xid="col1" __cid="cNfm26b"></div>  
+          <div class="x-col x-col-80 cNfm26b" xid="col2" style="text-align:center;" __cid="cNfm26b">
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cNfm26b" xid="button1" style="color:#EB7795;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:&#34;结束时间&#34; +  $model.data1.val(&#34;end_time&#34;)" data-config="{&#34;icon&#34;:&#34;linear linear-clock&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cNfm26b"> 
+              <i xid="i1" class="linear linear-clock cNfm26b" __cid="cNfm26b"></i>  
+              <span xid="span1" __cid="cNfm26b" class="cNfm26b"></span>
+            </a>
+          </div>  
+          <div class="x-col cNfm26b" xid="col3" __cid="cNfm26b"></div>
+        </div>
+      </div>  
+      <div xid="div2" style="padding:10px 10px 10px 10px;" __cid="cNfm26b" class="cNfm26b">
+        <div xid="div3" style="padding:10px 10px 10px 10px;background-color:white;height:200px;" class="btn_radius cNfm26b" __cid="cNfm26b">
+          <h4 class="media-heading cNfm26b" xid="h41" __cid="cNfm26b"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-warning btn-xs cNfm26b" xid="button2" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:$model.data1.val(&#34;promotion_cate&#34;) ==3" data-config="{&#34;label&#34;:&#34;组合&#34;}" __cid="cNfm26b"> 
+              <i xid="i2" __cid="cNfm26b" class="cNfm26b"></i>  
+              <span xid="span2" __cid="cNfm26b" class="cNfm26b">组合</span>
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-warning btn-xs cNfm26b" xid="button3" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:$model.data1.val(&#34;promotion_cate&#34;) ==1" data-config="{&#34;label&#34;:&#34;单品&#34;}" __cid="cNfm26b"> 
+              <i xid="i4" __cid="cNfm26b" class="cNfm26b"></i>  
+              <span xid="span3" __cid="cNfm26b" class="cNfm26b">单品</span>
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn x-blue btn-xs cNfm26b" xid="button7" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:$model.data1.val(&#34;promotion_cate&#34;) ==2" data-config="{&#34;label&#34;:&#34;订单&#34;}" __cid="cNfm26b"> 
+              <i xid="i5" __cid="cNfm26b" class="cNfm26b"></i>  
+              <span xid="span7" __cid="cNfm26b" class="cNfm26b">订单</span>
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs cNfm26b" xid="button2" style="font-family:“Microsoft YaHei”;font-size:16px;color:#212121;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:$model.data1.val(&#34;promotion_title&#34;)" __cid="cNfm26b"> 
+              <i xid="i2" __cid="cNfm26b" class="cNfm26b"></i>  
+              <span xid="span2" __cid="cNfm26b" class="cNfm26b"></span>
+            </a> 
+          </h4>  
+          <h5 xid="h51" __cid="cNfm26b" class="cNfm26b"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs cNfm26b" xid="button4" style="color:#6B6B6B;font-size:14px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;活动内容&#34;}" __cid="cNfm26b"> 
+              <i xid="i3" __cid="cNfm26b" class="cNfm26b"></i>  
+              <span xid="span4" __cid="cNfm26b" class="cNfm26b">活动内容</span>
+            </a>
+            <h5 xid="h52" style="font-family:“Microsoft YaHei”;font-size:14px;color:#212121;" __cid="cNfm26b" class="cNfm26b"></h5>
+          </h5>  
+          <h5 xid="h54" __cid="cNfm26b" class="cNfm26b"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs cNfm26b" xid="button6" style="color:#6B6B6B;font-size:14px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;活动时间&#34;}" __cid="cNfm26b"> 
+              <i xid="i7" __cid="cNfm26b" class="cNfm26b"></i>  
+              <span xid="span6" __cid="cNfm26b" class="cNfm26b">活动时间</span>
+            </a>  
+            <h5 xid="h53" style="font-family:“Microsoft YaHei”;font-size:14px;color:#212121;" __cid="cNfm26b" class="cNfm26b">
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cNfm26b" xid="button5" style="font-family:“Microsoft YaHei”;font-size:14px;color:#212121;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:$model.data1.val(&#34;start_time&#34;)" data-config="{&#34;label&#34;:&#34;button&#34;}" __cid="cNfm26b"> 
+                <i xid="i6" __cid="cNfm26b" class="cNfm26b"></i>  
+                <span xid="span5" __cid="cNfm26b" class="cNfm26b"></span>
+              </a>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cNfm26b" xid="button8" style="font-family:“Microsoft YaHei”;font-size:14px;color:#212121;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;～&#34;}" __cid="cNfm26b"> 
+                <i xid="i8" __cid="cNfm26b" class="cNfm26b"></i>  
+                <span xid="span8" __cid="cNfm26b" class="cNfm26b">～</span>
+              </a>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cNfm26b" xid="button9" style="font-family:“Microsoft YaHei”;font-size:14px;color:#212121;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:$model.data1.val(&#34;end_time&#34;)" __cid="cNfm26b"> 
+                <i xid="i9" __cid="cNfm26b" class="cNfm26b"></i>  
+                <span xid="span9" __cid="cNfm26b" class="cNfm26b"></span>
+              </a>
+            </h5>
+          </h5>
+        </div>
+      </div>  
+      <div xid="div4" style="padding:10px 10px 10px 10px;background-color:white;" class="btn_radius cNfm26b" __cid="cNfm26b"> 
+        <h5 xid="h57" __cid="cNfm26b" class="cNfm26b"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs cNfm26b" xid="button11" style="color:#6B6B6B;font-size:14px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;参见活动的商品&#34;}" __cid="cNfm26b"> 
+            <i xid="i10" __cid="cNfm26b" class="cNfm26b"></i>  
+            <span xid="span11" __cid="cNfm26b" class="cNfm26b">参见活动的商品</span>
+          </a> 
+        </h5>
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cNfm26b" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;goodsDataM&#34;,&#34;limit&#34;:10}" __cid="cNfm26b"> 
+          <ul class="x-list-template hide cNfm26b" xid="listTemplateUl1" __cid="cNfm26b" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+            <li xid="li1" class="media cNfm26b" __cid="cNfm26b"> 
+              <div xid="div10" class="media-left cNfm26b" __cid="cNfm26b"> 
+                <img alt="" xid="image1" class="img-rounded media-object cNfm26b" height="80px" style="width:80px;" __cid="cNfm26b" data-bind="attr:{src:val(&#34;goods_img&#34;)}">
+              </div>  
+              <div class="media-body cNfm26b" xid="div14" __cid="cNfm26b"> 
+                <h5 class="media-heading lead text-black cNfm26b" xid="h55" style="color:black;font-size:16px;" __cid="cNfm26b" data-bind="text:val(&#34;goods_name&#34;)"></h5>  
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cNfm26b" xid="row2" style="height:2px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNfm26b"> 
+                  <div class="x-col cNfm26b" xid="col4" __cid="cNfm26b"></div>
+                </div>  
+                <div class="text-muted cNfm26b" xid="div16" __cid="cNfm26b"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn x-orange btn-xs  cNfm26b" xid="button10" style="background-color:white;border-style:none none none none;border-width:thin thin thin thin;border-color:#C0C0C0 #C0C0C0 #C0C0C0 #C0C0C0;color:#9F9F9F;font-size:14px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:val(&#34;guige&#34;)" data-config="{&#34;label&#34;:&#34;button&#34;}" __cid="cNfm26b"> 
+                    <i xid="i12" __cid="cNfm26b" class="cNfm26b"></i>  
+                    <span xid="span13" __cid="cNfm26b" class="cNfm26b"></span>
+                  </a> 
+                </div>  
+                <div class="text-muted cNfm26b" xid="div15" __cid="cNfm26b"> 
+                  <div class="tb-numberOperation cNfm26b" xid="div21" style="text-align:right;" __cid="cNfm26b"> 
+                    <span xid="span30" class="pull-right cNfm26b" style="line-height:0.8;height:22px;" __cid="cNfm26b"></span> 
+                  </div> 
+                </div> 
+              </div> 
+            </li> 
+          </ul> 
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>

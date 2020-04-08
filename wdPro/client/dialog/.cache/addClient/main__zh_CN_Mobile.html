@@ -1,0 +1,1266 @@
+<!DOCTYPE HTML>
+<html style="width:100%;height:100%" class="no-js">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+        <script src="../../../../v_84fa9e003fef40ec8d7a3e960072f73bl_zh_CNs_d_m/system/lib/base/modernizr-2.8.3.min.js"></script>
+		<script id="__varReplace">
+    	
+    	    	window.__justep = window.__justep || {};
+				window.__justep.isDebug = true;
+				window.__justep.__packageMode = "1";
+				window.__justep.__isPackage = false;;
+				window.__justep.url = location.href;
+				window.__justep.versionInfo = {};
+		 
+    	</script>
+        <script id="__updateVersion">
+        
+				(function(url, mode){
+					if (("@"+"mode@") === mode) mode = "3";
+					if (("@"+"versionUrl@") === url) url = "system/service/common/app.j";
+					if ((mode!=="1" && (mode!="2") && (mode!="3"))) return;
+					var async = (mode=="1");
+					var x5Version = "noApp";
+					var x5AppAgents = /x5app\/([0-9.]*)/.exec(navigator.userAgent);
+					if(x5AppAgents && x5AppAgents.length > 1){
+					   	x5Version = x5AppAgents[1] || "";
+					} 
+					function createXhr(){
+						try {	
+							return new XMLHttpRequest();
+						}catch (tryMS) {	
+							var version = ["MSXML2.XMLHttp.6.0",
+							               "MSXML2.XMLHttp.3.0",
+							               "MSXML2.XMLHttp",
+							               "Miscrosoft.XMLHTTP"];
+							for(var i = 0; i < version.length; i++){
+								try{
+							    	return new ActiveXObject(version[i]);
+								}catch(e){}
+							}
+						}
+						throw new Error("您的系统或浏览器不支持XHR对象！");
+					}
+					
+					function createGuid(){	
+						var guid = '';	
+						for (var i = 1; i <= 32; i++){		
+							var n = Math.floor(Math.random()*16.0).toString(16);		
+							guid += n;		
+							if((i==8)||(i==12)||(i==16)||(i==20))			
+								guid += '-';	
+						}	
+						return guid;
+					}
+					
+					function parseUrl(href){
+						href = href.split("#")[0];
+						var items = href.split("?");
+						href = items[0];
+						var query = items[1] || "";
+						items = href.split("/");
+						var baseItems = [];
+						var pathItems = [];
+						var isPath = false;
+						for (var i=0; i<items.length; i++){
+							if (mode == "3"){
+								if (items[i] && (items[i].indexOf("v_") === 0) 
+										&& (items[i].indexOf("l_") !== -1)
+										&& (items[i].indexOf("s_") !== -1)
+										&& (items[i].indexOf("d_") !== -1)
+										|| (items[i]=="v_")){
+									isPath = true;
+									continue;
+								}
+							}else{
+								if (items[i] && (items[i].indexOf("v-")===0) && (items[i].charAt(items[i].length-1)=="-") ){
+									isPath = true;
+									continue;
+								}
+							}
+							if (isPath){
+								pathItems.push(items[i]);
+							}else{
+								baseItems.push(items[i]);	
+							}
+							
+						}
+						var base = baseItems.join("/");
+						if (base.charAt(base.length-1)!=="/") base += "/";
+						
+						var path = pathItems.join("/");
+						if (path.charAt(0) !== "/") path = "/" + path;
+						return [base, path, query];
+					}
+					
+					
+					var items = parseUrl(window.location.href);
+					var base = items[0];
+					var path = items[1];
+					var query = items[2];
+					var xhr = createXhr();
+					url += ((url.indexOf("?")!=-1) ? "&" : "?") +"_=" + createGuid();
+					if (mode === "3"){
+						url += "&url=" + path;
+						if (query)
+							url += "&" + query;
+					}
+					xhr.open('GET', base + url, async);
+					
+					if (async){
+						xhr.onreadystatechange=function(){
+							if((xhr.readyState == 4) && (xhr.status == 200) && xhr.responseText){
+								var versionInfo = JSON.parse(xhr.responseText);
+								window.__justep.versionInfo = versionInfo;
+								window.__justep.versionInfo.baseUrl = base;
+								if (query){
+									path = path + "?" + query;
+								}
+								path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+								var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+								versionInfo.resourceInfo.indexPageURL = indexUrl;
+								if(versionInfo.resourceInfo.resourceUpdateMode != "md5"){
+									if (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1){
+										versionInfo.resourceInfo.isNewVersion = true;
+									};
+								}
+							}
+						}
+					}
+					
+					try{
+						xhr.send(null);
+						if (!async && (xhr.status == 200) && xhr.responseText){
+							var versionInfo = JSON.parse(xhr.responseText);
+							window.__justep.versionInfo = versionInfo;
+							window.__justep.versionInfo.baseUrl = base;
+							if ((mode==="3") && window.__justep.isDebug){
+								/* 模式3且是调试模式不重定向 */
+							}else{
+								if (query){
+									path = path + "?" + query;
+								}
+								if(versionInfo.resourceInfo.resourceUpdateMode == "md5"){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									versionInfo.resourceInfo.indexPageURL = indexUrl; 
+								}else if (versionInfo.resourceInfo && versionInfo.resourceInfo.version && (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1)){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									window.location.href = indexUrl;
+								}
+							}
+						}
+					}catch(e2){}
+				}("@versionUrl@", "@mode@"));
+                 
+        </script>
+    <link rel="stylesheet" href="../../../../v_b24b1be3bded46adaad42526f967c5fel_zh_CNs_d_m/system/components/bootstrap.min.css" include="$model/UI2/system/components/bootstrap/lib/css/bootstrap,$model/UI2/system/components/bootstrap/lib/css/bootstrap-theme"><link rel="stylesheet" href="../../../../v_5f4838ccbdd34967bbb8d012d14f576cl_zh_CNs_d_m/system/components/comp.min.css" include="$model/UI2/system/components/justep/lib/css2/dataControl,$model/UI2/system/components/justep/input/css/datePickerPC,$model/UI2/system/components/justep/messageDialog/css/messageDialog,$model/UI2/system/components/justep/lib/css3/round,$model/UI2/system/components/justep/input/css/datePicker,$model/UI2/system/components/justep/row/css/row,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/attachment/css/attachment,$model/UI2/system/components/justep/barcode/css/barcodeImage,$model/UI2/system/components/bootstrap/dropdown/css/dropdown,$model/UI2/system/components/justep/contents/css/contents,$model/UI2/system/components/justep/common/css/forms,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/locker/css/locker,$model/UI2/system/components/justep/menu/css/menu,$model/UI2/system/components/justep/scrollView/css/scrollView,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/dialog/css/dialog,$model/UI2/system/components/justep/bar/css/bar,$model/UI2/system/components/justep/popMenu/css/popMenu,$model/UI2/system/components/justep/lib/css/icons,$model/UI2/system/components/justep/lib/css4/e-commerce,$model/UI2/system/components/justep/toolBar/css/toolBar,$model/UI2/system/components/justep/popOver/css/popOver,$model/UI2/system/components/justep/panel/css/panel,$model/UI2/system/components/bootstrap/carousel/css/carousel,$model/UI2/system/components/justep/wing/css/wing,$model/UI2/system/components/bootstrap/scrollSpy/css/scrollSpy,$model/UI2/system/components/justep/titleBar/css/titleBar,$model/UI2/system/components/justep/lib/css1/linear,$model/UI2/system/components/justep/numberSelect/css/numberList,$model/UI2/system/components/justep/list/css/list,$model/UI2/system/components/justep/dataTables/css/dataTables"></head>
+	
+    <body style="width:100%;height:100%;margin: 0;">
+        <script intro="none"></script>
+    	<div id="applicationHost" class="applicationHost" style="width:100%;height:100%;" __component-context__="block"><div xid="window" class="window c7Z3umq" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c7Z3umq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <style>body.c7Z3umq{font: 14px/ 1.5 "Microsoft YaHei", arial, tahoma, 宋体, sans-serif} html.c7Z3umq{font-size: 62.5% !important} body.c7Z3umq{font-size: 1.6rem !important} .x-label.c7Z3umq{color: rgb(53, 53, 53)} .btn-color.c7Z3umq{background-color: rgb(255, 255, 255); color: rgb(64, 116, 34)} .btn-group.c7Z3umq .btn.active.c7Z3umq{background-color: rgb(75, 118, 174); color: rgb(255, 255, 255)} .btn-radius.c7Z3umq{border-radius: 5px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="c7Z3umq" class="c7Z3umq"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcuqeamm-iosstatusbar c7Z3umq" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c7Z3umq"> 
+    <div class="x-panel-top c7Z3umq" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7Z3umq">
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified c7Z3umq" xid="buttonGroup1" style="height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="c7Z3umq"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c7Z3umq" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;客户信息&#34;,&#34;target&#34;:&#34;content1&#34;}" __cid="c7Z3umq"> 
+          <i xid="i17" __cid="c7Z3umq" class="c7Z3umq"></i>  
+          <span xid="span20" __cid="c7Z3umq" class="c7Z3umq">客户信息</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c7Z3umq" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;基本信息&#34;,&#34;target&#34;:&#34;content3&#34;}" __cid="c7Z3umq"> 
+          <i xid="i19" __cid="c7Z3umq" class="c7Z3umq"></i>  
+          <span xid="span21" __cid="c7Z3umq" class="c7Z3umq">基本信息</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c7Z3umq" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;个人喜好&#34;,&#34;target&#34;:&#34;content4&#34;}" __cid="c7Z3umq"> 
+          <i xid="i20" __cid="c7Z3umq" class="c7Z3umq"></i>  
+          <span xid="span22" __cid="c7Z3umq" class="c7Z3umq">个人喜好</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c7Z3umq" xid="button11" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;恋爱经历&#34;,&#34;target&#34;:&#34;content5&#34;}" __cid="c7Z3umq"> 
+          <i xid="i24" __cid="c7Z3umq" class="c7Z3umq"></i>  
+          <span xid="span26" __cid="c7Z3umq" class="c7Z3umq">恋爱经历</span>
+        </a> 
+      </div> 
+    </div>  
+    <div class="x-panel-content c7Z3umq" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7Z3umq">
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full c7Z3umq" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;active&#34;:0,&#34;routable&#34;:false,&#34;slidable&#34;:false,&#34;swipe&#34;:false,&#34;wrap&#34;:false}" __cid="c7Z3umq"> 
+        <div class="x-contents-content active c7Z3umq" xid="content1" style="background-color:#EBEAF0;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c7Z3umq"> 
+          <div xid="div1" class="list-group-item c7Z3umq" style="background-color:#EBEAF0;" __cid="c7Z3umq"> 
+            <span xid="span1" __cid="c7Z3umq" class="c7Z3umq">客户</span> 
+          </div>  
+          <div xid="div2" class="list-group-item c7Z3umq" style="border-right-style:none;border-left-style:none;padding-right:0px;padding-top:2px;padding-bottom:2px;" __cid="c7Z3umq"> 
+            <div xid="div3" class="list-group-item c7Z3umq" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" xid="label1" style="width:90px;font-size:16px" __cid="c7Z3umq">客户名称
+                  <span xid="span18" style="color:#FD3240;" __cid="c7Z3umq" class="c7Z3umq">*</span>
+                </label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="nameInp" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq"> 
+              </div> 
+            </div>  
+            <div xid="div24" class="list-group-item c7Z3umq" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c7Z3umq" xid="labelEdit14" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" style="width:90px;font-size:16px" xid="label14" __cid="c7Z3umq">客户编码
+                  <span xid="span23" style="color:#FD3240;" __cid="c7Z3umq" class="c7Z3umq">*</span>
+                </label>  
+                <div class="x-edit c7Z3umq" xid="div16" __cid="c7Z3umq"> 
+                  <div class="input-group c7Z3umq" xid="div23" __cid="c7Z3umq"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control c7Z3umq" xid="input1" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">  
+                    <span class="input-group-btn c7Z3umq" xid="span15" __cid="c7Z3umq"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c7Z3umq" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&#34;label&#34;:&#34;生成&#34;}" __cid="c7Z3umq"> 
+                        <i xid="i16" __cid="c7Z3umq" class="c7Z3umq"></i>  
+                        <span xid="span17" __cid="c7Z3umq" class="c7Z3umq">生成</span>
+                      </a>
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>
+            <div xid="div20" class="list-group-item c7Z3umq" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c7Z3umq" xid="labelEdit19" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" style="width:90px;font-size:16px" xid="label19" __cid="c7Z3umq">客户分类
+                  <span xid="span24" style="color:#FD3240;" __cid="c7Z3umq" class="c7Z3umq">*</span>
+                </label>  
+                <div class="x-edit c7Z3umq" xid="div21" __cid="c7Z3umq"> 
+                  <div class="input-group c7Z3umq" xid="div22" __cid="c7Z3umq"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control c7Z3umq" xid="typeInp" style="background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;disabled&#34;:true,&#34;placeHolder&#34;:&#34;请选择&#34;}" __cid="c7Z3umq">  
+                    <span class="input-group-btn c7Z3umq" xid="span2" __cid="c7Z3umq"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7Z3umq" xid="button1" style="color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&#34;icon&#34;:&#34;icon-chevron-right&#34;}" __cid="c7Z3umq"> 
+                        <i class="icon-chevron-right c7Z3umq" xid="i1" __cid="c7Z3umq"></i> 
+                      </a> 
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div xid="div28" class="list-group-item c7Z3umq" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c7Z3umq" xid="labelEdit21" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" style="width:90px;font-size:16px" xid="label21" __cid="c7Z3umq">销售区域
+                  <span xid="span25" style="color:#FD3240;" __cid="c7Z3umq" class="c7Z3umq">*</span>
+                </label>  
+                <div class="x-edit c7Z3umq" xid="div26" __cid="c7Z3umq"> 
+                  <div class="input-group c7Z3umq" xid="div27" __cid="c7Z3umq"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control c7Z3umq" xid="region_ID_Inp" style="background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;disabled&#34;:true,&#34;placeHolder&#34;:&#34;请选择&#34;}" __cid="c7Z3umq">  
+                    <span class="input-group-btn c7Z3umq" xid="span4" __cid="c7Z3umq"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7Z3umq" xid="region_ID_btn" style="color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:region_ID_btnClick" data-config="{&#34;icon&#34;:&#34;icon-chevron-right&#34;}" __cid="c7Z3umq"> 
+                        <i class="icon-chevron-right c7Z3umq" xid="i3" __cid="c7Z3umq"></i> 
+                      </a> 
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div xid="div34" class="list-group-item c7Z3umq" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c7Z3umq" xid="labelEdit23" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" style="width:90px;font-size:16px" xid="label23" __cid="c7Z3umq">业务模式
+                  <span xid="span27" style="color:#FD3240;" __cid="c7Z3umq" class="c7Z3umq">*</span>
+                </label>  
+                <div class="x-edit c7Z3umq" xid="div32" __cid="c7Z3umq"> 
+                  <div class="input-group c7Z3umq" xid="div33" __cid="c7Z3umq"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control c7Z3umq" xid="business_type_Inp" style="background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;disabled&#34;:true,&#34;placeHolder&#34;:&#34;请选择&#34;}" __cid="c7Z3umq">  
+                    <span class="input-group-btn c7Z3umq" xid="span6" __cid="c7Z3umq"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7Z3umq" xid="business_type_btn" style="color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:business_type_btnClick" data-config="{&#34;icon&#34;:&#34;icon-chevron-right&#34;}" __cid="c7Z3umq"> 
+                        <i class="icon-chevron-right c7Z3umq" xid="i5" __cid="c7Z3umq"></i> 
+                      </a> 
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div xid="div31" class="list-group-item c7Z3umq" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c7Z3umq" xid="labelEdit22" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" style="width:90px;font-size:16px" xid="label22" __cid="c7Z3umq">客户等级
+                  <span xid="span28" style="color:#FD3240;" __cid="c7Z3umq" class="c7Z3umq">*</span>
+                </label>  
+                <div class="x-edit c7Z3umq" xid="div29" __cid="c7Z3umq"> 
+                  <div class="input-group c7Z3umq" xid="div30" __cid="c7Z3umq"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control c7Z3umq" xid="level_Id_Inp" style="background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;disabled&#34;:true,&#34;placeHolder&#34;:&#34;请选择&#34;}" __cid="c7Z3umq">  
+                    <span class="input-group-btn c7Z3umq" xid="span5" __cid="c7Z3umq"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7Z3umq" xid="level_id_btn" style="color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:level_id_btnClick" data-config="{&#34;icon&#34;:&#34;icon-chevron-right&#34;}" __cid="c7Z3umq"> 
+                        <i class="icon-chevron-right c7Z3umq" xid="i4" __cid="c7Z3umq"></i> 
+                      </a> 
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div xid="div82" class="list-group-item c7Z3umq" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c7Z3umq" xid="labelEdit15" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" style="width:90px;font-size:16px" xid="label15" __cid="c7Z3umq">业务经理</label>  
+                <div class="x-edit c7Z3umq" xid="div76" __cid="c7Z3umq"> 
+                  <div class="input-group c7Z3umq" xid="div79" __cid="c7Z3umq"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control c7Z3umq" xid="input2" style="background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;disabled&#34;:true,&#34;placeHolder&#34;:&#34;请选择&#34;}" __cid="c7Z3umq">  
+                    <span class="input-group-btn c7Z3umq" xid="span29" __cid="c7Z3umq"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7Z3umq" xid="button3" style="color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&#34;icon&#34;:&#34;icon-chevron-right&#34;}" __cid="c7Z3umq"> 
+                        <i class="icon-chevron-right c7Z3umq" xid="i14" __cid="c7Z3umq"></i>
+                      </a> 
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>
+            <div xid="div37" class="list-group-item c7Z3umq" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c7Z3umq" xid="labelEdit24" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" style="width:90px;font-size:16px" xid="label24" __cid="c7Z3umq">客户来源</label>  
+                <div class="x-edit c7Z3umq" xid="div35" __cid="c7Z3umq"> 
+                  <div class="input-group c7Z3umq" xid="div36" __cid="c7Z3umq"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control c7Z3umq" xid="source_Inp" style="background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;disabled&#34;:true,&#34;placeHolder&#34;:&#34;请选择&#34;}" __cid="c7Z3umq">  
+                    <span class="input-group-btn c7Z3umq" xid="span7" __cid="c7Z3umq"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7Z3umq" xid="source_Btn" style="color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:source_BtnClick" data-config="{&#34;icon&#34;:&#34;icon-chevron-right&#34;}" __cid="c7Z3umq"> 
+                        <i class="icon-chevron-right c7Z3umq" xid="i6" __cid="c7Z3umq"></i> 
+                      </a> 
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div xid="div47" class="list-group-item c7Z3umq" style="display:none;border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c7Z3umq" xid="labelEdit28" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" style="width:90px;font-size:16px" xid="label25" __cid="c7Z3umq">成立时间</label>  
+                <div class="x-edit c7Z3umq" xid="div48" __cid="c7Z3umq"> 
+                  <div class="input-group c7Z3umq" xid="div46" __cid="c7Z3umq"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control c7Z3umq" xid="establish_Time_Inp" style="background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;disabled&#34;:true,&#34;placeHolder&#34;:&#34;请选择&#34;}" __cid="c7Z3umq">  
+                    <span class="input-group-btn c7Z3umq" xid="span8" __cid="c7Z3umq"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7Z3umq" xid="establish_Time_Btn" style="color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:establish_Time_BtnClick" data-config="{&#34;icon&#34;:&#34;icon-chevron-right&#34;}" __cid="c7Z3umq"> 
+                        <i class="icon-chevron-right c7Z3umq" xid="i7" __cid="c7Z3umq"></i> 
+                      </a> 
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div xid="div45" class="list-group-item c7Z3umq" style="display:none;border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c7Z3umq" xid="labelEdit26" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" style="width:90px;font-size:16px" xid="label28" __cid="c7Z3umq">服务满意度</label>  
+                <div class="x-edit c7Z3umq" xid="div49" __cid="c7Z3umq"> 
+                  <div class="input-group c7Z3umq" xid="div44" __cid="c7Z3umq"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control c7Z3umq" xid="service_Rate_Inp" style="background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;disabled&#34;:true,&#34;placeHolder&#34;:&#34;请选择&#34;}" __cid="c7Z3umq">  
+                    <span class="input-group-btn c7Z3umq" xid="span9" __cid="c7Z3umq"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7Z3umq" xid="service_Rate_Btn" style="color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:service_Rate_BtnClick" data-config="{&#34;icon&#34;:&#34;icon-chevron-right&#34;}" __cid="c7Z3umq"> 
+                        <i class="icon-chevron-right c7Z3umq" xid="i8" __cid="c7Z3umq"></i> 
+                      </a> 
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div xid="div38" class="list-group-item c7Z3umq" style="display:none;border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c7Z3umq" xid="labelEdit27" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" style="width:90px;font-size:16px" xid="label27" __cid="c7Z3umq">交易印象</label>  
+                <div class="x-edit c7Z3umq" xid="div40" __cid="c7Z3umq"> 
+                  <div class="input-group c7Z3umq" xid="div41" __cid="c7Z3umq"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control c7Z3umq" xid="deal_Impression_Inp" style="background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;disabled&#34;:true,&#34;placeHolder&#34;:&#34;请选择&#34;}" __cid="c7Z3umq">  
+                    <span class="input-group-btn c7Z3umq" xid="span10" __cid="c7Z3umq"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7Z3umq" xid="deal_Impression_Btn" style="color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:deal_Impression_BtnClick" data-config="{&#34;icon&#34;:&#34;icon-chevron-right&#34;}" __cid="c7Z3umq"> 
+                        <i class="icon-chevron-right c7Z3umq" xid="i9" __cid="c7Z3umq"></i> 
+                      </a> 
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div xid="div4" class="list-group-item c7Z3umq" style="display:none;border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" xid="label2" style="width:90px;font-size:16px" __cid="c7Z3umq">开户名</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="bank_Name_Inp" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq"> 
+              </div> 
+            </div>  
+            <div xid="div5" class="list-group-item c7Z3umq" style="display:none;border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" xid="label3" style="width:90px;font-size:16px" __cid="c7Z3umq">开户行</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="bank_Inp" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq"> 
+              </div> 
+            </div>  
+            <div xid="div8" class="list-group-item c7Z3umq" style="display:none;border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" xid="label4" style="width:90px;font-size:16px" __cid="c7Z3umq">税号</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="tax_Num_Inp" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq"> 
+              </div> 
+            </div>  
+            <div xid="div7" class="list-group-item c7Z3umq" style="display:none;border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" xid="label5" style="width:90px;font-size:16px" __cid="c7Z3umq">备注</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="remark_Inp" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq"> 
+              </div> 
+            </div>  
+            <div xid="div6" class="list-group-item c7Z3umq" style="display:none;border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" xid="label6" style="width:90px;font-size:16px" __cid="c7Z3umq">助记码</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="mnemonic_Inp" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq"> 
+              </div> 
+            </div>  
+            <div xid="div11" class="list-group-item c7Z3umq" style="display:none;border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" xid="label7" style="width:90px;font-size:16px" __cid="c7Z3umq">关键词</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="keywords_Inp" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq"> 
+              </div> 
+            </div>  
+            <div xid="div13" class="list-group-item c7Z3umq" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit12" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" xid="label11" style="width:90px;font-size:16px" __cid="c7Z3umq">交易印象</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="website_Inp" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq"> 
+              </div> 
+            </div>
+            <div xid="div10" class="list-group-item c7Z3umq" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit9" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" xid="label8" style="width:90px;font-size:16px" __cid="c7Z3umq">手机号</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="phone_Inp" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq"> 
+              </div> 
+            </div>  
+            <div xid="div9" class="list-group-item c7Z3umq" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit8" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" xid="label9" style="width:90px;font-size:16px" __cid="c7Z3umq">微信号</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="fax_Inp" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq"> 
+              </div> 
+            </div>  
+            <div xid="div14" class="list-group-item c7Z3umq" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit10" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" xid="label10" style="width:90px;font-size:16px" __cid="c7Z3umq">邮箱</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="email_Inp" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq"> 
+              </div> 
+            </div>  
+            <div xid="div12" class="list-group-item c7Z3umq" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit11" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" xid="label12" style="width:90px;font-size:16px" __cid="c7Z3umq">微博</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="micro_Blog_Inp" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq"> 
+              </div> 
+            </div>  
+            <div xid="div19" class="list-group-item c7Z3umq" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit13" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" xid="label13" style="width:90px;font-size:16px" __cid="c7Z3umq">地址</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="address_Inp" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq"> 
+              </div> 
+            </div>  
+            <div xid="div18" class="list-group-item c7Z3umq" style="display:none;border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit17" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" xid="label16" style="width:90px;font-size:16px" __cid="c7Z3umq">主营产品</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="main_Product_Inp" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq"> 
+              </div> 
+            </div>  
+            <div xid="div17" class="list-group-item c7Z3umq" style="display:none;border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit16" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" xid="label17" style="width:90px;font-size:16px" __cid="c7Z3umq">银行账号</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="bank_Account_Inp" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq"> 
+              </div> 
+            </div>  
+            <div xid="div43" class="list-group-item c7Z3umq" style="display:none;border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c7Z3umq" xid="labelEdit25" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" style="width:90px;font-size:16px" xid="label26" __cid="c7Z3umq">行业</label>  
+                <div class="x-edit c7Z3umq" xid="div39" __cid="c7Z3umq"> 
+                  <div class="input-group c7Z3umq" xid="div42" __cid="c7Z3umq"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control c7Z3umq" xid="trade_Id_Inp" style="background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;disabled&#34;:true,&#34;placeHolder&#34;:&#34;请选择&#34;}" __cid="c7Z3umq">  
+                    <span class="input-group-btn c7Z3umq" xid="span11" __cid="c7Z3umq"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7Z3umq" xid="trade_Id_Btn" style="color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:trade_Id_BtnClick" data-config="{&#34;icon&#34;:&#34;icon-chevron-right&#34;}" __cid="c7Z3umq"> 
+                        <i class="icon-chevron-right c7Z3umq" xid="i10" __cid="c7Z3umq"></i> 
+                      </a> 
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div xid="div59" class="list-group-item c7Z3umq" style="display:none;border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c7Z3umq" xid="labelEdit32" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" style="width:90px;font-size:16px" xid="label29" __cid="c7Z3umq">企业性质</label>  
+                <div class="x-edit c7Z3umq" xid="div60" __cid="c7Z3umq"> 
+                  <div class="input-group c7Z3umq" xid="div58" __cid="c7Z3umq"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control c7Z3umq" xid="enterprise_Nature_Inp" style="background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;disabled&#34;:true,&#34;placeHolder&#34;:&#34;请选择&#34;}" __cid="c7Z3umq">  
+                    <span class="input-group-btn c7Z3umq" xid="span12" __cid="c7Z3umq"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7Z3umq" xid="enterprise_Nature_Btn" style="color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:enterprise_Nature_BtnClick" data-config="{&#34;icon&#34;:&#34;icon-chevron-right&#34;}" __cid="c7Z3umq"> 
+                        <i class="icon-chevron-right c7Z3umq" xid="i11" __cid="c7Z3umq"></i> 
+                      </a> 
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div xid="div57" class="list-group-item c7Z3umq" style="display:none;border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c7Z3umq" xid="labelEdit30" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" style="width:90px;font-size:16px" xid="label32" __cid="c7Z3umq">年营业额</label>  
+                <div class="x-edit c7Z3umq" xid="div61" __cid="c7Z3umq"> 
+                  <div class="input-group c7Z3umq" xid="div56" __cid="c7Z3umq"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control c7Z3umq" xid="year_Turnover_Inp" style="background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;disabled&#34;:true,&#34;placeHolder&#34;:&#34;请选择&#34;}" __cid="c7Z3umq">  
+                    <span class="input-group-btn c7Z3umq" xid="span13" __cid="c7Z3umq"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7Z3umq" xid="year_Turnover_Btn" style="color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:year_Turnover_BtnClick" data-config="{&#34;icon&#34;:&#34;icon-chevron-right&#34;}" __cid="c7Z3umq"> 
+                        <i class="icon-chevron-right c7Z3umq" xid="i12" __cid="c7Z3umq"></i> 
+                      </a> 
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div xid="div50" class="list-group-item c7Z3umq" style="display:none;border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c7Z3umq" xid="labelEdit31" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" style="width:90px;font-size:16px" xid="label31" __cid="c7Z3umq">企业规模</label>  
+                <div class="x-edit c7Z3umq" xid="div52" __cid="c7Z3umq"> 
+                  <div class="input-group c7Z3umq" xid="div53" __cid="c7Z3umq"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control c7Z3umq" xid="enterprise_Scale_Inp" style="background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;disabled&#34;:true,&#34;placeHolder&#34;:&#34;请选择&#34;}" __cid="c7Z3umq">  
+                    <span class="input-group-btn c7Z3umq" xid="span14" __cid="c7Z3umq"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7Z3umq" xid="enterprise_Scale_Btn" style="color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:enterprise_Scale_BtnClick" data-config="{&#34;icon&#34;:&#34;icon-chevron-right&#34;}" __cid="c7Z3umq"> 
+                        <i class="icon-chevron-right c7Z3umq" xid="i13" __cid="c7Z3umq"></i> 
+                      </a> 
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Z3umq" xid="row1" style="height:5px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Z3umq"> 
+            <div class="x-col c7Z3umq" xid="col3" __cid="c7Z3umq"></div> 
+          </div>  
+          <div xid="div62" class="list-group-item c7Z3umq" style="text-align:center;" __cid="c7Z3umq" data-bind="event:{click:$model._callModelFn.bind($model, 'div62Click')}"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm c7Z3umq" xid="button15" style="color:#838484;font-size:16px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-plus-round&#34;,&#34;label&#34;:&#34;新建联系人&#34;}" __cid="c7Z3umq"> 
+              <i xid="i15" class="icon-plus-round c7Z3umq" __cid="c7Z3umq"></i>  
+              <span xid="span16" __cid="c7Z3umq" class="c7Z3umq">新建联系人</span> 
+            </a> 
+          </div>  
+          <div xid="div15" class="list-group-item c7Z3umq" style="display:none;text-align:right;border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" data-bind="event:{click:$model._callModelFn.bind($model, 'div62Click')}"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm c7Z3umq" xid="button2" style="color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;linear linear-trash&#34;,&#34;label&#34;:&#34;删除联系人&#34;}" __cid="c7Z3umq"> 
+              <i xid="i2" class="linear linear-trash c7Z3umq" __cid="c7Z3umq"></i>  
+              <span xid="span3" __cid="c7Z3umq" class="c7Z3umq">删除联系人</span>
+            </a> 
+          </div>
+          <div xid="div63" class="list-group-item c7Z3umq" style="display:none;border-right-style:none;border-left-style:none;padding-right:0px;padding-top:2px;padding-bottom:2px;" __cid="c7Z3umq"> 
+            <div xid="div64" class="list-group-item c7Z3umq" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit29" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" xid="label30" style="width:80px;" __cid="c7Z3umq">姓名</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="staff_Name_Inp" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq"> 
+              </div> 
+            </div>  
+            <div xid="div65" class="list-group-item c7Z3umq" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit33" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" xid="label33" style="width:80px;" __cid="c7Z3umq">手机</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="linkman_Phone_Inp" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq"> 
+              </div> 
+            </div>  
+            <div xid="div66" class="list-group-item c7Z3umq" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit34" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" xid="label34" style="width:80px;" __cid="c7Z3umq">职务</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="linkMan_Duty_Inp" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq"> 
+              </div> 
+            </div>  
+            <div xid="div67" class="list-group-item c7Z3umq" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit35" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+                <label class="x-label c7Z3umq" xid="label35" style="width:80px;" __cid="c7Z3umq">爱好</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="hobby_Inp" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq"> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Z3umq" xid="row2" style="height:5px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Z3umq"> 
+            <div class="x-col c7Z3umq" xid="col4" __cid="c7Z3umq"></div> 
+          </div>  
+          <div xid="div72" class="list-group-item c7Z3umq" style="border-right-style:none;border-left-style:none;padding-right:0px;padding-top:2px;padding-bottom:2px;" __cid="c7Z3umq"></div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Z3umq" xid="row3" style="height:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Z3umq"> 
+            <div class="x-col c7Z3umq" xid="col1" __cid="c7Z3umq"></div> 
+          </div> 
+        </div>  
+        <div class="x-contents-content c7Z3umq" xid="content3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c7Z3umq"> 
+          <div xid="div51" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit18" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label18" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">英文名字</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input3" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div54" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit20" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label36" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">年龄</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input5" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div55" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit36" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label20" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">属相</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input4" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div70" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit37" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label38" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">生日</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input9" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;dataType&#34;:&#34;Date&#34;}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div71" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit39" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label37" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">星座</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input8" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div68" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit40" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label40" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">性格</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input6" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div69" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit38" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label39" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">才艺</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input7" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div80" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit41" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label46" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">职业</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input17" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div78" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit46" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label43" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">企业</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input16" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div73" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit48" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label48" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">身份证</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input14" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div75" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit42" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label45" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">微信</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input10" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>
+          <div xid="div74" lang="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit44" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label41" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">其他社交</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input15" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>
+          <div xid="div81" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit43" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label44" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">国籍</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input12" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div86" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit49" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label49" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">民族</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input19" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div84" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit51" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label51" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">最高学历</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input20" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div85" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit53" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label53" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">留学地点</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input21" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div87" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit54" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label54" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">曾居地址</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input23" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div92" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit55" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label55" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">户籍</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input25" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div90" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit57" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label57" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">家庭背景</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input26" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div91" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit59" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label59" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">宗教信仰</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input27" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div89" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit58" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label58" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">消费能力</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input28" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div88" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit56" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label56" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">汽车品牌</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input24" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-contents-content c7Z3umq" xid="content4" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c7Z3umq">
+          <div xid="div94" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit61" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label63" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">颜色</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input46" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div97" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit62" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label62" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">花艺</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input45" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div95" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit63" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label77" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">风格</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input43" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div96" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit80" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label61" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">形式</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input44" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div101" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit78" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label75" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">服装</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input39" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div102" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit81" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label76" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">节日</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input40" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;dataType&#34;:&#34;Date&#34;}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div106" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit82" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label69" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">纪念日</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input42" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;dataType&#34;:&#34;Date&#34;}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div107" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit79" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label74" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">礼物</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input41" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div116" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit83" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label71" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">元素</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input54" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div98" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit69" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label66" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">形状</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input50" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div105" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit67" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label65" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">电影</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input48" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div103" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit84" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label68" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">书籍</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input49" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div104" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit86" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label72" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">音乐</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input51" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div100" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit85" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label70" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">品牌</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input52" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div99" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit70" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label67" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">游戏</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input47" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div114" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit87" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label73" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">食物</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input53" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div118" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit68" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label64" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">饮品</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input56" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div120" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit71" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label82" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">爱好</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input34" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div117" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit76" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label80" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">城市</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input35" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div119" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit72" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label81" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">酒店</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input36" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div115" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit73" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label87" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">喜好</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input55" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div112" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit77" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label79" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">人物</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input37" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div108" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit74" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label86" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">宠物</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input31" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div109" lang="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit65" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label84" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">动物</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input32" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div110" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit64" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label78" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">卡通人物</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input33" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div>  
+          <div xid="div111" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="c7Z3umq" class="c7Z3umq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit66" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <label class="x-label c7Z3umq" xid="label83" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">节目</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c7Z3umq" xid="input38" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Z3umq">
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-contents-content c7Z3umq" xid="content5" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c7Z3umq">
+          <div xid="div25" style="height:10px;" __cid="c7Z3umq" class="c7Z3umq"></div>
+          <div xid="div121" __cid="c7Z3umq" class="c7Z3umq">
+            <label class="x-label c7Z3umq" xid="label88" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">恋爱经历</label>
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit88" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit c7Z3umq" xid="textarea1" style="height:200px;" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="c7Z3umq"></textarea>
+            </div>
+          </div>  
+          <div xid="div122" __cid="c7Z3umq" class="c7Z3umq"> 
+            <label class="x-label c7Z3umq" xid="label89" style="width:90px;font-size:16px;text-align:center;" __cid="c7Z3umq">备注</label>
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Z3umq" xid="labelEdit89" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Z3umq"> 
+              <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit c7Z3umq" xid="textarea2" style="height:150px;" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="c7Z3umq"></textarea>
+            </div> 
+          </div> 
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-bottom c7Z3umq" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7Z3umq">
+      <div xid="div77" class="list-group-item c7Z3umq" style="text-align:center;background-color:#4B76AE;padding:5px 5px 5px 5px;" __cid="c7Z3umq" data-bind="event:{click:$model._callModelFn.bind($model, 'div77Click')}"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-label c7Z3umq" xid="button18" style="color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-plus-round&#34;,&#34;label&#34;:&#34;保存&#34;}" __cid="c7Z3umq"> 
+          <i xid="i18" class="icon-plus-round c7Z3umq" __cid="c7Z3umq"></i>  
+          <span xid="span19" style="font-size:16px;" __cid="c7Z3umq" class="c7Z3umq">保存</span> 
+        </a> 
+      </div>
+    </div>
+    <style __cid="c7Z3umq" class="c7Z3umq">.x-panel.pcuqeamm-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcuqeamm-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcuqeamm-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcuqeamm-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuqeamm-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcuqeamm-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuqeamm-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuqeamm-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuqeamm-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="clinet_TypeWinDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;src&#34;:&#34;$model/UI2/wdPro/client/dialog/dialog/client_Type_ID.w&#34;}" __cid="c7Z3umq" class="c7Z3umq">
+    <div class="x-dialog-overlay c7Z3umq" __cid="c7Z3umq"></div>
+    <div class="x-dialog c7Z3umq" style="display:none;" __cid="c7Z3umq">
+      <div class="x-dialog-title c7Z3umq" __cid="c7Z3umq">
+        <button class="close c7Z3umq" __cid="c7Z3umq">
+          <span __cid="c7Z3umq" class="c7Z3umq">×</span>
+        </button>
+        <div class="x-dialog-title-text c7Z3umq" __cid="c7Z3umq"></div>
+      </div>
+      <div class="x-dialog-body c7Z3umq" __cid="c7Z3umq"></div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="business_TypewinDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/wdPro/client/dialog/dialog/business_type_choose.w&#34;}" __cid="c7Z3umq" class="c7Z3umq">
+    <div class="x-dialog-overlay c7Z3umq" __cid="c7Z3umq"></div>
+    <div class="x-dialog c7Z3umq" style="display:none;" __cid="c7Z3umq">
+      <div class="x-dialog-title c7Z3umq" __cid="c7Z3umq">
+        <button class="close c7Z3umq" __cid="c7Z3umq">
+          <span __cid="c7Z3umq" class="c7Z3umq">×</span>
+        </button>
+        <div class="x-dialog-title-text c7Z3umq" __cid="c7Z3umq"></div>
+      </div>
+      <div class="x-dialog-body c7Z3umq" __cid="c7Z3umq"></div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="region_IDWinDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;src&#34;:&#34;$model/UI2/wdPro/client/dialog/dialog/region_ID_Choose.w&#34;}" __cid="c7Z3umq" class="c7Z3umq">
+    <div class="x-dialog-overlay c7Z3umq" __cid="c7Z3umq"></div>
+    <div class="x-dialog c7Z3umq" style="display:none;" __cid="c7Z3umq">
+      <div class="x-dialog-title c7Z3umq" __cid="c7Z3umq">
+        <button class="close c7Z3umq" __cid="c7Z3umq">
+          <span __cid="c7Z3umq" class="c7Z3umq">×</span>
+        </button>
+        <div class="x-dialog-title-text c7Z3umq" __cid="c7Z3umq"></div>
+      </div>
+      <div class="x-dialog-body c7Z3umq" __cid="c7Z3umq"></div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="common_RadioWinDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/wdPro/client/dialog/dialog/common_radio.w&#34;}" __cid="c7Z3umq" class="c7Z3umq">
+    <div class="x-dialog-overlay c7Z3umq" __cid="c7Z3umq"></div>
+    <div class="x-dialog c7Z3umq" style="display:none;" __cid="c7Z3umq">
+      <div class="x-dialog-title c7Z3umq" __cid="c7Z3umq">
+        <button class="close c7Z3umq" __cid="c7Z3umq">
+          <span __cid="c7Z3umq" class="c7Z3umq">×</span>
+        </button>
+        <div class="x-dialog-title-text c7Z3umq" __cid="c7Z3umq"></div>
+      </div>
+      <div class="x-dialog-body c7Z3umq" __cid="c7Z3umq"></div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="enterprise_WinDialog" style="top:12px;left:152px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;src&#34;:&#34;$model/UI2/wdPro/client/dialog/dialog/enterprise_choose.w&#34;}" __cid="c7Z3umq" class="c7Z3umq">
+    <div class="x-dialog-overlay c7Z3umq" __cid="c7Z3umq"></div>
+    <div class="x-dialog c7Z3umq" style="display:none;" __cid="c7Z3umq">
+      <div class="x-dialog-title c7Z3umq" __cid="c7Z3umq">
+        <button class="close c7Z3umq" __cid="c7Z3umq">
+          <span __cid="c7Z3umq" class="c7Z3umq">×</span>
+        </button>
+        <div class="x-dialog-title-text c7Z3umq" __cid="c7Z3umq"></div>
+      </div>
+      <div class="x-dialog-body c7Z3umq" __cid="c7Z3umq"></div>
+    </div>
+  </span> 
+</div></div>
+        
+        <div id="downloadGCF" style="display:none;padding:50px;">
+        	<span>您使用的浏览器需要下载插件才能使用, </span>
+        	<a id="downloadGCFLink" href="#">下载地址</a>
+        	<p>(安装后请重新打开浏览器)</p>
+        </div>
+    	<script>
+    	
+    	            //判断浏览器, 判断GCF
+    	 			var browser = {
+    			        isIe: function () {
+    			            return navigator.appVersion.indexOf("MSIE") != -1;
+    			        },
+    			        navigator: navigator.appVersion,
+    			        getVersion: function() {
+    			            var version = 999; // we assume a sane browser
+    			            if (navigator.appVersion.indexOf("MSIE") != -1)
+    			                // bah, IE again, lets downgrade version number
+    			                version = parseFloat(navigator.appVersion.split("MSIE")[1]);
+    			            return version;
+    			        }
+    			    };
+    				function isGCFInstalled(){
+    			      try{
+    			        var i = new ActiveXObject('ChromeTab.ChromeFrame');
+    			        if (i) {
+    			          return true;
+    			        }
+    			      }catch(e){}
+    			      return false;
+    				}
+    	            //判断浏览器, 判断GCF
+    	            var __continueRun = true;
+    				if (browser.isIe() && (browser.getVersion() < 10) && !isGCFInstalled()) {
+    					document.getElementById("applicationHost").style.display = 'none';
+    					document.getElementById("downloadGCF").style.display = 'block';
+    					var downloadLink = "/" + location.pathname.match(/[^\/]+/)[0] + "/v8.msi";
+    					document.getElementById("downloadGCFLink").href = downloadLink; 
+    					__continueRun = false;
+    	            }
+		 	
+    	</script>
+        <script id="_metaJS" src="../../../../v_87b9a923344d40b084e91c301f28a726l_zh_CNs_d_m/system/config/meta.js"> </script>
+        <script id="_requireJS" src="../../../../v_117f7e697c4947619f9511136fea978fl_zh_CNs_d_m/system/lib/require/require.2.1.10.js"> </script>
+        <script src="../../../../v_eda078e19f684dbfaf8820f0026868c2l_zh_CNs_d_m/system/core.min.js"></script><script src="../../../../v_795e9102ecec4adb9ab45de25eac090cl_zh_CNs_d_m/system/common.min.js"></script><script src="../../../../v_cbb125e4768a435ea64ea35f69bccaedl_zh_CNs_d_m/system/components/comp.min.js"></script><script id="_mainScript">
+        
+			if (__continueRun) {
+                window.__justep.cssReady = function(fn){
+                	var promises = [];
+                	for (var p in window.__justep.__ResourceEngine.__loadingCss){
+                		if(window.__justep.__ResourceEngine.__loadingCss.hasOwnProperty(p))
+                			promises.push(window.__justep.__ResourceEngine.__loadingCss[p].promise());
+                	}
+                	$.when.apply($, promises).done(fn);
+                };
+                
+            	window.__justep.__ResourceEngine = {
+            		readyRegExp : navigator.platform === 'PLAYSTATION 3' ? /^complete$/ : /^(complete|loaded)$/,
+            		url: window.location.href,	
+            		/*contextPath: 不包括语言 */
+            		contextPath: "",
+            		serverPath: "",
+            		__loadedJS: [],
+            		__loadingCss: {},
+            		onLoadCss: function(url, node){
+            			if (!this.__loadingCss[url]){
+            				this.__loadingCss[url] = $.Deferred();	
+                			if (node.attachEvent &&
+                                    !(node.attachEvent.toString && node.attachEvent.toString().indexOf('[native code') < 0) &&
+                                    !(typeof opera !== 'undefined' && opera.toString() === '[object Opera]')) {
+                                node.attachEvent('onreadystatechange', this.onLinkLoad.bind(this));
+                            } else {
+                                node.addEventListener('load', this.onLinkLoad.bind(this), false);
+                                node.addEventListener('error', this.onLinkError.bind(this), false);
+                            }
+            			}
+            		},
+            		
+            		onLinkLoad: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+            	        if (evt.type === 'load' ||
+                                (this.readyRegExp.test(target.readyState))) {
+            	        	var url = target.getAttribute("href");
+            	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+            	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+            	        	}
+                        }
+            		},
+            		
+            		onLinkError: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+        	        	var url = target.getAttribute("href");
+        	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+        	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+        	        	}
+            		},
+            		
+            		initContextPath: function(){
+            			var baseURL = document.getElementById("_requireJS").src;
+            			var before = location.protocol + "//" + location.host;
+            			var after = "/system/lib/require/require.2.1.10";
+            			var i = baseURL.indexOf(after);
+            			if (i !== -1){
+    	        			var middle = baseURL.substring(before.length, i);
+    						var items = middle.split("/");
+    						
+    						
+    						if ((items[items.length-1].indexOf("v_") === 0) 
+    								&& (items[items.length-1].indexOf("l_") !== -1)
+    								&& (items[items.length-1].indexOf("s_") !== -1)
+    								&& (items[items.length-1].indexOf("d_") !== -1)
+    								|| (items[items.length-1]=="v_")){
+    							items.splice(items.length-1, 1);
+    						}
+    						
+    						
+    						if (items.length !== 1){
+    							window.__justep.__ResourceEngine.contextPath = items.join("/");
+    						}else{
+    							window.__justep.__ResourceEngine.contextPath = before;
+    						}
+    						var index = window.__justep.__ResourceEngine.contextPath.lastIndexOf("/");
+    						if (index != -1){
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath.substr(0, index);
+    						}else{
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath;
+    						}
+            			}else{
+            				throw new Error(baseURL + " hasn't  " + after);
+            			}
+            		},
+            	
+            		loadJs: function(urls){
+            			if (urls && urls.length>0){
+            				var loadeds = this._getResources("script", "src").concat(this.__loadedJS);
+    	       				for (var i=0; i<urls.length; i++){
+								var url = urls[i];
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					this.__loadedJS[this.__loadedJS.length] = url;
+    	        					/*
+    	        					var script = document.createElement("script");
+    	        					script.src = url;
+    	        					document.head.appendChild(script);
+    	        					*/
+    	        					//$("head").append("<script  src='" + url + "'/>");
+									var url = require.toUrl("$UI" + url);
+    	        					$.ajax({
+    	        						url: url,
+    	        						dataType: "script",
+    	        						cache: true,
+    	        						async: false,
+    	        						success: function(){}
+    	        						});
+    	        				} 
+    	       				}
+            			}
+            		},
+            		
+            		loadCss: function(styles){
+           				var loadeds = this._getResources("link", "href");
+            			if (styles && styles.length>0){
+            				for (var i=0; i<styles.length; i++){
+    	       					var url = window.__justep.__ResourceEngine.contextPath + styles[i].url.replace("/UI2/", "/");
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					var include = styles[i].include || "";
+    	        					var link = $("<link type='text/css' rel='stylesheet' href='" + url + "' include='" + include + "'/>");
+    	        					this.onLoadCss(url, link[0]);
+    	        					$("head").append(link);
+    	        				} 
+            				}
+            			}
+            			
+            		},
+            		
+            		
+            		_isLoaded: function(url, loadeds){
+            			if (url){
+            				var newUrl = "";
+            				var items = url.split("/");
+            				var isVls = false;
+            				for (var i=0; i<items.length; i++){
+            					if (isVls){
+                					newUrl += "/" + items[i];
+            					}else{
+                					if (items[i] && (items[i].indexOf("v_")===0)
+            								&& (items[i].indexOf("l_")!==-1)
+            								&& (items[i].indexOf("s_")!==-1)
+            								&& (items[i].indexOf("d_")!==-1)
+            								|| (items[i]=="v_")){
+                						isVls = true;
+                					}
+            					}
+            				}
+            				if (!newUrl)
+            					newUrl = url;
+            				
+            				for (var i=0; i<loadeds.length; i++){
+								var originUrl = this._getOriginUrl(loadeds[i]);
+								if (originUrl && (originUrl.indexOf(newUrl)!==-1)){
+									return true;
+								}
+    						}
+            			}
+    					return false;
+            		},
+
+					_getOriginUrl: function(url){
+						var result = "";
+						if (url && (url.indexOf(".md5_")!==-1)){
+							url = url.split("#")[0];
+							url = url.split("?")[0];
+							var items = url.split(".");
+							for (var i=0; i<items.length; i++){
+								if ((i===items.length-2) && (items[i].indexOf("md5_")!==-1)){
+									continue;
+								}else{
+									if (i>0) result += ".";
+									result += items[i];
+								}
+							}
+						}else{
+							result = url;
+						}
+						return result;
+					},
+            		
+            		_getResources: function(tag, attr){
+    					var result = [];
+    					var scripts = $(tag);
+    					for (var i=0; i<scripts.length; i++){
+    						var v = scripts[i][attr];
+    						if (v){
+    							result[result.length] = v;
+    						}
+    					}
+    					return result;
+            		}
+            	};
+            	
+            	window.__justep.__ResourceEngine.initContextPath();
+    			requirejs.config({
+    				baseUrl: window.__justep.__ResourceEngine.contextPath + '/v_920bd5217d7d4b2fa10946c72ff85d79l_zh_CNs_d_m/wdPro/client/dialog',
+    			    paths: {
+    			    	/* 解决require.normalizeName与require.toUrl嵌套后不一致的bug   */
+    			    	'$model/UI2/v_': window.__justep.__ResourceEngine.contextPath + '/v_920bd5217d7d4b2fa10946c72ff85d79l_zh_CNs_d_m',
+    			    	'$model/UI2': window.__justep.__ResourceEngine.contextPath + '/v_920bd5217d7d4b2fa10946c72ff85d79l_zh_CNs_d_m',
+    			    	'$model': window.__justep.__ResourceEngine.serverPath,
+    			        'text': window.__justep.__ResourceEngine.contextPath + '/v_920bd5217d7d4b2fa10946c72ff85d79l_zh_CNs_d_m/system/lib/require/text.2.0.10',
+    			        'bind': window.__justep.__ResourceEngine.contextPath + '/v_920bd5217d7d4b2fa10946c72ff85d79l_zh_CNs_d_m/system/lib/bind/bind',
+    			        'jquery': window.__justep.__ResourceEngine.contextPath + '/v_920bd5217d7d4b2fa10946c72ff85d79l_zh_CNs_d_m/system/lib/jquery/jquery-1.11.1.min'
+    			    },
+    			    map: {
+    				        '*': {
+    				            res: '$model/UI2/system/lib/require/res',
+    				            service: '$model/UI2/system/lib/require/service',
+    				            cordova: '$model/UI2/system/lib/require/cordova',
+    				            w: '$model/UI2/system/lib/require/w',
+    				            css: '$model/UI2/system/lib/require/css'
+    				        }
+    				},
+    				waitSeconds: 300
+    			});
+    			
+    			requirejs(['require', 'jquery', '$model/UI2/system/lib/base/composition', '$model/UI2/system/lib/base/url', '$model/UI2/system/lib/route/hashbangParser', '$model/UI2/system/components/justep/versionChecker/versionChecker', '$model/UI2/system/components/justep/loadingBar/loadingBar', '$model/UI2/system/lib/jquery/domEvent',  '$model/UI2/system/lib/cordova/cordova'],  function (require, $, composition, URL, HashbangParser,versionChecker) { 
+    				document.addEventListener('deviceready', function() {
+    	                if (navigator && navigator.splashscreen && navigator.splashscreen.hide) {
+    	                	/*延迟隐藏，视觉效果更理想*/
+    	                	setTimeout(function() {navigator.splashscreen.hide();}, 800);
+    	                }
+    	            }, false);
+					setTimeout(function(){
+						versionChecker.check();
+					},2000);
+    				var context = {};
+    				context.model = '$model/UI2/wdPro/client/dialog/addClient.w' + (document.location.search || "");
+    				context.view = $('#applicationHost').children()[0];
+    				var element = document.getElementById('applicationHost');
+
+					    				
+    				
+    				var ownerid = new URL(window.__justep.__ResourceEngine.url).getParam("$ownerid");
+    				var pwindow = opener;
+    				if (!pwindow && window.parent && window.parent.window){
+    					pwindow = window.parent.window;
+    				}
+    				if(ownerid && pwindow 
+    						&& pwindow.__justep && pwindow.__justep.windowOpeners
+    						&& pwindow.__justep.windowOpeners[ownerid]
+    						&& $.isFunction(pwindow.__justep.windowOpeners[ownerid].sendToWindow)){
+    					window.__justep.setParams = function(params){
+    						/* 给windowOpener提供再次传参数的接口  */
+    						params = params || {};
+    						composition.setParams(document.getElementById('applicationHost'), params);
+    					};
+    					var winOpener = pwindow.__justep.windowOpeners[ownerid];
+    					if(winOpener) winOpener.window = window;
+    					$(window).unload(function(event){
+    						if(winOpener && winOpener.dispatchCloseEvent) winOpener.dispatchCloseEvent();
+    					});
+    					var params = winOpener.sendToWindow();
+						context.owner = winOpener;
+						context.params = params || {};
+	        			composition.compose(element, context);
+    				}else{
+        				var params =  {};
+    					var state = new HashbangParser(window.location.hash).parse().__state;
+    					if (state){
+    						params = state.get("");
+    						try{
+    							params = JSON.parse(params);
+    							if (params.hasOwnProperty("__singleValue__")){
+    								params = params.__singleValue__;
+    							}
+    						}catch(e1){}
+    					}
+    					context.noUpdateState = true;
+        				context.params = params;
+        				composition.compose(element, context);
+    				}
+    			});    
+            }
+		 	
+        </script>
+    </body>
+</html>

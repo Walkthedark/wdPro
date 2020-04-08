@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cUjeaee" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cUjeaee" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cUjeaee" class="cUjeaee"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcuUjmI3-iosstatusbar cUjeaee" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cUjeaee"> 
+    <div class="x-panel-top cUjeaee" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUjeaee"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cUjeaee" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;企业二维码&quot;}" __cid="cUjeaee"> 
+        <div class="x-titlebar-left cUjeaee" xid="left2" __cid="cUjeaee"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cUjeaee" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cUjeaee"> 
+            <i xid="i1" __cid="cUjeaee" class="cUjeaee"/>  
+            <span xid="span4" __cid="cUjeaee" class="cUjeaee">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cUjeaee" xid="title2" __cid="cUjeaee">企业二维码</div>  
+        <div class="x-titlebar-right  cUjeaee" xid="right2" __cid="cUjeaee">
+          <div class="empty cUjeaee" __cid="cUjeaee"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cUjeaee" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUjeaee"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cUjeaee" xid="row1" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUjeaee"> 
+        <div class="x-col cUjeaee" xid="col1" __cid="cUjeaee">
+          <span xid="span1" class="font-One cUjeaee" __cid="cUjeaee">打开微信扫码关注企业号</span> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cUjeaee" xid="row2" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUjeaee"> 
+        <div class="x-col cUjeaee" xid="col4" __cid="cUjeaee"> 
+          <img src="$model/UI2/TheSaleEnterprise/IntegratedQuery/dialog/img/1519444684.png" alt="" xid="image2" __cid="cUjeaee" class="cUjeaee"/>
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cUjeaee" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUjeaee"> 
+        <div class="x-col cUjeaee" xid="col5" __cid="cUjeaee"> 
+          <span xid="span3" style="border-radius:25px;color:#ffffff;background-color:#8FC41C;display:block;width:150px;text-align:center;" __cid="cUjeaee" class="cUjeaee">认证成功后，即可：</span>  
+          <span xid="span5" style="display:block;" __cid="cUjeaee" class="cUjeaee">（1）不用再输入用户名密码，扫码直接登录WEB系统。</span>  
+          <span xid="span6" style="display:block;" __cid="cUjeaee" class="cUjeaee">（2）在微信上使用软件。</span>
+        </div> 
+      </div>
+    </div>  
+    <style __cid="cUjeaee" class="cUjeaee">.x-panel.pcuUjmI3-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcuUjmI3-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcuUjmI3-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcuUjmI3-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuUjmI3-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcuUjmI3-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuUjmI3-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuUjmI3-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuUjmI3-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

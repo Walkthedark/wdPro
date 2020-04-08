@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cueaAne" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cueaAne" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <style>null</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cueaAne" class="cueaAne"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcbuMfqu-iosstatusbar cueaAne" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cueaAne"> 
+    <div class="x-panel-top cueaAne" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cueaAne"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cueaAne" style="background-color:#47D1D1;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;收货地址&#34;}" __cid="cueaAne"> 
+        <div class="x-titlebar-left cueaAne" __cid="cueaAne"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cueaAne" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;,&#34;label&#34;:&#34;&#34;}" __cid="cueaAne"> 
+            <i class="icon-chevron-left cueaAne" __cid="cueaAne"></i>  
+            <span __cid="cueaAne" class="cueaAne"></span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cueaAne" __cid="cueaAne">收货地址</div>  
+        <div class="x-titlebar-right  cueaAne" __cid="cueaAne">
+          <div class="empty cueaAne" __cid="cueaAne"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cueaAne" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cueaAne">
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cueaAne" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;adressData&#34;}" __cid="cueaAne"> 
+        <ul class="x-list-template hide cueaAne" xid="listTemplateUl1" __cid="cueaAne" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+          <li xid="li1" style="border-bottom:1px solid #e6e7e8;box-shadow:1px 2px 2px #ccc;" __cid="cueaAne" class="cueaAne">
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cueaAne" xid="row1" style="padding-top:2px;padding-bottom:2px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'},event:{click:$model._callModelFn.bind($model, 'row1Click')}" __cid="cueaAne"> 
+              <div class="x-col cueaAne" xid="col1" __cid="cueaAne">
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cueaAne" xid="row2" style="padding-top:2px;padding-bottom:2px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueaAne"> 
+                  <div class="x-col cueaAne" xid="col2" __cid="cueaAne">
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cueaAne" xid="output1" data-bind="component:{ref:ref(&#34;consignee&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cueaAne"></div>
+                  </div>  
+                  <div class="x-col cueaAne" xid="col4" __cid="cueaAne">
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output pull-right cueaAne" xid="output2" data-bind="component:{ref:ref(&#34;mobile&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cueaAne"></div>
+                  </div>
+                </div>  
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cueaAne" xid="row3" style="padding-top:2px;padding-bottom:2px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueaAne"> 
+                  <div class="x-col cueaAne" xid="col5" __cid="cueaAne"> 
+                    <span xid="span5" style="display:inline-block;" __cid="cueaAne" class="cueaAne">
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output cueaAne" xid="output5" data-bind="component:{ref:ref(&#34;address&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cueaAne"></div>
+                    </span>
+                  </div>
+                </div>  
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cueaAne" xid="row4" style="padding-top:2px;padding-bottom:2px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueaAne"> 
+                  <div class="x-col cueaAne" xid="col8" __cid="cueaAne"></div>  
+                  <div class="x-col x-col-20 cueaAne" xid="col9" __cid="cueaAne">
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cueaAne" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{click:$model._callModelFn.bind($model, 'button1Click')}" data-config="{&#34;icon&#34;:&#34;icon-compose&#34;,&#34;label&#34;:&#34;编辑&#34;}" __cid="cueaAne"> 
+                      <i xid="i1" class="icon-compose cueaAne" __cid="cueaAne"></i>  
+                      <span xid="span1" __cid="cueaAne" class="cueaAne">编辑</span>
+                    </a>
+                  </div>  
+                  <div class="x-col x-col-20 cueaAne" xid="col10" __cid="cueaAne">
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cueaAne" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{click:$model._callModelFn.bind($model, 'button2Click')}" data-config="{&#34;icon&#34;:&#34;linear linear-trash&#34;,&#34;label&#34;:&#34;删除&#34;}" __cid="cueaAne"> 
+                      <i xid="i2" class="linear linear-trash cueaAne" __cid="cueaAne"></i>  
+                      <span xid="span2" __cid="cueaAne" class="cueaAne">删除</span>
+                    </a>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </li>
+        </ul> 
+      </div>
+    </div>  
+    <div class="x-panel-bottom cueaAne" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cueaAne">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cueaAne" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueaAne"> 
+        <div class="x-col cueaAne" xid="col13" __cid="cueaAne">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cueaAne" xid="addAddress" style="border-top:0;border-left:0;border-right:0;background-color:#f66;width:100%;margin-top:-5px;box-shadow:2px 3px 6px #e6e7e8;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addAddressClick" data-config="{&#34;label&#34;:&#34;添加新地址&#34;}" __cid="cueaAne"> 
+            <i xid="i7" __cid="cueaAne" class="cueaAne"></i>  
+            <span xid="span10" __cid="cueaAne" class="cueaAne">添加新地址</span>
+          </a> 
+        </div> 
+      </div>
+    </div>
+    <style __cid="cueaAne" class="cueaAne">.x-panel.pcbuMfqu-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcbuMfqu-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcbuMfqu-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcbuMfqu-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcbuMfqu-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcbuMfqu-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcbuMfqu-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcbuMfqu-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcbuMfqu-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog1" style="top:8px;left:75px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;src&#34;:&#34;$model/UI2/wd/address/addressEdit/addressEdit.w&#34;}" __cid="cueaAne" class="cueaAne">
+    <div class="x-dialog-overlay cueaAne" __cid="cueaAne"></div>
+    <div class="x-dialog cueaAne" style="display:none;" __cid="cueaAne">
+      <div class="x-dialog-title cueaAne" __cid="cueaAne">
+        <button class="close cueaAne" __cid="cueaAne">
+          <span __cid="cueaAne" class="cueaAne">×</span>
+        </button>
+        <div class="x-dialog-title-text cueaAne" __cid="cueaAne"></div>
+      </div>
+      <div class="x-dialog-body cueaAne" __cid="cueaAne"></div>
+    </div>
+  </span>
+</div>

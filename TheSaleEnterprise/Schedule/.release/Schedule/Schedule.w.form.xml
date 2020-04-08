@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cYBFRZz" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cYBFRZz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/bootstrap/inputGroup/inputGroup,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.tableWidth.cYBFRZz{width: 100%; color: black} .top10.cYBFRZz{margin-top: 0.71rem} .bot35.cYBFRZz{margin-bottom: 2.5rem} .tableWidth.cYBFRZz{width: 100%; color: black} .yw_font.cYBFRZz{font-size: 0.825rem; text-align: center; vertical-align: middle} .yw_style.cYBFRZz{border-bottom: 1px solid rgb(204, 204, 204); height: 5em} .yt_style.cYBFRZz{border-bottom: 1px solid rgb(204, 204, 204)} .yt_font.cYBFRZz{font-size: 1rem; text-align: center; vertical-align: middle; color: red; margin: 0px; padding: 0px} .header.cYBFRZz{position: absolute} .middle.cYBFRZz{position: absolute !important; overflow: auto} .footer.cYBFRZz{position: absolute} .titleWidth.cYBFRZz{} .topDiv.cYBFRZz{width: 100%; height: 50%; text-align: center; vertical-align: middle; height: 3em; line-height: 3em; overflow: hidden; border-radius: 50%} .topDiv.cYBFRZz:active{background-color: grey} .noclick.cYBFRZz{} .clicked.cYBFRZz{background-color: grey} .toadynoclick.cYBFRZz{background-color: rgb(51, 255, 255)} .bottomDiv.cYBFRZz{width: 100%; height: 50%; text-align: center; vertical-align: middle; height: 3em; line-height: 3em; overflow: hidden; color: blue}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cYBFRZz" class="cYBFRZz"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="newDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceived:newDialogReceived" data-config="{&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Schedule/dialog/ScheduleNew.w&quot;}" __cid="cYBFRZz" class="cYBFRZz">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cYBFRZz" __cid="cYBFRZz"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cYBFRZz" style="display:none;" __cid="cYBFRZz">
+      <xhtml:div class="x-dialog-title cYBFRZz" __cid="cYBFRZz">
+        <xhtml:button class="close cYBFRZz" __cid="cYBFRZz">
+          <xhtml:span __cid="cYBFRZz" class="cYBFRZz">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cYBFRZz" __cid="cYBFRZz"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cYBFRZz" __cid="cYBFRZz"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcIfMj2q-iosstatusbar cYBFRZz" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cYBFRZz"> 
+    <div class="x-panel-top cYBFRZz" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cYBFRZz"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cYBFRZz" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;日程安排&quot;}" __cid="cYBFRZz"> 
+        <div class="x-titlebar-left cYBFRZz" xid="left2" __cid="cYBFRZz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cYBFRZz" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cYBFRZz"> 
+            <i xid="i1" __cid="cYBFRZz" class="cYBFRZz"/>  
+            <span xid="span4" __cid="cYBFRZz" class="cYBFRZz">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cYBFRZz" xid="title2" __cid="cYBFRZz">日程安排</div>  
+        <div class="x-titlebar-right  cYBFRZz" xid="right2" __cid="cYBFRZz">
+          <div class="empty cYBFRZz" __cid="cYBFRZz"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cYBFRZz" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cYBFRZz"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cYBFRZz" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cYBFRZz"> 
+        <div class="x-col cYBFRZz" xid="col4" style="text-align:center;" __cid="cYBFRZz"> 
+          <div class="input-group cYBFRZz" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cYBFRZz"> 
+            <div class="input-group-btn cYBFRZz" xid="layoutWizard2" __cid="cYBFRZz"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cYBFRZz" xid="button4" style="color: #8FC41C;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-triangle-left&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cYBFRZz"> 
+                <i xid="i4" class="glyphicon glyphicon-triangle-left cYBFRZz" __cid="cYBFRZz"/>  
+                <span xid="span3" __cid="cYBFRZz" class="cYBFRZz"/> 
+              </a> 
+            </div>  
+            <input type="text" class="form-control cYBFRZz" component="$model/UI2/system/components/justep/input/input" xid="sdateInput" style="text-align:center" data-bind="component:{ref:$model.cDate.ref(&quot;time&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cYBFRZz"/>  
+            <div class="input-group-btn cYBFRZz" xid="layoutWizard1" __cid="cYBFRZz"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cYBFRZz" xid="button7" style="color: #8FC41C;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button7Click" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-triangle-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cYBFRZz"> 
+                <i xid="i9" class="glyphicon glyphicon-triangle-right cYBFRZz" __cid="cYBFRZz"/>  
+                <span xid="span11" __cid="cYBFRZz" class="cYBFRZz"/> 
+              </a> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div style="background-color:#f0f0f0;" __cid="cYBFRZz" class="cYBFRZz"> 
+        <table class="tableWidth cYBFRZz" style="top:0px;" __cid="cYBFRZz"> 
+          <tr __cid="cYBFRZz" class="cYBFRZz"> 
+            <th class="yw_font yt_style cYBFRZz" __cid="cYBFRZz">周一</th>  
+            <th class="yw_font yt_style cYBFRZz" __cid="cYBFRZz">周二</th>  
+            <th class="yw_font yt_style cYBFRZz" __cid="cYBFRZz">周三</th>  
+            <th class="yw_font yt_style cYBFRZz" __cid="cYBFRZz">周四</th>  
+            <th class="yw_font yt_style cYBFRZz" __cid="cYBFRZz">周五</th>  
+            <th class="yw_font yt_style cYBFRZz" __cid="cYBFRZz">周六</th>  
+            <th class="yw_font yt_style cYBFRZz" __cid="cYBFRZz">周日</th> 
+          </tr> 
+        </table> 
+      </div>  
+      <div class="top10 cYBFRZz" id="divTable1" style="width:100%;" xid="div15" __cid="cYBFRZz"/>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cYBFRZz" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cYBFRZz"> 
+        <div class="x-col cYBFRZz" xid="col2" __cid="cYBFRZz">
+          <label xid="label2" __cid="cYBFRZz" class="cYBFRZz"/>
+        </div> 
+      </div>
+      <div id="troubleList" xid="div3" __cid="cYBFRZz" class="cYBFRZz">
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cYBFRZz" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;InData&quot;}" __cid="cYBFRZz"> 
+          <ul class="x-list-template hide cYBFRZz" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cYBFRZz"> 
+            <li xid="li1" __cid="cYBFRZz" class="cYBFRZz">
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cYBFRZz" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cYBFRZz"> 
+                <div class="x-col cYBFRZz" xid="col1" __cid="cYBFRZz"> 
+                  <div component="$model/UI2/system/components/bootstrap/row/row" class="row cYBFRZz" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cYBFRZz"> 
+                    <div class="col col-xs-12 cYBFRZz" xid="col1" style="padding:0px;margin:0px;" __cid="cYBFRZz"> 
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output font-One cYBFRZz" xid="output8" style="padding-top:0px;" data-bind="component:{ref:ref(&quot;lx&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cYBFRZz"/>
+                    </div>  
+                    <div class="col col-xs-6 cYBFRZz" xid="col5" style="padding:0px;margin:0px;" __cid="cYBFRZz"> 
+                      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cYBFRZz" xid="labelEdit1" style="margin-top:8px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cYBFRZz"> 
+                        <label class="x-label font-Three cYBFRZz" xid="label3" __cid="cYBFRZz">开始时间：</label>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-Three cYBFRZz" xid="output9" data-bind="component:{ref:ref(&quot;ks&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cYBFRZz"/>
+                      </div> 
+                    </div>  
+                    <div class="col col-xs-6 cYBFRZz" xid="col10" style="padding:0px;margin:0px;" __cid="cYBFRZz"> 
+                      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cYBFRZz" xid="labelEdit3" style="margin-top:8px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cYBFRZz"> 
+                        <label class="x-label font-Three cYBFRZz" xid="label1" __cid="cYBFRZz">结束时间：</label>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-Three cYBFRZz" xid="output1" data-bind="component:{ref:ref(&quot;js&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cYBFRZz"/>
+                      </div>
+                    </div>  
+                    <div class="col col-xs-12 cYBFRZz" xid="col6" style="padding:0px;margin:0px;" __cid="cYBFRZz"> 
+                      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cYBFRZz" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cYBFRZz"> 
+                        <img src="$model/UI2/TheSaleEnterprise/CustomerManagement/dialog/img/dingwei_light.png" alt="" xid="image1" style="width:20px;" __cid="cYBFRZz" class="cYBFRZz"/>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cYBFRZz" xid="output7" data-bind="component:{ref:ref(&quot;dd&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cYBFRZz"/>
+                      </div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </div>
+            </li>
+          </ul> 
+        </div>
+      </div>  
+      <div xid="div2" style="width:100%;text-align:center;display:none;" id="MyCustomerNone" __cid="cYBFRZz" class="cYBFRZz"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cYBFRZz" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/TheSaleEnterprise/img/ic_empty.png&quot;,&quot;label&quot;:&quot;暂无数据&quot;}" __cid="cYBFRZz"> 
+          <i xid="i5" __cid="cYBFRZz" class="cYBFRZz"/>  
+          <img src="$model/UI2/TheSaleEnterprise/img/ic_empty.png" xid="image3" height="50px" style="width:50px;" __cid="cYBFRZz" class="cYBFRZz"/>  
+          <span xid="span5" class="tr_s cYBFRZz" __cid="cYBFRZz">暂无数据</span>
+        </a> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cYBFRZz" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cYBFRZz">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cYBFRZz" xid="row2" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cYBFRZz"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label cYBFRZz" xid="button2" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;label&quot;:&quot;添加日程安排&quot;}" __cid="cYBFRZz"> 
+          <i xid="i2" __cid="cYBFRZz" class="cYBFRZz"/>  
+          <span xid="span1" __cid="cYBFRZz" class="cYBFRZz">添加日程安排</span> 
+        </a>
+      </div>
+    </div>
+    <style __cid="cYBFRZz" class="cYBFRZz">.x-panel.pcIfMj2q-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcIfMj2q-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcIfMj2q-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcIfMj2q-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcIfMj2q-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcIfMj2q-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcIfMj2q-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcIfMj2q-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcIfMj2q-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

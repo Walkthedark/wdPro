@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cFFri6f" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cFFri6f" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cFFri6f" class="cFFri6f"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc2mEb2q-iosstatusbar cFFri6f" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cFFri6f"> 
+    <div class="x-panel-top cFFri6f" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cFFri6f"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cFFri6f" xid="row1" style="padding:0px 0px 0px 0px;background-color:#EBEAF0;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cFFri6f"> 
+        <div xid="col3" style="width:0.5em;" __cid="cFFri6f" class="cFFri6f"></div>  
+        <div class="x-col  cFFri6f" xid="col4" __cid="cFFri6f"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cFFri6f" xid="input1" style="background-color:white;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;placeHolder&#34;:&#34;客户名称&#34;}" __cid="cFFri6f"> 
+        </div>  
+        <div xid="col5" style="width:0.5em;" __cid="cFFri6f" class="cFFri6f"></div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cFFri6f" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cFFri6f"> 
+      <div xid="div1" __cid="cFFri6f" class="cFFri6f"> 
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cFFri6f" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;ListData&#34;}" __cid="cFFri6f"> 
+          <ul class="x-list-template hide cFFri6f" xid="listTemplateUl1" __cid="cFFri6f" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+            <li xid="li1" __cid="cFFri6f" class="cFFri6f"> 
+              <div xid="div22" class="list-group-item cFFri6f" style="padding:5px 5px 5px 5px;" __cid="cFFri6f"> 
+                <div class="media cFFri6f" xid="media9" __cid="cFFri6f"> 
+                  <div class="media-body cFFri6f" xid="mediaBody9" __cid="cFFri6f"> 
+                    <h5 xid="h518" style="color:#181919;" class="media-heading cFFri6f" __cid="cFFri6f" data-bind="text:val(&#34;client_name&#34;)">潜在用友客户</h5>  
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-sm cFFri6f" xid="button2" style="color:#6F6F6F;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:val(&#34;category&#34;)" data-config="{&#34;label&#34;:&#34;button&#34;}" __cid="cFFri6f"> 
+                      <i xid="i3" __cid="cFFri6f" class="cFFri6f"></i>  
+                      <span xid="span3" __cid="cFFri6f" class="cFFri6f"></span> 
+                    </a> 
+                  </div>  
+                  <div class="media-right cFFri6f" xid="mediaRight8" __cid="cFFri6f"> 
+                    <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cFFri6f" xid="checkbox1" checkedValue="1" uncheckedValue="0" data-config="{&#34;checked&#34;:false,&#34;checkedValue&#34;:&#34;1&#34;,&#34;disabled&#34;:false,&#34;uncheckedValue&#34;:&#34;0&#34;}" data-bind="component:{ref:ref(&#34;choose&#34;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cFFri6f">
+                      <input type="checkbox" __cid="cFFri6f" class="cFFri6f">
+                      <label __cid="cFFri6f" class="cFFri6f"></label>
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </li> 
+          </ul> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cFFri6f" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cFFri6f"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cFFri6f" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cFFri6f"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label cFFri6f" xid="button1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="cFFri6f"> 
+          <i xid="i1" __cid="cFFri6f" class="cFFri6f"></i>  
+          <span xid="span1" __cid="cFFri6f" class="cFFri6f">取消</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cFFri6f" xid="okBtn" style="background-color:#4B76AE;color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:okBtnClick" data-config="{&#34;label&#34;:&#34;确定&#34;}" __cid="cFFri6f"> 
+          <i xid="i2" __cid="cFFri6f" class="cFFri6f"></i>  
+          <span xid="span2" __cid="cFFri6f" class="cFFri6f">确定</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cFFri6f" class="cFFri6f">.x-panel.pc2mEb2q-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pc2mEb2q-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc2mEb2q-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc2mEb2q-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2mEb2q-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc2mEb2q-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2mEb2q-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2mEb2q-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2mEb2q-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

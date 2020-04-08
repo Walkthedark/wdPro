@@ -1,0 +1,7 @@
+.x-card.btn-group .btn.active {
+	border-bottom-color: #170153;
+	border-bottom-style: groove;
+	border-bottom-width: 2px;
+	color: #170153;
+	
+}

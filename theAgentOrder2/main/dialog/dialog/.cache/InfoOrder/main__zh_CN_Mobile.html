@@ -1,0 +1,797 @@
+<!DOCTYPE HTML>
+<html style="width:100%;height:100%" class="no-js">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+        <script src="../../../../../v_71c960f774fb4a22ad4960acad20e53fl_zh_CNs_d_m/system/lib/base/modernizr-2.8.3.min.js"></script>
+		<script id="__varReplace">
+    	
+    	    	window.__justep = window.__justep || {};
+				window.__justep.isDebug = true;
+				window.__justep.__packageMode = "1";
+				window.__justep.__isPackage = false;;
+				window.__justep.url = location.href;
+				window.__justep.versionInfo = {};
+		 
+    	</script>
+        <script id="__updateVersion">
+        
+				(function(url, mode){
+					if (("@"+"mode@") === mode) mode = "3";
+					if (("@"+"versionUrl@") === url) url = "system/service/common/app.j";
+					if ((mode!=="1" && (mode!="2") && (mode!="3"))) return;
+					var async = (mode=="1");
+					var x5Version = "noApp";
+					var x5AppAgents = /x5app\/([0-9.]*)/.exec(navigator.userAgent);
+					if(x5AppAgents && x5AppAgents.length > 1){
+					   	x5Version = x5AppAgents[1] || "";
+					} 
+					function createXhr(){
+						try {	
+							return new XMLHttpRequest();
+						}catch (tryMS) {	
+							var version = ["MSXML2.XMLHttp.6.0",
+							               "MSXML2.XMLHttp.3.0",
+							               "MSXML2.XMLHttp",
+							               "Miscrosoft.XMLHTTP"];
+							for(var i = 0; i < version.length; i++){
+								try{
+							    	return new ActiveXObject(version[i]);
+								}catch(e){}
+							}
+						}
+						throw new Error("您的系统或浏览器不支持XHR对象！");
+					}
+					
+					function createGuid(){	
+						var guid = '';	
+						for (var i = 1; i <= 32; i++){		
+							var n = Math.floor(Math.random()*16.0).toString(16);		
+							guid += n;		
+							if((i==8)||(i==12)||(i==16)||(i==20))			
+								guid += '-';	
+						}	
+						return guid;
+					}
+					
+					function parseUrl(href){
+						href = href.split("#")[0];
+						var items = href.split("?");
+						href = items[0];
+						var query = items[1] || "";
+						items = href.split("/");
+						var baseItems = [];
+						var pathItems = [];
+						var isPath = false;
+						for (var i=0; i<items.length; i++){
+							if (mode == "3"){
+								if (items[i] && (items[i].indexOf("v_") === 0) 
+										&& (items[i].indexOf("l_") !== -1)
+										&& (items[i].indexOf("s_") !== -1)
+										&& (items[i].indexOf("d_") !== -1)
+										|| (items[i]=="v_")){
+									isPath = true;
+									continue;
+								}
+							}else{
+								if (items[i] && (items[i].indexOf("v-")===0) && (items[i].charAt(items[i].length-1)=="-") ){
+									isPath = true;
+									continue;
+								}
+							}
+							if (isPath){
+								pathItems.push(items[i]);
+							}else{
+								baseItems.push(items[i]);	
+							}
+							
+						}
+						var base = baseItems.join("/");
+						if (base.charAt(base.length-1)!=="/") base += "/";
+						
+						var path = pathItems.join("/");
+						if (path.charAt(0) !== "/") path = "/" + path;
+						return [base, path, query];
+					}
+					
+					
+					var items = parseUrl(window.location.href);
+					var base = items[0];
+					var path = items[1];
+					var query = items[2];
+					var xhr = createXhr();
+					url += ((url.indexOf("?")!=-1) ? "&" : "?") +"_=" + createGuid();
+					if (mode === "3"){
+						url += "&url=" + path;
+						if (query)
+							url += "&" + query;
+					}
+					xhr.open('GET', base + url, async);
+					
+					if (async){
+						xhr.onreadystatechange=function(){
+							if((xhr.readyState == 4) && (xhr.status == 200) && xhr.responseText){
+								var versionInfo = JSON.parse(xhr.responseText);
+								window.__justep.versionInfo = versionInfo;
+								window.__justep.versionInfo.baseUrl = base;
+								if (query){
+									path = path + "?" + query;
+								}
+								path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+								var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+								versionInfo.resourceInfo.indexPageURL = indexUrl;
+								if(versionInfo.resourceInfo.resourceUpdateMode != "md5"){
+									if (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1){
+										versionInfo.resourceInfo.isNewVersion = true;
+									};
+								}
+							}
+						}
+					}
+					
+					try{
+						xhr.send(null);
+						if (!async && (xhr.status == 200) && xhr.responseText){
+							var versionInfo = JSON.parse(xhr.responseText);
+							window.__justep.versionInfo = versionInfo;
+							window.__justep.versionInfo.baseUrl = base;
+							if ((mode==="3") && window.__justep.isDebug){
+								/* 模式3且是调试模式不重定向 */
+							}else{
+								if (query){
+									path = path + "?" + query;
+								}
+								if(versionInfo.resourceInfo.resourceUpdateMode == "md5"){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									versionInfo.resourceInfo.indexPageURL = indexUrl; 
+								}else if (versionInfo.resourceInfo && versionInfo.resourceInfo.version && (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1)){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									window.location.href = indexUrl;
+								}
+							}
+						}
+					}catch(e2){}
+				}("@versionUrl@", "@mode@"));
+                 
+        </script>
+    <link rel="stylesheet" href="../../../../../v_4dbe7b0ff2734cc59c5967932a7074bel_zh_CNs_d_m/system/components/bootstrap.min.css" include="$model/UI2/system/components/bootstrap/lib/css/bootstrap,$model/UI2/system/components/bootstrap/lib/css/bootstrap-theme"><link rel="stylesheet" href="../../../../../v_3304307d2b6049cfb9818fd595f5a5bel_zh_CNs_d_m/system/components/comp.min.css" include="$model/UI2/system/components/justep/lib/css2/dataControl,$model/UI2/system/components/justep/input/css/datePickerPC,$model/UI2/system/components/justep/messageDialog/css/messageDialog,$model/UI2/system/components/justep/lib/css3/round,$model/UI2/system/components/justep/input/css/datePicker,$model/UI2/system/components/justep/row/css/row,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/attachment/css/attachment,$model/UI2/system/components/justep/barcode/css/barcodeImage,$model/UI2/system/components/bootstrap/dropdown/css/dropdown,$model/UI2/system/components/justep/contents/css/contents,$model/UI2/system/components/justep/common/css/forms,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/locker/css/locker,$model/UI2/system/components/justep/menu/css/menu,$model/UI2/system/components/justep/scrollView/css/scrollView,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/dialog/css/dialog,$model/UI2/system/components/justep/bar/css/bar,$model/UI2/system/components/justep/popMenu/css/popMenu,$model/UI2/system/components/justep/lib/css/icons,$model/UI2/system/components/justep/lib/css4/e-commerce,$model/UI2/system/components/justep/toolBar/css/toolBar,$model/UI2/system/components/justep/popOver/css/popOver,$model/UI2/system/components/justep/panel/css/panel,$model/UI2/system/components/bootstrap/carousel/css/carousel,$model/UI2/system/components/justep/wing/css/wing,$model/UI2/system/components/bootstrap/scrollSpy/css/scrollSpy,$model/UI2/system/components/justep/titleBar/css/titleBar,$model/UI2/system/components/justep/lib/css1/linear,$model/UI2/system/components/justep/numberSelect/css/numberList,$model/UI2/system/components/justep/list/css/list,$model/UI2/system/components/justep/dataTables/css/dataTables"></head>
+	
+    <body style="width:100%;height:100%;margin: 0;">
+        <script intro="none"></script>
+    	<div id="applicationHost" class="applicationHost" style="width:100%;height:100%;" __component-context__="block"><div xid="window" class="window cbUfAna" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cbUfAna" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <style>.box.cbUfAna{width: 100%; height: 120px; overflow: hidden; position: relative} .box.cbUfAna em.cbUfAna{position: absolute; width: 15px; height: 15px; border-radius: 50%; background-color: rgb(242, 241, 242)} .btn_bord.cbUfAna{border-radius: 30px; color: white; font-weight: bold; margin-top: 30px; width: 80px; line-height: 30px; height: 50px; background-color: black} .box.cbUfAna em.first.cbUfAna{left: -7px; top: 30px} .box.cbUfAna em.last.cbUfAna{right: -7px; top: 30px} .btn_radius.cbUfAna{border-radius: 30px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cbUfAna" class="cbUfAna"></div>  
+  <title __cid="cbUfAna" class="cbUfAna">订货单</title>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcyMZrQ3-iosstatusbar cbUfAna" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cbUfAna"> 
+    <div class="x-panel-content cbUfAna" xid="content1" style="background-color:#F2F1F2;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cbUfAna"> 
+      <div xid="div6" style="padding:5px 5px 5px 5px;background-color:#F2F1F2;" __cid="cbUfAna" class="cbUfAna"> 
+        <div xid="div5" class="box  cbUfAna" style="background-color:white;padding-right:8px;padding-left:8px;" __cid="cbUfAna"> 
+          <em class="first cbUfAna" xid="default3" __cid="cbUfAna"></em>  
+          <em class="last cbUfAna" xid="default4" __cid="cbUfAna"></em>  
+          <div class="media cbUfAna" xid="media1" style="margin-top:5px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody2" __cid="cbUfAna"> 
+              <h4 class="media-heading cbUfAna" xid="h42" __cid="cbUfAna"> 
+                <span xid="span8" style="font-size:16px;color:#242424;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">单号:</span>  
+                <span xid="span5" style="font-size:16px;color:#242424;margin-left:3px;" __cid="cbUfAna" class="cbUfAna" data-bind="text:$model.orderData.val(&#34;order_sn&#34;)"></span> 
+              </h4> 
+            </div>  
+            <div class="media-right cbUfAna" xid="mediaRight1" __cid="cbUfAna"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs cbUfAna" xid="button4" style="font-size:16px;background-color:white;color:#00BFFF;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:$model.orderData.val(&#34;type_trans&#34;)" data-config="{&#34;label&#34;:&#34;待出库&#34;}" __cid="cbUfAna"> 
+                <i xid="i4" __cid="cbUfAna" class="cbUfAna"></i>  
+                <span xid="span7" __cid="cbUfAna" class="cbUfAna">待出库</span> 
+              </a> 
+            </div> 
+          </div>  
+          <div class="media cbUfAna" xid="media2" style="margin-top:1px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody1" __cid="cbUfAna"> 
+              <h4 class="media-heading cbUfAna" xid="h41" __cid="cbUfAna"> 
+                <span xid="span9" style="font-size:16px;color:#242424;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">时间:</span>  
+                <span xid="span6" style="font-size:16px;color:#242424;margin-left:3px;" __cid="cbUfAna" class="cbUfAna" data-bind="text:$model.orderData.val(&#34;order_time&#34;)"></span> 
+              </h4>  
+              <h4 class="media-heading cbUfAna" xid="h43" __cid="cbUfAna"> 
+                <span xid="span11" style="font-size:16px;color:#242424;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">客户:</span>  
+                <span xid="span10" style="font-size:16px;color:#242424;margin-left:3px;" __cid="cbUfAna" class="cbUfAna" data-bind="text:$model.orderData.val(&#34;client_name&#34;)"></span> 
+              </h4> 
+            </div> 
+          </div>  
+          <div class="media cbUfAna" xid="media3" style="margin-top:5px;border-top-style:solid;border-top-width:thin;border-top-color:#E6E6E6;" __cid="cbUfAna" data-bind="event:{click:$model._callModelFn.bind($model, 'media3Click')}"> 
+            <div class="media-body cbUfAna" xid="mediaBody3" __cid="cbUfAna"> 
+              <h4 xid="h44" class="media-heading cbUfAna" __cid="cbUfAna"> 
+                <span xid="span12" style="font-size:14px;color:#545454;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">查看状态跟踪</span>
+              </h4> 
+            </div>  
+            <div class="media-right cbUfAna" xid="mediaRight2" __cid="cbUfAna"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cbUfAna" xid="button5" style="color:#545454;font-size:14px;background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-arrow-right-b&#34;,&#34;label&#34;:&#34;待出库&#34;}" __cid="cbUfAna"> 
+                <i xid="i5" class="icon-arrow-right-b cbUfAna" __cid="cbUfAna"></i>  
+                <span xid="span13" __cid="cbUfAna" class="cbUfAna">待出库</span>
+              </a> 
+            </div> 
+          </div>
+        </div> 
+      </div>  
+      <div xid="div1" style="padding:5px 5px 5px 5px;background-color:#F2F1F2;" __cid="cbUfAna" class="cbUfAna"> 
+        <div xid="div2" style="background-color:white;padding-right:8px;padding-left:8px;padding-top:3px;height:60px;" __cid="cbUfAna" class="cbUfAna">
+          <div class="media cbUfAna" xid="media4" style="margin-top:3px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody4" __cid="cbUfAna"> 
+              <h4 class="media-heading cbUfAna" xid="h45" __cid="cbUfAna"> 
+                <span xid="span15" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">订货单合计</span>
+              </h4> 
+            </div>  
+            <div class="media-right cbUfAna" xid="mediaRight3" __cid="cbUfAna"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs cbUfAna" xid="button6" style="font-size:16px;background-color:white;color:#00BFFF;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:$model.orderData.val(&#34;is_discount&#34;)==1?&#34;¥&#34; + $model.orderData.val(&#34;discount_price&#34;) :&#34;¥&#34; + $model.orderData.val(&#34;price&#34;)" data-config="{&#34;label&#34;:&#34;¥88.00&#34;}" __cid="cbUfAna"> 
+                <i xid="i6" __cid="cbUfAna" class="cbUfAna"></i>  
+                <span xid="span16" __cid="cbUfAna" class="cbUfAna">¥88.00</span>
+              </a> 
+            </div> 
+          </div>  
+          <div class="media cbUfAna" xid="media5" style="margin-top:1px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody5" __cid="cbUfAna"> 
+              <h4 xid="h46" class="media-heading cbUfAna" __cid="cbUfAna"> 
+                <span xid="span19" style="font-size:14px;color:#545454;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">商品总价</span>
+              </h4> 
+            </div>  
+            <div class="media-right cbUfAna" xid="mediaRight4" __cid="cbUfAna"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs  cbUfAna" xid="button7" style="color:#545454;font-size:14px;background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:&#34;¥&#34; + $model.orderData.val(&#34;price&#34;)" data-config="{&#34;label&#34;:&#34;¥88.00&#34;}" __cid="cbUfAna"> 
+                <i xid="i7" __cid="cbUfAna" class="cbUfAna"></i>  
+                <span xid="span18" __cid="cbUfAna" class="cbUfAna">¥88.00</span>
+              </a> 
+            </div> 
+          </div> 
+        </div>
+      </div>  
+      <div xid="div4" style="padding:5px 5px 5px 5px;background-color:#F2F1F2;" __cid="cbUfAna" class="cbUfAna"> 
+        <div xid="div3" style="background-color:white;padding-right:8px;padding-left:8px;padding-top:3px;" class="list-group-item cbUfAna" __cid="cbUfAna"> 
+          <div class="media cbUfAna" xid="media6" style="margin-top:3px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody6" __cid="cbUfAna"> 
+              <h4 class="media-heading cbUfAna" xid="h47" __cid="cbUfAna"> 
+                <span xid="span23" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">商品清单</span>
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs pull-right cbUfAna" xid="button8" style="font-size:16px;background-color:white;color:#242424;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button8Click" data-config="{&#34;icon&#34;:&#34;icon-chevron-down&#34;,&#34;label&#34;:&#34;数量6&#34;}" __cid="cbUfAna"> 
+                  <span xid="span22" __cid="cbUfAna" class="cbUfAna" data-bind="text:&#34;数量&#34;+ $model.numData.val(&#34;Num&#34;)"></span>
+                  <i xid="i8" class="icon-chevron-down cbUfAna" __cid="cbUfAna"></i>
+                </a>
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs pull-right cbUfAna" xid="button10" style="font-size:16px;background-color:white;color:#242424;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;种类2&#34;}" __cid="cbUfAna"> 
+                  <i xid="i10" __cid="cbUfAna" class="cbUfAna"></i>  
+                  <span xid="span24" __cid="cbUfAna" class="cbUfAna" data-bind="text:&#34;种类&#34;+$model.goodsData.getCount()">种类2</span>
+                </a> 
+              </h4> 
+            </div> 
+          </div>  
+          <div xid="div13" style="display:none" __cid="cbUfAna" class="cbUfAna"> 
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list cbUfAna" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;goodsData&#34;}" __cid="cbUfAna"> 
+              <ul class="x-list-template hide cbUfAna" xid="listTemplateUl1" __cid="cbUfAna" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+                <li xid="li1" __cid="cbUfAna" class="cbUfAna"> 
+                  <div class="media cbUfAna" xid="media7" __cid="cbUfAna"> 
+                    <div class="media-left cbUfAna" xid="mediaLeft1" __cid="cbUfAna"> 
+                      <a href="#" xid="a1" __cid="cbUfAna" class="cbUfAna"> 
+                        <img class="media-object cbUfAna" alt="" xid="image1" style="height:63px;" __cid="cbUfAna" data-bind="attr:{src:val(&#34;goods_img&#34;)}">
+                      </a> 
+                    </div>  
+                    <div class="media-body cbUfAna" xid="mediaBody7" __cid="cbUfAna"> 
+                      <h4 class="media-heading cbUfAna" xid="h48" __cid="cbUfAna"> 
+                        <span xid="span4" style="font-size:16px;color:#242424;" __cid="cbUfAna" class="cbUfAna" data-bind="text:val(&#34;goods_name&#34;)"></span>
+                      </h4>  
+                      <h4 xid="h410" class="media-heading cbUfAna" __cid="cbUfAna"> 
+                        <span xid="span14" style="font-size:14px;color:#888888;" __cid="cbUfAna" class="cbUfAna" data-bind="text:val(&#34;goods_type&#34;)==&#34;&#34;?&#34;&#34;:val(&#34;goods_type&#34;)"></span>
+                      </h4>  
+                      <h4 xid="h414" class="media-heading cbUfAna" __cid="cbUfAna"> 
+                        <span xid="span17" style="font-size:14px;margin-left:7px;" class="text-danger cbUfAna" __cid="cbUfAna" data-bind="text:&#34;¥&#34;+val(&#34;goods_price&#34;)"></span>  
+                        <span xid="span20" style="font-size:14px;color:#242424;margin-left:7px;" class="pull-right cbUfAna" __cid="cbUfAna" data-bind="text:&#34;X&#34;+val(&#34;goods_num&#34;)"></span>
+                      </h4> 
+                    </div> 
+                  </div>  
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cbUfAna" xid="row1" style="height:3px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cbUfAna"> 
+                    <div class="x-col cbUfAna" xid="col1" __cid="cbUfAna"></div>  
+                    <div class="x-col cbUfAna" xid="col2" __cid="cbUfAna"></div>  
+                    <div class="x-col cbUfAna" xid="col3" __cid="cbUfAna"></div>
+                  </div> 
+                </li> 
+              </ul> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list cbUfAna" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;data2&#34;}" __cid="cbUfAna"> 
+              <ul class="x-list-template hide cbUfAna" xid="listTemplateUl5" __cid="cbUfAna" data-bind="foreach:{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)}"> 
+                <li xid="li4" __cid="cbUfAna" class="cbUfAna"> 
+                  <div xid="div36" style="padding:5px;border-right-style:none;border-left-style:none;" class="list-group-item cbUfAna" __cid="cbUfAna"> 
+                    <div class="media-left cbUfAna" xid="mediaLeft11" __cid="cbUfAna"> 
+                      <img src="" alt="" xid="image8" class="tb-img-good div_radius cbUfAna" style="width:66px;height:66px;" __cid="cbUfAna" data-bind="attr:{src:val(&#34;goods_img&#34;)}">  
+                      <img src="../../../../../v_9333b0b5686e48df8740a36f5d6bfd78l_zh_CNs_d_m/theAgentOrder/img/gifts.png" alt="" xid="image9" style="position:relative;right:6px;bottom:5px;width:56px;height:38px;left:3px;top:-55px;" class="tb-img-good div_radius cbUfAna" __cid="cbUfAna">
+                    </div>  
+                    <div class="media-body cbUfAna" xid="mediaBody9" __cid="cbUfAna"> 
+                      <div xid="div33" style="padding:3px 3px 3px 3px;" __cid="cbUfAna" class="cbUfAna"> 
+                        <span class="text-black h5 cbUfAna" xid="span59" style="font-size:16px;color:#242424;" __cid="cbUfAna" data-bind="text:val(&#34;goods_name&#34;)"></span>
+                      </div>  
+                      <div class="text-muted cbUfAna" xid="div38" __cid="cbUfAna"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn  btn-xs cbUfAna" xid="button28" style="background-color:#F9F8F9;color:#D67D51;margin-left:5px;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;border-color:#D67D51 #D67D51 #D67D51 #D67D51;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:val(&#34;specification1_value&#34;) +&#34;/&#34;+ val(&#34;specification2_value&#34;) +&#34;/&#34;+ val(&#34;specification3_value&#34;)" data-config="{&#34;label&#34;:&#34;button&#34;}" __cid="cbUfAna"> 
+                          <i xid="i28" __cid="cbUfAna" class="cbUfAna"></i>  
+                          <span xid="span55" __cid="cbUfAna" class="cbUfAna"></span>
+                        </a> 
+                      </div>  
+                      <div class="text-muted cbUfAna" xid="div37" __cid="cbUfAna"> 
+                        <h4 xid="h416" class="media-heading cbUfAna" __cid="cbUfAna"> 
+                          <span xid="span25" style="font-size:14px;color:#242424;margin-left:7px;" class="pull-right cbUfAna" __cid="cbUfAna" data-bind="text:&#34;X&#34;+val(&#34;num&#34;)"></span>
+                        </h4>  
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cbUfAna" xid="row6" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cbUfAna"> 
+                          <div class="x-col x-col-33 cbUfAna" xid="col7" __cid="cbUfAna"> 
+                            <span xid="span57" class="text-danger pull-left   cbUfAna" style="font-size:16px;" __cid="cbUfAna">￥</span>  
+                            <span xid="span54" class=" text-danger pull-left cbUfAna" style="font-size:16px;" __cid="cbUfAna">0.00</span>
+                          </div>  
+                          <div class="x-col cbUfAna" xid="col13" __cid="cbUfAna"></div>
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </li> 
+              </ul> 
+            </div> 
+          </div>
+        </div> 
+      </div>  
+      <div xid="div8" style="padding:5px 5px 5px 5px;background-color:#F2F1F2;" __cid="cbUfAna" class="cbUfAna"> 
+        <div xid="div7" style="background-color:white;padding-right:8px;padding-left:8px;padding-top:3px;height:60px;" __cid="cbUfAna" class="cbUfAna"> 
+          <div class="media cbUfAna" xid="media8" style="margin-top:3px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody8" __cid="cbUfAna"> 
+              <h4 class="media-heading cbUfAna" xid="h49" __cid="cbUfAna"> 
+                <span xid="span28" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">经手人</span>
+              </h4> 
+            </div>  
+            <div class="media-right cbUfAna" xid="mediaRight7" __cid="cbUfAna"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs cbUfAna" xid="button11" style="font-size:16px;background-color:white;color:#242424;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:$model.orderData.val(&#34;make&#34;)" data-config="{&#34;label&#34;:&#34;张三&#34;}" __cid="cbUfAna"> 
+                <i xid="i11" __cid="cbUfAna" class="cbUfAna"></i>  
+                <span xid="span27" __cid="cbUfAna" class="cbUfAna">张三</span>
+              </a> 
+            </div> 
+          </div>  
+          <div class="media cbUfAna" xid="media10" style="margin-top:3px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody10" __cid="cbUfAna"> 
+              <h4 class="media-heading cbUfAna" xid="h411" __cid="cbUfAna"> 
+                <span xid="span29" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">发货仓库</span>
+              </h4> 
+            </div>  
+            <div class="media-right cbUfAna" xid="mediaRight9" __cid="cbUfAna"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs cbUfAna" xid="button13" style="font-size:16px;background-color:white;color:#242424;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;默认仓库&#34;}" __cid="cbUfAna"> 
+                <i xid="i13" __cid="cbUfAna" class="cbUfAna"></i>  
+                <span xid="span30" __cid="cbUfAna" class="cbUfAna">默认仓库</span>
+              </a> 
+            </div> 
+          </div>
+        </div> 
+      </div>  
+      <div xid="div9" style="padding:5px 5px 5px 5px;background-color:#F2F1F2;" __cid="cbUfAna" class="cbUfAna"> 
+        <div xid="div10" style="background-color:white;padding-right:8px;padding-left:8px;padding-top:3px;height:60px;" __cid="cbUfAna" class="cbUfAna"> 
+          <div class="media cbUfAna" xid="media12" style="margin-top:3px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody11" __cid="cbUfAna"> 
+              <h4 class="media-heading cbUfAna" xid="h413" __cid="cbUfAna"> 
+                <span xid="span32" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">交货日期</span>
+              </h4> 
+            </div>  
+            <div class="media-right cbUfAna" xid="mediaRight10" __cid="cbUfAna"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs cbUfAna" xid="button15" style="font-size:16px;background-color:white;color:#242424;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:$model.orderData.val(&#34;delivery_time&#34;)" data-config="{&#34;label&#34;:&#34;2019/09/21&#34;}" __cid="cbUfAna"> 
+                <i xid="i14" __cid="cbUfAna" class="cbUfAna"></i>  
+                <span xid="span33" __cid="cbUfAna" class="cbUfAna">2019/09/21</span>
+              </a> 
+            </div> 
+          </div>  
+          <div class="media cbUfAna" xid="media11" style="margin-top:3px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody12" __cid="cbUfAna"> 
+              <h4 class="media-heading cbUfAna" xid="h412" __cid="cbUfAna"> 
+                <span xid="span31" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">发票类型</span>
+              </h4> 
+            </div>  
+            <div class="media-right cbUfAna" xid="mediaRight11" __cid="cbUfAna"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs cbUfAna" xid="button14" style="font-size:16px;background-color:white;color:#242424;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;不开发票&#34;}" __cid="cbUfAna"> 
+                <i xid="i15" __cid="cbUfAna" class="cbUfAna"></i>  
+                <span xid="span34" __cid="cbUfAna" class="cbUfAna">不开发票</span>
+              </a> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div12" style="padding:5px 5px 5px 5px;background-color:#F2F1F2;" __cid="cbUfAna" class="cbUfAna"> 
+        <div xid="div11" style="background-color:white;padding-right:8px;padding-left:8px;padding-top:3px;" __cid="cbUfAna" class="cbUfAna"> 
+          <div class="media cbUfAna" xid="media13" style="margin-top:3px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody13" __cid="cbUfAna"> 
+              <h4 class="media-heading cbUfAna" xid="h415" __cid="cbUfAna"> 
+                <span xid="span35" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">发货信息</span>
+              </h4> 
+            </div>  
+            <div class="media-right cbUfAna" xid="mediaRight13" __cid="cbUfAna"></div> 
+          </div>  
+          <div class="media cbUfAna" xid="media14" style="margin-top:3px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody15" __cid="cbUfAna"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cbUfAna" xid="labelEdit1" style="height:35px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cbUfAna"> 
+                <label class="x-label cbUfAna" xid="label1" style="margin-left:4px;" __cid="cbUfAna">发货方式</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cbUfAna" xid="input1" style="border-style:none none none none;background-color:white;text-align:right;" data-bind="component:{ref:&#34;物流&#34;,name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;disabled&#34;:true,&#34;placeHolder&#34;:&#34;物流&#34;}" __cid="cbUfAna">
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cbUfAna" xid="labelEdit2" style="height:35px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cbUfAna"> 
+                <label class="x-label cbUfAna" xid="label2" style="margin-left:4px;" __cid="cbUfAna">收货单位</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cbUfAna" xid="input2" style="border-style:none none none none;background-color:white;text-align:right;" data-bind="component:{ref:$model.addressData.ref(&#34;consignee&#34;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;disabled&#34;:true,&#34;placeHolder&#34;:&#34;上海物流责任有限科技公司&#34;}" __cid="cbUfAna">
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cbUfAna" xid="labelEdit3" style="height:35px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cbUfAna"> 
+                <label class="x-label cbUfAna" xid="label3" style="margin-left:4px;" __cid="cbUfAna">收货人</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cbUfAna" xid="input4" style="border-style:none none none none;background-color:white;text-align:right;" data-bind="component:{ref:$model.addressData.ref(&#34;phone&#34;),name:'$model/UI2/system/components/justep/input/input'},text:$model.addressData.val(&#34;phone&#34;)" data-config="{&#34;disabled&#34;:true}" __cid="cbUfAna">
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cbUfAna" xid="labelEdit4" style="height:35px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cbUfAna"> 
+                <label class="x-label cbUfAna" xid="label4" style="margin-left:4px;" __cid="cbUfAna">地址</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cbUfAna" xid="input3" style="border-style:none none none none;background-color:white;text-align:right;" data-bind="component:{ref:$model.addressData.ref(&#34;address&#34;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;disabled&#34;:true,&#34;placeHolder&#34;:&#34;上海杨浦区黄兴路217号201&#34;}" __cid="cbUfAna">
+              </div>
+            </div> 
+          </div> 
+        </div> 
+      </div>
+    </div>  
+    <style __cid="cbUfAna" class="cbUfAna">.x-panel.pcyMZrQ3-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcyMZrQ3-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcyMZrQ3-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcyMZrQ3-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcyMZrQ3-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcyMZrQ3-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcyMZrQ3-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcyMZrQ3-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcyMZrQ3-iosstatusbar >.x-panel-content {top: 0px;}</style>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cbUfAna" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;direction&#34;:&#34;auto&#34;}" __cid="cbUfAna"> 
+    <div class="x-popOver-overlay cbUfAna" xid="div14" __cid="cbUfAna"></div>  
+    <div class="x-popOver-content cbUfAna" xid="div15" style="height:60%;width:75%;" __cid="cbUfAna"> 
+      <div xid="div16" style="height:100%;width:100%;" __cid="cbUfAna" class="cbUfAna"> 
+        <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcmI3MNf-iosstatusbar cbUfAna" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cbUfAna"> 
+          <div class="x-panel-top cbUfAna" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cbUfAna"> 
+            <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cbUfAna" xid="titleBar1" style="background-color:#170153;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cbUfAna"> 
+              <div class="x-titlebar-left cbUfAna" xid="left1" __cid="cbUfAna"></div>  
+              <div class="x-titlebar-title cbUfAna" xid="title1" __cid="cbUfAna">状态跟踪</div>  
+              <div class="x-titlebar-right  cbUfAna" xid="right1" __cid="cbUfAna">
+                <div class="empty cbUfAna" __cid="cbUfAna"></div>
+              </div>
+            </div> 
+          </div>  
+          <div class="x-panel-content cbUfAna" xid="content2" style="background-color:white;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cbUfAna"> 
+            <div xid="div18" style="padding:8px 3px 3px 5px;background-color:#EEEEEE;" __cid="cbUfAna" class="cbUfAna"> 
+              <ul xid="ul2" __cid="cbUfAna" class="cbUfAna"> 
+                <div component="$model/UI2/system/components/justep/list/list" class="x-list cbUfAna" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;logData&#34;}" __cid="cbUfAna"> 
+                  <ul class="x-list-template hide cbUfAna" xid="listTemplateUl2" __cid="cbUfAna" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}"> 
+                    <li xid="li3" __cid="cbUfAna" class="cbUfAna"> 
+                      <li xid="li2" class="li_class2 cbUfAna" __cid="cbUfAna"> 
+                        <div xid="div18" __cid="cbUfAna" class="cbUfAna"> 
+                          <div class="media cbUfAna" xid="media16" style="margin-left:2px;" __cid="cbUfAna"> 
+                            <div class="media-body cbUfAna" xid="mediaBody17" __cid="cbUfAna"> 
+                              <h5 xid="h58" class="media-heading cbUfAna" style="font-size:14px;color:#407422;" __cid="cbUfAna" data-bind="text:val(&#34;create_at&#34;)"></h5>  
+                              <h5 xid="h520" class="media-heading cbUfAna" style="color:#545454;;font-size:14px;" __cid="cbUfAna" data-bind="text:val(&#34;operator&#34;)"></h5>  
+                              <h5 xid="h51" class="media-heading cbUfAna" style="color:#545454;;font-size:14px;" __cid="cbUfAna" data-bind="text:val(&#34;desc&#34;)"></h5>
+                            </div> 
+                          </div> 
+                        </div> 
+                      </li> 
+                    </li> 
+                  </ul> 
+                </div> 
+              </ul> 
+            </div> 
+          </div>  
+          <style __cid="cbUfAna" class="cbUfAna">.x-panel.pcmI3MNf-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcmI3MNf-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcmI3MNf-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcmI3MNf-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmI3MNf-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcmI3MNf-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmI3MNf-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmI3MNf-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmI3MNf-iosstatusbar >.x-panel-content {top: 48px;}</style>
+        </div> 
+      </div> 
+    </div> 
+  </div>
+</div></div>
+        
+        <div id="downloadGCF" style="display:none;padding:50px;">
+        	<span>您使用的浏览器需要下载插件才能使用, </span>
+        	<a id="downloadGCFLink" href="#">下载地址</a>
+        	<p>(安装后请重新打开浏览器)</p>
+        </div>
+    	<script>
+    	
+    	            //判断浏览器, 判断GCF
+    	 			var browser = {
+    			        isIe: function () {
+    			            return navigator.appVersion.indexOf("MSIE") != -1;
+    			        },
+    			        navigator: navigator.appVersion,
+    			        getVersion: function() {
+    			            var version = 999; // we assume a sane browser
+    			            if (navigator.appVersion.indexOf("MSIE") != -1)
+    			                // bah, IE again, lets downgrade version number
+    			                version = parseFloat(navigator.appVersion.split("MSIE")[1]);
+    			            return version;
+    			        }
+    			    };
+    				function isGCFInstalled(){
+    			      try{
+    			        var i = new ActiveXObject('ChromeTab.ChromeFrame');
+    			        if (i) {
+    			          return true;
+    			        }
+    			      }catch(e){}
+    			      return false;
+    				}
+    	            //判断浏览器, 判断GCF
+    	            var __continueRun = true;
+    				if (browser.isIe() && (browser.getVersion() < 10) && !isGCFInstalled()) {
+    					document.getElementById("applicationHost").style.display = 'none';
+    					document.getElementById("downloadGCF").style.display = 'block';
+    					var downloadLink = "/" + location.pathname.match(/[^\/]+/)[0] + "/v8.msi";
+    					document.getElementById("downloadGCFLink").href = downloadLink; 
+    					__continueRun = false;
+    	            }
+		 	
+    	</script>
+        <script id="_metaJS" src="../../../../../v_4a06e12c0c1d4e72afd2564914a70519l_zh_CNs_d_m/system/config/meta.js"> </script>
+        <script id="_requireJS" src="../../../../../v_3e46a10895654db0b2a25e94ba5d1a08l_zh_CNs_d_m/system/lib/require/require.2.1.10.js"> </script>
+        <script src="../../../../../v_ca6ee53c4fec4b85963cfd1213ac0096l_zh_CNs_d_m/system/core.min.js"></script><script src="../../../../../v_9b428268b0aa4326b0c3fc7a22a124fal_zh_CNs_d_m/system/common.min.js"></script><script src="../../../../../v_b2fb9425ae7b4b13824cc48b2ba36692l_zh_CNs_d_m/system/components/comp.min.js"></script><script id="_mainScript">
+        
+			if (__continueRun) {
+                window.__justep.cssReady = function(fn){
+                	var promises = [];
+                	for (var p in window.__justep.__ResourceEngine.__loadingCss){
+                		if(window.__justep.__ResourceEngine.__loadingCss.hasOwnProperty(p))
+                			promises.push(window.__justep.__ResourceEngine.__loadingCss[p].promise());
+                	}
+                	$.when.apply($, promises).done(fn);
+                };
+                
+            	window.__justep.__ResourceEngine = {
+            		readyRegExp : navigator.platform === 'PLAYSTATION 3' ? /^complete$/ : /^(complete|loaded)$/,
+            		url: window.location.href,	
+            		/*contextPath: 不包括语言 */
+            		contextPath: "",
+            		serverPath: "",
+            		__loadedJS: [],
+            		__loadingCss: {},
+            		onLoadCss: function(url, node){
+            			if (!this.__loadingCss[url]){
+            				this.__loadingCss[url] = $.Deferred();	
+                			if (node.attachEvent &&
+                                    !(node.attachEvent.toString && node.attachEvent.toString().indexOf('[native code') < 0) &&
+                                    !(typeof opera !== 'undefined' && opera.toString() === '[object Opera]')) {
+                                node.attachEvent('onreadystatechange', this.onLinkLoad.bind(this));
+                            } else {
+                                node.addEventListener('load', this.onLinkLoad.bind(this), false);
+                                node.addEventListener('error', this.onLinkError.bind(this), false);
+                            }
+            			}
+            		},
+            		
+            		onLinkLoad: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+            	        if (evt.type === 'load' ||
+                                (this.readyRegExp.test(target.readyState))) {
+            	        	var url = target.getAttribute("href");
+            	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+            	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+            	        	}
+                        }
+            		},
+            		
+            		onLinkError: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+        	        	var url = target.getAttribute("href");
+        	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+        	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+        	        	}
+            		},
+            		
+            		initContextPath: function(){
+            			var baseURL = document.getElementById("_requireJS").src;
+            			var before = location.protocol + "//" + location.host;
+            			var after = "/system/lib/require/require.2.1.10";
+            			var i = baseURL.indexOf(after);
+            			if (i !== -1){
+    	        			var middle = baseURL.substring(before.length, i);
+    						var items = middle.split("/");
+    						
+    						
+    						if ((items[items.length-1].indexOf("v_") === 0) 
+    								&& (items[items.length-1].indexOf("l_") !== -1)
+    								&& (items[items.length-1].indexOf("s_") !== -1)
+    								&& (items[items.length-1].indexOf("d_") !== -1)
+    								|| (items[items.length-1]=="v_")){
+    							items.splice(items.length-1, 1);
+    						}
+    						
+    						
+    						if (items.length !== 1){
+    							window.__justep.__ResourceEngine.contextPath = items.join("/");
+    						}else{
+    							window.__justep.__ResourceEngine.contextPath = before;
+    						}
+    						var index = window.__justep.__ResourceEngine.contextPath.lastIndexOf("/");
+    						if (index != -1){
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath.substr(0, index);
+    						}else{
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath;
+    						}
+            			}else{
+            				throw new Error(baseURL + " hasn't  " + after);
+            			}
+            		},
+            	
+            		loadJs: function(urls){
+            			if (urls && urls.length>0){
+            				var loadeds = this._getResources("script", "src").concat(this.__loadedJS);
+    	       				for (var i=0; i<urls.length; i++){
+								var url = urls[i];
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					this.__loadedJS[this.__loadedJS.length] = url;
+    	        					/*
+    	        					var script = document.createElement("script");
+    	        					script.src = url;
+    	        					document.head.appendChild(script);
+    	        					*/
+    	        					//$("head").append("<script  src='" + url + "'/>");
+									var url = require.toUrl("$UI" + url);
+    	        					$.ajax({
+    	        						url: url,
+    	        						dataType: "script",
+    	        						cache: true,
+    	        						async: false,
+    	        						success: function(){}
+    	        						});
+    	        				} 
+    	       				}
+            			}
+            		},
+            		
+            		loadCss: function(styles){
+           				var loadeds = this._getResources("link", "href");
+            			if (styles && styles.length>0){
+            				for (var i=0; i<styles.length; i++){
+    	       					var url = window.__justep.__ResourceEngine.contextPath + styles[i].url.replace("/UI2/", "/");
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					var include = styles[i].include || "";
+    	        					var link = $("<link type='text/css' rel='stylesheet' href='" + url + "' include='" + include + "'/>");
+    	        					this.onLoadCss(url, link[0]);
+    	        					$("head").append(link);
+    	        				} 
+            				}
+            			}
+            			
+            		},
+            		
+            		
+            		_isLoaded: function(url, loadeds){
+            			if (url){
+            				var newUrl = "";
+            				var items = url.split("/");
+            				var isVls = false;
+            				for (var i=0; i<items.length; i++){
+            					if (isVls){
+                					newUrl += "/" + items[i];
+            					}else{
+                					if (items[i] && (items[i].indexOf("v_")===0)
+            								&& (items[i].indexOf("l_")!==-1)
+            								&& (items[i].indexOf("s_")!==-1)
+            								&& (items[i].indexOf("d_")!==-1)
+            								|| (items[i]=="v_")){
+                						isVls = true;
+                					}
+            					}
+            				}
+            				if (!newUrl)
+            					newUrl = url;
+            				
+            				for (var i=0; i<loadeds.length; i++){
+								var originUrl = this._getOriginUrl(loadeds[i]);
+								if (originUrl && (originUrl.indexOf(newUrl)!==-1)){
+									return true;
+								}
+    						}
+            			}
+    					return false;
+            		},
+
+					_getOriginUrl: function(url){
+						var result = "";
+						if (url && (url.indexOf(".md5_")!==-1)){
+							url = url.split("#")[0];
+							url = url.split("?")[0];
+							var items = url.split(".");
+							for (var i=0; i<items.length; i++){
+								if ((i===items.length-2) && (items[i].indexOf("md5_")!==-1)){
+									continue;
+								}else{
+									if (i>0) result += ".";
+									result += items[i];
+								}
+							}
+						}else{
+							result = url;
+						}
+						return result;
+					},
+            		
+            		_getResources: function(tag, attr){
+    					var result = [];
+    					var scripts = $(tag);
+    					for (var i=0; i<scripts.length; i++){
+    						var v = scripts[i][attr];
+    						if (v){
+    							result[result.length] = v;
+    						}
+    					}
+    					return result;
+            		}
+            	};
+            	
+            	window.__justep.__ResourceEngine.initContextPath();
+    			requirejs.config({
+    				baseUrl: window.__justep.__ResourceEngine.contextPath + '/v_6b7fcd79408e44599aa64a687e12153el_zh_CNs_d_m/theAgentOrder2/main/dialog/dialog',
+    			    paths: {
+    			    	/* 解决require.normalizeName与require.toUrl嵌套后不一致的bug   */
+    			    	'$model/UI2/v_': window.__justep.__ResourceEngine.contextPath + '/v_6b7fcd79408e44599aa64a687e12153el_zh_CNs_d_m',
+    			    	'$model/UI2': window.__justep.__ResourceEngine.contextPath + '/v_6b7fcd79408e44599aa64a687e12153el_zh_CNs_d_m',
+    			    	'$model': window.__justep.__ResourceEngine.serverPath,
+    			        'text': window.__justep.__ResourceEngine.contextPath + '/v_6b7fcd79408e44599aa64a687e12153el_zh_CNs_d_m/system/lib/require/text.2.0.10',
+    			        'bind': window.__justep.__ResourceEngine.contextPath + '/v_6b7fcd79408e44599aa64a687e12153el_zh_CNs_d_m/system/lib/bind/bind',
+    			        'jquery': window.__justep.__ResourceEngine.contextPath + '/v_6b7fcd79408e44599aa64a687e12153el_zh_CNs_d_m/system/lib/jquery/jquery-1.11.1.min'
+    			    },
+    			    map: {
+    				        '*': {
+    				            res: '$model/UI2/system/lib/require/res',
+    				            service: '$model/UI2/system/lib/require/service',
+    				            cordova: '$model/UI2/system/lib/require/cordova',
+    				            w: '$model/UI2/system/lib/require/w',
+    				            css: '$model/UI2/system/lib/require/css'
+    				        }
+    				},
+    				waitSeconds: 300
+    			});
+    			
+    			requirejs(['require', 'jquery', '$model/UI2/system/lib/base/composition', '$model/UI2/system/lib/base/url', '$model/UI2/system/lib/route/hashbangParser', '$model/UI2/system/components/justep/versionChecker/versionChecker', '$model/UI2/system/components/justep/loadingBar/loadingBar', '$model/UI2/system/lib/jquery/domEvent',  '$model/UI2/system/lib/cordova/cordova'],  function (require, $, composition, URL, HashbangParser,versionChecker) { 
+    				document.addEventListener('deviceready', function() {
+    	                if (navigator && navigator.splashscreen && navigator.splashscreen.hide) {
+    	                	/*延迟隐藏，视觉效果更理想*/
+    	                	setTimeout(function() {navigator.splashscreen.hide();}, 800);
+    	                }
+    	            }, false);
+					setTimeout(function(){
+						versionChecker.check();
+					},2000);
+    				var context = {};
+    				context.model = '$model/UI2/theAgentOrder2/main/dialog/dialog/InfoOrder.w' + (document.location.search || "");
+    				context.view = $('#applicationHost').children()[0];
+    				var element = document.getElementById('applicationHost');
+
+					    				
+    				
+    				var ownerid = new URL(window.__justep.__ResourceEngine.url).getParam("$ownerid");
+    				var pwindow = opener;
+    				if (!pwindow && window.parent && window.parent.window){
+    					pwindow = window.parent.window;
+    				}
+    				if(ownerid && pwindow 
+    						&& pwindow.__justep && pwindow.__justep.windowOpeners
+    						&& pwindow.__justep.windowOpeners[ownerid]
+    						&& $.isFunction(pwindow.__justep.windowOpeners[ownerid].sendToWindow)){
+    					window.__justep.setParams = function(params){
+    						/* 给windowOpener提供再次传参数的接口  */
+    						params = params || {};
+    						composition.setParams(document.getElementById('applicationHost'), params);
+    					};
+    					var winOpener = pwindow.__justep.windowOpeners[ownerid];
+    					if(winOpener) winOpener.window = window;
+    					$(window).unload(function(event){
+    						if(winOpener && winOpener.dispatchCloseEvent) winOpener.dispatchCloseEvent();
+    					});
+    					var params = winOpener.sendToWindow();
+						context.owner = winOpener;
+						context.params = params || {};
+	        			composition.compose(element, context);
+    				}else{
+        				var params =  {};
+    					var state = new HashbangParser(window.location.hash).parse().__state;
+    					if (state){
+    						params = state.get("");
+    						try{
+    							params = JSON.parse(params);
+    							if (params.hasOwnProperty("__singleValue__")){
+    								params = params.__singleValue__;
+    							}
+    						}catch(e1){}
+    					}
+    					context.noUpdateState = true;
+        				context.params = params;
+        				composition.compose(element, context);
+    				}
+    			});    
+            }
+		 	
+        </script>
+    </body>
+</html>

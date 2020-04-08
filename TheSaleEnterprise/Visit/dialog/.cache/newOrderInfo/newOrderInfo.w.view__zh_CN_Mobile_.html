@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cVNRNry" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cVNRNry" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <style>.btn-default3.cVNRNry{color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); border-color: rgb(0, 0, 0)}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cVNRNry" class="cVNRNry"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcqiIvey-iosstatusbar cVNRNry" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cVNRNry"> 
+    <div class="x-panel-top cVNRNry" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVNRNry"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cVNRNry" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;添加订单明细&#34;}" __cid="cVNRNry"> 
+        <div class="x-titlebar-left cVNRNry" xid="left2" __cid="cVNRNry"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cVNRNry" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;返回&#34;}" __cid="cVNRNry"> 
+            <i xid="i1" __cid="cVNRNry" class="cVNRNry"></i>  
+            <span xid="span4" __cid="cVNRNry" class="cVNRNry">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cVNRNry" xid="title2" __cid="cVNRNry">添加订单明细</div>  
+        <div class="x-titlebar-right  cVNRNry" xid="right2" __cid="cVNRNry">
+          <div class="empty cVNRNry" __cid="cVNRNry"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cVNRNry" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVNRNry"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cVNRNry" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVNRNry"></div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row border-One cVNRNry" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVNRNry"> 
+        <div class="x-col cVNRNry" xid="col8" __cid="cVNRNry"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cVNRNry" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;orderData&#34;}" __cid="cVNRNry"> 
+            <ul class="x-list-template hide cVNRNry" xid="listTemplateUl1" __cid="cVNRNry" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+              <li xid="li1" __cid="cVNRNry" class="cVNRNry"> 
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row cVNRNry" xid="row8" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cVNRNry"> 
+                  <div class="col col-xs-12 cVNRNry" xid="col18" __cid="cVNRNry"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNRNry" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNRNry"> 
+                      <label class="x-label font-One cVNRNry" xid="label2" style="width:80px;" __cid="cVNRNry">产品：</label>  
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNRNry" xid="input4" data-bind="component:{ref:ref(&#34;cp_title&#34;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;readonly&#34;:true}" __cid="cVNRNry">  
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cVNRNry" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button5Click" data-config="{&#34;label&#34;:&#34;选择产品&#34;}" __cid="cVNRNry"> 
+                        <i xid="i5" __cid="cVNRNry" class="cVNRNry"></i>  
+                        <span xid="span3" __cid="cVNRNry" class="cVNRNry">选择产品</span> 
+                      </a> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 cVNRNry" xid="col21" __cid="cVNRNry"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNRNry" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNRNry"> 
+                      <label class="x-label cVNRNry" xid="label4" style="width:80px;" __cid="cVNRNry">供货价：</label>  
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNRNry" xid="input2" style="width:30px;" data-bind="component:{ref:ref(&#34;ghj&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cVNRNry">  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output cVNRNry" xid="output5" data-bind="component:{ref:ref(&#34;unit&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cVNRNry"></div> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 cVNRNry" xid="col1" __cid="cVNRNry"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNRNry" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNRNry"> 
+                      <label class="x-label cVNRNry" xid="label3" style="width:80px;" __cid="cVNRNry">订单数量：</label>  
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNRNry" xid="input3" style="width:30px;" data-bind="component:{ref:ref(&#34;x&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cVNRNry">  
+                      <label class="x-label cVNRNry" xid="label5" style="width:1em;" __cid="cVNRNry">箱</label>  
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNRNry" xid="input5" data-bind="component:{ref:ref(&#34;g&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cVNRNry">  
+                      <label class="x-label cVNRNry" xid="label6" style="width:1em;" __cid="cVNRNry">个</label> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 cVNRNry" xid="col4" __cid="cVNRNry"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNRNry" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNRNry"> 
+                      <label class="x-label cVNRNry" xid="label1" style="width:80px;" __cid="cVNRNry">产品备注：</label>  
+                      <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit cVNRNry" xid="textarea1" data-bind="component:{ref:ref(&#34;cpbz&#34;),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cVNRNry"></textarea> 
+                    </div> 
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cVNRNry" xid="row4" style="padding:20px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVNRNry"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label cVNRNry" xid="button4" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&#34;label&#34;:&#34;提 交&#34;}" __cid="cVNRNry"> 
+          <i xid="i4" __cid="cVNRNry" class="cVNRNry"></i>  
+          <span xid="span5" __cid="cVNRNry" class="cVNRNry">提 交</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cVNRNry" class="cVNRNry">.x-panel.pcqiIvey-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcqiIvey-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcqiIvey-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcqiIvey-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcqiIvey-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcqiIvey-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcqiIvey-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcqiIvey-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcqiIvey-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="wReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:wReceiverReceive" __cid="cVNRNry" class="cVNRNry"></span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog1" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:windowDialog1Receive" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;showTitle&#34;:false,&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/Commonly/dialog/dialog/product1.w&#34;}" __cid="cVNRNry" class="cVNRNry">
+    <div class="x-dialog-overlay cVNRNry" __cid="cVNRNry"></div>
+    <div class="x-dialog cVNRNry" style="display:none;" showTitle="false" __cid="cVNRNry">
+      <div class="x-dialog-title cVNRNry" __cid="cVNRNry">
+        <button class="close cVNRNry" __cid="cVNRNry">
+          <span __cid="cVNRNry" class="cVNRNry">×</span>
+        </button>
+        <div class="x-dialog-title-text cVNRNry" __cid="cVNRNry"></div>
+      </div>
+      <div class="x-dialog-body cVNRNry" __cid="cVNRNry"></div>
+    </div>
+  </span> 
+</div>

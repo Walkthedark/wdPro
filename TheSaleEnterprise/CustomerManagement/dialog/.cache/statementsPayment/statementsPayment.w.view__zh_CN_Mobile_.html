@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cem6N32" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cem6N32" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cem6N32" class="cem6N32"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="infoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/CustomerManagement/dialog/statementsList.w&#34;}" __cid="cem6N32" class="cem6N32">
+    <div class="x-dialog-overlay cem6N32" __cid="cem6N32"></div>
+    <div class="x-dialog cem6N32" style="display:none;" __cid="cem6N32">
+      <div class="x-dialog-title cem6N32" __cid="cem6N32">
+        <button class="close cem6N32" __cid="cem6N32">
+          <span __cid="cem6N32" class="cem6N32">×</span>
+        </button>
+        <div class="x-dialog-title-text cem6N32" __cid="cem6N32"></div>
+      </div>
+      <div class="x-dialog-body cem6N32" __cid="cem6N32"></div>
+    </div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcequY3e-iosstatusbar cem6N32" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cem6N32"> 
+    <div class="x-panel-top cem6N32" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cem6N32"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cem6N32" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;货款对账单&#34;}" __cid="cem6N32"> 
+        <div class="x-titlebar-left cem6N32" xid="left2" __cid="cem6N32"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cem6N32" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;返回&#34;}" __cid="cem6N32"> 
+            <i xid="i1" __cid="cem6N32" class="cem6N32"></i>  
+            <span xid="span4" __cid="cem6N32" class="cem6N32">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cem6N32" xid="title2" __cid="cem6N32">货款对账单</div>  
+        <div class="x-titlebar-right  cem6N32" xid="right2" __cid="cem6N32">
+          <div class="empty cem6N32" __cid="cem6N32"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-scroll-view cem6N32" xid="content6" _xid="C7E1BB556C000001138D1E5D797C1106" style="bottom: 0px; background-size: cover; background-image: url(http://localhost:44755/x5/UI2/v_/TheSaleEnterprise/CustomerManagement/dialog/none);" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cem6N32"> 
+      <div class="x-scroll cem6N32" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cem6N32"> 
+        <div class="x-content-center x-pull-down container cem6N32" xid="div1" __cid="cem6N32"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down cem6N32" xid="i2" __cid="cem6N32"></i>  
+          <span class="x-pull-down-label cem6N32" xid="span2" __cid="cem6N32">下拉刷新...</span> 
+        </div>  
+        <div class="x-scroll-content cem6N32" xid="div2" __cid="cem6N32"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cem6N32" xid="list2" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;orderData&#34;}" __cid="cem6N32"> 
+            <ul class="x-list-template hide cem6N32" xid="listTemplateUl2" __cid="cem6N32" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}"> 
+              <li xid="li2" class="border-Two cem6N32" __cid="cem6N32" data-bind="event:{click:$model._callModelFn.bind($model, 'li2Click')}"> 
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row row-padding cem6N32" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cem6N32"> 
+                  <div class="col col-xs-6 cem6N32" xid="col2" __cid="cem6N32"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cem6N32" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cem6N32"> 
+                      <label class="x-label cem6N32" xid="label5" __cid="cem6N32">日期：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cem6N32" xid="output13" data-bind="component:{ref:ref(&#34;rq&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cem6N32"></div> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-6 cem6N32" xid="col1" __cid="cem6N32"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cem6N32" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cem6N32"> 
+                      <label class="x-label cem6N32" xid="label6" __cid="cem6N32">应收：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cem6N32" xid="output14" data-bind="component:{ref:ref(&#34;ys&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cem6N32"></div> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-6 cem6N32" xid="col7" __cid="cem6N32"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cem6N32" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cem6N32"> 
+                      <label class="x-label cem6N32" xid="label7" __cid="cem6N32">类型：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cem6N32" xid="output15" data-bind="component:{ref:ref(&#34;djlx&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cem6N32"></div> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-6 cem6N32" xid="col6" __cid="cem6N32"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cem6N32" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cem6N32"> 
+                      <label class="x-label cem6N32" xid="label8" __cid="cem6N32">已收：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cem6N32" xid="output16" data-bind="component:{ref:ref(&#34;ys&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cem6N32"></div> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-6 cem6N32" xid="col5" __cid="cem6N32"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cem6N32" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cem6N32"> 
+                      <label class="x-label cem6N32" xid="label9" __cid="cem6N32">状态：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-Two cem6N32" xid="output17" data-bind="component:{ref:ref(&#34;zt&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cem6N32"></div> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-6 cem6N32" xid="col4" __cid="cem6N32"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cem6N32" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cem6N32"> 
+                      <label class="x-label cem6N32" xid="label10" __cid="cem6N32">余额：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cem6N32" xid="output18" data-bind="component:{ref:ref(&#34;qmye&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cem6N32"></div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="x-content-center x-pull-up cem6N32" xid="div3" __cid="cem6N32"> 
+          <span class="x-pull-up-label cem6N32" xid="span3" __cid="cem6N32">加载更多...</span> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cem6N32" class="cem6N32">.x-panel.pcequY3e-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcequY3e-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcequY3e-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcequY3e-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcequY3e-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcequY3e-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcequY3e-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcequY3e-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcequY3e-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiver1Receive" __cid="cem6N32" class="cem6N32"></span> 
+</div>

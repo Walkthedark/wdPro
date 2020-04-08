@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window ceaq6Zz" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ceaq6Zz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="ceaq6Zz" class="ceaq6Zz"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcQV32iy-iosstatusbar ceaq6Zz" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ceaq6Zz"> 
+    <div class="x-panel-top ceaq6Zz" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceaq6Zz"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar ceaq6Zz" style="background-color:#47D1D1;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;订货单&quot;}" __cid="ceaq6Zz"> 
+        <div class="x-titlebar-left ceaq6Zz" __cid="ceaq6Zz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ceaq6Zz" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="ceaq6Zz"> 
+            <i class="icon-chevron-left ceaq6Zz" __cid="ceaq6Zz"/>  
+            <span __cid="ceaq6Zz" class="ceaq6Zz"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title ceaq6Zz" __cid="ceaq6Zz">订货单</div>  
+        <div class="x-titlebar-right  ceaq6Zz" __cid="ceaq6Zz">
+          <div class="empty ceaq6Zz" __cid="ceaq6Zz"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content  x-scroll-view ceaq6Zz" xid="content1" _xid="C85E90BF5A800001E569817212F7B140" style="background-color:#e6e7e8;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceaq6Zz">
+      <div class="x-scroll ceaq6Zz" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="ceaq6Zz"> 
+        <div class="x-content-center x-pull-down container ceaq6Zz" xid="div1" __cid="ceaq6Zz"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down ceaq6Zz" xid="i1" __cid="ceaq6Zz"/>  
+          <span class="x-pull-down-label ceaq6Zz" xid="span1" __cid="ceaq6Zz">下拉刷新...</span>
+        </div>  
+        <div class="x-scroll-content ceaq6Zz" xid="div2" __cid="ceaq6Zz">
+          <ul class="x-list x-list-template hide ceaq6Zz" component="$model/UI2/system/components/justep/list/list" xid="list1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;orderGoodsList&quot;,&quot;limit&quot;:-1}" __cid="ceaq6Zz"> 
+            <li xid="li2" style="margin-top:10px;background-color:#fff;" bind-click="li2Click" __cid="ceaq6Zz" class="ceaq6Zz"> 
+              <div xid="div4" __cid="ceaq6Zz" class="ceaq6Zz"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row ceaq6Zz" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceaq6Zz"> 
+                  <div class="x-col ceaq6Zz" xid="col1" style="display:flex" __cid="ceaq6Zz"> 
+                    <div xid="div5" style="flex:2;" __cid="ceaq6Zz" class="ceaq6Zz"> 
+                      <span xid="span11" style="font-size:16px;color:#333;" bind-text="ref(&quot;order_coding&quot;)" __cid="ceaq6Zz" class="ceaq6Zz"/>
+                    </div>  
+                    <div xid="div6" style="flex:1;text-align:right;" __cid="ceaq6Zz" class="ceaq6Zz"> 
+                      <span xid="span3" style="color:#f66;font-size;14px;" bind-text="ref(&quot;order_auting_state&quot;)" __cid="ceaq6Zz" class="ceaq6Zz"/>
+                    </div> 
+                  </div> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row ceaq6Zz" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceaq6Zz"> 
+                  <div class="x-col ceaq6Zz" xid="col6" __cid="ceaq6Zz"> 
+                    <div xid="div7" class="h-style ceaq6Zz" __cid="ceaq6Zz"> 
+                      <span xid="span4" __cid="ceaq6Zz" class="ceaq6Zz">数量：</span>  
+                      <span xid="span7" bind-text="ref(&quot;order_quantity&quot;)" __cid="ceaq6Zz" class="ceaq6Zz"/>
+                    </div>  
+                    <div xid="div8" class="h-style ceaq6Zz" __cid="ceaq6Zz"> 
+                      <span xid="span5" __cid="ceaq6Zz" class="ceaq6Zz">时间：</span>  
+                      <span xid="span8" bind-text="ref(&quot;order_create_time&quot;)" __cid="ceaq6Zz" class="ceaq6Zz"/>
+                    </div>  
+                    <div xid="div9" class="h-style ceaq6Zz" __cid="ceaq6Zz"> 
+                      <span xid="span6" __cid="ceaq6Zz" class="ceaq6Zz">金额：¥</span>  
+                      <span xid="span9" bind-text="ref(&quot;order_sum&quot;)" __cid="ceaq6Zz" class="ceaq6Zz"/>  
+                      <span xid="span10" bind-text="&quot;(&quot; +val(&quot;order_money_state&quot;) +&quot;)&quot;" __cid="ceaq6Zz" class="ceaq6Zz"/>
+                    </div> 
+                  </div> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row ceaq6Zz" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceaq6Zz"> 
+                  <div class="x-col ceaq6Zz" xid="col4" style="text-align:right;" __cid="ceaq6Zz"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn   btn-link btn-xs btn-only-label ceaq6Zz" xid="againShop" style="border:1px solid #2fa4e7;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;再次购买&quot;}" __cid="ceaq6Zz"> 
+                      <i xid="i2" __cid="ceaq6Zz" class="ceaq6Zz"/>  
+                      <span xid="span15" __cid="ceaq6Zz" class="ceaq6Zz">再次购买</span>
+                    </a> 
+                  </div> 
+                </div> 
+              </div> 
+            </li> 
+          </ul>
+        </div>  
+        <div class="x-content-center x-pull-up ceaq6Zz" xid="div3" __cid="ceaq6Zz"> 
+          <span class="x-pull-up-label ceaq6Zz" xid="span2" __cid="ceaq6Zz">加载更多...</span>
+        </div> 
+      </div>
+    </div>  
+    <style __cid="ceaq6Zz" class="ceaq6Zz">.x-panel.pcQV32iy-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcQV32iy-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcQV32iy-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcQV32iy-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcQV32iy-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcQV32iy-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcQV32iy-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcQV32iy-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcQV32iy-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

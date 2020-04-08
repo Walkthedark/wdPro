@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cEnAr6j" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cEnAr6j" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">
+  <style>body.cEnAr6j{}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cEnAr6j" class="cEnAr6j"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcNvuiie-iosstatusbar cEnAr6j" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cEnAr6j"> 
+    <div class="x-panel-content cEnAr6j" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEnAr6j"> 
+      <div xid="div1" class="list-group-item cEnAr6j" style="padding:5px 5px 5px 5px;background-color:#EBEAF0;" __cid="cEnAr6j"> 
+        <div class="media cEnAr6j" xid="media1" __cid="cEnAr6j"> 
+          <div class="media-body cEnAr6j" xid="mediaBody1" __cid="cEnAr6j"> 
+            <h5 xid="h51" style="color:#181919;" __cid="cEnAr6j" class="cEnAr6j">客户分类</h5>
+          </div> 
+        </div> 
+      </div>
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cEnAr6j" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;client_Type_Data&#34;}" __cid="cEnAr6j"> 
+        <ul class="x-list-template hide cEnAr6j" xid="listTemplateUl1" __cid="cEnAr6j" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+          <li xid="li1" __cid="cEnAr6j" class="cEnAr6j"> 
+            <div xid="div22" class="list-group-item cEnAr6j" style="padding:5px 5px 5px 5px;" __cid="cEnAr6j"> 
+              <div class="media cEnAr6j" xid="media9" __cid="cEnAr6j"> 
+                <div class="media-left cEnAr6j" xid="mediaLeft1" __cid="cEnAr6j"> 
+                  <a href="#" xid="a1" __cid="cEnAr6j" class="cEnAr6j"> 
+                    <img class="media-object cEnAr6j" src="@justepContextPath@/v_af553f5d2a0b45919a31e310e4ce1adfl_zh_CNs_d_m/wdPro/common/img/head4.jpeg" alt="" xid="image1" style="height:40px;width:40px;" __cid="cEnAr6j">
+                  </a> 
+                </div>
+                <div class="media-body cEnAr6j" xid="mediaBody9" __cid="cEnAr6j"> 
+                  <h5 xid="h518" style="color:#181919;" __cid="cEnAr6j" class="cEnAr6j" data-bind="text:val(&#34;staff_name&#34;)">潜在用友客户</h5>  
+                  <h5 xid="h52" style="color:#6D6D6D;font-size:12px;" __cid="cEnAr6j" class="cEnAr6j" data-bind="text:val(&#34;department_name&#34;)"></h5>
+                </div>  
+                <div class="media-right cEnAr6j" xid="mediaRight8" __cid="cEnAr6j"> 
+                  <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cEnAr6j" xid="checkbox1" checkedValue="1" uncheckedValue="0" data-config="{&#34;checked&#34;:false,&#34;checkedValue&#34;:&#34;1&#34;,&#34;disabled&#34;:false,&#34;uncheckedValue&#34;:&#34;0&#34;}" data-bind="component:{ref:ref(&#34;choose&#34;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cEnAr6j">
+                    <input type="checkbox" __cid="cEnAr6j" class="cEnAr6j">
+                    <label __cid="cEnAr6j" class="cEnAr6j"></label>
+                  </span> 
+                </div> 
+              </div> 
+            </div> 
+          </li> 
+        </ul> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cEnAr6j" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEnAr6j"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cEnAr6j" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cEnAr6j"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label cEnAr6j" xid="button1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="cEnAr6j"> 
+          <i xid="i1" __cid="cEnAr6j" class="cEnAr6j"></i>  
+          <span xid="span1" __cid="cEnAr6j" class="cEnAr6j">取消</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cEnAr6j" xid="okBtn" style="background-color:#4B76AE;color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:okBtnClick" data-config="{&#34;label&#34;:&#34;确定&#34;}" __cid="cEnAr6j"> 
+          <i xid="i2" __cid="cEnAr6j" class="cEnAr6j"></i>  
+          <span xid="span2" __cid="cEnAr6j" class="cEnAr6j">确定</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cEnAr6j" class="cEnAr6j">.x-panel.pcNvuiie-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcNvuiie-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcNvuiie-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcNvuiie-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcNvuiie-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcNvuiie-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcNvuiie-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcNvuiie-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcNvuiie-iosstatusbar >.x-panel-content {top: 0px;}</style>
+  </div> 
+</div>

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cmeMRBf" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cmeMRBf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cmeMRBf" class="cmeMRBf"></div>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cmeMRBf" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;active&#34;:0}" __cid="cmeMRBf"> 
+    <div class="x-contents-content active cmeMRBf" xid="content1" style="background-color:#F3F4F3;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cmeMRBf"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cmeMRBf" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;relevanceDlientData&#34;}" __cid="cmeMRBf"> 
+        <ul class="x-list-template hide cmeMRBf" xid="listTemplateUl1" __cid="cmeMRBf" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+          <li xid="li1" __cid="cmeMRBf" class="cmeMRBf">
+            <div xid="div1" class="list-group-item cmeMRBf" __cid="cmeMRBf">
+              <div class="media cmeMRBf" xid="media1" __cid="cmeMRBf"> 
+                <div class="media-body cmeMRBf" xid="mediaBody1" __cid="cmeMRBf"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cmeMRBf" xid="button2" style="color:#585958;font-size:16px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:val(&#34;client_name&#34;)" data-config="{&#34;label&#34;:&#34;客户名称&#34;}" __cid="cmeMRBf"> 
+                    <i xid="i2" __cid="cmeMRBf" class="cmeMRBf"></i>  
+                    <span xid="span2" __cid="cmeMRBf" class="cmeMRBf">客户名称</span>
+                  </a>
+                </div>  
+                <div class="media-right cmeMRBf" xid="mediaRight1" __cid="cmeMRBf"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cmeMRBf" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&#34;label&#34;:&#34;解除关联&#34;}" __cid="cmeMRBf"> 
+                    <i xid="i1" __cid="cmeMRBf" class="cmeMRBf"></i>  
+                    <span xid="span1" __cid="cmeMRBf" class="cmeMRBf">解除关联</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul> 
+      </div>
+    </div>
+  </div>
+</div>

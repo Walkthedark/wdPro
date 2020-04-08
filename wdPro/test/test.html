@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>原生html5测试外部联系人的获取</title>
+
+<script src="http://res.wx.qq.com/open/js/jweixin-1.3.0.js"></script>
+<!-- 引入bootstrap -->
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script> 
+<!-- <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script> -->
+<script
+	src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+</style>
+<body>
+
+	<div class="container">
+		<div class="container-fluid">
+
+			<div class="panel panel-default">
+				<!-- <div class="panel-body" style="height: 100%; width: 100%">
+					<div style="height: 400px; width: 100%"></div>
+					<div class="alert alert-primary" style="font-size: 40px"
+						role="alert">没有加入客户CRM是否加入?</div>
+					<div id="app">
+						<div>
+							<button type="button"
+								style="font-size: 40px; width: 100%; height: 80px"
+								onclick="getwxInvoke()" class="btn btn-primary">加入客户CRM</button>
+						</div>
+					</div>
+				</div> -->
+			</div>
+
+		</div>
+	</div>
+</body>
+<script>
+	//先进行注册
+	window.onload = function() {
+		$.ajax({
+			method : "GET",
+			url : "http://test.shared123.cn/crmwx/Wx/getSignPackage",
+			cache : false,
+			async : false,
+			data : {
+				url : location.href.split('#')[0],
+				token : "C7541A5D63BE67A68465D66DE555D688",
+				company_id : localStorage.getItem("company_id")
+			},
+			success : function(data) {
+				// 这里是正式
+				wx.config({
+					beta : true,
+					debug : false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+					appId : data.appId, // 必填，公众号的唯一标识
+					timestamp : data.timestamp, // 必填，生成签名的时间戳
+					nonceStr : data.nonceStr, // 必填，生成签名的随机串
+					signature : data.signature,// 必填，签名，见附录1
+					jsApiList : [ "scanQRCode", 'chooseImage', 'previewImage', 'uploadImage', 'downloadImage' ]
+				// 必填，需要使用的JS接口列表,如不申请会无权限使用相关的微信api，所有JS接口列表见附录2
+				});
+				wx.ready(function() {
+					// config信息验证后会执行ready方法，所有接口调用都必须在config接口获得结果之后，config是一个客户端的异步操作，所以如果需要在页面加载时就调用相关接口，则须把相关接口放在ready函数中调用来确保正确执行。对于用户触发时才调用的接口，则可以直接调用，不需要放在ready函数中。
+					regFromWxSertong();
+				});
+
+			}
+
+		});
+
+	}
+	function regFromWxSertong() {
+		$.ajax({
+			method : "GET",
+			url : "http://test.shared123.cn/crmwx/Wx/getjssdk",
+			cache : false,
+			async : false,
+			data : {
+				url : location.href.split('#')[0],
+				token : "C7541A5D63BE67A68465D66DE555D688",
+				company_id : localStorage.getItem("company_id")
+			},
+			success : function(data) {
+				// 这里是正式
+				wx.agentConfig({
+					corpid : data.corpid, // 必填，公众号的唯一标识
+					agentid : data.agentid, // 必填，公众号的唯一标识
+					timestamp : data.timestamp, // 必填，生成签名的时间戳
+					nonceStr : data.nonceStr, // 必填，生成签名的随机串
+					signature : data.signature,// 必填，签名，见附录1
+					jsApiList : [ "selectExternalContact", 'openUserProfile', 'shareToExternalContact', 'sendChatMessage', 'getCurExternalContact', 'getCurExternalChat', 'applyCodeForCreateChat' ],
+					success : function(res) {
+						// 回调
+						wx.invoke('getCurExternalContact', {}, function(res) {
+							if (res.err_msg == "getCurExternalContact:ok") {
+								var userId = res.userId; //返回当前外部联系人userId
+								getUserIdisNo(userId);
+							} else {
+								//错误处理
+							}
+						});
+					},
+					fail : function(res) {
+						alert(res.errMsg);
+						if (res.errMsg.indexOf('function not exist') > -1) {
+							alert('版本过低请升级');
+						}
+					}
+				// 必填，需要使用的JS接口列表,如不申请会无权限使用相关的微信api，所有JS接口列表见附录2
+				});
+			}
+
+		});
+	}
+	function getUserIdisNo(userID) {
+		$.ajax({
+			method : "GET",
+			url : "http://test.shared123.cn/crm/contract/detail",
+			cache : false,
+			async : false,
+			data : {
+				url : location.href.split('#')[0],
+				token : "C7541A5D63BE67A68465D66DE555D688",
+				company_id : localStorage.getItem("company_id"),
+				user : localStorage.getItem("userId"),
+				id : userID
+			},
+			success : function(data) {
+				// 判断是否为空
+				if (data.data == null) {// 没有加入
+					window.location.href = "../crmjump/jumpClient/addLcientJump.w?id="+userID;
+				} else {// 跳转详情
+					window.location.href = "../crmjump/jumpClient/pepInfo.w?id="+userID;
+				}
+			}
+		});
+
+	}
+</script>
+</html>

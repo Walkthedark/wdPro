@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cNBBFJj" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cNBBFJj" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cNBBFJj" class="cNBBFJj"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="AskForLeaveDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Commonly/dialog/AskForLeave.w&quot;}" __cid="cNBBFJj" class="cNBBFJj">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cNBBFJj" __cid="cNBBFJj"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cNBBFJj" style="display:none;" __cid="cNBBFJj">
+      <xhtml:div class="x-dialog-title cNBBFJj" __cid="cNBBFJj">
+        <xhtml:button class="close cNBBFJj" __cid="cNBBFJj">
+          <xhtml:span __cid="cNBBFJj" class="cNBBFJj">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cNBBFJj" __cid="cNBBFJj"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cNBBFJj" __cid="cNBBFJj"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="businessTripDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Commonly/dialog/businessTrip.w&quot;}" __cid="cNBBFJj" class="cNBBFJj">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cNBBFJj" __cid="cNBBFJj"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cNBBFJj" style="display:none;" __cid="cNBBFJj">
+      <xhtml:div class="x-dialog-title cNBBFJj" __cid="cNBBFJj">
+        <xhtml:button class="close cNBBFJj" __cid="cNBBFJj">
+          <xhtml:span __cid="cNBBFJj" class="cNBBFJj">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cNBBFJj" __cid="cNBBFJj"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cNBBFJj" __cid="cNBBFJj"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="overtimeDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Commonly/dialog/overtime.w&quot;}" __cid="cNBBFJj" class="cNBBFJj">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cNBBFJj" __cid="cNBBFJj"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cNBBFJj" style="display:none;" __cid="cNBBFJj">
+      <xhtml:div class="x-dialog-title cNBBFJj" __cid="cNBBFJj">
+        <xhtml:button class="close cNBBFJj" __cid="cNBBFJj">
+          <xhtml:span __cid="cNBBFJj" class="cNBBFJj">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cNBBFJj" __cid="cNBBFJj"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cNBBFJj" __cid="cNBBFJj"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="salesOrderDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Commonly/dialog/salesOrder.w&quot;}" __cid="cNBBFJj" class="cNBBFJj">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cNBBFJj" __cid="cNBBFJj"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cNBBFJj" style="display:none;" __cid="cNBBFJj">
+      <xhtml:div class="x-dialog-title cNBBFJj" __cid="cNBBFJj">
+        <xhtml:button class="close cNBBFJj" __cid="cNBBFJj">
+          <xhtml:span __cid="cNBBFJj" class="cNBBFJj">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cNBBFJj" __cid="cNBBFJj"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cNBBFJj" __cid="cNBBFJj"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="branchesDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Commonly/dialog/branches.w&quot;}" __cid="cNBBFJj" class="cNBBFJj">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cNBBFJj" __cid="cNBBFJj"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cNBBFJj" style="display:none;" __cid="cNBBFJj">
+      <xhtml:div class="x-dialog-title cNBBFJj" __cid="cNBBFJj">
+        <xhtml:button class="close cNBBFJj" __cid="cNBBFJj">
+          <xhtml:span __cid="cNBBFJj" class="cNBBFJj">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cNBBFJj" __cid="cNBBFJj"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cNBBFJj" __cid="cNBBFJj"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="universalDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Commonly/dialog/universal.w&quot;}" __cid="cNBBFJj" class="cNBBFJj">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cNBBFJj" __cid="cNBBFJj"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cNBBFJj" style="display:none;" __cid="cNBBFJj">
+      <xhtml:div class="x-dialog-title cNBBFJj" __cid="cNBBFJj">
+        <xhtml:button class="close cNBBFJj" __cid="cNBBFJj">
+          <xhtml:span __cid="cNBBFJj" class="cNBBFJj">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cNBBFJj" __cid="cNBBFJj"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cNBBFJj" __cid="cNBBFJj"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="dailyCostDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Commonly/dialog/dailyCost.w&quot;}" __cid="cNBBFJj" class="cNBBFJj">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cNBBFJj" __cid="cNBBFJj"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cNBBFJj" style="display:none;" __cid="cNBBFJj">
+      <xhtml:div class="x-dialog-title cNBBFJj" __cid="cNBBFJj">
+        <xhtml:button class="close cNBBFJj" __cid="cNBBFJj">
+          <xhtml:span __cid="cNBBFJj" class="cNBBFJj">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cNBBFJj" __cid="cNBBFJj"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cNBBFJj" __cid="cNBBFJj"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="salesReturnDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Commonly/dialog/salesReturn.w&quot;}" __cid="cNBBFJj" class="cNBBFJj">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cNBBFJj" __cid="cNBBFJj"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cNBBFJj" style="display:none;" __cid="cNBBFJj">
+      <xhtml:div class="x-dialog-title cNBBFJj" __cid="cNBBFJj">
+        <xhtml:button class="close cNBBFJj" __cid="cNBBFJj">
+          <xhtml:span __cid="cNBBFJj" class="cNBBFJj">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cNBBFJj" __cid="cNBBFJj"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cNBBFJj" __cid="cNBBFJj"/>
+    </xhtml:div>
+  </span>
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcF7reQb-iosstatusbar cNBBFJj" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cNBBFJj"> 
+    <div class="x-panel-top cNBBFJj" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cNBBFJj"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cNBBFJj" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;常用申请&quot;}" __cid="cNBBFJj"> 
+        <div class="x-titlebar-left cNBBFJj" xid="left2" __cid="cNBBFJj"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cNBBFJj" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cNBBFJj"> 
+            <i xid="i1" __cid="cNBBFJj" class="cNBBFJj"/>  
+            <span xid="span4" __cid="cNBBFJj" class="cNBBFJj">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cNBBFJj" xid="title2" __cid="cNBBFJj">常用申请</div>  
+        <div class="x-titlebar-right  cNBBFJj" xid="right2" __cid="cNBBFJj">
+          <div class="empty cNBBFJj" __cid="cNBBFJj"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cNBBFJj" xid="content6" style="background-color:#f0f0f0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cNBBFJj"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row mar2 cNBBFJj" xid="row1" style="background-color:white;" bind-click="row1Click" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNBBFJj"> 
+        <div class="x-col border-Two cNBBFJj" xid="col1" __cid="cNBBFJj"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cNBBFJj" xid="row2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cNBBFJj"> 
+            <div class="col col-xs-2 cNBBFJj" xid="col2" style="height:40;" __cid="cNBBFJj"> 
+              <img src="$model/UI2/TheSaleEnterprise/Commonly/img/004.png" alt="" xid="image1" style="width:40px;" __cid="cNBBFJj" class="cNBBFJj"/> 
+            </div>  
+            <div class="col col-xs-7 cNBBFJj" xid="col3" style="height:40;" __cid="cNBBFJj"> 
+              <label xid="label1" style="margin-top:10px;" class="font-One cNBBFJj" __cid="cNBBFJj">请假申请</label> 
+            </div>  
+            <div class="col col-xs-3 cNBBFJj" xid="col4" style="text-align:right;height:40;" __cid="cNBBFJj"> 
+              <img src="$model/UI2/TheSaleEnterprise/VisitSignIn/img/007.png" alt="" xid="image2" style="width:30px;margin-top:10px;" __cid="cNBBFJj" class="cNBBFJj"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cNBBFJj" xid="row3" style="background-color:white;" bind-click="row3Click" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNBBFJj"> 
+        <div class="x-col border-Two cNBBFJj" xid="col8" __cid="cNBBFJj"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cNBBFJj" xid="row4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cNBBFJj"> 
+            <div class="col col-xs-2 cNBBFJj" xid="col6" style="height:40;" __cid="cNBBFJj"> 
+              <img src="$model/UI2/TheSaleEnterprise/Commonly/img/001.png" alt="" xid="image3" style="width:40px;" __cid="cNBBFJj" class="cNBBFJj"/> 
+            </div>  
+            <div class="col col-xs-7 cNBBFJj" xid="col7" style="height:40;" __cid="cNBBFJj"> 
+              <label xid="label2" style="margin-top:10px;" class="font-One cNBBFJj" __cid="cNBBFJj">出差申请</label> 
+            </div>  
+            <div class="col col-xs-3 cNBBFJj" xid="col5" style="text-align:right;height:40;" __cid="cNBBFJj"> 
+              <img src="$model/UI2/TheSaleEnterprise/VisitSignIn/img/007.png" alt="" xid="image4" style="width:30px;margin-top:10px;" __cid="cNBBFJj" class="cNBBFJj"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cNBBFJj" xid="row5" style="background-color:white;" bind-click="row5Click" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNBBFJj"> 
+        <div class="x-col cNBBFJj" xid="col12" __cid="cNBBFJj"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cNBBFJj" xid="row6" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cNBBFJj"> 
+            <div class="col col-xs-2 cNBBFJj" xid="col10" style="height:40;" __cid="cNBBFJj"> 
+              <img src="$model/UI2/TheSaleEnterprise/Commonly/img/003.png" alt="" xid="image5" style="width:40px;" __cid="cNBBFJj" class="cNBBFJj"/> 
+            </div>  
+            <div class="col col-xs-7 cNBBFJj" xid="col11" style="height:40;" __cid="cNBBFJj"> 
+              <label xid="label3" style="margin-top:10px;" class="font-One cNBBFJj" __cid="cNBBFJj">加班申请</label> 
+            </div>  
+            <div class="col col-xs-3 cNBBFJj" xid="col9" style="text-align:right;height:40;" __cid="cNBBFJj"> 
+              <img src="$model/UI2/TheSaleEnterprise/VisitSignIn/img/007.png" alt="" xid="image6" style="width:30px;margin-top:10px;" __cid="cNBBFJj" class="cNBBFJj"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row  cNBBFJj" xid="row7" style="background-color:white;margin-top:10px;" bind-click="row7Click" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNBBFJj"> 
+        <div class="x-col border-Two cNBBFJj" xid="col23" __cid="cNBBFJj"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cNBBFJj" xid="row10" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cNBBFJj"> 
+            <div class="col col-xs-2 cNBBFJj" xid="col21" style="height:40;" __cid="cNBBFJj"> 
+              <img src="$model/UI2/TheSaleEnterprise/Commonly/img/006.png" alt="" xid="image11" style="width:40px;" __cid="cNBBFJj" class="cNBBFJj"/> 
+            </div>  
+            <div class="col col-xs-7 cNBBFJj" xid="col22" style="height:40;" __cid="cNBBFJj"> 
+              <label xid="label4" style="margin-top:10px;" class="font-One cNBBFJj" __cid="cNBBFJj">销售订单</label> 
+            </div>  
+            <div class="col col-xs-3 cNBBFJj" xid="col19" style="text-align:right;height:40;" __cid="cNBBFJj"> 
+              <img src="$model/UI2/TheSaleEnterprise/VisitSignIn/img/007.png" alt="" xid="image12" style="width:30px;margin-top:10px;" __cid="cNBBFJj" class="cNBBFJj"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cNBBFJj" xid="row9" style="background-color:white;" bind-click="row9Click" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNBBFJj"> 
+        <div class="x-col border-Two cNBBFJj" xid="col15" __cid="cNBBFJj"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cNBBFJj" xid="row12" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cNBBFJj"> 
+            <div class="col col-xs-2 cNBBFJj" xid="col17" style="height:40;" __cid="cNBBFJj"> 
+              <img src="$model/UI2/TheSaleEnterprise/Commonly/img/002.png" alt="" xid="image9" style="width:40px;" __cid="cNBBFJj" class="cNBBFJj"/> 
+            </div>  
+            <div class="col col-xs-7 cNBBFJj" xid="col18" style="height:40;" __cid="cNBBFJj"> 
+              <label xid="label5" style="margin-top:10px;" class="font-One cNBBFJj" __cid="cNBBFJj">网点订单</label> 
+            </div>  
+            <div class="col col-xs-3 cNBBFJj" xid="col20" style="text-align:right;height:40;" __cid="cNBBFJj"> 
+              <img src="$model/UI2/TheSaleEnterprise/VisitSignIn/img/007.png" alt="" xid="image10" style="width:30px;margin-top:10px;" __cid="cNBBFJj" class="cNBBFJj"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cNBBFJj" xid="row11" style="background-color:white;" bind-click="row11Click" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNBBFJj"> 
+        <div class="x-col cNBBFJj" xid="col13" __cid="cNBBFJj"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cNBBFJj" xid="row8" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cNBBFJj"> 
+            <div class="col col-xs-2 cNBBFJj" xid="col24" style="height:40;" __cid="cNBBFJj"> 
+              <img src="$model/UI2/TheSaleEnterprise/Commonly/img/005.png" alt="" xid="image7" style="width:40px;" __cid="cNBBFJj" class="cNBBFJj"/> 
+            </div>  
+            <div class="col col-xs-7 cNBBFJj" xid="col14" style="height:40;" __cid="cNBBFJj"> 
+              <label xid="label6" style="margin-top:10px;" class="font-One cNBBFJj" __cid="cNBBFJj">万用申请单</label> 
+            </div>  
+            <div class="col col-xs-3 cNBBFJj" xid="col16" style="text-align:right;height:40;" __cid="cNBBFJj"> 
+              <img src="$model/UI2/TheSaleEnterprise/VisitSignIn/img/007.png" alt="" xid="image8" style="width:30px;margin-top:10px;" __cid="cNBBFJj" class="cNBBFJj"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row  cNBBFJj" xid="row16" style="background-color:white;margin-top:10px;" bind-click="row16Click" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNBBFJj"> 
+        <div class="x-col border-Two cNBBFJj" xid="col35" __cid="cNBBFJj"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cNBBFJj" xid="row15" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cNBBFJj"> 
+            <div class="col col-xs-2 cNBBFJj" xid="col32" style="height:40;" __cid="cNBBFJj"> 
+              <img src="$model/UI2/TheSaleEnterprise/Commonly/img/007.png" alt="" xid="image14" style="width:40px;" __cid="cNBBFJj" class="cNBBFJj"/>
+            </div>  
+            <div class="col col-xs-7 cNBBFJj" xid="col36" style="height:40;" __cid="cNBBFJj"> 
+              <label xid="label7" style="margin-top:10px;" class="font-One cNBBFJj" __cid="cNBBFJj">日常费用报销</label>
+            </div>  
+            <div class="col col-xs-3 cNBBFJj" xid="col31" style="text-align:right;height:40;" __cid="cNBBFJj"> 
+              <img src="$model/UI2/TheSaleEnterprise/VisitSignIn/img/007.png" alt="" xid="image13" style="width:30px;margin-top:10px;" __cid="cNBBFJj" class="cNBBFJj"/>
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cNBBFJj" xid="row17" style="background-color:white;" bind-click="row17Click" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNBBFJj"> 
+        <div class="x-col border-Two cNBBFJj" xid="col28" __cid="cNBBFJj"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cNBBFJj" xid="row14" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cNBBFJj"> 
+            <div class="col col-xs-2 cNBBFJj" xid="col26" style="height:40;" __cid="cNBBFJj"> 
+              <img src="$model/UI2/TheSaleEnterprise/Commonly/img/008.png" alt="" xid="image16" style="width:40px;" __cid="cNBBFJj" class="cNBBFJj"/>
+            </div>  
+            <div class="col col-xs-7 cNBBFJj" xid="col25" style="height:40;" __cid="cNBBFJj"> 
+              <label xid="label8" style="margin-top:10px;" class="font-One cNBBFJj" __cid="cNBBFJj">退货管理</label>
+            </div>  
+            <div class="col col-xs-3 cNBBFJj" xid="col33" style="text-align:right;height:40;" __cid="cNBBFJj"> 
+              <img src="$model/UI2/TheSaleEnterprise/VisitSignIn/img/007.png" alt="" xid="image15" style="width:30px;margin-top:10px;" __cid="cNBBFJj" class="cNBBFJj"/>
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cNBBFJj" class="cNBBFJj">.x-panel.pcF7reQb-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcF7reQb-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcF7reQb-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcF7reQb-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcF7reQb-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcF7reQb-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcF7reQb-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcF7reQb-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcF7reQb-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

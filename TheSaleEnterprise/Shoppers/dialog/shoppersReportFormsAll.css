@@ -1,0 +1,18 @@
+.x-state-default,.x-grid-widget-content .x-state-default,.x-grid-widget-header .x-state-default
+	{
+	border: 1px solid #dddddd;
+	background-image: linear-gradient(to bottom, #3EA0FF 0%, #3EA0FF 100%);
+	background-repeat: repeat-x;
+	color: #ffffff;
+}
+
+th {
+	text-align: center;
+}
+
+.x-grid tr.x-row-ltr td {
+	text-align: left;
+	border-right-width: 1px;
+	border: 1px solid #dddddd;
+}
+

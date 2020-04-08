@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cQJjEBr" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQJjEBr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cQJjEBr" class="cQJjEBr"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc6zUF3a-iosstatusbar cQJjEBr" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cQJjEBr"> 
+    <div class="x-panel-top cQJjEBr" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQJjEBr"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cQJjEBr" xid="titleBar2" style="background-color:#272F2C;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cQJjEBr"> 
+        <div class="x-titlebar-left cQJjEBr" xid="left2" __cid="cQJjEBr"/>  
+        <div class="x-titlebar-title cQJjEBr" xid="title2" __cid="cQJjEBr">选择权限</div>  
+        <div class="x-titlebar-right  cQJjEBr" xid="right2" __cid="cQJjEBr">
+          <div class="empty cQJjEBr" __cid="cQJjEBr"/>
+        </div>
+      </div> 
+    </div>  
+    <div class="x-panel-content cQJjEBr" xid="content4" style="background-color:#EEEEEE;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQJjEBr"> 
+      <div xid="div1" class="list-group-item cQJjEBr" style="padding:7px 3px 7px 3px;" bind-click="div1Click" __cid="cQJjEBr"> 
+        <div class="media cQJjEBr" xid="media1" __cid="cQJjEBr"> 
+          <div class="media-body cQJjEBr" xid="mediaBody2" __cid="cQJjEBr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQJjEBr" xid="button4" style="color:#7B7B7B;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;发起申购&quot;}" __cid="cQJjEBr"> 
+              <i xid="i4" __cid="cQJjEBr" class="cQJjEBr"/>  
+              <span xid="span4" __cid="cQJjEBr" class="cQJjEBr">发起申购</span>
+            </a>
+          </div>  
+          <div class="media-right cQJjEBr" xid="mediaRight1" __cid="cQJjEBr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right btn-only-icon cQJjEBr" xid="button1" style="color:#D68872;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-arrowrightl&quot;,&quot;label&quot;:&quot;待审核&quot;}" __cid="cQJjEBr"> 
+              <i xid="i1" class="dataControl dataControl-arrowrightl cQJjEBr" style="color:#7B7B7B;" __cid="cQJjEBr"/>  
+              <span xid="span1" style="color:#7B7B7B;" __cid="cQJjEBr" class="cQJjEBr">待审核</span>
+            </a> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div2" class="list-group-item cQJjEBr" style="padding:7px 3px 7px 3px;" __cid="cQJjEBr"> 
+        <div class="media cQJjEBr" xid="media2" __cid="cQJjEBr"> 
+          <div class="media-body cQJjEBr" xid="mediaBody1" __cid="cQJjEBr">
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQJjEBr" xid="button2" style="color:#7B7B7B;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;申购管理&quot;}" __cid="cQJjEBr"> 
+              <i xid="i3" __cid="cQJjEBr" class="cQJjEBr"/>  
+              <span xid="span2" __cid="cQJjEBr" class="cQJjEBr">申购管理</span>
+            </a>
+          </div>  
+          <div class="media-right cQJjEBr" xid="mediaRight2" __cid="cQJjEBr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right btn-only-icon cQJjEBr" xid="button3" style="color:#D68872;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-arrowrightl&quot;,&quot;label&quot;:&quot;待审核&quot;}" __cid="cQJjEBr"> 
+              <i xid="i2" class="dataControl dataControl-arrowrightl cQJjEBr" style="color:#7B7B7B;" __cid="cQJjEBr"/>  
+              <span xid="span3" style="color:#7B7B7B;" __cid="cQJjEBr" class="cQJjEBr">待审核</span>
+            </a> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div8" class="list-group-item cQJjEBr" style="padding:7px 3px 7px 3px;" __cid="cQJjEBr"> 
+        <div class="media cQJjEBr" xid="media8" __cid="cQJjEBr"> 
+          <div class="media-body cQJjEBr" xid="mediaBody7" __cid="cQJjEBr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQJjEBr" xid="button13" style="color:#7B7B7B;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;下单&quot;}" __cid="cQJjEBr"> 
+              <i xid="i16" __cid="cQJjEBr" class="cQJjEBr"/>  
+              <span xid="span15" __cid="cQJjEBr" class="cQJjEBr">下单</span>
+            </a> 
+          </div>  
+          <div class="media-right cQJjEBr" xid="mediaRight8" __cid="cQJjEBr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right btn-only-icon cQJjEBr" xid="button16" style="color:#D68872;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-arrowrightl&quot;,&quot;label&quot;:&quot;待审核&quot;}" __cid="cQJjEBr"> 
+              <i xid="i13" class="dataControl dataControl-arrowrightl cQJjEBr" style="color:#7B7B7B;" __cid="cQJjEBr"/>  
+              <span xid="span16" style="color:#7B7B7B;" __cid="cQJjEBr" class="cQJjEBr">待审核</span>
+            </a> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div7" class="list-group-item cQJjEBr" style="padding:7px 3px 7px 3px;" __cid="cQJjEBr"> 
+        <div class="media cQJjEBr" xid="media7" __cid="cQJjEBr"> 
+          <div class="media-body cQJjEBr" xid="mediaBody8" __cid="cQJjEBr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQJjEBr" xid="button14" style="color:#7B7B7B;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;收购管理&quot;}" __cid="cQJjEBr"> 
+              <i xid="i15" __cid="cQJjEBr" class="cQJjEBr"/>  
+              <span xid="span13" __cid="cQJjEBr" class="cQJjEBr">收购管理</span>
+            </a> 
+          </div>  
+          <div class="media-right cQJjEBr" xid="mediaRight7" __cid="cQJjEBr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right btn-only-icon cQJjEBr" xid="button15" style="color:#D68872;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-arrowrightl&quot;,&quot;label&quot;:&quot;待审核&quot;}" __cid="cQJjEBr"> 
+              <i xid="i14" class="dataControl dataControl-arrowrightl cQJjEBr" style="color:#7B7B7B;" __cid="cQJjEBr"/>  
+              <span xid="span14" style="color:#7B7B7B;" __cid="cQJjEBr" class="cQJjEBr">待审核</span>
+            </a> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div10" class="list-group-item cQJjEBr" style="padding:7px 3px 7px 3px;" __cid="cQJjEBr"> 
+        <div class="media cQJjEBr" xid="media10" __cid="cQJjEBr"> 
+          <div class="media-body cQJjEBr" xid="mediaBody9" __cid="cQJjEBr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQJjEBr" xid="button17" style="color:#7B7B7B;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;收货&quot;}" __cid="cQJjEBr"> 
+              <i xid="i20" __cid="cQJjEBr" class="cQJjEBr"/>  
+              <span xid="span19" __cid="cQJjEBr" class="cQJjEBr">收货</span>
+            </a> 
+          </div>  
+          <div class="media-right cQJjEBr" xid="mediaRight10" __cid="cQJjEBr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right btn-only-icon cQJjEBr" xid="button20" style="color:#D68872;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-arrowrightl&quot;,&quot;label&quot;:&quot;待审核&quot;}" __cid="cQJjEBr"> 
+              <i xid="i17" class="dataControl dataControl-arrowrightl cQJjEBr" style="color:#7B7B7B;" __cid="cQJjEBr"/>  
+              <span xid="span20" style="color:#7B7B7B;" __cid="cQJjEBr" class="cQJjEBr">待审核</span>
+            </a> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div9" class="list-group-item cQJjEBr" style="padding:7px 3px 7px 3px;" __cid="cQJjEBr"> 
+        <div class="media cQJjEBr" xid="media9" __cid="cQJjEBr"> 
+          <div class="media-body cQJjEBr" xid="mediaBody10" __cid="cQJjEBr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQJjEBr" xid="button18" style="color:#7B7B7B;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;收货管理&quot;}" __cid="cQJjEBr"> 
+              <i xid="i19" __cid="cQJjEBr" class="cQJjEBr"/>  
+              <span xid="span17" __cid="cQJjEBr" class="cQJjEBr">收货管理</span>
+            </a> 
+          </div>  
+          <div class="media-right cQJjEBr" xid="mediaRight9" __cid="cQJjEBr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right btn-only-icon cQJjEBr" xid="button19" style="color:#D68872;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-arrowrightl&quot;,&quot;label&quot;:&quot;待审核&quot;}" __cid="cQJjEBr"> 
+              <i xid="i18" class="dataControl dataControl-arrowrightl cQJjEBr" style="color:#7B7B7B;" __cid="cQJjEBr"/>  
+              <span xid="span18" style="color:#7B7B7B;" __cid="cQJjEBr" class="cQJjEBr">待审核</span>
+            </a> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cQJjEBr" class="cQJjEBr">.x-panel.pc6zUF3a-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc6zUF3a-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc6zUF3a-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc6zUF3a-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc6zUF3a-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc6zUF3a-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc6zUF3a-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc6zUF3a-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc6zUF3a-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

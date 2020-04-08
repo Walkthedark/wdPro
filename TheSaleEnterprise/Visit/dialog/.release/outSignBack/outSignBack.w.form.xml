@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cIbmuqa" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cIbmuqa" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cIbmuqa" class="cIbmuqa"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pca22Qzy-iosstatusbar cIbmuqa" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cIbmuqa"> 
+    <div class="x-panel-top cIbmuqa" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cIbmuqa"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cIbmuqa" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;拜访签退&quot;}" __cid="cIbmuqa"> 
+        <div class="x-titlebar-left cIbmuqa" xid="left2" __cid="cIbmuqa"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cIbmuqa" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cIbmuqa"> 
+            <i xid="i1" __cid="cIbmuqa" class="cIbmuqa"/>  
+            <span xid="span4" __cid="cIbmuqa" class="cIbmuqa">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cIbmuqa" xid="title2" __cid="cIbmuqa">拜访签退</div>  
+        <div class="x-titlebar-right  cIbmuqa" xid="right2" __cid="cIbmuqa">
+          <div class="empty cIbmuqa" __cid="cIbmuqa"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cIbmuqa" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cIbmuqa"> 
+      <div id="container" xid="div1" style="display:none;" __cid="cIbmuqa" class="cIbmuqa"/>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row border-One mar2 cIbmuqa" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cIbmuqa"> 
+        <div class="x-col cIbmuqa" xid="col1" style="text-align:center;" __cid="cIbmuqa"> 
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output cIbmuqa" xid="output1" data-bind="component:{ref:$model.CData.ref(&quot;qtdd&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cIbmuqa"/> 
+        </div>  
+        <div class="x-col x-col-20 cIbmuqa" xid="col2" __cid="cIbmuqa"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cIbmuqa" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/TheSaleEnterprise/ClockIn/img/002.png&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cIbmuqa"> 
+            <i xid="i2" __cid="cIbmuqa" class="cIbmuqa"/>  
+            <img src="$model/UI2/TheSaleEnterprise/ClockIn/img/002.png" xid="image1" style="width:20px;" __cid="cIbmuqa" class="cIbmuqa"/>  
+            <span xid="span2" __cid="cIbmuqa" class="cIbmuqa"/> 
+          </a> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cIbmuqa" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cIbmuqa"> 
+        <div class="x-col cIbmuqa" xid="col3" __cid="cIbmuqa"> 
+          <span xid="span1" __cid="cIbmuqa" class="cIbmuqa">上传照片（最多录入6张）</span> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cIbmuqa" xid="row2" style="padding:2px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cIbmuqa"> 
+        <div class="x-col cIbmuqa" xid="col4" __cid="cIbmuqa"> 
+          <div class="imgline cIbmuqa" xid="div74" id="VisitOutSignBackImg" __cid="cIbmuqa"> 
+            <div class="lfloat simg plusbtn cIbmuqa" xid="div57" id="VisitOutSignBackImg1" __cid="cIbmuqa">+
+              <input id="uploadVisitOutSignBack" type="file" class="upfile cIbmuqa" accept="image/*,video/*;" capture="camera" xid="file1" __cid="cIbmuqa"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cIbmuqa" xid="row4" style="padding:20px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cIbmuqa"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label cIbmuqa" xid="button4" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;label&quot;:&quot;保 存&quot;}" __cid="cIbmuqa"> 
+          <i xid="i4" __cid="cIbmuqa" class="cIbmuqa"/>  
+          <span xid="span5" __cid="cIbmuqa" class="cIbmuqa">保 存</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cIbmuqa" class="cIbmuqa">.x-panel.pca22Qzy-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pca22Qzy-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pca22Qzy-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pca22Qzy-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pca22Qzy-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pca22Qzy-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pca22Qzy-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pca22Qzy-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pca22Qzy-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiver1Receive" __cid="cIbmuqa" class="cIbmuqa"/> 
+</div>

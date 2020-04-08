@@ -1,0 +1,35 @@
+.swiper-container {
+	width: 100%;
+	height: 133px;
+}
+.*{
+	font-family: “Microsoft YaHei” ! important;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 14px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+html {
+	font-size: 62.5% !important; /*10 ÷ 16 × 100% = 55.5%*/
+}
+body {
+	font-size: 1.6rem 'Microsoft YaHei', arial, tahoma, \5b8b\4f53,sans-serif !important; /*1.4 × 10px = 14px */
+};
+/*底部*/
+.btn-group{ background-color:#fff;}
+.x-card.btn-group .btn.active{ color:#cf0202;}
+.btn-group .btn i{ font-size:30px; padding-bottom:0;}

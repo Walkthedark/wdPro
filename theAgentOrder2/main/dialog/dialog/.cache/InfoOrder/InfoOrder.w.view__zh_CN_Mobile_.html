@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cbUfAna" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cbUfAna" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <style>.box.cbUfAna{width: 100%; height: 120px; overflow: hidden; position: relative} .box.cbUfAna em.cbUfAna{position: absolute; width: 15px; height: 15px; border-radius: 50%; background-color: rgb(242, 241, 242)} .btn_bord.cbUfAna{border-radius: 30px; color: white; font-weight: bold; margin-top: 30px; width: 80px; line-height: 30px; height: 50px; background-color: black} .box.cbUfAna em.first.cbUfAna{left: -7px; top: 30px} .box.cbUfAna em.last.cbUfAna{right: -7px; top: 30px} .btn_radius.cbUfAna{border-radius: 30px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cbUfAna" class="cbUfAna"></div>  
+  <title __cid="cbUfAna" class="cbUfAna">订货单</title>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcyMZrQ3-iosstatusbar cbUfAna" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cbUfAna"> 
+    <div class="x-panel-content cbUfAna" xid="content1" style="background-color:#F2F1F2;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cbUfAna"> 
+      <div xid="div6" style="padding:5px 5px 5px 5px;background-color:#F2F1F2;" __cid="cbUfAna" class="cbUfAna"> 
+        <div xid="div5" class="box  cbUfAna" style="background-color:white;padding-right:8px;padding-left:8px;" __cid="cbUfAna"> 
+          <em class="first cbUfAna" xid="default3" __cid="cbUfAna"></em>  
+          <em class="last cbUfAna" xid="default4" __cid="cbUfAna"></em>  
+          <div class="media cbUfAna" xid="media1" style="margin-top:5px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody2" __cid="cbUfAna"> 
+              <h4 class="media-heading cbUfAna" xid="h42" __cid="cbUfAna"> 
+                <span xid="span8" style="font-size:16px;color:#242424;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">单号:</span>  
+                <span xid="span5" style="font-size:16px;color:#242424;margin-left:3px;" __cid="cbUfAna" class="cbUfAna" data-bind="text:$model.orderData.val(&#34;order_sn&#34;)"></span> 
+              </h4> 
+            </div>  
+            <div class="media-right cbUfAna" xid="mediaRight1" __cid="cbUfAna"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs cbUfAna" xid="button4" style="font-size:16px;background-color:white;color:#00BFFF;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:$model.orderData.val(&#34;type_trans&#34;)" data-config="{&#34;label&#34;:&#34;待出库&#34;}" __cid="cbUfAna"> 
+                <i xid="i4" __cid="cbUfAna" class="cbUfAna"></i>  
+                <span xid="span7" __cid="cbUfAna" class="cbUfAna">待出库</span> 
+              </a> 
+            </div> 
+          </div>  
+          <div class="media cbUfAna" xid="media2" style="margin-top:1px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody1" __cid="cbUfAna"> 
+              <h4 class="media-heading cbUfAna" xid="h41" __cid="cbUfAna"> 
+                <span xid="span9" style="font-size:16px;color:#242424;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">时间:</span>  
+                <span xid="span6" style="font-size:16px;color:#242424;margin-left:3px;" __cid="cbUfAna" class="cbUfAna" data-bind="text:$model.orderData.val(&#34;order_time&#34;)"></span> 
+              </h4>  
+              <h4 class="media-heading cbUfAna" xid="h43" __cid="cbUfAna"> 
+                <span xid="span11" style="font-size:16px;color:#242424;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">客户:</span>  
+                <span xid="span10" style="font-size:16px;color:#242424;margin-left:3px;" __cid="cbUfAna" class="cbUfAna" data-bind="text:$model.orderData.val(&#34;client_name&#34;)"></span> 
+              </h4> 
+            </div> 
+          </div>  
+          <div class="media cbUfAna" xid="media3" style="margin-top:5px;border-top-style:solid;border-top-width:thin;border-top-color:#E6E6E6;" __cid="cbUfAna" data-bind="event:{click:$model._callModelFn.bind($model, 'media3Click')}"> 
+            <div class="media-body cbUfAna" xid="mediaBody3" __cid="cbUfAna"> 
+              <h4 xid="h44" class="media-heading cbUfAna" __cid="cbUfAna"> 
+                <span xid="span12" style="font-size:14px;color:#545454;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">查看状态跟踪</span>
+              </h4> 
+            </div>  
+            <div class="media-right cbUfAna" xid="mediaRight2" __cid="cbUfAna"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cbUfAna" xid="button5" style="color:#545454;font-size:14px;background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-arrow-right-b&#34;,&#34;label&#34;:&#34;待出库&#34;}" __cid="cbUfAna"> 
+                <i xid="i5" class="icon-arrow-right-b cbUfAna" __cid="cbUfAna"></i>  
+                <span xid="span13" __cid="cbUfAna" class="cbUfAna">待出库</span>
+              </a> 
+            </div> 
+          </div>
+        </div> 
+      </div>  
+      <div xid="div1" style="padding:5px 5px 5px 5px;background-color:#F2F1F2;" __cid="cbUfAna" class="cbUfAna"> 
+        <div xid="div2" style="background-color:white;padding-right:8px;padding-left:8px;padding-top:3px;height:60px;" __cid="cbUfAna" class="cbUfAna">
+          <div class="media cbUfAna" xid="media4" style="margin-top:3px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody4" __cid="cbUfAna"> 
+              <h4 class="media-heading cbUfAna" xid="h45" __cid="cbUfAna"> 
+                <span xid="span15" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">订货单合计</span>
+              </h4> 
+            </div>  
+            <div class="media-right cbUfAna" xid="mediaRight3" __cid="cbUfAna"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs cbUfAna" xid="button6" style="font-size:16px;background-color:white;color:#00BFFF;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:$model.orderData.val(&#34;is_discount&#34;)==1?&#34;¥&#34; + $model.orderData.val(&#34;discount_price&#34;) :&#34;¥&#34; + $model.orderData.val(&#34;price&#34;)" data-config="{&#34;label&#34;:&#34;¥88.00&#34;}" __cid="cbUfAna"> 
+                <i xid="i6" __cid="cbUfAna" class="cbUfAna"></i>  
+                <span xid="span16" __cid="cbUfAna" class="cbUfAna">¥88.00</span>
+              </a> 
+            </div> 
+          </div>  
+          <div class="media cbUfAna" xid="media5" style="margin-top:1px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody5" __cid="cbUfAna"> 
+              <h4 xid="h46" class="media-heading cbUfAna" __cid="cbUfAna"> 
+                <span xid="span19" style="font-size:14px;color:#545454;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">商品总价</span>
+              </h4> 
+            </div>  
+            <div class="media-right cbUfAna" xid="mediaRight4" __cid="cbUfAna"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs  cbUfAna" xid="button7" style="color:#545454;font-size:14px;background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:&#34;¥&#34; + $model.orderData.val(&#34;price&#34;)" data-config="{&#34;label&#34;:&#34;¥88.00&#34;}" __cid="cbUfAna"> 
+                <i xid="i7" __cid="cbUfAna" class="cbUfAna"></i>  
+                <span xid="span18" __cid="cbUfAna" class="cbUfAna">¥88.00</span>
+              </a> 
+            </div> 
+          </div> 
+        </div>
+      </div>  
+      <div xid="div4" style="padding:5px 5px 5px 5px;background-color:#F2F1F2;" __cid="cbUfAna" class="cbUfAna"> 
+        <div xid="div3" style="background-color:white;padding-right:8px;padding-left:8px;padding-top:3px;" class="list-group-item cbUfAna" __cid="cbUfAna"> 
+          <div class="media cbUfAna" xid="media6" style="margin-top:3px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody6" __cid="cbUfAna"> 
+              <h4 class="media-heading cbUfAna" xid="h47" __cid="cbUfAna"> 
+                <span xid="span23" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">商品清单</span>
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs pull-right cbUfAna" xid="button8" style="font-size:16px;background-color:white;color:#242424;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button8Click" data-config="{&#34;icon&#34;:&#34;icon-chevron-down&#34;,&#34;label&#34;:&#34;数量6&#34;}" __cid="cbUfAna"> 
+                  <span xid="span22" __cid="cbUfAna" class="cbUfAna" data-bind="text:&#34;数量&#34;+ $model.numData.val(&#34;Num&#34;)"></span>
+                  <i xid="i8" class="icon-chevron-down cbUfAna" __cid="cbUfAna"></i>
+                </a>
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs pull-right cbUfAna" xid="button10" style="font-size:16px;background-color:white;color:#242424;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;种类2&#34;}" __cid="cbUfAna"> 
+                  <i xid="i10" __cid="cbUfAna" class="cbUfAna"></i>  
+                  <span xid="span24" __cid="cbUfAna" class="cbUfAna" data-bind="text:&#34;种类&#34;+$model.goodsData.getCount()">种类2</span>
+                </a> 
+              </h4> 
+            </div> 
+          </div>  
+          <div xid="div13" style="display:none" __cid="cbUfAna" class="cbUfAna"> 
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list cbUfAna" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;goodsData&#34;}" __cid="cbUfAna"> 
+              <ul class="x-list-template hide cbUfAna" xid="listTemplateUl1" __cid="cbUfAna" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+                <li xid="li1" __cid="cbUfAna" class="cbUfAna"> 
+                  <div class="media cbUfAna" xid="media7" __cid="cbUfAna"> 
+                    <div class="media-left cbUfAna" xid="mediaLeft1" __cid="cbUfAna"> 
+                      <a href="#" xid="a1" __cid="cbUfAna" class="cbUfAna"> 
+                        <img class="media-object cbUfAna" alt="" xid="image1" style="height:63px;" __cid="cbUfAna" data-bind="attr:{src:val(&#34;goods_img&#34;)}">
+                      </a> 
+                    </div>  
+                    <div class="media-body cbUfAna" xid="mediaBody7" __cid="cbUfAna"> 
+                      <h4 class="media-heading cbUfAna" xid="h48" __cid="cbUfAna"> 
+                        <span xid="span4" style="font-size:16px;color:#242424;" __cid="cbUfAna" class="cbUfAna" data-bind="text:val(&#34;goods_name&#34;)"></span>
+                      </h4>  
+                      <h4 xid="h410" class="media-heading cbUfAna" __cid="cbUfAna"> 
+                        <span xid="span14" style="font-size:14px;color:#888888;" __cid="cbUfAna" class="cbUfAna" data-bind="text:val(&#34;goods_type&#34;)==&#34;&#34;?&#34;&#34;:val(&#34;goods_type&#34;)"></span>
+                      </h4>  
+                      <h4 xid="h414" class="media-heading cbUfAna" __cid="cbUfAna"> 
+                        <span xid="span17" style="font-size:14px;margin-left:7px;" class="text-danger cbUfAna" __cid="cbUfAna" data-bind="text:&#34;¥&#34;+val(&#34;goods_price&#34;)"></span>  
+                        <span xid="span20" style="font-size:14px;color:#242424;margin-left:7px;" class="pull-right cbUfAna" __cid="cbUfAna" data-bind="text:&#34;X&#34;+val(&#34;goods_num&#34;)"></span>
+                      </h4> 
+                    </div> 
+                  </div>  
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cbUfAna" xid="row1" style="height:3px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cbUfAna"> 
+                    <div class="x-col cbUfAna" xid="col1" __cid="cbUfAna"></div>  
+                    <div class="x-col cbUfAna" xid="col2" __cid="cbUfAna"></div>  
+                    <div class="x-col cbUfAna" xid="col3" __cid="cbUfAna"></div>
+                  </div> 
+                </li> 
+              </ul> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list cbUfAna" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;data2&#34;}" __cid="cbUfAna"> 
+              <ul class="x-list-template hide cbUfAna" xid="listTemplateUl5" __cid="cbUfAna" data-bind="foreach:{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)}"> 
+                <li xid="li4" __cid="cbUfAna" class="cbUfAna"> 
+                  <div xid="div36" style="padding:5px;border-right-style:none;border-left-style:none;" class="list-group-item cbUfAna" __cid="cbUfAna"> 
+                    <div class="media-left cbUfAna" xid="mediaLeft11" __cid="cbUfAna"> 
+                      <img src="" alt="" xid="image8" class="tb-img-good div_radius cbUfAna" style="width:66px;height:66px;" __cid="cbUfAna" data-bind="attr:{src:val(&#34;goods_img&#34;)}">  
+                      <img src="@justepContextPath@/v_9333b0b5686e48df8740a36f5d6bfd78l_zh_CNs_d_m/theAgentOrder/img/gifts.png" alt="" xid="image9" style="position:relative;right:6px;bottom:5px;width:56px;height:38px;left:3px;top:-55px;" class="tb-img-good div_radius cbUfAna" __cid="cbUfAna">
+                    </div>  
+                    <div class="media-body cbUfAna" xid="mediaBody9" __cid="cbUfAna"> 
+                      <div xid="div33" style="padding:3px 3px 3px 3px;" __cid="cbUfAna" class="cbUfAna"> 
+                        <span class="text-black h5 cbUfAna" xid="span59" style="font-size:16px;color:#242424;" __cid="cbUfAna" data-bind="text:val(&#34;goods_name&#34;)"></span>
+                      </div>  
+                      <div class="text-muted cbUfAna" xid="div38" __cid="cbUfAna"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn  btn-xs cbUfAna" xid="button28" style="background-color:#F9F8F9;color:#D67D51;margin-left:5px;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;border-color:#D67D51 #D67D51 #D67D51 #D67D51;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:val(&#34;specification1_value&#34;) +&#34;/&#34;+ val(&#34;specification2_value&#34;) +&#34;/&#34;+ val(&#34;specification3_value&#34;)" data-config="{&#34;label&#34;:&#34;button&#34;}" __cid="cbUfAna"> 
+                          <i xid="i28" __cid="cbUfAna" class="cbUfAna"></i>  
+                          <span xid="span55" __cid="cbUfAna" class="cbUfAna"></span>
+                        </a> 
+                      </div>  
+                      <div class="text-muted cbUfAna" xid="div37" __cid="cbUfAna"> 
+                        <h4 xid="h416" class="media-heading cbUfAna" __cid="cbUfAna"> 
+                          <span xid="span25" style="font-size:14px;color:#242424;margin-left:7px;" class="pull-right cbUfAna" __cid="cbUfAna" data-bind="text:&#34;X&#34;+val(&#34;num&#34;)"></span>
+                        </h4>  
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cbUfAna" xid="row6" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cbUfAna"> 
+                          <div class="x-col x-col-33 cbUfAna" xid="col7" __cid="cbUfAna"> 
+                            <span xid="span57" class="text-danger pull-left   cbUfAna" style="font-size:16px;" __cid="cbUfAna">￥</span>  
+                            <span xid="span54" class=" text-danger pull-left cbUfAna" style="font-size:16px;" __cid="cbUfAna">0.00</span>
+                          </div>  
+                          <div class="x-col cbUfAna" xid="col13" __cid="cbUfAna"></div>
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </li> 
+              </ul> 
+            </div> 
+          </div>
+        </div> 
+      </div>  
+      <div xid="div8" style="padding:5px 5px 5px 5px;background-color:#F2F1F2;" __cid="cbUfAna" class="cbUfAna"> 
+        <div xid="div7" style="background-color:white;padding-right:8px;padding-left:8px;padding-top:3px;height:60px;" __cid="cbUfAna" class="cbUfAna"> 
+          <div class="media cbUfAna" xid="media8" style="margin-top:3px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody8" __cid="cbUfAna"> 
+              <h4 class="media-heading cbUfAna" xid="h49" __cid="cbUfAna"> 
+                <span xid="span28" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">经手人</span>
+              </h4> 
+            </div>  
+            <div class="media-right cbUfAna" xid="mediaRight7" __cid="cbUfAna"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs cbUfAna" xid="button11" style="font-size:16px;background-color:white;color:#242424;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:$model.orderData.val(&#34;make&#34;)" data-config="{&#34;label&#34;:&#34;张三&#34;}" __cid="cbUfAna"> 
+                <i xid="i11" __cid="cbUfAna" class="cbUfAna"></i>  
+                <span xid="span27" __cid="cbUfAna" class="cbUfAna">张三</span>
+              </a> 
+            </div> 
+          </div>  
+          <div class="media cbUfAna" xid="media10" style="margin-top:3px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody10" __cid="cbUfAna"> 
+              <h4 class="media-heading cbUfAna" xid="h411" __cid="cbUfAna"> 
+                <span xid="span29" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">发货仓库</span>
+              </h4> 
+            </div>  
+            <div class="media-right cbUfAna" xid="mediaRight9" __cid="cbUfAna"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs cbUfAna" xid="button13" style="font-size:16px;background-color:white;color:#242424;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;默认仓库&#34;}" __cid="cbUfAna"> 
+                <i xid="i13" __cid="cbUfAna" class="cbUfAna"></i>  
+                <span xid="span30" __cid="cbUfAna" class="cbUfAna">默认仓库</span>
+              </a> 
+            </div> 
+          </div>
+        </div> 
+      </div>  
+      <div xid="div9" style="padding:5px 5px 5px 5px;background-color:#F2F1F2;" __cid="cbUfAna" class="cbUfAna"> 
+        <div xid="div10" style="background-color:white;padding-right:8px;padding-left:8px;padding-top:3px;height:60px;" __cid="cbUfAna" class="cbUfAna"> 
+          <div class="media cbUfAna" xid="media12" style="margin-top:3px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody11" __cid="cbUfAna"> 
+              <h4 class="media-heading cbUfAna" xid="h413" __cid="cbUfAna"> 
+                <span xid="span32" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">交货日期</span>
+              </h4> 
+            </div>  
+            <div class="media-right cbUfAna" xid="mediaRight10" __cid="cbUfAna"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs cbUfAna" xid="button15" style="font-size:16px;background-color:white;color:#242424;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:$model.orderData.val(&#34;delivery_time&#34;)" data-config="{&#34;label&#34;:&#34;2019/09/21&#34;}" __cid="cbUfAna"> 
+                <i xid="i14" __cid="cbUfAna" class="cbUfAna"></i>  
+                <span xid="span33" __cid="cbUfAna" class="cbUfAna">2019/09/21</span>
+              </a> 
+            </div> 
+          </div>  
+          <div class="media cbUfAna" xid="media11" style="margin-top:3px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody12" __cid="cbUfAna"> 
+              <h4 class="media-heading cbUfAna" xid="h412" __cid="cbUfAna"> 
+                <span xid="span31" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">发票类型</span>
+              </h4> 
+            </div>  
+            <div class="media-right cbUfAna" xid="mediaRight11" __cid="cbUfAna"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs cbUfAna" xid="button14" style="font-size:16px;background-color:white;color:#242424;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;不开发票&#34;}" __cid="cbUfAna"> 
+                <i xid="i15" __cid="cbUfAna" class="cbUfAna"></i>  
+                <span xid="span34" __cid="cbUfAna" class="cbUfAna">不开发票</span>
+              </a> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div12" style="padding:5px 5px 5px 5px;background-color:#F2F1F2;" __cid="cbUfAna" class="cbUfAna"> 
+        <div xid="div11" style="background-color:white;padding-right:8px;padding-left:8px;padding-top:3px;" __cid="cbUfAna" class="cbUfAna"> 
+          <div class="media cbUfAna" xid="media13" style="margin-top:3px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody13" __cid="cbUfAna"> 
+              <h4 class="media-heading cbUfAna" xid="h415" __cid="cbUfAna"> 
+                <span xid="span35" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cbUfAna" class="cbUfAna">发货信息</span>
+              </h4> 
+            </div>  
+            <div class="media-right cbUfAna" xid="mediaRight13" __cid="cbUfAna"></div> 
+          </div>  
+          <div class="media cbUfAna" xid="media14" style="margin-top:3px;" __cid="cbUfAna"> 
+            <div class="media-body cbUfAna" xid="mediaBody15" __cid="cbUfAna"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cbUfAna" xid="labelEdit1" style="height:35px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cbUfAna"> 
+                <label class="x-label cbUfAna" xid="label1" style="margin-left:4px;" __cid="cbUfAna">发货方式</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cbUfAna" xid="input1" style="border-style:none none none none;background-color:white;text-align:right;" data-bind="component:{ref:&#34;物流&#34;,name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;disabled&#34;:true,&#34;placeHolder&#34;:&#34;物流&#34;}" __cid="cbUfAna">
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cbUfAna" xid="labelEdit2" style="height:35px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cbUfAna"> 
+                <label class="x-label cbUfAna" xid="label2" style="margin-left:4px;" __cid="cbUfAna">收货单位</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cbUfAna" xid="input2" style="border-style:none none none none;background-color:white;text-align:right;" data-bind="component:{ref:$model.addressData.ref(&#34;consignee&#34;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;disabled&#34;:true,&#34;placeHolder&#34;:&#34;上海物流责任有限科技公司&#34;}" __cid="cbUfAna">
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cbUfAna" xid="labelEdit3" style="height:35px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cbUfAna"> 
+                <label class="x-label cbUfAna" xid="label3" style="margin-left:4px;" __cid="cbUfAna">收货人</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cbUfAna" xid="input4" style="border-style:none none none none;background-color:white;text-align:right;" data-bind="component:{ref:$model.addressData.ref(&#34;phone&#34;),name:'$model/UI2/system/components/justep/input/input'},text:$model.addressData.val(&#34;phone&#34;)" data-config="{&#34;disabled&#34;:true}" __cid="cbUfAna">
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cbUfAna" xid="labelEdit4" style="height:35px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cbUfAna"> 
+                <label class="x-label cbUfAna" xid="label4" style="margin-left:4px;" __cid="cbUfAna">地址</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cbUfAna" xid="input3" style="border-style:none none none none;background-color:white;text-align:right;" data-bind="component:{ref:$model.addressData.ref(&#34;address&#34;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;disabled&#34;:true,&#34;placeHolder&#34;:&#34;上海杨浦区黄兴路217号201&#34;}" __cid="cbUfAna">
+              </div>
+            </div> 
+          </div> 
+        </div> 
+      </div>
+    </div>  
+    <style __cid="cbUfAna" class="cbUfAna">.x-panel.pcyMZrQ3-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcyMZrQ3-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcyMZrQ3-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcyMZrQ3-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcyMZrQ3-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcyMZrQ3-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcyMZrQ3-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcyMZrQ3-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcyMZrQ3-iosstatusbar >.x-panel-content {top: 0px;}</style>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cbUfAna" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;direction&#34;:&#34;auto&#34;}" __cid="cbUfAna"> 
+    <div class="x-popOver-overlay cbUfAna" xid="div14" __cid="cbUfAna"></div>  
+    <div class="x-popOver-content cbUfAna" xid="div15" style="height:60%;width:75%;" __cid="cbUfAna"> 
+      <div xid="div16" style="height:100%;width:100%;" __cid="cbUfAna" class="cbUfAna"> 
+        <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcmI3MNf-iosstatusbar cbUfAna" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cbUfAna"> 
+          <div class="x-panel-top cbUfAna" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cbUfAna"> 
+            <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cbUfAna" xid="titleBar1" style="background-color:#170153;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cbUfAna"> 
+              <div class="x-titlebar-left cbUfAna" xid="left1" __cid="cbUfAna"></div>  
+              <div class="x-titlebar-title cbUfAna" xid="title1" __cid="cbUfAna">状态跟踪</div>  
+              <div class="x-titlebar-right  cbUfAna" xid="right1" __cid="cbUfAna">
+                <div class="empty cbUfAna" __cid="cbUfAna"></div>
+              </div>
+            </div> 
+          </div>  
+          <div class="x-panel-content cbUfAna" xid="content2" style="background-color:white;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cbUfAna"> 
+            <div xid="div18" style="padding:8px 3px 3px 5px;background-color:#EEEEEE;" __cid="cbUfAna" class="cbUfAna"> 
+              <ul xid="ul2" __cid="cbUfAna" class="cbUfAna"> 
+                <div component="$model/UI2/system/components/justep/list/list" class="x-list cbUfAna" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;logData&#34;}" __cid="cbUfAna"> 
+                  <ul class="x-list-template hide cbUfAna" xid="listTemplateUl2" __cid="cbUfAna" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}"> 
+                    <li xid="li3" __cid="cbUfAna" class="cbUfAna"> 
+                      <li xid="li2" class="li_class2 cbUfAna" __cid="cbUfAna"> 
+                        <div xid="div18" __cid="cbUfAna" class="cbUfAna"> 
+                          <div class="media cbUfAna" xid="media16" style="margin-left:2px;" __cid="cbUfAna"> 
+                            <div class="media-body cbUfAna" xid="mediaBody17" __cid="cbUfAna"> 
+                              <h5 xid="h58" class="media-heading cbUfAna" style="font-size:14px;color:#407422;" __cid="cbUfAna" data-bind="text:val(&#34;create_at&#34;)"></h5>  
+                              <h5 xid="h520" class="media-heading cbUfAna" style="color:#545454;;font-size:14px;" __cid="cbUfAna" data-bind="text:val(&#34;operator&#34;)"></h5>  
+                              <h5 xid="h51" class="media-heading cbUfAna" style="color:#545454;;font-size:14px;" __cid="cbUfAna" data-bind="text:val(&#34;desc&#34;)"></h5>
+                            </div> 
+                          </div> 
+                        </div> 
+                      </li> 
+                    </li> 
+                  </ul> 
+                </div> 
+              </ul> 
+            </div> 
+          </div>  
+          <style __cid="cbUfAna" class="cbUfAna">.x-panel.pcmI3MNf-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcmI3MNf-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcmI3MNf-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcmI3MNf-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmI3MNf-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcmI3MNf-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmI3MNf-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmI3MNf-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmI3MNf-iosstatusbar >.x-panel-content {top: 48px;}</style>
+        </div> 
+      </div> 
+    </div> 
+  </div>
+</div>

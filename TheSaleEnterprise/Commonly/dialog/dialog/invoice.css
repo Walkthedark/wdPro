@@ -1,0 +1,9 @@
+.div_radius{
+	border-radius:10px
+}
+.btn_radius{
+	border-radius:15px
+}
+.div_radius1{
+	border-radius:15px 15px 0px 0px;
+}

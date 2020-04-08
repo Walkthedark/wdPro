@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cumABFr" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cumABFr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cumABFr" class="cumABFr"/>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cumABFr" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cumABFr"> 
+    <div class="x-contents-content active cumABFr" xid="content1" style="background-color:#F2F1F2;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cumABFr"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cumABFr" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data1&quot;}" __cid="cumABFr"> 
+        <ul class="x-list-template hide cumABFr" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cumABFr"> 
+          <li xid="li1" __cid="cumABFr" class="cumABFr">
+            <div xid="div1" class="list-group-item cumABFr" bind-click="div1Click" __cid="cumABFr">
+              <div class="media cumABFr" xid="media1" __cid="cumABFr"> 
+                <div class="media-body cumABFr" xid="mediaBody1" __cid="cumABFr"> 
+                  <h4 class="media-heading cumABFr" xid="h41" __cid="cumABFr"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-warning btn-xs cumABFr" xid="button1" bind-visible=" val(&quot;promotion_cate&quot;) ==3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;组合&quot;}" __cid="cumABFr"> 
+                      <i xid="i1" __cid="cumABFr" class="cumABFr"/>  
+                      <span xid="span1" __cid="cumABFr" class="cumABFr">组合</span>
+                    </a>  
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-warning btn-xs cumABFr" xid="button3" bind-visible=" val(&quot;promotion_cate&quot;) ==1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;单品&quot;}" __cid="cumABFr"> 
+                      <i xid="i4" __cid="cumABFr" class="cumABFr"/>  
+                      <span xid="span3" __cid="cumABFr" class="cumABFr">单品</span>
+                    </a>
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn x-blue btn-xs cumABFr" xid="button7" bind-visible=" val(&quot;promotion_cate&quot;) ==2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;订单&quot;}" __cid="cumABFr"> 
+                      <i xid="i5" __cid="cumABFr" class="cumABFr"/>  
+                      <span xid="span7" __cid="cumABFr" class="cumABFr">订单</span>
+                    </a>
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs cumABFr" xid="button2" style="font-family:“Microsoft YaHei”;font-size:16px;color:#212121;" bind-text=" val(&quot;promotion_title&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" __cid="cumABFr"> 
+                      <i xid="i2" __cid="cumABFr" class="cumABFr"/>  
+                      <span xid="span2" __cid="cumABFr" class="cumABFr"/>
+                    </a> 
+                  </h4>  
+                  <h4 class="media-heading cumABFr" xid="h42" __cid="cumABFr"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs cumABFr" xid="button4" style="color:#EB7795;" bind-text="&quot;结束时间&quot; + val(&quot;end_time&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-clock&quot;,&quot;label&quot;:&quot;结束时间:2019-11-11&quot;}" __cid="cumABFr"> 
+                      <i xid="i3" class="linear linear-clock cumABFr" __cid="cumABFr"/>  
+                      <span xid="span4" __cid="cumABFr" class="cumABFr">结束时间:2019-11-11</span>
+                    </a> 
+                  </h4>
+                </div> 
+              </div>
+            </div>
+          </li>
+        </ul> 
+      </div>
+    </div>
+  </div> 
+</div>

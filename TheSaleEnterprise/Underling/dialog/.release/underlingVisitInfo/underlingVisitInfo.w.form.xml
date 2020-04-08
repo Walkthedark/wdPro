@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cARZ3q2" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cARZ3q2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/bootstrap/inputGroup/inputGroup,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cARZ3q2" class="cARZ3q2"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="infoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Underling/dialog/underlingDealersVisitInfo.w&quot;}" __cid="cARZ3q2" class="cARZ3q2">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cARZ3q2" __cid="cARZ3q2"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cARZ3q2" style="display:none;" __cid="cARZ3q2">
+      <xhtml:div class="x-dialog-title cARZ3q2" __cid="cARZ3q2">
+        <xhtml:button class="close cARZ3q2" __cid="cARZ3q2">
+          <xhtml:span __cid="cARZ3q2" class="cARZ3q2">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cARZ3q2" __cid="cARZ3q2"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cARZ3q2" __cid="cARZ3q2"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="newDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Commonly/dialog/salesOrderNew.w&quot;}" __cid="cARZ3q2" class="cARZ3q2">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cARZ3q2" __cid="cARZ3q2"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cARZ3q2" style="display:none;" __cid="cARZ3q2">
+      <xhtml:div class="x-dialog-title cARZ3q2" __cid="cARZ3q2">
+        <xhtml:button class="close cARZ3q2" __cid="cARZ3q2">
+          <xhtml:span __cid="cARZ3q2" class="cARZ3q2">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cARZ3q2" __cid="cARZ3q2"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cARZ3q2" __cid="cARZ3q2"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcieaAJz-iosstatusbar cARZ3q2" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cARZ3q2"> 
+    <div class="x-panel-top cARZ3q2" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cARZ3q2"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cARZ3q2" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;下属拜访轨迹详情&quot;}" __cid="cARZ3q2"> 
+        <div class="x-titlebar-left cARZ3q2" xid="left2" __cid="cARZ3q2"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cARZ3q2" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cARZ3q2"> 
+            <i xid="i1" __cid="cARZ3q2" class="cARZ3q2"/>  
+            <span xid="span4" __cid="cARZ3q2" class="cARZ3q2">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cARZ3q2" xid="title2" __cid="cARZ3q2">下属拜访轨迹详情</div>  
+        <div class="x-titlebar-right  cARZ3q2" xid="right2" __cid="cARZ3q2">
+          <div class="empty cARZ3q2" __cid="cARZ3q2"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cARZ3q2" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cARZ3q2"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cARZ3q2" xid="row4" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cARZ3q2"> 
+        <div class="x-col cARZ3q2" xid="col4" style="text-align:center;" __cid="cARZ3q2"> 
+          <div class="input-group cARZ3q2" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cARZ3q2"> 
+            <div class="input-group-btn cARZ3q2" xid="layoutWizard2" __cid="cARZ3q2"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cARZ3q2" xid="button4" style="color: #8FC41C;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-triangle-left&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cARZ3q2"> 
+                <i xid="i4" class="glyphicon glyphicon-triangle-left cARZ3q2" __cid="cARZ3q2"/>  
+                <span xid="span3" __cid="cARZ3q2" class="cARZ3q2"/>
+              </a> 
+            </div>  
+            <input type="text" class="form-control cARZ3q2" component="$model/UI2/system/components/justep/input/input" xid="vdateInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cARZ3q2"/>  
+            <div class="input-group-btn cARZ3q2" xid="layoutWizard1" __cid="cARZ3q2"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cARZ3q2" xid="button7" style="color: #8FC41C;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button7Click" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-triangle-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cARZ3q2"> 
+                <i xid="i9" class="glyphicon glyphicon-triangle-right cARZ3q2" __cid="cARZ3q2"/>  
+                <span xid="span11" __cid="cARZ3q2" class="cARZ3q2"/>
+              </a> 
+            </div> 
+          </div>  
+          <label xid="label2" class="font-One mar2 cARZ3q2" bind-text="$model.pData.val(&quot;em_name&quot;)+&quot;/&quot;+$model.pData.val(&quot;de_name&quot;)" __cid="cARZ3q2"/>
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two cARZ3q2" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cARZ3q2"> 
+        <div class="x-col cARZ3q2" xid="col1" __cid="cARZ3q2">
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cARZ3q2" xid="labelEdit7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cARZ3q2"> 
+            <label class="x-label cARZ3q2" xid="label8" __cid="cARZ3q2">签到数量小计：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cARZ3q2" xid="output7" data-bind="component:{ref:$model.pData.ref(&quot;qdslxj&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cARZ3q2"/>
+          </div>
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cARZ3q2" xid="labelEdit8" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cARZ3q2"> 
+            <label class="x-label cARZ3q2" xid="label9" __cid="cARZ3q2">总行程：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cARZ3q2" xid="output8" data-bind="component:{ref:$model.pData.ref(&quot;qdslxj&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cARZ3q2"/>
+          </div>
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cARZ3q2" xid="row11" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cARZ3q2"> 
+        <div class="x-col border-table col1 cARZ3q2" xid="col58" __cid="cARZ3q2"> 
+          <span xid="span53" __cid="cARZ3q2" class="cARZ3q2">拜访小计</span>
+        </div> 
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cARZ3q2" xid="row10" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cARZ3q2"> 
+        <div class="x-col border-table cARZ3q2" xid="col52" __cid="cARZ3q2"> 
+          <span xid="span43" __cid="cARZ3q2" class="cARZ3q2">签到类型</span>
+        </div>  
+        <div class="x-col border-table cARZ3q2" xid="col56" __cid="cARZ3q2"> 
+          <span xid="span42" __cid="cARZ3q2" class="cARZ3q2">经销商</span>
+        </div>  
+        <div class="x-col border-table cARZ3q2" xid="col55" __cid="cARZ3q2"> 
+          <span xid="span44" __cid="cARZ3q2" class="cARZ3q2">网点</span>
+        </div>  
+        <div class="x-col border-table cARZ3q2" xid="col54" __cid="cARZ3q2"> 
+          <span xid="span45" __cid="cARZ3q2" class="cARZ3q2">签到汇报</span>
+        </div>  
+        <div class="x-col border-table cARZ3q2" xid="col53" __cid="cARZ3q2"> 
+          <span xid="span46" __cid="cARZ3q2" class="cARZ3q2">市场活动</span>
+        </div>  
+        <div class="x-col border-table cARZ3q2" xid="col57" __cid="cARZ3q2"> 
+          <span xid="span47" __cid="cARZ3q2" class="cARZ3q2">考勤</span>
+        </div> 
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cARZ3q2" xid="row2" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cARZ3q2"> 
+        <div class="x-col border-table cARZ3q2" xid="col5" __cid="cARZ3q2"> 
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output cARZ3q2" xid="output13" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" data-events="onRender:output13Render" __cid="cARZ3q2"/>
+        </div>  
+        <div class="x-col border-table cARZ3q2" xid="col46" bind-text=" " __cid="cARZ3q2">
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output cARZ3q2" xid="output1" data-bind="component:{ref:$model.pData.ref(&quot;sl_jxs&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cARZ3q2"/>
+        </div>  
+        <div class="x-col border-table cARZ3q2" xid="col47" __cid="cARZ3q2">
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output cARZ3q2" xid="output2" data-bind="component:{ref:$model.pData.ref(&quot;sl_wd&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cARZ3q2"/>
+        </div>  
+        <div class="x-col border-table cARZ3q2" xid="col48" __cid="cARZ3q2">
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output cARZ3q2" xid="output3" data-bind="component:{ref:$model.pData.ref(&quot;sl_qdhb&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cARZ3q2"/>
+        </div>  
+        <div class="x-col border-table cARZ3q2" xid="col49" __cid="cARZ3q2">
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output cARZ3q2" xid="output4" data-bind="component:{ref:$model.pData.ref(&quot;sl_schd&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cARZ3q2"/>
+        </div>  
+        <div class="x-col border-table cARZ3q2" xid="col50" __cid="cARZ3q2">
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output cARZ3q2" xid="output5" data-bind="component:{ref:$model.pData.ref(&quot;sl_kq&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cARZ3q2"/>
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two mar2 cARZ3q2" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cARZ3q2"> 
+        <div class="x-col cARZ3q2" xid="col19" __cid="cARZ3q2"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default2 cARZ3q2" xid="button2" style="width:100%;display:none" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;label&quot;:&quot;在地图上查看拜访轨迹&quot;}" __cid="cARZ3q2"> 
+            <i xid="i2" __cid="cARZ3q2" class="cARZ3q2"/>  
+            <span xid="span17" __cid="cARZ3q2" class="cARZ3q2">在地图上查看拜访轨迹</span>
+          </a>
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cARZ3q2" xid="row12" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cARZ3q2"> 
+        <div class="x-col border-table col1 cARZ3q2" xid="col59" __cid="cARZ3q2"> 
+          <span xid="span65" __cid="cARZ3q2" class="cARZ3q2">已拜访客户</span>
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cARZ3q2" xid="row13" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cARZ3q2"> 
+        <div class="x-col border-table cARZ3q2" xid="col70" __cid="cARZ3q2"> 
+          <span xid="span58" __cid="cARZ3q2" class="cARZ3q2">NO.</span>
+        </div>  
+        <div class="x-col border-table cARZ3q2" xid="col61" __cid="cARZ3q2"> 
+          <span xid="span59" __cid="cARZ3q2" class="cARZ3q2">客户名称</span>
+        </div>  
+        <div class="x-col border-table cARZ3q2" xid="col62" __cid="cARZ3q2"> 
+          <span xid="span61" __cid="cARZ3q2" class="cARZ3q2">签到时间</span>
+        </div>  
+        <div class="x-col border-table cARZ3q2" xid="col68" __cid="cARZ3q2"> 
+          <span xid="span60" __cid="cARZ3q2" class="cARZ3q2">签到地点</span>
+        </div>  
+        <div class="x-col border-table cARZ3q2" xid="col69" __cid="cARZ3q2"> 
+          <span xid="span55" __cid="cARZ3q2" class="cARZ3q2">离上一站距离（千米）</span>
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cARZ3q2" xid="list2" style="padding:0px;margin:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;yData&quot;}" __cid="cARZ3q2"> 
+        <ul class="x-list-template hide cARZ3q2" xid="listTemplateUl2" style="padding:0px;margin:0px;" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="cARZ3q2"> 
+          <li xid="li2" style="padding:0px;margin:0px;" __cid="cARZ3q2" class="cARZ3q2">
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cARZ3q2" xid="row9" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cARZ3q2"> 
+              <div class="x-col border-table cARZ3q2" xid="col22" __cid="cARZ3q2"> 
+                <span xid="span18" __cid="cARZ3q2" class="cARZ3q2">1</span>
+              </div>  
+              <div class="x-col border-table cARZ3q2" xid="col17" __cid="cARZ3q2"> 
+                <span xid="span7" __cid="cARZ3q2" class="cARZ3q2">上海经销部</span>
+              </div>  
+              <div class="x-col border-table cARZ3q2" xid="col18" __cid="cARZ3q2"> 
+                <span xid="span15" __cid="cARZ3q2" class="cARZ3q2">15：30：30</span>
+              </div>  
+              <div class="x-col border-table cARZ3q2" xid="col20" __cid="cARZ3q2"> 
+                <span xid="span5" __cid="cARZ3q2" class="cARZ3q2">渭南路</span>
+              </div>  
+              <div class="x-col border-table cARZ3q2" xid="col21" __cid="cARZ3q2"> 
+                <span xid="span14" __cid="cARZ3q2" class="cARZ3q2">0.5</span>
+              </div> 
+            </div>
+          </li>
+        </ul> 
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cARZ3q2" xid="row3" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cARZ3q2"> 
+        <div class="x-col border-table col1 cARZ3q2" xid="col2" __cid="cARZ3q2"> 
+          <span xid="span6" __cid="cARZ3q2" class="cARZ3q2">失访客户</span>
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cARZ3q2" xid="row6" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cARZ3q2"> 
+        <div class="x-col border-table cARZ3q2" xid="col14" __cid="cARZ3q2"> 
+          <span xid="span9" __cid="cARZ3q2" class="cARZ3q2">NO.</span>
+        </div>  
+        <div class="x-col border-table cARZ3q2" xid="col9" __cid="cARZ3q2"> 
+          <span xid="span13" __cid="cARZ3q2" class="cARZ3q2">失访网点</span>
+        </div>  
+        <div class="x-col border-table cARZ3q2" xid="col8" __cid="cARZ3q2"> 
+          <span xid="span1" __cid="cARZ3q2" class="cARZ3q2">网点地址</span>
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cARZ3q2" xid="list1" style="padding:0px;margin:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" __cid="cARZ3q2"> 
+        <ul class="x-list-template hide cARZ3q2" xid="listTemplateUl1" style="padding:0px;margin:0px;" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cARZ3q2"> 
+          <li xid="li1" style="padding:0px;margin:0px;" __cid="cARZ3q2" class="cARZ3q2">
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cARZ3q2" xid="row15" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cARZ3q2"> 
+              <div class="x-col border-table cARZ3q2" xid="col25" __cid="cARZ3q2"> 
+                <span xid="span19" __cid="cARZ3q2" class="cARZ3q2">1</span>
+              </div>  
+              <div class="x-col border-table cARZ3q2" xid="col24" __cid="cARZ3q2"> 
+                <span xid="span21" __cid="cARZ3q2" class="cARZ3q2">上海经销部</span>
+              </div>  
+              <div class="x-col border-table cARZ3q2" xid="col23" __cid="cARZ3q2"> 
+                <span xid="span20" __cid="cARZ3q2" class="cARZ3q2">上海市渭南路百联讲吧111号</span>
+              </div> 
+            </div>
+          </li>
+        </ul> 
+      </div> 
+    </div>  
+    <style __cid="cARZ3q2" class="cARZ3q2">.x-panel.pcieaAJz-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcieaAJz-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcieaAJz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcieaAJz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcieaAJz-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcieaAJz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcieaAJz-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcieaAJz-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcieaAJz-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiver1Receive" __cid="cARZ3q2" class="cARZ3q2"/>
+</div>

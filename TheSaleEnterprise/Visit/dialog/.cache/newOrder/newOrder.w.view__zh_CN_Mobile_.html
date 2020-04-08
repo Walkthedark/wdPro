@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cf2UVve" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cf2UVve" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <style>null</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cf2UVve" class="cf2UVve"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc3MJnuy-iosstatusbar cf2UVve" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cf2UVve"> 
+    <div class="x-panel-top cf2UVve" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cf2UVve"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cf2UVve" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;新增订单&#34;}" __cid="cf2UVve"> 
+        <div class="x-titlebar-left cf2UVve" xid="left2" __cid="cf2UVve"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cf2UVve" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;返回&#34;}" __cid="cf2UVve"> 
+            <i xid="i1" __cid="cf2UVve" class="cf2UVve"></i>  
+            <span xid="span4" __cid="cf2UVve" class="cf2UVve">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cf2UVve" xid="title2" __cid="cf2UVve">新增订单</div>  
+        <div class="x-titlebar-right  cf2UVve" xid="right2" __cid="cf2UVve">
+          <div class="empty cf2UVve" __cid="cf2UVve"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cf2UVve" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cf2UVve"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row border-One cf2UVve" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cf2UVve"> 
+        <div class="x-col cf2UVve" xid="col8" __cid="cf2UVve"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cf2UVve" xid="row8" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cf2UVve"> 
+            <div class="col col-xs-12 cf2UVve" xid="col18" __cid="cf2UVve"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cf2UVve" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cf2UVve"> 
+                <label class="x-label cf2UVve" xid="label2" style="width:80px;" __cid="cf2UVve">网点：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cf2UVve" xid="output1" data-bind="component:{ref:$model.orderData.ref(&#34;net&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cf2UVve"></div> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cf2UVve" xid="col18" __cid="cf2UVve"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cf2UVve" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cf2UVve"> 
+                <label class="x-label cf2UVve" xid="label4" style="width:80px;" __cid="cf2UVve">经销商：</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cf2UVve" xid="input1" data-bind="component:{ref:$model.orderData.ref(&#34;jxs&#34;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;readonly&#34;:true}" __cid="cf2UVve"> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cf2UVve" xid="col19" __cid="cf2UVve"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cf2UVve" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cf2UVve"> 
+                <label class="x-label cf2UVve" xid="label5" style="width:80px;" __cid="cf2UVve">联系人：</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cf2UVve" xid="input2" data-bind="component:{ref:$model.orderData.ref(&#34;shr&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cf2UVve"> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cf2UVve" xid="col21" __cid="cf2UVve"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cf2UVve" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cf2UVve"> 
+                <label class="x-label cf2UVve" xid="label6" style="width:80px;" __cid="cf2UVve">电话：</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cf2UVve" xid="input4" data-bind="component:{ref:$model.orderData.ref(&#34;dh&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cf2UVve"> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cf2UVve" xid="col1" __cid="cf2UVve"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cf2UVve" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cf2UVve"> 
+                <label class="x-label cf2UVve" xid="label1" style="width:80px;" __cid="cf2UVve">地址：</label>  
+                <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit cf2UVve" xid="textarea1" data-bind="component:{ref:$model.orderData.ref(&#34;shdz&#34;),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cf2UVve"></textarea> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cf2UVve" xid="col3" __cid="cf2UVve"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cf2UVve" xid="labelEdit8" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cf2UVve"> 
+                <label class="x-label cf2UVve" xid="label8" style="width:80px;" __cid="cf2UVve">配送类型：</label>  
+                <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radios x-edit cf2UVve" xid="radioGroup1" style="color: #FA7922;" readonly="true" data-bind="component:{ref:$model.orderData.ref(&#34;sendType&#34;),name:'$model/UI2/system/components/justep/select/radioGroup'},foreach:{data:CData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" __cid="cf2UVve">
+                  <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cf2UVve" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref(&#34;type&#34;),value:ref(&#34;id&#34;)}" __cid="cf2UVve">
+                    <input type="radio" __cid="cf2UVve" class="cf2UVve">
+                    <label __cid="cf2UVve" class="cf2UVve"></label>
+                  </span>
+                </span> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cf2UVve" xid="col4" __cid="cf2UVve"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cf2UVve" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cf2UVve"> 
+                <label class="x-label cf2UVve" xid="label3" style="width:80px;" __cid="cf2UVve">促销活动：</label>  
+                <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cf2UVve" xid="select1" data-bind="component:{ref:$model.orderData.ref(&#34;yhPolicy&#34;),name:'$model/UI2/system/components/justep/select/select'},optionsCaption:'请选择...',options:activityList.datas,optionsValue:'id',optionsText:'title',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cf2UVve"></select> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cf2UVve" xid="col2" __cid="cf2UVve"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cf2UVve" xid="labelEdit9" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cf2UVve"> 
+                <label class="x-label cf2UVve" xid="label9" style="width:80px;" __cid="cf2UVve">备注：</label>  
+                <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit cf2UVve" xid="textarea3" data-bind="component:{ref:$model.orderData.ref(&#34;bz&#34;),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cf2UVve"></textarea> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cf2UVve" xid="row4" style="padding:20px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cf2UVve"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default2 btn-only-label cf2UVve" xid="button4" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&#34;label&#34;:&#34;添 加 订 单 明 细&#34;}" __cid="cf2UVve"> 
+          <i xid="i4" __cid="cf2UVve" class="cf2UVve"></i>  
+          <span xid="span5" __cid="cf2UVve" class="cf2UVve">添 加 订 单 明 细</span> 
+        </a> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cf2UVve" xid="list1" style="padding:0px 10px;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;infoData&#34;}" __cid="cf2UVve"> 
+        <ul class="x-list-template hide cf2UVve" xid="listTemplateUl1" __cid="cf2UVve" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+          <li xid="li1" __cid="cf2UVve" class="cf2UVve"> 
+            <div component="$model/UI2/system/components/bootstrap/row/row" class="row cf2UVve" xid="row2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cf2UVve"> 
+              <div class="col col-xs-12 cf2UVve" xid="col5" __cid="cf2UVve"> 
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cf2UVve" xid="labelEdit12" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cf2UVve"> 
+                  <label class="x-label font-One cf2UVve" xid="label12" style="width:80px;" __cid="cf2UVve">产品：</label>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-One cf2UVve" xid="output2" data-bind="component:{ref:ref(&#34;pro_name&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cf2UVve"></div> 
+                </div> 
+              </div>  
+              <div class="col col-xs-12 cf2UVve" xid="col6" __cid="cf2UVve"> 
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cf2UVve" xid="labelEdit13" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cf2UVve"> 
+                  <label class="x-label cf2UVve" xid="label7" style="width:80px;" __cid="cf2UVve">供货价：</label>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cf2UVve" xid="output5" data-bind="component:{ref:ref(&#34;ghj&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cf2UVve"></div> 
+                </div> 
+              </div>  
+              <div class="col col-xs-12 cf2UVve" xid="col10" __cid="cf2UVve"> 
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cf2UVve" xid="labelEdit11" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cf2UVve"> 
+                  <label class="x-label cf2UVve" xid="label13" style="width:80px;" __cid="cf2UVve">订单数量：</label>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cf2UVve" xid="output3" data-bind="component:{ref:ref(&#34;xiang&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cf2UVve"></div> 
+                </div> 
+              </div>  
+              <div class="col col-xs-12 cf2UVve" xid="col9" __cid="cf2UVve"> 
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cf2UVve" xid="labelEdit7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cf2UVve"> 
+                  <label class="x-label cf2UVve" xid="label10" style="width:80px;" __cid="cf2UVve">优惠描述：</label>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cf2UVve" xid="output4" data-bind="component:{ref:ref(&#34;yhms&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cf2UVve"></div> 
+                </div> 
+              </div>  
+              <div class="col col-xs-12 cf2UVve" xid="col7" __cid="cf2UVve"> 
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cf2UVve" xid="labelEdit10" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cf2UVve"> 
+                  <label class="x-label cf2UVve" xid="label11" style="width:80px;" __cid="cf2UVve">产品备注：</label>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cf2UVve" xid="output6" data-bind="component:{ref:ref(&#34;bz&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cf2UVve"></div> 
+                </div> 
+              </div> 
+            </div> 
+          </li> 
+        </ul> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cf2UVve" xid="row1" style="padding:20px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cf2UVve"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label cf2UVve" xid="button2" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&#34;label&#34;:&#34;保 存&#34;}" __cid="cf2UVve"> 
+          <i xid="i2" __cid="cf2UVve" class="cf2UVve"></i>  
+          <span xid="span1" __cid="cf2UVve" class="cf2UVve">保 存</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cf2UVve" class="cf2UVve">.x-panel.pc3MJnuy-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pc3MJnuy-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc3MJnuy-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc3MJnuy-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3MJnuy-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc3MJnuy-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3MJnuy-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3MJnuy-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3MJnuy-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="wReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:wReceiverReceive" __cid="cf2UVve" class="cf2UVve"></span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="infoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onClose:infoDialogClose" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/Visit/dialog/newOrderInfo.w&#34;}" __cid="cf2UVve" class="cf2UVve">
+    <div class="x-dialog-overlay cf2UVve" __cid="cf2UVve"></div>
+    <div class="x-dialog cf2UVve" style="display:none;" __cid="cf2UVve">
+      <div class="x-dialog-title cf2UVve" __cid="cf2UVve">
+        <button class="close cf2UVve" __cid="cf2UVve">
+          <span __cid="cf2UVve" class="cf2UVve">×</span>
+        </button>
+        <div class="x-dialog-title-text cf2UVve" __cid="cf2UVve"></div>
+      </div>
+      <div class="x-dialog-body cf2UVve" __cid="cf2UVve"></div>
+    </div>
+  </span> 
+</div>

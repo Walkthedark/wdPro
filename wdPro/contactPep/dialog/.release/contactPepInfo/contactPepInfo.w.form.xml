@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window c2Unayq" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c2Unayq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-popOver-content.ddd.c2Unayq{bottom: 0.6px !important} .tb-settlement2.c2Unayq{line-height: 40px; background-color: rgb(255, 255, 255); color: rgb(255, 255, 255); font-size: 16px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="c2Unayq" class="c2Unayq"></div>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full c2Unayq" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="c2Unayq"> 
+    <div class="x-contents-content active c2Unayq" xid="content1" style="background-color:#F3F4F3;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c2Unayq">
+      <div xid="div1" style="padding:5px 5px 5px 5px;" __cid="c2Unayq" class="c2Unayq">
+        <div xid="div2" class="list-group-item c2Unayq" __cid="c2Unayq">
+          <div class="media c2Unayq" xid="media1" __cid="c2Unayq"> 
+            <div class="media-left c2Unayq" xid="mediaLeft1" __cid="c2Unayq"> 
+              <a href="#" xid="a1" __cid="c2Unayq" class="c2Unayq"> 
+                <img class="media-object c2Unayq" src="" alt="" xid="image1" style="width:50px;height:45px;" bind-attr-src=" $model.linkManData.val(&quot;head_img&quot;)" __cid="c2Unayq"/>
+              </a> 
+            </div>  
+            <div class="media-body c2Unayq" xid="mediaBody1" __cid="c2Unayq"> 
+              <h4 class="media-heading c2Unayq" xid="h42" __cid="c2Unayq">
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c2Unayq" xid="button1" style="color:#585958;font-size:16px" bind-text=" $model.linkManData.val(&quot;staff_name&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;姓名&quot;}" __cid="c2Unayq"> 
+                  <i xid="i1" __cid="c2Unayq" class="c2Unayq"/>  
+                  <span xid="span1" __cid="c2Unayq" class="c2Unayq">姓名</span>
+                </a>
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c2Unayq" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-social-user&quot;,&quot;label&quot;:&quot;手机号&quot;}" __cid="c2Unayq"> 
+                  <i xid="i2" class="icon-android-social-user c2Unayq" __cid="c2Unayq"/>  
+                  <span xid="span2" bind-text=" $model.linkManData.val(&quot;phone&quot;)" __cid="c2Unayq" class="c2Unayq">手机号</span>
+                </a>
+              </h4>
+            </div> 
+          </div> 
+        </div>
+      </div>  
+      <div xid="div3" style="height:15px;" __cid="c2Unayq" class="c2Unayq"/>  
+      <div xid="div4" class="list-group-item c2Unayq" __cid="c2Unayq">
+        <div class="media c2Unayq" xid="media2" __cid="c2Unayq"> 
+          <div class="media-body c2Unayq" xid="mediaBody2" __cid="c2Unayq"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c2Unayq" xid="button3" style="color:#585958;font-size:16px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;所属客户&quot;}" __cid="c2Unayq"> 
+              <i xid="i3" __cid="c2Unayq" class="c2Unayq"/>  
+              <span xid="span3" __cid="c2Unayq" class="c2Unayq">所属客户</span>
+            </a>
+          </div>  
+          <div class="media-right c2Unayq" xid="mediaRight1" __cid="c2Unayq"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c2Unayq" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;label&quot;:&quot;编辑&quot;}" __cid="c2Unayq"> 
+              <i xid="i4" __cid="c2Unayq" class="c2Unayq"/>  
+              <span xid="span4" __cid="c2Unayq" class="c2Unayq">编辑</span>
+            </a>
+          </div>
+        </div>  
+        <div xid="div5" __cid="c2Unayq" class="c2Unayq">
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list c2Unayq" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;relevanceDlientData&quot;}" __cid="c2Unayq"> 
+            <ul class="x-list-template hide c2Unayq" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="c2Unayq"> 
+              <li xid="li1" __cid="c2Unayq" class="c2Unayq">
+                <div xid="div6" class="list-group-item c2Unayq" style="padding:5px 5px 5px 5px;;border-top-style:none;border-right-style:none;border-left-style:none;" __cid="c2Unayq"> 
+                  <div class="media c2Unayq" xid="media3" __cid="c2Unayq"> 
+                    <div class="media-body c2Unayq" xid="mediaBody3" __cid="c2Unayq"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c2Unayq" xid="button5" style=";font-size:16px" bind-text=" val(&quot;client_name&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button5Click" data-config="{&quot;label&quot;:&quot;客户名称&quot;}" __cid="c2Unayq"> 
+                        <i xid="i6" __cid="c2Unayq" class="c2Unayq"/>  
+                        <span xid="span5" __cid="c2Unayq" class="c2Unayq">客户名称</span>
+                      </a> 
+                    </div>  
+                    <div class="media-right c2Unayq" xid="mediaRight2" __cid="c2Unayq"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c2Unayq" xid="button6" bind-visible=" val(&quot;choose&quot;)==1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;label&quot;:&quot;解除关联&quot;}" __cid="c2Unayq"> 
+                        <i xid="i5" __cid="c2Unayq" class="c2Unayq"/>  
+                        <span xid="span6" __cid="c2Unayq" class="c2Unayq">解除关联</span>
+                      </a> 
+                    </div> 
+                  </div> 
+                </div>
+              </li>
+            </ul> 
+          </div>
+        </div>  
+        <div xid="div7" style="text-align:center;display:none" __cid="c2Unayq" class="c2Unayq">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c2Unayq" xid="button7" style="color:#585958" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;popOver6.show&quot;}" data-config="{&quot;icon&quot;:&quot;icon-plus&quot;,&quot;label&quot;:&quot;关联客户&quot;}" __cid="c2Unayq"> 
+            <i xid="i7" class="icon-plus c2Unayq" __cid="c2Unayq"/>  
+            <span xid="span7" __cid="c2Unayq" class="c2Unayq">关联客户</span>
+          </a>
+        </div>
+      </div>  
+      <div xid="div8" style="height:15px;" __cid="c2Unayq" class="c2Unayq"/>  
+      <div xid="div9" class="list-group-item c2Unayq" style="padding:0px 0px 0px 0px;" __cid="c2Unayq">
+        <div xid="div10" class="list-group-item c2Unayq" __cid="c2Unayq">
+          <span xid="span8" style="color:#6B6C6C;" __cid="c2Unayq" class="c2Unayq">状态</span>
+        </div>
+        <div xid="div11" class="list-group-item c2Unayq" __cid="c2Unayq">
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c2Unayq" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c2Unayq"> 
+            <label class="x-label c2Unayq" xid="label1" style="width:140px;" __cid="c2Unayq">是否成为下游人员</label>  
+            <div class="x-edit c2Unayq" xid="div12" style="text-align:right;" __cid="c2Unayq">
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c2Unayq" xid="button8" style="color:#585958" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;否&quot;}" __cid="c2Unayq"> 
+                <i xid="i8" __cid="c2Unayq" class="c2Unayq"/>  
+                <span xid="span9" __cid="c2Unayq" class="c2Unayq">否</span>
+              </a>
+            </div>
+          </div>
+        </div>  
+        <div xid="div14" class="list-group-item c2Unayq" __cid="c2Unayq"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c2Unayq" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c2Unayq"> 
+            <label class="x-label c2Unayq" xid="label2" style="width:140px;" __cid="c2Unayq">绑定外部联系人</label>  
+            <div class="x-edit c2Unayq" xid="div13" style="text-align:right;" __cid="c2Unayq"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c2Unayq" xid="button9" style="color:#585958" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;未绑定&quot;}" __cid="c2Unayq"> 
+                <i xid="i9" __cid="c2Unayq" class="c2Unayq"/>  
+                <span xid="span10" __cid="c2Unayq" class="c2Unayq">未绑定</span>
+              </a> 
+            </div> 
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver c2Unayq" xid="popOver6" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;anchor&quot;:&quot;bottom1&quot;,&quot;position&quot;:&quot;bottom&quot;}" __cid="c2Unayq"> 
+    <div class="x-popOver-overlay c2Unayq" xid="div52" __cid="c2Unayq"/>  
+    <div class="x-popOver-content ddd c2Unayq" xid="div53" style="width:100%;height:30%;" __cid="c2Unayq"> 
+      <div xid="div54" style="height:100%;width:100%;background-color:white;" __cid="c2Unayq" class="c2Unayq"> 
+        <div component="$model/UI2/system/components/justep/panel/panel" class=" x-full pcIZJVBf-iosstatusbar c2Unayq" xid="panel6" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c2Unayq"> 
+          <div class="x-panel-content c2Unayq" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c2Unayq"> 
+            <div xid="div15" class="list-group-item c2Unayq" style="text-align:center;" __cid="c2Unayq">
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c2Unayq" xid="button10" style="color:#585958" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button10Click" data-config="{&quot;label&quot;:&quot;直接新增&quot;}" __cid="c2Unayq"> 
+                <i xid="i10" __cid="c2Unayq" class="c2Unayq"/>  
+                <span xid="span11" __cid="c2Unayq" class="c2Unayq">直接新增</span>
+              </a>
+            </div>  
+            <div xid="div16" class="list-group-item c2Unayq" style="text-align:center;" __cid="c2Unayq"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c2Unayq" xid="button11" style="color:#585958" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button11Click" data-config="{&quot;label&quot;:&quot;关联现有&quot;}" __cid="c2Unayq"> 
+                <i xid="i11" __cid="c2Unayq" class="c2Unayq"/>  
+                <span xid="span12" __cid="c2Unayq" class="c2Unayq">关联现有</span>
+              </a> 
+            </div>
+          </div>  
+          <div class="x-panel-bottom c2Unayq" xid="bottom6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c2Unayq"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row c2Unayq" xid="row12" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c2Unayq"> 
+              <div class="x-col c2Unayq" xid="col29" style="text-align:center;" __cid="c2Unayq"/>  
+              <div class="x-col c2Unayq" xid="col28" style="text-align:center;" __cid="c2Unayq"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top btn-only-label c2Unayq" xid="button28" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;popOver6.hide&quot;}" data-config="{&quot;icon&quot;:&quot;linear linear-phonehandset&quot;,&quot;label&quot;:&quot;取消&quot;}" __cid="c2Unayq"> 
+                  <i xid="i28" class="linear linear-phonehandset c2Unayq" __cid="c2Unayq"/>  
+                  <span xid="span59" __cid="c2Unayq" class="c2Unayq">取消</span>
+                </a> 
+              </div>  
+              <div class="x-col c2Unayq" xid="col27" style="text-align:center;" __cid="c2Unayq"/>
+            </div> 
+          </div>  
+          <style __cid="c2Unayq" class="c2Unayq">.x-panel.pcIZJVBf-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcIZJVBf-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcIZJVBf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcIZJVBf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcIZJVBf-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcIZJVBf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcIZJVBf-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcIZJVBf-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcIZJVBf-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+        </div> 
+      </div> 
+    </div> 
+  </div>
+</div>

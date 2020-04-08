@@ -1,0 +1,70 @@
+.list_btn {
+	height: 25px;
+	width: 25px;
+	background-color: #52A7F5;
+	text-align: center;
+	color: #FEFFFE;
+	margin-top: 10px;
+	line-height: 18px;
+}
+.btn-radius {
+	border-radius: 30px;
+}
+html {font-size: 62.5%;/*10 ÷ 16 × 100% = 55.5%*/}
+body {font-size: 1.6rem;/*1.4 × 10px = 14px */}
+body {
+	/*  font-family:"微软雅黑";  */
+	/* /* font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif */ */
+	font: 1.6rem 'Microsoft YaHei', arial, tahoma, \5b8b\4f53, sans-serif
+}
+html {font-size: 62.5%;/*10 ÷ 16 × 100% = 55.5%*/}
+span {font-size: 1.6rem;/*1.4 × 10px = 14px */}
+.btn-radius {
+	border-radius: 30px;
+}
+.x-popOver-overlay.tClass{
+	top: 80px !important; 
+	background-color: #000 !important;; 
+}
+.tb-sorting {
+	width: 100%;
+	background-color: #fff;
+	border-top: 1px solid #e1e1e1;
+}
+.list_btn {
+	height: 25px;
+	width: 25px;
+	background-color: #52A7F5;
+	text-align: center;
+	color: #FEFFFE;
+	margin-top: 25px;
+	line-height: 18px;
+}
+
+.div_opacity {
+	opacity: 1;
+}
+/*底部结算**/
+.x-panel-bottom {
+	border-top: 1px solid #dcdcdc;
+}
+
+.x-panel-bottom .h4 {
+	margin: 5px 0;
+}
+
+.tb-settlement {
+	line-height: 40px;
+	background-color: #4DA7F4;
+	color: #fff;
+	font-size: 16px;
+}
+.x-popOver-content.ddd {
+	bottom: 0.6px !important;
+}
+.tb-settlement2 {
+	line-height: 40px;
+	background-color: #fff;
+	color: #fff;
+	font-size: 16px;
+}

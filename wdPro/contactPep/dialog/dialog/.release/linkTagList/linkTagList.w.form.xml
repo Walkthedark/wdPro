@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cE3yMNb" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cE3yMNb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">body.cE3yMNb{font: 14px/ 1.5 "Microsoft YaHei", arial, tahoma, 宋体, sans-serif} .x-label.cE3yMNb{color: rgb(53, 53, 53)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cE3yMNb" class="cE3yMNb"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcIFr6Bv-iosstatusbar cE3yMNb" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cE3yMNb"> 
+    <div class="x-panel-content cE3yMNb" xid="content1" style="background-color:#EBEAF0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cE3yMNb"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cE3yMNb" xid="row1" style="height:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cE3yMNb"> 
+        <div class="x-col cE3yMNb" xid="col2" __cid="cE3yMNb"/> 
+      </div>
+      <div xid="div1" __cid="cE3yMNb" class="cE3yMNb"> 
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cE3yMNb" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;tagData&quot;}" __cid="cE3yMNb"> 
+          <ul class="x-list-template hide cE3yMNb" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cE3yMNb"> 
+            <li xid="li1" __cid="cE3yMNb" class="cE3yMNb"> 
+              <div xid="div22" class="list-group-item cE3yMNb" style="padding:5px 5px 5px 5px;" __cid="cE3yMNb"> 
+                <div class="media cE3yMNb" xid="media9" __cid="cE3yMNb"> 
+                  <div class="media-body cE3yMNb" xid="mediaBody9" __cid="cE3yMNb"> 
+                    <h5 xid="h518" style="color:#181919;" bind-text=" val(&quot;tag_name&quot;)" __cid="cE3yMNb" class="cE3yMNb">潜在用友客户</h5> 
+                  </div>  
+                  <div class="media-right cE3yMNb" xid="mediaRight8" __cid="cE3yMNb"> 
+                    <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cE3yMNb" xid="checkbox1" checkedValue="1" uncheckedValue="0" data-config="{&quot;checked&quot;:false,&quot;checkedValue&quot;:&quot;1&quot;,&quot;disabled&quot;:false,&quot;uncheckedValue&quot;:&quot;0&quot;}" data-bind="component:{ref:ref(&quot;choose&quot;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cE3yMNb">
+                      <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cE3yMNb" class="cE3yMNb"/>
+                      <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cE3yMNb" class="cE3yMNb"/>
+                    </span>
+                  </div> 
+                </div> 
+              </div> 
+            </li> 
+          </ul> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cE3yMNb" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cE3yMNb"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cE3yMNb" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cE3yMNb"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label cE3yMNb" xid="button1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cE3yMNb"> 
+          <i xid="i1" __cid="cE3yMNb" class="cE3yMNb"/>  
+          <span xid="span1" __cid="cE3yMNb" class="cE3yMNb">取消</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cE3yMNb" xid="okBtn" style="background-color:#4B76AE;color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:okBtnClick" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cE3yMNb"> 
+          <i xid="i2" __cid="cE3yMNb" class="cE3yMNb"/>  
+          <span xid="span2" __cid="cE3yMNb" class="cE3yMNb">确定</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cE3yMNb" class="cE3yMNb">.x-panel.pcIFr6Bv-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcIFr6Bv-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcIFr6Bv-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcIFr6Bv-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcIFr6Bv-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcIFr6Bv-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcIFr6Bv-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcIFr6Bv-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcIFr6Bv-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div> 
+</div>

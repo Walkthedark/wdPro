@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cnuIbAj" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cnuIbAj" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/menu/menu,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/popMenu/popMenu,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.box.cnuIbAj{width: 100%; height: 130px; overflow: hidden; position: relative} .box.cnuIbAj em.cnuIbAj{position: absolute; width: 15px; height: 15px; border-radius: 50%; background-color: rgb(242, 241, 242)} .btn_bord.cnuIbAj{border-radius: 30px; color: white; font-weight: bold; margin-top: 30px; width: 80px; line-height: 30px; height: 50px; background-color: black} .box.cnuIbAj em.first.cnuIbAj{left: -7px; top: 30px} .box.cnuIbAj em.last.cnuIbAj{right: -7px; top: 30px} .btn_radius.cnuIbAj{border-radius: 30px} .li_class.cnuIbAj{border-left: 3px solid rgb(139, 165, 172); position: relative; padding-left: 20px; padding-bottom: 5px; display: list-item; text-align: -webkit-match-parent} .li_class.cnuIbAj:BEFORE{border: 2px solid rgb(139, 165, 172); border-radius: 8px; content: " "; width: 15px; height: 15px; display: block; position: absolute; left: -8.5px; top: 0px; background-color: rgb(139, 165, 172)} .li_class.cnuIbAj:BEFORE{border-color: rgb(139, 165, 172)} .li_class.cnuIbAj:last-of-type{border-left: 0} .li_class:last-of-type.cnuIbAj:BEFORE{left: -5px} .span-index.cnuIbAj{position: absolute; left: -70px; top: 0px} .li_class2.cnuIbAj{border-left: 3px solid rgb(64, 116, 34); position: relative; margin-left: 20px; padding-left: 20px; min-height: 50px; padding-bottom: 5px; display: list-item; text-align: -webkit-match-parent} .li_class2.cnuIbAj:BEFORE{border: 2px solid rgb(64, 116, 34); border-radius: 8px; content: " "; width: 15px; height: 15px; display: block; position: absolute; left: -8.5px; top: 0px; background-color: rgb(64, 116, 34)} .li_class2.cnuIbAj:BEFORE{border-color: rgb(64, 116, 34)} .li_class2.cnuIbAj:last-of-type{border-left: 0} .li_class2:last-of-type.cnuIbAj:BEFORE{left: -5px} .li_class2.cnuIbAj:last-of-type .span-index.cnuIbAj{left: -67px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cnuIbAj" class="cnuIbAj"></div>  
+  <title __cid="cnuIbAj" class="cnuIbAj">订货单</title>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcqaUF3m-iosstatusbar cnuIbAj" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cnuIbAj"> 
+    <div class="x-panel-content cnuIbAj" xid="content1" style="background-color:#F2F1F2;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnuIbAj"> 
+      <div xid="div6" style="padding:5px 5px 5px 5px;background-color:#F2F1F2;" __cid="cnuIbAj" class="cnuIbAj"> 
+        <div xid="div5" class="box  cnuIbAj" style="background-color:white;padding-right:8px;padding-left:8px;" __cid="cnuIbAj"> 
+          <em class="first cnuIbAj" xid="default3" __cid="cnuIbAj"/>  
+          <em class="last cnuIbAj" xid="default4" __cid="cnuIbAj"/>  
+          <div class="media cnuIbAj" xid="media1" style="margin-top:5px;" __cid="cnuIbAj"> 
+            <div class="media-body cnuIbAj" xid="mediaBody2" __cid="cnuIbAj"> 
+              <h4 class="media-heading cnuIbAj" xid="h42" __cid="cnuIbAj"> 
+                <span xid="span8" style="font-size:16px;color:#242424;margin-left:3px;" __cid="cnuIbAj" class="cnuIbAj">单号:</span>  
+                <span xid="span5" style="font-size:16px;color:#242424;margin-left:3px;" bind-text="$model.orderData.val(&quot;order_sn&quot;)" __cid="cnuIbAj" class="cnuIbAj"/> 
+              </h4> 
+            </div>  
+            <div class="media-right cnuIbAj" xid="mediaRight1" __cid="cnuIbAj"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs cnuIbAj" xid="button4" style="font-size:16px;background-color:white;color:#00BFFF;border-style:none none none none;" bind-text=" $model.orderData.val(&quot;type_trans&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;待出库&quot;}" __cid="cnuIbAj"> 
+                <i xid="i4" __cid="cnuIbAj" class="cnuIbAj"/>  
+                <span xid="span7" __cid="cnuIbAj" class="cnuIbAj">待出库</span> 
+              </a> 
+            </div> 
+          </div>  
+          <div class="media cnuIbAj" xid="media2" style="margin-top:1px;" __cid="cnuIbAj"> 
+            <div class="media-body cnuIbAj" xid="mediaBody1" __cid="cnuIbAj"> 
+              <h4 class="media-heading cnuIbAj" xid="h41" __cid="cnuIbAj"> 
+                <span xid="span9" style="font-size:16px;color:#242424;margin-left:3px;" __cid="cnuIbAj" class="cnuIbAj">时间:</span>  
+                <span xid="span6" style="font-size:16px;color:#242424;margin-left:3px;" bind-text="$model.orderData.val(&quot;order_time&quot;)" __cid="cnuIbAj" class="cnuIbAj"/> 
+              </h4>  
+              <h4 class="media-heading cnuIbAj" xid="h43" __cid="cnuIbAj"> 
+                <span xid="span11" style="font-size:16px;color:#242424;margin-left:3px;" __cid="cnuIbAj" class="cnuIbAj">客户:</span>  
+                <span xid="span10" style="font-size:16px;color:#242424;margin-left:3px;" bind-text="$model.orderData.val(&quot;client_name&quot;)" __cid="cnuIbAj" class="cnuIbAj"/> 
+              </h4> 
+            </div> 
+          </div>  
+          <div class="media cnuIbAj" xid="media3" style="margin-top:5px;border-top-style:solid;border-top-width:thin;border-top-color:#E6E6E6;" bind-click="media3Click" __cid="cnuIbAj"> 
+            <div class="media-body cnuIbAj" xid="mediaBody3" __cid="cnuIbAj"> 
+              <h4 xid="h44" class="media-heading cnuIbAj" __cid="cnuIbAj"> 
+                <span xid="span12" style="font-size:14px;color:#545454;margin-left:3px;" __cid="cnuIbAj" class="cnuIbAj">查看状态跟踪</span>
+              </h4> 
+            </div>  
+            <div class="media-right cnuIbAj" xid="mediaRight2" __cid="cnuIbAj"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cnuIbAj" xid="button5" style="color:#545454;font-size:14px;background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-arrow-right-b&quot;,&quot;label&quot;:&quot;待出库&quot;}" __cid="cnuIbAj"> 
+                <i xid="i5" class="icon-arrow-right-b cnuIbAj" __cid="cnuIbAj"/>  
+                <span xid="span13" __cid="cnuIbAj" class="cnuIbAj">待出库</span>
+              </a> 
+            </div> 
+          </div>
+        </div> 
+      </div>  
+      <div xid="div1" style="padding:5px 5px 5px 5px;background-color:#F2F1F2;" __cid="cnuIbAj" class="cnuIbAj"> 
+        <div xid="div2" style="background-color:white;padding-right:8px;padding-left:8px;padding-top:3px;height:60px;" __cid="cnuIbAj" class="cnuIbAj">
+          <div class="media cnuIbAj" xid="media4" style="margin-top:3px;" __cid="cnuIbAj"> 
+            <div class="media-body cnuIbAj" xid="mediaBody4" __cid="cnuIbAj"> 
+              <h4 class="media-heading cnuIbAj" xid="h45" __cid="cnuIbAj"> 
+                <span xid="span15" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cnuIbAj" class="cnuIbAj">订货单合计</span>
+              </h4> 
+            </div>  
+            <div class="media-right cnuIbAj" xid="mediaRight3" __cid="cnuIbAj"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs cnuIbAj" xid="button6" style="font-size:16px;background-color:white;color:#00BFFF;border-style:none none none none;" bind-text=" $model.orderData.val(&quot;is_discount&quot;)==1?&quot;¥&quot; + $model.orderData.val(&quot;discount_price&quot;) :&quot;¥&quot; + $model.orderData.val(&quot;price&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;¥88.00&quot;}" __cid="cnuIbAj"> 
+                <i xid="i6" __cid="cnuIbAj" class="cnuIbAj"/>  
+                <span xid="span16" __cid="cnuIbAj" class="cnuIbAj">¥88.00</span>
+              </a> 
+            </div> 
+          </div>  
+          <div class="media cnuIbAj" xid="media5" style="margin-top:1px;" __cid="cnuIbAj"> 
+            <div class="media-body cnuIbAj" xid="mediaBody5" __cid="cnuIbAj"> 
+              <h4 xid="h46" class="media-heading cnuIbAj" __cid="cnuIbAj"> 
+                <span xid="span19" style="font-size:14px;color:#545454;margin-left:3px;" __cid="cnuIbAj" class="cnuIbAj">商品总价</span>
+              </h4> 
+            </div>  
+            <div class="media-right cnuIbAj" xid="mediaRight4" __cid="cnuIbAj"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs  cnuIbAj" xid="button7" style="color:#545454;font-size:14px;background-color:white;border-style:none none none none;" bind-text="&quot;¥&quot; + $model.orderData.val(&quot;price&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;¥88.00&quot;}" __cid="cnuIbAj"> 
+                <i xid="i7" __cid="cnuIbAj" class="cnuIbAj"/>  
+                <span xid="span18" __cid="cnuIbAj" class="cnuIbAj">¥88.00</span>
+              </a> 
+            </div> 
+          </div>
+        </div>
+      </div>  
+      <div xid="div4" style="padding:5px 5px 5px 5px;background-color:#F2F1F2;" __cid="cnuIbAj" class="cnuIbAj"> 
+        <div xid="div3" style="background-color:white;padding-right:8px;padding-left:8px;padding-top:3px;" class="list-group-item cnuIbAj" __cid="cnuIbAj"> 
+          <div class="media cnuIbAj" xid="media6" style="margin-top:3px;" __cid="cnuIbAj"> 
+            <div class="media-body cnuIbAj" xid="mediaBody6" __cid="cnuIbAj"> 
+              <h4 class="media-heading cnuIbAj" xid="h47" __cid="cnuIbAj"> 
+                <span xid="span23" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cnuIbAj" class="cnuIbAj">商品清单</span>
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs pull-right cnuIbAj" xid="button8" style="font-size:16px;background-color:white;color:#242424;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button8Click" data-config="{&quot;icon&quot;:&quot;icon-chevron-down&quot;,&quot;label&quot;:&quot;数量6&quot;}" __cid="cnuIbAj"> 
+                  <span xid="span22" bind-text="&quot;数量&quot;+ $model.numData.val(&quot;Num&quot;)" __cid="cnuIbAj" class="cnuIbAj"/>
+                  <i xid="i8" class="icon-chevron-down cnuIbAj" __cid="cnuIbAj"/>
+                </a>
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs pull-right cnuIbAj" xid="button10" style="font-size:16px;background-color:white;color:#242424;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;种类2&quot;}" __cid="cnuIbAj"> 
+                  <i xid="i10" __cid="cnuIbAj" class="cnuIbAj"/>  
+                  <span xid="span24" bind-text="&quot;种类&quot;+$model.goodsData.getCount()" __cid="cnuIbAj" class="cnuIbAj">种类2</span>
+                </a> 
+              </h4> 
+            </div> 
+          </div>  
+          <div xid="div13" style="display:none" __cid="cnuIbAj" class="cnuIbAj">
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list cnuIbAj" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;goodsData&quot;}" __cid="cnuIbAj"> 
+              <ul class="x-list-template hide cnuIbAj" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cnuIbAj"> 
+                <li xid="li1" __cid="cnuIbAj" class="cnuIbAj">
+                  <div class="media cnuIbAj" xid="media7" __cid="cnuIbAj"> 
+                    <div class="media-left cnuIbAj" xid="mediaLeft1" __cid="cnuIbAj"> 
+                      <a href="#" xid="a1" __cid="cnuIbAj" class="cnuIbAj"> 
+                        <img class="media-object cnuIbAj" alt="" xid="image1" style="height:63px;" bind-attr-src=" val(&quot;goods_img&quot;)" __cid="cnuIbAj"/>
+                      </a> 
+                    </div>  
+                    <div class="media-body cnuIbAj" xid="mediaBody7" __cid="cnuIbAj"> 
+                      <h4 class="media-heading cnuIbAj" xid="h48" __cid="cnuIbAj"> 
+                        <span xid="span4" style="font-size:16px;color:#242424;" bind-text="val(&quot;goods_name&quot;)" __cid="cnuIbAj" class="cnuIbAj"/>
+                      </h4>  
+                      <h4 xid="h410" class="media-heading cnuIbAj" __cid="cnuIbAj"> 
+                        <span xid="span14" style="font-size:14px;color:#888888;" bind-text=" val(&quot;goods_type&quot;)==&quot;&quot;?&quot;&quot;:val(&quot;goods_type&quot;)" __cid="cnuIbAj" class="cnuIbAj"/>
+                      </h4>
+                      <h4 xid="h414" class="media-heading cnuIbAj" __cid="cnuIbAj"> 
+                        <span xid="span17" style="font-size:14px;margin-left:7px;" bind-text="&quot;¥&quot;+val(&quot;goods_price&quot;)" class="text-danger cnuIbAj" __cid="cnuIbAj"/>  
+                        <span xid="span20" style="font-size:14px;color:#242424;margin-left:7px;" bind-text="&quot;X&quot;+val(&quot;goods_num&quot;)" class="pull-right cnuIbAj" __cid="cnuIbAj"/>
+                      </h4>
+                    </div> 
+                  </div>  
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cnuIbAj" xid="row1" style="height:3px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cnuIbAj"> 
+                    <div class="x-col cnuIbAj" xid="col1" __cid="cnuIbAj"/>  
+                    <div class="x-col cnuIbAj" xid="col2" __cid="cnuIbAj"/>  
+                    <div class="x-col cnuIbAj" xid="col3" __cid="cnuIbAj"/>
+                  </div>
+                </li>
+              </ul> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list cnuIbAj" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data2&quot;}" __cid="cnuIbAj"> 
+              <ul class="x-list-template hide cnuIbAj" xid="listTemplateUl5" bind-foreach="{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)}" __cid="cnuIbAj"> 
+                <li xid="li4" __cid="cnuIbAj" class="cnuIbAj"> 
+                  <div xid="div36" style="padding:5px;border-right-style:none;border-left-style:none;" class="list-group-item cnuIbAj" __cid="cnuIbAj"> 
+                    <div class="media-left cnuIbAj" xid="mediaLeft11" __cid="cnuIbAj"> 
+                      <img src="" alt="" xid="image8" bind-attr-src=" val(&quot;goods_img&quot;)" class="tb-img-good div_radius cnuIbAj" style="width:66px;height:66px;" __cid="cnuIbAj"/>  
+                      <img src="$model/UI2/theAgentOrder/img/gifts.png" alt="" xid="image9" style="position:relative;right:6px;bottom:5px;width:56px;height:38px;left:3px;top:-55px;" class="tb-img-good div_radius cnuIbAj" __cid="cnuIbAj"/>
+                    </div>  
+                    <div class="media-body cnuIbAj" xid="mediaBody9" __cid="cnuIbAj"> 
+                      <div xid="div33" style="padding:3px 3px 3px 3px;" __cid="cnuIbAj" class="cnuIbAj"> 
+                        <span bind-text="val(&quot;goods_name&quot;)" class="text-black h5 cnuIbAj" xid="span59" style="font-size:16px;color:#242424;" __cid="cnuIbAj"/>
+                      </div>  
+                      <div class="text-muted cnuIbAj" xid="div38" __cid="cnuIbAj"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn  btn-xs cnuIbAj" xid="button28" style="background-color:#F9F8F9;color:#D67D51;margin-left:5px;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;border-color:#D67D51 #D67D51 #D67D51 #D67D51;" bind-text=" val(&quot;specification1_value&quot;) +&quot;/&quot;+ val(&quot;specification2_value&quot;) +&quot;/&quot;+ val(&quot;specification3_value&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;button&quot;}" __cid="cnuIbAj"> 
+                          <i xid="i28" __cid="cnuIbAj" class="cnuIbAj"/>  
+                          <span xid="span55" __cid="cnuIbAj" class="cnuIbAj"/>
+                        </a> 
+                      </div>  
+                      <div class="text-muted cnuIbAj" xid="div37" __cid="cnuIbAj"> 
+                        <h4 xid="h416" class="media-heading cnuIbAj" __cid="cnuIbAj"> 
+                          <span xid="span25" style="font-size:14px;color:#242424;margin-left:7px;" bind-text="&quot;X&quot;+val(&quot;num&quot;)" class="pull-right cnuIbAj" __cid="cnuIbAj"/>
+                        </h4>
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cnuIbAj" xid="row6" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cnuIbAj"> 
+                          <div class="x-col x-col-33 cnuIbAj" xid="col7" __cid="cnuIbAj"> 
+                            <span xid="span57" class="text-danger pull-left   cnuIbAj" style="font-size:16px;" __cid="cnuIbAj">￥</span>  
+                            <span xid="span54" class=" text-danger pull-left cnuIbAj" style="font-size:16px;" __cid="cnuIbAj">0.00</span>
+                          </div>  
+                          <div class="x-col cnuIbAj" xid="col13" __cid="cnuIbAj"></div> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </li> 
+              </ul> 
+            </div>
+          </div>
+        </div> 
+      </div>  
+      <div xid="div8" style="padding:5px 5px 5px 5px;background-color:#F2F1F2;" __cid="cnuIbAj" class="cnuIbAj"> 
+        <div xid="div7" style="background-color:white;padding-right:8px;padding-left:8px;padding-top:3px;height:60px;" __cid="cnuIbAj" class="cnuIbAj"> 
+          <div class="media cnuIbAj" xid="media8" style="margin-top:3px;" __cid="cnuIbAj"> 
+            <div class="media-body cnuIbAj" xid="mediaBody8" __cid="cnuIbAj"> 
+              <h4 class="media-heading cnuIbAj" xid="h49" __cid="cnuIbAj"> 
+                <span xid="span28" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cnuIbAj" class="cnuIbAj">经手人</span>
+              </h4> 
+            </div>  
+            <div class="media-right cnuIbAj" xid="mediaRight7" __cid="cnuIbAj"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs cnuIbAj" xid="button11" style="font-size:16px;background-color:white;color:#242424;border-style:none none none none;" bind-text=" $model.orderData.val(&quot;make&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;张三&quot;}" __cid="cnuIbAj"> 
+                <i xid="i11" __cid="cnuIbAj" class="cnuIbAj"/>  
+                <span xid="span27" __cid="cnuIbAj" class="cnuIbAj">张三</span>
+              </a> 
+            </div> 
+          </div>  
+          <div class="media cnuIbAj" xid="media10" style="margin-top:3px;" __cid="cnuIbAj"> 
+            <div class="media-body cnuIbAj" xid="mediaBody10" __cid="cnuIbAj"> 
+              <h4 class="media-heading cnuIbAj" xid="h411" __cid="cnuIbAj"> 
+                <span xid="span29" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cnuIbAj" class="cnuIbAj">发货仓库</span>
+              </h4> 
+            </div>  
+            <div class="media-right cnuIbAj" xid="mediaRight9" __cid="cnuIbAj"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs cnuIbAj" xid="button13" style="font-size:16px;background-color:white;color:#242424;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;默认仓库&quot;}" __cid="cnuIbAj"> 
+                <i xid="i13" __cid="cnuIbAj" class="cnuIbAj"/>  
+                <span xid="span30" __cid="cnuIbAj" class="cnuIbAj">默认仓库</span>
+              </a> 
+            </div> 
+          </div>
+        </div> 
+      </div>  
+      <div xid="div9" style="padding:5px 5px 5px 5px;background-color:#F2F1F2;" __cid="cnuIbAj" class="cnuIbAj"> 
+        <div xid="div10" style="background-color:white;padding-right:8px;padding-left:8px;padding-top:3px;height:60px;" __cid="cnuIbAj" class="cnuIbAj"> 
+          <div class="media cnuIbAj" xid="media12" style="margin-top:3px;" __cid="cnuIbAj"> 
+            <div class="media-body cnuIbAj" xid="mediaBody11" __cid="cnuIbAj"> 
+              <h4 class="media-heading cnuIbAj" xid="h413" __cid="cnuIbAj"> 
+                <span xid="span32" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cnuIbAj" class="cnuIbAj">交货日期</span>
+              </h4> 
+            </div>  
+            <div class="media-right cnuIbAj" xid="mediaRight10" __cid="cnuIbAj"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs cnuIbAj" xid="button15" style="font-size:16px;background-color:white;color:#242424;border-style:none none none none;" bind-text=" $model.orderData.val(&quot;delivery_time&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;2019/09/21&quot;}" __cid="cnuIbAj"> 
+                <i xid="i14" __cid="cnuIbAj" class="cnuIbAj"/>  
+                <span xid="span33" __cid="cnuIbAj" class="cnuIbAj">2019/09/21</span>
+              </a> 
+            </div> 
+          </div>  
+          <div class="media cnuIbAj" xid="media11" style="margin-top:3px;" __cid="cnuIbAj"> 
+            <div class="media-body cnuIbAj" xid="mediaBody12" __cid="cnuIbAj"> 
+              <h4 class="media-heading cnuIbAj" xid="h412" __cid="cnuIbAj"> 
+                <span xid="span31" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cnuIbAj" class="cnuIbAj">发票类型</span>
+              </h4> 
+            </div>  
+            <div class="media-right cnuIbAj" xid="mediaRight11" __cid="cnuIbAj"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs cnuIbAj" xid="button14" style="font-size:16px;background-color:white;color:#242424;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;不开发票&quot;}" __cid="cnuIbAj"> 
+                <i xid="i15" __cid="cnuIbAj" class="cnuIbAj"/>  
+                <span xid="span34" __cid="cnuIbAj" class="cnuIbAj">不开发票</span>
+              </a> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div12" style="padding:5px 5px 5px 5px;background-color:#F2F1F2;" __cid="cnuIbAj" class="cnuIbAj"> 
+        <div xid="div11" style="background-color:white;padding-right:8px;padding-left:8px;padding-top:3px;" __cid="cnuIbAj" class="cnuIbAj"> 
+          <div class="media cnuIbAj" xid="media13" style="margin-top:3px;" __cid="cnuIbAj"> 
+            <div class="media-body cnuIbAj" xid="mediaBody13" __cid="cnuIbAj"> 
+              <h4 class="media-heading cnuIbAj" xid="h415" __cid="cnuIbAj"> 
+                <span xid="span35" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cnuIbAj" class="cnuIbAj">发货信息</span>
+              </h4> 
+            </div>  
+            <div class="media-right cnuIbAj" xid="mediaRight13" __cid="cnuIbAj"></div> 
+          </div>  
+          <div class="media cnuIbAj" xid="media14" style="margin-top:3px;" __cid="cnuIbAj"> 
+            <div class="media-body cnuIbAj" xid="mediaBody15" __cid="cnuIbAj"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cnuIbAj" xid="labelEdit1" style="height:35px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cnuIbAj"> 
+                <label class="x-label cnuIbAj" xid="label1" style="margin-left:4px;" __cid="cnuIbAj">发货方式</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cnuIbAj" xid="input1" style="border-style:none none none none;background-color:white;text-align:right;" data-bind="component:{ref:&quot;物流&quot;,name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;disabled&quot;:true,&quot;placeHolder&quot;:&quot;物流&quot;}" __cid="cnuIbAj"/>
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cnuIbAj" xid="labelEdit2" style="height:35px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cnuIbAj"> 
+                <label class="x-label cnuIbAj" xid="label2" style="margin-left:4px;" __cid="cnuIbAj">收货单位</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cnuIbAj" xid="input2" style="border-style:none none none none;background-color:white;text-align:right;" data-bind="component:{ref:$model.addressData.ref(&quot;consignee&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;disabled&quot;:true,&quot;placeHolder&quot;:&quot;上海物流责任有限科技公司&quot;}" __cid="cnuIbAj"/>
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cnuIbAj" xid="labelEdit3" style="height:35px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cnuIbAj"> 
+                <label class="x-label cnuIbAj" xid="label3" style="margin-left:4px;" __cid="cnuIbAj">收货人</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cnuIbAj" xid="input4" style="border-style:none none none none;background-color:white;text-align:right;" bind-text="$model.addressData.val(&quot;phone&quot;)" data-bind="component:{ref:$model.addressData.ref(&quot;phone&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;disabled&quot;:true}" __cid="cnuIbAj"/>
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cnuIbAj" xid="labelEdit4" style="height:35px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cnuIbAj"> 
+                <label class="x-label cnuIbAj" xid="label4" style="margin-left:4px;" __cid="cnuIbAj">地址</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cnuIbAj" xid="input3" style="border-style:none none none none;background-color:white;text-align:right;" data-bind="component:{ref:$model.addressData.ref(&quot;address&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;disabled&quot;:true,&quot;placeHolder&quot;:&quot;上海杨浦区黄兴路217号201&quot;}" __cid="cnuIbAj"/>
+              </div>
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div23" style="padding:5px 5px 5px 5px;background-color:#F2F1F2;" __cid="cnuIbAj" class="cnuIbAj"> 
+        <div xid="div24" style="background-color:white;padding-right:8px;padding-left:8px;padding-top:3px;" __cid="cnuIbAj" class="cnuIbAj"> 
+          <div class="media cnuIbAj" xid="media9" style="margin-top:3px;" __cid="cnuIbAj"> 
+            <div class="media-body cnuIbAj" xid="mediaBody14" __cid="cnuIbAj"> 
+              <h4 class="media-heading cnuIbAj" xid="h417" __cid="cnuIbAj"> 
+                <span xid="span37" style="font-size:16px;color:#545454;margin-left:3px;" __cid="cnuIbAj" class="cnuIbAj">备注</span>
+              </h4> 
+            </div>  
+            <div class="media-right cnuIbAj" xid="mediaRight5" __cid="cnuIbAj"></div> 
+          </div>  
+          <div class="media cnuIbAj" xid="media15" style="margin-top:3px;" __cid="cnuIbAj"> 
+            <div class="media-body cnuIbAj" xid="mediaBody16" __cid="cnuIbAj"> 
+              <h4 class="media-heading cnuIbAj" xid="h418" __cid="cnuIbAj"> 
+                <span xid="span36" style="font-size:14px;color:#545454;margin-left:3px;" bind-text="$model.orderData.val(&quot;order_des&quot;)" __cid="cnuIbAj" class="cnuIbAj"/>
+              </h4> 
+            </div>  
+            <div class="media-right cnuIbAj" xid="mediaRight6" __cid="cnuIbAj"></div> 
+          </div> 
+        </div> 
+      </div>
+    </div>  
+    <div class="x-panel-bottom cnuIbAj" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnuIbAj"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cnuIbAj" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cnuIbAj"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cnuIbAj" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;popMenu1.show&quot;}" data-config="{&quot;label&quot;:&quot;更多&quot;}" __cid="cnuIbAj"> 
+          <i xid="i1" __cid="cnuIbAj" class="cnuIbAj"/>  
+          <span xid="span1" __cid="cnuIbAj" class="cnuIbAj">更多</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cnuIbAj" xid="button2" style="color:#FFFEFF;background-color:#67C9FF;" bind-text=" $model.orderData.val(&quot;type_trans&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;label&quot;:&quot;审核&quot;}" __cid="cnuIbAj"> 
+          <i xid="i2" __cid="cnuIbAj" class="cnuIbAj"/>  
+          <span xid="span2" __cid="cnuIbAj" class="cnuIbAj">审核</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cnuIbAj" class="cnuIbAj">.x-panel.pcqaUF3m-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcqaUF3m-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcqaUF3m-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcqaUF3m-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcqaUF3m-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcqaUF3m-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcqaUF3m-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcqaUF3m-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcqaUF3m-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cnuIbAj" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;direction&quot;:&quot;auto&quot;}" __cid="cnuIbAj"> 
+    <div class="x-popOver-overlay cnuIbAj" xid="div14" __cid="cnuIbAj"/>  
+    <div class="x-popOver-content cnuIbAj" xid="div15" style="height:60%;width:75%;" __cid="cnuIbAj"> 
+      <div xid="div16" style="height:100%;width:100%;" __cid="cnuIbAj" class="cnuIbAj">
+        <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcJVveIz-iosstatusbar cnuIbAj" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cnuIbAj"> 
+          <div class="x-panel-top cnuIbAj" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnuIbAj">
+            <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cnuIbAj" xid="titleBar1" style="background-color:#170153;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cnuIbAj"> 
+              <div class="x-titlebar-left cnuIbAj" xid="left1" __cid="cnuIbAj"/>  
+              <div class="x-titlebar-title cnuIbAj" xid="title1" __cid="cnuIbAj">状态跟踪</div>  
+              <div class="x-titlebar-right  cnuIbAj" xid="right1" __cid="cnuIbAj">
+                <div class="empty cnuIbAj" __cid="cnuIbAj"/>
+              </div>
+            </div>
+          </div>  
+          <div class="x-panel-content cnuIbAj" xid="content2" style="background-color:white;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnuIbAj">
+            <div xid="div18" style="padding:8px 3px 3px 5px;background-color:#EEEEEE;" __cid="cnuIbAj" class="cnuIbAj"> 
+              <ul xid="ul2" __cid="cnuIbAj" class="cnuIbAj"> 
+                <div component="$model/UI2/system/components/justep/list/list" class="x-list cnuIbAj" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;logData&quot;}" __cid="cnuIbAj"> 
+                  <ul class="x-list-template hide cnuIbAj" xid="listTemplateUl2" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="cnuIbAj"> 
+                    <li xid="li3" __cid="cnuIbAj" class="cnuIbAj">
+                      <li xid="li2" class="li_class2 cnuIbAj" __cid="cnuIbAj"> 
+                        <div xid="div18" __cid="cnuIbAj" class="cnuIbAj"> 
+                          <div class="media cnuIbAj" xid="media16" style="margin-left:2px;" __cid="cnuIbAj"> 
+                            <div class="media-body cnuIbAj" xid="mediaBody17" __cid="cnuIbAj"> 
+                              <h5 xid="h58" class="media-heading cnuIbAj" style="font-size:14px;color:#407422;" bind-text=" val(&quot;create_at&quot;)" __cid="cnuIbAj"/>  
+                              <h5 xid="h520" class="media-heading cnuIbAj" style="color:#545454;;font-size:14px;" bind-text=" val(&quot;operator&quot;)" __cid="cnuIbAj"/>  
+                              <h5 xid="h51" class="media-heading cnuIbAj" style="color:#545454;;font-size:14px;" bind-text=" val(&quot;desc&quot;)" __cid="cnuIbAj"/>
+                            </div> 
+                          </div> 
+                        </div> 
+                      </li>
+                    </li>
+                  </ul> 
+                </div> 
+              </ul> 
+            </div>
+          </div>  
+          <style __cid="cnuIbAj" class="cnuIbAj">.x-panel.pcJVveIz-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcJVveIz-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcJVveIz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcJVveIz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJVveIz-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcJVveIz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJVveIz-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJVveIz-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJVveIz-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cnuIbAj" xid="popMenu1" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&quot;anchor&quot;:&quot;button1&quot;,&quot;direction&quot;:&quot;right-top&quot;}" __cid="cnuIbAj"> 
+    <div class="x-popMenu-overlay cnuIbAj" xid="div17" __cid="cnuIbAj"/>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu x-popMenu-content cnuIbAj" xid="menu1" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="cnuIbAj">
+      <li class="x-menu-item cnuIbAj" xid="item1" __cid="cnuIbAj"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg cnuIbAj" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&quot;label&quot;:&quot;取消订单&quot;}" __cid="cnuIbAj"> 
+          <i xid="i3" __cid="cnuIbAj" class="cnuIbAj"/>  
+          <span xid="span3" __cid="cnuIbAj" class="cnuIbAj">取消订单</span>
+        </a> 
+      </li>  
+      <li class="x-menu-item cnuIbAj" xid="item2" __cid="cnuIbAj"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg cnuIbAj" xid="button9" bind-visible=" $model.orderData.val(&quot;type&quot;)==0" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button9Click" data-config="{&quot;label&quot;:&quot;修改订单&quot;}" __cid="cnuIbAj"> 
+          <i xid="i9" __cid="cnuIbAj" class="cnuIbAj"/>  
+          <span xid="span26" __cid="cnuIbAj" class="cnuIbAj">修改订单</span>
+        </a> 
+      </li>
+    </ul>
+  </div>  
+  <span component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog1" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:messageDialog1OK" data-config="{&quot;message&quot;:&quot;确定要取消订单吗？&quot;,&quot;title&quot;:&quot;温馨提示&quot;,&quot;type&quot;:&quot;OKCancel&quot;}" __cid="cnuIbAj" class="cnuIbAj">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cnuIbAj" __cid="cnuIbAj"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cnuIbAj" __cid="cnuIbAj">
+      <xhtml:div class="x-modal-inner cnuIbAj" __cid="cnuIbAj">
+        <xhtml:div class="x-modal-title cnuIbAj" __cid="cnuIbAj">温馨提示</xhtml:div>
+        <xhtml:div class="x-modal-text cnuIbAj" __cid="cnuIbAj">确定要取消订单吗？</xhtml:div>
+        <xhtml:input class="x-modal-prompt-input cnuIbAj" type="text" __cid="cnuIbAj"/>
+      </xhtml:div>
+      <xhtml:div class="x-modal-buttons cnuIbAj" __cid="cnuIbAj">
+        <xhtml:a class="x-modal-button x-modal-button-bold OK cnuIbAj" value="ok" __cid="cnuIbAj">确定</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Yes cnuIbAj" value="yes" __cid="cnuIbAj">是</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold No cnuIbAj" value="no" __cid="cnuIbAj">否</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Cancel cnuIbAj" value="cancel" __cid="cnuIbAj">取消</xhtml:a>
+      </xhtml:div>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cnuIbAj" xid="popOver2" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;anchor&quot;:&quot;bottom1&quot;,&quot;direction&quot;:&quot;auto&quot;}" __cid="cnuIbAj"> 
+    <div class="x-popOver-overlay cnuIbAj" xid="div19" __cid="cnuIbAj"/>  
+    <div class="x-popOver-content ddd cnuIbAj" xid="div20" style="width:100%;background-color:#F3F4F3;height:180px;" __cid="cnuIbAj"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc7beeUj-iosstatusbar cnuIbAj" xid="panel9" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cnuIbAj"> 
+        <div class="x-panel-content cnuIbAj" xid="content9" style="background-color:#F3F4F3;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnuIbAj"> 
+          <div xid="div21" style="padding:5px 5px 5px 5px;" __cid="cnuIbAj" class="cnuIbAj"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cnuIbAj" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cnuIbAj"> 
+              <div class="x-col x-col-80 cnuIbAj" xid="col11" __cid="cnuIbAj"> 
+                <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control cnuIbAj" xid="textarea1" style="height:150px;" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" data-config="{&quot;placeHolder&quot;:&quot;请输入取消的原因&quot;}" __cid="cnuIbAj"/>
+              </div>  
+              <div class="x-col cnuIbAj" xid="col12" __cid="cnuIbAj"> 
+                <div xid="div22" style="height:110px;" __cid="cnuIbAj" class="cnuIbAj"/>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cnuIbAj" xid="button27" style="color:#FEFFFE;color:#FF9655;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button27Click" data-config="{&quot;label&quot;:&quot;确认&quot;}" __cid="cnuIbAj"> 
+                  <i xid="i27" __cid="cnuIbAj" class="cnuIbAj"/>  
+                  <span xid="span21" __cid="cnuIbAj" class="cnuIbAj">确认</span>
+                </a> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cnuIbAj" class="cnuIbAj">.x-panel.pc7beeUj-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pc7beeUj-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pc7beeUj-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc7beeUj-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7beeUj-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pc7beeUj-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7beeUj-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7beeUj-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7beeUj-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+      </div> 
+    </div> 
+  </div>
+</div>

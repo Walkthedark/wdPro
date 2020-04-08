@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cNrm63q" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cNrm63q" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.div_radius.cNrm63q{border-radius: 10px} .btn_radius.cNrm63q{border-radius: 15px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cNrm63q" class="cNrm63q"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcie2MN3-iosstatusbar cNrm63q" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cNrm63q"> 
+    <div class="x-panel-content cNrm63q" xid="content2" style="background-color:#F2F1F2;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cNrm63q"> 
+      <div xid="div1" class="list-group-item cNrm63q" style="text-align:center;" __cid="cNrm63q">
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cNrm63q" xid="button1" style="font-size:20px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;e-commerce e-commerce-renminbi&quot;}" __cid="cNrm63q"> 
+          <i xid="i1" class="e-commerce e-commerce-renminbi cNrm63q" __cid="cNrm63q"/>  
+          <span xid="span1" style="color:#363636;" __cid="cNrm63q" class="cNrm63q"/>
+        </a>
+      </div>  
+      <div xid="div2" style="height:20px;" __cid="cNrm63q" class="cNrm63q"/>  
+      <div xid="div3" class="list-group-item cNrm63q" __cid="cNrm63q">
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cNrm63q" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cNrm63q"> 
+          <label class="x-label cNrm63q" xid="label1" __cid="cNrm63q">收款金额</label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cNrm63q" xid="input1" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Float&quot;}" __cid="cNrm63q"/>
+        </div>
+      </div>  
+      <div xid="div4" class="list-group-item cNrm63q" __cid="cNrm63q"> 
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cNrm63q" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cNrm63q"> 
+          <label class="x-label cNrm63q" xid="label2" __cid="cNrm63q">收款时间</label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cNrm63q" xid="input2" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Date&quot;}" __cid="cNrm63q"/>
+        </div> 
+      </div>  
+      <div xid="div5" class="list-group-item cNrm63q" __cid="cNrm63q"> 
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cNrm63q" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cNrm63q"> 
+          <label class="x-label cNrm63q" xid="label4" __cid="cNrm63q">收款方式</label>  
+          <div class="x-edit cNrm63q" xid="div6" style="text-align:right;" bind-click="div6Click" __cid="cNrm63q">
+            <a component="$model/UI2/system/components/justep/button/button" class="btn  btn-icon-right cNrm63q" xid="button15" style="color:#212121;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-chevronright&quot;,&quot;label&quot;:&quot;现金&quot;}" __cid="cNrm63q"> 
+              <i xid="i15" style="color:black;font-weight:bold;" class="linear linear-chevronright cNrm63q" __cid="cNrm63q"/>  
+              <span xid="span20" __cid="cNrm63q" class="cNrm63q">现金</span>
+            </a>
+          </div>
+        </div>
+      </div>  
+      <div xid="div8" class="list-group-item cNrm63q" __cid="cNrm63q"> 
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cNrm63q" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cNrm63q"> 
+          <label class="x-label cNrm63q" xid="label5" __cid="cNrm63q">备注</label>  
+          <div class="x-edit cNrm63q" xid="div7" style="text-align:right;" __cid="cNrm63q"> 
+            <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control cNrm63q" xid="textarea1" style="height:100px;" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" data-config="{&quot;placeHolder&quot;:&quot;请输入&quot;}" __cid="cNrm63q"/>
+          </div> 
+        </div> 
+      </div>
+    </div>  
+    <div class="x-panel-bottom cNrm63q" xid="bottom1" style="text-align:center;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cNrm63q"> 
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn_radius cNrm63q" xid="button9" style="width:80%;margin-top:5px;background-color:#00BFFF;" bind-click="button3Click" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cNrm63q"> 
+        <i xid="i9" __cid="cNrm63q" class="cNrm63q"/>  
+        <span xid="span14" __cid="cNrm63q" class="cNrm63q">确定</span>
+      </a> 
+    </div>  
+    <style __cid="cNrm63q" class="cNrm63q">.x-panel.pcie2MN3-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcie2MN3-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcie2MN3-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcie2MN3-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcie2MN3-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcie2MN3-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcie2MN3-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcie2MN3-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcie2MN3-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cNrm63q" xid="popOver4" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;direction&quot;:&quot;auto&quot;}" __cid="cNrm63q"> 
+    <div class="x-popOver-overlay cNrm63q" xid="div32" __cid="cNrm63q"/>  
+    <div class="x-popOver-content div_radius cNrm63q" xid="div39" style="height:60%;width:75%;" __cid="cNrm63q"> 
+      <div xid="div41" style="height:100%;width:100%;" __cid="cNrm63q" class="cNrm63q"> 
+        <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcreuM7n-iosstatusbar cNrm63q" xid="panel5" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cNrm63q"> 
+          <div class="x-panel-top cNrm63q" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cNrm63q"> 
+            <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cNrm63q" xid="titleBar2" style="background-color:#E1D6BD;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cNrm63q"> 
+              <div class="x-titlebar-left cNrm63q" xid="left2" __cid="cNrm63q"/>  
+              <div class="x-titlebar-title cNrm63q" xid="title2" __cid="cNrm63q">收货账户</div>  
+              <div class="x-titlebar-right  cNrm63q" xid="right2" __cid="cNrm63q">
+                <div class="empty cNrm63q" __cid="cNrm63q"/>
+              </div>
+            </div> 
+          </div>  
+          <div class="x-panel-content cNrm63q" xid="content8" style="background-color:#EEEEEE;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cNrm63q"> 
+            <div xid="div40" style="padding:8px 3px 3px 5px;" __cid="cNrm63q" class="cNrm63q"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cNrm63q" xid="list7" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;PaymenTypeData&quot;}" __cid="cNrm63q"> 
+                <ul class="x-list-template hide cNrm63q" xid="listTemplateUl7" bind-foreach="{data:$model.foreach_list7($element),afterRender:$model.foreach_afterRender_list7.bind($model,$element)}" __cid="cNrm63q"> 
+                  <li xid="li4" bind-click="li4Click" __cid="cNrm63q" class="cNrm63q"> 
+                    <div xid="div32" class="list-group-item cNrm63q" __cid="cNrm63q"> 
+                      <div class="media cNrm63q" xid="media11" __cid="cNrm63q"> 
+                        <div class="media-body cNrm63q" xid="mediaBody12" __cid="cNrm63q"> 
+                          <h4 class="media-heading cNrm63q" xid="h41" bind-text=" val(&quot;name&quot;)" style="text-align:center;font-size:18px;color:#484848;" __cid="cNrm63q">Media heading</h4>
+                        </div> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div> 
+          </div>  
+          <style __cid="cNrm63q" class="cNrm63q">.x-panel.pcreuM7n-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcreuM7n-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcreuM7n-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcreuM7n-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcreuM7n-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcreuM7n-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcreuM7n-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcreuM7n-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcreuM7n-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+        </div> 
+      </div> 
+    </div> 
+  </div>
+</div>

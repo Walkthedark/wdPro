@@ -1,0 +1,568 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cInAbma" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cInAbma" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">
+  <style>body.cInAbma{} .btn-radius.cInAbma{border-radius: 30px} .x-popOver-overlay.tClass.cInAbma{top: 80px !important; background-color: rgb(0, 0, 0) !important} .tb-sorting.cInAbma{width: 100%; background-color: rgb(255, 255, 255); border-top: 1px solid rgb(225, 225, 225)} .list_btn.cInAbma{height: 25px; width: 25px; background-color: rgb(82, 167, 245); text-align: center; color: rgb(254, 255, 254); margin-top: 25px; line-height: 18px} .div_opacity.cInAbma{opacity: 1} .x-panel-bottom.cInAbma{border-top: 1px solid rgb(220, 220, 220)} .x-panel-bottom.cInAbma .h4.cInAbma{margin: 5px 0} .tb-settlement.cInAbma{line-height: 40px; background-color: rgb(77, 167, 244); color: rgb(255, 255, 255); font-size: 16px} .x-popOver-content.ddd.cInAbma{bottom: 0.6px !important} .tb-settlement2.cInAbma{line-height: 40px; background-color: rgb(255, 255, 255); color: rgb(255, 255, 255); font-size: 16px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cInAbma" class="cInAbma"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc7JRZJv-iosstatusbar cInAbma" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cInAbma"> 
+    <div class="x-panel-top cInAbma" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cInAbma">
+      <div xid="div1" class="list-group-item cInAbma" style="padding:0px 0px 0px 0px;" __cid="cInAbma">
+        <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cInAbma" xid="buttonGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cInAbma"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cInAbma" xid="button4" style="color:#585958;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&#34;icon&#34;:&#34;icon-arrow-down-b&#34;,&#34;label&#34;:&#34;分类&#34;}" __cid="cInAbma"> 
+            <i xid="i4" class="icon-arrow-down-b cInAbma" __cid="cInAbma"></i>  
+            <span xid="span4" __cid="cInAbma" class="cInAbma">分类</span>
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cInAbma" xid="button5" style="color:#585958;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button5Click" data-config="{&#34;icon&#34;:&#34;icon-arrow-down-b&#34;,&#34;label&#34;:&#34;销售区域&#34;}" __cid="cInAbma"> 
+            <i xid="i5" class="icon-arrow-down-b cInAbma" __cid="cInAbma"></i>  
+            <span xid="span5" __cid="cInAbma" class="cInAbma">销售区域</span>
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cInAbma" xid="button7" style="color:#585958;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button7Click" data-config="{&#34;icon&#34;:&#34;icon-arrow-down-b&#34;,&#34;label&#34;:&#34;创建人&#34;}" __cid="cInAbma"> 
+            <i xid="i7" class="icon-arrow-down-b cInAbma" __cid="cInAbma"></i>  
+            <span xid="span7" __cid="cInAbma" class="cInAbma">创建人</span>
+          </a>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cInAbma" xid="button6" style="color:#585958;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button6Click" data-config="{&#34;icon&#34;:&#34;icon-arrow-down-b&#34;,&#34;label&#34;:&#34;更多&#34;}" __cid="cInAbma"> 
+            <i xid="i6" class="icon-arrow-down-b cInAbma" __cid="cInAbma"></i>  
+            <span xid="span6" __cid="cInAbma" class="cInAbma">更多</span>
+          </a> 
+        </div>
+      </div> 
+    </div>  
+    <div class="x-panel-content cInAbma" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cInAbma">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cInAbma" xid="row1" style="top:5px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cInAbma"> 
+        <div class="x-col cInAbma" xid="col3" __cid="cInAbma"></div>  
+        <div class="x-col cInAbma" xid="col4" __cid="cInAbma"></div>  
+        <div class="x-col cInAbma" xid="col5" __cid="cInAbma"></div>
+      </div>
+      <div xid="div4" class="list-group-item cInAbma" __cid="cInAbma">
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cInAbma" xid="row2" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cInAbma"> 
+          <div class="x-col cInAbma" xid="col1" __cid="cInAbma">
+            <div class="media cInAbma" xid="media1" __cid="cInAbma"> 
+              <div class="media-body cInAbma" xid="mediaBody1" __cid="cInAbma"> 
+                <h4 class="media-heading cInAbma" xid="h41" style="font-size:16px;color:#181919;" __cid="cInAbma">福盈集团</h4>  
+                <h5 xid="h51" class="media-heading cInAbma" __cid="cInAbma">
+                  <span xid="span1" style="font-size:13px;color:#838484;" __cid="cInAbma" class="cInAbma">商务洽谈</span>  
+                  <span xid="span2" class=" pull-right cInAbma" style="font-size:16px;color:#838484;" __cid="cInAbma">930天</span>
+                </h5>  
+                <h5 xid="h52" class="media-heading cInAbma" __cid="cInAbma"> 
+                  <span xid="span10" style="font-size:13px;color:#838484;" __cid="cInAbma" class="cInAbma">应收¥0.00|上次交易¥0.00</span>  
+                  <span xid="span11" class=" pull-right cInAbma" style="font-size:13px;color:#838484;" __cid="cInAbma">未联系</span>
+                </h5>  
+                <h5 xid="h53" class="media-heading cInAbma" __cid="cInAbma"> 
+                  <span xid="span12" style="font-size:13px;color:#838484;" __cid="cInAbma" class="cInAbma">潜在金蝶客户</span>
+                </h5>
+              </div>  
+              <div class="media-right cInAbma" xid="mediaRight1" __cid="cInAbma"></div>
+            </div>
+          </div>  
+          <div class="x-col x-col-10 cInAbma" xid="col2" style="text-align:center;" __cid="cInAbma">
+            <div xid="div5" class="btn-radius list_btn cInAbma" __cid="cInAbma">...</div>
+          </div> 
+        </div>
+      </div>  
+      <div xid="div7" class="list-group-item cInAbma" __cid="cInAbma"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cInAbma" xid="row3" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cInAbma"> 
+          <div class="x-col cInAbma" xid="col8" __cid="cInAbma"> 
+            <div class="media cInAbma" xid="media2" __cid="cInAbma"> 
+              <div class="media-body cInAbma" xid="mediaBody2" __cid="cInAbma"> 
+                <h4 class="media-heading cInAbma" xid="h42" style="font-size:16px;color:#181919;" __cid="cInAbma">上海葡萄糖纬度科技有限公司</h4>  
+                <h5 xid="h55" class="media-heading cInAbma" __cid="cInAbma"> 
+                  <span xid="span15" style="font-size:13px;color:#838484;" __cid="cInAbma" class="cInAbma">见面拜访</span>  
+                  <span xid="span14" class=" pull-right cInAbma" style="font-size:16px;color:#838484;" __cid="cInAbma">930天</span>
+                </h5>  
+                <h5 xid="h54" class="media-heading cInAbma" __cid="cInAbma"> 
+                  <span xid="span16" style="font-size:13px;color:#838484;" __cid="cInAbma" class="cInAbma">应收¥0.00|上次交易¥0.00</span>  
+                  <span xid="span18" class=" pull-right cInAbma" style="font-size:13px;color:#838484;" __cid="cInAbma">未联系</span>
+                </h5>  
+                <h5 xid="h56" class="media-heading cInAbma" __cid="cInAbma"> 
+                  <span xid="span17" style="font-size:13px;color:#838484;" __cid="cInAbma" class="cInAbma">潜在金蝶客户</span>
+                </h5> 
+              </div>  
+              <div class="media-right cInAbma" xid="mediaRight2" __cid="cInAbma"></div>
+            </div> 
+          </div>  
+          <div class="x-col x-col-10 cInAbma" xid="col7" style="text-align:center;" __cid="cInAbma"> 
+            <div xid="div6" class="btn-radius list_btn cInAbma" __cid="cInAbma">...</div>
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div8" class="list-group-item cInAbma" __cid="cInAbma"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cInAbma" xid="row4" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cInAbma"> 
+          <div class="x-col cInAbma" xid="col9" __cid="cInAbma"> 
+            <div class="media cInAbma" xid="media3" __cid="cInAbma"> 
+              <div class="media-body cInAbma" xid="mediaBody3" __cid="cInAbma"> 
+                <h4 class="media-heading cInAbma" xid="h43" style="font-size:16px;color:#181919;" __cid="cInAbma">哇哈哈集团</h4>  
+                <h5 xid="h59" class="media-heading cInAbma" __cid="cInAbma"> 
+                  <span xid="span23" style="font-size:13px;color:#838484;" __cid="cInAbma" class="cInAbma">初次交谈</span>  
+                  <span xid="span21" class=" pull-right cInAbma" style="font-size:16px;color:#838484;" __cid="cInAbma">930天</span>
+                </h5>  
+                <h5 xid="h57" class="media-heading cInAbma" __cid="cInAbma"> 
+                  <span xid="span22" style="font-size:13px;color:#838484;" __cid="cInAbma" class="cInAbma">应收¥0.00|上次交易¥0.00</span>  
+                  <span xid="span19" class=" pull-right cInAbma" style="font-size:13px;color:#838484;" __cid="cInAbma">未联系</span>
+                </h5>  
+                <h5 xid="h58" class="media-heading cInAbma" __cid="cInAbma"> 
+                  <span xid="span20" style="font-size:13px;color:#838484;" __cid="cInAbma" class="cInAbma">潜在金蝶客户</span>
+                </h5> 
+              </div>  
+              <div class="media-right cInAbma" xid="mediaRight3" __cid="cInAbma"></div>
+            </div> 
+          </div>  
+          <div class="x-col x-col-10 cInAbma" xid="col10" style="text-align:center;" __cid="cInAbma"> 
+            <div xid="div9" class="btn-radius list_btn cInAbma" __cid="cInAbma" data-bind="event:{click:$model._callModelFn.bind($model, 'div9Click')}">...</div>
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div11" class="list-group-item cInAbma" __cid="cInAbma"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cInAbma" xid="row5" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cInAbma"> 
+          <div class="x-col cInAbma" xid="col11" __cid="cInAbma"> 
+            <div class="media cInAbma" xid="media4" __cid="cInAbma"> 
+              <div class="media-body cInAbma" xid="mediaBody4" __cid="cInAbma"> 
+                <h4 class="media-heading cInAbma" xid="h44" style="font-size:16px;color:#181919;" __cid="cInAbma">上海红树信息科技有限公司</h4>  
+                <h5 xid="h512" class="media-heading cInAbma" __cid="cInAbma"> 
+                  <span xid="span27" style="font-size:13px;color:#838484;" __cid="cInAbma" class="cInAbma">初次交谈</span>  
+                  <span xid="span25" class=" pull-right cInAbma" style="font-size:16px;color:#838484;" __cid="cInAbma">930天</span>
+                </h5>  
+                <h5 xid="h511" class="media-heading cInAbma" __cid="cInAbma"> 
+                  <span xid="span28" style="font-size:13px;color:#838484;" __cid="cInAbma" class="cInAbma">应收¥0.00|上次交易¥0.00</span>  
+                  <span xid="span24" class=" pull-right cInAbma" style="font-size:13px;color:#838484;" __cid="cInAbma">未联系</span>
+                </h5>  
+                <h5 xid="h510" class="media-heading cInAbma" __cid="cInAbma"> 
+                  <span xid="span26" style="font-size:13px;color:#838484;" __cid="cInAbma" class="cInAbma">潜在金蝶客户</span>
+                </h5> 
+              </div>  
+              <div class="media-right cInAbma" xid="mediaRight4" __cid="cInAbma"></div>
+            </div> 
+          </div>  
+          <div class="x-col x-col-10 cInAbma" xid="col12" style="text-align:center;" __cid="cInAbma"> 
+            <div xid="div10" class="btn-radius list_btn cInAbma" __cid="cInAbma">...</div>
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div13" class="list-group-item cInAbma" __cid="cInAbma"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cInAbma" xid="row6" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cInAbma"> 
+          <div class="x-col cInAbma" xid="col14" __cid="cInAbma"> 
+            <div class="media cInAbma" xid="media5" __cid="cInAbma"> 
+              <div class="media-body cInAbma" xid="mediaBody5" __cid="cInAbma"> 
+                <h4 class="media-heading cInAbma" xid="h45" style="font-size:16px;color:#181919;" __cid="cInAbma">上海机率职能科技有限公司</h4>  
+                <h5 xid="h515" class="media-heading cInAbma" __cid="cInAbma"> 
+                  <span xid="span32" style="font-size:13px;color:#838484;" __cid="cInAbma" class="cInAbma">初次交谈</span>  
+                  <span xid="span30" class=" pull-right cInAbma" style="font-size:16px;color:#838484;" __cid="cInAbma">930天</span>
+                </h5>  
+                <h5 xid="h514" class="media-heading cInAbma" __cid="cInAbma"> 
+                  <span xid="span29" style="font-size:13px;color:#838484;" __cid="cInAbma" class="cInAbma">应收¥0.00|上次交易¥0.00</span>  
+                  <span xid="span31" class=" pull-right cInAbma" style="font-size:13px;color:#838484;" __cid="cInAbma">未联系</span>
+                </h5>  
+                <h5 xid="h513" class="media-heading cInAbma" __cid="cInAbma"> 
+                  <span xid="span33" style="font-size:13px;color:#838484;" __cid="cInAbma" class="cInAbma">潜在金蝶客户</span>
+                </h5> 
+              </div>  
+              <div class="media-right cInAbma" xid="mediaRight5" __cid="cInAbma"></div>
+            </div> 
+          </div>  
+          <div class="x-col x-col-10 cInAbma" xid="col13" style="text-align:center;" __cid="cInAbma"> 
+            <div xid="div12" class="btn-radius list_btn cInAbma" __cid="cInAbma">...</div>
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cInAbma" class="cInAbma">.x-panel.pc7JRZJv-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pc7JRZJv-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc7JRZJv-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc7JRZJv-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7JRZJv-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc7JRZJv-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7JRZJv-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7JRZJv-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7JRZJv-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cInAbma" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;anchor&#34;:&#34;button4&#34;,&#34;direction&#34;:&#34;left-bottom&#34;}" __cid="cInAbma"> 
+    <div class="x-popOver-overlay tClass cInAbma" xid="div14" __cid="cInAbma"></div>  
+    <div class="x-popOver-content  cInAbma" xid="div15" style="width:100%;height:100%;" __cid="cInAbma"> 
+      <div xid="div73" style="width:100%;height:60%;" __cid="cInAbma" class="cInAbma"> 
+        <div xid="div69" style="height:100%;width:100%;" __cid="cInAbma" class="cInAbma"> 
+          <div component="$model/UI2/system/components/justep/panel/panel" class=" x-full pcrY7jUz-iosstatusbar cInAbma" xid="panel2" style="height:100%;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cInAbma"> 
+            <div class="x-panel-content cInAbma" xid="content2" style="background-color:#EEEFEE;width:100%;height:60%;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cInAbma">
+              <div xid="div19" class="list-group-item cInAbma" style="padding:5px 5px 5px 5px;text-align:center;" __cid="cInAbma">
+                <span xid="span39" style="color:#A8A9A8;" __cid="cInAbma" class="cInAbma">设置客户分类联系频率，超期未联系将提醒到首页</span>
+              </div>  
+              <div xid="div20" class="list-group-item cInAbma" style="padding:5px 5px 5px 5px;" __cid="cInAbma"> 
+                <div class="media cInAbma" xid="media6" __cid="cInAbma"> 
+                  <div class="media-body cInAbma" xid="mediaBody6" __cid="cInAbma"> 
+                    <h5 xid="h516" style="color:#181919;" __cid="cInAbma" class="cInAbma">未分类</h5>
+                  </div>  
+                  <div class="media-right cInAbma" xid="mediaRight6" __cid="cInAbma"> 
+                    <span component="$model/UI2/system/components/justep/button/radio" class="x-radio x-radio-success x-radio-sm cInAbma" xid="radio1" style="margin-top:9px;" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cInAbma">
+                      <input type="radio" __cid="cInAbma" class="cInAbma">
+                      <label __cid="cInAbma" class="cInAbma"></label>
+                    </span>
+                  </div>
+                </div> 
+              </div>  
+              <div xid="div21" class="list-group-item cInAbma" style="padding:5px 5px 5px 5px;" __cid="cInAbma"> 
+                <div class="media cInAbma" xid="media8" __cid="cInAbma"> 
+                  <div class="media-body cInAbma" xid="mediaBody8" __cid="cInAbma"> 
+                    <h5 xid="h517" style="color:#181919;" __cid="cInAbma" class="cInAbma">潜在金蝶客户</h5>
+                  </div>  
+                  <div class="media-right cInAbma" xid="mediaRight7" __cid="cInAbma"> 
+                    <span component="$model/UI2/system/components/justep/button/radio" class="x-radio x-radio-success x-radio-sm cInAbma" xid="radio2" style="margin-top:9px;" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cInAbma">
+                      <input type="radio" __cid="cInAbma" class="cInAbma">
+                      <label __cid="cInAbma" class="cInAbma"></label>
+                    </span>
+                  </div> 
+                </div> 
+              </div>  
+              <div xid="div22" class="list-group-item cInAbma" style="padding:5px 5px 5px 5px;" __cid="cInAbma"> 
+                <div class="media cInAbma" xid="media9" __cid="cInAbma"> 
+                  <div class="media-body cInAbma" xid="mediaBody9" __cid="cInAbma"> 
+                    <h5 xid="h518" style="color:#181919;" __cid="cInAbma" class="cInAbma">潜在用友客户</h5>
+                  </div>  
+                  <div class="media-right cInAbma" xid="mediaRight8" __cid="cInAbma"> 
+                    <span component="$model/UI2/system/components/justep/button/radio" class="x-radio x-radio-success x-radio-sm cInAbma" xid="radio3" style="margin-top:9px;" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cInAbma">
+                      <input type="radio" __cid="cInAbma" class="cInAbma">
+                      <label __cid="cInAbma" class="cInAbma"></label>
+                    </span>
+                  </div> 
+                </div> 
+              </div>  
+              <div xid="div23" class="list-group-item cInAbma" style="padding:5px 5px 5px 5px;" __cid="cInAbma"> 
+                <div class="media cInAbma" xid="media10" __cid="cInAbma"> 
+                  <div class="media-body cInAbma" xid="mediaBody10" __cid="cInAbma"> 
+                    <h5 xid="h519" style="color:#181919;" __cid="cInAbma" class="cInAbma">未分类</h5>
+                  </div>  
+                  <div class="media-right cInAbma" xid="mediaRight9" __cid="cInAbma"> 
+                    <span component="$model/UI2/system/components/justep/button/radio" class="x-radio x-radio-success x-radio-sm cInAbma" xid="radio4" style="margin-top:9px;" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cInAbma">
+                      <input type="radio" __cid="cInAbma" class="cInAbma">
+                      <label __cid="cInAbma" class="cInAbma"></label>
+                    </span>
+                  </div> 
+                </div> 
+              </div>  
+              <div xid="div25" class="list-group-item cInAbma" style="padding:5px 5px 5px 5px;" __cid="cInAbma"> 
+                <div class="media cInAbma" xid="media11" __cid="cInAbma"> 
+                  <div class="media-body cInAbma" xid="mediaBody11" __cid="cInAbma"> 
+                    <h5 xid="h520" style="color:#181919;" __cid="cInAbma" class="cInAbma">未分类</h5>
+                  </div>  
+                  <div class="media-right cInAbma" xid="mediaRight10" __cid="cInAbma"> 
+                    <span component="$model/UI2/system/components/justep/button/radio" class="x-radio x-radio-success x-radio-sm cInAbma" xid="radio5" style="margin-top:9px;" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cInAbma">
+                      <input type="radio" __cid="cInAbma" class="cInAbma">
+                      <label __cid="cInAbma" class="cInAbma"></label>
+                    </span>
+                  </div> 
+                </div> 
+              </div>
+            </div>  
+            <div class="x-panel-bottom cInAbma" xid="bottom2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cInAbma">
+              <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cInAbma" xid="buttonGroup3" style="height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cInAbma"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cInAbma" xid="button1" style="background-color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="cInAbma"> 
+                  <i xid="i1" __cid="cInAbma" class="cInAbma"></i>  
+                  <span xid="span40" __cid="cInAbma" class="cInAbma">取消</span>
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cInAbma" xid="button2" style="background-color:#4DA7F4;color:#FEFFFE;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;确认&#34;}" __cid="cInAbma"> 
+                  <i xid="i2" __cid="cInAbma" class="cInAbma"></i>  
+                  <span xid="span41" __cid="cInAbma" class="cInAbma">确认</span>
+                </a> 
+              </div>
+            </div>
+            <style __cid="cInAbma" class="cInAbma">.x-panel.pcrY7jUz-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcrY7jUz-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcrY7jUz-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcrY7jUz-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcrY7jUz-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcrY7jUz-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcrY7jUz-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcrY7jUz-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcrY7jUz-iosstatusbar >.x-panel-content {top: 0px;}</style>
+          </div>
+        </div> 
+      </div>  
+      <div xid="div76" style="width:100%;height:40%;" class="div_opacity cInAbma" __cid="cInAbma"></div>
+    </div>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cInAbma" xid="popOver2" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;anchor&#34;:&#34;button4&#34;,&#34;direction&#34;:&#34;left-bottom&#34;}" __cid="cInAbma"> 
+    <div class="x-popOver-overlay tClass cInAbma" xid="div18" __cid="cInAbma"></div>  
+    <div class="x-popOver-content cInAbma" xid="div27" style="width:100%;height:100%;" __cid="cInAbma"> 
+      <div xid="div17" style="width:100%;height:60%;" __cid="cInAbma" class="cInAbma"> 
+        <div xid="div34" style="height:100%;width:100%;" __cid="cInAbma" class="cInAbma"> 
+          <div component="$model/UI2/system/components/justep/panel/panel" class=" x-full pcEJJbui-iosstatusbar cInAbma" xid="panel3" style="height:100%;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cInAbma"> 
+            <div class="x-panel-content cInAbma" xid="content3" style="background-color:#EEEFEE;width:100%;height:60%;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cInAbma"> 
+              <div xid="div35" class="list-group-item cInAbma" style="padding:5px 5px 5px 5px;" __cid="cInAbma"> 
+                <div class="media cInAbma" xid="media15" __cid="cInAbma"> 
+                  <div class="media-body cInAbma" xid="mediaBody7" __cid="cInAbma"> 
+                    <h5 xid="h521" style="color:#181919;" __cid="cInAbma" class="cInAbma">无销售区域</h5>
+                  </div>  
+                  <div class="media-right cInAbma" xid="mediaRight11" __cid="cInAbma"> 
+                    <span component="$model/UI2/system/components/justep/button/radio" class="x-radio x-radio-success x-radio-sm cInAbma" xid="radio9" style="margin-top:9px;" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cInAbma">
+                      <input type="radio" __cid="cInAbma" class="cInAbma">
+                      <label __cid="cInAbma" class="cInAbma"></label>
+                    </span>
+                  </div> 
+                </div> 
+              </div>  
+              <div xid="div31" class="list-group-item cInAbma" style="padding:5px 5px 5px 5px;" __cid="cInAbma"> 
+                <div class="media cInAbma" xid="media13" __cid="cInAbma"> 
+                  <div class="media-body cInAbma" xid="mediaBody12" __cid="cInAbma"> 
+                    <h5 xid="h522" style="color:#181919;" __cid="cInAbma" class="cInAbma">华东</h5>
+                  </div>  
+                  <div class="media-right cInAbma" xid="mediaRight12" __cid="cInAbma"> 
+                    <span component="$model/UI2/system/components/justep/button/radio" class="x-radio x-radio-success x-radio-sm cInAbma" xid="radio10" style="margin-top:9px;" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cInAbma">
+                      <input type="radio" __cid="cInAbma" class="cInAbma">
+                      <label __cid="cInAbma" class="cInAbma"></label>
+                    </span>
+                  </div> 
+                </div> 
+              </div>  
+              <div xid="div32" class="list-group-item cInAbma" style="padding:5px 5px 5px 5px;" __cid="cInAbma"> 
+                <div class="media cInAbma" xid="media14" __cid="cInAbma"> 
+                  <div class="media-body cInAbma" xid="mediaBody13" __cid="cInAbma"> 
+                    <h5 xid="h523" style="color:#181919;" __cid="cInAbma" class="cInAbma">华南</h5>
+                  </div>  
+                  <div class="media-right cInAbma" xid="mediaRight14" __cid="cInAbma"> 
+                    <span component="$model/UI2/system/components/justep/button/radio" class="x-radio x-radio-success x-radio-sm cInAbma" xid="radio7" style="margin-top:9px;" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cInAbma">
+                      <input type="radio" __cid="cInAbma" class="cInAbma">
+                      <label __cid="cInAbma" class="cInAbma"></label>
+                    </span>
+                  </div> 
+                </div> 
+              </div>  
+              <div xid="div29" class="list-group-item cInAbma" style="padding:5px 5px 5px 5px;" __cid="cInAbma"> 
+                <div class="media cInAbma" xid="media7" __cid="cInAbma"> 
+                  <div class="media-body cInAbma" xid="mediaBody14" __cid="cInAbma"> 
+                    <h5 xid="h524" style="color:#181919;" __cid="cInAbma" class="cInAbma">华北</h5>
+                  </div>  
+                  <div class="media-right cInAbma" xid="mediaRight15" __cid="cInAbma"> 
+                    <span component="$model/UI2/system/components/justep/button/radio" class="x-radio x-radio-success x-radio-sm cInAbma" xid="radio8" style="margin-top:9px;" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cInAbma">
+                      <input type="radio" __cid="cInAbma" class="cInAbma">
+                      <label __cid="cInAbma" class="cInAbma"></label>
+                    </span>
+                  </div> 
+                </div> 
+              </div>  
+              <div xid="div33" class="list-group-item cInAbma" style="padding:5px 5px 5px 5px;" __cid="cInAbma"> 
+                <div class="media cInAbma" xid="media12" __cid="cInAbma"> 
+                  <div class="media-body cInAbma" xid="mediaBody15" __cid="cInAbma"> 
+                    <h5 xid="h525" style="color:#181919;" __cid="cInAbma" class="cInAbma">华中</h5>
+                  </div>  
+                  <div class="media-right cInAbma" xid="mediaRight13" __cid="cInAbma"> 
+                    <span component="$model/UI2/system/components/justep/button/radio" class="x-radio x-radio-success x-radio-sm cInAbma" xid="radio6" style="margin-top:9px;" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cInAbma">
+                      <input type="radio" __cid="cInAbma" class="cInAbma">
+                      <label __cid="cInAbma" class="cInAbma"></label>
+                    </span>
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-panel-bottom cInAbma" xid="bottom3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cInAbma"> 
+              <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cInAbma" xid="buttonGroup4" style="height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cInAbma"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cInAbma" xid="button8" style="background-color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="cInAbma"> 
+                  <i xid="i8" __cid="cInAbma" class="cInAbma"></i>  
+                  <span xid="span34" __cid="cInAbma" class="cInAbma">取消</span>
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cInAbma" xid="button9" style="background-color:#4DA7F4;color:#FEFFFE;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;确认&#34;}" __cid="cInAbma"> 
+                  <i xid="i9" __cid="cInAbma" class="cInAbma"></i>  
+                  <span xid="span13" __cid="cInAbma" class="cInAbma">确认</span>
+                </a> 
+              </div> 
+            </div>  
+            <style __cid="cInAbma" class="cInAbma">.x-panel.pcEJJbui-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcEJJbui-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcEJJbui-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcEJJbui-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEJJbui-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcEJJbui-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEJJbui-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEJJbui-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEJJbui-iosstatusbar >.x-panel-content {top: 0px;}</style>
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div30" style="width:100%;height:40%;" class="div_opacity cInAbma" __cid="cInAbma"></div>
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cInAbma" xid="popOver3" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;anchor&#34;:&#34;button4&#34;,&#34;direction&#34;:&#34;left-bottom&#34;}" __cid="cInAbma"> 
+    <div class="x-popOver-overlay tClass cInAbma" xid="div41" __cid="cInAbma"></div>  
+    <div class="x-popOver-content cInAbma" xid="div44" style="width:100%;height:100%;" __cid="cInAbma"> 
+      <div xid="div40" style="width:100%;height:60%;" __cid="cInAbma" class="cInAbma"> 
+        <div xid="div36" style="height:100%;width:100%;" __cid="cInAbma" class="cInAbma"> 
+          <div component="$model/UI2/system/components/justep/panel/panel" class=" x-full pc2QBJRz-iosstatusbar cInAbma" xid="panel4" style="height:100%;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cInAbma"> 
+            <div class="x-panel-content cInAbma" xid="content4" style="background-color:#EEEFEE;width:100%;height:60%;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cInAbma"> 
+              <div xid="div37" class="list-group-item cInAbma" style="padding:5px 5px 5px 5px;" __cid="cInAbma"> 
+                <div class="media cInAbma" xid="media19" __cid="cInAbma"> 
+                  <div class="media-body cInAbma" xid="mediaBody19" __cid="cInAbma"> 
+                    <h5 xid="h527" style="color:#181919;" __cid="cInAbma" class="cInAbma">超期未联系客户</h5>
+                  </div>  
+                  <div class="media-right cInAbma" xid="mediaRight17" __cid="cInAbma"> 
+                    <span component="$model/UI2/system/components/justep/button/radio" class="x-radio x-radio-success x-radio-sm cInAbma" xid="radio11" style="margin-top:9px;" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cInAbma">
+                      <input type="radio" __cid="cInAbma" class="cInAbma">
+                      <label __cid="cInAbma" class="cInAbma"></label>
+                    </span>
+                  </div> 
+                </div> 
+              </div>  
+              <div xid="div43" class="list-group-item cInAbma" style="padding:5px 5px 5px 5px;" __cid="cInAbma"> 
+                <div class="media cInAbma" xid="media17" __cid="cInAbma"> 
+                  <div class="media-body cInAbma" xid="mediaBody20" __cid="cInAbma"> 
+                    <h5 xid="h528" style="color:#181919;" __cid="cInAbma" class="cInAbma">无联系客户</h5>
+                  </div>  
+                  <div class="media-right cInAbma" xid="mediaRight16" __cid="cInAbma"> 
+                    <span component="$model/UI2/system/components/justep/button/radio" class="x-radio x-radio-success x-radio-sm cInAbma" xid="radio15" style="margin-top:9px;" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cInAbma">
+                      <input type="radio" __cid="cInAbma" class="cInAbma">
+                      <label __cid="cInAbma" class="cInAbma"></label>
+                    </span>
+                  </div> 
+                </div> 
+              </div>  
+              <div xid="div38" class="list-group-item cInAbma" style="padding:5px 5px 5px 5px;" __cid="cInAbma"> 
+                <div class="media cInAbma" xid="media16" __cid="cInAbma"> 
+                  <div class="media-body cInAbma" xid="mediaBody16" __cid="cInAbma"> 
+                    <h5 xid="h529" style="color:#181919;" __cid="cInAbma" class="cInAbma">无跟单客户</h5>
+                  </div>  
+                  <div class="media-right cInAbma" xid="mediaRight18" __cid="cInAbma"> 
+                    <span component="$model/UI2/system/components/justep/button/radio" class="x-radio x-radio-success x-radio-sm cInAbma" xid="radio12" style="margin-top:9px;" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cInAbma">
+                      <input type="radio" __cid="cInAbma" class="cInAbma">
+                      <label __cid="cInAbma" class="cInAbma"></label>
+                    </span>
+                  </div> 
+                </div> 
+              </div>  
+              <div xid="div45" class="list-group-item cInAbma" style="padding:5px 5px 5px 5px;" __cid="cInAbma"> 
+                <div class="media cInAbma" xid="media20" __cid="cInAbma"> 
+                  <div class="media-body cInAbma" xid="mediaBody17" __cid="cInAbma"> 
+                    <h5 xid="h530" style="color:#181919;" __cid="cInAbma" class="cInAbma">无订货客户</h5>
+                  </div>  
+                  <div class="media-right cInAbma" xid="mediaRight20" __cid="cInAbma"> 
+                    <span component="$model/UI2/system/components/justep/button/radio" class="x-radio x-radio-success x-radio-sm cInAbma" xid="radio13" style="margin-top:9px;" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cInAbma">
+                      <input type="radio" __cid="cInAbma" class="cInAbma">
+                      <label __cid="cInAbma" class="cInAbma"></label>
+                    </span>
+                  </div> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cInAbma" xid="row7" style="height:5px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cInAbma"> 
+                <div class="x-col cInAbma" xid="col16" __cid="cInAbma"></div>
+              </div>  
+              <div xid="div77" class="list-group-item cInAbma" style="padding:5px 5px 5px 5px;" __cid="cInAbma"> 
+                <div class="media cInAbma" xid="media46" __cid="cInAbma"> 
+                  <div class="media-body cInAbma" xid="mediaBody46" __cid="cInAbma"> 
+                    <h5 xid="h556" style="color:#181919;" __cid="cInAbma" class="cInAbma">无订货客户</h5>
+                  </div>  
+                  <div class="media-right cInAbma" xid="mediaRight46" __cid="cInAbma"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cInAbma" xid="button20" style="margin-top:9px;color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-chevron-right&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cInAbma"> 
+                      <i xid="i20" class="icon-chevron-right cInAbma" __cid="cInAbma"></i>  
+                      <span xid="span51" __cid="cInAbma" class="cInAbma"></span>
+                    </a>
+                  </div> 
+                </div> 
+              </div>
+            </div>  
+            <div class="x-panel-bottom cInAbma" xid="bottom4" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cInAbma"> 
+              <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cInAbma" xid="buttonGroup5" style="height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cInAbma"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cInAbma" xid="button10" style="background-color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="cInAbma"> 
+                  <i xid="i10" __cid="cInAbma" class="cInAbma"></i>  
+                  <span xid="span37" __cid="cInAbma" class="cInAbma">取消</span>
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cInAbma" xid="button11" style="background-color:#4DA7F4;color:#FEFFFE;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;确认&#34;}" __cid="cInAbma"> 
+                  <i xid="i11" __cid="cInAbma" class="cInAbma"></i>  
+                  <span xid="span36" __cid="cInAbma" class="cInAbma">确认</span>
+                </a> 
+              </div> 
+            </div>  
+            <style __cid="cInAbma" class="cInAbma">.x-panel.pc2QBJRz-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pc2QBJRz-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pc2QBJRz-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc2QBJRz-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2QBJRz-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pc2QBJRz-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2QBJRz-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2QBJRz-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2QBJRz-iosstatusbar >.x-panel-content {top: 0px;}</style>
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div42" style="width:100%;height:40%;" class="div_opacity cInAbma" __cid="cInAbma"></div>
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cInAbma" xid="popOver5" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;anchor&#34;:&#34;button4&#34;,&#34;direction&#34;:&#34;left-bottom&#34;}" __cid="cInAbma"> 
+    <div class="x-popOver-overlay tClass cInAbma" xid="div79" __cid="cInAbma"></div>  
+    <div class="x-popOver-content  cInAbma" xid="div80" style="width:100%;height:100%;" __cid="cInAbma"> 
+      <div xid="div82" style="width:100%;height:60%;" __cid="cInAbma" class="cInAbma"> 
+        <div xid="div86" style="height:100%;width:100%;" __cid="cInAbma" class="cInAbma"> 
+          <div component="$model/UI2/system/components/justep/panel/panel" class=" x-full pcBVjYV3-iosstatusbar cInAbma" xid="panel7" style="height:100%;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cInAbma"> 
+            <div class="x-panel-content cInAbma" xid="content7" style="background-color:#EEEFEE;width:100%;height:60%;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cInAbma"> 
+              <div xid="div2" class="list-group-item cInAbma" style="padding:5px 5px 5px 5px;" __cid="cInAbma"> 
+                <div class="media cInAbma" xid="media18" __cid="cInAbma"> 
+                  <div class="media-body cInAbma" xid="mediaBody18" __cid="cInAbma"> 
+                    <h5 xid="h526" style="color:#181919;" __cid="cInAbma" class="cInAbma">选择创建人</h5>
+                  </div>  
+                  <div class="media-right cInAbma" xid="mediaRight19" __cid="cInAbma"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cInAbma" xid="button3" style="margin-top:9px;color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-chevron-right&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cInAbma"> 
+                      <i xid="i3" class="icon-chevron-right cInAbma" __cid="cInAbma"></i>  
+                      <span xid="span3" __cid="cInAbma" class="cInAbma"></span>
+                    </a> 
+                  </div> 
+                </div> 
+              </div>
+            </div>  
+            <div class="x-panel-bottom cInAbma" xid="bottom9" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cInAbma"> 
+              <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cInAbma" xid="buttonGroup10" style="height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cInAbma"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cInAbma" xid="button21" style="background-color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="cInAbma"> 
+                  <i xid="i21" __cid="cInAbma" class="cInAbma"></i>  
+                  <span xid="span53" __cid="cInAbma" class="cInAbma">取消</span>
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cInAbma" xid="button22" style="background-color:#4DA7F4;color:#FEFFFE;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;确认&#34;}" __cid="cInAbma"> 
+                  <i xid="i22" __cid="cInAbma" class="cInAbma"></i>  
+                  <span xid="span52" __cid="cInAbma" class="cInAbma">确认</span>
+                </a> 
+              </div> 
+            </div>  
+            <style __cid="cInAbma" class="cInAbma">.x-panel.pcBVjYV3-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcBVjYV3-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcBVjYV3-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcBVjYV3-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBVjYV3-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcBVjYV3-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBVjYV3-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBVjYV3-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBVjYV3-iosstatusbar >.x-panel-content {top: 0px;}</style>
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div78" style="width:100%;height:40%;" class="div_opacity cInAbma" __cid="cInAbma"></div>
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cInAbma" xid="popOver6" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;anchor&#34;:&#34;bottom1&#34;,&#34;direction&#34;:&#34;auto&#34;}" __cid="cInAbma"> 
+    <div class="x-popOver-overlay cInAbma" xid="div52" __cid="cInAbma"></div>  
+    <div class="x-popOver-content ddd cInAbma" xid="div53" style="width:100%;height:45%;" __cid="cInAbma">
+      <div xid="div54" style="height:100%;width:100%;background-color:white;" __cid="cInAbma" class="cInAbma">
+        <div component="$model/UI2/system/components/justep/panel/panel" class=" x-full pcYjQr2m-iosstatusbar cInAbma" xid="panel6" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cInAbma"> 
+          <div class="x-panel-content cInAbma" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cInAbma">
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cInAbma" xid="row9" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cInAbma"> 
+              <div class="x-col cInAbma" xid="col18" style="text-align:center;" __cid="cInAbma">
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cInAbma" xid="button15" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;linear linear-phonehandset&#34;,&#34;label&#34;:&#34;打电话&#34;}" __cid="cInAbma"> 
+                  <i xid="i15" class="linear linear-phonehandset cInAbma" style="color:#BACE83;font-size:20px" __cid="cInAbma"></i>  
+                  <span xid="span44" __cid="cInAbma" class="cInAbma">打电话</span>
+                </a>
+              </div>  
+              <div class="x-col cInAbma" xid="col19" style="text-align:center;" __cid="cInAbma">
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cInAbma" xid="button16" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-save24&#34;,&#34;label&#34;:&#34;新增会报&#34;}" __cid="cInAbma"> 
+                  <i xid="i16" class="dataControl dataControl-save24 cInAbma" style="color:#DEAA64;font-size:20px" __cid="cInAbma"></i>  
+                  <span xid="span45" __cid="cInAbma" class="cInAbma">新增会报</span>
+                </a>
+              </div>  
+              <div class="x-col cInAbma" xid="col20" style="text-align:center;" __cid="cInAbma">
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cInAbma" xid="button17" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-saveas&#34;,&#34;label&#34;:&#34;新增审批&#34;}" __cid="cInAbma"> 
+                  <i xid="i17" class="dataControl dataControl-saveas cInAbma" style="color:#99473F;font-size:20px" __cid="cInAbma"></i>  
+                  <span xid="span46" __cid="cInAbma" class="cInAbma">新增审批</span>
+                </a>
+              </div>
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cInAbma" xid="row10" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cInAbma"> 
+              <div class="x-col cInAbma" xid="col21" style="text-align:center;" __cid="cInAbma"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cInAbma" xid="button19" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-saveas&#34;,&#34;label&#34;:&#34;关联审批&#34;}" __cid="cInAbma"> 
+                  <i xid="i18" class="dataControl dataControl-saveas cInAbma" style="font-size:20px" __cid="cInAbma"></i>  
+                  <span xid="span49" __cid="cInAbma" class="cInAbma">关联审批</span>
+                </a> 
+              </div>  
+              <div class="x-col cInAbma" xid="col22" style="text-align:center;" __cid="cInAbma"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cInAbma" xid="button18" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-save&#34;,&#34;label&#34;:&#34;新增跟单&#34;}" __cid="cInAbma"> 
+                  <i xid="i23" class="dataControl dataControl-save cInAbma" style="color:#658BC0;font-size:20px" __cid="cInAbma"></i>  
+                  <span xid="span48" __cid="cInAbma" class="cInAbma">新增跟单</span>
+                </a> 
+              </div>  
+              <div class="x-col cInAbma" xid="col23" style="text-align:center;" __cid="cInAbma"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cInAbma" xid="button23" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-permission&#34;,&#34;label&#34;:&#34;附近客户&#34;}" __cid="cInAbma"> 
+                  <i xid="i19" class="dataControl dataControl-permission cInAbma" style="color:#62B193;font-size:20px" __cid="cInAbma"></i>  
+                  <span xid="span47" __cid="cInAbma" class="cInAbma">附近客户</span>
+                </a> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cInAbma" xid="row11" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cInAbma"> 
+              <div class="x-col cInAbma" xid="col24" style="text-align:center;" __cid="cInAbma"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cInAbma" xid="button25" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-user&#34;,&#34;label&#34;:&#34;客户查重&#34;}" __cid="cInAbma"> 
+                  <i xid="i24" class="dataControl dataControl-user cInAbma" style="color:#9F96BC;font-size:20px" __cid="cInAbma"></i>  
+                  <span xid="span56" __cid="cInAbma" class="cInAbma">客户查重</span>
+                </a> 
+              </div>  
+              <div class="x-col cInAbma" xid="col25" style="text-align:center;" __cid="cInAbma"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cInAbma" xid="button24" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;e-commerce e-commerce-shangpu&#34;,&#34;label&#34;:&#34;新增巡店&#34;}" __cid="cInAbma"> 
+                  <i xid="i26" class="e-commerce e-commerce-shangpu cInAbma" style="color:#96C1D3;font-size:20px" __cid="cInAbma"></i>  
+                  <span xid="span55" __cid="cInAbma" class="cInAbma">新增巡店</span>
+                </a> 
+              </div>  
+              <div class="x-col cInAbma" xid="col26" style="text-align:center;" __cid="cInAbma"></div> 
+            </div>
+          </div>  
+          <div class="x-panel-bottom cInAbma" xid="bottom6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cInAbma">
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cInAbma" xid="row12" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cInAbma"> 
+              <div class="x-col cInAbma" xid="col29" style="text-align:center;" __cid="cInAbma"></div>  
+              <div class="x-col cInAbma" xid="col28" style="text-align:center;" __cid="cInAbma"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top btn-only-label cInAbma" xid="button28" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;linear linear-phonehandset&#34;,&#34;label&#34;:&#34;取消&#34;}" __cid="cInAbma"> 
+                  <i xid="i28" class="linear linear-phonehandset cInAbma" __cid="cInAbma"></i>  
+                  <span xid="span59" __cid="cInAbma" class="cInAbma">取消</span>
+                </a> 
+              </div>  
+              <div class="x-col cInAbma" xid="col27" style="text-align:center;" __cid="cInAbma"></div> 
+            </div>
+          </div>
+          <style __cid="cInAbma" class="cInAbma">.x-panel.pcYjQr2m-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcYjQr2m-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcYjQr2m-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcYjQr2m-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYjQr2m-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcYjQr2m-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYjQr2m-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYjQr2m-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYjQr2m-iosstatusbar >.x-panel-content {top: 0px;}</style>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

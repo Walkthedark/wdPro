@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cnMfumi" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cnMfumi" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cnMfumi" class="cnMfumi"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcZn63ae-iosstatusbar cnMfumi" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cnMfumi"> 
+    <div class="x-panel-top cnMfumi" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnMfumi"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cnMfumi" style="background-color:#47D1D1;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;退单提交成功&quot;}" __cid="cnMfumi"> 
+        <div class="x-titlebar-left cnMfumi" __cid="cnMfumi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cnMfumi" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cnMfumi"> 
+            <i class="icon-chevron-left cnMfumi" __cid="cnMfumi"/>  
+            <span __cid="cnMfumi" class="cnMfumi"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cnMfumi" __cid="cnMfumi">退单提交成功</div>  
+        <div class="x-titlebar-right  cnMfumi" __cid="cnMfumi">
+          <div class="empty cnMfumi" __cid="cnMfumi"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cnMfumi" xid="content1" style="background-color:#F0F4F7;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnMfumi">
+      <div xid="div1" style="height:100%;" __cid="cnMfumi" class="cnMfumi">
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cnMfumi" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cnMfumi"> 
+          <div class="x-col cnMfumi" xid="col4" style="text-align:center;" __cid="cnMfumi">
+            <img src="$model/UI2/wd/applyReturnGoods/returnOrderSuccess/image/suceess1.png" alt="" xid="image1" style="height:60px;width:60px;margin-top:120px;" __cid="cnMfumi" class="cnMfumi"/>
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cnMfumi" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cnMfumi"> 
+          <div class="x-col cnMfumi" xid="col9" __cid="cnMfumi">
+            <div xid="div2" style="text-align:center;" __cid="cnMfumi" class="cnMfumi">
+              <span xid="span3" __cid="cnMfumi" class="cnMfumi">退货单号：</span>  
+              <span xid="span4" __cid="cnMfumi" class="cnMfumi">DH-R-20190312-374547</span>
+            </div>
+          </div>
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cnMfumi" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cnMfumi"> 
+          <div class="x-col cnMfumi" xid="col10" style="text-align:center;" __cid="cnMfumi">
+            <span xid="span5" style="font-size:12px;" __cid="cnMfumi" class="cnMfumi">应付金额：</span>  
+            <span xid="span6" __cid="cnMfumi" class="cnMfumi">¥</span>  
+            <span xid="span7" __cid="cnMfumi" class="cnMfumi">20.00</span>
+          </div> 
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-bottom cnMfumi" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnMfumi">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cnMfumi" xid="row1" style="padding:0;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cnMfumi"> 
+        <div class="x-col x-col-center cnMfumi" xid="col1" style="text-align:center;" __cid="cnMfumi">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cnMfumi" xid="seeBtn" style="color:#666;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:seeBtnClick" data-config="{&quot;label&quot;:&quot;查看退货单&quot;}" __cid="cnMfumi"> 
+            <i xid="i1" __cid="cnMfumi" class="cnMfumi"/>  
+            <span xid="span1" __cid="cnMfumi" class="cnMfumi">查看退货单</span>
+          </a>
+        </div>  
+        <div class="x-col x-col-center cnMfumi" xid="col3" style="background-color:#f66;text-align:center;" __cid="cnMfumi">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cnMfumi" xid="button2" style="color:#fff;text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;完成&quot;}" __cid="cnMfumi"> 
+            <i xid="i2" __cid="cnMfumi" class="cnMfumi"/>  
+            <span xid="span2" __cid="cnMfumi" class="cnMfumi">完成</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <style __cid="cnMfumi" class="cnMfumi">.x-panel.pcZn63ae-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcZn63ae-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcZn63ae-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcZn63ae-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcZn63ae-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcZn63ae-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcZn63ae-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcZn63ae-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcZn63ae-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

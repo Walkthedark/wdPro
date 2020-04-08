@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cjaEf6v" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cjaEf6v" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cjaEf6v" class="cjaEf6v"/>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cjaEf6v" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cjaEf6v"> 
+    <div class="x-contents-content active cjaEf6v" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cjaEf6v">
+      <iframe src="$model/UI2/wdPro/test/test.html" xid="iframe1" height="100%" width="100%" __cid="cjaEf6v" class="cjaEf6v"/>
+    </div>
+  </div>
+</div>

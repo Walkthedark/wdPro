@@ -1,0 +1,381 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cfyQBve" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cfyQBve" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <style>body.cfyQBve{background-color: rgb(248, 248, 248); font-famliy: Microsoft JhengHei} .top_back.cfyQBve{text-align: center; background: -webkit-linear-gradient(rgb(105, 98, 206), rgb(72, 185, 239)); background: -o-linear-gradient(rgb(105, 98, 206), rgb(72, 185, 239)); background: -moz-linear-gradient(rgb(105, 98, 206), rgb(72, 185, 239)); background: linear-gradient(rgb(105, 98, 206), rgb(72, 185, 239)); height: 200px} .x-label.cfyQBve{width: 6em} .x-label-edit.cfyQBve{margin: 0px; padding: 4px 2px 4px 17px; color: rgb(253, 252, 255); text-align: left; background-color: transparent} .label-rizhi.cfyQBve{margin-top: 5px; background-color: rgb(255, 255, 255)} .btn-group.cfyQBve .btn.active.cfyQBve{background-color: rgb(69, 153, 228); color: rgb(255, 255, 255)} .div-radius.cfyQBve{border-radius: 5px} .tc-btn-color.cfyQBve{border-style: solid solid solid solid; border-width: thin thin thin thin; border-color: rgb(69, 153, 228) rgb(69, 153, 228) rgb(69, 153, 228) rgb(69, 153, 228); color: rgb(69, 153, 228)} .listxz.cfyQBve{background-color: rgb(69, 153, 228); color: white} .btn-color.cfyQBve{color: rgb(159, 158, 160); border-style: solid solid solid solid; border-width: thin thin thin thin; border-color: rgb(69, 153, 228) rgb(69, 153, 228) rgb(69, 153, 228) rgb(69, 153, 228)} .btn-radius.cfyQBve{border-radius: 5px} .li_class.cfyQBve{border-left: 3px solid rgb(139, 165, 172); position: relative; padding-left: 20px; padding-bottom: 5px; display: list-item; text-align: -webkit-match-parent} .li_class.cfyQBve:BEFORE{border: 2px solid rgb(139, 165, 172); border-radius: 8px; content: " "; width: 15px; height: 15px; display: block; position: absolute; left: -8.5px; top: 0px; background-color: rgb(139, 165, 172)} .li_class.cfyQBve:BEFORE{border-color: rgb(139, 165, 172)} .li_class.cfyQBve:last-of-type{border-left: 0} .li_class:last-of-type.cfyQBve:BEFORE{left: -5px} .span-index.cfyQBve{position: absolute; left: -70px; top: 0px} .li_class2.cfyQBve{border-left: 3px solid rgb(139, 165, 172); position: relative; margin-left: 70px; padding-left: 20px; min-height: 50px; padding-bottom: 5px; display: list-item; text-align: -webkit-match-parent} .li_class2.cfyQBve:BEFORE{border: 2px solid rgb(139, 165, 172); border-radius: 8px; content: " "; width: 15px; height: 15px; display: block; position: absolute; left: -8.5px; top: 0px; background-color: rgb(139, 165, 172)} .li_class2.cfyQBve:BEFORE{border-color: rgb(139, 165, 172)} .li_class2.cfyQBve:last-of-type{border-left: 0} .li_class2:last-of-type.cfyQBve:BEFORE{left: -5px} .li_class2.cfyQBve:last-of-type .span-index.cfyQBve{left: -67px} .text-white.cfyQBve{font-size: 14px; text-align: center; color: rgb(36, 36, 36)} .bg-wbkq.cfyQBve{background-color: rgb(108, 203, 98)} .bg-gzjx.cfyQBve{background-color: rgb(99, 177, 221)} .bg-dtda.cfyQBve{background-color: rgb(90, 148, 226)} .bg-gzjd.cfyQBve{background-color: rgb(236, 183, 71)} .bg-wbht.cfyQBve{background-color: rgb(189, 148, 114)} .bg-dxfdt.cfyQBve{background-color: rgb(67, 155, 148)} .bg-wxcs.cfyQBve{background-color: rgb(151, 192, 91)} .bg-dtcj.cfyQBve{background-color: rgb(29, 83, 171)} .bg-njtx.cfyQBve{background-color: rgb(99, 177, 221)} .bg-xsqjc.cfyQBve{background-color: rgb(236, 183, 71)} .bg-zxjc.cfyQBve{background-color: rgb(108, 203, 98)} .bg-dtdw.cfyQBve{background-color: rgb(67, 155, 148)} .bg-pjghuan.cfyQBve{background-color: rgb(67, 155, 148)} .bg-zijbaog.cfyQBve{background-color: rgb(99, 177, 221)} .bg-jyuanylian.cfyQBve{background-color: rgb(29, 83, 171)} .bg-zhshiy.cfyQBve{background-color: rgb(189, 148, 114)} .bg-dtxs.cfyQBve{background-color: rgb(189, 148, 114)} .bg-azht.cfyQBve{background-color: rgb(236, 183, 71)} .bg-azsg.cfyQBve{background-color: rgb(67, 155, 148)} .bg-lcsw.cfyQBve{background-color: rgb(99, 177, 221)} .bg-gzkq.cfyQBve{background-color: rgb(67, 155, 148)} .bg-rcap.cfyQBve{background-color: rgb(189, 148, 114)} .bg-rwjb.cfyQBve{background-color: rgb(29, 83, 171)} .bg-gzrz.cfyQBve{background-color: rgb(79, 161, 119)} .bg-lsjh.cfyQBve{background-color: rgb(237, 104, 62)} .bg-lld.cfyQBve{background-color: rgb(190, 76, 50)} .bg-tzgg.cfyQBve{background-color: rgb(99, 177, 221)} .bg-xcfk.cfyQBve{background-color: rgb(189, 153, 197)} .bg-wdxinxi.cfyQBve{background-color: rgb(163, 202, 109)} .bg-yggzz.cfyQBve{background-color: rgb(83, 177, 243)} .bg-clgl.cfyQBve{background-color: rgb(80, 129, 211)} .bg-txl.cfyQBve{background-color: rgb(200, 122, 64)} .bg-cybg.cfyQBve{background-color: rgb(99, 177, 221)} .bg-wdtpiao.cfyQBve{background-color: rgb(67, 155, 148)} .x-img1.cfyQBve{width: 100%; height: 220px} .x-img3.cfyQBve{width: 40px; height: 28px} .x-cards.cfyQBve{padding-top: 0} .row.cfyQBve{margin: 0} .row.cfyQBve .col.cfyQBve{padding: 0 5px; margin-bottom: 10px} .row.cfyQBve .col.cfyQBve > div.cfyQBve{height: 90px; padding-top: 20px} .x-titlebar.cfyQBve{background-color: rgba(0, 0, 0, 0.3)} .x-panel-top.cfyQBve{z-index: 100} .x-panel.cfyQBve > .x-panel-content.cfyQBve{top: 0 !important} .x-panel.cfyQBve .no-iosstatusbar.cfyQBve > .x-panel-content.cfyQBve{top: -20px !important} .div-position.cfyQBve{text-align: center; width: 40px; height: 40px; margin: auto; top: 0; left: 0; right: 0; bottom: 0; top: 0} .div-positionxiaox.cfyQBve{text-align: center; margin: auto; top: 20px; left: 10px; border-radius: 40px; position: absolute} .btnys.cfyQBve{padding: 4px 8px; border-radius: 30px} .btnys.cfyQBve:hover{text-decoration: none !important} .btnys2.cfyQBve{padding: 4px 8px; border-radius: 40px} .hsbj.cfyQBve{padding: 3px 3px 3px 3px; border-radius: 30px; background-color: red} .hsbj1.cfyQBve{padding: 2px 2px 2px 2px; border-radius: 30px; background-color: red} .x-col11.cfyQBve{padding: 0px 0px} .image-radius.cfyQBve{border-radius: 40px} .x-row11.cfyQBve{padding: 0px 0px} .x-row.cfyQBve{padding: 0px 0px 0px 0px} .btnys.cfyQBve:link{background: rgba(46, 163, 225, 0.6) !important} .btnys.cfyQBve:visted{background: rgba(46, 163, 225, 0.6) !important} .btnys.cfyQBve:active{background: rgba(46, 163, 225, 0.6) !important} .activecZNZvam.cfyQBve{background: rgb(193, 241, 246)}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cfyQBve" class="cfyQBve"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcmIB7ri-iosstatusbar cfyQBve" xid="panel1" style="background-color: #F8F8F8;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cfyQBve"> 
+    <div class="x-panel-content cfyQBve" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfyQBve"> 
+      <div xid="div1" class="top_back cfyQBve" __cid="cfyQBve"> 
+        <div xid="div2" style="padding:2px 5px 2px 2px;text-align:left;background-color:transparent;" __cid="cfyQBve" class="cfyQBve"> 
+          <div class="media cfyQBve" xid="media9" __cid="cfyQBve"> 
+            <div class="media-left cfyQBve" xid="mediaLeft1" __cid="cfyQBve"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cfyQBve" xid="button12" style="color:#FDFCFF;font-size:16px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-project24&#34;,&#34;label&#34;:&#34;工单信息&#34;}" __cid="cfyQBve"> 
+                <i xid="i14" class="dataControl dataControl-project24 cfyQBve" style="font-size:18px;" __cid="cfyQBve"></i>  
+                <span xid="span14" __cid="cfyQBve" class="cfyQBve">工单信息</span> 
+              </a> 
+            </div>  
+            <div class="media-body cfyQBve" xid="mediaBody9" __cid="cfyQBve"></div>  
+            <div class="media-right cfyQBve" xid="mediaRight1" __cid="cfyQBve"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-label btn-radius1 cfyQBve" style="color:#FFFFFF;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#FFFFFF #FFFFFF #FFFFFF #FFFFFF;width:100%;margin-right:5px;display:none" xid="evaluationBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:$model.BillData.val(&#34;state&#34;) == 5? ($model.BillData.val(&#34;fpEvaluate1&#34;) == &#34;&#34;?true:false) : false" data-events="onClick:planEvaluationBtnClick" data-config="{&#34;label&#34;:&#34;评价&#34;}" __cid="cfyQBve"> 
+                <i xid="i24" __cid="cfyQBve" class="cfyQBve"></i>  
+                <span xid="span27" __cid="cfyQBve" class="cfyQBve">评价</span> 
+              </a> 
+            </div> 
+          </div> 
+        </div>  
+        <div xid="div3" __cid="cfyQBve" class="cfyQBve"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit  cfyQBve" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfyQBve"> 
+            <label class="x-label cfyQBve" xid="label1" __cid="cfyQBve">工单单号：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cfyQBve" xid="output1" style="color:#FDFCFF;" data-bind="component:{ref:$model.BillData.ref(&#34;sheetNo&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cfyQBve"></div> 
+          </div> 
+        </div>  
+        <div xid="div4" __cid="cfyQBve" class="cfyQBve"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit  cfyQBve" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfyQBve"> 
+            <label class="x-label cfyQBve" xid="label2" __cid="cfyQBve">电梯位置：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cfyQBve" xid="output2" style="color:#FDFCFF;" data-bind="component:{ref:$model.BillData.ref(&#34;address&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cfyQBve"></div> 
+          </div> 
+        </div>  
+        <div xid="div5" __cid="cfyQBve" class="cfyQBve"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit  cfyQBve" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfyQBve"> 
+            <label class="x-label cfyQBve" xid="label3" __cid="cfyQBve">合同到期：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cfyQBve" xid="output3" style="color:#FDFCFF;" data-bind="component:{ref:$model.BillData.ref(&#34;contract_expire&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cfyQBve"></div> 
+          </div> 
+        </div>  
+        <div xid="div6" __cid="cfyQBve" class="cfyQBve"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit  cfyQBve" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfyQBve"> 
+            <label class="x-label cfyQBve" xid="label4" __cid="cfyQBve">维保小组：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cfyQBve" xid="output4" style="color:#FDFCFF;" data-bind="component:{ref:$model.BillData.ref(&#34;teamName&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cfyQBve"></div> 
+          </div> 
+        </div>  
+        <div xid="div7" __cid="cfyQBve" class="cfyQBve"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit  cfyQBve" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfyQBve"> 
+            <label class="x-label cfyQBve" xid="label5" __cid="cfyQBve">接单人：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cfyQBve" xid="output6" style="color:#FDFCFF;" data-bind="component:{ref:$model.BillData.ref(&#34;repairman&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cfyQBve"></div>
+          </div> 
+        </div>
+      </div>  
+      <div xid="div17" class="label-rizhi cfyQBve" __cid="cfyQBve"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfyQBve" xid="button11" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-save24&#34;,&#34;label&#34;:&#34;维修日志&#34;}" __cid="cfyQBve"> 
+          <i xid="i12" class="dataControl dataControl-save24 cfyQBve" __cid="cfyQBve"></i>  
+          <span xid="span12" __cid="cfyQBve" class="cfyQBve">维修日志</span> 
+        </a> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cfyQBve" xid="row2" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfyQBve"> 
+        <div xid="col1" style="width:1em;" __cid="cfyQBve" class="cfyQBve"></div>  
+        <div class="x-col cfyQBve" xid="col2" __cid="cfyQBve"> 
+          <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group  btn-group-justified cfyQBve" xid="buttonGroup2" style="height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cfyQBve"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn active btn-link btn-color btn-radius cfyQBve" xid="sortingBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;维修人员&#34;,&#34;target&#34;:&#34;content6&#34;}" __cid="cfyQBve"> 
+              <i xid="i6" __cid="cfyQBve" class="cfyQBve"></i>  
+              <span xid="span3" __cid="cfyQBve" class="cfyQBve">维修人员</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-color btn-radius cfyQBve" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;时间节点&#34;,&#34;target&#34;:&#34;content7&#34;}" __cid="cfyQBve"> 
+              <i xid="i7" __cid="cfyQBve" class="cfyQBve"></i>  
+              <span xid="span6" __cid="cfyQBve" class="cfyQBve">时间节点</span> 
+            </a> 
+          </div> 
+        </div>  
+        <div xid="col3" style="width:1em;" __cid="cfyQBve" class="cfyQBve"></div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents  cfyQBve" xid="contents3" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;active&#34;:0,&#34;routable&#34;:false}" __cid="cfyQBve"> 
+        <div class="x-contents-content active cfyQBve" xid="content6" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfyQBve"> 
+          <div xid="div10" style="height:100%;" class="list-group-item cfyQBve" __cid="cfyQBve"> 
+            <div xid="div9" style="padding:5px 5px 5px 0px;" __cid="cfyQBve" class="cfyQBve"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cfyQBve" xid="button19" style="color:#252425;font-size:14px;font-weight:bold;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" __cid="cfyQBve"> 
+                <i xid="i20" __cid="cfyQBve" class="cfyQBve"></i>  
+                <span xid="span19" __cid="cfyQBve" class="cfyQBve"></span> 
+              </a> 
+            </div>  
+            <div xid="div8" style="background-color:#F4F4F4;padding:8px 3px 3px 5px;" __cid="cfyQBve" class="cfyQBve"> 
+              <ul xid="ul2" __cid="cfyQBve" class="cfyQBve"> 
+                <li xid="li1" class="li_class2 cfyQBve" __cid="cfyQBve"> 
+                  <div xid="div8" __cid="cfyQBve" class="cfyQBve"> 
+                    <div class="media cfyQBve" xid="media3" style="margin-left:2px;" __cid="cfyQBve"> 
+                      <div class="media-body cfyQBve" xid="mediaBody1" __cid="cfyQBve"> 
+                        <h5 xid="h58" class="media-heading cfyQBve" style="font-size:14px;color:#8C8C8C;" __cid="cfyQBve" data-bind="text:$model.BillData.val(&#34;receipt_time&#34;)"></h5>  
+                        <h5 xid="h520" class="media-heading cfyQBve" __cid="cfyQBve" data-bind="text:$model.BillData.val(&#34;receipt_addr&#34;)"></h5> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn x-purple btn-xs span-index cfyQBve" xid="button9" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;接单&#34;}" __cid="cfyQBve"> 
+                    <i xid="i10" __cid="cfyQBve" class="cfyQBve"></i>  
+                    <span xid="span10" __cid="cfyQBve" class="cfyQBve">接单</span> 
+                  </a> 
+                </li>  
+                <li xid="li4" class="li_class2 cfyQBve" __cid="cfyQBve"> 
+                  <div xid="div9" __cid="cfyQBve" class="cfyQBve"> 
+                    <div class="media cfyQBve" xid="media1" style="margin-left:2px;" __cid="cfyQBve"> 
+                      <div class="media-body cfyQBve" xid="mediaBody3" __cid="cfyQBve"> 
+                        <h5 xid="h510" class="media-heading cfyQBve" style="font-size:14px;color:#8C8C8C;" __cid="cfyQBve" data-bind="text:$model.BillData.val(&#34;depart_time&#34;)"></h5>  
+                        <h5 xid="h522" class="media-heading cfyQBve" __cid="cfyQBve" data-bind="text:$model.BillData.val(&#34;depart_addr&#34;)"></h5> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn x-purple btn-xs span-index cfyQBve" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;出发&#34;}" __cid="cfyQBve"> 
+                    <i xid="i2" __cid="cfyQBve" class="cfyQBve"></i>  
+                    <span xid="span2" __cid="cfyQBve" class="cfyQBve">出发</span> 
+                  </a> 
+                </li>  
+                <li xid="li3" class="li_class2 cfyQBve" __cid="cfyQBve"> 
+                  <div xid="div12" __cid="cfyQBve" class="cfyQBve"> 
+                    <div class="media cfyQBve" xid="media4" style="margin-left:2px;" __cid="cfyQBve"> 
+                      <div class="media-body cfyQBve" xid="mediaBody4" __cid="cfyQBve"> 
+                        <h5 xid="h54" class="media-heading cfyQBve" style="font-size:14px;color:#8C8C8C;" __cid="cfyQBve" data-bind="text:$model.BillData.val(&#34;signInTime&#34;)"></h5>  
+                        <h5 xid="h521" class="media-heading cfyQBve" __cid="cfyQBve" data-bind="text:$model.BillData.val(&#34;signInAddr&#34;)"></h5> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-success btn-xs span-index cfyQBve" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;开始维修&#34;}" __cid="cfyQBve"> 
+                    <i xid="i4" __cid="cfyQBve" class="cfyQBve"></i>  
+                    <span xid="span11" __cid="cfyQBve" class="cfyQBve">开始维修</span> 
+                  </a> 
+                </li>  
+                <li xid="li2" class="li_class2 cfyQBve" __cid="cfyQBve"> 
+                  <div xid="div11" __cid="cfyQBve" class="cfyQBve"> 
+                    <div class="media cfyQBve" xid="media2" style="margin-left:2px;" __cid="cfyQBve"> 
+                      <div class="media-body cfyQBve" xid="mediaBody2" __cid="cfyQBve"> 
+                        <h5 xid="h51" class="media-heading cfyQBve" style="font-size:14px;color:#8C8C8C;" __cid="cfyQBve" data-bind="text:$model.BillData.val(&#34;signOutTime&#34;)"></h5>  
+                        <h5 xid="h523" class="media-heading cfyQBve" __cid="cfyQBve" data-bind="text:$model.BillData.val(&#34;signOutAddr&#34;)"></h5> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary btn-xs span-index cfyQBve" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;结束维修&#34;}" __cid="cfyQBve"> 
+                    <i xid="i3" __cid="cfyQBve" class="cfyQBve"></i>  
+                    <span xid="span4" __cid="cfyQBve" class="cfyQBve">结束维修</span> 
+                  </a> 
+                </li> 
+              </ul> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-contents-content cfyQBve" xid="content7" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfyQBve"> 
+          <div xid="div30" style="height:100%;" class="list-group-item cfyQBve" __cid="cfyQBve"> 
+            <div xid="div35" style="padding:5px 5px 5px 0px;" __cid="cfyQBve" class="cfyQBve"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cfyQBve" xid="button1" style="color:#252425;font-size:14px;font-weight:bold;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:$model.BillData.val(&#34;result&#34;)" __cid="cfyQBve"> 
+                <i xid="i32" __cid="cfyQBve" class="cfyQBve"></i>  
+                <span xid="span33" __cid="cfyQBve" class="cfyQBve"></span> 
+              </a> 
+            </div>  
+            <div xid="div33" style="background-color:#F4F4F4;padding:8px 3px 3px 5px;" __cid="cfyQBve" class="cfyQBve"> 
+              <ul xid="ul1" __cid="cfyQBve" class="cfyQBve"> 
+                <li xid="li6" class="li_class2 cfyQBve" __cid="cfyQBve"> 
+                  <div xid="div33" __cid="cfyQBve" class="cfyQBve"> 
+                    <div class="media cfyQBve" xid="media7" style="margin-left:2px;" __cid="cfyQBve"> 
+                      <div class="media-body cfyQBve" xid="mediaBody8" __cid="cfyQBve"> 
+                        <h5 xid="h52" class="media-heading cfyQBve" style="font-size:14px;color:#8C8C8C;" __cid="cfyQBve" data-bind="text:$model.BillData.val(&#34;receipt_time&#34;)"></h5>  
+                        <h5 xid="h57" class="media-heading cfyQBve" __cid="cfyQBve" data-bind="text:$model.BillData.val(&#34;repairman&#34;)"></h5>  
+                        <h5 xid="h53" class="media-heading cfyQBve" __cid="cfyQBve" data-bind="text:$model.BillData.val(&#34;receipt_addr&#34;)"></h5> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn x-purple btn-xs span-index cfyQBve" xid="button24" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;接单&#34;}" __cid="cfyQBve"> 
+                    <i xid="i28" __cid="cfyQBve" class="cfyQBve"></i>  
+                    <span xid="span34" __cid="cfyQBve" class="cfyQBve">接单</span> 
+                  </a> 
+                </li>  
+                <li xid="li7" class="li_class2 cfyQBve" __cid="cfyQBve"> 
+                  <div xid="div35" __cid="cfyQBve" class="cfyQBve"> 
+                    <div class="media cfyQBve" xid="media8" style="margin-left:2px;" __cid="cfyQBve"> 
+                      <div class="media-body cfyQBve" xid="mediaBody6" __cid="cfyQBve"> 
+                        <h5 xid="h513" class="media-heading cfyQBve" style="font-size:14px;color:#8C8C8C;" __cid="cfyQBve" data-bind="text:$model.BillData.val(&#34;depart_time&#34;)"></h5>  
+                        <h5 xid="h55" class="media-heading cfyQBve" __cid="cfyQBve" data-bind="text:$model.BillData.val(&#34;depart_user&#34;)"></h5>  
+                        <h5 xid="h511" class="media-heading cfyQBve" __cid="cfyQBve" data-bind="text:$model.BillData.val(&#34;depart_addr&#34;)"></h5> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn x-purple btn-xs span-index cfyQBve" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;出发&#34;}" __cid="cfyQBve"> 
+                    <i xid="i35" __cid="cfyQBve" class="cfyQBve"></i>  
+                    <span xid="span36" __cid="cfyQBve" class="cfyQBve">出发</span> 
+                  </a> 
+                </li>  
+                <li xid="li8" class="li_class2 cfyQBve" __cid="cfyQBve"> 
+                  <div xid="div38" __cid="cfyQBve" class="cfyQBve"> 
+                    <div class="media cfyQBve" xid="media5" style="margin-left:2px;" __cid="cfyQBve"> 
+                      <div class="media-body cfyQBve" xid="mediaBody7" __cid="cfyQBve"> 
+                        <h5 xid="h512" class="media-heading cfyQBve" style="font-size:14px;color:#8C8C8C;" __cid="cfyQBve" data-bind="text:$model.BillData.val(&#34;signInTime&#34;)"></h5>  
+                        <h5 xid="h540" class="media-heading cfyQBve" __cid="cfyQBve" data-bind="text:$model.BillData.val(&#34;signInUser&#34;)"></h5>  
+                        <h5 xid="h59" class="media-heading cfyQBve" __cid="cfyQBve" data-bind="text:$model.BillData.val(&#34;signInAddr&#34;)"></h5> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-success btn-xs span-index cfyQBve" xid="button28" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;开始维修&#34;}" __cid="cfyQBve"> 
+                    <i xid="i1" __cid="cfyQBve" class="cfyQBve"></i>  
+                    <span xid="span35" __cid="cfyQBve" class="cfyQBve">开始维修</span> 
+                  </a> 
+                </li>  
+                <li xid="li5" class="li_class2 cfyQBve" __cid="cfyQBve"> 
+                  <div xid="div34" __cid="cfyQBve" class="cfyQBve"> 
+                    <div class="media cfyQBve" xid="media6" style="margin-left:2px;" __cid="cfyQBve"> 
+                      <div class="media-body cfyQBve" xid="mediaBody5" __cid="cfyQBve"> 
+                        <h5 xid="h59" class="media-heading cfyQBve" style="font-size:14px;color:#8C8C8C;" __cid="cfyQBve" data-bind="text:$model.BillData.val(&#34;signOutTime&#34;)"></h5>  
+                        <h5 xid="h541" class="media-heading cfyQBve" __cid="cfyQBve" data-bind="text:$model.BillData.val(&#34;signOutUser&#34;)"></h5>  
+                        <h5 xid="h512" class="media-heading cfyQBve" __cid="cfyQBve" data-bind="text:$model.BillData.val(&#34;signOutAddr&#34;)"></h5> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary btn-xs span-index cfyQBve" xid="button27" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;结束维修&#34;}" __cid="cfyQBve"> 
+                    <i xid="i36" __cid="cfyQBve" class="cfyQBve"></i>  
+                    <span xid="span31" __cid="cfyQBve" class="cfyQBve">结束维修</span> 
+                  </a> 
+                </li> 
+              </ul> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div22" class="list-group-item cfyQBve" style="padding:0px 0px 0px 0px;" __cid="cfyQBve"> 
+        <div xid="div16" __cid="cfyQBve" class="cfyQBve"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfyQBve" xid="button21" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-bringtotop&#34;,&#34;label&#34;:&#34;配件更换&#34;}" __cid="cfyQBve"> 
+            <i xid="i21" class="dataControl dataControl-bringtotop cfyQBve" __cid="cfyQBve"></i>  
+            <span xid="span1" style="color:#252425;font-size:14px;" __cid="cfyQBve" class="cfyQBve">配件更换</span>
+          </a> 
+        </div>  
+        <div xid="div14" style="background-color:white;" __cid="cfyQBve" class="cfyQBve"> 
+          <div xid="div13" __cid="cfyQBve" class="cfyQBve"> 
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list cfyQBve" xid="list8" dataItemAlias="hostParRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;historyParData&#34;,&#34;limit&#34;:20}" __cid="cfyQBve"> 
+              <ul class="x-list-template hide cfyQBve" xid="listTemplateUl5" __cid="cfyQBve" data-bind="foreach:{data:$model.foreach_list8($element),afterRender:$model.foreach_afterRender_list8.bind($model,$element),as:'hostParRow'}"> 
+                <li xid="li12" __cid="cfyQBve" class="cfyQBve"> 
+                  <div class="media cfyQBve" xid="media11" style="padding:0px 0px 0px 0px;background-color:white;" __cid="cfyQBve"> 
+                    <div class="media-left cfyQBve" xid="mediaLeft5" __cid="cfyQBve"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfyQBve" xid="button22" style="color:#B0B0B0;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:&#34;维保员: &#34;+ val(&#34;user&#34;)" __cid="cfyQBve"> 
+                        <i xid="i30" __cid="cfyQBve" class="cfyQBve"></i>  
+                        <span xid="span13" __cid="cfyQBve" class="cfyQBve"></span>
+                      </a> 
+                    </div>  
+                    <div class="media-body cfyQBve" xid="mediaBody11" style="text-align:right;" __cid="cfyQBve"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfyQBve" xid="button18" style="color:#7BC0BD" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:&#34;更换时间:&#34;+ val(&#34;date&#34;)" __cid="cfyQBve"> 
+                        <i xid="i31" __cid="cfyQBve" class="cfyQBve"></i>  
+                        <span xid="span15" __cid="cfyQBve" class="cfyQBve"></span>
+                      </a> 
+                    </div> 
+                  </div>  
+                  <div component="$model/UI2/system/components/justep/list/list" class="x-list cfyQBve" xid="list9" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;$model.historySonMaterialData&#34;,&#34;filter&#34;:&#34;$row.val('history_id')==hostParRow.val('id')&#34;}" __cid="cfyQBve"> 
+                    <ul class="x-list-template hide cfyQBve" xid="listTemplateUl6" __cid="cfyQBve" data-bind="foreach:{data:$model.foreach_list9($element),afterRender:$model.foreach_afterRender_list9.bind($model,$element)}"> 
+                      <li xid="li11" __cid="cfyQBve" class="cfyQBve"> 
+                        <div xid="div15" class="list-group-item cfyQBve" style="padding:5px 5px 5px 5px;" __cid="cfyQBve"> 
+                          <div component="$model/UI2/system/components/justep/row/row" class="x-row cfyQBve" xid="row13" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfyQBve"> 
+                            <div class="x-col x-col-10 cfyQBve" xid="col18" __cid="cfyQBve"> 
+                              <span xid="span9" __cid="cfyQBve" class="cfyQBve" data-bind="text:$index()+1+'、'"></span>
+                            </div>  
+                            <div class="x-col cfyQBve" xid="col19" __cid="cfyQBve"> 
+                              <span xid="span5" __cid="cfyQBve" class="cfyQBve" data-bind="text:val(&#34;material&#34;)"></span>
+                            </div>  
+                            <div class="x-col x-col-33 cfyQBve" xid="col7" __cid="cfyQBve"> 
+                              <span xid="span37" __cid="cfyQBve" class="cfyQBve" data-bind="text:&#34;更换数量:&#34; + val(&#34;num&#34;)"></span>
+                            </div> 
+                          </div> 
+                        </div> 
+                      </li> 
+                    </ul> 
+                  </div>  
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cfyQBve" xid="row14" style="height:7px;background-color:#F4F4F4;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfyQBve"> 
+                    <div class="x-col cfyQBve" xid="col5" __cid="cfyQBve"></div>  
+                    <div class="x-col cfyQBve" xid="col22" __cid="cfyQBve"></div>  
+                    <div class="x-col cfyQBve" xid="col23" __cid="cfyQBve"></div>
+                  </div> 
+                </li> 
+              </ul> 
+            </div> 
+          </div> 
+        </div> 
+      </div>
+      <div xid="div44" style="background-color:white;" __cid="cfyQBve" class="cfyQBve"> 
+        <div xid="div53" __cid="cfyQBve" class="cfyQBve"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfyQBve" xid="button36" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;e-commerce e-commerce-tupian&#34;,&#34;label&#34;:&#34;照片&#34;}" __cid="cfyQBve"> 
+            <i xid="i42" class="e-commerce e-commerce-tupian cfyQBve" __cid="cfyQBve"></i>  
+            <span xid="span42" __cid="cfyQBve" class="cfyQBve">照片</span> 
+          </a>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cfyQBve" xid="row9" style="padding:0px 0px 0px 10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfyQBve"> 
+            <div class="x-col cfyQBve" xid="col20" __cid="cfyQBve"> 
+              <div xid="div63" style="background-color:white;padding:0px 0px 0px 0px;" class="list-group-item cfyQBve" __cid="cfyQBve"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfyQBve" xid="button43" style="color:#9A9A9A;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;e-commerce e-commerce-tupian&#34;,&#34;label&#34;:&#34;工单照片&#34;}" __cid="cfyQBve"> 
+                  <i xid="i45" class="e-commerce e-commerce-tupian cfyQBve" __cid="cfyQBve"></i>  
+                  <span xid="span57" __cid="cfyQBve" class="cfyQBve">工单照片</span> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfyQBve" xid="button38" style="color:#FF3F2A;float:right;" id="troubleDetailText1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;e-commerce e-commerce-xinxijinggao&#34;,&#34;label&#34;:&#34;未上传工单照片&#34;}" __cid="cfyQBve"> 
+                  <i xid="i51" class="e-commerce e-commerce-xinxijinggao cfyQBve" __cid="cfyQBve"></i>  
+                  <span xid="span55" __cid="cfyQBve" class="cfyQBve">未上传工单照片</span> 
+                </a> 
+              </div>  
+              <div class="imgline cfyQBve" xid="div74" id="troublePhoneBillDetailImg" __cid="cfyQBve"></div>  
+              <div xid="div64" style="background-color:white;padding:0px 0px 0px 0px;" class="list-group-item cfyQBve" __cid="cfyQBve"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfyQBve" xid="button48" style="color:#9A9A9A;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;e-commerce e-commerce-tupian&#34;,&#34;label&#34;:&#34;现场照片&#34;}" __cid="cfyQBve"> 
+                  <i xid="i55" class="e-commerce e-commerce-tupian cfyQBve" __cid="cfyQBve"></i>  
+                  <span xid="span59" __cid="cfyQBve" class="cfyQBve">现场照片</span> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfyQBve" xid="button47" style="color:#FF3F2A;float:right;" id="troubleDetailText2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;e-commerce e-commerce-xinxijinggao&#34;,&#34;label&#34;:&#34;未上传现场照片&#34;}" __cid="cfyQBve"> 
+                  <i xid="i56" class="e-commerce e-commerce-xinxijinggao cfyQBve" __cid="cfyQBve"></i>  
+                  <span xid="span58" __cid="cfyQBve" class="cfyQBve">未上传现场照片</span> 
+                </a> 
+              </div>  
+              <div class="imgline cfyQBve" xid="div26" id="troublePhoneNowDetailImg" __cid="cfyQBve"></div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div43" style="background-color:white;" __cid="cfyQBve" class="cfyQBve"> 
+        <div xid="div42" __cid="cfyQBve" class="cfyQBve"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfyQBve" xid="button34" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-docpdf&#34;,&#34;label&#34;:&#34;无纸化工单&#34;}" __cid="cfyQBve"> 
+            <i xid="i41" class="dataControl dataControl-docpdf cfyQBve" __cid="cfyQBve"></i>  
+            <span xid="span46" __cid="cfyQBve" class="cfyQBve">无纸化工单</span> 
+          </a>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cfyQBve" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfyQBve"> 
+            <div class="x-col cfyQBve" xid="col21" __cid="cfyQBve"> 
+              <div class="imgline cfyQBve" xid="div65" id="troublePhoneNoneDetailImg" __cid="cfyQBve"></div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div28" style="background-color:white;" __cid="cfyQBve" class="cfyQBve"> 
+        <div xid="div27" __cid="cfyQBve" class="cfyQBve"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfyQBve" xid="button23" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-edit&#34;,&#34;label&#34;:&#34;备注&#34;}" __cid="cfyQBve"> 
+            <i xid="i23" class="icon-edit cfyQBve" __cid="cfyQBve"></i>  
+            <span xid="span22" __cid="cfyQBve" class="cfyQBve">备注</span> 
+          </a> 
+        </div>  
+        <div xid="div25" __cid="cfyQBve" class="cfyQBve"> 
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output cfyQBve" xid="output5" data-bind="component:{ref:$model.BillData.ref(&#34;remark&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cfyQBve"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cfyQBve" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfyQBve">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cfyQBve" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfyQBve"> 
+        <div class="x-col cfyQBve" xid="col4" style="text-align:center" __cid="cfyQBve">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray cfyQBve" xid="button13" style="width:8em;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button13Click" data-config="{&#34;label&#34;:&#34;关闭&#34;}" __cid="cfyQBve"> 
+            <i xid="i11" __cid="cfyQBve" class="cfyQBve"></i>  
+            <span xid="span8" __cid="cfyQBve" class="cfyQBve">关闭</span>
+          </a>
+        </div>  
+        <div class="x-col cfyQBve" xid="col6" style="text-align:center" __cid="cfyQBve">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary cfyQBve" xid="button10" style="width:8em;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button10Click" data-config="{&#34;label&#34;:&#34;签字&#34;}" __cid="cfyQBve"> 
+            <i xid="i9" __cid="cfyQBve" class="cfyQBve"></i>  
+            <span xid="span7" __cid="cfyQBve" class="cfyQBve">签字</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <style __cid="cfyQBve" class="cfyQBve">.x-panel.pcmIB7ri-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcmIB7ri-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcmIB7ri-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcmIB7ri-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmIB7ri-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcmIB7ri-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmIB7ri-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmIB7ri-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmIB7ri-iosstatusbar >.x-panel-content {top: 0px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="signatureWinDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onClose:signatureWinDialogClose" data-config="{&#34;forceRefreshOnOpen&#34;:false,&#34;routable&#34;:true,&#34;src&#34;:&#34;$model/UI2/maintenanceOrderMessa/signature-pad/signature.w&#34;}" __cid="cfyQBve" class="cfyQBve">
+    <div class="x-dialog-overlay cfyQBve" __cid="cfyQBve"></div>
+    <div class="x-dialog cfyQBve" style="display:none;" __cid="cfyQBve">
+      <div class="x-dialog-title cfyQBve" __cid="cfyQBve">
+        <button class="close cfyQBve" __cid="cfyQBve">
+          <span __cid="cfyQBve" class="cfyQBve">×</span>
+        </button>
+        <div class="x-dialog-title-text cfyQBve" __cid="cfyQBve"></div>
+      </div>
+      <div class="x-dialog-body cfyQBve" __cid="cfyQBve"></div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog2" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;src&#34;:&#34;$model/UI2/maintenanceOrderMessa/evaluation/evaluation.w&#34;}" __cid="cfyQBve" class="cfyQBve">
+    <div class="x-dialog-overlay cfyQBve" __cid="cfyQBve"></div>
+    <div class="x-dialog cfyQBve" style="display:none;" __cid="cfyQBve">
+      <div class="x-dialog-title cfyQBve" __cid="cfyQBve">
+        <button class="close cfyQBve" __cid="cfyQBve">
+          <span __cid="cfyQBve" class="cfyQBve">×</span>
+        </button>
+        <div class="x-dialog-title-text cfyQBve" __cid="cfyQBve"></div>
+      </div>
+      <div class="x-dialog-body cfyQBve" __cid="cfyQBve"></div>
+    </div>
+  </span> 
+</div>

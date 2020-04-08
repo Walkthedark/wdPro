@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cMFnMry" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cMFnMry" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cMFnMry" class="cMFnMry"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="newDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onClose:newDialogClose" data-config="{&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/Visit/dialog/newInventoryCheck.w&#34;}" __cid="cMFnMry" class="cMFnMry">
+    <div class="x-dialog-overlay cMFnMry" __cid="cMFnMry"></div>
+    <div class="x-dialog cMFnMry" style="display:none;" __cid="cMFnMry">
+      <div class="x-dialog-title cMFnMry" __cid="cMFnMry">
+        <button class="close cMFnMry" __cid="cMFnMry">
+          <span __cid="cMFnMry" class="cMFnMry">×</span>
+        </button>
+        <div class="x-dialog-title-text cMFnMry" __cid="cMFnMry"></div>
+      </div>
+      <div class="x-dialog-body cMFnMry" __cid="cMFnMry"></div>
+    </div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcARZjme-iosstatusbar cMFnMry" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cMFnMry"> 
+    <div class="x-panel-top cMFnMry" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMFnMry"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cMFnMry" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;库存检查&#34;}" __cid="cMFnMry"> 
+        <div class="x-titlebar-left cMFnMry" xid="left2" __cid="cMFnMry"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cMFnMry" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;返回&#34;}" __cid="cMFnMry"> 
+            <i xid="i1" __cid="cMFnMry" class="cMFnMry"></i>  
+            <span xid="span4" __cid="cMFnMry" class="cMFnMry">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cMFnMry" xid="title2" __cid="cMFnMry">库存检查</div>  
+        <div class="x-titlebar-right  cMFnMry" xid="right2" __cid="cMFnMry">
+          <div class="empty cMFnMry" __cid="cMFnMry"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cMFnMry" xid="content6" style="background-color:#f0f0f0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMFnMry"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcyueAR3-iosstatusbar cMFnMry" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cMFnMry"> 
+        <div class="x-panel-top cMFnMry" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMFnMry"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cMFnMry" xid="row3" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMFnMry"> 
+            <div class="x-col x-col-20 cMFnMry" xid="col11" __cid="cMFnMry"></div>  
+            <div class="x-col cMFnMry" xid="col12" __cid="cMFnMry"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn border-r cMFnMry" xid="button4" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&#34;label&#34;:&#34;填 写&#34;}" __cid="cMFnMry"> 
+                <i xid="i5" __cid="cMFnMry" class="cMFnMry"></i>  
+                <span xid="span6" __cid="cMFnMry" class="cMFnMry">填 写</span> 
+              </a> 
+            </div>  
+            <div class="x-col x-col-20 cMFnMry" xid="col13" __cid="cMFnMry"></div> 
+          </div> 
+        </div>  
+        <div class="x-panel-content x-scroll-view cMFnMry" xid="content1" _xid="C7DF78904F900001988700701AF31363" style="background-size: cover; background-image: url(http://localhost:40527/x5/UI2/v_/TheSaleEnterprise/Visit/dialog/none);" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMFnMry"> 
+          <div class="x-scroll cMFnMry" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cMFnMry"> 
+            <div class="x-content-center x-pull-down container cMFnMry" xid="div1" __cid="cMFnMry"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cMFnMry" xid="i2" __cid="cMFnMry"></i>  
+              <span class="x-pull-down-label cMFnMry" xid="span1" __cid="cMFnMry">下拉刷新...</span> 
+            </div>  
+            <div class="x-scroll-content cMFnMry" xid="div2" __cid="cMFnMry"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cMFnMry" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;inventoryData&#34;}" __cid="cMFnMry"> 
+                <ul class="x-list-template hide cMFnMry" xid="listTemplateUl1" __cid="cMFnMry" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+                  <li xid="li1" class="border-Two cMFnMry" __cid="cMFnMry"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two cMFnMry" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMFnMry"> 
+                      <div class="x-col cMFnMry" xid="col1" __cid="cMFnMry"> 
+                        <div component="$model/UI2/system/components/bootstrap/row/row" class="row cMFnMry" xid="row4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cMFnMry"> 
+                          <div class="col col-xs-12 cMFnMry" xid="col7" __cid="cMFnMry"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cMFnMry" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cMFnMry"> 
+                              <label class="x-label font-One cMFnMry" xid="label1" style="width:80px;" __cid="cMFnMry">产品：</label>  
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-One cMFnMry" xid="output1" data-bind="component:{ref:ref(&#34;cp_dpmc&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cMFnMry"></div> 
+                            </div> 
+                          </div>  
+                          <div class="col col-xs-12 cMFnMry" xid="col8" __cid="cMFnMry"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cMFnMry" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cMFnMry"> 
+                              <label class="x-label cMFnMry" xid="label2" style="width:80px;" __cid="cMFnMry">临期类型：</label>  
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cMFnMry" xid="output2" data-bind="component:{ref:ref(&#34;kcqk_lx_title&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cMFnMry"></div> 
+                            </div> 
+                          </div>  
+                          <div class="col col-xs-12 cMFnMry" xid="col9" __cid="cMFnMry"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cMFnMry" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cMFnMry"> 
+                              <label class="x-label cMFnMry" xid="label3" style="width:80px;" __cid="cMFnMry">库存：</label>  
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cMFnMry" xid="output3" data-bind="component:{ref:ref(&#34;kcqk_kcsl_x&#34;),name:'$model/UI2/system/components/justep/output/output'}" data-events="onRender:output3Render" __cid="cMFnMry"></div> 
+                            </div> 
+                          </div>  
+                          <div class="col col-xs-12 cMFnMry" xid="col15" __cid="cMFnMry"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cMFnMry" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cMFnMry"> 
+                              <label class="x-label cMFnMry" xid="label4" style="width:80px;" __cid="cMFnMry">生产日期：</label>  
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cMFnMry" xid="output5" data-bind="component:{ref:ref(&#34;kcqk_scrq&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cMFnMry"></div> 
+                            </div> 
+                          </div>  
+                          <div class="col col-xs-12 cMFnMry" xid="col10" __cid="cMFnMry"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cMFnMry" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cMFnMry"> 
+                              <label class="x-label cMFnMry" xid="label5" style="width:80px;" __cid="cMFnMry">说明：</label>  
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cMFnMry" xid="output6" data-bind="component:{ref:ref(&#34;sm&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cMFnMry"></div> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cMFnMry" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMFnMry"> 
+                      <div class="x-col cMFnMry" xid="col4" __cid="cMFnMry"></div>  
+                      <div class="x-col cMFnMry" xid="col6" style="text-align:right;" __cid="cMFnMry"> 
+                        <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group cMFnMry" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cMFnMry"> 
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cMFnMry" xid="button2" style="color:#000000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&#34;icon&#34;:&#34;linear linear-trash&#34;,&#34;label&#34;:&#34;删除&#34;}" __cid="cMFnMry"> 
+                            <i xid="i3" class="linear linear-trash cMFnMry" __cid="cMFnMry"></i>  
+                            <span xid="span3" __cid="cMFnMry" class="cMFnMry">删除</span> 
+                          </a>  
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cMFnMry" xid="button3" style="color:#000000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&#34;icon&#34;:&#34;linear linear-pencil&#34;,&#34;label&#34;:&#34;修改&#34;}" __cid="cMFnMry"> 
+                            <i xid="i4" class="linear linear-pencil cMFnMry" __cid="cMFnMry"></i>  
+                            <span xid="span5" __cid="cMFnMry" class="cMFnMry">修改</span> 
+                          </a> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up cMFnMry" xid="div3" __cid="cMFnMry"> 
+              <span class="x-pull-up-label cMFnMry" xid="span2" __cid="cMFnMry">加载更多...</span> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-panel-bottom cMFnMry" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMFnMry"></div>  
+        <style __cid="cMFnMry" class="cMFnMry">.x-panel.pcyueAR3-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcyueAR3-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcyueAR3-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcyueAR3-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcyueAR3-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcyueAR3-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcyueAR3-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcyueAR3-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcyueAR3-iosstatusbar >.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div>  
+    <style __cid="cMFnMry" class="cMFnMry">.x-panel.pcARZjme-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcARZjme-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcARZjme-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcARZjme-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcARZjme-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcARZjme-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcARZjme-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcARZjme-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcARZjme-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="wReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:wReceiverReceive" __cid="cMFnMry" class="cMFnMry"></span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="editDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onClose:newDialogClose" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/Visit/dialog/editInventoryCheck.w&#34;}" __cid="cMFnMry" class="cMFnMry">
+    <div class="x-dialog-overlay cMFnMry" __cid="cMFnMry"></div>
+    <div class="x-dialog cMFnMry" style="display:none;" __cid="cMFnMry">
+      <div class="x-dialog-title cMFnMry" __cid="cMFnMry">
+        <button class="close cMFnMry" __cid="cMFnMry">
+          <span __cid="cMFnMry" class="cMFnMry">×</span>
+        </button>
+        <div class="x-dialog-title-text cMFnMry" __cid="cMFnMry"></div>
+      </div>
+      <div class="x-dialog-body cMFnMry" __cid="cMFnMry"></div>
+    </div>
+  </span>
+</div>

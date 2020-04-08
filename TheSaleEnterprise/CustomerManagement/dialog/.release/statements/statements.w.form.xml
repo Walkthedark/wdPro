@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cNVbEV3" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cNVbEV3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cNVbEV3" class="cNVbEV3"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="infoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/CustomerManagement/dialog/statementsList.w&quot;}" __cid="cNVbEV3" class="cNVbEV3">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cNVbEV3" __cid="cNVbEV3"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cNVbEV3" style="display:none;" __cid="cNVbEV3">
+      <xhtml:div class="x-dialog-title cNVbEV3" __cid="cNVbEV3">
+        <xhtml:button class="close cNVbEV3" __cid="cNVbEV3">
+          <xhtml:span __cid="cNVbEV3" class="cNVbEV3">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cNVbEV3" __cid="cNVbEV3"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cNVbEV3" __cid="cNVbEV3"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcmamyAb-iosstatusbar cNVbEV3" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cNVbEV3"> 
+    <div class="x-panel-top cNVbEV3" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cNVbEV3"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cNVbEV3" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;所属经销商对账单&quot;}" __cid="cNVbEV3"> 
+        <div class="x-titlebar-left cNVbEV3" xid="left2" __cid="cNVbEV3"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cNVbEV3" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cNVbEV3"> 
+            <i xid="i1" __cid="cNVbEV3" class="cNVbEV3"/>  
+            <span xid="span4" __cid="cNVbEV3" class="cNVbEV3">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cNVbEV3" xid="title2" __cid="cNVbEV3">所属经销商对账单</div>  
+        <div class="x-titlebar-right  cNVbEV3" xid="right2" __cid="cNVbEV3">
+          <div class="empty cNVbEV3" __cid="cNVbEV3"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-scroll-view cNVbEV3" xid="content6" _xid="C7E1BB556C000001138D1E5D797C1106" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cNVbEV3"> 
+      <div class="x-scroll cNVbEV3" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cNVbEV3"> 
+        <div class="x-content-center x-pull-down container cNVbEV3" xid="div1" __cid="cNVbEV3"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down cNVbEV3" xid="i2" __cid="cNVbEV3"/>  
+          <span class="x-pull-down-label cNVbEV3" xid="span1" __cid="cNVbEV3">下拉刷新...</span> 
+        </div>  
+        <div class="x-scroll-content cNVbEV3" xid="div2" __cid="cNVbEV3"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cNVbEV3" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;CData&quot;}" __cid="cNVbEV3"> 
+            <ul class="x-list-template hide cNVbEV3" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cNVbEV3"> 
+              <li xid="li1" class="border-Two cNVbEV3" bind-click="li1Click" __cid="cNVbEV3"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cNVbEV3" xid="row1" style="margin:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNVbEV3"> 
+                  <div class="x-col cNVbEV3" xid="col1" __cid="cNVbEV3"> 
+                    <div component="$model/UI2/system/components/bootstrap/row/row" class="row cNVbEV3" xid="row2" style="margin:0px;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cNVbEV3"> 
+                      <div class="col col-xs-12 cNVbEV3" xid="col4" __cid="cNVbEV3"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output font-One cNVbEV3" xid="output1" data-bind="component:{ref:ref(&quot;title&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cNVbEV3"/> 
+                      </div>  
+                      <div class="col col-xs-12 cNVbEV3" xid="col5" __cid="cNVbEV3"> 
+                        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cNVbEV3" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cNVbEV3"> 
+                          <label class="x-label font-Three cNVbEV3" xid="label1" __cid="cNVbEV3">编号：</label>  
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-Three cNVbEV3" xid="output2" data-bind="component:{ref:ref(&quot;sn&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cNVbEV3"/> 
+                        </div> 
+                      </div>  
+                      <div class="col col-xs-12 cNVbEV3" xid="col6" __cid="cNVbEV3"> 
+                        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cNVbEV3" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cNVbEV3"> 
+                          <img src="$model/UI2/TheSaleEnterprise/CustomerManagement/dialog/img/dingwei_light.png" alt="" xid="image1" style="width:20px;" __cid="cNVbEV3" class="cNVbEV3"/>  
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cNVbEV3" xid="output3" data-bind="component:{ref:ref(&quot;addr&quot;),name:'$model/UI2/system/components/justep/output/output'}" data-events="onRender:output3Render" __cid="cNVbEV3"/> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="x-content-center x-pull-up cNVbEV3" xid="div3" __cid="cNVbEV3"> 
+          <span class="x-pull-up-label cNVbEV3" xid="span2" __cid="cNVbEV3">加载更多...</span> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cNVbEV3" class="cNVbEV3">.x-panel.pcmamyAb-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcmamyAb-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcmamyAb-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcmamyAb-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmamyAb-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcmamyAb-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmamyAb-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmamyAb-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmamyAb-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

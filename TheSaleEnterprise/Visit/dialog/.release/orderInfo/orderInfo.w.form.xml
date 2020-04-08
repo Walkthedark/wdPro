@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cZriiam" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cZriiam" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cZriiam" class="cZriiam"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="newDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Visit/dialog/newOrder.w&quot;}" __cid="cZriiam" class="cZriiam">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cZriiam" __cid="cZriiam"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cZriiam" style="display:none;" __cid="cZriiam">
+      <xhtml:div class="x-dialog-title cZriiam" __cid="cZriiam">
+        <xhtml:button class="close cZriiam" __cid="cZriiam">
+          <xhtml:span __cid="cZriiam" class="cZriiam">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cZriiam" __cid="cZriiam"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cZriiam" __cid="cZriiam"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="infoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" __cid="cZriiam" class="cZriiam">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cZriiam" __cid="cZriiam"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cZriiam" style="display:none;" __cid="cZriiam">
+      <xhtml:div class="x-dialog-title cZriiam" __cid="cZriiam">
+        <xhtml:button class="close cZriiam" __cid="cZriiam">
+          <xhtml:span __cid="cZriiam" class="cZriiam">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cZriiam" __cid="cZriiam"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cZriiam" __cid="cZriiam"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pczYruYr-iosstatusbar cZriiam" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cZriiam"> 
+    <div class="x-panel-top cZriiam" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cZriiam"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cZriiam" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;订单详情&quot;}" __cid="cZriiam"> 
+        <div class="x-titlebar-left cZriiam" xid="left2" __cid="cZriiam"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cZriiam" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cZriiam"> 
+            <i xid="i1" __cid="cZriiam" class="cZriiam"/>  
+            <span xid="span4" __cid="cZriiam" class="cZriiam">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cZriiam" xid="title2" __cid="cZriiam">订单详情</div>  
+        <div class="x-titlebar-right  cZriiam" xid="right2" __cid="cZriiam">
+          <div class="empty cZriiam" __cid="cZriiam"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cZriiam" xid="content6" style="background-color:#f0f0f0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cZriiam"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cZriiam" xid="row1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cZriiam"> 
+        <div class="x-col cZriiam" xid="col1" __cid="cZriiam"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cZriiam" xid="row2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cZriiam"> 
+            <div class="col col-xs-12 cZriiam" xid="col4" __cid="cZriiam"> 
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output font-One cZriiam" xid="output1" style="float:left;" data-bind="component:{ref:$model.orderData.ref(&quot;jxs&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cZriiam"/>  
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output font-One cZriiam" xid="output2" style="float:left;" data-bind="component:{ref:&quot;(&quot;+$model.orderData.val(&quot;jsn&quot;)+&quot;)&quot;,name:'$model/UI2/system/components/justep/output/output'}" __cid="cZriiam"/> 
+            </div>  
+            <div class="col col-xs-12 cZriiam" xid="col5" __cid="cZriiam"> 
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output font-One cZriiam" xid="output3" data-bind="component:{ref:$model.orderData.ref(&quot;shdz&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cZriiam"/> 
+            </div>  
+            <div class="col col-xs-12 cZriiam" xid="col6" __cid="cZriiam"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZriiam" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZriiam"> 
+                <label class="x-label font-One cZriiam" xid="label2" style="width:80px;" __cid="cZriiam">联系人：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-One cZriiam" xid="output4" data-bind="component:{ref:$model.orderData.ref(&quot;shr&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cZriiam"/>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-One cZriiam" xid="output7" data-bind="component:{ref:$model.orderData.ref(&quot;dh&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cZriiam"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cZriiam" xid="col7" __cid="cZriiam"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZriiam" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZriiam"> 
+                <label class="x-label cZriiam" xid="label1" style="width:80px;" __cid="cZriiam">订单日期：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cZriiam" xid="output6" data-bind="component:{ref:$model.orderData.ref(&quot;sqrq&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cZriiam"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cZriiam" xid="col8" __cid="cZriiam"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZriiam" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZriiam"> 
+                <label class="x-label cZriiam" xid="label3" style="width:80px;" __cid="cZriiam">订单编号：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cZriiam" xid="output8" data-bind="component:{ref:$model.orderData.ref(&quot;sn&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cZriiam"/>  
+                <img src="$model/UI2/TheSaleEnterprise/Visit/dialog/img/dingdanjine.png" alt="" xid="image1" style="width:20px;margin-left:-10px;" __cid="cZriiam" class="cZriiam"/>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output font-Two cZriiam" xid="output11" style="margin-top:-10px;margin-left:5px;" data-bind="component:{ref:$model.orderData.ref(&quot;yszje&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cZriiam"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cZriiam" xid="col9" __cid="cZriiam"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZriiam" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZriiam"> 
+                <label class="x-label cZriiam" xid="label4" style="width:80px;" __cid="cZriiam">处理状态：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cZriiam" xid="output9" data-bind="component:{ref:$model.orderData.ref(&quot;status&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cZriiam"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12  border-Two cZriiam" xid="col10" __cid="cZriiam"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZriiam" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZriiam"> 
+                <label class="x-label font-One cZriiam" xid="label5" style="width:80px;" __cid="cZriiam">备注：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cZriiam" xid="output10" data-bind="component:{ref:$model.orderData.ref(&quot;bz&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cZriiam"/> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two mar2 cZriiam" xid="row5" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cZriiam"> 
+        <div class="x-col cZriiam" xid="col19" __cid="cZriiam"> 
+          <label xid="label11" style="color:#8FC41C;" __cid="cZriiam" class="cZriiam">订单明细</label> 
+        </div>  
+        <div class="x-col cZriiam" xid="col20" __cid="cZriiam"/>  
+        <div class="x-col cZriiam" xid="col21" __cid="cZriiam"/> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cZriiam" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;infoData&quot;}" __cid="cZriiam"> 
+        <ul class="x-list-template hide cZriiam" xid="listTemplateUl2" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="cZriiam"> 
+          <li xid="li2" style="background-color:white;" __cid="cZriiam" class="cZriiam"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cZriiam" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cZriiam"> 
+              <div class="x-col cZriiam" xid="col17" __cid="cZriiam"> 
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row cZriiam" xid="row4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cZriiam"> 
+                  <div class="col col-xs-12 cZriiam" xid="col15" __cid="cZriiam"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZriiam" xid="labelEdit11" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZriiam"> 
+                      <label class="x-label cZriiam" xid="label12" style="width:80px;" __cid="cZriiam">产品：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cZriiam" xid="output22" data-bind="component:{ref:ref(&quot;pro_name&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cZriiam"/> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 cZriiam" xid="col16" __cid="cZriiam"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZriiam" xid="labelEdit12" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZriiam"> 
+                      <label class="x-label cZriiam" xid="label13" style="width:80px;" __cid="cZriiam">供货价：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cZriiam" xid="output23" data-bind="component:{ref:ref(&quot;ghj&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cZriiam"/> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 cZriiam" xid="col13" __cid="cZriiam"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZriiam" xid="labelEdit13" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZriiam"> 
+                      <label class="x-label cZriiam" xid="label14" style="width:80px;" __cid="cZriiam">订单数量：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cZriiam" xid="output24" data-bind="component:{ref:ref(&quot;xiang&quot;),name:'$model/UI2/system/components/justep/output/output'}" data-events="onRender:output24Render" __cid="cZriiam"/> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 cZriiam" xid="col14" __cid="cZriiam"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZriiam" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZriiam"> 
+                      <label class="x-label cZriiam" xid="label8" style="width:80px;" __cid="cZriiam">优惠描述：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cZriiam" xid="output18" data-bind="component:{ref:ref(&quot;yhms&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cZriiam"/> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 cZriiam" xid="col12" __cid="cZriiam"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZriiam" xid="labelEdit10" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZriiam"> 
+                      <label class="x-label cZriiam" xid="label6" style="width:80px;" __cid="cZriiam">处理状态：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cZriiam" xid="output19" data-bind="component:{ref:ref(&quot;status&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cZriiam"/> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 border-Two cZriiam" xid="col18" __cid="cZriiam"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZriiam" xid="labelEdit9" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZriiam"> 
+                      <label class="x-label cZriiam" xid="label7" style="width:80px;" __cid="cZriiam">备注：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cZriiam" xid="output20" data-bind="component:{ref:ref(&quot;bz&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cZriiam"/> 
+                    </div> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </li> 
+        </ul> 
+      </div> 
+    </div>  
+    <style __cid="cZriiam" class="cZriiam">.x-panel.pczYruYr-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pczYruYr-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pczYruYr-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pczYruYr-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pczYruYr-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pczYruYr-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pczYruYr-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pczYruYr-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pczYruYr-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiver1Receive" __cid="cZriiam" class="cZriiam"/> 
+</div>

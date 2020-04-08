@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cnuENNr" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cnuENNr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <style>.btn2.cnuENNr.cnuENNr{display: inline-block; margin-bottom: 0; font-weight: normal; text-align: center; vertical-align: middle; touch-action: manipulation; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; padding: 8px 6px; font-size: 6px; line-height: 1; border-radius: 4px; -moz-user-select: none; -ms-user-select: none; user-select: none}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cnuENNr" class="cnuENNr"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="infoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/Shoppers/dialog/shoppersSalesCheck.w&#34;}" __cid="cnuENNr" class="cnuENNr">
+    <div class="x-dialog-overlay cnuENNr" __cid="cnuENNr"></div>
+    <div class="x-dialog cnuENNr" style="display:none;" __cid="cnuENNr">
+      <div class="x-dialog-title cnuENNr" __cid="cnuENNr">
+        <button class="close cnuENNr" __cid="cnuENNr">
+          <span __cid="cnuENNr" class="cnuENNr">×</span>
+        </button>
+        <div class="x-dialog-title-text cnuENNr" __cid="cnuENNr"></div>
+      </div>
+      <div class="x-dialog-body cnuENNr" __cid="cnuENNr"></div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="newDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/Commonly/dialog/salesOrderNew.w&#34;}" __cid="cnuENNr" class="cnuENNr">
+    <div class="x-dialog-overlay cnuENNr" __cid="cnuENNr"></div>
+    <div class="x-dialog cnuENNr" style="display:none;" __cid="cnuENNr">
+      <div class="x-dialog-title cnuENNr" __cid="cnuENNr">
+        <button class="close cnuENNr" __cid="cnuENNr">
+          <span __cid="cnuENNr" class="cnuENNr">×</span>
+        </button>
+        <div class="x-dialog-title-text cnuENNr" __cid="cnuENNr"></div>
+      </div>
+      <div class="x-dialog-body cnuENNr" __cid="cnuENNr"></div>
+    </div>
+  </span>
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcJJJb63-iosstatusbar cnuENNr" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cnuENNr"> 
+    <div class="x-panel-top cnuENNr" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnuENNr"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cnuENNr" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;导购销量确认&#34;}" __cid="cnuENNr"> 
+        <div class="x-titlebar-left cnuENNr" xid="left2" __cid="cnuENNr"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cnuENNr" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;返回&#34;}" __cid="cnuENNr"> 
+            <i xid="i1" __cid="cnuENNr" class="cnuENNr"></i>  
+            <span xid="span4" __cid="cnuENNr" class="cnuENNr">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cnuENNr" xid="title2" __cid="cnuENNr">导购销量确认</div>  
+        <div class="x-titlebar-right  cnuENNr" xid="right2" __cid="cnuENNr">
+          <div class="empty cnuENNr" __cid="cnuENNr"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cnuENNr" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnuENNr"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcjuyaM3-iosstatusbar cnuENNr" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cnuENNr"> 
+        <div class="x-panel-top cnuENNr" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnuENNr"> 
+          <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified x-card cnuENNr" xid="buttonGroup1" style="background-color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cnuENNr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link active cnuENNr" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;待确认&#34;,&#34;target&#34;:&#34;content4&#34;}" __cid="cnuENNr"> 
+              <i xid="i2" __cid="cnuENNr" class="cnuENNr"></i>  
+              <span xid="span1" __cid="cnuENNr" class="cnuENNr">待确认</span>
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cnuENNr" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;已确认&#34;,&#34;target&#34;:&#34;content5&#34;}" __cid="cnuENNr"> 
+              <i xid="i3" __cid="cnuENNr" class="cnuENNr"></i>  
+              <span xid="span2" __cid="cnuENNr" class="cnuENNr">已确认</span>
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cnuENNr" xid="button14" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;未汇报&#34;,&#34;target&#34;:&#34;content7&#34;}" __cid="cnuENNr"> 
+              <i xid="i16" __cid="cnuENNr" class="cnuENNr"></i>  
+              <span xid="span24" __cid="cnuENNr" class="cnuENNr">未汇报</span>
+            </a> 
+          </div>
+        </div>  
+        <div class="x-panel-content cnuENNr" xid="content3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnuENNr"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cnuENNr" xid="contents2" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;active&#34;:0,&#34;swipe&#34;:false}" __cid="cnuENNr"> 
+            <div class="x-contents-content active cnuENNr" xid="content4" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cnuENNr"> 
+              <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcb2URzu-iosstatusbar cnuENNr" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cnuENNr"> 
+                <div class="x-panel-content x-scroll-view cnuENNr" xid="content1" _xid="C7DF23A047C000015332AA703E904750" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnuENNr"> 
+                  <div class="x-scroll cnuENNr" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cnuENNr"> 
+                    <div class="x-content-center x-pull-down container cnuENNr" xid="div6" __cid="cnuENNr"> 
+                      <i class="x-pull-down-img glyphicon x-icon-pull-down cnuENNr" xid="i12" __cid="cnuENNr"></i>  
+                      <span class="x-pull-down-label cnuENNr" xid="span8" __cid="cnuENNr">下拉刷新...</span> 
+                    </div>  
+                    <div class="x-scroll-content cnuENNr" xid="div5" __cid="cnuENNr"> 
+                      <div component="$model/UI2/system/components/justep/list/list" class="x-list cnuENNr" xid="list2" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;checkData&#34;}" __cid="cnuENNr"> 
+                        <ul class="x-list-template hide cnuENNr" xid="listTemplateUl2" __cid="cnuENNr" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}"> 
+                          <li xid="li2" class="border-Two cnuENNr" __cid="cnuENNr"> 
+                            <div component="$model/UI2/system/components/bootstrap/row/row" class="row row-padding cnuENNr" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cnuENNr"> 
+                              <div class="col col-xs-12 cnuENNr" xid="col2" style="font-weight:bold;" __cid="cnuENNr"> 
+                                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-One cnuENNr" xid="output13" data-bind="component:{ref:ref(&#34;col1&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cnuENNr"></div>
+                              </div>  
+                              <div class="col col-xs-12 cnuENNr" xid="col1" style="font-weight:bold;" __cid="cnuENNr"> 
+                                <div component="$model/UI2/system/components/justep/row/row" class="x-row cnuENNr" xid="row3" style="text-align:center;padding:0px;background-color:#3EA0FF;color:#ffffff;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cnuENNr"> 
+                                  <div class="x-col border-table cnuENNr" xid="col3" __cid="cnuENNr">
+                                    <span xid="span3" __cid="cnuENNr" class="cnuENNr">导购姓名</span>
+                                  </div>  
+                                  <div class="x-col border-table cnuENNr" xid="col4" __cid="cnuENNr">
+                                    <span xid="span5" __cid="cnuENNr" class="cnuENNr">网点名称</span>
+                                  </div>  
+                                  <div class="x-col border-table cnuENNr" xid="col5" __cid="cnuENNr">
+                                    <span xid="span6" __cid="cnuENNr" class="cnuENNr">网点日均销量（元）</span>
+                                  </div>  
+                                  <div class="x-col border-table cnuENNr" xid="col6" __cid="cnuENNr">
+                                    <span xid="span7" __cid="cnuENNr" class="cnuENNr">当日汇报销量（元）</span>
+                                  </div>  
+                                  <div class="x-col border-table cnuENNr" xid="col7" __cid="cnuENNr">
+                                    <span xid="span9" __cid="cnuENNr" class="cnuENNr">手机号</span>
+                                  </div>
+                                </div>
+                              </div>  
+                              <div class="col col-xs-12 cnuENNr" xid="col29" style="font-weight:bold;" __cid="cnuENNr"> 
+                                <div component="$model/UI2/system/components/justep/row/row" class="x-row cnuENNr" xid="row5" style="text-align:center;padding:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cnuENNr"> 
+                                  <div class="x-col border-table cnuENNr" xid="col28" __cid="cnuENNr"> 
+                                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cnuENNr" xid="output2" data-bind="component:{ref:ref(&#34;col2&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cnuENNr"></div>
+                                  </div>  
+                                  <div class="x-col border-table cnuENNr" xid="col12" __cid="cnuENNr">
+                                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cnuENNr" xid="output3" data-bind="component:{ref:ref(&#34;col3&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cnuENNr"></div>
+                                  </div>
+                                  <div class="x-col border-table cnuENNr" xid="col13" __cid="cnuENNr"> 
+                                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cnuENNr" xid="output4" data-bind="component:{ref:ref(&#34;col4&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cnuENNr"></div>
+                                  </div>  
+                                  <div class="x-col border-table cnuENNr" xid="col8" __cid="cnuENNr"> 
+                                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cnuENNr" xid="output5" data-bind="component:{ref:ref(&#34;col5&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cnuENNr"></div>  
+                                    <a component="$model/UI2/system/components/justep/button/button" class="btn2 btn-default7 cnuENNr" xid="button4" style="width:60px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&#34;label&#34;:&#34;点击确认&#34;}" __cid="cnuENNr"> 
+                                      <i xid="i4" __cid="cnuENNr" class="cnuENNr"></i>  
+                                      <span xid="span15" style="margin-top:-4px;display:block;" __cid="cnuENNr" class="cnuENNr">点击确认</span>
+                                    </a>
+                                  </div>  
+                                  <div class="x-col border-table cnuENNr" xid="col11" __cid="cnuENNr"> 
+                                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cnuENNr" xid="output6" style="word-break:break-all;" data-bind="component:{ref:ref(&#34;col6&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cnuENNr"></div>
+                                  </div> 
+                                </div> 
+                              </div>
+                            </div> 
+                          </li> 
+                        </ul> 
+                      </div> 
+                    </div>  
+                    <div class="x-content-center x-pull-up cnuENNr" xid="div4" __cid="cnuENNr"> 
+                      <span class="x-pull-up-label cnuENNr" xid="span17" __cid="cnuENNr">加载更多...</span> 
+                    </div> 
+                  </div> 
+                </div>  
+                <style __cid="cnuENNr" class="cnuENNr">.x-panel.pcb2URzu-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcb2URzu-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcb2URzu-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcb2URzu-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcb2URzu-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcb2URzu-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcb2URzu-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcb2URzu-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcb2URzu-iosstatusbar >.x-panel-content {top: 0px;}</style>
+              </div> 
+            </div>  
+            <div class="x-contents-content  x-content-on-remoting-sibling cnuENNr" xid="content5" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cnuENNr"> 
+              <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcB7vMRf-iosstatusbar cnuENNr" xid="panel4" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cnuENNr"> 
+                <div class="x-panel-content x-scroll-view cnuENNr" xid="content2" _xid="C7DF23A047C000015332AA703E904750" style="top: 0px; bottom: 0px; background-size: cover; background-image: url(http://localhost:45635/x5/UI2/v_/TheSaleEnterprise/Shoppers/dialog/none);" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnuENNr"> 
+                  <div class="x-scroll cnuENNr" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cnuENNr"> 
+                    <div class="x-content-center x-pull-down container cnuENNr" xid="div1" __cid="cnuENNr"> 
+                      <i class="x-pull-down-img glyphicon x-icon-pull-down cnuENNr" xid="i5" __cid="cnuENNr"></i>  
+                      <span class="x-pull-down-label cnuENNr" xid="span22" __cid="cnuENNr">下拉刷新...</span>
+                    </div>  
+                    <div class="x-scroll-content cnuENNr" xid="div2" __cid="cnuENNr"> 
+                      <div component="$model/UI2/system/components/justep/list/list" class="x-list cnuENNr" xid="list1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;checkData&#34;}" __cid="cnuENNr"> 
+                        <ul class="x-list-template hide cnuENNr" xid="listTemplateUl1" __cid="cnuENNr" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+                          <li xid="li1" class="border-Two cnuENNr" __cid="cnuENNr" data-bind="event:{click:$model._callModelFn.bind($model, 'li2Click')}"> 
+                            <div component="$model/UI2/system/components/bootstrap/row/row" class="row row-padding cnuENNr" xid="row6" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cnuENNr"> 
+                              <div class="col col-xs-12 cnuENNr" xid="col38" style="font-weight:bold;" __cid="cnuENNr"> 
+                                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-One cnuENNr" xid="output12" data-bind="component:{ref:ref(&#34;col1&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cnuENNr"></div>
+                              </div>  
+                              <div class="col col-xs-12 cnuENNr" xid="col40" style="font-weight:bold;" __cid="cnuENNr"> 
+                                <div component="$model/UI2/system/components/justep/row/row" class="x-row cnuENNr" xid="row7" style="text-align:center;padding:0px;background-color:#3EA0FF;color:#ffffff;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cnuENNr"> 
+                                  <div class="x-col border-table cnuENNr" xid="col39" __cid="cnuENNr"> 
+                                    <span xid="span16" __cid="cnuENNr" class="cnuENNr">导购姓名</span>
+                                  </div>  
+                                  <div class="x-col border-table cnuENNr" xid="col36" __cid="cnuENNr"> 
+                                    <span xid="span18" __cid="cnuENNr" class="cnuENNr">网点名称</span>
+                                  </div>  
+                                  <div class="x-col border-table cnuENNr" xid="col37" __cid="cnuENNr"> 
+                                    <span xid="span19" __cid="cnuENNr" class="cnuENNr">网点日均销量（元）</span>
+                                  </div>  
+                                  <div class="x-col border-table cnuENNr" xid="col34" __cid="cnuENNr"> 
+                                    <span xid="span20" __cid="cnuENNr" class="cnuENNr">当日汇报销量（元）</span>
+                                  </div>  
+                                  <div class="x-col border-table cnuENNr" xid="col35" __cid="cnuENNr"> 
+                                    <span xid="span23" __cid="cnuENNr" class="cnuENNr">手机号</span>
+                                  </div> 
+                                </div> 
+                              </div>  
+                              <div class="col col-xs-12 cnuENNr" xid="col41" style="font-weight:bold;" __cid="cnuENNr"> 
+                                <div component="$model/UI2/system/components/justep/row/row" class="x-row cnuENNr" xid="row8" style="text-align:center;padding:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cnuENNr"> 
+                                  <div class="x-col border-table cnuENNr" xid="col42" __cid="cnuENNr"> 
+                                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cnuENNr" xid="output9" data-bind="component:{ref:ref(&#34;col2&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cnuENNr"></div>
+                                  </div>  
+                                  <div class="x-col border-table cnuENNr" xid="col31" __cid="cnuENNr"> 
+                                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cnuENNr" xid="output7" data-bind="component:{ref:ref(&#34;col3&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cnuENNr"></div>
+                                  </div>  
+                                  <div class="x-col border-table cnuENNr" xid="col30" __cid="cnuENNr"> 
+                                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cnuENNr" xid="output8" data-bind="component:{ref:ref(&#34;col4&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cnuENNr"></div>
+                                  </div>  
+                                  <div class="x-col border-table cnuENNr" xid="col33" __cid="cnuENNr"> 
+                                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cnuENNr" xid="output10" data-bind="component:{ref:ref(&#34;col5&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cnuENNr"></div> 
+                                  </div>  
+                                  <div class="x-col border-table cnuENNr" xid="col32" __cid="cnuENNr"> 
+                                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cnuENNr" xid="output11" style="word-break:break-all;" data-bind="component:{ref:ref(&#34;col6&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cnuENNr"></div>
+                                  </div> 
+                                </div> 
+                              </div> 
+                            </div> 
+                          </li> 
+                        </ul> 
+                      </div> 
+                    </div>  
+                    <div class="x-content-center x-pull-up cnuENNr" xid="div3" __cid="cnuENNr"> 
+                      <span class="x-pull-up-label cnuENNr" xid="span21" __cid="cnuENNr">加载更多...</span>
+                    </div> 
+                  </div> 
+                </div>  
+                <style __cid="cnuENNr" class="cnuENNr">.x-panel.pcB7vMRf-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcB7vMRf-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcB7vMRf-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcB7vMRf-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcB7vMRf-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcB7vMRf-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcB7vMRf-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcB7vMRf-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcB7vMRf-iosstatusbar >.x-panel-content {top: 0px;}</style>
+              </div>
+            </div>  
+            <div class="x-contents-content cnuENNr" xid="content7" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cnuENNr">
+              <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc6FbMvq-iosstatusbar cnuENNr" xid="panel5" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cnuENNr"> 
+                <div class="x-panel-content x-scroll-view cnuENNr" xid="content8" _xid="C7DF23A047C000015332AA703E904750" style="top: 0px; bottom: 0px; background-size: cover; background-image: url(http://localhost:45635/x5/UI2/v_/TheSaleEnterprise/Shoppers/dialog/none);" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnuENNr"> 
+                  <div class="x-scroll cnuENNr" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView3" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cnuENNr"> 
+                    <div class="x-content-center x-pull-down container cnuENNr" xid="div7" __cid="cnuENNr"> 
+                      <i class="x-pull-down-img glyphicon x-icon-pull-down cnuENNr" xid="i7" __cid="cnuENNr"></i>  
+                      <span class="x-pull-down-label cnuENNr" xid="span31" __cid="cnuENNr">下拉刷新...</span>
+                    </div>  
+                    <div class="x-scroll-content cnuENNr" xid="div8" __cid="cnuENNr"> 
+                      <div component="$model/UI2/system/components/justep/list/list" class="x-list cnuENNr" xid="list3" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;noData&#34;}" __cid="cnuENNr"> 
+                        <ul class="x-list-template hide cnuENNr" xid="listTemplateUl3" __cid="cnuENNr" data-bind="foreach:{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)}"> 
+                          <li xid="li3" class="border-Two cnuENNr" __cid="cnuENNr" data-bind="event:{click:$model._callModelFn.bind($model, 'li2Click')}"> 
+                            <div component="$model/UI2/system/components/bootstrap/row/row" class="row row-padding cnuENNr" xid="row9" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cnuENNr"> 
+                              <div class="col col-xs-12 cnuENNr" xid="col51" style="font-weight:bold;" __cid="cnuENNr"> 
+                                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-One cnuENNr" xid="output19" style="float:left;" data-bind="component:{ref:ref(&#34;col1&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cnuENNr"></div>
+                              </div>  
+                              <div class="col col-xs-12 cnuENNr" xid="col53" style="font-weight:bold;" __cid="cnuENNr"> 
+                                <div component="$model/UI2/system/components/justep/row/row" class="x-row cnuENNr" xid="row10" style="text-align:center;padding:0px;background-color:#3EA0FF;color:#ffffff;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cnuENNr"> 
+                                  <div class="x-col border-table cnuENNr" xid="col52" __cid="cnuENNr"> 
+                                    <span xid="span26" __cid="cnuENNr" class="cnuENNr">导购姓名</span>
+                                  </div>  
+                                  <div class="x-col border-table cnuENNr" xid="col49" __cid="cnuENNr"> 
+                                    <span xid="span27" __cid="cnuENNr" class="cnuENNr">网点名称</span>
+                                  </div>  
+                                  <div class="x-col border-table cnuENNr" xid="col47" __cid="cnuENNr"> 
+                                    <span xid="span29" __cid="cnuENNr" class="cnuENNr">班次</span>
+                                  </div>  
+                                  <div class="x-col border-table cnuENNr" xid="col48" __cid="cnuENNr"> 
+                                    <span xid="span32" __cid="cnuENNr" class="cnuENNr">手机号</span>
+                                  </div> 
+                                </div> 
+                              </div>  
+                              <div class="col col-xs-12 cnuENNr" xid="col54" style="font-weight:bold;" __cid="cnuENNr"> 
+                                <div component="$model/UI2/system/components/justep/row/row" class="x-row cnuENNr" xid="row11" style="text-align:center;padding:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cnuENNr"> 
+                                  <div class="x-col border-table cnuENNr" xid="col55" __cid="cnuENNr"> 
+                                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cnuENNr" xid="output16" data-bind="component:{ref:ref(&#34;col2&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cnuENNr"></div>
+                                  </div>  
+                                  <div class="x-col border-table cnuENNr" xid="col44" __cid="cnuENNr"> 
+                                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cnuENNr" xid="output14" data-bind="component:{ref:ref(&#34;col3&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cnuENNr"></div>
+                                  </div>  
+                                  <div class="x-col border-table cnuENNr" xid="col46" __cid="cnuENNr"> 
+                                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cnuENNr" xid="output17" data-bind="component:{ref:ref(&#34;col4&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cnuENNr"></div> 
+                                  </div>  
+                                  <div class="x-col border-table cnuENNr" xid="col45" __cid="cnuENNr"> 
+                                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cnuENNr" xid="output20" style="word-break:break-all;" data-bind="component:{ref:ref(&#34;col5&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cnuENNr"></div>
+                                  </div> 
+                                </div> 
+                              </div> 
+                            </div> 
+                          </li> 
+                        </ul> 
+                      </div> 
+                    </div>  
+                    <div class="x-content-center x-pull-up cnuENNr" xid="div9" __cid="cnuENNr"> 
+                      <span class="x-pull-up-label cnuENNr" xid="span30" __cid="cnuENNr">加载更多...</span>
+                    </div> 
+                  </div> 
+                </div>  
+                <style __cid="cnuENNr" class="cnuENNr">.x-panel.pc6FbMvq-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pc6FbMvq-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pc6FbMvq-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc6FbMvq-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc6FbMvq-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pc6FbMvq-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc6FbMvq-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc6FbMvq-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc6FbMvq-iosstatusbar >.x-panel-content {top: 0px;}</style>
+              </div>
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cnuENNr" class="cnuENNr">.x-panel.pcjuyaM3-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcjuyaM3-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcjuyaM3-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcjuyaM3-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcjuyaM3-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcjuyaM3-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcjuyaM3-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcjuyaM3-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcjuyaM3-iosstatusbar >.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div>  
+    <style __cid="cnuENNr" class="cnuENNr">.x-panel.pcJJJb63-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcJJJb63-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcJJJb63-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcJJJb63-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJJJb63-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcJJJb63-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJJJb63-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJJJb63-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJJJb63-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

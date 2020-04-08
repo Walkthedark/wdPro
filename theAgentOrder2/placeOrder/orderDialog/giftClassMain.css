@@ -1,0 +1,114 @@
+.x-inputText{ background-color:rgba(255, 255, 255, 0.8);}/*搜索框*/
+.form-control-feedback{ height:34px; line-height:34px; }
+.input-bor{border-radius: 30px }
+/*一级分类*/
+.list-group {
+	box-shadow: none;
+}
+.text-black {
+	color: #333;
+}
+
+.tb-nopadding {
+	padding-left: 0;
+	padding-right: 0;
+}
+.*{
+	font-family: “Microsoft YaHei” ! important;
+}
+.H5_span {
+	 display:  -webkit-box;
+	overflow:  hidden;
+	white-space:  normal  !important;
+	text-overflow:  ellipsis;
+	word-wrap:  break-word;
+	-webkit-line-clamp:  auto;
+	-webkit-box-orient:  vertical; 
+	 word-break: break-all;
+	 white-space: normal !important;
+	
+}
+.tb-numberOperation {
+	width: 100%;
+	height: 30px;
+}
+.tb-numberOperation span {
+	padding: 4px 15px;
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+}
+.tb-twoColList ul li {
+	margin-bottom: 15px;
+	padding: 5px;
+	background-color: #fff;
+}
+
+.list-group-item {
+	background-color: #f5f5f5;
+	border-radius: 0;
+	border-color: #e1e1e1;
+}
+
+.list-group-item.current {
+	background-color: #fff;
+	border-right: 0;
+	color: #cf0202;
+	border-right-style:none;
+}
+.btn_radius{
+	border-radius: 30px;
+}
+.class_Div_radius{
+	border-radius: 30px;
+}
+.list-group-item.current h5 {
+	color: #cf0202;
+}
+
+.x-card.btn-group .btn.active {
+	color: #cf0202;
+}
+/*左右模块*/
+.tb-box, .tb-box>.col {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.tb-box>.col {
+	overflow: auto;
+}
+
+.tb-box>.col:first-child {
+	padding-right: 10px;
+}
+
+.cart {
+	border-radius: 30px
+}
+
+.goods-img {
+	border-radius: 5px
+}
+/*底部********************************************************/
+.btn-icon-top span{font-size:12px;}
+.x-panel-bottom { border-top:1px solid #d3d3d3; border-bottom:1px solid #d3d3d3;}
+.x-panel-bottom .btn{ color:#666; padding:3px 0 0 0;}
+.x-panel-bottom .btn:nth-child(2){ border-left:1px solid #dcdcdc; border-right:1px solid #dcdcdc;}
+.tb-shopping .btn{ height:48px; font-size:14px; margin:0; padding:0; border-radius:0; box-shadow:none; border:none; box-sizing:none; background:none; color:#fff;}
+.tb-shopping .btn:first-child{ background-color:#fe9100;}
+.tb-shopping .btn:last-child{ background-color:#fd5001;}
+.tb-colorList .col div.current{ background-color:#ff4400; color:#fff !important;}
+.tb-colorList .col div.current2{ background-color:#efefef; color:#8E8E8E !important;}
+/*颜色选择*/
+.x-popOver .x-popOver-overlay{ background-color:#000;}
+.x-popOver .x-popOver-content{ width:100%; background-color:#fff; bottom:0!important;}
+.tb-colorImg{ position:absolute; top:-20px; left:10px; width:110px; height:120px;}
+.tb-title{ padding:20px 0 0 130px;}
+.tb-close{ font-size:30px;}
+.tb-colorList .col{ padding-left:0; padding-right:10px; margin-bottom:10px;}
+.tb-colorList .col div{ line-height:30px; background-color:#efefef; border-radius:5px;}
+/*三级分类列表*/
+.tb-listBox{ padding-left:0px; padding-right:10px; margin-bottom:10px;}
+.tb-listBox div{ background-color:#fff;}
+.tb-listBox p{ font-size:13px; margin-top:5px;}

@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cB36rEn" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cB36rEn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/grid/grid,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <style>.x-state-default.cB36rEn, .x-grid-widget-content.cB36rEn .x-state-default.cB36rEn, .x-grid-widget-header.cB36rEn .x-state-default.cB36rEn{border: 1px solid rgb(221, 221, 221); background-image: linear-gradient(to bottom, rgb(143, 196, 28) 0%, rgb(143, 196, 28) 100%); background-repeat: repeat-x; color: rgb(255, 255, 255)} th.cB36rEn{text-align: center} .x-grid.cB36rEn tr.x-row-ltr.cB36rEn td.cB36rEn{text-align: left; border-right-width: 1px; border: 1px solid rgb(221, 221, 221)}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cB36rEn" class="cB36rEn"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="depDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:depDialogReceive" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/Commonly/dialog/dialog/department.w&#34;}" __cid="cB36rEn" class="cB36rEn">
+    <div class="x-dialog-overlay cB36rEn" __cid="cB36rEn"></div>
+    <div class="x-dialog cB36rEn" style="display:none;" __cid="cB36rEn">
+      <div class="x-dialog-title cB36rEn" __cid="cB36rEn">
+        <button class="close cB36rEn" __cid="cB36rEn">
+          <span __cid="cB36rEn" class="cB36rEn">×</span>
+        </button>
+        <div class="x-dialog-title-text cB36rEn" __cid="cB36rEn"></div>
+      </div>
+      <div class="x-dialog-body cB36rEn" __cid="cB36rEn"></div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="periodDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:periodDialogReceive" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/Commonly/dialog/dialog/period.w&#34;}" __cid="cB36rEn" class="cB36rEn">
+    <div class="x-dialog-overlay cB36rEn" __cid="cB36rEn"></div>
+    <div class="x-dialog cB36rEn" style="display:none;" __cid="cB36rEn">
+      <div class="x-dialog-title cB36rEn" __cid="cB36rEn">
+        <button class="close cB36rEn" __cid="cB36rEn">
+          <span __cid="cB36rEn" class="cB36rEn">×</span>
+        </button>
+        <div class="x-dialog-title-text cB36rEn" __cid="cB36rEn"></div>
+      </div>
+      <div class="x-dialog-body cB36rEn" __cid="cB36rEn"></div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="infoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:infoDialogReceive" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/Commonly/dialog/dailyCostNewInfo.w&#34;}" __cid="cB36rEn" class="cB36rEn">
+    <div class="x-dialog-overlay cB36rEn" __cid="cB36rEn"></div>
+    <div class="x-dialog cB36rEn" style="display:none;" __cid="cB36rEn">
+      <div class="x-dialog-title cB36rEn" __cid="cB36rEn">
+        <button class="close cB36rEn" __cid="cB36rEn">
+          <span __cid="cB36rEn" class="cB36rEn">×</span>
+        </button>
+        <div class="x-dialog-title-text cB36rEn" __cid="cB36rEn"></div>
+      </div>
+      <div class="x-dialog-body cB36rEn" __cid="cB36rEn"></div>
+    </div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcYB3eMj-iosstatusbar cB36rEn" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cB36rEn"> 
+    <div class="x-panel-top cB36rEn" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cB36rEn"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cB36rEn" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;日常费用报销申请&#34;}" __cid="cB36rEn"> 
+        <div class="x-titlebar-left cB36rEn" xid="left2" __cid="cB36rEn"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cB36rEn" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;返回&#34;}" __cid="cB36rEn"> 
+            <i xid="i1" __cid="cB36rEn" class="cB36rEn"></i>  
+            <span xid="span4" __cid="cB36rEn" class="cB36rEn">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cB36rEn" xid="title2" __cid="cB36rEn">日常费用报销申请</div>  
+        <div class="x-titlebar-right  cB36rEn" xid="right2" __cid="cB36rEn">
+          <div class="empty cB36rEn" __cid="cB36rEn"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cB36rEn" xid="content6" style="background-color:#f0f0f0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cB36rEn"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cB36rEn" xid="row1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cB36rEn"> 
+        <div class="x-col cB36rEn" xid="col17" __cid="cB36rEn"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cB36rEn" xid="row4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cB36rEn"> 
+            <div class="col col-xs-12 cB36rEn" xid="col6" __cid="cB36rEn"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cB36rEn" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cB36rEn"> 
+                <label class="x-label cB36rEn" xid="label6" style="width:125px;" __cid="cB36rEn">报销单主题：</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cB36rEn" xid="input1" data-bind="component:{ref:$model.infoData.ref(&#34;title&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cB36rEn"> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cB36rEn" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cB36rEn"> 
+                <label class="x-label cB36rEn" xid="label5" style="width:125px;" __cid="cB36rEn">报销归入考核期：</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cB36rEn" xid="periodInput" data-bind="component:{ref:$model.infoData.ref(&#34;kaohem&#34;),name:'$model/UI2/system/components/justep/input/input'},event:{click:$model._callModelFn.bind($model, 'input4Click')}" __cid="cB36rEn"> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cB36rEn" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cB36rEn"> 
+                <label class="x-label cB36rEn" xid="label3" style="width:125px;" __cid="cB36rEn">费用计入部门：</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cB36rEn" xid="depInput" data-bind="component:{ref:$model.infoData.ref(&#34;jrbmm&#34;),name:'$model/UI2/system/components/justep/input/input'},event:{click:$model._callModelFn.bind($model, 'depInputClick')}" __cid="cB36rEn"> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cB36rEn" xid="labelEdit8" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cB36rEn"> 
+                <label class="x-label cB36rEn" xid="label8" style="width:125px;" __cid="cB36rEn">支付方式：</label>  
+                <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cB36rEn" xid="select2" data-bind="component:{ref:$model.infoData.ref(&#34;payway&#34;),name:'$model/UI2/system/components/justep/select/select'},options:payTypeList.datas,optionsValue:'id',optionsText:'title',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cB36rEn"></select> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cB36rEn" xid="labelEdit16" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cB36rEn"> 
+                <label class="x-label cB36rEn" xid="label16" style="width:125px;" __cid="cB36rEn">报销事由：</label>  
+                <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit cB36rEn" xid="textarea1" data-bind="component:{ref:$model.infoData.ref(&#34;reason&#34;),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cB36rEn"></textarea> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cB36rEn" xid="row6" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cB36rEn"> 
+        <div class="x-col cB36rEn" xid="col1" __cid="cB36rEn"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cB36rEn" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&#34;label&#34;:&#34;添加明细&#34;}" __cid="cB36rEn"> 
+            <i xid="i3" __cid="cB36rEn" class="cB36rEn"></i>  
+            <span xid="span6" __cid="cB36rEn" class="cB36rEn">添加明细</span> 
+          </a> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cB36rEn" xid="row8" style="margin:0px;padding:0px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cB36rEn"> 
+        <div class="x-col cB36rEn" xid="col10" style="margin:0px;padding:0px;" __cid="cB36rEn"> 
+          <table component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="true" class="x-grid-no-bordered cB36rEn" xid="grid1" data="costData" showRowNumber="false" headerMenu="hideColumn,setColumn,groupColumn,saveLayout" directEdit="false" data-config="{&#34;altRows&#34;:true,&#34;colModel&#34;:[{&#34;align&#34;:&#34;center&#34;,&#34;disableEditorDisplay&#34;:false,&#34;editable&#34;:false,&#34;label&#34;:&#34;费用科目&#34;,&#34;multiRowEditor&#34;:false,&#34;name&#34;:&#34;feim&#34;,&#34;resizable&#34;:false,&#34;width&#34;:&#34;100&#34;,&#34;xid&#34;:&#34;column11&#34;},{&#34;align&#34;:&#34;center&#34;,&#34;editable&#34;:false,&#34;label&#34;:&#34;报销金额(元)&#34;,&#34;name&#34;:&#34;feis&#34;,&#34;resizable&#34;:false,&#34;width&#34;:&#34;100&#34;,&#34;xid&#34;:&#34;column16&#34;},{&#34;align&#34;:&#34;center&#34;,&#34;editable&#34;:false,&#34;label&#34;:&#34;费用说明&#34;,&#34;name&#34;:&#34;remark&#34;,&#34;resizable&#34;:false,&#34;width&#34;:&#34;60&#34;,&#34;xid&#34;:&#34;column15&#34;},{&#34;align&#34;:&#34;center&#34;,&#34;editable&#34;:false,&#34;label&#34;:&#34;操作&#34;,&#34;name&#34;:&#34;handle&#34;,&#34;resizable&#34;:false,&#34;width&#34;:&#34;40&#34;,&#34;xid&#34;:&#34;column14&#34;}],&#34;data&#34;:&#34;costData&#34;,&#34;directEdit&#34;:false,&#34;editors&#34;:&#34;B4148DF3866A479CA719CC98C15CA2C0&#34;,&#34;headerMenu&#34;:&#34;hideColumn,setColumn,groupColumn,saveLayout&#34;,&#34;height&#34;:&#34;auto&#34;,&#34;hiddenCaptionbar&#34;:true,&#34;rownumbers&#34;:false,&#34;width&#34;:&#34;100%&#34;}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" data-events="onCellRender:grid1CellRender" __cid="cB36rEn"></table>  
+          <div xid="B4148DF3866A479CA719CC98C15CA2C0" class="x-grid-editors cB36rEn" __cid="cB36rEn" data-bind="with:comp('grid1').getCellEditorsBindingObject()">
+            <div col="remark" __cid="cB36rEn" class="cB36rEn">
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit-focusin cB36rEn" data-bind="component:{ref:ref('remark'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cB36rEn">
+            </div>
+          </div>
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cB36rEn" xid="row2" style="margin-top:5px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cB36rEn"> 
+        <div class="x-col cB36rEn" xid="col4" __cid="cB36rEn"> 
+          <span xid="span1" __cid="cB36rEn" class="cB36rEn">上传照片（最多录入6张。）</span> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cB36rEn" xid="row3" style="margin-top:5px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cB36rEn"> 
+        <div class="x-col cB36rEn" xid="col5" __cid="cB36rEn"> 
+          <div class="imgline cB36rEn" xid="div74" id="newDailyCostImg" __cid="cB36rEn"> 
+            <div class="lfloat simg plusbtn cB36rEn" xid="div57" id="newDailyCostImg1" __cid="cB36rEn">+
+              <input id="uploadnewDailyCost" type="file" class="upfile cB36rEn" accept="image/*,video/*;" capture="camera" xid="file1" __cid="cB36rEn"> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cB36rEn" xid="row5" style="padding:20px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cB36rEn"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label cB36rEn" xid="button4" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&#34;label&#34;:&#34;提 交&#34;}" __cid="cB36rEn"> 
+          <i xid="i4" __cid="cB36rEn" class="cB36rEn"></i>  
+          <span xid="span5" __cid="cB36rEn" class="cB36rEn">提 交</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cB36rEn" class="cB36rEn">.x-panel.pcYB3eMj-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcYB3eMj-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcYB3eMj-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcYB3eMj-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYB3eMj-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcYB3eMj-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYB3eMj-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYB3eMj-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYB3eMj-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" __cid="cB36rEn" class="cB36rEn"></span>
+</div>

@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cvaimUf" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cvaimUf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cvaimUf" class="cvaimUf"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="newDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onClose:newDialogClose" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/Commonly/dialog/dailyCostNew.w&#34;}" __cid="cvaimUf" class="cvaimUf">
+    <div class="x-dialog-overlay cvaimUf" __cid="cvaimUf"></div>
+    <div class="x-dialog cvaimUf" style="display:none;" __cid="cvaimUf">
+      <div class="x-dialog-title cvaimUf" __cid="cvaimUf">
+        <button class="close cvaimUf" __cid="cvaimUf">
+          <span __cid="cvaimUf" class="cvaimUf">×</span>
+        </button>
+        <div class="x-dialog-title-text cvaimUf" __cid="cvaimUf"></div>
+      </div>
+      <div class="x-dialog-body cvaimUf" __cid="cvaimUf"></div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="infoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/Commonly/dialog/dailyCostInfo.w&#34;}" __cid="cvaimUf" class="cvaimUf">
+    <div class="x-dialog-overlay cvaimUf" __cid="cvaimUf"></div>
+    <div class="x-dialog cvaimUf" style="display:none;" __cid="cvaimUf">
+      <div class="x-dialog-title cvaimUf" __cid="cvaimUf">
+        <button class="close cvaimUf" __cid="cvaimUf">
+          <span __cid="cvaimUf" class="cvaimUf">×</span>
+        </button>
+        <div class="x-dialog-title-text cvaimUf" __cid="cvaimUf"></div>
+      </div>
+      <div class="x-dialog-body cvaimUf" __cid="cvaimUf"></div>
+    </div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcFrAFRv-iosstatusbar cvaimUf" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cvaimUf"> 
+    <div class="x-panel-top cvaimUf" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cvaimUf"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cvaimUf" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;日常费用报销&#34;}" __cid="cvaimUf"> 
+        <div class="x-titlebar-left cvaimUf" xid="left2" __cid="cvaimUf"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cvaimUf" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;返回&#34;}" __cid="cvaimUf"> 
+            <i xid="i1" __cid="cvaimUf" class="cvaimUf"></i>  
+            <span xid="span4" __cid="cvaimUf" class="cvaimUf">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cvaimUf" xid="title2" __cid="cvaimUf">日常费用报销</div>  
+        <div class="x-titlebar-right  cvaimUf" xid="right2" __cid="cvaimUf">
+          <div class="empty cvaimUf" __cid="cvaimUf"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cvaimUf" xid="content6" style="background-color:#f0f0f0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cvaimUf"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pceIRRjy-iosstatusbar cvaimUf" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cvaimUf"> 
+        <div class="x-panel-top cvaimUf" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cvaimUf"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cvaimUf" xid="row3" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cvaimUf"> 
+            <div class="x-col x-col-20 cvaimUf" xid="col11" __cid="cvaimUf"></div>  
+            <div class="x-col cvaimUf" xid="col12" __cid="cvaimUf"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn border-r cvaimUf" xid="button4" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&#34;label&#34;:&#34;填 写&#34;}" __cid="cvaimUf"> 
+                <i xid="i5" __cid="cvaimUf" class="cvaimUf"></i>  
+                <span xid="span6" __cid="cvaimUf" class="cvaimUf">填 写</span> 
+              </a> 
+            </div>  
+            <div class="x-col x-col-20 cvaimUf" xid="col13" __cid="cvaimUf"></div> 
+          </div> 
+        </div>  
+        <div class="x-panel-content x-scroll-view cvaimUf" xid="content1" _xid="C7DF78904F900001988700701AF31363" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cvaimUf"> 
+          <div class="x-scroll cvaimUf" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cvaimUf"> 
+            <div class="x-content-center x-pull-down container cvaimUf" xid="div1" __cid="cvaimUf"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cvaimUf" xid="i2" __cid="cvaimUf"></i>  
+              <span class="x-pull-down-label cvaimUf" xid="span1" __cid="cvaimUf">下拉刷新...</span> 
+            </div>  
+            <div class="x-scroll-content cvaimUf" xid="div2" __cid="cvaimUf"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cvaimUf" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;dailyCostData&#34;}" __cid="cvaimUf"> 
+                <ul class="x-list-template hide cvaimUf" xid="listTemplateUl1" __cid="cvaimUf" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+                  <li xid="li1" class="mar2 cvaimUf" __cid="cvaimUf" data-bind="event:{click:$model._callModelFn.bind($model, 'li1Click')}"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cvaimUf" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cvaimUf"> 
+                      <div class="x-col cvaimUf" xid="col1" __cid="cvaimUf"> 
+                        <div component="$model/UI2/system/components/bootstrap/row/row" class="row cvaimUf" xid="row4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cvaimUf"> 
+                          <div class="col col-xs-12 cvaimUf" xid="col7" __cid="cvaimUf"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cvaimUf" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cvaimUf"> 
+                              <label class="x-label font-One cvaimUf" xid="label1" __cid="cvaimUf"></label>  
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-One cvaimUf" xid="output1" data-bind="component:{ref:ref(&#34;title&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cvaimUf"></div> 
+                            </div> 
+                          </div>  
+                          <div class="col col-xs-6 border-Two font-style cvaimUf" xid="col8" style="height:30px;" __cid="cvaimUf"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cvaimUf" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cvaimUf"> 
+                              <label class="x-label cvaimUf" xid="label2" __cid="cvaimUf"></label>  
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit  font-style cvaimUf" xid="output2" data-bind="component:{ref:ref(&#34;no&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cvaimUf"></div> 
+                            </div> 
+                          </div>  
+                          <div class="col col-xs-6 border-Two font-style cvaimUf" xid="col9" style="text-align:right;height:30px;" __cid="cvaimUf"> 
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit  font-style cvaimUf" xid="output3" style="float:right;margin-top:-8px;" data-bind="component:{ref:ref(&#34;pizhunjin&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cvaimUf"></div>  
+                            <label class="x-label cvaimUf" xid="label3" style="float:right;" __cid="cvaimUf">总额：</label> 
+                          </div>  
+                          <div class="col col-xs-6 cvaimUf" xid="col15" __cid="cvaimUf"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cvaimUf" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cvaimUf"> 
+                              <label class="x-label cvaimUf" xid="label4" __cid="cvaimUf"></label>  
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cvaimUf" xid="output5" data-bind="component:{ref:ref(&#34;statetype&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cvaimUf"></div> 
+                            </div> 
+                          </div>  
+                          <div class="col col-xs-6 cvaimUf" xid="col10" style="text-align:right;" __cid="cvaimUf"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cvaimUf" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cvaimUf"> 
+                              <label class="x-label cvaimUf" xid="label5" __cid="cvaimUf"></label>  
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cvaimUf" xid="output6" data-bind="component:{ref:ref(&#34;ctime&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cvaimUf"></div> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up cvaimUf" xid="div3" __cid="cvaimUf"> 
+              <span class="x-pull-up-label cvaimUf" xid="span2" __cid="cvaimUf">加载更多...</span> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-panel-bottom cvaimUf" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cvaimUf"></div>  
+        <style __cid="cvaimUf" class="cvaimUf">.x-panel.pceIRRjy-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pceIRRjy-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pceIRRjy-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pceIRRjy-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceIRRjy-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pceIRRjy-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceIRRjy-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceIRRjy-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceIRRjy-iosstatusbar >.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div>  
+    <style __cid="cvaimUf" class="cvaimUf">.x-panel.pcFrAFRv-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcFrAFRv-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcFrAFRv-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcFrAFRv-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcFrAFRv-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcFrAFRv-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcFrAFRv-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcFrAFRv-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcFrAFRv-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="wReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:wReceiverReceive" __cid="cvaimUf" class="cvaimUf"></span> 
+</div>

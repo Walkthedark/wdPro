@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cB7juym" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cB7juym" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cB7juym" class="cB7juym"/>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cB7juym" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cB7juym"> 
+    <div class="x-contents-content active cB7juym" xid="content1" style="background-color:#EBEAF0;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cB7juym"> 
+      <div xid="div3" class="list-group-item cB7juym" style=";padding:5px 5px 5px 5px;background-color:transparent;" __cid="cB7juym">
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs cB7juym" xid="button1" style="color:#6F6F6F;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" __cid="cB7juym"> 
+          <i xid="i1" __cid="cB7juym" class="cB7juym"/>  
+          <span xid="span1" __cid="cB7juym" class="cB7juym">共有</span>
+          <span xid="span2" bind-text=" $model.imageData.getCount()" __cid="cB7juym" class="cB7juym"/>
+          <span xid="span3" __cid="cB7juym" class="cB7juym">张图片</span>
+        </a> 
+      </div>
+      <div xid="div2" style="padding:5px 5px 5px 5px;background-color:white;" __cid="cB7juym" class="cB7juym">
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cB7juym" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;imageData&quot;}" __cid="cB7juym"> 
+          <ul class="x-list-template hide cB7juym" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cB7juym"> 
+            <li xid="li1" class="col col-xs-4 text-center tb-listBox text-black cB7juym" __cid="cB7juym">
+              <div xid="div1" __cid="cB7juym" class="cB7juym">
+                <img src=" " alt="" xid="image1" style="width:100px;height:100px;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#E3E3E3 #E3E3E3 #E3E3E3 #E3E3E3;" bind-attr-src=" val(&quot;img_url&quot;)" __cid="cB7juym" class="cB7juym"/>
+              </div>
+            </li>
+          </ul> 
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>

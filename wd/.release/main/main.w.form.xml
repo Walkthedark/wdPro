@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cBj6Jj2" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cBj6Jj2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/bootstrap/inputGroup/inputGroup,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cBj6Jj2" class="cBj6Jj2"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc3Ivm2e-iosstatusbar cBj6Jj2" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBj6Jj2"> 
+    <div class="x-panel-top cBj6Jj2" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBj6Jj2">
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cBj6Jj2" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;设置服务器信息&quot;}" __cid="cBj6Jj2"> 
+        <div class="x-titlebar-left cBj6Jj2" xid="left1" __cid="cBj6Jj2"/>  
+        <div class="x-titlebar-title cBj6Jj2" xid="title1" __cid="cBj6Jj2">设置服务器信息</div>  
+        <div class="x-titlebar-right  cBj6Jj2" xid="right1" __cid="cBj6Jj2">
+          <div class="empty cBj6Jj2" __cid="cBj6Jj2"/>
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-content cBj6Jj2" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBj6Jj2"> 
+      <ul xid="ul2" style="margin-top:5%;" __cid="cBj6Jj2" class="cBj6Jj2"> 
+        <li class="list-group-item cBj6Jj2" xid="li1" __cid="cBj6Jj2"> 
+          <div class="input-group cBj6Jj2" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cBj6Jj2"> 
+            <span class="input-group-addon cBj6Jj2" xid="span4" __cid="cBj6Jj2">服务器地址</span>  
+            <input type="text" class="form-control cBj6Jj2" component="$model/UI2/system/components/justep/input/input" xid="nameInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入连接地址&quot;}" __cid="cBj6Jj2"/>
+          </div> 
+        </li>  
+        <li class="list-group-item cBj6Jj2" xid="li1" __cid="cBj6Jj2"> 
+          <div class="input-group cBj6Jj2" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cBj6Jj2"> 
+            <span class="input-group-addon cBj6Jj2" xid="span5" __cid="cBj6Jj2">服务器名称</span>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cBj6Jj2" xid="servernameInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cBj6Jj2"/>
+          </div> 
+        </li>  
+        <li class="list-group-item cBj6Jj2" xid="li2" __cid="cBj6Jj2"> 
+          <div class="input-group cBj6Jj2" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cBj6Jj2"> 
+            <span class="input-group-addon cBj6Jj2" xid="detaBase" __cid="cBj6Jj2">服务数据源</span>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cBj6Jj2" xid="dataBaseInp" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cBj6Jj2"/>
+          </div> 
+        </li>
+      </ul>  
+      <div xid="div5" class="list-group-item cBj6Jj2" style="margin-top:20px;" __cid="cBj6Jj2"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block cBj6Jj2" xid="loginBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;label&quot;:&quot;验证&quot;}" __cid="cBj6Jj2"> 
+          <i xid="i2" __cid="cBj6Jj2" class="cBj6Jj2"/>  
+          <span xid="span2" __cid="cBj6Jj2" class="cBj6Jj2">验证</span>
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cBj6Jj2" class="cBj6Jj2">.x-panel.pc3Ivm2e-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc3Ivm2e-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc3Ivm2e-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc3Ivm2e-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3Ivm2e-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc3Ivm2e-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3Ivm2e-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3Ivm2e-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3Ivm2e-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

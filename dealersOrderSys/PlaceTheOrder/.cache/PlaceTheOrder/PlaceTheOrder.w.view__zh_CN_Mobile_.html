@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window c2Ibu2y" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c2Ibu2y" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">
+  <style>body.c2Ibu2y{font-family: “Microsoft YaHei” !important} .text-black.c2Ibu2y{color: rgb(51, 51, 51)} .tb-nopadding.c2Ibu2y{padding-left: 0; padding-right: 0} .tb-numberOperation.c2Ibu2y{width: 100%; height: 30px} .tb-numberOperation.c2Ibu2y span.c2Ibu2y{padding: 4px 15px; border-top: 1px solid rgb(207, 2, 2); border-bottom: 1px solid rgb(207, 2, 2)} .x-panel-top.c2Ibu2y .x-titlebar.c2Ibu2y{background-color: rgb(255, 68, 0)} .x-titlebar.c2Ibu2y .x-titlebar-title.c2Ibu2y{font-weight: normal} .x-cards.c2Ibu2y{padding: 0} .tb-box.c2Ibu2y, .tb-box.c2Ibu2y > .col.c2Ibu2y{height: 100%; margin: 0; padding: 0} .tb-box.c2Ibu2y > .col.c2Ibu2y{overflow: auto} .tb-box.c2Ibu2y > .col.c2Ibu2y:first-child{padding-right: 10px} .cart.c2Ibu2y{border-radius: 30px} .goods-img.c2Ibu2y{border-radius: 5px} .list-group.c2Ibu2y{box-shadow: none} .list-group-item.c2Ibu2y{background-color: rgb(245, 245, 245); border-radius: 0; border-color: rgb(225, 225, 225)} .list-group-item.current.c2Ibu2y{background-color: rgb(255, 255, 255); border-right: 0; color: rgb(207, 2, 2)} .list-group-item.current.c2Ibu2y h5.c2Ibu2y{color: rgb(207, 2, 2)} .x-card.btn-group.c2Ibu2y .btn.active.c2Ibu2y{color: rgb(207, 2, 2)} .tb-listBox.c2Ibu2y{padding-left: 0px; padding-right: 10px; margin-bottom: 10px} .tb-listBox.c2Ibu2y div.c2Ibu2y{background-color: rgb(255, 255, 255)} .tb-listBox.c2Ibu2y p.c2Ibu2y{font-size: 13px; margin-top: 5px} .x-popOver-content.ddd.c2Ibu2y{bottom: 0.6px !important} .x-panel-bottom.c2Ibu2y{border-top: 1px solid rgb(220, 220, 220); border-bottom: 1px solid rgb(220, 220, 220)} .x-panel-bottom.c2Ibu2y .h4.c2Ibu2y{margin: 5px 0} .tb-settlement.c2Ibu2y{line-height: 40px; background-color: rgb(253, 80, 1); color: rgb(255, 255, 255); font-size: 16px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="c2Ibu2y" class="c2Ibu2y"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcJvYb2y-iosstatusbar c2Ibu2y" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c2Ibu2y"> 
+    <div class="x-panel-top c2Ibu2y" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c2Ibu2y">
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified c2Ibu2y" xid="buttonGroup1" style="background-color:white;border-bottom-style:solid;border-bottom-width:thin;border-bottom-color:#D6D6D6;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="c2Ibu2y"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c2Ibu2y" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-arrowdownl&#34;,&#34;label&#34;:&#34;默认&#34;}" __cid="c2Ibu2y"> 
+          <span xid="span1" __cid="c2Ibu2y" class="c2Ibu2y">默认</span>
+          <i xid="i1" class="dataControl dataControl-arrowdownl c2Ibu2y" style="font-size:14px;" __cid="c2Ibu2y"></i> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c2Ibu2y" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-filter&#34;,&#34;label&#34;:&#34;筛选&#34;}" __cid="c2Ibu2y"> 
+          <span xid="span2" __cid="c2Ibu2y" class="c2Ibu2y">筛选</span>
+          <i xid="i2" class="dataControl dataControl-filter c2Ibu2y" style="font-size:14px;" __cid="c2Ibu2y"></i> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c2Ibu2y" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-search24&#34;,&#34;label&#34;:&#34;搜索&#34;}" __cid="c2Ibu2y"> 
+          <span xid="span3" __cid="c2Ibu2y" class="c2Ibu2y">搜索</span>
+          <i xid="i3" class="dataControl dataControl-search24 c2Ibu2y" style="font-size:14px;" __cid="c2Ibu2y"></i> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c2Ibu2y" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-thumnail&#34;}" __cid="c2Ibu2y"> 
+          <span xid="span4" __cid="c2Ibu2y" class="c2Ibu2y"></span>
+          <i xid="i4" class="dataControl dataControl-thumnail c2Ibu2y" style="font-size:15px;" __cid="c2Ibu2y"></i> 
+        </a>
+      </div>
+    </div>  
+    <div class="x-panel-content c2Ibu2y" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c2Ibu2y">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row c2Ibu2y" xid="row10" style="height:5px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c2Ibu2y"> 
+        <div class="x-col c2Ibu2y" xid="col21" __cid="c2Ibu2y"></div>
+      </div>
+      <div component="$model/UI2/system/components/bootstrap/row/row" class="row tb-box c2Ibu2y" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="c2Ibu2y"> 
+        <div class="col col-xs-3 c2Ibu2y" xid="col10" style="padding-right:0px;" __cid="c2Ibu2y"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list tb-root c2Ibu2y" xid="rootClassList" dataItemAlias="rootClassRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;rootClassData&#34;}" __cid="c2Ibu2y"> 
+            <ul class="x-list-template list-group hide c2Ibu2y" xid="listTemplateUl1" __cid="c2Ibu2y" data-bind="foreach:{data:$model.foreach_rootClassList($element),afterRender:$model.foreach_afterRender_rootClassList.bind($model,$element),as:'rootClassRow'}"> 
+              <li xid="li1" class="list-group-item text-center tb-nopadding c2Ibu2y" style="border-right-style:none;" __cid="c2Ibu2y" data-bind="css:{'current':rootClassRow.val('fID')==$model.rootClassData.val('fID')}"> 
+                <h5 xid="h52" class="text-black c2Ibu2y" __cid="c2Ibu2y" data-bind="text:ref('fClassName')"></h5>
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="col col-xs-9 c2Ibu2y" xid="col11" style="border-left-style:solid;border-left-width:thin;border-left-color:#D6D6D6;" __cid="c2Ibu2y"> 
+          <div xid="div10" class="list-group-item c2Ibu2y" style="padding:5px 5px 5px 7px;background-color:white;height:35px;border-top-style:none;border-right-style:none;border-left-style:none;" __cid="c2Ibu2y">
+            <div class="media c2Ibu2y" xid="media5" __cid="c2Ibu2y"> 
+              <div class="media-body c2Ibu2y" xid="mediaBody5" __cid="c2Ibu2y"> 
+                <h5 xid="h514" class="media-heading c2Ibu2y" style="margin-top:5px;" __cid="c2Ibu2y"> 
+                  <span xid="span22" style="color:#3F3F3F;font-size:16px;" __cid="c2Ibu2y" class="c2Ibu2y">展开下级分类</span>  
+                  <div xid="div1" class="pull-right c2Ibu2y" style="color:#3F3F3F;height:100%;width:40px;text-align:center;" __cid="c2Ibu2y" data-bind="event:{click:$model._callModelFn.bind($model, 'button5Click')}">
+                    <i xid="i10" class="icon-arrow-right-b c2Ibu2y" __cid="c2Ibu2y"></i>
+                  </div>
+                </h5> 
+              </div> 
+            </div>
+          </div>
+          <div xid="div2" __cid="c2Ibu2y" class="c2Ibu2y">
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row c2Ibu2y" xid="row2" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c2Ibu2y"> 
+              <div class="x-col x-col-80 c2Ibu2y" xid="col1" __cid="c2Ibu2y">
+                <div class="media c2Ibu2y" xid="media1" __cid="c2Ibu2y"> 
+                  <div class="media-left c2Ibu2y" xid="mediaLeft1" __cid="c2Ibu2y"> 
+                    <a href="#" xid="a1" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                      <img class="media-object goods-img c2Ibu2y" src="@justepContextPath@/v_1db823592f5e4f39baa9646f14405bd1l_zh_CNs_d_m/dealersOrderSys/PlaceTheOrder/class/img/pic3.png" alt="" xid="image2" style="width:80px;" height="80px" __cid="c2Ibu2y">
+                    </a> 
+                  </div>  
+                  <div class="media-body c2Ibu2y" xid="mediaBody1" __cid="c2Ibu2y"> 
+                    <h4 xid="h41" class="media-heading c2Ibu2y" style="font-size:15px;color:#292929;" __cid="c2Ibu2y">澳大利亚牛肉</h4>  
+                    <h5 xid="h51" __cid="c2Ibu2y" class="c2Ibu2y">
+                      <h5 xid="h53" style="margin-top:20px;" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                        <span xid="span5" style="color:#cf0202;font-size:14px;" __cid="c2Ibu2y" class="c2Ibu2y">¥</span>  
+                        <span xid="span6" style="color:#cf0202;font-size:14px;" __cid="c2Ibu2y" class="c2Ibu2y">90.00</span>
+                      </h5>
+                      <h5 xid="h54" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                        <span xid="span9" style="font-size:14px;color:#505050;" __cid="c2Ibu2y" class="c2Ibu2y">库存:</span>
+                        <span xid="span8" style="font-size:14px;color:#505050;" __cid="c2Ibu2y" class="c2Ibu2y">34</span> 
+                      </h5>
+                    </h5>
+                  </div> 
+                </div>
+              </div>  
+              <div class="x-col c2Ibu2y" xid="col3" __cid="c2Ibu2y">
+                <div xid="div3" style="text-align:center;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#cf0202 #cf0202 #cf0202 #cf0202;height:30px;width:30px;bottom:0px;margin-top:40px;" class="center-block cart c2Ibu2y" __cid="c2Ibu2y" data-bind="event:{click:$model._callModelFn.bind($model, 'div3Click')}">
+                  <i xid="i5" class="linear linear-cart cart c2Ibu2y" style="font-size:20px;color:#cf0202;line-height:25px" __cid="c2Ibu2y"></i>
+                </div> 
+              </div>
+            </div>
+          </div>  
+          <div xid="div5" __cid="c2Ibu2y" class="c2Ibu2y"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row c2Ibu2y" xid="row3" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c2Ibu2y"> 
+              <div class="x-col x-col-80 c2Ibu2y" xid="col5" __cid="c2Ibu2y"> 
+                <div class="media c2Ibu2y" xid="media2" __cid="c2Ibu2y"> 
+                  <div class="media-left c2Ibu2y" xid="mediaLeft2" __cid="c2Ibu2y"> 
+                    <a href="#" xid="a2" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                      <img class="media-object goods-img c2Ibu2y" src="@justepContextPath@/v_9e45add3f6734db8bc0cc9c4c598bae6l_zh_CNs_d_m/dealersOrderSys/PlaceTheOrder/class/img/pic2.png" alt="" xid="image1" style="width:80px;" height="80px" dir="ltr" __cid="c2Ibu2y">
+                    </a> 
+                  </div>  
+                  <div class="media-body c2Ibu2y" xid="mediaBody2" __cid="c2Ibu2y"> 
+                    <h4 xid="h42" class="media-heading c2Ibu2y" style="font-size:15px;color:#292929;" __cid="c2Ibu2y">澳大利亚牛肉</h4>  
+                    <h5 xid="h55" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                      <h5 xid="h57" style="margin-top:20px;" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                        <span xid="span7" style="color:#cf0202;font-size:14px;" __cid="c2Ibu2y" class="c2Ibu2y">¥</span>  
+                        <span xid="span10" style="color:#cf0202;font-size:14px;" __cid="c2Ibu2y" class="c2Ibu2y">90.00</span>
+                      </h5>  
+                      <h5 xid="h56" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                        <span xid="span12" style="font-size:14px;color:#505050;" __cid="c2Ibu2y" class="c2Ibu2y">库存:</span>  
+                        <span xid="span11" style="font-size:14px;color:#505050;" __cid="c2Ibu2y" class="c2Ibu2y">34</span>
+                      </h5> 
+                    </h5> 
+                  </div> 
+                </div> 
+              </div>  
+              <div class="x-col c2Ibu2y" xid="col4" __cid="c2Ibu2y"> 
+                <div xid="div4" style="text-align:center;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#cf0202 #cf0202 #cf0202 #cf0202;height:30px;width:30px;bottom:0px;margin-top:40px;" class="center-block cart c2Ibu2y" dir="ltr" __cid="c2Ibu2y"> 
+                  <i xid="i7" class="linear linear-cart cart c2Ibu2y" style="font-size:20px;color:#cf0202;line-height:25px" __cid="c2Ibu2y"></i>
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div xid="div7" __cid="c2Ibu2y" class="c2Ibu2y"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row c2Ibu2y" xid="row4" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c2Ibu2y"> 
+              <div class="x-col x-col-80 c2Ibu2y" xid="col7" __cid="c2Ibu2y"> 
+                <div class="media c2Ibu2y" xid="media3" __cid="c2Ibu2y"> 
+                  <div class="media-left c2Ibu2y" xid="mediaLeft3" __cid="c2Ibu2y"> 
+                    <a href="#" xid="a3" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                      <img class="media-object goods-img c2Ibu2y" src="@justepContextPath@/v_c28a8d1b96d34fa4826370c70c74ec3cl_zh_CNs_d_m/dealersOrderSys/PlaceTheOrder/class/img/pic1.png" alt="" xid="image3" style="width:80px;" height="80px" __cid="c2Ibu2y">
+                    </a> 
+                  </div>  
+                  <div class="media-body c2Ibu2y" xid="mediaBody3" __cid="c2Ibu2y"> 
+                    <h4 xid="h43" class="media-heading c2Ibu2y" style="font-size:15px;color:#292929;" __cid="c2Ibu2y">澳大利亚牛肉</h4>  
+                    <h5 xid="h58" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                      <h5 xid="h510" style="margin-top:20px;" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                        <span xid="span13" style="color:#cf0202;font-size:14px;" __cid="c2Ibu2y" class="c2Ibu2y">¥</span>  
+                        <span xid="span14" style="color:#cf0202;font-size:14px;" __cid="c2Ibu2y" class="c2Ibu2y">90.00</span>
+                      </h5>  
+                      <h5 xid="h59" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                        <span xid="span16" style="font-size:14px;color:#505050;" __cid="c2Ibu2y" class="c2Ibu2y">库存:</span>  
+                        <span xid="span15" style="font-size:14px;color:#505050;" __cid="c2Ibu2y" class="c2Ibu2y">34</span>
+                      </h5> 
+                    </h5> 
+                  </div> 
+                </div> 
+              </div>  
+              <div class="x-col c2Ibu2y" xid="col6" __cid="c2Ibu2y"> 
+                <div xid="div6" style="text-align:center;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#cf0202 #cf0202 #cf0202 #cf0202;height:30px;width:30px;bottom:0px;margin-top:40px;" class="center-block cart c2Ibu2y" __cid="c2Ibu2y"> 
+                  <i xid="i8" class="linear linear-cart cart c2Ibu2y" style="font-size:20px;color:#cf0202;line-height:25px" __cid="c2Ibu2y"></i>
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div xid="div9" __cid="c2Ibu2y" class="c2Ibu2y"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row c2Ibu2y" xid="row5" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c2Ibu2y"> 
+              <div class="x-col x-col-80 c2Ibu2y" xid="col9" __cid="c2Ibu2y"> 
+                <div class="media c2Ibu2y" xid="media4" __cid="c2Ibu2y"> 
+                  <div class="media-left c2Ibu2y" xid="mediaLeft4" __cid="c2Ibu2y"> 
+                    <a href="#" xid="a4" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                      <img class="media-object goods-img c2Ibu2y" src="@justepContextPath@/v_e880b030b60b418e83a8bf1a3ae72cccl_zh_CNs_d_m/dealersOrderSys/PlaceTheOrder/class/img/pic3.png" alt="" xid="image4" style="width:80px;" height="80px" __cid="c2Ibu2y">
+                    </a> 
+                  </div>  
+                  <div class="media-body c2Ibu2y" xid="mediaBody4" __cid="c2Ibu2y"> 
+                    <h4 xid="h44" class="media-heading c2Ibu2y" style="font-size:15px;color:#292929;" __cid="c2Ibu2y">澳大利亚牛肉</h4>  
+                    <h5 xid="h511" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                      <h5 xid="h513" style="margin-top:20px;" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                        <span xid="span17" style="color:#cf0202;font-size:14px;" __cid="c2Ibu2y" class="c2Ibu2y">¥</span>  
+                        <span xid="span18" style="color:#cf0202;font-size:14px;" __cid="c2Ibu2y" class="c2Ibu2y">90.00</span>
+                      </h5>  
+                      <h5 xid="h512" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                        <span xid="span20" style="font-size:14px;color:#505050;" __cid="c2Ibu2y" class="c2Ibu2y">库存:</span>  
+                        <span xid="span19" style="font-size:14px;color:#505050;" __cid="c2Ibu2y" class="c2Ibu2y">34</span>
+                      </h5> 
+                    </h5> 
+                  </div> 
+                </div> 
+              </div>  
+              <div class="x-col c2Ibu2y" xid="col8" __cid="c2Ibu2y"> 
+                <div xid="div8" style="text-align:center;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#cf0202 #cf0202 #cf0202 #cf0202;height:30px;width:30px;bottom:0px;margin-top:40px;" class="center-block cart c2Ibu2y" __cid="c2Ibu2y"> 
+                  <i xid="i9" class="linear linear-cart cart c2Ibu2y" style="font-size:20px;color:#cf0202;line-height:25px" __cid="c2Ibu2y"></i>
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div xid="div24" __cid="c2Ibu2y" class="c2Ibu2y"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row c2Ibu2y" xid="row11" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c2Ibu2y"> 
+              <div class="x-col x-col-80 c2Ibu2y" xid="col23" __cid="c2Ibu2y"> 
+                <div class="media c2Ibu2y" xid="media6" __cid="c2Ibu2y"> 
+                  <div class="media-left c2Ibu2y" xid="mediaLeft5" __cid="c2Ibu2y"> 
+                    <a href="#" xid="a5" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                      <img class="media-object goods-img c2Ibu2y" src="@justepContextPath@/v_7a18d9e75ab24fbc94661fad064f95f5l_zh_CNs_d_m/dealersOrderSys/PlaceTheOrder/class/img/pic2.png" alt="" xid="image5" style="width:80px;" height="80px" __cid="c2Ibu2y">
+                    </a> 
+                  </div>  
+                  <div class="media-body c2Ibu2y" xid="mediaBody6" __cid="c2Ibu2y"> 
+                    <h4 xid="h46" class="media-heading c2Ibu2y" style="font-size:15px;color:#292929;" __cid="c2Ibu2y">澳大利亚牛肉</h4>  
+                    <h5 xid="h518" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                      <h5 xid="h520" style="margin-top:20px;" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                        <span xid="span38" style="color:#cf0202;font-size:14px;" __cid="c2Ibu2y" class="c2Ibu2y">¥</span>  
+                        <span xid="span37" style="color:#cf0202;font-size:14px;" __cid="c2Ibu2y" class="c2Ibu2y">90.00</span>
+                      </h5>  
+                      <h5 xid="h519" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                        <span xid="span40" style="font-size:14px;color:#505050;" __cid="c2Ibu2y" class="c2Ibu2y">库存:</span>  
+                        <span xid="span39" style="font-size:14px;color:#505050;" __cid="c2Ibu2y" class="c2Ibu2y">34</span>
+                      </h5> 
+                    </h5> 
+                  </div> 
+                </div> 
+              </div>  
+              <div class="x-col c2Ibu2y" xid="col22" __cid="c2Ibu2y"> 
+                <div xid="div25" style="text-align:center;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#cf0202 #cf0202 #cf0202 #cf0202;height:30px;width:30px;bottom:0px;margin-top:40px;" class="center-block cart c2Ibu2y" __cid="c2Ibu2y"> 
+                  <i xid="i14" class="linear linear-cart cart c2Ibu2y" style="font-size:20px;color:#cf0202;line-height:25px" __cid="c2Ibu2y"></i>
+                </div> 
+              </div> 
+            </div> 
+          </div>
+          <div xid="div26" __cid="c2Ibu2y" class="c2Ibu2y"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row c2Ibu2y" xid="row12" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c2Ibu2y"> 
+              <div class="x-col x-col-80 c2Ibu2y" xid="col25" __cid="c2Ibu2y"> 
+                <div class="media c2Ibu2y" xid="media8" __cid="c2Ibu2y"> 
+                  <div class="media-left c2Ibu2y" xid="mediaLeft6" __cid="c2Ibu2y"> 
+                    <a href="#" xid="a6" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                      <img class="media-object goods-img c2Ibu2y" src="@justepContextPath@/v_a33e8a7cbedd4d4ea2b1bdda072fbff2l_zh_CNs_d_m/dealersOrderSys/PlaceTheOrder/class/img/pic1.png" alt="" xid="image6" style="width:80px;" height="80px" __cid="c2Ibu2y">
+                    </a> 
+                  </div>  
+                  <div class="media-body c2Ibu2y" xid="mediaBody8" __cid="c2Ibu2y"> 
+                    <h4 xid="h47" class="media-heading c2Ibu2y" style="font-size:15px;color:#292929;" __cid="c2Ibu2y">澳大利亚牛肉</h4>  
+                    <h5 xid="h521" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                      <h5 xid="h523" style="margin-top:20px;" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                        <span xid="span42" style="color:#cf0202;font-size:14px;" __cid="c2Ibu2y" class="c2Ibu2y">¥</span>  
+                        <span xid="span41" style="color:#cf0202;font-size:14px;" __cid="c2Ibu2y" class="c2Ibu2y">90.00</span>
+                      </h5>  
+                      <h5 xid="h522" __cid="c2Ibu2y" class="c2Ibu2y"> 
+                        <span xid="span44" style="font-size:14px;color:#505050;" __cid="c2Ibu2y" class="c2Ibu2y">库存:</span>  
+                        <span xid="span43" style="font-size:14px;color:#505050;" __cid="c2Ibu2y" class="c2Ibu2y">34</span>
+                      </h5> 
+                    </h5> 
+                  </div> 
+                </div> 
+              </div>  
+              <div class="x-col c2Ibu2y" xid="col24" __cid="c2Ibu2y"> 
+                <div xid="div27" style="text-align:center;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#cf0202 #cf0202 #cf0202 #cf0202;height:30px;width:30px;bottom:0px;margin-top:40px;" class="center-block cart c2Ibu2y" __cid="c2Ibu2y"> 
+                  <i xid="i16" class="linear linear-cart cart c2Ibu2y" style="font-size:20px;color:#cf0202;line-height:25px" __cid="c2Ibu2y"></i>
+                </div> 
+              </div> 
+            </div> 
+          </div>
+          <div xid="div13" style="z-index:2;position:absolute;right:0;bottom:0;left:0;width:100%;background-color:rgba(0,0,0,.5);display:none;top:35px;" class="pop-div c2Ibu2y" __cid="c2Ibu2y">
+            <div xid="div14" style="width:100%;height:70%;background-color:#f5f5f5;" __cid="c2Ibu2y" class="c2Ibu2y">
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row c2Ibu2y" xid="row6" style="height:5px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c2Ibu2y"> 
+                <div class="x-col c2Ibu2y" xid="col13" __cid="c2Ibu2y"></div>
+              </div>  
+              <div xid="div19" __cid="c2Ibu2y" class="c2Ibu2y">
+                <div xid="div17" class="list-group-item c2Ibu2y" style="padding:5px 5px 5px 7px;height:30px;background-color:white;border-top-style:none;border-right-style:none;border-left-style:none;" __cid="c2Ibu2y"> 
+                  <div class="media c2Ibu2y" xid="media7" __cid="c2Ibu2y"> 
+                    <div class="media-body c2Ibu2y" xid="mediaBody7" __cid="c2Ibu2y"> 
+                      <h5 xid="h516" class="media-heading c2Ibu2y" style="margin-top:5px;" __cid="c2Ibu2y"> 
+                        <span xid="span23" style="color:#565656;" __cid="c2Ibu2y" class="c2Ibu2y">南方牛肉</span>  
+                        <div xid="div18" class="pull-right c2Ibu2y" style="color:#565656;height:100%;width:40px;text-align:center;" __cid="c2Ibu2y" data-bind="event:{click:$model._callModelFn.bind($model, 'button5Click')}"> 
+                          <i xid="i11" class="icon-arrow-right-b c2Ibu2y" __cid="c2Ibu2y"></i>
+                        </div> 
+                      </h5> 
+                    </div> 
+                  </div> 
+                </div>  
+                <div xid="div20" style="background-color:white;padding:5px 5px 5px 5px;" __cid="c2Ibu2y" class="c2Ibu2y">
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm c2Ibu2y" xid="button5" style="border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#CDCDCD #CDCDCD #CDCDCD #CDCDCD;background-color:white;color:#565656;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;南方肥牛牛肉&#34;}" __cid="c2Ibu2y"> 
+                    <i xid="i12" __cid="c2Ibu2y" class="c2Ibu2y"></i>  
+                    <span xid="span24" __cid="c2Ibu2y" class="c2Ibu2y">南方肥牛牛肉</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="c2Ibu2y" class="c2Ibu2y">.x-panel.pcJvYb2y-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcJvYb2y-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcJvYb2y-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcJvYb2y-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJvYb2y-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcJvYb2y-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJvYb2y-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJvYb2y-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJvYb2y-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver c2Ibu2y" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;direction&#34;:&#34;auto&#34;,&#34;position&#34;:&#34;bottom&#34;}" __cid="c2Ibu2y"> 
+    <div class="x-popOver-overlay c2Ibu2y" xid="div21" __cid="c2Ibu2y"></div>  
+    <div class="x-popOver-content ddd c2Ibu2y" xid="div22" style="height:60%;width:100%;background-color:white;" __cid="c2Ibu2y">
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcnYnuU3-iosstatusbar c2Ibu2y" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c2Ibu2y"> 
+        <div class="x-panel-content c2Ibu2y" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c2Ibu2y">
+          <div xid="div35" __cid="c2Ibu2y" class="c2Ibu2y"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row c2Ibu2y" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c2Ibu2y"> 
+              <div class="x-col x-col-20 c2Ibu2y" xid="col14" __cid="c2Ibu2y"> 
+                <img src="@justepContextPath@/v_d152af8e0125497faa4d29d250ecf90el_zh_CNs_d_m/dealersOrderSys/PlaceTheOrder/class/img/pic2.png" alt="" xid="image8" height="60px" style="width:60px;" class="img-rounded  c2Ibu2y" __cid="c2Ibu2y">
+              </div>  
+              <div class="x-col c2Ibu2y" xid="col2" style="text-align:left;" __cid="c2Ibu2y"> 
+                <h4 class="media-heading c2Ibu2y" xid="h45" style="color:#545454;font-size:16px;" __cid="c2Ibu2y">澳大利亚牛肉</h4>
+              </div>  
+              <div class="x-col c2Ibu2y" xid="col12" style="text-align:right;" __cid="c2Ibu2y"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c2Ibu2y" xid="button8" style="color:#3F3F3F;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button8Click" data-config="{&#34;icon&#34;:&#34;icon-android-close&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="c2Ibu2y"> 
+                  <i xid="i20" class="icon-android-close c2Ibu2y" __cid="c2Ibu2y"></i>  
+                  <span xid="span34" __cid="c2Ibu2y" class="c2Ibu2y"></span>
+                </a> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row c2Ibu2y" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c2Ibu2y"> 
+            <div class="x-col c2Ibu2y" xid="col16" __cid="c2Ibu2y"></div>  
+            <div class="x-col c2Ibu2y" xid="col18" __cid="c2Ibu2y">
+              <div xid="div23" __cid="c2Ibu2y" class="c2Ibu2y">
+                <div class="tb-numberOperation c2Ibu2y" xid="div34" style="text-align:right;" __cid="c2Ibu2y"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-xs btn-only-icon pull-right c2Ibu2y" xid="button11" style="border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#cf0202 #cf0202 #cf0202 #cf0202;color:#FFFEFF;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#cf0202 #cf0202 #cf0202 #cf0202;color:#FFFEFF;background-color:#cf0202;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addBtnClick" data-config="{&#34;icon&#34;:&#34;icon-android-add&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="c2Ibu2y"> 
+                    <i xid="i18" class="icon-android-add c2Ibu2y" __cid="c2Ibu2y"></i>  
+                    <span xid="span36" __cid="c2Ibu2y" class="c2Ibu2y"></span>
+                  </a>  
+                  <span xid="span32" class="pull-right c2Ibu2y" style="line-height:0.8;height:22px;" __cid="c2Ibu2y">2</span>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon pull-right c2Ibu2y" xid="button12" style="background-color:white;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#cf0202 #cf0202 #cf0202 #cf0202;color:#cf0202" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:reductionBtnClick" data-config="{&#34;icon&#34;:&#34;icon-android-remove&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="c2Ibu2y"> 
+                    <i xid="i15" class="icon-android-remove c2Ibu2y" __cid="c2Ibu2y"></i>  
+                    <span xid="span33" __cid="c2Ibu2y" class="c2Ibu2y"></span>
+                  </a> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="x-panel-bottom c2Ibu2y" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c2Ibu2y"> 
+          <div xid="div11" style="height:100%;width:100%;" __cid="c2Ibu2y" class="c2Ibu2y">
+            <div xid="div12" style="height:100%;width:60%;float:left;border-right-style:solid;border-right-width:thin;border-right-color:#D6D6D6;" __cid="c2Ibu2y" class="c2Ibu2y">
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row c2Ibu2y" xid="row8" style="height:100%;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c2Ibu2y"> 
+                <div class="x-col  c2Ibu2y" xid="col17" __cid="c2Ibu2y"> 
+                  <div class="media c2Ibu2y" xid="media9" __cid="c2Ibu2y"> 
+                    <div class="media-body c2Ibu2y" xid="mediaBody9" __cid="c2Ibu2y"> 
+                      <h5 xid="h515" class="media-heading c2Ibu2y" style="color:#505050;" __cid="c2Ibu2y"> 
+                        <span xid="span26" __cid="c2Ibu2y" class="c2Ibu2y">已选种类</span>  
+                        <span xid="span27" __cid="c2Ibu2y" class="c2Ibu2y">3</span>  
+                        <span xid="span28" __cid="c2Ibu2y" class="c2Ibu2y">数量</span>  
+                        <span xid="span29" __cid="c2Ibu2y" class="c2Ibu2y">6</span>
+                      </h5>  
+                      <h5 xid="h517" class="media-heading c2Ibu2y" __cid="c2Ibu2y"> 
+                        <span xid="span31" style="color:#cf0202;" __cid="c2Ibu2y" class="c2Ibu2y">¥</span>  
+                        <span xid="span30" style="color:#cf0202;" __cid="c2Ibu2y" class="c2Ibu2y">4000</span>
+                      </h5>
+                    </div> 
+                  </div>
+                </div> 
+              </div>
+            </div>  
+            <div xid="div15" style="height:100%;width:407;text-align:center;" __cid="c2Ibu2y" class="c2Ibu2y">
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-icon-top c2Ibu2y" xid="button6" style="color:#505050;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;linear linear-cart&#34;,&#34;label&#34;:&#34;进入购物车&#34;}" __cid="c2Ibu2y"> 
+                <i xid="i6" class="linear linear-cart c2Ibu2y" style="font-size:18px;" __cid="c2Ibu2y"></i>  
+                <span xid="span35" __cid="c2Ibu2y" class="c2Ibu2y">进入购物车</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <style __cid="c2Ibu2y" class="c2Ibu2y">.x-panel.pcnYnuU3-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcnYnuU3-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcnYnuU3-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcnYnuU3-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcnYnuU3-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcnYnuU3-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcnYnuU3-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcnYnuU3-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcnYnuU3-iosstatusbar >.x-panel-content {top: 0px;}</style>
+      </div>
+    </div>
+  </div>
+</div>

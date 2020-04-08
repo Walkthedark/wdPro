@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cJBZvYb" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cJBZvYb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cJBZvYb" class="cJBZvYb"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcMfeMRf-iosstatusbar cJBZvYb" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cJBZvYb"> 
+    <div class="x-panel-top cJBZvYb" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJBZvYb"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cJBZvYb" style="background-color:#47D1D1;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;填写退单&quot;}" __cid="cJBZvYb"> 
+        <div class="x-titlebar-left cJBZvYb" __cid="cJBZvYb"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cJBZvYb" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cJBZvYb"> 
+            <i class="icon-chevron-left cJBZvYb" __cid="cJBZvYb"/>  
+            <span __cid="cJBZvYb" class="cJBZvYb"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cJBZvYb" __cid="cJBZvYb">填写退单</div>  
+        <div class="x-titlebar-right  cJBZvYb" __cid="cJBZvYb">
+          <div class="empty cJBZvYb" __cid="cJBZvYb"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cJBZvYb" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJBZvYb"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcJRJbUr-iosstatusbar cJBZvYb" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cJBZvYb"> 
+        <div class="x-panel-content cJBZvYb" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJBZvYb"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cJBZvYb" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJBZvYb"> 
+            <div class="x-col cJBZvYb" xid="col1" style="text-indent:10px;text-align:left;" __cid="cJBZvYb"> 
+              <span xid="span3" style="text-indent:10px;" __cid="cJBZvYb" class="cJBZvYb">商品总额</span> 
+            </div>  
+            <div class="x-col cJBZvYb" xid="col3" style="text-align:right;" __cid="cJBZvYb"> 
+              <span xid="span1" __cid="cJBZvYb" class="cJBZvYb">¥</span>  
+              <span xid="span2" __cid="cJBZvYb" class="cJBZvYb">0.02</span> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cJBZvYb" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJBZvYb"> 
+            <div class="x-col x-col-center cJBZvYb" xid="col4" style="text-indent:10px;text-align:left;" __cid="cJBZvYb"> 
+              <span xid="span4" __cid="cJBZvYb" class="cJBZvYb">输入退款金额</span> 
+            </div>  
+            <div class="x-col x-col-25 cJBZvYb" xid="col6" __cid="cJBZvYb"> 
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm cJBZvYb" xid="input1" style="border-top:0;border-left:0;border-right:0;text-align:right;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入&quot;}" __cid="cJBZvYb"/> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cJBZvYb" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJBZvYb"> 
+            <div class="x-col cJBZvYb" xid="col16" __cid="cJBZvYb"> 
+              <h5 xid="h51" style="color:#333;text-indent:8px;" __cid="cJBZvYb" class="cJBZvYb">退款信息</h5>
+              <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cJBZvYb" xid="controlGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;title&quot;}" __cid="cJBZvYb"> 
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJBZvYb" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJBZvYb"> 
+                  <label class="x-label cJBZvYb" xid="label1" __cid="cJBZvYb">联系人</label>  
+                  <div class="x-edit cJBZvYb" xid="div1" __cid="cJBZvYb">
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm cJBZvYb" xid="input2" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cJBZvYb"/>
+                  </div>
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJBZvYb" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJBZvYb"> 
+                  <label class="x-label cJBZvYb" xid="label2" __cid="cJBZvYb">手机号</label>  
+                  <div class="x-edit cJBZvYb" xid="div2" __cid="cJBZvYb">
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm cJBZvYb" xid="input3" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cJBZvYb"/>
+                  </div>
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJBZvYb" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJBZvYb"> 
+                  <label class="x-label cJBZvYb" xid="label3" __cid="cJBZvYb">开户银行</label>  
+                  <div class="x-edit cJBZvYb" xid="div3" __cid="cJBZvYb">
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm cJBZvYb" xid="input4" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cJBZvYb"/>
+                  </div>
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJBZvYb" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJBZvYb"> 
+                  <label class="x-label cJBZvYb" xid="label4" __cid="cJBZvYb">开户名称</label>  
+                  <div class="x-edit cJBZvYb" xid="div4" __cid="cJBZvYb">
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm cJBZvYb" xid="input5" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cJBZvYb"/>
+                  </div>
+                </div>  
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJBZvYb" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJBZvYb"> 
+                  <label class="x-label cJBZvYb" xid="label5" __cid="cJBZvYb">银行账号</label>  
+                  <div class="x-edit cJBZvYb" xid="div5" __cid="cJBZvYb">
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm cJBZvYb" xid="input6" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cJBZvYb"/>
+                  </div>
+                </div>
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cJBZvYb" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJBZvYb"> 
+            <div class="x-col cJBZvYb" xid="col7" __cid="cJBZvYb"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cJBZvYb" xid="row4" style="padding:0;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJBZvYb"> 
+                <div class="x-col cJBZvYb" xid="col10" __cid="cJBZvYb"> 
+                  <span xid="span5" __cid="cJBZvYb" class="cJBZvYb">备注信息</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cJBZvYb" xid="row5" style="padding:0;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJBZvYb"> 
+                <div class="x-col cJBZvYb" xid="col13" __cid="cJBZvYb"> 
+                  <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control cJBZvYb" xid="textarea1" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cJBZvYb"/> 
+                </div> 
+              </div> 
+            </div> 
+          </div>
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cJBZvYb" xid="productInfo" bind-click="productInfoClick" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJBZvYb"> 
+            <div class="x-col x-col-center cJBZvYb" xid="col19" style="text-indent:10px;" __cid="cJBZvYb"> 
+              <span xid="span13" __cid="cJBZvYb" class="cJBZvYb">商品信息</span>
+            </div>  
+            <div class="x-col x-col-center cJBZvYb" xid="col23" style="text-align:right;" __cid="cJBZvYb">
+              <span xid="span9" __cid="cJBZvYb" class="cJBZvYb">共</span>  
+              <span xid="span10" __cid="cJBZvYb" class="cJBZvYb">1</span>  
+              <span xid="span11" __cid="cJBZvYb" class="cJBZvYb">款，总数</span>  
+              <span xid="span12" __cid="cJBZvYb" class="cJBZvYb">2</span>
+            </div>  
+            <div class="x-col x-col-10 cJBZvYb" xid="col24" __cid="cJBZvYb">
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon cJBZvYb" xid="toProductInfo" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:toProductInfoClick" data-config="{&quot;icon&quot;:&quot;linear linear-chevronright&quot;}" __cid="cJBZvYb"> 
+                <i xid="i1" class="linear linear-chevronright cJBZvYb" __cid="cJBZvYb"/>  
+                <span xid="span7" __cid="cJBZvYb" class="cJBZvYb"/>
+              </a>
+            </div>
+          </div> 
+        </div>  
+        <style __cid="cJBZvYb" class="cJBZvYb">.x-panel.pcJRJbUr-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcJRJbUr-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcJRJbUr-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcJRJbUr-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJRJbUr-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcJRJbUr-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJRJbUr-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJRJbUr-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJRJbUr-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cJBZvYb" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJBZvYb">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cJBZvYb" xid="row8" style="padding:0;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJBZvYb"> 
+        <div class="x-col x-col-center cJBZvYb" xid="col25" style="text-align:left;" __cid="cJBZvYb">
+          <span xid="span15" __cid="cJBZvYb" class="cJBZvYb">应退金额：</span>  
+          <span xid="span16" style="font-size:16px;color:#f66;" __cid="cJBZvYb" class="cJBZvYb">¥</span>  
+          <span xid="span17" style="color:#f66;font-size:16px;" __cid="cJBZvYb" class="cJBZvYb">0.02</span>
+        </div>  
+        <div class="x-col x-col-25 x-col-center cJBZvYb" xid="col27" style="background-color:#f66;text-align:center;" __cid="cJBZvYb">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cJBZvYb" xid="confirmOrderBtn" style="background-color:#f66;color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:confirmOrderBtnClick" data-config="{&quot;label&quot;:&quot;提交退单&quot;}" __cid="cJBZvYb"> 
+            <i xid="i2" __cid="cJBZvYb" class="cJBZvYb"/>  
+            <span xid="span14" __cid="cJBZvYb" class="cJBZvYb">提交退单</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <style __cid="cJBZvYb" class="cJBZvYb">.x-panel.pcMfeMRf-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcMfeMRf-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcMfeMRf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcMfeMRf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcMfeMRf-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcMfeMRf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcMfeMRf-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcMfeMRf-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcMfeMRf-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

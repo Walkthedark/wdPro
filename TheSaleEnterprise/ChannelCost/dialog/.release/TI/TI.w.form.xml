@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cFJJNJn" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cFJJNJn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cFJJNJn" class="cFJJNJn"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcyAZrM3-iosstatusbar cFJJNJn" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cFJJNJn"> 
+    <div class="x-panel-top cFJJNJn" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cFJJNJn"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cFJJNJn" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;Ti费用核销&quot;}" __cid="cFJJNJn"> 
+        <div class="x-titlebar-left cFJJNJn" xid="left2" __cid="cFJJNJn"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cFJJNJn" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cFJJNJn"> 
+            <i xid="i1" __cid="cFJJNJn" class="cFJJNJn"/>  
+            <span xid="span4" __cid="cFJJNJn" class="cFJJNJn">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cFJJNJn" xid="title2" __cid="cFJJNJn">Ti费用核销</div>  
+        <div class="x-titlebar-right  cFJJNJn" xid="right2" __cid="cFJJNJn">
+          <div class="empty cFJJNJn" __cid="cFJJNJn"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cFJJNJn" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cFJJNJn"> 
+      <div class="x-scroll cFJJNJn" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cFJJNJn"> 
+        <div class="x-content-center x-pull-down container cFJJNJn" xid="div6" __cid="cFJJNJn"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down cFJJNJn" xid="i7" __cid="cFJJNJn"/>  
+          <span class="x-pull-down-label cFJJNJn" xid="span10" __cid="cFJJNJn">下拉刷新...</span> 
+        </div>  
+        <div class="x-scroll-content cFJJNJn" xid="div5" __cid="cFJJNJn"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cFJJNJn" xid="list2" style="padding-top:10px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;pData&quot;}" __cid="cFJJNJn"> 
+            <ul class="x-list-template hide cFJJNJn" xid="listTemplateUl2" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="cFJJNJn"> 
+              <li xid="li2" class="border-Two cFJJNJn" __cid="cFJJNJn"> 
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row row-padding cFJJNJn" xid="row3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cFJJNJn"> 
+                  <div class="col col-xs-9 cFJJNJn" xid="col20" style="font-weight:bold;" __cid="cFJJNJn"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cFJJNJn" xid="labelEdit13" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cFJJNJn"> 
+                      <label class="x-label cFJJNJn" xid="label7" __cid="cFJJNJn"/>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-One cFJJNJn" xid="output5" data-bind="component:{ref:ref(&quot;jxs&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cFJJNJn"/> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-3 cFJJNJn" xid="col17" style="text-align:right;" __cid="cFJJNJn"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cFJJNJn" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button6Click" data-config="{&quot;label&quot;:&quot;流程图&quot;}" __cid="cFJJNJn"> 
+                      <i xid="i8" __cid="cFJJNJn" class="cFJJNJn"/>  
+                      <span xid="span9" __cid="cFJJNJn" class="cFJJNJn">流程图</span> 
+                    </a> 
+                  </div>  
+                  <div class="col col-xs-6 cFJJNJn" xid="col19" style="font-weight:bold;" __cid="cFJJNJn"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cFJJNJn" xid="labelEdit12" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cFJJNJn"> 
+                      <label class="x-label cFJJNJn" xid="label6" __cid="cFJJNJn">编号：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cFJJNJn" xid="output6" data-bind="component:{ref:ref(&quot;sn&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cFJJNJn"/> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-6 cFJJNJn" xid="col23" __cid="cFJJNJn"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cFJJNJn" xid="labelEdit11" style="text-align:right;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cFJJNJn"> 
+                      <label class="x-label cFJJNJn" xid="label8" style="x;" __cid="cFJJNJn"/>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cFJJNJn" xid="output7" data-bind="component:{ref:ref(&quot;ctime&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cFJJNJn"/> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-6 cFJJNJn" xid="col18" __cid="cFJJNJn"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cFJJNJn" xid="labelEdit17" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cFJJNJn"> 
+                      <label class="x-label cFJJNJn" xid="label5" __cid="cFJJNJn">状态：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cFJJNJn" xid="output8" data-bind="component:{ref:ref(&quot;status&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cFJJNJn"/> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-6 cFJJNJn" xid="col1" style="text-align:right;" __cid="cFJJNJn"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cFJJNJn" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cFJJNJn"> 
+                      <label class="x-label cFJJNJn" xid="label1" __cid="cFJJNJn"/>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cFJJNJn" xid="output1" data-bind="component:{ref:ref(&quot;tax&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cFJJNJn"/> 
+                    </div> 
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="x-content-center x-pull-up cFJJNJn" xid="div4" __cid="cFJJNJn"> 
+          <span class="x-pull-up-label cFJJNJn" xid="span8" __cid="cFJJNJn">加载更多...</span> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cFJJNJn" class="cFJJNJn">.x-panel.pcyAZrM3-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcyAZrM3-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcyAZrM3-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcyAZrM3-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcyAZrM3-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcyAZrM3-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcyAZrM3-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcyAZrM3-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcyAZrM3-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="wReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:wReceiverReceive" __cid="cFJJNJn" class="cFJJNJn"/>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cFJJNJn" xid="popOver1" style="height:100%;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;direction&quot;:&quot;auto&quot;,&quot;opacity&quot;:1,&quot;position&quot;:&quot;top&quot;}" __cid="cFJJNJn"> 
+    <div class="x-popOver-overlay cFJJNJn" xid="div10" __cid="cFJJNJn"/>  
+    <div class="x-popOver-content cFJJNJn" xid="div11" style="height:100%;width:100%;" __cid="cFJJNJn"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcFFNz2q-iosstatusbar cFJJNJn" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cFJJNJn"> 
+        <div class="x-panel-top cFJJNJn" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cFJJNJn"> 
+          <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cFJJNJn" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;流程图&quot;}" __cid="cFJJNJn"> 
+            <div class="x-titlebar-left cFJJNJn" xid="left1" __cid="cFJJNJn"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cFJJNJn" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;popOver1.hide&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cFJJNJn"> 
+                <i xid="i4" __cid="cFJJNJn" class="cFJJNJn"/>  
+                <span xid="span3" __cid="cFJJNJn" class="cFJJNJn">返回</span>
+              </a> 
+            </div>  
+            <div class="x-titlebar-title cFJJNJn" xid="title1" __cid="cFJJNJn">流程图</div>  
+            <div class="x-titlebar-right  cFJJNJn" xid="right1" __cid="cFJJNJn">
+              <div class="empty cFJJNJn" __cid="cFJJNJn"/>
+            </div>
+          </div> 
+        </div>  
+        <div class="x-panel-content cFJJNJn" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cFJJNJn"> 
+          <iframe src="" id="iframeMap1" height="100%" width="100%" xid="iframe1" __cid="cFJJNJn" class="cFJJNJn"/>
+        </div>  
+        <div class="x-panel-bottom cFJJNJn" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cFJJNJn"/>
+        <style __cid="cFJJNJn" class="cFJJNJn">.x-panel.pcFFNz2q-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcFFNz2q-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcFFNz2q-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcFFNz2q-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcFFNz2q-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcFFNz2q-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcFFNz2q-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcFFNz2q-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcFFNz2q-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div> 
+  </div>
+</div>

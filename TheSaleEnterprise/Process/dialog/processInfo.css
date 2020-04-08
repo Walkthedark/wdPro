@@ -1,0 +1,65 @@
+.roi {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	border: 1px solid #F22F3F;
+	color: #ffffff;
+	background-color: #F22F3F;
+	margin: auto;
+}
+
+.roi2 {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	border: 1px solid #7CCEF3;
+	color: #ffffff;
+	background-color: #7CCEF3;
+	margin: auto;
+}
+
+.row-padding {
+	padding: 20px;
+}
+/* #80AEDF */
+.col-padding {
+	padding: 5px;
+}
+
+.back_image {
+	background: url("../img/backBlue.png") no-repeat;
+	width: 100%;
+	height: 30%;
+	background-size: 100% 100%;
+}
+
+.hr-one {
+	margin: auto;
+	padding: 0px;
+	width: 90%;
+	height: 2px;
+	border: none;
+	border-top: 2px double #80AEDF;
+	height: 2px;
+	padding: 0px;
+}
+
+.border-dotted {
+	border-left: 3px dotted #81C160;
+}
+
+
+/* .visit-div { */
+/* 	left: 140px; */
+/* 	z-index: 1; */
+/* 	position: absolute; */
+/* 	border-left: 3px dotted #80AEDF; */
+/* 	height: 100px; */
+/* 	width: 1px; */
+/* } */
+
+/* .visit-div1 { */
+/* 	left: -10px; */
+/* 	position: absolute; */
+/* 	z-index: 999; */
+/* } */

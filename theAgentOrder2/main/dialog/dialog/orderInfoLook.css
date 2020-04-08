@@ -1,0 +1,53 @@
+html {
+	font-size: 62.5%; /*10 ÷ 16 × 100% = 55.5%*/
+}
+
+body{
+	font-family: Helvetica, Arial, "Microsoft YaHei", "Segoe UI",
+		"Lucida Grande", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei",
+		"Hiragino Sans GB", "Hiragino Sans GB W3", sans-serif;
+	font-size: 1.6rem; /*1.4 × 10px = 14px */
+}
+
+.box {
+	width: 100%;
+	height: 80px;
+	overflow: hidden;
+	position: relative;
+}
+.x-popOver .x-popOver-content {
+	width: 100%;
+	background-color: #fff;
+	bottom: 0 !important;
+}
+.box em {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	top: calc(50% - 6px);
+	background-color: #F2F1F2
+}
+.btn_bord {
+	border-radius: 30px;
+	color: white;
+	font-weight:bold;
+	margin-top: 30px;
+	width: 80px;
+	line-height:30px;
+	height: 50px;
+	background-color: black;
+}
+.box em.first {
+	left: -7px;
+	top: 30px
+}
+
+.box em.last {
+	right: -7px;
+	top: 30px
+}
+.btn_radius{
+	border-radius: 30px;
+}
+.div_radius{border-radius:5px 5px 0 0;} 

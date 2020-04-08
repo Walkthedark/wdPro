@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window ca6RjQn" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ca6RjQn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">abody.ca6RjQn{font-family: “Microsoft YaHei” !important} .text-black.ca6RjQn{color: rgb(51, 51, 51)} .tb-nopadding.ca6RjQn{padding-left: 0; padding-right: 0} .tb-numberOperation.ca6RjQn{width: 100%; height: 30px} .tb-numberOperation.ca6RjQn span.ca6RjQn{padding: 4px 15px; border-top: 1px solid rgb(207, 2, 2); border-bottom: 1px solid rgb(207, 2, 2)} .x-panel-top.ca6RjQn .x-titlebar.ca6RjQn{background-color: rgb(255, 68, 0)} .x-titlebar.ca6RjQn .x-titlebar-title.ca6RjQn{font-weight: normal} .x-cards.ca6RjQn{padding: 0} .tb-box.ca6RjQn, .tb-box.ca6RjQn &gt; .col.ca6RjQn{height: 100%; margin: 0; padding: 0} .tb-box.ca6RjQn &gt; .col.ca6RjQn{overflow: auto} .tb-box.ca6RjQn &gt; .col.ca6RjQn:first-child{padding-right: 10px} .cart.ca6RjQn{border-radius: 30px} .goods-img.ca6RjQn{border-radius: 5px} .list-group.ca6RjQn{box-shadow: none} .list-group-item.ca6RjQn{background-color: rgb(245, 245, 245); border-radius: 0; border-color: rgb(225, 225, 225)} .list-group-item.current.ca6RjQn{background-color: rgb(255, 255, 255); border-right: 0; color: rgb(207, 2, 2)} .list-group-item.current.ca6RjQn h5.ca6RjQn{color: rgb(207, 2, 2)} .x-card.btn-group.ca6RjQn .btn.active.ca6RjQn{color: rgb(207, 2, 2)} .tb-listBox.ca6RjQn{padding-left: 0px; padding-right: 10px; margin-bottom: 10px} .tb-listBox.ca6RjQn div.ca6RjQn{background-color: rgb(255, 255, 255)} .tb-listBox.ca6RjQn p.ca6RjQn{font-size: 13px; margin-top: 5px} .x-popOver-content.ddd.ca6RjQn{bottom: 0.6px !important} .x-panel-bottom.ca6RjQn{border-top: 1px solid rgb(220, 220, 220); border-bottom: 1px solid rgb(220, 220, 220)} .x-panel-bottom.ca6RjQn .h4.ca6RjQn{margin: 5px 0} .tb-settlement.ca6RjQn{line-height: 40px; background-color: rgb(253, 80, 1); color: rgb(255, 255, 255); font-size: 16px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="ca6RjQn" class="ca6RjQn"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcMNjmie-iosstatusbar ca6RjQn" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ca6RjQn"> 
+    <div class="x-panel-top ca6RjQn" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ca6RjQn">
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified ca6RjQn" xid="buttonGroup1" style="background-color:white;border-bottom-style:solid;border-bottom-width:thin;border-bottom-color:#D6D6D6;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="ca6RjQn"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default ca6RjQn" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-arrowdownl&quot;,&quot;label&quot;:&quot;默认&quot;,&quot;target&quot;:&quot;content3&quot;}" __cid="ca6RjQn"> 
+          <span xid="span1" __cid="ca6RjQn" class="ca6RjQn">默认</span>
+          <i xid="i1" class="dataControl dataControl-arrowdownl ca6RjQn" style="font-size:14px;" __cid="ca6RjQn"/> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default ca6RjQn" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-filter&quot;,&quot;label&quot;:&quot;筛选&quot;,&quot;target&quot;:&quot;content4&quot;}" __cid="ca6RjQn"> 
+          <span xid="span2" __cid="ca6RjQn" class="ca6RjQn">筛选</span>
+          <i xid="i2" class="dataControl dataControl-filter ca6RjQn" style="font-size:14px;" __cid="ca6RjQn"/> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default ca6RjQn" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-search24&quot;,&quot;label&quot;:&quot;搜索&quot;,&quot;target&quot;:&quot;content5&quot;}" __cid="ca6RjQn"> 
+          <span xid="span3" __cid="ca6RjQn" class="ca6RjQn">搜索</span>
+          <i xid="i3" class="dataControl dataControl-search24 ca6RjQn" style="font-size:14px;" __cid="ca6RjQn"/> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default ca6RjQn" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-thumnail&quot;}" __cid="ca6RjQn"> 
+          <span xid="span4" __cid="ca6RjQn" class="ca6RjQn"/>
+          <i xid="i4" class="dataControl dataControl-thumnail ca6RjQn" style="font-size:15px;" __cid="ca6RjQn"/> 
+        </a>
+      </div>
+    </div>  
+    <div class="x-panel-content ca6RjQn" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ca6RjQn"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full ca6RjQn" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="ca6RjQn"> 
+        <div class="x-contents-content active ca6RjQn" xid="content3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="ca6RjQn">
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row ca6RjQn" xid="row10" style="height:3px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ca6RjQn"> 
+            <div class="x-col ca6RjQn" xid="col21" __cid="ca6RjQn"/>
+          </div>
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row tb-box ca6RjQn" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="ca6RjQn"> 
+            <div class="col col-xs-3 ca6RjQn" xid="col10" style="padding-right:0px;" __cid="ca6RjQn"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list tb-root ca6RjQn" xid="rootClassList" dataItemAlias="rootClassRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;categoryData&quot;,&quot;filter&quot;:&quot; $row.val(\&quot;parent_id\&quot;) ==0&quot;}" __cid="ca6RjQn"> 
+                <ul class="x-list-template list-group hide ca6RjQn" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_rootClassList($element),afterRender:$model.foreach_afterRender_rootClassList.bind($model,$element),as:'rootClassRow'}" __cid="ca6RjQn"> 
+                  <li xid="li1" bind-css="{'current':rootClassRow.val('cate_id')==$model.categoryData.val('cate_id')}" class="list-group-item text-center tb-nopadding ca6RjQn" style="border-right-style:none;" bind-click="li1Click" __cid="ca6RjQn"> 
+                    <h5 xid="h52" bind-text=" val(&quot;cate_name&quot;)" class="text-black ca6RjQn" __cid="ca6RjQn"/>  
+                    <div component="$model/UI2/system/components/justep/list/list" class="x-list tb-root ca6RjQn" xid="list6" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;categoryData&quot;}" __cid="ca6RjQn"> 
+                      <ul class="x-list-template list-group hide ca6RjQn" xid="listTemplateUl7" bind-foreach="{data:$model.foreach_list6($element),afterRender:$model.foreach_afterRender_list6.bind($model,$element)}" __cid="ca6RjQn"> 
+                        <li xid="li7" class="list-group-item text-center tb-nopadding ca6RjQn" style="border-right-style:none;" bind-click="li1Click" __cid="ca6RjQn"> 
+                          <h5 xid="h53" bind-text=" val(&quot;cate_name&quot;)" class="text-black ca6RjQn" __cid="ca6RjQn"/>
+                        </li> 
+                      </ul> 
+                    </div>
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="col col-xs-9 ca6RjQn" xid="col11" style="border-left-style:solid;border-left-width:thin;border-left-color:#D6D6D6;height:100%;" __cid="ca6RjQn"> 
+              <div xid="div13" style="z-index:2;position:absolute;right:0;bottom:0;left:0;width:100%;background-color:rgba(0,0,0,.5);display:none;top:35px;" class="pop-div ca6RjQn" __cid="ca6RjQn">
+                <div xid="div14" style="width:100%;background-color:#f5f5f5;height:70%;" __cid="ca6RjQn" class="ca6RjQn">
+                  <div xid="div19" __cid="ca6RjQn" class="ca6RjQn"> 
+                    <div xid="div2" style="background-color:white;" __cid="ca6RjQn" class="ca6RjQn">
+                      <div component="$model/UI2/system/components/justep/list/list" class="x-list ca6RjQn" xid="list4" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;childrenData&quot;,&quot;filter&quot;:&quot;$row.val(\&quot;children\&quot;)  != null  &amp;&amp; $row.val(\&quot;children\&quot;) != \&quot;\&quot;&quot;}" __cid="ca6RjQn"> 
+                        <ul class="x-list-template hide ca6RjQn" xid="listTemplateUl5" bind-foreach="{data:$model.foreach_list4($element),afterRender:$model.foreach_afterRender_list4.bind($model,$element)}" __cid="ca6RjQn"> 
+                          <li xid="li5" bind-click="li5Click" __cid="ca6RjQn" class="ca6RjQn"> 
+                            <div xid="div6" class="list-group-item ca6RjQn" style="padding:5px 5px 5px 5px;" __cid="ca6RjQn">
+                              <div class="media ca6RjQn" xid="media1" __cid="ca6RjQn"> 
+                                <div class="media-body ca6RjQn" xid="mediaBody1" __cid="ca6RjQn"> 
+                                  <h5 xid="h51" class="media-heading ca6RjQn" style="margin-top:5px;" __cid="ca6RjQn"> 
+                                    <span xid="span8" style="color:#3F3F3F;font-size:16px;" bind-text="val(&quot;cate_name&quot;)" __cid="ca6RjQn" class="ca6RjQn"/>  
+                                    <div xid="div5" class="pull-right ca6RjQn" style="color:#3F3F3F;height:100%;width:40px;text-align:center;" __cid="ca6RjQn"> 
+                                      <i xid="i8" class="icon-arrow-right-b ca6RjQn" __cid="ca6RjQn"/>
+                                    </div> 
+                                  </h5> 
+                                </div> 
+                              </div>
+                            </div>
+                          </li>
+                        </ul> 
+                      </div>
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row ca6RjQn" xid="row2" style="background-color:white;padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ca6RjQn"> 
+                        <div class="x-col ca6RjQn" xid="col4" __cid="ca6RjQn">
+                          <div component="$model/UI2/system/components/justep/list/list" class="x-list ca6RjQn" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;childrenData&quot;,&quot;filter&quot;:&quot;$row.val(\&quot;children\&quot;)  == null  || $row.val(\&quot;children\&quot;) == \&quot;\&quot;&quot;}" __cid="ca6RjQn"> 
+                            <ul class="x-list-template hide ca6RjQn" xid="listTemplateUl3" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="ca6RjQn"> 
+                              <li xid="li3" class="col col-xs-4  ca6RjQn" __cid="ca6RjQn">
+                                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm ca6RjQn" xid="button5" style="border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#CDCDCD #CDCDCD #CDCDCD #CDCDCD;background-color:white;color:#565656;margin-top:5px;" bind-click="button5Click" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;南方肥牛牛肉&quot;}" __cid="ca6RjQn"> 
+                                  <i xid="i12" __cid="ca6RjQn" class="ca6RjQn"/>  
+                                  <span xid="span24" bind-text="val(&quot;cate_name&quot;)" __cid="ca6RjQn" class="ca6RjQn">南方肥牛牛肉</span>
+                                </a>
+                              </li>
+                            </ul> 
+                          </div> 
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>  
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list ca6RjQn" xid="list1" style="overflow:auto" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;goodsDataM&quot;}" __cid="ca6RjQn"> 
+                <ul class="x-list-template hide ca6RjQn" xid="listTemplateUl2" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="ca6RjQn"> 
+                  <li xid="li2" __cid="ca6RjQn" class="ca6RjQn">
+                    <div xid="div26" __cid="ca6RjQn" class="ca6RjQn"> 
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row ca6RjQn" xid="row12" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ca6RjQn"> 
+                        <div class="x-col x-col-80 ca6RjQn" xid="col25" __cid="ca6RjQn"> 
+                          <div class="media ca6RjQn" xid="media8" __cid="ca6RjQn"> 
+                            <div class="media-left ca6RjQn" xid="mediaLeft6" __cid="ca6RjQn"> 
+                              <a href="#" xid="a6" __cid="ca6RjQn" class="ca6RjQn"> 
+                                <img class="media-object goods-img ca6RjQn" src="$model/UI2/dealersOrderSys/PlaceTheOrder/class/img/pic1.png" alt="" xid="image6" style="width:80px;" height="80px" bind-attr-src=" val(&quot;goods_img&quot;)" __cid="ca6RjQn"/>
+                              </a> 
+                            </div>  
+                            <div class="media-body ca6RjQn" xid="mediaBody8" __cid="ca6RjQn"> 
+                              <h4 xid="h47" class="media-heading ca6RjQn" style="font-size:15px;color:#292929;" bind-text=" val(&quot;goods_name&quot;)" __cid="ca6RjQn">澳大利亚牛肉</h4>  
+                              <h5 xid="h521" __cid="ca6RjQn" class="ca6RjQn"> 
+                                <h5 xid="h523" style="margin-top:20px;" __cid="ca6RjQn" class="ca6RjQn"> 
+                                  <span xid="span42" style="color:#cf0202;font-size:14px;" __cid="ca6RjQn" class="ca6RjQn">¥</span>  
+                                  <span xid="span41" style="color:#cf0202;font-size:14px;" bind-text="val(&quot;price&quot;)" __cid="ca6RjQn" class="ca6RjQn">90.00</span>
+                                </h5>  
+                                <h5 xid="h522" __cid="ca6RjQn" class="ca6RjQn"> 
+                                  <span xid="span44" style="font-size:14px;color:#505050;" __cid="ca6RjQn" class="ca6RjQn">库存:</span>  
+                                  <span xid="span43" style="font-size:14px;color:#505050;" bind-text="val(&quot;goods_inventory&quot;)" __cid="ca6RjQn" class="ca6RjQn">34</span>
+                                </h5> 
+                              </h5> 
+                            </div> 
+                          </div> 
+                        </div>  
+                        <div class="x-col ca6RjQn" xid="col24" __cid="ca6RjQn"> 
+                          <div xid="div27" style="text-align:center;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#cf0202 #cf0202 #cf0202 #cf0202;height:30px;width:30px;bottom:0px;margin-top:40px;" class="center-block cart ca6RjQn" bind-click="div27Click" __cid="ca6RjQn"> 
+                            <i xid="i16" class="linear linear-cart cart ca6RjQn" style="font-size:20px;color:#cf0202;line-height:25px" __cid="ca6RjQn"/>
+                          </div> 
+                        </div> 
+                      </div> 
+                    </div>
+                  </li>
+                </ul> 
+              </div> 
+            </div> 
+          </div>
+        </div>  
+        <div class="x-contents-content ca6RjQn" xid="content4" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="ca6RjQn">
+          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container ca6RjQn" xid="windowContainer1" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" __cid="ca6RjQn"/>
+        </div>  
+        <div class="x-contents-content ca6RjQn" xid="content5" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="ca6RjQn">
+          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container ca6RjQn" xid="windowContainer2" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" __cid="ca6RjQn"/>
+        </div>
+      </div>
+    </div>  
+    <style __cid="ca6RjQn" class="ca6RjQn">.x-panel.pcMNjmie-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcMNjmie-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcMNjmie-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcMNjmie-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcMNjmie-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcMNjmie-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcMNjmie-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcMNjmie-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcMNjmie-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver ca6RjQn" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;direction&quot;:&quot;auto&quot;,&quot;position&quot;:&quot;bottom&quot;}" __cid="ca6RjQn"> 
+    <div class="x-popOver-overlay ca6RjQn" xid="div21" __cid="ca6RjQn"/>  
+    <div class="x-popOver-content ddd ca6RjQn" xid="div22" style="height:60%;width:100%;background-color:white;" __cid="ca6RjQn">
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcquQjUz-iosstatusbar ca6RjQn" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ca6RjQn"> 
+        <div class="x-panel-content ca6RjQn" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ca6RjQn">
+          <div xid="div35" __cid="ca6RjQn" class="ca6RjQn"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row ca6RjQn" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ca6RjQn"> 
+              <div class="x-col x-col-20 ca6RjQn" xid="col14" __cid="ca6RjQn"> 
+                <img src="$model/UI2/dealersOrderSys/PlaceTheOrder/class/img/pic2.png" alt="" xid="image8" height="60px" style="width:60px;" class="img-rounded  ca6RjQn" __cid="ca6RjQn"/>
+              </div>  
+              <div class="x-col ca6RjQn" xid="col2" style="text-align:left;" __cid="ca6RjQn"> 
+                <h4 class="media-heading ca6RjQn" xid="h45" style="color:#545454;font-size:16px;" __cid="ca6RjQn">澳大利亚牛肉</h4>
+              </div>  
+              <div class="x-col ca6RjQn" xid="col12" style="text-align:right;" __cid="ca6RjQn"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ca6RjQn" xid="button8" style="color:#3F3F3F;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button8Click" data-config="{&quot;icon&quot;:&quot;icon-android-close&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ca6RjQn"> 
+                  <i xid="i20" class="icon-android-close ca6RjQn" __cid="ca6RjQn"/>  
+                  <span xid="span34" __cid="ca6RjQn" class="ca6RjQn"/>
+                </a> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list ca6RjQn" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;GoodsInfodata&quot;}" __cid="ca6RjQn"> 
+            <ul class="x-list-template hide ca6RjQn" xid="listTemplateUl4" bind-foreach="{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)}" __cid="ca6RjQn"> 
+              <li xid="li4" __cid="ca6RjQn" class="ca6RjQn">
+                <div xid="div3" class="list-group-item ca6RjQn" style="padding:5px 5px 5px 5px;background-color:white;" __cid="ca6RjQn">
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row ca6RjQn" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ca6RjQn"> 
+                    <div class="x-col x-col-67 ca6RjQn" xid="col16" __cid="ca6RjQn">
+                      <h5 xid="h54" __cid="ca6RjQn" class="ca6RjQn"> 
+                        <span xid="span6" class="text-danger ca6RjQn" __cid="ca6RjQn">¥</span>  
+                        <span xid="span25" bind-text=" val(&quot;price&quot;)" class="text-danger ca6RjQn" __cid="ca6RjQn"/>  
+                        <span xid="span5" bind-text="&quot;/&quot; + val(&quot;unit_name&quot;)" style="color:#666" __cid="ca6RjQn" class="ca6RjQn"/>  
+                        <span xid="span37" style="color:#666" bind-text=" val(&quot;goods_sn&quot;)" __cid="ca6RjQn" class="ca6RjQn"/>
+                      </h5>  
+                      <h5 xid="h55" __cid="ca6RjQn" class="ca6RjQn"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs ca6RjQn" xid="button13" style="background-color:#F9F8F9;color:#797979;margin-left:5px;" bind-text=" val(&quot;specification1_value&quot;)" bind-visible="val(&quot;specification1_name&quot;)!=&quot;&quot;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;button&quot;}" __cid="ca6RjQn"> 
+                          <i xid="i9" __cid="ca6RjQn" class="ca6RjQn"/>  
+                          <span xid="span13" __cid="ca6RjQn" class="ca6RjQn"/>
+                        </a>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs ca6RjQn" xid="button7" style="background-color:#F9F8F9;color:#797979;margin-left:5px;" bind-text=" val(&quot;specification2_value&quot;)" bind-visible="val(&quot;specification2_name&quot;)!=&quot;&quot;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;button&quot;}" __cid="ca6RjQn"> 
+                          <i xid="i5" __cid="ca6RjQn" class="ca6RjQn"/>  
+                          <span xid="span12" __cid="ca6RjQn" class="ca6RjQn"/>
+                        </a>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs ca6RjQn" xid="button9" style="background-color:#F9F8F9;color:#797979;margin-left:5px;" bind-text=" val(&quot;specification3_value&quot;)" bind-visible="val(&quot;specification3_name&quot;)!=&quot;&quot;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;disabled&quot;:true,&quot;label&quot;:&quot;button&quot;}" __cid="ca6RjQn"> 
+                          <i xid="i21" __cid="ca6RjQn" class="ca6RjQn"/>  
+                          <span xid="span40" __cid="ca6RjQn" class="ca6RjQn"/>
+                        </a> 
+                      </h5>
+                    </div>  
+                    <div class="x-col ca6RjQn" xid="col18" __cid="ca6RjQn">
+                      <div xid="div23" __cid="ca6RjQn" class="ca6RjQn">
+                        <div class="tb-numberOperation ca6RjQn" xid="div34" style="text-align:right;" __cid="ca6RjQn"> 
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-xs btn-only-icon pull-right ca6RjQn" xid="button11" style="border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#cf0202 #cf0202 #cf0202 #cf0202;color:#FFFEFF;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#cf0202 #cf0202 #cf0202 #cf0202;color:#FFFEFF;background-color:#cf0202;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-add&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ca6RjQn"> 
+                            <i xid="i18" class="icon-android-add ca6RjQn" __cid="ca6RjQn"/>  
+                            <span xid="span36" __cid="ca6RjQn" class="ca6RjQn"/>
+                          </a>  
+                          <span xid="span32" class="pull-right ca6RjQn" style="line-height:0.8;height:22px;" bind-text="val(&quot;goods_num&quot;)==null?&quot;0&quot;: val(&quot;goods_num&quot;)" __cid="ca6RjQn">2</span>  
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon pull-right ca6RjQn" xid="button12" style="background-color:white;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#cf0202 #cf0202 #cf0202 #cf0202;color:#cf0202" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:reductionBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-remove&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ca6RjQn"> 
+                            <i xid="i15" class="icon-android-remove ca6RjQn" __cid="ca6RjQn"/>  
+                            <span xid="span33" __cid="ca6RjQn" class="ca6RjQn"/>
+                          </a> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul> 
+          </div>
+        </div>  
+        <div class="x-panel-bottom ca6RjQn" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ca6RjQn"> 
+          <div xid="div11" style="height:100%;width:100%;" __cid="ca6RjQn" class="ca6RjQn">
+            <div xid="div12" style="height:100%;width:60%;float:left;border-right-style:solid;border-right-width:thin;border-right-color:#D6D6D6;" __cid="ca6RjQn" class="ca6RjQn">
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row ca6RjQn" xid="row8" style="height:100%;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ca6RjQn"> 
+                <div class="x-col  ca6RjQn" xid="col17" __cid="ca6RjQn"> 
+                  <div class="media ca6RjQn" xid="media9" __cid="ca6RjQn"> 
+                    <div class="media-body ca6RjQn" xid="mediaBody9" __cid="ca6RjQn"> 
+                      <h5 xid="h515" class="media-heading ca6RjQn" style="color:#505050;" __cid="ca6RjQn"> 
+                        <span xid="span26" __cid="ca6RjQn" class="ca6RjQn">已选种类</span>  
+                        <span xid="span27" __cid="ca6RjQn" class="ca6RjQn">3</span>  
+                        <span xid="span28" __cid="ca6RjQn" class="ca6RjQn">数量</span>  
+                        <span xid="span29" __cid="ca6RjQn" class="ca6RjQn">6</span>
+                      </h5>  
+                      <h5 xid="h517" class="media-heading ca6RjQn" __cid="ca6RjQn"> 
+                        <span xid="span31" style="color:#cf0202;" __cid="ca6RjQn" class="ca6RjQn">¥</span>  
+                        <span xid="span30" style="color:#cf0202;" __cid="ca6RjQn" class="ca6RjQn">4000</span>
+                      </h5>
+                    </div> 
+                  </div>
+                </div> 
+              </div>
+            </div>  
+            <div xid="div15" style="height:100%;width:407;text-align:center;" __cid="ca6RjQn" class="ca6RjQn">
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-icon-top ca6RjQn" xid="button6" style="color:#505050;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button6Click" data-config="{&quot;icon&quot;:&quot;linear linear-cart&quot;,&quot;label&quot;:&quot;进入购物车&quot;}" __cid="ca6RjQn"> 
+                <i xid="i6" class="linear linear-cart ca6RjQn" style="font-size:18px;" __cid="ca6RjQn"/>  
+                <span xid="span35" __cid="ca6RjQn" class="ca6RjQn">进入购物车</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <style __cid="ca6RjQn" class="ca6RjQn">.x-panel.pcquQjUz-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcquQjUz-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcquQjUz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcquQjUz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcquQjUz-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcquQjUz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcquQjUz-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcquQjUz-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcquQjUz-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cMRJn2i" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cMRJn2i" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">html.cMRJn2i{font-size: 62.5% !important} body.cMRJn2i{font-size: 1.6rem "Microsoft YaHei", arial, tahoma, 宋体, sans-serif !important} .x-label.cMRJn2i{color: rgb(53, 53, 53)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cMRJn2i" class="cMRJn2i"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcQnAzu2-iosstatusbar cMRJn2i" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cMRJn2i"> 
+    <div class="x-panel-top cMRJn2i" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMRJn2i"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cMRJn2i" xid="row1" style="padding:0px 0px 0px 0px;background-color:#EBEAF0;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMRJn2i"> 
+        <div xid="col3" style="width:0.5em;" __cid="cMRJn2i" class="cMRJn2i"/>  
+        <div class="x-col  cMRJn2i" xid="col4" __cid="cMRJn2i"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cMRJn2i" xid="input1" style="background-color:white;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;联系人名称&quot;}" __cid="cMRJn2i"/> 
+        </div>  
+        <div xid="col5" style="width:0.5em;" __cid="cMRJn2i" class="cMRJn2i"/> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cMRJn2i" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMRJn2i"> 
+      <div xid="div1" __cid="cMRJn2i" class="cMRJn2i"> 
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cMRJn2i" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;linkManData&quot;}" __cid="cMRJn2i"> 
+          <ul class="x-list-template hide cMRJn2i" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cMRJn2i"> 
+            <li xid="li1" __cid="cMRJn2i" class="cMRJn2i"> 
+              <div xid="div22" class="list-group-item cMRJn2i" style="padding:5px 5px 5px 5px;" __cid="cMRJn2i"> 
+                <div class="media cMRJn2i" xid="media9" __cid="cMRJn2i"> 
+                  <div class="media-left cMRJn2i" xid="mediaLeft1" __cid="cMRJn2i"> 
+                    <a href="#" xid="a2" __cid="cMRJn2i" class="cMRJn2i"> 
+                      <img class="media-object cMRJn2i" src="" alt="" xid="image2" style="width:50px;height:55px;" bind-attr-src=" val(&quot;head_img&quot;)" __cid="cMRJn2i"/>
+                    </a> 
+                  </div>
+                  <div class="media-body cMRJn2i" xid="mediaBody9" __cid="cMRJn2i"> 
+                    <h5 xid="h518" style="color:#181919;" bind-text=" val(&quot;staff_name&quot;)" class="media-heading cMRJn2i" __cid="cMRJn2i">潜在用友客户</h5>  
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-sm cMRJn2i" xid="button2" style="color:#6F6F6F;" bind-text=" val(&quot;phone&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;button&quot;}" __cid="cMRJn2i"> 
+                      <i xid="i3" __cid="cMRJn2i" class="cMRJn2i"/>  
+                      <span xid="span3" __cid="cMRJn2i" class="cMRJn2i"/> 
+                    </a> 
+                  </div>  
+                  <div class="media-right cMRJn2i" xid="mediaRight8" __cid="cMRJn2i"> 
+                    <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cMRJn2i" xid="checkbox1" checkedValue="1" uncheckedValue="0" data-config="{&quot;checked&quot;:false,&quot;checkedValue&quot;:&quot;1&quot;,&quot;disabled&quot;:false,&quot;uncheckedValue&quot;:&quot;0&quot;}" data-bind="component:{ref:ref(&quot;choose&quot;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cMRJn2i">
+                      <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cMRJn2i" class="cMRJn2i"/>
+                      <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cMRJn2i" class="cMRJn2i"/>
+                    </span>
+                  </div> 
+                </div> 
+              </div> 
+            </li> 
+          </ul> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cMRJn2i" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMRJn2i"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cMRJn2i" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cMRJn2i"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label cMRJn2i" xid="button1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cMRJn2i"> 
+          <i xid="i1" __cid="cMRJn2i" class="cMRJn2i"/>  
+          <span xid="span1" __cid="cMRJn2i" class="cMRJn2i">取消</span> 
+        </a>
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cMRJn2i" xid="okBtn" style="background-color:#4B76AE;color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:okBtnClick" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cMRJn2i"> 
+          <i xid="i2" __cid="cMRJn2i" class="cMRJn2i"/>  
+          <span xid="span2" __cid="cMRJn2i" class="cMRJn2i">确定</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cMRJn2i" class="cMRJn2i">.x-panel.pcQnAzu2-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcQnAzu2-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcQnAzu2-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcQnAzu2-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcQnAzu2-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcQnAzu2-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcQnAzu2-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcQnAzu2-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcQnAzu2-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

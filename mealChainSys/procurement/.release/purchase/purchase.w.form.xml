@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cquyi6f" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cquyi6f" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.btn-color.cquyi6f{background-color: rgb(255, 255, 255); color: rgb(64, 116, 34)} .btn-group.cquyi6f .btn.active.cquyi6f{background-color: rgb(64, 116, 34); color: rgb(255, 255, 255)} .btn-radius.cquyi6f{border-radius: 5px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cquyi6f" class="cquyi6f"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcrYJNBz-iosstatusbar cquyi6f" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cquyi6f"> 
+    <div class="x-panel-top cquyi6f" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cquyi6f">
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cquyi6f" xid="titleBar2" style="background-color:#272F2C;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cquyi6f"> 
+        <div class="x-titlebar-left cquyi6f" xid="left2" __cid="cquyi6f"/>  
+        <div class="x-titlebar-title cquyi6f" xid="title2" __cid="cquyi6f">选择档口</div>  
+        <div class="x-titlebar-right  cquyi6f" xid="right2" __cid="cquyi6f">
+          <div class="empty cquyi6f" __cid="cquyi6f"/>
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-content cquyi6f" xid="content4" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cquyi6f">
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc6F73mq-iosstatusbar cquyi6f" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cquyi6f"> 
+        <div class="x-panel-top cquyi6f" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cquyi6f"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cquyi6f" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cquyi6f"> 
+            <div class="x-col cquyi6f" xid="col1" __cid="cquyi6f"/>  
+            <div class="x-col x-col-90 cquyi6f" xid="col2" __cid="cquyi6f"> 
+              <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group  btn-group-justified cquyi6f" xid="buttonGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cquyi6f"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn active btn-link btn-color btn-radius cquyi6f" xid="sortingBtn" style="border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#407422;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;食材申购&quot;,&quot;target&quot;:&quot;content2&quot;}" __cid="cquyi6f"> 
+                  <i xid="i6" __cid="cquyi6f" class="cquyi6f"/>  
+                  <span xid="span3" __cid="cquyi6f" class="cquyi6f">食材申购</span>
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-color btn-radius cquyi6f" xid="button6" style="border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#407422;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;耗品申购&quot;,&quot;target&quot;:&quot;content3&quot;}" __cid="cquyi6f"> 
+                  <i xid="i7" __cid="cquyi6f" class="cquyi6f"/>  
+                  <span xid="span6" __cid="cquyi6f" class="cquyi6f">耗品申购</span>
+                </a> 
+              </div> 
+            </div>  
+            <div class="x-col cquyi6f" xid="col3" __cid="cquyi6f"/>
+          </div> 
+        </div>  
+        <div class="x-panel-content cquyi6f" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cquyi6f"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cquyi6f" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:false}" __cid="cquyi6f"> 
+            <div class="x-contents-content active cquyi6f" xid="content2" style="background-color:#EEEEEE;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cquyi6f">
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cquyi6f" xid="row2" style="height:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cquyi6f"> 
+                <div class="x-col cquyi6f" xid="col4" __cid="cquyi6f"/>  
+                <div class="x-col cquyi6f" xid="col5" __cid="cquyi6f"/>  
+                <div class="x-col cquyi6f" xid="col6" __cid="cquyi6f"/>
+              </div>
+              <div xid="div16" class="list-group-item cquyi6f" style="padding:3px 3px 3px 3px;" bind-click="div16Click" __cid="cquyi6f"> 
+                <div class="media cquyi6f" xid="media4" __cid="cquyi6f"> 
+                  <div class="media-body cquyi6f" xid="mediaBody4" __cid="cquyi6f"> 
+                    <h4 class="media-heading cquyi6f" xid="h44" __cid="cquyi6f"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cquyi6f" xid="button20" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-beer&quot;,&quot;label&quot;:&quot;厨房&quot;}" __cid="cquyi6f"> 
+                        <i xid="i21" class="icon-beer cquyi6f" style="color:#63C8E7;font-size:18px;" __cid="cquyi6f"/>  
+                        <span xid="span30" style="color:#191919;font-size:16px;" __cid="cquyi6f" class="cquyi6f">厨房</span>
+                      </a> 
+                    </h4> 
+                  </div>  
+                  <div class="media-right cquyi6f" xid="mediaRight4" __cid="cquyi6f"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cquyi6f" xid="button19" style="color:#191919" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-arrowrightl&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cquyi6f"> 
+                      <i xid="i20" class="dataControl dataControl-arrowrightl cquyi6f" __cid="cquyi6f"/>  
+                      <span xid="span31" __cid="cquyi6f" class="cquyi6f"/>
+                    </a> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content cquyi6f" xid="content3" style="background-color:#EEEEEE;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cquyi6f">
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cquyi6f" xid="row3" style="height:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cquyi6f"> 
+                <div class="x-col cquyi6f" xid="col8" __cid="cquyi6f"/>  
+                <div class="x-col cquyi6f" xid="col9" __cid="cquyi6f"/>  
+                <div class="x-col cquyi6f" xid="col7" __cid="cquyi6f"/>
+              </div>  
+              <div xid="div1" class="list-group-item cquyi6f" style="padding:3px 3px 3px 3px;" __cid="cquyi6f"> 
+                <div class="media cquyi6f" xid="media1" __cid="cquyi6f"> 
+                  <div class="media-body cquyi6f" xid="mediaBody1" __cid="cquyi6f"> 
+                    <h4 class="media-heading cquyi6f" xid="h41" __cid="cquyi6f"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cquyi6f" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-beer&quot;,&quot;label&quot;:&quot;厨房&quot;}" __cid="cquyi6f"> 
+                        <i xid="i2" class="icon-beer cquyi6f" style="color:#63C8E7;font-size:18px;" __cid="cquyi6f"/>  
+                        <span xid="span1" style="color:#191919;font-size:16px;" __cid="cquyi6f" class="cquyi6f">厨房</span>
+                      </a> 
+                    </h4> 
+                  </div>  
+                  <div class="media-right cquyi6f" xid="mediaRight1" __cid="cquyi6f"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cquyi6f" xid="button2" style="color:#191919" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-arrowrightl&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cquyi6f"> 
+                      <i xid="i1" class="dataControl dataControl-arrowrightl cquyi6f" __cid="cquyi6f"/>  
+                      <span xid="span2" __cid="cquyi6f" class="cquyi6f"/>
+                    </a> 
+                  </div> 
+                </div> 
+              </div>  
+              <div xid="div2" class="list-group-item cquyi6f" style="padding:3px 3px 3px 3px;" __cid="cquyi6f"> 
+                <div class="media cquyi6f" xid="media2" __cid="cquyi6f"> 
+                  <div class="media-body cquyi6f" xid="mediaBody2" __cid="cquyi6f"> 
+                    <h4 class="media-heading cquyi6f" xid="h42" __cid="cquyi6f"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cquyi6f" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-beer&quot;,&quot;label&quot;:&quot;前厅&quot;}" __cid="cquyi6f"> 
+                        <i xid="i4" class="icon-beer cquyi6f" style="color:#63C8E7;font-size:18px;" __cid="cquyi6f"/>  
+                        <span xid="span5" style="color:#191919;font-size:16px;" __cid="cquyi6f" class="cquyi6f">前厅</span>
+                      </a> 
+                    </h4> 
+                  </div>  
+                  <div class="media-right cquyi6f" xid="mediaRight2" __cid="cquyi6f"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cquyi6f" xid="button3" style="color:#191919" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-arrowrightl&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cquyi6f"> 
+                      <i xid="i3" class="dataControl dataControl-arrowrightl cquyi6f" __cid="cquyi6f"/>  
+                      <span xid="span4" __cid="cquyi6f" class="cquyi6f"/>
+                    </a> 
+                  </div> 
+                </div> 
+              </div>  
+              <div xid="div3" class="list-group-item cquyi6f" style="padding:3px 3px 3px 3px;" __cid="cquyi6f"> 
+                <div class="media cquyi6f" xid="media3" __cid="cquyi6f"> 
+                  <div class="media-body cquyi6f" xid="mediaBody3" __cid="cquyi6f"> 
+                    <h4 class="media-heading cquyi6f" xid="h43" __cid="cquyi6f"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cquyi6f" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-beer&quot;,&quot;label&quot;:&quot;库房&quot;}" __cid="cquyi6f"> 
+                        <i xid="i8" class="icon-beer cquyi6f" style="color:#63C8E7;font-size:18px;" __cid="cquyi6f"/>  
+                        <span xid="span8" style="color:#191919;font-size:16px;" __cid="cquyi6f" class="cquyi6f">库房</span>
+                      </a> 
+                    </h4> 
+                  </div>  
+                  <div class="media-right cquyi6f" xid="mediaRight3" __cid="cquyi6f"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cquyi6f" xid="button5" style="color:#191919" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-arrowrightl&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cquyi6f"> 
+                      <i xid="i5" class="dataControl dataControl-arrowrightl cquyi6f" __cid="cquyi6f"/>  
+                      <span xid="span7" __cid="cquyi6f" class="cquyi6f"/>
+                    </a> 
+                  </div> 
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>  
+        <style __cid="cquyi6f" class="cquyi6f">.x-panel.pc6F73mq-iosstatusbar &gt;.x-panel-top {height: 55px;}.x-panel.pc6F73mq-iosstatusbar &gt;.x-panel-content { top: 55px;bottom: nullpx;}.x-panel.pc6F73mq-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc6F73mq-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc6F73mq-iosstatusbar &gt;.x-panel-top {height: 75px;}.iosstatusbar .x-panel.pc6F73mq-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc6F73mq-iosstatusbar &gt;.x-panel-content { top: 75px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc6F73mq-iosstatusbar &gt;.x-panel-top {height: 55px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc6F73mq-iosstatusbar &gt;.x-panel-content {top: 55px;}</style>
+      </div>
+    </div>  
+    <style __cid="cquyi6f" class="cquyi6f">.x-panel.pcrYJNBz-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcrYJNBz-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcrYJNBz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcrYJNBz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcrYJNBz-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcrYJNBz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcrYJNBz-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcrYJNBz-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcrYJNBz-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

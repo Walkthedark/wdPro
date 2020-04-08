@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cbmuiqi" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cbmuiqi" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <style>.btn_bord.cbmuiqi{border-radius: 10px}</style>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="depReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" __cid="cbmuiqi" class="cbmuiqi"></span>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cbmuiqi" class="cbmuiqi"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pczyIrUv-iosstatusbar cbmuiqi" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cbmuiqi"> 
+    <div class="x-panel-top cbmuiqi" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cbmuiqi"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cbmuiqi" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;选择客户&#34;}" __cid="cbmuiqi"> 
+        <div class="x-titlebar-left cbmuiqi" xid="left2" __cid="cbmuiqi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cbmuiqi" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;返回&#34;}" __cid="cbmuiqi"> 
+            <i xid="i1" __cid="cbmuiqi" class="cbmuiqi"></i>  
+            <span xid="span4" __cid="cbmuiqi" class="cbmuiqi">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cbmuiqi" xid="title2" __cid="cbmuiqi">选择客户</div>  
+        <div class="x-titlebar-right  cbmuiqi" xid="right2" __cid="cbmuiqi">
+          <div class="empty cbmuiqi" __cid="cbmuiqi"></div>
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cbmuiqi" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cbmuiqi"> 
+        <div class="x-col cbmuiqi" xid="col2" __cid="cbmuiqi"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cbmuiqi" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cbmuiqi"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cbmuiqi" xid="input1" data-bind="component:{ref:$model.cData.ref(&#34;temp&#34;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;placeHolder&#34;:&#34;请输入客户名称/收货人/收货手机号&#34;}" __cid="cbmuiqi">  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-icon cbmuiqi" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&#34;icon&#34;:&#34;linear linear-magnifier&#34;,&#34;label&#34;:&#34;查询&#34;}" __cid="cbmuiqi"> 
+              <i xid="i3" class="linear linear-magnifier cbmuiqi" __cid="cbmuiqi"></i>  
+              <span xid="span2" __cid="cbmuiqi" class="cbmuiqi">查询</span> 
+            </a> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cbmuiqi" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cbmuiqi"> 
+      <div xid="div2" __cid="cbmuiqi" class="cbmuiqi">
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cbmuiqi" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;clientData&#34;}" __cid="cbmuiqi"> 
+          <ul class="x-list-template hide cbmuiqi" xid="listTemplateUl1" __cid="cbmuiqi" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+            <li xid="li1" class="border-Two cbmuiqi" __cid="cbmuiqi" data-bind="event:{click:$model._callModelFn.bind($model, 'li1Click')}"> 
+              <div xid="div1" class="list-group-item cbmuiqi" style="padding:7px 5px 5px 5px;" __cid="cbmuiqi">
+                <div class="media cbmuiqi" xid="media1" __cid="cbmuiqi"> 
+                  <div class="media-body cbmuiqi" xid="mediaBody1" __cid="cbmuiqi"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cbmuiqi" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cbmuiqi"> 
+                      <div class="x-col  cbmuiqi" xid="col1" __cid="cbmuiqi">
+                        <span xid="span3" __cid="cbmuiqi" class="cbmuiqi" data-bind="text:val(&#34;client_name&#34;)">上海市浦东新区</span>
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs  cbmuiqi" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:val(&#34;level_name&#34;)" data-config="{&#34;label&#34;:&#34;三级代理&#34;}" __cid="cbmuiqi"> 
+                          <i xid="i4" __cid="cbmuiqi" class="cbmuiqi"></i>  
+                          <span xid="span5" __cid="cbmuiqi" class="cbmuiqi">三级代理</span>
+                        </a>
+                      </div>  
+                      <div class="x-col x-col-10 cbmuiqi" xid="col4" __cid="cbmuiqi"></div>
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cbmuiqi" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cbmuiqi"> 
+                      <div class="x-col cbmuiqi" xid="col7" __cid="cbmuiqi">
+                        <h5 xid="h51" style="color:#989898;" __cid="cbmuiqi" class="cbmuiqi">地址:上海市，杨浦区，宁国路第三大道15弄大楼502</h5>
+                      </div>
+                    </div>
+                  </div>  
+                  <div class="media-right cbmuiqi" xid="mediaRight1" __cid="cbmuiqi"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn_bord cbmuiqi" xid="button2" style="color:#5C5C5C;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#56B9C9 #56B9C9 #56B9C9 #56B9C9;margin-top:30px;width:60px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;代下单&#34;}" __cid="cbmuiqi"> 
+                      <i xid="i2" __cid="cbmuiqi" class="cbmuiqi"></i>  
+                      <span xid="span1" __cid="cbmuiqi" class="cbmuiqi">代下单</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li> 
+          </ul> 
+        </div>
+      </div>
+    </div>  
+    <style __cid="cbmuiqi" class="cbmuiqi">.x-panel.pczyIrUv-iosstatusbar >.x-panel-top {height: 110px;}.x-panel.pczyIrUv-iosstatusbar >.x-panel-content { top: 110px;bottom: nullpx;}.x-panel.pczyIrUv-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pczyIrUv-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pczyIrUv-iosstatusbar >.x-panel-top {height: 130px;}.iosstatusbar .x-panel.pczyIrUv-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pczyIrUv-iosstatusbar >.x-panel-content { top: 130px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pczyIrUv-iosstatusbar >.x-panel-top {height: 110px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pczyIrUv-iosstatusbar >.x-panel-content {top: 110px;}</style>
+  </div> 
+</div>

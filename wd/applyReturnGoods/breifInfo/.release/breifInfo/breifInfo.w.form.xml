@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cmmimue" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cmmimue" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.h-style.cmmimue{color: rgb(102, 102, 102); font-size: 12px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cmmimue" class="cmmimue"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcVzemMz-iosstatusbar cmmimue" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cmmimue"> 
+    <div class="x-panel-top cmmimue" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmmimue"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cmmimue" style="background-color:#47D1D1;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;备注信息&quot;}" __cid="cmmimue"> 
+        <div class="x-titlebar-left cmmimue" __cid="cmmimue"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cmmimue" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cmmimue"> 
+            <i class="icon-chevron-left cmmimue" __cid="cmmimue"/>  
+            <span __cid="cmmimue" class="cmmimue"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cmmimue" __cid="cmmimue">备注信息</div>  
+        <div class="x-titlebar-right  cmmimue" __cid="cmmimue">
+          <div class="empty cmmimue" __cid="cmmimue"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cmmimue" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmmimue">
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cmmimue" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;briefData&quot;}" __cid="cmmimue"> 
+        <ul class="x-list-template hide cmmimue" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cmmimue"> 
+          <li xid="li1" __cid="cmmimue" class="cmmimue">
+            <div xid="div1" style="padding:3px 0;" __cid="cmmimue" class="cmmimue">
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cmmimue" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmmimue"> 
+                <div class="x-col cmmimue" xid="col1" style="border-bottom:1px solid #e6e7e8;" __cid="cmmimue">
+                  <div xid="div2" style="padding:3px;" __cid="cmmimue" class="cmmimue">
+                    <span xid="span2" bind-text=" ref(&quot;brief_content&quot;)" __cid="cmmimue" class="cmmimue"/>
+                  </div>  
+                  <div xid="div3" style="padding:3px 3px;display:flex;" class="h-style cmmimue" __cid="cmmimue">
+                    <div xid="div4" style="flex:1;" __cid="cmmimue" class="cmmimue">
+                      <span xid="span3" __cid="cmmimue" class="cmmimue">18092337815</span>
+                    </div>  
+                    <div xid="div5" style="flex:1;text-align:right;" __cid="cmmimue" class="cmmimue">
+                      <span xid="span4" bind-text=" ref(&quot;brief_create_time&quot;)" __cid="cmmimue" class="cmmimue"/>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </li>
+        </ul> 
+      </div>
+    </div>  
+    <div class="x-panel-bottom cmmimue" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmmimue">
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cmmimue" xid="button1" style="color:#fff;background-color:#47D1D1;width:100%;height:48px;line-height:2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;添加备注&quot;}" __cid="cmmimue"> 
+        <i xid="i1" __cid="cmmimue" class="cmmimue"/>  
+        <span xid="span1" __cid="cmmimue" class="cmmimue">添加备注</span>
+      </a>
+    </div>
+    <style __cid="cmmimue" class="cmmimue">.x-panel.pcVzemMz-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcVzemMz-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcVzemMz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcVzemMz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcVzemMz-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcVzemMz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcVzemMz-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcVzemMz-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcVzemMz-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

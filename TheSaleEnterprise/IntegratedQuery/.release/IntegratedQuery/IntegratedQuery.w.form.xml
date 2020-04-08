@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cEfUjiy" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cEfUjiy" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cEfUjiy" class="cEfUjiy"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="workQueryDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/IntegratedQuery/dialog/workQuery.w&quot;}" __cid="cEfUjiy" class="cEfUjiy">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cEfUjiy" __cid="cEfUjiy"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cEfUjiy" style="display:none;" __cid="cEfUjiy">
+      <xhtml:div class="x-dialog-title cEfUjiy" __cid="cEfUjiy">
+        <xhtml:button class="close cEfUjiy" __cid="cEfUjiy">
+          <xhtml:span __cid="cEfUjiy" class="cEfUjiy">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cEfUjiy" __cid="cEfUjiy"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cEfUjiy" __cid="cEfUjiy"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="addressBookDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/IntegratedQuery/dialog/addressBook.w&quot;}" __cid="cEfUjiy" class="cEfUjiy">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cEfUjiy" __cid="cEfUjiy"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cEfUjiy" style="display:none;" __cid="cEfUjiy">
+      <xhtml:div class="x-dialog-title cEfUjiy" __cid="cEfUjiy">
+        <xhtml:button class="close cEfUjiy" __cid="cEfUjiy">
+          <xhtml:span __cid="cEfUjiy" class="cEfUjiy">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cEfUjiy" __cid="cEfUjiy"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cEfUjiy" __cid="cEfUjiy"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="inventoryDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/IntegratedQuery/dialog/inventory.w&quot;}" __cid="cEfUjiy" class="cEfUjiy">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cEfUjiy" __cid="cEfUjiy"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cEfUjiy" style="display:none;" __cid="cEfUjiy">
+      <xhtml:div class="x-dialog-title cEfUjiy" __cid="cEfUjiy">
+        <xhtml:button class="close cEfUjiy" __cid="cEfUjiy">
+          <xhtml:span __cid="cEfUjiy" class="cEfUjiy">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cEfUjiy" __cid="cEfUjiy"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cEfUjiy" __cid="cEfUjiy"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="RankingListDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/IntegratedQuery/dialog/RankingList.w&quot;}" __cid="cEfUjiy" class="cEfUjiy">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cEfUjiy" __cid="cEfUjiy"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cEfUjiy" style="display:none;" __cid="cEfUjiy">
+      <xhtml:div class="x-dialog-title cEfUjiy" __cid="cEfUjiy">
+        <xhtml:button class="close cEfUjiy" __cid="cEfUjiy">
+          <xhtml:span __cid="cEfUjiy" class="cEfUjiy">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cEfUjiy" __cid="cEfUjiy"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cEfUjiy" __cid="cEfUjiy"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="SalesProgressDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/IntegratedQuery/dialog/SalesProgress.w&quot;}" __cid="cEfUjiy" class="cEfUjiy">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cEfUjiy" __cid="cEfUjiy"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cEfUjiy" style="display:none;" __cid="cEfUjiy">
+      <xhtml:div class="x-dialog-title cEfUjiy" __cid="cEfUjiy">
+        <xhtml:button class="close cEfUjiy" __cid="cEfUjiy">
+          <xhtml:span __cid="cEfUjiy" class="cEfUjiy">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cEfUjiy" __cid="cEfUjiy"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cEfUjiy" __cid="cEfUjiy"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="mySalesProgressADialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/SalesProgress/SalesProgress.w&quot;}" __cid="cEfUjiy" class="cEfUjiy">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cEfUjiy" __cid="cEfUjiy"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cEfUjiy" style="display:none;" __cid="cEfUjiy">
+      <xhtml:div class="x-dialog-title cEfUjiy" __cid="cEfUjiy">
+        <xhtml:button class="close cEfUjiy" __cid="cEfUjiy">
+          <xhtml:span __cid="cEfUjiy" class="cEfUjiy">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cEfUjiy" __cid="cEfUjiy"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cEfUjiy" __cid="cEfUjiy"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="RegionalVisitDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/IntegratedQuery/dialog/RegionalVisit.w&quot;}" __cid="cEfUjiy" class="cEfUjiy">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cEfUjiy" __cid="cEfUjiy"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cEfUjiy" style="display:none;" __cid="cEfUjiy">
+      <xhtml:div class="x-dialog-title cEfUjiy" __cid="cEfUjiy">
+        <xhtml:button class="close cEfUjiy" __cid="cEfUjiy">
+          <xhtml:span __cid="cEfUjiy" class="cEfUjiy">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cEfUjiy" __cid="cEfUjiy"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cEfUjiy" __cid="cEfUjiy"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="QRialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/IntegratedQuery/dialog/QrCode.w&quot;}" __cid="cEfUjiy" class="cEfUjiy">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cEfUjiy" __cid="cEfUjiy"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cEfUjiy" style="display:none;" __cid="cEfUjiy">
+      <xhtml:div class="x-dialog-title cEfUjiy" __cid="cEfUjiy">
+        <xhtml:button class="close cEfUjiy" __cid="cEfUjiy">
+          <xhtml:span __cid="cEfUjiy" class="cEfUjiy">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cEfUjiy" __cid="cEfUjiy"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cEfUjiy" __cid="cEfUjiy"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcYrMbIb-iosstatusbar cEfUjiy" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cEfUjiy"> 
+    <div class="x-panel-top cEfUjiy" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEfUjiy"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cEfUjiy" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;综合查询&quot;}" __cid="cEfUjiy"> 
+        <div class="x-titlebar-left cEfUjiy" xid="left2" __cid="cEfUjiy"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cEfUjiy" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cEfUjiy"> 
+            <i xid="i1" __cid="cEfUjiy" class="cEfUjiy"/>  
+            <span xid="span4" __cid="cEfUjiy" class="cEfUjiy">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cEfUjiy" xid="title2" __cid="cEfUjiy">综合查询</div>  
+        <div class="x-titlebar-right  cEfUjiy" xid="right2" __cid="cEfUjiy">
+          <div class="empty cEfUjiy" __cid="cEfUjiy"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cEfUjiy" xid="content6" style="background-color:#f0f0f0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEfUjiy"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row mar2 cEfUjiy" xid="row1" style="background-color:white;" bind-click="row1Click" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEfUjiy"> 
+        <div class="x-col border-Two cEfUjiy" xid="col1" __cid="cEfUjiy"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cEfUjiy" xid="row2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cEfUjiy"> 
+            <div class="col col-xs-2 cEfUjiy" xid="col2" style="height:40;" __cid="cEfUjiy"> 
+              <img src="$model/UI2/TheSaleEnterprise/IntegratedQuery/img/menu_emp_kqxc.png" alt="" xid="image1" style="width:40px;" __cid="cEfUjiy" class="cEfUjiy"/> 
+            </div>  
+            <div class="col col-xs-7 cEfUjiy" xid="col3" style="height:40;" __cid="cEfUjiy"> 
+              <label xid="label1" style="margin-top:10px;" class="font-One cEfUjiy" __cid="cEfUjiy">考勤查询</label> 
+            </div>  
+            <div class="col col-xs-3 cEfUjiy" xid="col4" style="text-align:right;height:40;" __cid="cEfUjiy"> 
+              <img src="$model/UI2/TheSaleEnterprise/VisitSignIn/img/007.png" alt="" xid="image2" style="width:30px;margin-top:10px;" __cid="cEfUjiy" class="cEfUjiy"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cEfUjiy" xid="row3" style="background-color:white;" bind-click="row3Click" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEfUjiy"> 
+        <div class="x-col border-Two cEfUjiy" xid="col8" __cid="cEfUjiy"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cEfUjiy" xid="row4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cEfUjiy"> 
+            <div class="col col-xs-2 cEfUjiy" xid="col6" style="height:40;" __cid="cEfUjiy"> 
+              <img src="$model/UI2/TheSaleEnterprise/IntegratedQuery/img/menu_emp_tongxunlu.png" alt="" xid="image3" style="width:40px;" __cid="cEfUjiy" class="cEfUjiy"/> 
+            </div>  
+            <div class="col col-xs-7 cEfUjiy" xid="col7" style="height:40;" __cid="cEfUjiy"> 
+              <label xid="label2" style="margin-top:10px;" class="font-One cEfUjiy" __cid="cEfUjiy">企业通讯录</label> 
+            </div>  
+            <div class="col col-xs-3 cEfUjiy" xid="col5" style="text-align:right;height:40;" __cid="cEfUjiy"> 
+              <img src="$model/UI2/TheSaleEnterprise/VisitSignIn/img/007.png" alt="" xid="image4" style="width:30px;margin-top:10px;" __cid="cEfUjiy" class="cEfUjiy"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cEfUjiy" xid="row5" style="background-color:white;" bind-click="row5Click" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEfUjiy"> 
+        <div class="x-col cEfUjiy" xid="col12" __cid="cEfUjiy"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cEfUjiy" xid="row6" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cEfUjiy"> 
+            <div class="col col-xs-2 cEfUjiy" xid="col10" style="height:40;" __cid="cEfUjiy"> 
+              <img src="$model/UI2/TheSaleEnterprise/IntegratedQuery/img/menu_emp_zhcx.png" alt="" xid="image5" style="width:40px;" __cid="cEfUjiy" class="cEfUjiy"/> 
+            </div>  
+            <div class="col col-xs-7 cEfUjiy" xid="col11" style="height:40;" __cid="cEfUjiy"> 
+              <label xid="label3" style="margin-top:10px;" class="font-One cEfUjiy" __cid="cEfUjiy">库存查询</label> 
+            </div>  
+            <div class="col col-xs-3 cEfUjiy" xid="col9" style="text-align:right;height:40;" __cid="cEfUjiy"> 
+              <img src="$model/UI2/TheSaleEnterprise/VisitSignIn/img/007.png" alt="" xid="image6" style="width:30px;margin-top:10px;" __cid="cEfUjiy" class="cEfUjiy"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row  cEfUjiy" xid="row7" style="background-color:white;margin-top:10px;" bind-click="row7Click" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEfUjiy"> 
+        <div class="x-col border-Two cEfUjiy" xid="col23" __cid="cEfUjiy"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cEfUjiy" xid="row10" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cEfUjiy"> 
+            <div class="col col-xs-2 cEfUjiy" xid="col21" style="height:40;" __cid="cEfUjiy"> 
+              <img src="$model/UI2/TheSaleEnterprise/IntegratedQuery/img/menu_emp_lhb.png" alt="" xid="image11" style="width:40px;" __cid="cEfUjiy" class="cEfUjiy"/> 
+            </div>  
+            <div class="col col-xs-7 cEfUjiy" xid="col22" style="height:40;" __cid="cEfUjiy"> 
+              <label xid="label4" style="margin-top:10px;" class="font-One cEfUjiy" __cid="cEfUjiy">分区龙虎榜</label> 
+            </div>  
+            <div class="col col-xs-3 cEfUjiy" xid="col19" style="text-align:right;height:40;" __cid="cEfUjiy"> 
+              <img src="$model/UI2/TheSaleEnterprise/VisitSignIn/img/007.png" alt="" xid="image12" style="width:30px;margin-top:10px;" __cid="cEfUjiy" class="cEfUjiy"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cEfUjiy" xid="row9" style="background-color:white;" bind-click="row9Click" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEfUjiy"> 
+        <div class="x-col border-Two cEfUjiy" xid="col15" __cid="cEfUjiy"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cEfUjiy" xid="row12" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cEfUjiy"> 
+            <div class="col col-xs-2 cEfUjiy" xid="col17" style="height:40;" __cid="cEfUjiy"> 
+              <img src="$model/UI2/TheSaleEnterprise/IntegratedQuery/img/menu_emp_xsjd.png" alt="" xid="image9" style="width:40px;" __cid="cEfUjiy" class="cEfUjiy"/> 
+            </div>  
+            <div class="col col-xs-7 cEfUjiy" xid="col18" style="height:40;" __cid="cEfUjiy"> 
+              <label xid="label5" style="margin-top:10px;" class="font-One cEfUjiy" __cid="cEfUjiy">分区销售进度</label> 
+            </div>  
+            <div class="col col-xs-3 cEfUjiy" xid="col20" style="text-align:right;height:40;" __cid="cEfUjiy"> 
+              <img src="$model/UI2/TheSaleEnterprise/VisitSignIn/img/007.png" alt="" xid="image10" style="width:30px;margin-top:10px;" __cid="cEfUjiy" class="cEfUjiy"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cEfUjiy" xid="row11" style="background-color:white;" bind-click="row11Click" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEfUjiy"> 
+        <div class="x-col border-Two cEfUjiy" xid="col16" __cid="cEfUjiy"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cEfUjiy" xid="row8" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cEfUjiy"> 
+            <div class="col col-xs-2 cEfUjiy" xid="col14" style="height:40;" __cid="cEfUjiy"> 
+              <img src="$model/UI2/TheSaleEnterprise/IntegratedQuery/img/menu_emp_xsjd.png" alt="" xid="image8" style="width:40px;" __cid="cEfUjiy" class="cEfUjiy"/> 
+            </div>  
+            <div class="col col-xs-7 cEfUjiy" xid="col13" style="height:40;" __cid="cEfUjiy"> 
+              <label xid="label6" style="margin-top:10px;" class="font-One cEfUjiy" __cid="cEfUjiy">我的销售进度</label> 
+            </div>  
+            <div class="col col-xs-3 cEfUjiy" xid="col24" style="text-align:right;height:40;" __cid="cEfUjiy"> 
+              <img src="$model/UI2/TheSaleEnterprise/VisitSignIn/img/007.png" alt="" xid="image7" style="width:30px;margin-top:10px;" __cid="cEfUjiy" class="cEfUjiy"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row  cEfUjiy" xid="row16" style="background-color:white;margin-top:10px;" bind-click="row16Click" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEfUjiy"> 
+        <div class="x-col border-Two cEfUjiy" xid="col35" __cid="cEfUjiy"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cEfUjiy" xid="row15" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cEfUjiy"> 
+            <div class="col col-xs-2 cEfUjiy" xid="col32" style="height:40;" __cid="cEfUjiy"> 
+              <img src="$model/UI2/TheSaleEnterprise/Underling/img/menu_emp_wdbf.png" alt="" xid="image14" style="width:40px;" __cid="cEfUjiy" class="cEfUjiy"/> 
+            </div>  
+            <div class="col col-xs-7 cEfUjiy" xid="col36" style="height:40;" __cid="cEfUjiy"> 
+              <label xid="label7" style="margin-top:10px;" class="font-One cEfUjiy" __cid="cEfUjiy">所属区域拜访</label> 
+            </div>  
+            <div class="col col-xs-3 cEfUjiy" xid="col31" style="text-align:right;height:40;" __cid="cEfUjiy"> 
+              <img src="$model/UI2/TheSaleEnterprise/VisitSignIn/img/007.png" alt="" xid="image13" style="width:30px;margin-top:10px;" __cid="cEfUjiy" class="cEfUjiy"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cEfUjiy" xid="row17" style="background-color:white;" bind-click="row17Click" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEfUjiy"> 
+        <div class="x-col border-Two cEfUjiy" xid="col28" __cid="cEfUjiy"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cEfUjiy" xid="row14" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cEfUjiy"> 
+            <div class="col col-xs-2 cEfUjiy" xid="col26" style="height:40;" __cid="cEfUjiy"> 
+              <img src="$model/UI2/TheSaleEnterprise/Underling/img/menu_emp_wdbf.png" alt="" xid="image16" style="width:40px;" __cid="cEfUjiy" class="cEfUjiy"/> 
+            </div>  
+            <div class="col col-xs-7 cEfUjiy" xid="col25" style="height:40;" __cid="cEfUjiy"> 
+              <label xid="label8" style="margin-top:10px;" class="font-One cEfUjiy" __cid="cEfUjiy">企业二维码</label> 
+            </div>  
+            <div class="col col-xs-3 cEfUjiy" xid="col33" style="text-align:right;height:40;" __cid="cEfUjiy"> 
+              <img src="$model/UI2/TheSaleEnterprise/VisitSignIn/img/007.png" alt="" xid="image15" style="width:30px;margin-top:10px;" __cid="cEfUjiy" class="cEfUjiy"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cEfUjiy" class="cEfUjiy">.x-panel.pcYrMbIb-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcYrMbIb-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcYrMbIb-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcYrMbIb-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYrMbIb-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcYrMbIb-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYrMbIb-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYrMbIb-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYrMbIb-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

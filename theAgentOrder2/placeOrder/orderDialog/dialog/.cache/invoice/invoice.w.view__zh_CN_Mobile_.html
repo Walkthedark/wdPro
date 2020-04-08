@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cyMbAVb" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cyMbAVb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/picker/picker,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/picker/popPicker,">
+  <style>html.cyMbAVb{font-size: 62.5% !important} body.cyMbAVb{font-size: 1.6rem "Microsoft YaHei", arial, tahoma, 宋体, sans-serif !important} .div_radius.cyMbAVb{border-radius: 10px} .btn_radius.cyMbAVb{border-radius: 15px} .div_radius1.cyMbAVb{border-radius: 15px 15px 0px 0px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onParamsReceive:modelParamsReceive" __cid="cyMbAVb" class="cyMbAVb"></div>  
+  <div component="$model/UI2/system/components/justep/picker/popPicker" class="x-popPicker cyMbAVb" xid="popPicker1" data-bind="component:{name:'$model/UI2/system/components/justep/picker/popPicker'}" __cid="cyMbAVb"> 
+    <div class="x-popPicker-overlay cyMbAVb" xid="div27" __cid="cyMbAVb"></div>  
+    <div class="x-popPicker-content cyMbAVb" xid="div28" __cid="cyMbAVb"> 
+      <div class="x-poppicker-header cyMbAVb" xid="div29" __cid="cyMbAVb"> 
+        <button class="btn btn-default x-btn-ok cyMbAVb" xid="button18" __cid="cyMbAVb" data-bind="event:{click:$model._callModelFn.bind($model, 'button18Click')}">确定</button>
+      </div>  
+      <div component="$model/UI2/system/components/justep/picker/picker" class="x-picker cyMbAVb" xid="picker1" data-bind="component:{name:'$model/UI2/system/components/justep/picker/picker'}" data-config="{&#34;data&#34;:&#34;invoiceData&#34;}" __cid="cyMbAVb"> 
+        <div class="x-picker-inner cyMbAVb" xid="div30" __cid="cyMbAVb"> 
+          <div class="x-pciker-rule x-pciker-rule-ft cyMbAVb" xid="div31" __cid="cyMbAVb"></div>  
+          <ul class="x-list-template x-pciker-list hide cyMbAVb" xid="listTemplateUl2" __cid="cyMbAVb" data-bind="foreach:{data:$model.foreach_picker1($element),afterRender:$model.foreach_afterRender_picker1.bind($model,$element)}"> 
+            <li xid="li2" __cid="cyMbAVb" class="cyMbAVb" data-bind="text:val(&#34;name&#34;)"></li>
+          </ul>  
+          <div class="x-pciker-rule x-pciker-rule-bg cyMbAVb" xid="div32" __cid="cyMbAVb"></div>
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cyMbAVb" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;active&#34;:0}" __cid="cyMbAVb"> 
+    <div class="x-contents-content active cyMbAVb" xid="content2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:content2Active" __cid="cyMbAVb">
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcURji2u-iosstatusbar cyMbAVb" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cyMbAVb"> 
+        <div class="x-panel-top cyMbAVb" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyMbAVb">
+          <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cyMbAVb" xid="titleBar1" style="background-color:#00BFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;发票类型选择&#34;}" __cid="cyMbAVb"> 
+            <div class="x-titlebar-left cyMbAVb" xid="left1" __cid="cyMbAVb">
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cyMbAVb" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cyMbAVb"> 
+                <i xid="i10" class="icon-chevron-left cyMbAVb" __cid="cyMbAVb"></i>  
+                <span xid="span9" __cid="cyMbAVb" class="cyMbAVb"></span>
+              </a>
+            </div>  
+            <div class="x-titlebar-title cyMbAVb" xid="title1" __cid="cyMbAVb">发票类型选择</div>  
+            <div class="x-titlebar-right  cyMbAVb" xid="right1" __cid="cyMbAVb">
+              <div class="empty cyMbAVb" __cid="cyMbAVb"></div>
+            </div>
+          </div>
+        </div>
+        <div class="x-panel-content cyMbAVb" xid="content1" style="background-color:#F4F3F4;border-style:none none none none;height:100%;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyMbAVb">
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cyMbAVb" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cyMbAVb"> 
+            <div class="x-col cyMbAVb" xid="col3" __cid="cyMbAVb">
+              <div xid="div1" class="list-group-item div_radius cyMbAVb" __cid="cyMbAVb">
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyMbAVb" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyMbAVb"> 
+                  <label class="x-label cyMbAVb" xid="label1" __cid="cyMbAVb">发票类型</label>  
+                  <div class="x-edit cyMbAVb" xid="div2" style="text-align:right;" __cid="cyMbAVb">
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-icon-right cyMbAVb" xid="button1" style="color:#212121;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{click:$model._callModelFn.bind($model, 'button1Click')}" data-config="{&#34;icon&#34;:&#34;linear linear-chevronright&#34;,&#34;label&#34;:&#34;不开发票&#34;}" __cid="cyMbAVb"> 
+                      <i xid="i1" class="linear linear-chevronright cyMbAVb" __cid="cyMbAVb"></i>  
+                      <span xid="span1" __cid="cyMbAVb" class="cyMbAVb">不开发票</span>
+                    </a>
+                  </div>
+                </div>  
+                <div xid="div20" __cid="cyMbAVb" class="cyMbAVb">
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyMbAVb" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyMbAVb"> 
+                    <label class="x-label cyMbAVb" xid="label2" __cid="cyMbAVb">发票方式</label>  
+                    <div class="x-edit cyMbAVb" xid="div3" style="text-align:right;" __cid="cyMbAVb"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-icon-right cyMbAVb" xid="button4" style="color:#212121;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{click:$model._callModelFn.bind($model, 'button4Click')}" data-config="{&#34;icon&#34;:&#34;linear linear-chevronright&#34;,&#34;label&#34;:&#34;纸质&#34;}" __cid="cyMbAVb"> 
+                        <i xid="i4" class="linear linear-chevronright cyMbAVb" __cid="cyMbAVb"></i>  
+                        <span xid="span4" __cid="cyMbAVb" class="cyMbAVb">纸质</span>
+                      </a>
+                    </div> 
+                  </div>
+                  <div xid="div22" style="display:none" __cid="cyMbAVb" class="cyMbAVb">
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyMbAVb" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyMbAVb"> 
+                      <label class="x-label cyMbAVb" xid="label3" __cid="cyMbAVb">发票抬头</label>  
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cyMbAVb" xid="input1" data-bind="component:{ref:$model.blankData.ref(&#34;invoice&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cyMbAVb">
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyMbAVb" xid="labelEdit9" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyMbAVb"> 
+                      <label class="x-label cyMbAVb" xid="label9" __cid="cyMbAVb">税号</label>  
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cyMbAVb" xid="input2" data-bind="component:{ref:$model.blankData.ref(&#34;tax_num&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cyMbAVb">
+                    </div>
+                  </div>
+                  <div xid="div21" style="display:none" __cid="cyMbAVb" class="cyMbAVb">
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyMbAVb" xid="labelEdit10" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyMbAVb"> 
+                      <label class="x-label cyMbAVb" xid="label10" __cid="cyMbAVb">开户名称</label>  
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cyMbAVb" xid="input3" data-bind="component:{ref:$model.blankData.ref(&#34;bank_name&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cyMbAVb">
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyMbAVb" xid="labelEdit11" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyMbAVb"> 
+                      <label class="x-label cyMbAVb" xid="label11" __cid="cyMbAVb">开户银行</label>  
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cyMbAVb" xid="input4" data-bind="component:{ref:$model.blankData.ref(&#34;bank&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cyMbAVb">
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyMbAVb" xid="labelEdit13" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyMbAVb"> 
+                      <label class="x-label cyMbAVb" xid="label12" __cid="cyMbAVb">银行帐号</label>  
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cyMbAVb" xid="input5" data-bind="component:{ref:$model.blankData.ref(&#34;bank_account&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cyMbAVb">
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyMbAVb" xid="labelEdit14" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyMbAVb"> 
+                      <label class="x-label cyMbAVb" xid="label13" __cid="cyMbAVb">企业地址</label>  
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cyMbAVb" xid="input6" data-bind="component:{ref:$model.blankData.ref(&#34;invoice_address&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cyMbAVb">
+                    </div>
+                  </div> 
+                </div>
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cyMbAVb" xid="row2" style="height:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cyMbAVb"> 
+                <div class="x-col cyMbAVb" xid="col4" __cid="cyMbAVb"></div>  
+                <div class="x-col cyMbAVb" xid="col5" __cid="cyMbAVb"></div>  
+                <div class="x-col cyMbAVb" xid="col6" __cid="cyMbAVb"></div>
+              </div>
+              <div xid="div19" class="list-group-item div_radius cyMbAVb" __cid="cyMbAVb"> 
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyMbAVb" xid="labelEdit12" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyMbAVb"> 
+                  <label class="x-label cyMbAVb" xid="label14" __cid="cyMbAVb">发票内容</label>  
+                  <div class="x-edit cyMbAVb" xid="div18" style="text-align:right;" __cid="cyMbAVb"> 
+                    <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control cyMbAVb" xid="textarea1" data-bind="component:{ref:$model.blankData.ref(&#34;remark&#34;),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cyMbAVb"></textarea>
+                  </div> 
+                </div> 
+              </div> 
+            </div>
+          </div> 
+        </div>  
+        <div class="x-panel-bottom cyMbAVb" xid="bottom1" style="text-align:center;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyMbAVb">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn_radius cyMbAVb" xid="button3" style="width:80%;margin-top:5px;background-color:#00BFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{click:$model._callModelFn.bind($model, 'button3Click')}" data-config="{&#34;label&#34;:&#34;确定&#34;}" __cid="cyMbAVb"> 
+            <i xid="i3" __cid="cyMbAVb" class="cyMbAVb"></i>  
+            <span xid="span3" __cid="cyMbAVb" class="cyMbAVb">确定</span>
+          </a>
+        </div>
+        <style __cid="cyMbAVb" class="cyMbAVb">.x-panel.pcURji2u-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcURji2u-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcURji2u-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcURji2u-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcURji2u-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcURji2u-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcURji2u-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcURji2u-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcURji2u-iosstatusbar >.x-panel-content {top: 48px;}</style>
+      </div>
+    </div>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cyMbAVb" xid="popOver4" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;direction&#34;:&#34;auto&#34;}" __cid="cyMbAVb"> 
+    <div class="x-popOver-overlay cyMbAVb" xid="div4" __cid="cyMbAVb"></div>  
+    <div class="x-popOver-content div_radius cyMbAVb" xid="div39" style="height:60%;width:75%;" __cid="cyMbAVb"> 
+      <div xid="div41" style="height:100%;width:100%;" __cid="cyMbAVb" class="cyMbAVb"> 
+        <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcmaIjM3-iosstatusbar cyMbAVb" xid="panel5" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cyMbAVb"> 
+          <div class="x-panel-top cyMbAVb" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyMbAVb"> 
+            <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cyMbAVb" xid="titleBar2" style="background-color:#E1D6BD;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cyMbAVb"> 
+              <div class="x-titlebar-left cyMbAVb" xid="left2" __cid="cyMbAVb"></div>  
+              <div class="x-titlebar-title cyMbAVb" xid="title2" __cid="cyMbAVb">发票方式</div>  
+              <div class="x-titlebar-right  cyMbAVb" xid="right2" __cid="cyMbAVb">
+                <div class="empty cyMbAVb" __cid="cyMbAVb"></div>
+              </div>
+            </div> 
+          </div>  
+          <div class="x-panel-content cyMbAVb" xid="content8" style="background-color:#EEEEEE;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyMbAVb"> 
+            <div xid="div40" style="padding:8px 3px 3px 5px;" __cid="cyMbAVb" class="cyMbAVb"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cyMbAVb" xid="list7" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;data1&#34;}" __cid="cyMbAVb"> 
+                <ul class="x-list-template hide cyMbAVb" xid="listTemplateUl7" __cid="cyMbAVb" data-bind="foreach:{data:$model.foreach_list7($element),afterRender:$model.foreach_afterRender_list7.bind($model,$element)}"> 
+                  <li xid="li4" __cid="cyMbAVb" class="cyMbAVb" data-bind="event:{click:$model._callModelFn.bind($model, 'li4Click')}"> 
+                    <div xid="div4" class="list-group-item cyMbAVb" __cid="cyMbAVb"> 
+                      <div class="media cyMbAVb" xid="media11" __cid="cyMbAVb"> 
+                        <div class="media-body cyMbAVb" xid="mediaBody12" __cid="cyMbAVb"> 
+                          <h4 class="media-heading cyMbAVb" xid="h41" style="text-align:center;font-size:18px;color:#484848;" __cid="cyMbAVb" data-bind="text:val(&#34;name&#34;)">Media heading</h4>
+                        </div> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div> 
+          </div>  
+          <style __cid="cyMbAVb" class="cyMbAVb">.x-panel.pcmaIjM3-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcmaIjM3-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcmaIjM3-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcmaIjM3-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmaIjM3-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcmaIjM3-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmaIjM3-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmaIjM3-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmaIjM3-iosstatusbar >.x-panel-content {top: 48px;}</style>
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cyMbAVb" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;direction&#34;:&#34;auto&#34;}" __cid="cyMbAVb"> 
+    <div class="x-popOver-overlay cyMbAVb" xid="div6" __cid="cyMbAVb"></div>  
+    <div class="x-popOver-content div_radius cyMbAVb" xid="div5" style="height:60%;width:75%;" __cid="cyMbAVb"> 
+      <div xid="div7" style="height:100%;width:100%;" __cid="cyMbAVb" class="cyMbAVb"> 
+        <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcaM3aMr-iosstatusbar cyMbAVb" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cyMbAVb"> 
+          <div class="x-panel-top cyMbAVb" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyMbAVb"> 
+            <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cyMbAVb" xid="titleBar3" style="background-color:#E1D6BD;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cyMbAVb"> 
+              <div class="x-titlebar-left cyMbAVb" xid="left3" __cid="cyMbAVb"></div>  
+              <div class="x-titlebar-title cyMbAVb" xid="title3" __cid="cyMbAVb">发票类型</div>  
+              <div class="x-titlebar-right  cyMbAVb" xid="right3" __cid="cyMbAVb">
+                <div class="empty cyMbAVb" __cid="cyMbAVb"></div>
+              </div>
+            </div> 
+          </div>  
+          <div class="x-panel-content cyMbAVb" xid="content3" style="background-color:#EEEEEE;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyMbAVb"> 
+            <div xid="div8" style="padding:8px 3px 3px 5px;" __cid="cyMbAVb" class="cyMbAVb"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cyMbAVb" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;invoiceData&#34;}" __cid="cyMbAVb"> 
+                <ul class="x-list-template hide cyMbAVb" xid="listTemplateUl1" __cid="cyMbAVb" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+                  <li xid="li1" __cid="cyMbAVb" class="cyMbAVb" data-bind="event:{click:$model._callModelFn.bind($model, 'li1Click')}"> 
+                    <div xid="div6" class="list-group-item cyMbAVb" __cid="cyMbAVb"> 
+                      <div class="media cyMbAVb" xid="media1" __cid="cyMbAVb"> 
+                        <div class="media-body cyMbAVb" xid="mediaBody1" __cid="cyMbAVb"> 
+                          <h4 class="media-heading cyMbAVb" xid="h42" style="text-align:center;font-size:18px;color:#484848;" __cid="cyMbAVb" data-bind="text:val(&#34;name&#34;)">Media heading</h4>
+                        </div> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div> 
+          </div>  
+          <style __cid="cyMbAVb" class="cyMbAVb">.x-panel.pcaM3aMr-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcaM3aMr-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcaM3aMr-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcaM3aMr-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcaM3aMr-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcaM3aMr-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcaM3aMr-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcaM3aMr-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcaM3aMr-iosstatusbar >.x-panel-content {top: 48px;}</style>
+        </div> 
+      </div> 
+    </div> 
+  </div>
+</div>

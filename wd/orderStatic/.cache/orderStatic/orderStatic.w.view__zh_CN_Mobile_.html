@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cAjM7Rf" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cAjM7Rf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <style>null</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cAjM7Rf" class="cAjM7Rf"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcYvyI7j-iosstatusbar cAjM7Rf" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cAjM7Rf"> 
+    <div class="x-panel-top cAjM7Rf" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cAjM7Rf"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cAjM7Rf" style="background-color:#47D1D1;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;订单统计&#34;}" __cid="cAjM7Rf"> 
+        <div class="x-titlebar-left cAjM7Rf" __cid="cAjM7Rf"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cAjM7Rf" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;,&#34;label&#34;:&#34;&#34;}" __cid="cAjM7Rf"> 
+            <i class="icon-chevron-left cAjM7Rf" __cid="cAjM7Rf"></i>  
+            <span __cid="cAjM7Rf" class="cAjM7Rf"></span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cAjM7Rf" __cid="cAjM7Rf">订单统计</div>  
+        <div class="x-titlebar-right  cAjM7Rf" __cid="cAjM7Rf">
+          <div class="empty cAjM7Rf" __cid="cAjM7Rf"></div>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cAjM7Rf" xid="orderFilterBtn" style="font-size:14px;text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:orderFilterBtnClick" data-config="{&#34;label&#34;:&#34;筛选&#34;}" __cid="cAjM7Rf"> 
+            <i xid="i1" __cid="cAjM7Rf" class="cAjM7Rf"></i>  
+            <span xid="span1" __cid="cAjM7Rf" class="cAjM7Rf">筛选</span>
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content  x-scroll-view cAjM7Rf" xid="content1" _xid="C85E5B32A9800001EA93139D1DD91517" style="background-color:#e6e7e8;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cAjM7Rf">
+      <div class="x-scroll cAjM7Rf" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cAjM7Rf"> 
+        <div class="x-content-center x-pull-down container cAjM7Rf" xid="div1" __cid="cAjM7Rf"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down cAjM7Rf" xid="i2" __cid="cAjM7Rf"></i>  
+          <span class="x-pull-down-label cAjM7Rf" xid="span2" __cid="cAjM7Rf">下拉刷新...</span>
+        </div>  
+        <div class="x-scroll-content cAjM7Rf" xid="div2" __cid="cAjM7Rf">
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cAjM7Rf" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;year&#34;}" __cid="cAjM7Rf"> 
+            <ul class="x-list-template hide cAjM7Rf" xid="listTemplateUl2" __cid="cAjM7Rf" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}"> 
+              <li xid="li2" __cid="cAjM7Rf" class="cAjM7Rf">
+                <h5 xid="h52" style="text-indent:15px;color:#333;" __cid="cAjM7Rf" class="cAjM7Rf" data-bind="text:val(&#34;year&#34;) +&#34;年&#34;">h5</h5>
+                <div component="$model/UI2/system/components/justep/list/list" class="x-list cAjM7Rf" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;$model.monthOrder&#34;}" __cid="cAjM7Rf"> 
+                  <ul class="x-list-template hide cAjM7Rf" xid="listTemplateUl1" __cid="cAjM7Rf" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+                    <li xid="li1" style="background-color:#fff;padding:5px 10px;" __cid="cAjM7Rf" class="cAjM7Rf">
+                      <div class="media cAjM7Rf" xid="media1" __cid="cAjM7Rf"> 
+                        <div class="media-left cAjM7Rf" xid="mediaLeft1" __cid="cAjM7Rf"> 
+                          <div xid="div4" style="text-align:center;" class="center-block cAjM7Rf" __cid="cAjM7Rf">
+                            <span xid="span4" style="background-color:#e6e7e8;line-height:40px;display:block;border-radius:50%;height:40px;width:40px;" __cid="cAjM7Rf" class="cAjM7Rf" data-bind="text:val(&#34;month&#34;) +'月'"></span>
+                          </div>
+                        </div>  
+                        <div class="media-body cAjM7Rf" xid="mediaBody1" __cid="cAjM7Rf"> 
+                          <div xid="div5" style="padding:2px 8px;display:flex;" __cid="cAjM7Rf" class="cAjM7Rf">
+                            <div xid="div6" style="flex:1;" __cid="cAjM7Rf" class="cAjM7Rf">
+                              <div xid="div8" style="padding:2px 3px;" __cid="cAjM7Rf" class="cAjM7Rf">
+                                <span xid="span5" __cid="cAjM7Rf" class="cAjM7Rf">订货</span>  
+                                <span xid="span6" __cid="cAjM7Rf" class="cAjM7Rf" data-bind="text:ref(&#34;order_quantity&#34;)"></span>  
+                                <span xid="span7" __cid="cAjM7Rf" class="cAjM7Rf">笔</span>
+                              </div>  
+                              <div xid="div9" style="font-size:12px;color:#666;padding:2px 3px;" __cid="cAjM7Rf" class="cAjM7Rf">
+                                <span xid="span8" __cid="cAjM7Rf" class="cAjM7Rf">退货</span>  
+                                <span xid="span9" __cid="cAjM7Rf" class="cAjM7Rf" data-bind="text:ref(&#34;return_quantity&#34;)"></span>  
+                                <span xid="span10" __cid="cAjM7Rf" class="cAjM7Rf">笔</span>
+                              </div>
+                            </div>  
+                            <div xid="div14" style="flex:1;" __cid="cAjM7Rf" class="cAjM7Rf"> 
+                              <div xid="div13" style="padding:2px 3px;" __cid="cAjM7Rf" class="cAjM7Rf"> 
+                                <span xid="span18" __cid="cAjM7Rf" class="cAjM7Rf">¥</span>  
+                                <span xid="span19" __cid="cAjM7Rf" class="cAjM7Rf" data-bind="text:ref(&#34;order_sum&#34;)"></span>  
+                                <span xid="span20" __cid="cAjM7Rf" class="cAjM7Rf">元</span>
+                              </div>  
+                              <div xid="div12" style="font-size:12px;color:#666;padding:2px 3px;" __cid="cAjM7Rf" class="cAjM7Rf"> 
+                                <span xid="span21" __cid="cAjM7Rf" class="cAjM7Rf">¥</span>  
+                                <span xid="span22" __cid="cAjM7Rf" class="cAjM7Rf" data-bind="text:ref(&#34;return_sum&#34;)"></span>  
+                                <span xid="span17" __cid="cAjM7Rf" class="cAjM7Rf">元</span>
+                              </div> 
+                            </div>
+                          </div>
+                        </div> 
+                      </div>
+                    </li>
+                  </ul> 
+                </div> 
+              </li>
+            </ul> 
+          </div> 
+        </div>  
+        <div class="x-content-center x-pull-up cAjM7Rf" xid="div3" __cid="cAjM7Rf"> 
+          <span class="x-pull-up-label cAjM7Rf" xid="span3" __cid="cAjM7Rf">加载更多...</span>
+        </div> 
+      </div>
+    </div>  
+    <style __cid="cAjM7Rf" class="cAjM7Rf">.x-panel.pcYvyI7j-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcYvyI7j-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcYvyI7j-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcYvyI7j-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYvyI7j-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcYvyI7j-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYvyI7j-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYvyI7j-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYvyI7j-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

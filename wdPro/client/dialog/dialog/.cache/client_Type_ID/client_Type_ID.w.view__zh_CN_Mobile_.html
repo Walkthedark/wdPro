@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cF7bMb2" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cF7bMb2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">
+  <style>html.cF7bMb2{font-size: 62.5% !important} body.cF7bMb2{font-size: 1.6rem "Microsoft YaHei", arial, tahoma, 宋体, sans-serif !important}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cF7bMb2" class="cF7bMb2"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcY3iam2-iosstatusbar cF7bMb2" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cF7bMb2"> 
+    <div class="x-panel-content cF7bMb2" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cF7bMb2"> 
+      <div xid="div1" class="list-group-item cF7bMb2" style="padding:5px 5px 5px 5px;background-color:#EBEAF0;" __cid="cF7bMb2"> 
+        <div class="media cF7bMb2" xid="media1" __cid="cF7bMb2"> 
+          <div class="media-body cF7bMb2" xid="mediaBody1" __cid="cF7bMb2"> 
+            <h5 xid="h51" style="color:#181919;" __cid="cF7bMb2" class="cF7bMb2">客户分类</h5>
+          </div> 
+        </div> 
+      </div>
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cF7bMb2" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;client_Type_Data&#34;}" __cid="cF7bMb2"> 
+        <ul class="x-list-template hide cF7bMb2" xid="listTemplateUl1" __cid="cF7bMb2" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+          <li xid="li1" __cid="cF7bMb2" class="cF7bMb2"> 
+            <div xid="div22" class="list-group-item cF7bMb2" style="padding:5px 5px 5px 5px;" __cid="cF7bMb2"> 
+              <div class="media cF7bMb2" xid="media9" __cid="cF7bMb2"> 
+                <div class="media-body cF7bMb2" xid="mediaBody9" __cid="cF7bMb2"> 
+                  <h5 xid="h518" style="color:#181919;" __cid="cF7bMb2" class="cF7bMb2" data-bind="text:val(&#34;name&#34;)">潜在用友客户</h5> 
+                </div>  
+                <div class="media-right cF7bMb2" xid="mediaRight8" __cid="cF7bMb2"> 
+                  <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cF7bMb2" xid="checkbox1" checkedValue="1" uncheckedValue="0" data-config="{&#34;checked&#34;:false,&#34;checkedValue&#34;:&#34;1&#34;,&#34;disabled&#34;:false,&#34;uncheckedValue&#34;:&#34;0&#34;}" data-bind="component:{ref:ref(&#34;choose&#34;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cF7bMb2">
+                    <input type="checkbox" __cid="cF7bMb2" class="cF7bMb2">
+                    <label __cid="cF7bMb2" class="cF7bMb2"></label>
+                  </span> 
+                </div> 
+              </div> 
+            </div> 
+          </li> 
+        </ul> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cF7bMb2" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cF7bMb2"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cF7bMb2" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cF7bMb2"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label cF7bMb2" xid="button1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="cF7bMb2"> 
+          <i xid="i1" __cid="cF7bMb2" class="cF7bMb2"></i>  
+          <span xid="span1" __cid="cF7bMb2" class="cF7bMb2">取消</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cF7bMb2" xid="okBtn" style="background-color:#4B76AE;color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:okBtnClick" data-config="{&#34;label&#34;:&#34;确定&#34;}" __cid="cF7bMb2"> 
+          <i xid="i2" __cid="cF7bMb2" class="cF7bMb2"></i>  
+          <span xid="span2" __cid="cF7bMb2" class="cF7bMb2">确定</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cF7bMb2" class="cF7bMb2">.x-panel.pcY3iam2-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcY3iam2-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcY3iam2-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcY3iam2-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcY3iam2-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcY3iam2-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcY3iam2-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcY3iam2-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcY3iam2-iosstatusbar >.x-panel-content {top: 0px;}</style>
+  </div> 
+</div>

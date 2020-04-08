@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window c3yMniq" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c3yMniq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="c3yMniq" class="c3yMniq"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="infoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/CustomerManagement/dialog/productPrice.w&quot;}" __cid="c3yMniq" class="c3yMniq">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay c3yMniq" __cid="c3yMniq"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog c3yMniq" style="display:none;" __cid="c3yMniq">
+      <xhtml:div class="x-dialog-title c3yMniq" __cid="c3yMniq">
+        <xhtml:button class="close c3yMniq" __cid="c3yMniq">
+          <xhtml:span __cid="c3yMniq" class="c3yMniq">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text c3yMniq" __cid="c3yMniq"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body c3yMniq" __cid="c3yMniq"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="collectDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/CustomerManagement/dialog/collect.w&quot;}" __cid="c3yMniq" class="c3yMniq">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay c3yMniq" __cid="c3yMniq"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog c3yMniq" style="display:none;" __cid="c3yMniq">
+      <xhtml:div class="x-dialog-title c3yMniq" __cid="c3yMniq">
+        <xhtml:button class="close c3yMniq" __cid="c3yMniq">
+          <xhtml:span __cid="c3yMniq" class="c3yMniq">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text c3yMniq" __cid="c3yMniq"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body c3yMniq" __cid="c3yMniq"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="statementsDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/CustomerManagement/dialog/statementsListCost.w&quot;}" __cid="c3yMniq" class="c3yMniq">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay c3yMniq" __cid="c3yMniq"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog c3yMniq" style="display:none;" __cid="c3yMniq">
+      <xhtml:div class="x-dialog-title c3yMniq" __cid="c3yMniq">
+        <xhtml:button class="close c3yMniq" __cid="c3yMniq">
+          <xhtml:span __cid="c3yMniq" class="c3yMniq">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text c3yMniq" __cid="c3yMniq"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body c3yMniq" __cid="c3yMniq"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcEBBJ7v-iosstatusbar c3yMniq" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c3yMniq"> 
+    <div class="x-panel-top c3yMniq" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c3yMniq"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title c3yMniq" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;经销商详情&quot;}" __cid="c3yMniq"> 
+        <div class="x-titlebar-left c3yMniq" xid="left2" __cid="c3yMniq"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label c3yMniq" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="c3yMniq"> 
+            <i xid="i1" __cid="c3yMniq" class="c3yMniq"/>  
+            <span xid="span4" __cid="c3yMniq" class="c3yMniq">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title c3yMniq" xid="title2" __cid="c3yMniq">经销商详情</div>  
+        <div class="x-titlebar-right  c3yMniq" xid="right2" __cid="c3yMniq">
+          <div class="empty c3yMniq" __cid="c3yMniq"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content c3yMniq" xid="content6" _xid="C7E1BB556C000001138D1E5D797C1106" style="background-color:#f0f0f0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c3yMniq"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row c3yMniq" xid="row1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c3yMniq"> 
+        <div class="x-col c3yMniq" xid="col1" __cid="c3yMniq"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row c3yMniq" xid="row2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="c3yMniq"> 
+            <div class="col col-xs-12 border-Two c3yMniq" xid="col4" __cid="c3yMniq"> 
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output font-One c3yMniq" xid="output1" style="text-align:center;margin-top:-5px;" data-bind="component:{ref:$model.orderData.ref(&quot;title&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c3yMniq"/> 
+            </div>  
+            <div class="col col-xs-6 border-Two c3yMniq" xid="col5" __cid="c3yMniq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c3yMniq" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3yMniq"> 
+                <label class="x-label font-One c3yMniq" xid="label1" __cid="c3yMniq">分区：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-six c3yMniq" xid="output2" data-bind="component:{ref:$model.orderData.ref(&quot;zoning&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c3yMniq"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-6 border-Two c3yMniq" xid="col2" __cid="c3yMniq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c3yMniq" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3yMniq"> 
+                <label class="x-label font-One c3yMniq" xid="label2" __cid="c3yMniq">负责人：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-six c3yMniq" xid="output4" data-bind="component:{ref:$model.orderData.ref(&quot;zoning_fzr&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c3yMniq"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-6 border-Two c3yMniq" xid="col3" __cid="c3yMniq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c3yMniq" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3yMniq"> 
+                <label class="x-label font-One c3yMniq" xid="label3" __cid="c3yMniq">省份：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-six c3yMniq" xid="output6" data-bind="component:{ref:$model.orderData.ref(&quot;provice&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c3yMniq"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-6 border-Two c3yMniq" xid="col7" __cid="c3yMniq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c3yMniq" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3yMniq"> 
+                <label class="x-label font-One c3yMniq" xid="label4" __cid="c3yMniq">负责人：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-six c3yMniq" xid="output5" data-bind="component:{ref:$model.orderData.ref(&quot;provice_fzr&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c3yMniq"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-6 border-Two c3yMniq" xid="col8" __cid="c3yMniq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c3yMniq" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3yMniq"> 
+                <label class="x-label font-One c3yMniq" xid="label5" __cid="c3yMniq">城市：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-six c3yMniq" xid="output8" data-bind="component:{ref:$model.orderData.ref(&quot;city&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c3yMniq"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-6 border-Two c3yMniq" xid="col9" __cid="c3yMniq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c3yMniq" xid="labelEdit7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3yMniq"> 
+                <label class="x-label font-One c3yMniq" xid="label6" __cid="c3yMniq">负责人：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-six c3yMniq" xid="output7" data-bind="component:{ref:$model.orderData.ref(&quot;city_fzr&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c3yMniq"/> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row c3yMniq" xid="row5" style="background-color:white;margin-top:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c3yMniq"> 
+        <div class="x-col c3yMniq" xid="col27" __cid="c3yMniq"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row c3yMniq" xid="row6" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="c3yMniq"> 
+            <div class="col col-xs-6 border-Two c3yMniq" xid="col24" __cid="c3yMniq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c3yMniq" xid="labelEdit17" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3yMniq"> 
+                <label class="x-label font-One c3yMniq" xid="label16" __cid="c3yMniq">合作时间：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-six c3yMniq" xid="output20" data-bind="component:{ref:$model.orderData.ref(&quot;cooptime&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c3yMniq"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-6 border-Two c3yMniq" xid="col25" __cid="c3yMniq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c3yMniq" xid="labelEdit18" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3yMniq"> 
+                <label class="x-label font-One c3yMniq" xid="label17" __cid="c3yMniq">渠道类型：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-six c3yMniq" xid="output18" data-bind="component:{ref:$model.orderData.ref(&quot;channeltype&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c3yMniq"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-6 border-Two c3yMniq" xid="col26" __cid="c3yMniq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c3yMniq" xid="labelEdit21" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3yMniq"> 
+                <label class="x-label font-One c3yMniq" xid="label18" __cid="c3yMniq">是否直营：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-six c3yMniq" xid="output24" data-bind="component:{ref:$model.orderData.ref(&quot;direct&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c3yMniq"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-6 border-Two c3yMniq" xid="col22" __cid="c3yMniq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c3yMniq" xid="labelEdit20" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3yMniq"> 
+                <label class="x-label font-One c3yMniq" xid="label13" __cid="c3yMniq">等级：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-six c3yMniq" xid="output23" data-bind="component:{ref:$model.orderData.ref(&quot;types&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c3yMniq"/> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row c3yMniq" xid="row8" style="background-color:white;margin-top:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c3yMniq"> 
+        <div class="x-col c3yMniq" xid="col28" __cid="c3yMniq"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row c3yMniq" xid="row7" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="c3yMniq"> 
+            <div class="col col-xs-12 border-Two c3yMniq" xid="col31" __cid="c3yMniq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c3yMniq" xid="labelEdit22" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3yMniq"> 
+                <label class="x-label font-One c3yMniq" xid="label21" __cid="c3yMniq">销售目标：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-six c3yMniq" xid="output27" data-bind="component:{ref:$model.orderData.ref(&quot;xsmb&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c3yMniq"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 border-Two c3yMniq" xid="col30" __cid="c3yMniq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c3yMniq" xid="labelEdit23" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3yMniq"> 
+                <label class="x-label font-One c3yMniq" xid="label20" __cid="c3yMniq">实际达成：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-six c3yMniq" xid="output25" data-bind="component:{ref:$model.orderData.ref(&quot;sjdc&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c3yMniq"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 border-Two c3yMniq" xid="col29" __cid="c3yMniq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c3yMniq" xid="labelEdit25" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3yMniq"> 
+                <label class="x-label font-One c3yMniq" xid="label19" __cid="c3yMniq">费用目标：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-six c3yMniq" xid="output29" data-bind="component:{ref:$model.orderData.ref(&quot;fymb&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c3yMniq"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 border-Two c3yMniq" xid="col33" __cid="c3yMniq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c3yMniq" xid="labelEdit24" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3yMniq"> 
+                <label class="x-label font-One c3yMniq" xid="label22" __cid="c3yMniq">实际花费：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-six c3yMniq" xid="output28" data-bind="component:{ref:$model.orderData.ref(&quot;sjhf&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c3yMniq"/> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row c3yMniq" xid="row12" style="background-color:white;margin-top:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c3yMniq"> 
+        <div class="x-col c3yMniq" xid="col41" __cid="c3yMniq"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row c3yMniq" xid="row11" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="c3yMniq"> 
+            <div class="col col-xs-12 border-Two c3yMniq" xid="col42" __cid="c3yMniq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c3yMniq" xid="labelEdit32" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3yMniq"> 
+                <label class="x-label font-One c3yMniq" xid="label27" __cid="c3yMniq">业务人员：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-six c3yMniq" xid="output35" data-bind="component:{ref:$model.orderData.ref(&quot;stuff&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c3yMniq"/> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row c3yMniq" xid="row14" style="background-color:white;margin-top:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c3yMniq"> 
+        <div class="x-col c3yMniq" xid="col46" __cid="c3yMniq"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row c3yMniq" xid="row13" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="c3yMniq"> 
+            <div class="col col-xs-12 border-Two c3yMniq" xid="col47" __cid="c3yMniq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c3yMniq" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3yMniq"> 
+                <img src="$model/UI2/TheSaleEnterprise/CustomerManagement/dialog/img/dingwei_light.png" alt="" xid="image1" style="width:20px;" __cid="c3yMniq" class="c3yMniq"/>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit c3yMniq" xid="output3" data-bind="component:{ref:$model.orderData.ref(&quot;addr&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c3yMniq"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 border-Two c3yMniq" xid="col48" __cid="c3yMniq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c3yMniq" xid="labelEdit38" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3yMniq"> 
+                <label class="x-label font-One c3yMniq" xid="label35" __cid="c3yMniq">产品价格：</label>  
+                <div class="x-edit c3yMniq" xid="div1" __cid="c3yMniq"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default6 c3yMniq" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;label&quot;:&quot;查看详情&quot;}" __cid="c3yMniq"> 
+                    <i xid="i2" __cid="c3yMniq" class="c3yMniq"/>  
+                    <span xid="span1" style="margin-top:-4px;display:block;" __cid="c3yMniq" class="c3yMniq">查看详情</span> 
+                  </a> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 border-Two c3yMniq" xid="col45" __cid="c3yMniq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c3yMniq" xid="labelEdit39" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3yMniq"> 
+                <label class="x-label font-One c3yMniq" xid="label36" __cid="c3yMniq">数据采集：</label>  
+                <div class="x-edit c3yMniq" xid="div2" __cid="c3yMniq"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default6 c3yMniq" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&quot;label&quot;:&quot;采集&quot;}" __cid="c3yMniq"> 
+                    <i xid="i3" __cid="c3yMniq" class="c3yMniq"/>  
+                    <span xid="span2" style="margin-top:-4px;display:block;" __cid="c3yMniq" class="c3yMniq">采集</span> 
+                  </a> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 border-Two c3yMniq" xid="col44" __cid="c3yMniq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit c3yMniq" xid="labelEdit40" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3yMniq"> 
+                <label class="x-label font-One c3yMniq" xid="label37" __cid="c3yMniq">对账单：</label>  
+                <div class="x-edit c3yMniq" xid="div3" __cid="c3yMniq"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default6 c3yMniq" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;label&quot;:&quot;查看经销商对账单&quot;}" __cid="c3yMniq"> 
+                    <i xid="i4" __cid="c3yMniq" class="c3yMniq"/>  
+                    <span xid="span3" style="margin-top:-4px;display:block;" __cid="c3yMniq" class="c3yMniq">查看经销商对账单</span> 
+                  </a> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="c3yMniq" class="c3yMniq">.x-panel.pcEBBJ7v-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcEBBJ7v-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcEBBJ7v-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcEBBJ7v-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEBBJ7v-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcEBBJ7v-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEBBJ7v-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEBBJ7v-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEBBJ7v-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiver1Receive" __cid="c3yMniq" class="c3yMniq"/> 
+</div>

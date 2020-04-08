@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<div class="main13 c7Rr6zu" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c7Rr6zu" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <style>html.c7Rr6zu{font-size: 62.5% !important} body.c7Rr6zu{font-size: 1.6rem "Microsoft YaHei", arial, tahoma, 宋体, sans-serif !important} .text-black.c7Rr6zu{color: rgb(85, 85, 85)} .x-titlebar.c7Rr6zu{background-color: rgb(255, 68, 0)} .x-titlebar-right.c7Rr6zu .btn.c7Rr6zu i.c7Rr6zu{font-size: 24px} .row.c7Rr6zu{margin: 0} .x-cards.c7Rr6zu{padding-top: 15px} .tb-box.c7Rr6zu{margin-bottom: 10px; border-top: 1px solid rgb(220, 220, 220); border-bottom: 1px solid rgb(220, 220, 220)} .tb-del-line.c7Rr6zu{text-decoration: line-through} .x-card.c7Rr6zu .panel-heading.c7Rr6zu{padding: 5px 15px} .x-card.c7Rr6zu .panel-heading.c7Rr6zu i.c7Rr6zu{margin-right: 13px} .div-radius.c7Rr6zu{border-radius: 10px} .tb-img-shop.c7Rr6zu{width: 20px; height: 20px} .tb-img-good.c7Rr6zu{width: 93%; height: 100px} .tb-nomargin.c7Rr6zu{margin: 0} .tb-nopadding.c7Rr6zu{padding: 0} .tb-goodList.c7Rr6zu{margin-bottom: 5px} .tb-goodList.c7Rr6zu:last-child{margin-bottom: 0px} .tb-goodList.c7Rr6zu .x-col.c7Rr6zu:last-child{position: relative} .tb-goodList.c7Rr6zu .h5.c7Rr6zu{height: 30px; overflow: hidden; text-overflow: ellipsis} .tb-goodList.c7Rr6zu .h6.c7Rr6zu{margin-top: 3px; margin-bottom: 3px} .tb-numberOperation.c7Rr6zu{width: 100%; position: absolute; bottom: 0} .tb-numberOperation.c7Rr6zu .btn.c7Rr6zu{border-radius: 0} .tb-numberOperation.c7Rr6zu span.c7Rr6zu{padding: 4px 15px; border-top: 1px solid rgb(225, 225, 225); border-bottom: 1px solid rgb(225, 225, 225)} .x-panel-bottom.c7Rr6zu .h4.c7Rr6zu{margin: 5px 0} .tb-settlement.c7Rr6zu{line-height: 40px; background-color: rgb(255, 102, 102); color: rgb(255, 255, 255); font-size: 16px}</style>  
+  <title __cid="c7Rr6zu" class="c7Rr6zu">购物车</title>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive" __cid="c7Rr6zu" class="c7Rr6zu"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-card x-has-iosstatusbar pceUrEZb-iosstatusbar c7Rr6zu" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c7Rr6zu"> 
+    <div xid="content" class="x-panel-content x-scroll-view x-cards c7Rr6zu" supportpulldown="true" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7Rr6zu"> 
+      <div class="x-scroll c7Rr6zu" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-config="{&#34;pullUpLabel&#34;:&#34; &#34;}" __cid="c7Rr6zu"> 
+        <div class="x-content-center x-pull-down container c7Rr6zu" xid="div8" __cid="c7Rr6zu"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down c7Rr6zu" xid="i2" __cid="c7Rr6zu"></i>  
+          <span class="x-pull-down-label c7Rr6zu" xid="span9" __cid="c7Rr6zu">下拉刷新...</span> 
+        </div>  
+        <div class="x-scroll-content c7Rr6zu" xid="div7" __cid="c7Rr6zu"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list bg-white c7Rr6zu" xid="goodsList" style="text-align:left;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;goodsDataM&#34;,&#34;disableInfiniteLoad&#34;:true,&#34;disablePullToRefresh&#34;:true}" __cid="c7Rr6zu"> 
+            <ul class="x-list-template x-min-height hide c7Rr6zu" xid="listTemplateUl4" componentname="$UI/system/components/justep/list/list#listTemplateUl" id="undefined_listTemplateUl4" __cid="c7Rr6zu" data-bind="foreach:{data:$model.foreach_goodsList($element),afterRender:$model.foreach_afterRender_goodsList.bind($model,$element)}"> 
+              <li xid="li4" class="x-min-height tb-goodList  c7Rr6zu" componentname="li(html)" id="undefined_li4" __cid="c7Rr6zu"> 
+                <div xid="div1" style="padding:5px 5px 5px 5px;" __cid="c7Rr6zu" class="c7Rr6zu"> 
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row div-radius c7Rr6zu" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Rr6zu"> 
+                    <div class="x-col x-col-fixed x-col-center c7Rr6zu" xid="col1" style="width:auto;" __cid="c7Rr6zu"> 
+                      <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox x-radio choose c7Rr6zu" xid="checkbox2" checkedValue="1" data-config="{&#34;checked&#34;:false,&#34;checkedValue&#34;:&#34;1&#34;,&#34;disabled&#34;:false}" data-bind="component:{ref:ref(&#34;fChoose&#34;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="c7Rr6zu">
+                        <input type="checkbox" __cid="c7Rr6zu" class="c7Rr6zu">
+                        <label __cid="c7Rr6zu" class="c7Rr6zu"></label>
+                      </span> 
+                    </div>  
+                    <div class="x-col x-col-fixed tb-nopadding c7Rr6zu" xid="col2" style="width:90px;" __cid="c7Rr6zu"> 
+                      <img src="" alt="" xid="image1" class="tb-img-good c7Rr6zu" __cid="c7Rr6zu" data-bind="attr:{src:val(&#34;goods_img&#34;)},event:{click:$model._callModelFn.bind($model, 'listClick')}"> 
+                    </div>  
+                    <div class="x-col  tb-nopadding c7Rr6zu" xid="col3" __cid="c7Rr6zu"> 
+                      <span class="x-flex text-black h5 tb-nomargin c7Rr6zu" xid="span26" __cid="c7Rr6zu" data-bind="text:val(&#34;show_name&#34;)"></span>  
+                      <div class="text-muted h6 c7Rr6zu" xid="div6" __cid="c7Rr6zu"> 
+                        <span xid="span27" __cid="c7Rr6zu" class="c7Rr6zu" data-bind="text:val(&#34;goods_sn&#34;)"></span> 
+                      </div>  
+                      <div class="text-muted c7Rr6zu" xid="div5" __cid="c7Rr6zu"> 
+                        <span xid="span22" class="text-danger c7Rr6zu" __cid="c7Rr6zu">￥</span>  
+                        <span xid="span28" class="h4 text-danger c7Rr6zu" style="font-size:16px;" __cid="c7Rr6zu" data-bind="text:val(&#34;price&#34;)"></span>  
+                        <span xid="span4" __cid="c7Rr6zu" class="c7Rr6zu">/</span>  
+                        <span xid="span5" __cid="c7Rr6zu" class="c7Rr6zu" data-bind="text:val(&#34;unit_name&#34;)"></span> 
+                      </div>  
+                      <div class="tb-numberOperation c7Rr6zu" xid="div4" style="display:flex;text-align:right;" __cid="c7Rr6zu"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-sm btn-only-icon pull-left c7Rr6zu" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:reductionBtnClick" data-config="{&#34;icon&#34;:&#34;icon-android-remove&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="c7Rr6zu"> 
+                          <i xid="i3" class="icon-android-remove c7Rr6zu" __cid="c7Rr6zu"></i>  
+                          <span xid="span13" __cid="c7Rr6zu" class="c7Rr6zu"></span> 
+                        </a>  
+                        <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm c7Rr6zu" xid="fNumber" style="width:15%;" data-bind="component:{ref:ref(&#34;quantity&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Rr6zu">  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-sm btn-only-icon pull-left c7Rr6zu" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addBtnClick" data-config="{&#34;icon&#34;:&#34;icon-android-add&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="c7Rr6zu"> 
+                          <i xid="i6" class="icon-android-add c7Rr6zu" __cid="c7Rr6zu"></i>  
+                          <span xid="span29" __cid="c7Rr6zu" class="c7Rr6zu"></span> 
+                        </a> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="x-content-center x-pull-up c7Rr6zu" xid="div7" __cid="c7Rr6zu"> 
+          <span class="x-pull-up-label c7Rr6zu" xid="span8" __cid="c7Rr6zu"></span> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom c7Rr6zu" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7Rr6zu"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row tb-nopadding c7Rr6zu" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Rr6zu"> 
+        <div class="x-col x-col-20 x-col-center c7Rr6zu" xid="col4" __cid="c7Rr6zu"> 
+          <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox c7Rr6zu" xid="allChoose" label="全选" checked="false" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false,&#34;label&#34;:&#34;全选&#34;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" data-events="onChange:allChooseChange" __cid="c7Rr6zu">
+            <input type="checkbox" __cid="c7Rr6zu" class="c7Rr6zu">
+            <label __cid="c7Rr6zu" class="c7Rr6zu">全选</label>
+          </span> 
+        </div>  
+        <div class="x-col c7Rr6zu" xid="col8" __cid="c7Rr6zu"> 
+          <div class="text-right c7Rr6zu" xid="div9" __cid="c7Rr6zu"> 
+            <span xid="span15" class="text-muted c7Rr6zu" __cid="c7Rr6zu">合计：</span>  
+            <span xid="span17" class="text-danger c7Rr6zu" __cid="c7Rr6zu">￥</span>  
+            <span xid="sum" class="h4 text-danger c7Rr6zu" __cid="c7Rr6zu" data-bind="text:$model.sumData.val(&#34;priceSum&#34;)"></span> 
+          </div>  
+          <div class="text-right c7Rr6zu" xid="div10" __cid="c7Rr6zu"> 
+            <span xid="span16" __cid="c7Rr6zu" class="c7Rr6zu">共</span>  
+            <span xid="span6" __cid="c7Rr6zu" class="c7Rr6zu" data-bind="text:$model.sumData.val(&#34;chooseSum&#34;)">4</span>  
+            <span xid="span7" __cid="c7Rr6zu" class="c7Rr6zu">种</span>  
+            <span xid="span12" __cid="c7Rr6zu" class="c7Rr6zu" data-bind="text:$model.sumData.val(&#34;goodsSum&#34;)"></span>  
+            <span xid="span18" __cid="c7Rr6zu" class="c7Rr6zu">件商品</span> 
+          </div> 
+        </div>  
+        <div class="x-col x-col-33 text-center tb-settlement c7Rr6zu" xid="col9" __cid="c7Rr6zu" data-bind="event:{click:$model._callModelFn.bind($model, 'settlementClick')}"> 
+          <span xid="span10" __cid="c7Rr6zu" class="c7Rr6zu">下单</span> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="c7Rr6zu" class="c7Rr6zu">.x-panel.pceUrEZb-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pceUrEZb-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pceUrEZb-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pceUrEZb-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceUrEZb-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pceUrEZb-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceUrEZb-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceUrEZb-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceUrEZb-iosstatusbar >.x-panel-content {top: 0px;}</style>
+  </div> 
+</div>

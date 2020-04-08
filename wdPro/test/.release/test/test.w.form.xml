@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cj6ziiy" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cj6ziiy" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.file.cj6ziiy{position: relative; display: inline-block; background: rgb(208, 238, 255); border: 1px solid rgb(153, 211, 245); border-radius: 4px; padding: 4px 12px; overflow: hidden; color: rgb(30, 136, 199); text-decoration: none; text-indent: 0; line-height: 20px} .file.cj6ziiy input.cj6ziiy{position: absolute; font-size: 100px; right: 0; top: 0; opacity: 0} .file.cj6ziiy:hover{background: rgb(170, 223, 253); border-color: rgb(120, 195, 243); color: rgb(0, 73, 116); text-decoration: none}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cj6ziiy" class="cj6ziiy"/>  
+  <script src="http://res.wx.qq.com/open/js/jweixin-1.3.0.js" __cid="cj6ziiy" class="cj6ziiy"/>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cj6ziiy" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cj6ziiy"> 
+    <div class="x-contents-content active cj6ziiy" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cj6ziiy"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cj6ziiy" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cj6ziiy"> 
+        <div class="x-col cj6ziiy" xid="col1" __cid="cj6ziiy"/>  
+        <div class="x-col cj6ziiy" xid="col2" style="text-align:center;" __cid="cj6ziiy"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cj6ziiy" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;label&quot;:&quot;打开外部联系人&quot;}" __cid="cj6ziiy"> 
+            <i xid="i1" __cid="cj6ziiy" class="cj6ziiy"/>  
+            <span xid="span1" __cid="cj6ziiy" class="cj6ziiy">打开外部联系人</span> 
+          </a> 
+        </div>  
+        <div class="x-col cj6ziiy" xid="col3" __cid="cj6ziiy"/> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cj6ziiy" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cj6ziiy"> 
+        <div class="x-col cj6ziiy" xid="col4" __cid="cj6ziiy"/>  
+        <div class="x-col cj6ziiy" xid="col5" __cid="cj6ziiy"> 
+          <div xid="div7" class="list-group-item cj6ziiy" style="border-left-style:none;padding:5px 5px 5px 5px;border-top-style:none;" __cid="cj6ziiy"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cj6ziiy" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-plus&quot;,&quot;label&quot;:&quot;添加关联附件&quot;}" __cid="cj6ziiy"> 
+              <i xid="i2" class="dataControl dataControl-plus cj6ziiy" __cid="cj6ziiy"/>  
+              <span xid="span2" style="color:#2D2D2D;font-weight:bold;" __cid="cj6ziiy" class="cj6ziiy">添加关联附件</span> 
+            </a>  
+            <input type="file" accept="image/*,text/plain,application/*" onchange="justep.Bind.contextFor(this).$model.delData(event)" class="original-upload cj6ziiy" __cid="cj6ziiy"/>
+          </div> 
+        </div>  
+        <div class="x-col cj6ziiy" xid="col6" __cid="cj6ziiy"/> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cj6ziiy" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cj6ziiy"> 
+        <div class="x-col cj6ziiy" xid="col7" __cid="cj6ziiy"/>  
+        <div class="x-col cj6ziiy" xid="col8" __cid="cj6ziiy">
+          <div xid="div3" __cid="cj6ziiy" class="cj6ziiy"> 
+            <a href="javascript:;" class="file cj6ziiy" __cid="cj6ziiy">选择文件
+              <input type="file" name="upDataImage" id="upDataImageAndFile" onchange="justep.Bind.contextFor(this).$model.delData(event)" __cid="cj6ziiy" class="cj6ziiy"/>
+            </a> 
+          </div>
+        </div>  
+        <div class="x-col cj6ziiy" xid="col9" __cid="cj6ziiy"/>
+      </div>
+    </div> 
+  </div> 
+</div>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cN3ai2i" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cN3ai2i" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cN3ai2i" class="cN3ai2i"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcneaQFj-iosstatusbar cN3ai2i" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cN3ai2i"> 
+    <div class="x-panel-top cN3ai2i" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cN3ai2i"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cN3ai2i" style="background-color:#47D1D1;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;订单查询&quot;}" __cid="cN3ai2i"> 
+        <div class="x-titlebar-left cN3ai2i" __cid="cN3ai2i"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cN3ai2i" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cN3ai2i"> 
+            <i class="icon-chevron-left cN3ai2i" __cid="cN3ai2i"/>  
+            <span __cid="cN3ai2i" class="cN3ai2i"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cN3ai2i" __cid="cN3ai2i">订单查询</div>  
+        <div class="x-titlebar-right  cN3ai2i" __cid="cN3ai2i">
+          <div class="empty cN3ai2i" __cid="cN3ai2i"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cN3ai2i" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cN3ai2i">
+      <div xid="div1" __cid="cN3ai2i" class="cN3ai2i"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cN3ai2i" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cN3ai2i"> 
+          <div class="x-col cN3ai2i" xid="col4" __cid="cN3ai2i"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cN3ai2i" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cN3ai2i"> 
+              <div class="x-col cN3ai2i" xid="col10" __cid="cN3ai2i"> 
+                <span xid="span4" __cid="cN3ai2i" class="cN3ai2i">开始时间</span>
+              </div>  
+              <div class="x-col cN3ai2i" xid="col12" style="text-align:right;" __cid="cN3ai2i"> 
+                <span xid="span6" __cid="cN3ai2i" class="cN3ai2i">2019-03-15</span>
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cN3ai2i" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cN3ai2i"> 
+          <div class="x-col cN3ai2i" xid="col9" __cid="cN3ai2i"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cN3ai2i" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cN3ai2i"> 
+              <div class="x-col cN3ai2i" xid="col13" __cid="cN3ai2i">结束时间</div>  
+              <div class="x-col cN3ai2i" xid="col15" style="text-align:right;" __cid="cN3ai2i"> 
+                <span xid="span7" __cid="cN3ai2i" class="cN3ai2i">2019-03-22</span>
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cN3ai2i" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cN3ai2i"> 
+          <div class="x-col cN3ai2i" xid="col3" __cid="cN3ai2i"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cN3ai2i" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cN3ai2i"> 
+              <div class="x-col cN3ai2i" xid="col1" style="text-align:left;" __cid="cN3ai2i"> 
+                <span xid="span5" __cid="cN3ai2i" class="cN3ai2i">订单状态</span>
+              </div>  
+              <div class="x-col cN3ai2i" xid="col8" style="text-align:right;" __cid="cN3ai2i">
+                <span xid="span1" __cid="cN3ai2i" class="cN3ai2i">全部</span>
+              </div>
+            </div> 
+          </div> 
+        </div>
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cN3ai2i" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cN3ai2i"> 
+          <div class="x-col cN3ai2i" xid="col7" __cid="cN3ai2i"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cN3ai2i" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cN3ai2i"> 
+              <div class="x-col cN3ai2i" xid="col5" style="text-align:left;" __cid="cN3ai2i"> 
+                <span xid="span2" __cid="cN3ai2i" class="cN3ai2i">下单方式</span>
+              </div>  
+              <div class="x-col cN3ai2i" xid="col14" style="text-align:right;" __cid="cN3ai2i">
+                <span xid="span9" __cid="cN3ai2i" class="cN3ai2i">全部</span>
+              </div>
+            </div> 
+          </div> 
+        </div>
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cN3ai2i" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cN3ai2i"> 
+          <div class="x-col cN3ai2i" xid="col16" __cid="cN3ai2i"> 
+            <div xid="div2" style="padding-top:30px;text-align:center;" __cid="cN3ai2i" class="cN3ai2i"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cN3ai2i" xid="orderSearchBtn" style="box-shadow:2px 4px 8px #e6e7e8;border-color:#07AD9E;width:80%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:orderSearchBtnClick" data-config="{&quot;label&quot;:&quot;订单查询&quot;}" __cid="cN3ai2i"> 
+                <i xid="i4" __cid="cN3ai2i" class="cN3ai2i"/>  
+                <span xid="span8" __cid="cN3ai2i" class="cN3ai2i">订单查询</span>
+              </a> 
+            </div> 
+          </div> 
+        </div> 
+      </div>
+    </div>  
+    <style __cid="cN3ai2i" class="cN3ai2i">.x-panel.pcneaQFj-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcneaQFj-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcneaQFj-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcneaQFj-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcneaQFj-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcneaQFj-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcneaQFj-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcneaQFj-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcneaQFj-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

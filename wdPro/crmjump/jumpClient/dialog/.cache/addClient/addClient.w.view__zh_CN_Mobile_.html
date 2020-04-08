@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cVNJFfa" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cVNJFfa" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <style>html.cVNJFfa{font-size: 62.5% !important} body.cVNJFfa{font-size: 1.6rem "Microsoft YaHei", arial, tahoma, 宋体, sans-serif !important} .x-label.cVNJFfa{color: rgb(53, 53, 53)}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cVNJFfa" class="cVNJFfa"></div>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cVNJFfa" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;active&#34;:0}" __cid="cVNJFfa"> 
+    <div class="x-contents-content active cVNJFfa" xid="content1" style="background-color:#EBEAF0;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cVNJFfa">
+      <div xid="div1" class="list-group-item cVNJFfa" style="background-color:#EBEAF0;" __cid="cVNJFfa">
+        <span xid="span1" __cid="cVNJFfa" class="cVNJFfa">基本信息</span> 
+      </div>  
+      <div xid="div2" class="list-group-item cVNJFfa" style="border-right-style:none;border-left-style:none;padding-right:0px;padding-top:2px;padding-bottom:2px;" __cid="cVNJFfa">
+        <div xid="div3" class="list-group-item cVNJFfa" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="cVNJFfa">
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNJFfa" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNJFfa"> 
+            <label class="x-label cVNJFfa" xid="label1" style="width:80px;" __cid="cVNJFfa">姓名</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNJFfa" xid="input1" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cVNJFfa">
+          </div>
+        </div>  
+        <div xid="div4" class="list-group-item cVNJFfa" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="cVNJFfa"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNJFfa" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNJFfa"> 
+            <label class="x-label cVNJFfa" xid="label2" style="width:80px;" __cid="cVNJFfa">手机</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNJFfa" xid="input2" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cVNJFfa">
+          </div> 
+        </div>
+        <div xid="div28" class="list-group-item cVNJFfa" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="cVNJFfa"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cVNJFfa" xid="labelEdit21" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNJFfa"> 
+            <label class="x-label cVNJFfa" style="width:80px;" xid="label21" __cid="cVNJFfa">联系人标签</label>  
+            <div class="x-edit cVNJFfa" xid="div26" __cid="cVNJFfa"> 
+              <div class="input-group cVNJFfa" xid="div27" __cid="cVNJFfa"> 
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control cVNJFfa" xid="tagInp" style="background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;disabled&#34;:true,&#34;placeHolder&#34;:&#34;请选择&#34;}" __cid="cVNJFfa">  
+                <span class="input-group-btn cVNJFfa" xid="span4" __cid="cVNJFfa"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cVNJFfa" xid="tagBtn" style="color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:tagBtnClick" data-config="{&#34;icon&#34;:&#34;icon-chevron-right&#34;}" __cid="cVNJFfa"> 
+                    <i class="icon-chevron-right cVNJFfa" xid="i3" __cid="cVNJFfa"></i>
+                  </a> 
+                </span> 
+              </div> 
+            </div> 
+          </div> 
+        </div>
+        <div xid="div5" class="list-group-item cVNJFfa" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="cVNJFfa"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNJFfa" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNJFfa"> 
+            <label class="x-label cVNJFfa" xid="label3" style="width:80px;" __cid="cVNJFfa">职务</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNJFfa" xid="input3" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cVNJFfa">
+          </div> 
+        </div>
+        <div xid="div34" class="list-group-item cVNJFfa" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="cVNJFfa"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNJFfa" xid="labelEdit11" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNJFfa"> 
+            <label class="x-label cVNJFfa" xid="label11" style="width:80px;" __cid="cVNJFfa">生日</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNJFfa" xid="input10" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;dataType&#34;:&#34;Date&#34;}" __cid="cVNJFfa">
+          </div>
+        </div>
+        <div xid="div31" class="list-group-item cVNJFfa" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="cVNJFfa"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cVNJFfa" xid="labelEdit22" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNJFfa"> 
+            <label class="x-label cVNJFfa" style="width:80px;" xid="label22" __cid="cVNJFfa">性别</label>  
+            <div class="x-edit cVNJFfa" xid="div29" __cid="cVNJFfa"> 
+              <div class="input-group cVNJFfa" xid="div30" __cid="cVNJFfa"> 
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control cVNJFfa" xid="sexInp" style="background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;disabled&#34;:true,&#34;placeHolder&#34;:&#34;请选择&#34;}" __cid="cVNJFfa">  
+                <span class="input-group-btn cVNJFfa" xid="span5" __cid="cVNJFfa"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cVNJFfa" xid="sexBtn" style="color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sexBtnClick" data-config="{&#34;icon&#34;:&#34;icon-chevron-right&#34;}" __cid="cVNJFfa"> 
+                    <i class="icon-chevron-right cVNJFfa" xid="i4" __cid="cVNJFfa"></i>
+                  </a> 
+                </span> 
+              </div> 
+            </div> 
+          </div> 
+        </div>
+        <div xid="div8" class="list-group-item cVNJFfa" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="cVNJFfa"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNJFfa" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNJFfa"> 
+            <label class="x-label cVNJFfa" xid="label4" style="width:80px;" __cid="cVNJFfa">座机</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNJFfa" xid="input6" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cVNJFfa">
+          </div> 
+        </div>  
+        <div xid="div7" class="list-group-item cVNJFfa" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="cVNJFfa"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNJFfa" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNJFfa"> 
+            <label class="x-label cVNJFfa" xid="label5" style="width:80px;" __cid="cVNJFfa">邮箱</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNJFfa" xid="input5" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cVNJFfa">
+          </div> 
+        </div>  
+        <div xid="div6" class="list-group-item cVNJFfa" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="cVNJFfa"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNJFfa" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNJFfa"> 
+            <label class="x-label cVNJFfa" xid="label6" style="width:80px;" __cid="cVNJFfa">微信</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNJFfa" xid="input4" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cVNJFfa">
+          </div> 
+        </div>  
+        <div xid="div11" class="list-group-item cVNJFfa" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="cVNJFfa"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNJFfa" xid="labelEdit7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNJFfa"> 
+            <label class="x-label cVNJFfa" xid="label7" style="width:80px;" __cid="cVNJFfa">微博</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNJFfa" xid="input9" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cVNJFfa">
+          </div> 
+        </div>  
+        <div xid="div10" class="list-group-item cVNJFfa" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="cVNJFfa"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNJFfa" xid="labelEdit9" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNJFfa"> 
+            <label class="x-label cVNJFfa" xid="label8" style="width:80px;" __cid="cVNJFfa">QQ</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNJFfa" xid="input8" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cVNJFfa">
+          </div> 
+        </div>  
+        <div xid="div9" class="list-group-item cVNJFfa" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="cVNJFfa"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNJFfa" xid="labelEdit8" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNJFfa"> 
+            <label class="x-label cVNJFfa" xid="label9" style="width:80px;" __cid="cVNJFfa">籍贯</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNJFfa" xid="input7" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cVNJFfa">
+          </div> 
+        </div>  
+        <div xid="div14" class="list-group-item cVNJFfa" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="cVNJFfa"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNJFfa" xid="labelEdit10" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNJFfa"> 
+            <label class="x-label cVNJFfa" xid="label10" style="width:80px;" __cid="cVNJFfa">兴趣爱好</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNJFfa" xid="input12" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cVNJFfa">
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cVNJFfa" xid="row1" style="height:5px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVNJFfa"> 
+        <div class="x-col cVNJFfa" xid="col3" __cid="cVNJFfa"></div>
+      </div>  
+      <div xid="div62" class="list-group-item cVNJFfa" style="text-align:center;" __cid="cVNJFfa" data-bind="event:{click:$model._callModelFn.bind($model, 'div62Click')}">
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cVNJFfa" xid="button15" style="color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-plus-round&#34;,&#34;label&#34;:&#34;关联客户&#34;}" __cid="cVNJFfa"> 
+          <i xid="i15" class="icon-plus-round cVNJFfa" __cid="cVNJFfa"></i>  
+          <span xid="span16" __cid="cVNJFfa" class="cVNJFfa">关联客户</span>
+        </a> 
+      </div>  
+      <div xid="div20" __cid="cVNJFfa" class="cVNJFfa">
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cVNJFfa" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;rlinkManList&#34;}" __cid="cVNJFfa"> 
+          <ul class="x-list-template hide cVNJFfa" xid="listTemplateUl1" __cid="cVNJFfa" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+            <li xid="li1" __cid="cVNJFfa" class="cVNJFfa"> 
+              <div xid="div21" style="padding:5px 5px 5px 5px;" class="list-group-item cVNJFfa" __cid="cVNJFfa">
+                <div class="media cVNJFfa" xid="media1" __cid="cVNJFfa"> 
+                  <div class="media-left cVNJFfa" xid="mediaLeft1" __cid="cVNJFfa"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cVNJFfa" xid="button4" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&#34;icon&#34;:&#34;linear linear-trash&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cVNJFfa"> 
+                      <i xid="i6" class="linear linear-trash cVNJFfa" __cid="cVNJFfa"></i>  
+                      <span xid="span7" __cid="cVNJFfa" class="cVNJFfa"></span>
+                    </a>
+                  </div>  
+                  <div class="media-body cVNJFfa" xid="mediaBody1" __cid="cVNJFfa"> 
+                    <h4 xid="h41" style="color:#181919;" __cid="cVNJFfa" class="cVNJFfa" data-bind="text:val(&#34;client_name&#34;)"></h4>
+                  </div> 
+                </div>
+              </div>
+            </li>
+          </ul> 
+        </div>
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cVNJFfa" xid="row2" style="height:5px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVNJFfa"> 
+        <div class="x-col cVNJFfa" xid="col4" __cid="cVNJFfa"></div>
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cVNJFfa" xid="row3" style="height:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVNJFfa"> 
+        <div class="x-col cVNJFfa" xid="col1" __cid="cVNJFfa"></div>
+      </div>  
+      <div xid="div77" class="list-group-item cVNJFfa" style="text-align:center;background-color:#4B76AE;padding:5px 5px 5px 5px;" __cid="cVNJFfa" data-bind="event:{click:$model._callModelFn.bind($model, 'div77Click')}"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-label cVNJFfa" xid="button18" style="color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-plus-round&#34;,&#34;label&#34;:&#34;保存&#34;}" __cid="cVNJFfa"> 
+          <i xid="i18" class="icon-plus-round cVNJFfa" __cid="cVNJFfa"></i>  
+          <span xid="span19" style="font-size:16px;" __cid="cVNJFfa" class="cVNJFfa">保存</span>
+        </a> 
+      </div>
+    </div>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="tagWinDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/wdPro/contactPep/dialog/dialog/linkManCommon.w&#34;}" __cid="cVNJFfa" class="cVNJFfa">
+    <div class="x-dialog-overlay cVNJFfa" __cid="cVNJFfa"></div>
+    <div class="x-dialog cVNJFfa" style="display:none;" __cid="cVNJFfa">
+      <div class="x-dialog-title cVNJFfa" __cid="cVNJFfa">
+        <button class="close cVNJFfa" __cid="cVNJFfa">
+          <span __cid="cVNJFfa" class="cVNJFfa">×</span>
+        </button>
+        <div class="x-dialog-title-text cVNJFfa" __cid="cVNJFfa"></div>
+      </div>
+      <div class="x-dialog-body cVNJFfa" __cid="cVNJFfa"></div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="sexWinDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/wdPro/contactPep/dialog/dialog/sexChoose.w&#34;}" __cid="cVNJFfa" class="cVNJFfa">
+    <div class="x-dialog-overlay cVNJFfa" __cid="cVNJFfa"></div>
+    <div class="x-dialog cVNJFfa" style="display:none;" __cid="cVNJFfa">
+      <div class="x-dialog-title cVNJFfa" __cid="cVNJFfa">
+        <button class="close cVNJFfa" __cid="cVNJFfa">
+          <span __cid="cVNJFfa" class="cVNJFfa">×</span>
+        </button>
+        <div class="x-dialog-title-text cVNJFfa" __cid="cVNJFfa"></div>
+      </div>
+      <div class="x-dialog-body cVNJFfa" __cid="cVNJFfa"></div>
+    </div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cVNJFfa" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;direction&#34;:&#34;auto&#34;,&#34;position&#34;:&#34;bottom&#34;}" __cid="cVNJFfa"> 
+    <div class="x-popOver-overlay dd cVNJFfa" xid="div12" __cid="cVNJFfa"></div>  
+    <div class="x-popOver-content d cVNJFfa" xid="div13" style="width:100%;height:auto;" __cid="cVNJFfa">
+      <div xid="div15" style="width:100%;" __cid="cVNJFfa" class="cVNJFfa">
+        <div xid="div16" style="text-align:center;" class="list-group-item cVNJFfa" __cid="cVNJFfa">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cVNJFfa" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&#34;label&#34;:&#34;新增客户&#34;}" __cid="cVNJFfa"> 
+            <i xid="i1" __cid="cVNJFfa" class="cVNJFfa"></i>  
+            <span xid="span2" __cid="cVNJFfa" class="cVNJFfa">新增客户</span>
+          </a>
+        </div>  
+        <div xid="div17" class="list-group-item cVNJFfa" style="text-align:center;" __cid="cVNJFfa">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cVNJFfa" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&#34;label&#34;:&#34;关联现有客户&#34;}" __cid="cVNJFfa"> 
+            <i xid="i2" __cid="cVNJFfa" class="cVNJFfa"></i>  
+            <span xid="span3" __cid="cVNJFfa" class="cVNJFfa">关联现有客户</span>
+          </a>
+        </div>  
+        <div xid="div19" class="list-group-item cVNJFfa" style="text-align:center;" __cid="cVNJFfa">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cVNJFfa" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;popOver1.hide&#34;}" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="cVNJFfa"> 
+            <i xid="i5" __cid="cVNJFfa" class="cVNJFfa"></i>  
+            <span xid="span6" __cid="cVNJFfa" class="cVNJFfa">取消</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="alreadyWinDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/wdPro/contactPep/dialog/dialog/linkManPop.w&#34;}" __cid="cVNJFfa" class="cVNJFfa">
+    <div class="x-dialog-overlay cVNJFfa" __cid="cVNJFfa"></div>
+    <div class="x-dialog cVNJFfa" style="display:none;" __cid="cVNJFfa">
+      <div class="x-dialog-title cVNJFfa" __cid="cVNJFfa">
+        <button class="close cVNJFfa" __cid="cVNJFfa">
+          <span __cid="cVNJFfa" class="cVNJFfa">×</span>
+        </button>
+        <div class="x-dialog-title-text cVNJFfa" __cid="cVNJFfa"></div>
+      </div>
+      <div class="x-dialog-body cVNJFfa" __cid="cVNJFfa"></div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="addPopWinDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;src&#34;:&#34;$model/UI2/wdPro/contactPep/dialog/dialog/addPopC.w&#34;}" __cid="cVNJFfa" class="cVNJFfa">
+    <div class="x-dialog-overlay cVNJFfa" __cid="cVNJFfa"></div>
+    <div class="x-dialog cVNJFfa" style="display:none;" __cid="cVNJFfa">
+      <div class="x-dialog-title cVNJFfa" __cid="cVNJFfa">
+        <button class="close cVNJFfa" __cid="cVNJFfa">
+          <span __cid="cVNJFfa" class="cVNJFfa">×</span>
+        </button>
+        <div class="x-dialog-title-text cVNJFfa" __cid="cVNJFfa"></div>
+      </div>
+      <div class="x-dialog-body cVNJFfa" __cid="cVNJFfa"></div>
+    </div>
+  </span>
+</div>

@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cJBNFj2" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cJBNFj2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">
+  <style>.x-card.btn-group.cJBNFj2 .btn.active.cJBNFj2{color: rgb(75, 118, 174)} html.cJBNFj2{font-size: 62.5% !important} body.cJBNFj2{font-size: 1.6rem "Microsoft YaHei", arial, tahoma, 宋体, sans-serif !important} .imag.cJBNFj2{border-radius: 5px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cJBNFj2" class="cJBNFj2"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc7Fviuy-iosstatusbar cJBNFj2" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cJBNFj2"> 
+    <div class="x-panel-top cJBNFj2" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJBNFj2">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cJBNFj2" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJBNFj2"> 
+        <div class="x-col cJBNFj2" xid="col1" style="text-align:right;" __cid="cJBNFj2">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon cJBNFj2" xid="button2" style="color:#4E4E4E;font-size:14px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&#34;icon&#34;:&#34;icon-arrow-left-b&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cJBNFj2"> 
+            <i xid="i2" class="icon-arrow-left-b cJBNFj2" __cid="cJBNFj2"></i>  
+            <span xid="span2" __cid="cJBNFj2" class="cJBNFj2"></span>
+          </a>
+        </div>  
+        <div class="x-col x-col-50 cJBNFj2" xid="col2" __cid="cJBNFj2">
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cJBNFj2" xid="input2" style="height:100%;border-style:none none none none;text-align:center;font-size:16px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;format&#34;:&#34;yyyy-MM-dd&#34;}" __cid="cJBNFj2">
+        </div>  
+        <div class="x-col cJBNFj2" xid="col3" style="text-align:left;" __cid="cJBNFj2">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon cJBNFj2" xid="button1" style="color:#4E4E4E;font-size:14px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&#34;icon&#34;:&#34;icon-arrow-right-b&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cJBNFj2"> 
+            <i xid="i1" class="icon-arrow-right-b cJBNFj2" __cid="cJBNFj2"></i>  
+            <span xid="span1" __cid="cJBNFj2" class="cJBNFj2"></span>
+          </a>
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-content cJBNFj2" xid="content1" style="background-color:#F3F4F3;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJBNFj2"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cJBNFj2" xid="list1" dataItemAlias="fatherList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;myreData&#34;}" __cid="cJBNFj2"> 
+        <ul class="x-list-template hide cJBNFj2" xid="listTemplateUl1" __cid="cJBNFj2" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element),as:'fatherList'}"> 
+          <li xid="li1" __cid="cJBNFj2" class="cJBNFj2" data-bind="event:{click:$model._callModelFn.bind($model, 'li1Click')}">
+            <div xid="div1" class="list-group-item cJBNFj2" style="padding:5px 5px 5px 5px;" __cid="cJBNFj2">
+              <div class="media cJBNFj2" xid="media1" __cid="cJBNFj2"> 
+                <div class="media-left cJBNFj2" xid="mediaLeft1" __cid="cJBNFj2"> 
+                  <a href="#" xid="a1" __cid="cJBNFj2" class="cJBNFj2"> 
+                    <img class="media-object imag cJBNFj2" src="@justepContextPath@/v_25359440210346e686787a89635f8af7l_zh_CNs_d_m/wdPro/common/img/head4.jpeg" alt="" xid="image1" style="width:57px;height:46px;" __cid="cJBNFj2">
+                    <h5 xid="h51" style="text-align:center;font-size:16px;color:#2C2C2C;" __cid="cJBNFj2" class="cJBNFj2" data-bind="text:val(&#34;create_staff&#34;)"></h5>
+                  </a> 
+                </div>  
+                <div class="media-body cJBNFj2" xid="mediaBody1" __cid="cJBNFj2"> 
+                  <h4 xid="h41" style="font-size:16px;color:#2C2C2C;" class="media-heading cJBNFj2" __cid="cJBNFj2"> 
+                    <span xid="span4" __cid="cJBNFj2" class="cJBNFj2" data-bind="text:val(&#34;create_at&#34;).substring(5,val(&#34;create_at&#34;).length)"></span>  
+                    <span xid="span5" __cid="cJBNFj2" class="cJBNFj2" data-bind="text:$model.getWeek(val(&#34;create_at&#34;))"></span> 
+                  </h4>  
+                  <h4 xid="h44" style="font-size:16px;color:#2C2C2C;" class="media-heading cJBNFj2" __cid="cJBNFj2"> 
+                    <div component="$model/UI2/system/components/justep/list/list" class="x-list cJBNFj2" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;$model.cc_staffData&#34;,&#34;filter&#34;:&#34;$row.val('fID') == fatherList.val('report_id') &#34;}" __cid="cJBNFj2"> 
+                      <ul class="x-list-template hide cJBNFj2" xid="listTemplateUl2" __cid="cJBNFj2" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}"> 
+                        <li xid="li2" __cid="cJBNFj2" class="cJBNFj2"> 
+                          <h5 xid="h52" __cid="cJBNFj2" class="cJBNFj2">
+                            <span xid="span9" style="float:left;" __cid="cJBNFj2" class="cJBNFj2" data-bind="text:&#34;@&#34;+val(&#34;staff_name&#34;)">@哈哈</span>
+                          </h5>
+                        </li>
+                      </ul> 
+                    </div>
+                  </h4>
+                </div> 
+              </div> 
+            </div>  
+            <div xid="div2" class="list-group-item cJBNFj2" style="padding:0px 0px 0px 0px;" __cid="cJBNFj2">
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cJBNFj2" xid="button5" style="font-size:14px;color:#949494;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:val(&#34;report_action&#34;)+&#34;总结&#34;" data-config="{&#34;label&#34;:&#34;button&#34;}" __cid="cJBNFj2"> 
+                <i xid="i6" __cid="cJBNFj2" class="cJBNFj2"></i>  
+                <span xid="span14" __cid="cJBNFj2" class="cJBNFj2"></span>
+              </a>
+              <div xid="div3" __cid="cJBNFj2" class="cJBNFj2">
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cJBNFj2" xid="button4" style="color:#767676;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:val(&#34;report_content&#34;)" data-config="{&#34;label&#34;:&#34;button&#34;}" __cid="cJBNFj2"> 
+                  <i xid="i5" __cid="cJBNFj2" class="cJBNFj2"></i>  
+                  <span xid="span12" __cid="cJBNFj2" class="cJBNFj2"></span>
+                </a>
+              </div> 
+            </div>  
+            <div xid="div5" class=" list-group-item cJBNFj2" style="padding:0px 0px 0px 0px;text-align:right;" __cid="cJBNFj2"> 
+              <div xid="div9" style="height:100%;width:100%;" __cid="cJBNFj2" class="cJBNFj2"> 
+                <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cJBNFj2" xid="buttonGroup2" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cJBNFj2"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cJBNFj2" xid="button6" style="font-size:14px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;e-commerce e-commerce-zan&#34;,&#34;label&#34;:&#34;点赞&#34;}" __cid="cJBNFj2"> 
+                    <i xid="i9" class="e-commerce e-commerce-zan cJBNFj2" style="font-size:14px" __cid="cJBNFj2"></i>  
+                    <span xid="span15" __cid="cJBNFj2" class="cJBNFj2" data-bind="text:val(&#34;likes&#34;)">点赞</span>
+                  </a>
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cJBNFj2" xid="button8" style="font-size:14px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;e-commerce e-commerce-xiaoxi&#34;,&#34;label&#34;:&#34;评论&#34;}" __cid="cJBNFj2"> 
+                    <i xid="i8" class="e-commerce e-commerce-xiaoxi cJBNFj2" style="font-size:14px" __cid="cJBNFj2"></i>  
+                    <span xid="span6" __cid="cJBNFj2" class="cJBNFj2" data-bind="text:val(&#34;comment&#34;)">评论</span>
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-icon cJBNFj2" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;e-commerce e-commerce-suoyou&#34;,&#34;label&#34;:&#34;操作&#34;}" __cid="cJBNFj2"> 
+                    <i xid="i7" class="e-commerce e-commerce-suoyou cJBNFj2" style="font-size:14px" __cid="cJBNFj2"></i>  
+                    <span xid="span13" __cid="cJBNFj2" class="cJBNFj2">操作</span>
+                  </a>
+                </div> 
+              </div>
+            </div>  
+            <div xid="div6" style="height:7px;" __cid="cJBNFj2" class="cJBNFj2"></div>
+          </li>
+        </ul> 
+      </div>
+    </div>  
+    <div class="x-panel-bottom cJBNFj2" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJBNFj2">
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cJBNFj2" xid="buttonGroup1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cJBNFj2"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cJBNFj2" xid="addWorkPlan" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addWorkPlanClick" data-config="{&#34;icon&#34;:&#34;icon-plus-round&#34;,&#34;label&#34;:&#34;新增&#34;}" __cid="cJBNFj2"> 
+          <i xid="i3" class="icon-plus-round cJBNFj2" __cid="cJBNFj2"></i>  
+          <span xid="span3" style="font-size:16px;" __cid="cJBNFj2" class="cJBNFj2">新增</span>
+        </a> 
+      </div>
+    </div>
+    <style __cid="cJBNFj2" class="cJBNFj2">.x-panel.pc7Fviuy-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pc7Fviuy-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc7Fviuy-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc7Fviuy-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7Fviuy-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc7Fviuy-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7Fviuy-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7Fviuy-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7Fviuy-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

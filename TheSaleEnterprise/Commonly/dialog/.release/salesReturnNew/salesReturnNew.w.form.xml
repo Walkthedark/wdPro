@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cziM7ni" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cziM7ni" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cziM7ni" class="cziM7ni"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcmAZf6v-iosstatusbar cziM7ni" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cziM7ni"> 
+    <div class="x-panel-top cziM7ni" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cziM7ni"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cziM7ni" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;添加退货单&quot;}" __cid="cziM7ni"> 
+        <div class="x-titlebar-left cziM7ni" xid="left2" __cid="cziM7ni"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cziM7ni" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cziM7ni"> 
+            <i xid="i1" __cid="cziM7ni" class="cziM7ni"/>  
+            <span xid="span4" __cid="cziM7ni" class="cziM7ni">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cziM7ni" xid="title2" __cid="cziM7ni">添加退货单</div>  
+        <div class="x-titlebar-right  cziM7ni" xid="right2" __cid="cziM7ni">
+          <div class="empty cziM7ni" __cid="cziM7ni"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cziM7ni" xid="content6" style="background-color:#f0f0f0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cziM7ni"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cziM7ni" xid="row1" style="background-color:white;margin-top:5px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cziM7ni"> 
+        <div class="x-col cziM7ni" xid="col17" __cid="cziM7ni"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cziM7ni" xid="row4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cziM7ni"> 
+            <div class="col col-xs-12 cziM7ni" xid="col2" __cid="cziM7ni"> 
+              <span xid="span3" style="color:red;font-weight:bold;font-size:16px;" __cid="cziM7ni" class="cziM7ni">信息提示：没有最终审批角色，请联系管理员！</span>
+            </div>  
+            <div class="col col-xs-12 cziM7ni" xid="col3" __cid="cziM7ni"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cziM7ni" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cziM7ni"> 
+                <label class="x-label cziM7ni" xid="label5" style="width:110px;" __cid="cziM7ni">退货原因：</label>  
+                <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit cziM7ni" xid="textarea1" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cziM7ni"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cziM7ni" xid="col6" __cid="cziM7ni"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cziM7ni" xid="button2" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;label&quot;:&quot;添加明细数据&quot;}" __cid="cziM7ni"> 
+                <i xid="i2" __cid="cziM7ni" class="cziM7ni"/>  
+                <span xid="span2" __cid="cziM7ni" class="cziM7ni">添加明细数据</span> 
+              </a> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cziM7ni" xid="row2" style="margin-top:5px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cziM7ni"> 
+        <div class="x-col cziM7ni" xid="col4" __cid="cziM7ni"> 
+          <span xid="span1" __cid="cziM7ni" class="cziM7ni">上传照片（最多录入6张。）</span> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cziM7ni" xid="row3" style="margin-top:5px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cziM7ni"> 
+        <div class="x-col cziM7ni" xid="col5" __cid="cziM7ni"> 
+          <img src="$model/UI2/TheSaleEnterprise/ClockIn/img/001.jpeg" alt="" xid="image1" style="width:100px;margin-left:10px;" bind-click="GImageClick" __cid="cziM7ni" class="cziM7ni"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cziM7ni" xid="row5" style="padding:20px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cziM7ni"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label cziM7ni" xid="button4" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;label&quot;:&quot;提 交&quot;}" __cid="cziM7ni"> 
+          <i xid="i4" __cid="cziM7ni" class="cziM7ni"/>  
+          <span xid="span5" __cid="cziM7ni" class="cziM7ni">提 交</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cziM7ni" class="cziM7ni">.x-panel.pcmAZf6v-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcmAZf6v-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcmAZf6v-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcmAZf6v-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmAZf6v-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcmAZf6v-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmAZf6v-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmAZf6v-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmAZf6v-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="wReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:wReceiverReceive" __cid="cziM7ni" class="cziM7ni"/>
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="infoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Commonly/dialog/salesReturnNewInfo.w&quot;}" __cid="cziM7ni" class="cziM7ni">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cziM7ni" __cid="cziM7ni"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cziM7ni" style="display:none;" __cid="cziM7ni">
+      <xhtml:div class="x-dialog-title cziM7ni" __cid="cziM7ni">
+        <xhtml:button class="close cziM7ni" __cid="cziM7ni">
+          <xhtml:span __cid="cziM7ni" class="cziM7ni">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cziM7ni" __cid="cziM7ni"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cziM7ni" __cid="cziM7ni"/>
+    </xhtml:div>
+  </span> 
+</div>

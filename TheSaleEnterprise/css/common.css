@@ -1,0 +1,4 @@
+.subNavLine>div{list-style: none;float:left;width:50%;text-align:center;color:#606060;background-color:#FFFFFF;border-bottom:1px solid #C3C3C3;}
+.subNavLine,.secondNav{line-height:46px;/*margin:1px 0 0 0;*/background-color:#7FD5F6;}
+.subNavLine>div>span{font-size:1.5rem;font-weight:normal;/* padding:1.1rem 0 1.1rem 0; */display: inline-block;width:6em;border-bottom:3px solid #fff;}
+.subNavLine>.active>span{color:#2A89FF;border-bottom:3px solid #2A89FF;}

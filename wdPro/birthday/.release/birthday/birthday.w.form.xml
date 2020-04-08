@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cQRRNvy" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQRRNvy" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cQRRNvy" class="cQRRNvy"/>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cQRRNvy" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cQRRNvy"> 
+    <div class="x-contents-content active cQRRNvy" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cQRRNvy"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcyeu6Jr-iosstatusbar cQRRNvy" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cQRRNvy"> 
+        <div class="x-panel-top cQRRNvy" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQRRNvy">
+          <div xid="div1" style="width:100%;height:100%;" __cid="cQRRNvy" class="cQRRNvy">
+            <img src="$model/UI2/wdPro/common/img/happy.jpeg" alt="" xid="image1" style="width:100%;" height="100%" __cid="cQRRNvy" class="cQRRNvy"/>
+          </div>
+        </div>  
+        <div class="x-panel-content  x-scroll-view cQRRNvy" xid="content2" style="background-color:#E6DFDA;" _xid="C8CCA65CE200000198451000C4B01FA1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQRRNvy">
+          <div class="x-scroll cQRRNvy" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-events="onPullUp:scrollView1PullUp" __cid="cQRRNvy"> 
+            <div class="x-scroll-content cQRRNvy" xid="div32" __cid="cQRRNvy"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cQRRNvy" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;popData&quot;}" __cid="cQRRNvy"> 
+                <ul class="x-list-template hide cQRRNvy" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cQRRNvy"> 
+                  <li xid="li1" __cid="cQRRNvy" class="cQRRNvy"> 
+                    <div xid="div72" class="list-group-item cQRRNvy" style="border-right-style:none;border-left-style:none;padding-right:0px;padding-top:2px;padding-bottom:2px;" __cid="cQRRNvy"> 
+                      <div xid="div73" class="list-group-item cQRRNvy" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="cQRRNvy"> 
+                        <div class="media cQRRNvy" xid="media1" __cid="cQRRNvy"> 
+                          <div class="media-left cQRRNvy" xid="mediaLeft1" __cid="cQRRNvy"> 
+                            <a href="#" xid="a1" __cid="cQRRNvy" class="cQRRNvy"> 
+                              <img class="media-object cQRRNvy" src="$model/UI2/wdPro/common/img/head1.png" alt="" xid="image2" style="width:45px;height:45px;" __cid="cQRRNvy"/>
+                            </a> 
+                          </div>  
+                          <div class="media-body cQRRNvy" xid="mediaBody1" __cid="cQRRNvy"> 
+                            <h4 class="media-heading cQRRNvy" xid="h41" __cid="cQRRNvy"> 
+                              <span xid="span1" style="color:#585958;" bind-text="val(&quot;staff_name&quot;)" __cid="cQRRNvy" class="cQRRNvy">张三</span>  
+                              <span xid="span2" bind-text="val(&quot;phone&quot;)" style="color:#585958;font-size:12px" __cid="cQRRNvy" class="cQRRNvy"/> 
+                            </h4>  
+                            <h5 xid="h51" style="color:#585958;" bind-text=" val(&quot;client&quot;)" __cid="cQRRNvy" class="cQRRNvy">苏宁电器商城</h5>
+                          </div>  
+                          <div class="media-right cQRRNvy" xid="mediaRight2" __cid="cQRRNvy"> 
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQRRNvy" xid="button1" style="color:#585958;;margin-top:5px;" bind-text=" val(&quot;day&quot;)+&quot;天后生日&quot;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;button&quot;}" __cid="cQRRNvy"> 
+                              <i xid="i1" __cid="cQRRNvy" class="cQRRNvy"/>  
+                              <span xid="span3" __cid="cQRRNvy" class="cQRRNvy"/>
+                            </a>
+                          </div>
+                        </div> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up cQRRNvy" xid="div33" __cid="cQRRNvy"> 
+              <span class="x-pull-up-label cQRRNvy" xid="span27" __cid="cQRRNvy">加载更多...</span>
+            </div> 
+          </div>
+        </div>  
+        <style __cid="cQRRNvy" class="cQRRNvy">.x-panel.pcyeu6Jr-iosstatusbar &gt;.x-panel-top {height: 300px;}.x-panel.pcyeu6Jr-iosstatusbar &gt;.x-panel-content { top: 300px;bottom: nullpx;}.x-panel.pcyeu6Jr-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcyeu6Jr-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcyeu6Jr-iosstatusbar &gt;.x-panel-top {height: 320px;}.iosstatusbar .x-panel.pcyeu6Jr-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcyeu6Jr-iosstatusbar &gt;.x-panel-content { top: 320px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcyeu6Jr-iosstatusbar &gt;.x-panel-top {height: 300px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcyeu6Jr-iosstatusbar &gt;.x-panel-content {top: 300px;}</style>
+      </div>
+    </div>
+  </div>
+</div>

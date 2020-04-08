@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cayQR3i" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cayQR3i" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.btn-color.cayQR3i{background-color: rgb(255, 255, 255); color: rgb(64, 116, 34)} .btn-group.cayQR3i .btn.active.cayQR3i{background-color: rgb(64, 116, 34); color: rgb(255, 255, 255)} .btn-radius.cayQR3i{border-radius: 5px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cayQR3i" class="cayQR3i"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcBNjQJz-iosstatusbar cayQR3i" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cayQR3i"> 
+    <div class="x-panel-top cayQR3i" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cayQR3i"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cayQR3i" xid="titleBar2" style="background-color:#272F2C;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cayQR3i"> 
+        <div class="x-titlebar-left cayQR3i" xid="left2" __cid="cayQR3i"/>  
+        <div class="x-titlebar-title cayQR3i" xid="title2" __cid="cayQR3i">选择部门</div>  
+        <div class="x-titlebar-right  cayQR3i" xid="right2" __cid="cayQR3i">
+          <div class="empty cayQR3i" __cid="cayQR3i"/>
+        </div>
+      </div> 
+    </div>  
+    <div class="x-panel-content cayQR3i" xid="content4" style="background-color:#EEEEEE;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cayQR3i"> 
+      <div xid="div16" class="list-group-item cayQR3i" style="padding:3px 3px 3px 3px;" bind-click="div16Click" __cid="cayQR3i"> 
+        <div class="media cayQR3i" xid="media4" __cid="cayQR3i"> 
+          <div class="media-body cayQR3i" xid="mediaBody4" __cid="cayQR3i"> 
+            <h4 class="media-heading cayQR3i" xid="h44" style="text-align:center;" __cid="cayQR3i"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cayQR3i" xid="button20" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-beer&quot;,&quot;label&quot;:&quot;全部&quot;}" __cid="cayQR3i"> 
+                <i xid="i21" class="icon-beer cayQR3i" style="color:#63C8E7;font-size:18px;" __cid="cayQR3i"/>  
+                <span xid="span30" style="color:#191919;font-size:16px;" __cid="cayQR3i" class="cayQR3i">全部</span>
+              </a> 
+            </h4> 
+          </div>  
+          <div class="media-right cayQR3i" xid="mediaRight4" __cid="cayQR3i"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cayQR3i" xid="button19" style="color:#191919" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-arrowrightl&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cayQR3i"> 
+              <i xid="i20" class="dataControl dataControl-arrowrightl cayQR3i" __cid="cayQR3i"/>  
+              <span xid="span31" __cid="cayQR3i" class="cayQR3i"/>
+            </a> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div1" class="list-group-item cayQR3i" style="padding:3px 3px 3px 3px;" bind-click="div16Click" __cid="cayQR3i"> 
+        <div class="media cayQR3i" xid="media1" __cid="cayQR3i"> 
+          <div class="media-body cayQR3i" xid="mediaBody1" __cid="cayQR3i"> 
+            <h4 class="media-heading cayQR3i" xid="h41" style="text-align:center;" __cid="cayQR3i"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cayQR3i" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-beer&quot;,&quot;label&quot;:&quot;厨房&quot;}" __cid="cayQR3i"> 
+                <i xid="i2" class="icon-beer cayQR3i" style="color:#63C8E7;font-size:18px;" __cid="cayQR3i"/>  
+                <span xid="span1" style="color:#191919;font-size:16px;" __cid="cayQR3i" class="cayQR3i">厨房</span>
+              </a> 
+            </h4> 
+          </div>  
+          <div class="media-right cayQR3i" xid="mediaRight1" __cid="cayQR3i"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cayQR3i" xid="button2" style="color:#191919" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-arrowrightl&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cayQR3i"> 
+              <i xid="i1" class="dataControl dataControl-arrowrightl cayQR3i" __cid="cayQR3i"/>  
+              <span xid="span2" __cid="cayQR3i" class="cayQR3i"/>
+            </a> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div2" class="list-group-item cayQR3i" style="padding:3px 3px 3px 3px;" bind-click="div16Click" __cid="cayQR3i"> 
+        <div class="media cayQR3i" xid="media2" __cid="cayQR3i"> 
+          <div class="media-body cayQR3i" xid="mediaBody2" __cid="cayQR3i"> 
+            <h4 class="media-heading cayQR3i" xid="h42" style="text-align:center;" __cid="cayQR3i"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cayQR3i" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-beer&quot;,&quot;label&quot;:&quot;前厅&quot;}" __cid="cayQR3i"> 
+                <i xid="i4" class="icon-beer cayQR3i" style="color:#63C8E7;font-size:18px;" __cid="cayQR3i"/>  
+                <span xid="span4" style="color:#191919;font-size:16px;" __cid="cayQR3i" class="cayQR3i">前厅</span>
+              </a> 
+            </h4> 
+          </div>  
+          <div class="media-right cayQR3i" xid="mediaRight2" __cid="cayQR3i"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cayQR3i" xid="button3" style="color:#191919" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-arrowrightl&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cayQR3i"> 
+              <i xid="i3" class="dataControl dataControl-arrowrightl cayQR3i" __cid="cayQR3i"/>  
+              <span xid="span3" __cid="cayQR3i" class="cayQR3i"/>
+            </a> 
+          </div> 
+        </div> 
+      </div>
+    </div>  
+    <style __cid="cayQR3i" class="cayQR3i">.x-panel.pcBNjQJz-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcBNjQJz-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcBNjQJz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcBNjQJz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBNjQJz-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcBNjQJz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBNjQJz-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBNjQJz-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBNjQJz-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

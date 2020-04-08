@@ -1,0 +1,6 @@
+.btn-group .btn.active {
+	color: #4B76AE;;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	border-bottom-color: #4B76AE;
+}

@@ -1,0 +1,710 @@
+<!DOCTYPE HTML>
+<html style="width:100%;height:100%" class="no-js">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+        <script src="../../../v_e7e114bd0f454a0d9a9408ef2808ff65l_zh_CNs_d_m/system/lib/base/modernizr-2.8.3.min.js"></script>
+		<script id="__varReplace">
+    	
+    	    	window.__justep = window.__justep || {};
+				window.__justep.isDebug = true;
+				window.__justep.__packageMode = "1";
+				window.__justep.__isPackage = false;;
+				window.__justep.url = location.href;
+				window.__justep.versionInfo = {};
+		 
+    	</script>
+        <script id="__updateVersion">
+        
+				(function(url, mode){
+					if (("@"+"mode@") === mode) mode = "3";
+					if (("@"+"versionUrl@") === url) url = "system/service/common/app.j";
+					if ((mode!=="1" && (mode!="2") && (mode!="3"))) return;
+					var async = (mode=="1");
+					var x5Version = "noApp";
+					var x5AppAgents = /x5app\/([0-9.]*)/.exec(navigator.userAgent);
+					if(x5AppAgents && x5AppAgents.length > 1){
+					   	x5Version = x5AppAgents[1] || "";
+					} 
+					function createXhr(){
+						try {	
+							return new XMLHttpRequest();
+						}catch (tryMS) {	
+							var version = ["MSXML2.XMLHttp.6.0",
+							               "MSXML2.XMLHttp.3.0",
+							               "MSXML2.XMLHttp",
+							               "Miscrosoft.XMLHTTP"];
+							for(var i = 0; i < version.length; i++){
+								try{
+							    	return new ActiveXObject(version[i]);
+								}catch(e){}
+							}
+						}
+						throw new Error("您的系统或浏览器不支持XHR对象！");
+					}
+					
+					function createGuid(){	
+						var guid = '';	
+						for (var i = 1; i <= 32; i++){		
+							var n = Math.floor(Math.random()*16.0).toString(16);		
+							guid += n;		
+							if((i==8)||(i==12)||(i==16)||(i==20))			
+								guid += '-';	
+						}	
+						return guid;
+					}
+					
+					function parseUrl(href){
+						href = href.split("#")[0];
+						var items = href.split("?");
+						href = items[0];
+						var query = items[1] || "";
+						items = href.split("/");
+						var baseItems = [];
+						var pathItems = [];
+						var isPath = false;
+						for (var i=0; i<items.length; i++){
+							if (mode == "3"){
+								if (items[i] && (items[i].indexOf("v_") === 0) 
+										&& (items[i].indexOf("l_") !== -1)
+										&& (items[i].indexOf("s_") !== -1)
+										&& (items[i].indexOf("d_") !== -1)
+										|| (items[i]=="v_")){
+									isPath = true;
+									continue;
+								}
+							}else{
+								if (items[i] && (items[i].indexOf("v-")===0) && (items[i].charAt(items[i].length-1)=="-") ){
+									isPath = true;
+									continue;
+								}
+							}
+							if (isPath){
+								pathItems.push(items[i]);
+							}else{
+								baseItems.push(items[i]);	
+							}
+							
+						}
+						var base = baseItems.join("/");
+						if (base.charAt(base.length-1)!=="/") base += "/";
+						
+						var path = pathItems.join("/");
+						if (path.charAt(0) !== "/") path = "/" + path;
+						return [base, path, query];
+					}
+					
+					
+					var items = parseUrl(window.location.href);
+					var base = items[0];
+					var path = items[1];
+					var query = items[2];
+					var xhr = createXhr();
+					url += ((url.indexOf("?")!=-1) ? "&" : "?") +"_=" + createGuid();
+					if (mode === "3"){
+						url += "&url=" + path;
+						if (query)
+							url += "&" + query;
+					}
+					xhr.open('GET', base + url, async);
+					
+					if (async){
+						xhr.onreadystatechange=function(){
+							if((xhr.readyState == 4) && (xhr.status == 200) && xhr.responseText){
+								var versionInfo = JSON.parse(xhr.responseText);
+								window.__justep.versionInfo = versionInfo;
+								window.__justep.versionInfo.baseUrl = base;
+								if (query){
+									path = path + "?" + query;
+								}
+								path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+								var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+								versionInfo.resourceInfo.indexPageURL = indexUrl;
+								if(versionInfo.resourceInfo.resourceUpdateMode != "md5"){
+									if (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1){
+										versionInfo.resourceInfo.isNewVersion = true;
+									};
+								}
+							}
+						}
+					}
+					
+					try{
+						xhr.send(null);
+						if (!async && (xhr.status == 200) && xhr.responseText){
+							var versionInfo = JSON.parse(xhr.responseText);
+							window.__justep.versionInfo = versionInfo;
+							window.__justep.versionInfo.baseUrl = base;
+							if ((mode==="3") && window.__justep.isDebug){
+								/* 模式3且是调试模式不重定向 */
+							}else{
+								if (query){
+									path = path + "?" + query;
+								}
+								if(versionInfo.resourceInfo.resourceUpdateMode == "md5"){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									versionInfo.resourceInfo.indexPageURL = indexUrl; 
+								}else if (versionInfo.resourceInfo && versionInfo.resourceInfo.version && (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1)){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									window.location.href = indexUrl;
+								}
+							}
+						}
+					}catch(e2){}
+				}("@versionUrl@", "@mode@"));
+                 
+        </script>
+    <link rel="stylesheet" href="../../../v_8b97afe70de74233ab8ce4817bc3632el_zh_CNs_d_m/system/components/bootstrap.min.css" include="$model/UI2/system/components/bootstrap/lib/css/bootstrap,$model/UI2/system/components/bootstrap/lib/css/bootstrap-theme"><link rel="stylesheet" href="../../../v_fb7d033f7f9f4a05a9d4a6f286c1662al_zh_CNs_d_m/system/components/comp.min.css" include="$model/UI2/system/components/justep/lib/css2/dataControl,$model/UI2/system/components/justep/input/css/datePickerPC,$model/UI2/system/components/justep/messageDialog/css/messageDialog,$model/UI2/system/components/justep/lib/css3/round,$model/UI2/system/components/justep/input/css/datePicker,$model/UI2/system/components/justep/row/css/row,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/attachment/css/attachment,$model/UI2/system/components/justep/barcode/css/barcodeImage,$model/UI2/system/components/bootstrap/dropdown/css/dropdown,$model/UI2/system/components/justep/contents/css/contents,$model/UI2/system/components/justep/common/css/forms,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/locker/css/locker,$model/UI2/system/components/justep/menu/css/menu,$model/UI2/system/components/justep/scrollView/css/scrollView,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/dialog/css/dialog,$model/UI2/system/components/justep/bar/css/bar,$model/UI2/system/components/justep/popMenu/css/popMenu,$model/UI2/system/components/justep/lib/css/icons,$model/UI2/system/components/justep/lib/css4/e-commerce,$model/UI2/system/components/justep/toolBar/css/toolBar,$model/UI2/system/components/justep/popOver/css/popOver,$model/UI2/system/components/justep/panel/css/panel,$model/UI2/system/components/bootstrap/carousel/css/carousel,$model/UI2/system/components/justep/wing/css/wing,$model/UI2/system/components/bootstrap/scrollSpy/css/scrollSpy,$model/UI2/system/components/justep/titleBar/css/titleBar,$model/UI2/system/components/justep/lib/css1/linear,$model/UI2/system/components/justep/numberSelect/css/numberList,$model/UI2/system/components/justep/list/css/list,$model/UI2/system/components/justep/dataTables/css/dataTables"></head>
+	
+    <body style="width:100%;height:100%;margin: 0;">
+        <script intro="none"></script>
+    	<div id="applicationHost" class="applicationHost" style="width:100%;height:100%;" __component-context__="block"><div xid="window" class="window cuEFjuq" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cuEFjuq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <style>.tb-box.cuEFjuq, .tb-box.cuEFjuq > .col.cuEFjuq{height: 100%; margin: 0; padding: 0} .tb-box.cuEFjuq > .col.cuEFjuq{overflow: auto} span.cuEFjuq{display:  -webkit-box; overflow:  hidden; white-space:  normal  !important; text-overflow:  ellipsis; word-wrap:  break-word; -webkit-line-clamp:  auto; -webkit-box-orient:  vertical; word-break: break-all; white-space: normal !important} .tb-box.cuEFjuq > .col.cuEFjuq:first-child{padding-right: 10px} .cart.cuEFjuq{border-radius: 30px} .goods-img.cuEFjuq{border-radius: 5px} .list-group.cuEFjuq{box-shadow: none} .list-group-item.cuEFjuq{background-color: rgb(245, 245, 245); border-radius: 0; border-color: rgb(225, 225, 225)} .list-group-item.current.cuEFjuq{background-color: rgb(255, 255, 255); border-right: 0; color: rgb(207, 2, 2)} .list-group-item.current.cuEFjuq h5.cuEFjuq{color: rgb(207, 2, 2)} .x-card.btn-group.cuEFjuq .btn.active.cuEFjuq{color: rgb(207, 2, 2)} .tb-listBox.cuEFjuq{padding-left: 0px; padding-right: 10px; margin-bottom: 10px} .tb-listBox.cuEFjuq div.cuEFjuq{background-color: rgb(255, 255, 255)} .tb-listBox.cuEFjuq p.cuEFjuq{font-size: 13px; margin-top: 5px} .x-popOver-content.ddd.cuEFjuq{bottom: 0.6px !important} .x-panel-bottom.cuEFjuq{border-top: 1px solid rgb(220, 220, 220); border-bottom: 1px solid rgb(220, 220, 220)} .x-panel-bottom.cuEFjuq .h4.cuEFjuq{margin: 5px 0} .tb-settlement.cuEFjuq{line-height: 40px; background-color: rgb(253, 80, 1); color: rgb(255, 255, 255); font-size: 16px} .li_class.cuEFjuq{border-left: 3px solid rgb(139, 165, 172); position: relative; padding-left: 20px; padding-bottom: 5px; display: list-item; text-align: -webkit-match-parent} .li_class.cuEFjuq:BEFORE{border: 2px solid rgb(139, 165, 172); border-radius: 8px; content: " "; width: 15px; height: 15px; display: block; position: absolute; left: -8.5px; top: 0px; background-color: rgb(139, 165, 172)} .li_class.cuEFjuq:BEFORE{border-color: rgb(139, 165, 172)} .li_class.cuEFjuq:last-of-type{border-left: 0} .li_class:last-of-type.cuEFjuq:BEFORE{left: -5px} .span-index.cuEFjuq{position: absolute; left: -70px; top: 0px} .tagtree.cuEFjuq > ul.cuEFjuq > li.cuEFjuq ul.cuEFjuq > li.cuEFjuq{position: relative; margin-left: 3px; padding-left: 3px; display: list-item; text-align: -webkit-match-parent} .tagtree.cuEFjuq > ul.cuEFjuq > li.cuEFjuq ul.cuEFjuq > li.cuEFjuq:BEFORE{border-radius: 8px; content: " "; width: 3px; height: 3px; display: block; position: absolute; top: 20px; background-color: rgb(207, 2, 2)} .tagtree.cuEFjuq > ul.cuEFjuq > li.cuEFjuq ul.cuEFjuq > li.cuEFjuq:BEFORE{border-color: rgb(64, 116, 34)} .tagtree.cuEFjuq > ul.cuEFjuq > li.cuEFjuq ul.cuEFjuq > li.cuEFjuq:last-of-type{border-left: 0} .tagtree.cuEFjuq > ul.cuEFjuq > li.cuEFjuq ul.cuEFjuq > li:last-of-type.cuEFjuq:BEFORE{} .tagtree.cuEFjuq > ul.cuEFjuq > li.cuEFjuq ul.cuEFjuq > li.cuEFjuq:last-of-type .span-index.cuEFjuq{left: -67px} html.cuEFjuq{font-size: 62.5% !important} body.cuEFjuq{font-size: 1.6rem "Microsoft YaHei", arial, tahoma, 宋体, sans-serif !important} .btn-group.cuEFjuq{height: 40px; border-top: 1px solid rgb(231, 231, 231); border-bottom: 1px solid rgb(231, 231, 231)} .btn-group.cuEFjuq .btn.cuEFjuq{border-left: 1px solid rgb(231, 231, 231); color: rgb(102, 102, 102)} .text-white.cuEFjuq{color: rgb(255, 255, 255)} .text-black.cuEFjuq{color: rgb(33, 33, 33)} .te.cuEFjuq{background-color: rgb(238, 238, 238); border-radius: 15px} .listxz.cuEFjuq{background-color: rgb(113, 205, 208)} .text-danger.cuEFjuq{color: rgb(255, 68, 0)} .x-titlebar.cuEFjuq{background-color: rgb(255, 68, 0)} .tb-index.x-titlebar.cuEFjuq .x-titlebar-title.cuEFjuq{padding: 10px 0} .tb-index.x-titlebar.cuEFjuq .form-group.cuEFjuq input.cuEFjuq{font-size: 16px; background-color: rgb(255, 68, 0); border-top: 0; border-left: 0; border-right: 0} .tb-index.x-titlebar.cuEFjuq .form-group.cuEFjuq input.cuEFjuq:focus{box-shadow: none} .tb-nopadding.cuEFjuq{padding: 0} 弹出菜单.cuEFjuq .x-popOver-overlay.cuEFjuq{top: 88px; background-color: rgb(0, 0, 0)} .tb-sorting.cuEFjuq{width: 100%; background-color: rgb(255, 255, 255); border-top: 1px solid rgb(225, 225, 225)} .tb-sorting.cuEFjuq .list-group-item.cuEFjuq{margin: 0 10px; padding-left: 0; padding-right: 0; border-radius: 0; border-left: 0; border-right: 0; border-top: 0} .tb-sorting.cuEFjuq .list-group-item.cuEFjuq .tb-liBtn.cuEFjuq{display: none} .tb-sorting.cuEFjuq .list-group-item.current.cuEFjuq .tb-liBtn.cuEFjuq{display: block} .tb-sorting.cuEFjuq .list-group-item.current.cuEFjuq{color: rgb(255, 68, 0)} .list-group-item.cuEFjuq span.cuEFjuq{padding-top: 5px} .tshowName.cuEFjuq{border-radius: 3px} .list-group-item.cuEFjuq input.cuEFjuq{background-color: rgb(238, 238, 238)} .list-group-item.cuEFjuq input.cuEFjuq:focus{background-color: rgb(255, 255, 255)} .tb-typelist.cuEFjuq .col.cuEFjuq{padding-left: 0; padding-right: 5px} .tb-typelist.cuEFjuq .col.cuEFjuq h5.cuEFjuq{line-height: 30px; border-radius: 5px; background-color: rgb(238, 238, 238); font-size: 12px} .tb-typelist.cuEFjuq .col.cuEFjuq h5.current.cuEFjuq{background-color: rgb(255, 68, 0); color: rgb(255, 255, 255)} .tb-resetBtn.btn-default.cuEFjuq{border-color: rgb(255, 68, 0); background-color: rgb(255, 255, 255); color: rgb(255, 68, 0); padding: 4px 20px} .tb-okBtn.btn.cuEFjuq{margin-top: 20px; background-color: rgb(255, 68, 0); border-radius: 0; border: 0} .media.cuEFjuq{margin-top: 0; padding: 10px; border-bottom: 1px solid rgb(231, 231, 231); background-color: rgb(255, 255, 255)} .tb-twoColList.cuEFjuq{padding: 5px} .tb-numberOperation.cuEFjuq{width: 100%; height: 30px} .tb-numberOperation.cuEFjuq span.cuEFjuq{padding: 4px 15px; border-top: 1px solid rgb(225, 225, 225); border-bottom: 1px solid rgb(225, 225, 225)} .tb-twoColList.cuEFjuq ul.cuEFjuq li.cuEFjuq{margin-bottom: 15px; padding: 5px; background-color: rgb(255, 255, 255)} .x-popOver-content.ddd.cuEFjuq{bottom: 0.6px !important} input.cuEFjuq:-webkit-input-placeholder{color: rgb(170, 178, 189); font-size: 12px; text-align: right} .x-panel-bottom.cuEFjuq{border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211)} .x-panel-bottom.cuEFjuq .btn.cuEFjuq{color: rgb(102, 102, 102); padding: 3px 0 0 0} .x-panel-bottom.cuEFjuq .btn.cuEFjuq:nth-child(2){border-left: 1px solid rgb(220, 220, 220); border-right: 1px solid rgb(220, 220, 220)} .tb-shopping.cuEFjuq .btn.cuEFjuq{height: 48px; font-size: 14px; margin: 0; padding: 0; border-radius: 0; box-shadow: none; border: none; box-sizing: none; background: none; color: rgb(255, 255, 255)} .tb-shopping.cuEFjuq .btn.cuEFjuq:first-child{background-color: rgb(254, 145, 0)} .tb-shopping.cuEFjuq .btn.cuEFjuq:last-child{background-color: rgb(253, 80, 1)} .tb-colorList.cuEFjuq .col.cuEFjuq div.current.cuEFjuq{background-color: rgb(255, 68, 0); color: rgb(255, 255, 255) !important} .tb-colorList.cuEFjuq .col.cuEFjuq div.current2.cuEFjuq{background-color: rgb(239, 239, 239); color: rgb(142, 142, 142) !important} .x-popOver.cuEFjuq .x-popOver-overlay.cuEFjuq{background-color: rgb(0, 0, 0)} .x-popOver.cuEFjuq .x-popOver-content.cuEFjuq{width: 100%; background-color: rgb(255, 255, 255); bottom: 0 !important} .tb-colorImg.cuEFjuq{position: absolute; top: -20px; left: 10px; width: 110px; height: 120px} .tb-title.cuEFjuq{padding: 20px 0 0 130px} .tb-close.cuEFjuq{font-size: 30px} .tb-colorList.cuEFjuq .col.cuEFjuq{padding-left: 0; padding-right: 10px; margin-bottom: 10px} .tb-colorList.cuEFjuq .col.cuEFjuq div.cuEFjuq{line-height: 30px; background-color: rgb(239, 239, 239); border-radius: 5px}</style>  
+  <title __cid="cuEFjuq" class="cuEFjuq">商品分类</title>  
+  <link rel="stylesheet" type="text/css" href="https://www.jq22.com/jquery/font-awesome.4.6.0.css" __cid="cuEFjuq" class="cuEFjuq">  
+  <script src="https://www.jq22.com/jquery/jquery-1.10.2.js" __cid="cuEFjuq" class="cuEFjuq"></script>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cuEFjuq" class="cuEFjuq"></div>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cuEFjuq" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;active&#34;:0}" __cid="cuEFjuq"> 
+    <div class="x-contents-content active cuEFjuq" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cuEFjuq"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcnQfaUv-iosstatusbar cuEFjuq" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cuEFjuq"> 
+        <div class="x-panel-top cuEFjuq" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuEFjuq">
+          <div xid="div3" __cid="cuEFjuq" class="cuEFjuq"> 
+            <div class="col-xs-10 pull-left tb-nopadding cuEFjuq" xid="div4" __cid="cuEFjuq"> 
+              <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cuEFjuq" xid="buttonGroup1" style="height:40px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cuEFjuq"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link  cuEFjuq" xid="sortingBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sortingBtnClick" data-config="{&#34;icon&#34;:&#34;icon-arrow-down-b&#34;,&#34;label&#34;:&#34;综合排序&#34;}" __cid="cuEFjuq"> 
+                  <span class="text-danger cuEFjuq" xid="span3" __cid="cuEFjuq">综合排序</span>  
+                  <i xid="i13" class="icon-arrow-down-b text-danger cuEFjuq" __cid="cuEFjuq"></i>
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cuEFjuq" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;商品标签&#34;}" __cid="cuEFjuq"> 
+                  <i xid="i1" __cid="cuEFjuq" class="cuEFjuq"></i>  
+                  <span xid="span2" __cid="cuEFjuq" class="cuEFjuq">商品标签</span>
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cuEFjuq" xid="screeningBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:screeningBtnClick" data-config="{&#34;icon&#34;:&#34;icon-arrow-down-b&#34;,&#34;label&#34;:&#34;促销状态&#34;}" __cid="cuEFjuq"> 
+                  <span xid="span7" __cid="cuEFjuq" class="cuEFjuq">促销状态</span>  
+                  <i xid="i8" class="icon-arrow-down-b cuEFjuq" __cid="cuEFjuq"></i>
+                </a> 
+              </div> 
+            </div>  
+            <div class="col-xs-2 pull-left text-center tb-nopadding cuEFjuq" xid="div5" __cid="cuEFjuq"> 
+              <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cuEFjuq" xid="buttonGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cuEFjuq"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cuEFjuq" xid="listStyleBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;glyphicon glyphicon-th-list&#34;}" __cid="cuEFjuq"> 
+                  <i xid="i2" class="glyphicon glyphicon-th-list cuEFjuq" __cid="cuEFjuq"></i>  
+                  <span xid="span2" __cid="cuEFjuq" class="cuEFjuq"></span>
+                </a> 
+              </div> 
+            </div> 
+          </div>
+        </div>  
+        <div class="x-panel-content cuEFjuq" xid="content3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuEFjuq">
+          <div xid="div2" style="height:100%;width:100%;padding:3px 3px 3px 3px;" __cid="cuEFjuq" class="cuEFjuq">
+            <div component="$model/UI2/system/components/bootstrap/row/row" class="row cuEFjuq" xid="row1" style="height:100%;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cuEFjuq"> 
+              <div class="col col-xs-4 cuEFjuq" xid="col1" style="height:100%;padding-right: 5px;padding-left: 3px;" __cid="cuEFjuq">
+                <div xid="div1" id="test" style="background-color:#F4F3F4;height:auto;" __cid="cuEFjuq" class="cuEFjuq"></div> 
+              </div>  
+              <div class="col col-xs-8  x-scroll-view cuEFjuq" xid="col3" style="height:100%;padding-left: 3px;" __cid="cuEFjuq"> 
+                <div class="x-scroll cuEFjuq" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-events="onPullUp:scrollView1PullUp" __cid="cuEFjuq"> 
+                  <div class="x-scroll-content cuEFjuq" xid="div6" __cid="cuEFjuq"> 
+                    <div component="$model/UI2/system/components/justep/list/list" class="x-list cuEFjuq" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;goodsDataM&#34;,&#34;limit&#34;:10}" __cid="cuEFjuq"> 
+                      <ul class="x-list-template hide cuEFjuq" xid="listTemplateUl1" __cid="cuEFjuq" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+                        <li xid="li1" class="media cuEFjuq" __cid="cuEFjuq" data-bind="event:{click:$model._callModelFn.bind($model, 'li1Click')}"> 
+                          <div xid="div10" class="media-left cuEFjuq" __cid="cuEFjuq"> 
+                            <img alt="" xid="image1" class="img-rounded media-object cuEFjuq" style="width:75px;" height="80px" __cid="cuEFjuq" data-bind="attr:{src:val(&#34;goods_img&#34;)}">
+                          </div>  
+                          <div class="media-body cuEFjuq" xid="div14" __cid="cuEFjuq"> 
+                            <h5 class="media-heading lead text-black cuEFjuq" xid="h51" style="color:black;font-size:16px;" __cid="cuEFjuq" data-bind="text:val(&#34;goods_name&#34;)"></h5>  
+                            <div component="$model/UI2/system/components/justep/row/row" class="x-row cuEFjuq" xid="row4" style="height:2px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cuEFjuq"> 
+                              <div class="x-col cuEFjuq" xid="col9" __cid="cuEFjuq"></div>
+                            </div>  
+                            <div class="text-muted cuEFjuq" xid="div21" __cid="cuEFjuq"> 
+                              <a component="$model/UI2/system/components/justep/button/button" class="btn x-orange btn-xs  cuEFjuq" xid="button14" style="background-color:white;border-style:none none none none;border-width:thin thin thin thin;border-color:#C0C0C0 #C0C0C0 #C0C0C0 #C0C0C0;color:#9F9F9F;font-size:14px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:val(&#34;unit&#34;).length&gt;1?val(&#34;unit&#34;).length+&#34;种规格选择&#34;:&#34;&#34;,visible:val(&#34;unit&#34;).length&gt;1" data-config="{&#34;label&#34;:&#34;button&#34;}" __cid="cuEFjuq"> 
+                                <i xid="i23" __cid="cuEFjuq" class="cuEFjuq"></i>  
+                                <span xid="span43" __cid="cuEFjuq" class="cuEFjuq"></span>
+                              </a> 
+                            </div>  
+                            <div class="text-muted cuEFjuq" xid="div15" __cid="cuEFjuq"> 
+                              <span xid="span11" class="text-danger cuEFjuq" style="font-size:12px;" __cid="cuEFjuq">￥</span>  
+                              <span xid="span9" class="text-danger cuEFjuq" style="font-size:16px;" __cid="cuEFjuq" data-bind="text:val(&#34;price&#34;)"></span>  
+                              <a component="$model/UI2/system/components/justep/button/button" class="btn x-orange btn-xs pull-right cuEFjuq" xid="addCart" style="border-color:#00BFFF #00BFFF #00BFFF #00BFFF;background-color:white;border-style:solid solid solid solid;border-width:thin thin thin thin;color:#00BFFF" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:val(&#34;set_specs&#34;)==1,event:{click:$model._callModelFn.bind($model, 'addCartClick')}" data-config="{&#34;label&#34;:&#34;选择格&#34;}" __cid="cuEFjuq"> 
+                                <i xid="i14" __cid="cuEFjuq" class="cuEFjuq"></i>  
+                                <span xid="span36" __cid="cuEFjuq" class="cuEFjuq">选择格</span>
+                              </a>  
+                              <div class="tb-numberOperation cuEFjuq" xid="div26" style="text-align:right;" __cid="cuEFjuq" data-bind="visible:val(&#34;set_specs&#34;)==0"> 
+                                <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-xs btn-only-icon pull-right cuEFjuq" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{click:$model._callModelFn.bind($model, 'addZBtnClick')}" data-config="{&#34;icon&#34;:&#34;icon-android-add&#34;,&#34;label&#34;:&#34;button&#34;,&#34;target&#34;:&#34;oneColList&#34;}" __cid="cuEFjuq"> 
+                                  <i xid="i22" class="icon-android-add cuEFjuq" __cid="cuEFjuq"></i>  
+                                  <span xid="span41" __cid="cuEFjuq" class="cuEFjuq"></span>
+                                </a>  
+                                <span xid="span22" class="pull-right cuEFjuq" style="line-height:0.8;height:22px;" __cid="cuEFjuq" data-bind="text:val(&#34;goods_num&#34;)==null?&#34;0&#34;:val(&#34;goods_num&#34;)"></span>  
+                                <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-xs btn-only-icon pull-right cuEFjuq" xid="button9" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{click:$model._callModelFn.bind($model, 'reductionZBtnClick')}" data-config="{&#34;icon&#34;:&#34;icon-android-remove&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cuEFjuq"> 
+                                  <i xid="i22" class="icon-android-remove cuEFjuq" __cid="cuEFjuq"></i>  
+                                  <span xid="span42" __cid="cuEFjuq" class="cuEFjuq"></span>
+                                </a> 
+                              </div> 
+                            </div> 
+                          </div> 
+                        </li> 
+                      </ul> 
+                    </div> 
+                  </div>  
+                  <div class="x-content-center x-pull-up cuEFjuq" xid="div7" __cid="cuEFjuq"> 
+                    <span class="x-pull-up-label cuEFjuq" xid="span16" __cid="cuEFjuq">加载更多...</span>
+                  </div> 
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>  
+        <style __cid="cuEFjuq" class="cuEFjuq">.x-panel.pcnQfaUv-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcnQfaUv-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcnQfaUv-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcnQfaUv-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcnQfaUv-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcnQfaUv-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcnQfaUv-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcnQfaUv-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcnQfaUv-iosstatusbar >.x-panel-content {top: 48px;}</style>
+      </div>
+    </div>  
+    <div class="x-contents-content cuEFjuq" xid="content2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cuEFjuq">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cuEFjuq" xid="row2" style="height:60px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cuEFjuq"> 
+        <div class="x-col cuEFjuq" xid="col2" __cid="cuEFjuq"></div>  
+        <div class="x-col cuEFjuq" xid="col4" __cid="cuEFjuq"></div>  
+        <div class="x-col cuEFjuq" xid="col5" __cid="cuEFjuq"></div>
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cuEFjuq" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cuEFjuq"> 
+        <div class="x-col cuEFjuq" xid="col6" __cid="cuEFjuq"></div>  
+        <div class="x-col cuEFjuq" xid="col7" __cid="cuEFjuq">
+          <span xid="span1" __cid="cuEFjuq" class="cuEFjuq">无任何分类，请添加分类！</span>
+        </div>  
+        <div class="x-col cuEFjuq" xid="col8" __cid="cuEFjuq"></div>
+      </div>
+    </div>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cuEFjuq" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;position&#34;:&#34;bottom&#34;}" __cid="cuEFjuq"> 
+    <div class="x-popOver-overlay cuEFjuq" xid="div16" __cid="cuEFjuq"></div>  
+    <div class="x-popOver-content cuEFjuq" xid="div41" style="width:100%;height:70%;" __cid="cuEFjuq"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pci63Qja-iosstatusbar cuEFjuq" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cuEFjuq"> 
+        <div class="x-panel-content cuEFjuq" xid="content4" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuEFjuq"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right tb-close text-black cuEFjuq" xid="button15" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver1.hide'}" data-config="{&#34;icon&#34;:&#34;icon-ios7-close-outline&#34;}" __cid="cuEFjuq"> 
+            <i xid="i25" class="icon-ios7-close-outline cuEFjuq" __cid="cuEFjuq"></i>  
+            <span xid="span46" __cid="cuEFjuq" class="cuEFjuq"></span>
+          </a>  
+          <img alt="" class="img-thumbnail tb-colorImg cuEFjuq" xid="image4" __cid="cuEFjuq" data-bind="attr:{src:$model.goodsDataM.val(&#34;goods_img&#34;)}">  
+          <div class="tb-title cuEFjuq" xid="div37" __cid="cuEFjuq"> 
+            <span class="text-danger h4 cuEFjuq" xid="span21" __cid="cuEFjuq">￥</span>  
+            <span class="text-danger h4 cuEFjuq" xid="span48" __cid="cuEFjuq" data-bind="text:$model.goodsDataM.val(&#34;price&#34;)"></span>  
+            <div xid="div40" __cid="cuEFjuq" class="cuEFjuq"></div>  
+            <span xid="span50" __cid="cuEFjuq" class="cuEFjuq" data-bind="text:$model.goodsDataM.val(&#34;goods_name&#34;)"></span>  
+            <h5 xid="h56" class="text-black cuEFjuq" __cid="cuEFjuq">请选择规格</h5>
+          </div>  
+          <div xid="div27" style="height:30px;width:100%;" __cid="cuEFjuq" class="cuEFjuq"></div>  
+          <div class="panel-body cuEFjuq" xid="div36" style="padding-top: 3px" __cid="cuEFjuq"> 
+            <div xid="div42" __cid="cuEFjuq" class="cuEFjuq" data-bind="visible:$model.classNameData.getCount() !=0"> 
+              <h4 class="text-black cuEFjuq" xid="h43" __cid="cuEFjuq" data-bind="text:$model.classNameData.val(&#34;name&#34;) +&#34;分类&#34;"></h4>  
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list tb-colorList cuEFjuq" xid="list5" dataItemAlias="colorRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;classValueData&#34;}" __cid="cuEFjuq"> 
+                <ul class="x-list-template hide cuEFjuq" xid="listTemplateUl3" componentname="ul(html)" id="undefined_ul2" __cid="cuEFjuq" data-bind="foreach:{data:$model.foreach_list5($element),afterRender:$model.foreach_afterRender_list5.bind($model,$element),as:'colorRow'}"> 
+                  <li xid="li7" class="col col-xs-4 cuEFjuq" componentname="li(html)" id="undefined_li2" __cid="cuEFjuq" data-bind="event:{click:$model._callModelFn.bind($model, 'li7Click')}"> 
+                    <div class="text-center cuEFjuq" xid="div38" __cid="cuEFjuq" data-bind="css:val(&#34;flag&#34;)==0?{'current2':colorRow.val('id')==$model.classValueData.val('id')}:{'current':colorRow.val('id')==$model.classValueData.val('id')},disable:val(&#34;flag&#34;) !=1,enable:val(&#34;flag&#34;) ==1"> 
+                      <span xid="span52" __cid="cuEFjuq" class="cuEFjuq" data-bind="text:val(&#34;name&#34;)"></span>
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="clearfix cuEFjuq" xid="div44" __cid="cuEFjuq"></div>  
+            <div xid="div43" __cid="cuEFjuq" class="cuEFjuq" data-bind="visible:$model.className2Data.getCount() !=0"> 
+              <h4 class="text-black cuEFjuq" xid="h44" __cid="cuEFjuq" data-bind="text:$model.className2Data.val(&#34;name&#34;) +&#34;分类&#34;"></h4>  
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list tb-colorList cuEFjuq" xid="list7" dataItemAlias="color2Row" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;classValue2Data&#34;}" __cid="cuEFjuq"> 
+                <ul class="x-list-template hide cuEFjuq" xid="listTemplateUl3" componentname="ul(html)" id="undefined_ul2" __cid="cuEFjuq" data-bind="foreach:{data:$model.foreach_list7($element),afterRender:$model.foreach_afterRender_list7.bind($model,$element),as:'color2Row'}"> 
+                  <li xid="li6" class="col col-xs-4 cuEFjuq" componentname="li(html)" id="undefined_li2" __cid="cuEFjuq" data-bind="event:{click:$model._callModelFn.bind($model, 'li6Click')}"> 
+                    <div class="text-center  cuEFjuq" xid="div39" __cid="cuEFjuq" data-bind="css:val(&#34;flag&#34;)==0?{'current2':color2Row.val('id')==$model.classValue2Data.val('id')}:{'current':color2Row.val('id')==$model.classValue2Data.val('id')},style:{ &#34;color&#34;: val(&#34;flag&#34;)==0?'#8E8E8E':'#4D4D4D', }"> 
+                      <span xid="span44" __cid="cuEFjuq" class="cuEFjuq" data-bind="text:val(&#34;name&#34;)"></span>
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="clearfix cuEFjuq" xid="div28" __cid="cuEFjuq"></div>  
+            <div xid="div16" __cid="cuEFjuq" class="cuEFjuq" data-bind="visible:$model.className3Data.getCount() !=0"> 
+              <h4 class="text-black cuEFjuq" xid="h41" __cid="cuEFjuq" data-bind="text:$model.className3Data.val(&#34;name&#34;) +&#34;分类&#34;"></h4>  
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list tb-colorList cuEFjuq" xid="list6" dataItemAlias="color3Row" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;classValue3Data&#34;}" __cid="cuEFjuq"> 
+                <ul class="x-list-template hide cuEFjuq" xid="listTemplateUl4" componentname="ul(html)" id="undefined_ul2" __cid="cuEFjuq" data-bind="foreach:{data:$model.foreach_list6($element),afterRender:$model.foreach_afterRender_list6.bind($model,$element),as:'color3Row'}"> 
+                  <li xid="li8" class="col col-xs-4 cuEFjuq" componentname="li(html)" id="undefined_li2" __cid="cuEFjuq" data-bind="event:{click:$model._callModelFn.bind($model, 'li8Click')}"> 
+                    <div class="text-center cuEFjuq" xid="div29" __cid="cuEFjuq" data-bind="css:val(&#34;flag&#34;)==0?{'current2':color3Row.val('id')==$model.classValue3Data.val('id')}:{'current':color3Row.val('id')==$model.classValue3Data.val('id')},style:{ &#34;color&#34;: val(&#34;flag&#34;)==0?'#8E8E8E':'#4D4D4D', }"> 
+                      <span xid="span301" __cid="cuEFjuq" class="cuEFjuq" data-bind="text:val(&#34;name&#34;)"></span>
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="clearfix cuEFjuq" xid="div32" __cid="cuEFjuq"></div>  
+            <div xid="div30" __cid="cuEFjuq" class="cuEFjuq" data-bind="visible:$model.unitData.getCount()&gt;1"> 
+              <h4 class="text-black cuEFjuq" xid="h46" __cid="cuEFjuq">单位分类</h4>  
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list tb-colorList cuEFjuq" xid="list5" dataItemAlias="color4Row" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;unitData&#34;}" __cid="cuEFjuq"> 
+                <ul class="x-list-template hide cuEFjuq" xid="listTemplateUl5" componentname="ul(html)" id="undefined_ul2" __cid="cuEFjuq" data-bind="foreach:{data:$model.foreach_list5($element),afterRender:$model.foreach_afterRender_list5.bind($model,$element),as:'color4Row'}"> 
+                  <li xid="li9" class="col col-xs-4 cuEFjuq" componentname="li(html)" id="undefined_li2" __cid="cuEFjuq"> 
+                    <div class="text-center cuEFjuq" xid="div31" __cid="cuEFjuq" data-bind="css:{'current':color4Row.val('id')==$model.unitData.val('id')}"> 
+                      <span xid="span45" __cid="cuEFjuq" class="cuEFjuq" data-bind="text:val(&#34;name&#34;)"></span>
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="clearfix cuEFjuq" xid="div27" __cid="cuEFjuq"></div>  
+            <div xid="div28" __cid="cuEFjuq" class="cuEFjuq"> 
+              <h4 class="text-black cuEFjuq" xid="h47" __cid="cuEFjuq">购买数量</h4>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cuEFjuq" xid="row5" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cuEFjuq"> 
+                <div class="x-col x-col-33 cuEFjuq" xid="col18" __cid="cuEFjuq"></div>  
+                <div class="x-col cuEFjuq" xid="col19" __cid="cuEFjuq"> 
+                  <div class="tb-numberOperation cuEFjuq" xid="div30" style="text-align:right;" __cid="cuEFjuq"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-xs btn-only-icon pull-right cuEFjuq" xid="button19" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button19Click" data-config="{&#34;icon&#34;:&#34;icon-android-add&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cuEFjuq"> 
+                      <i xid="i24" class="icon-android-add cuEFjuq" __cid="cuEFjuq"></i>  
+                      <span xid="span21" __cid="cuEFjuq" class="cuEFjuq"></span>
+                    </a>  
+                    <span xid="span30" class="pull-right cuEFjuq" style="line-height:0.8;height:22px;" __cid="cuEFjuq">1</span>  
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-xs btn-only-icon pull-right cuEFjuq" xid="button17" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button17Click" data-config="{&#34;icon&#34;:&#34;icon-android-remove&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cuEFjuq"> 
+                      <i xid="i24" class="icon-android-remove cuEFjuq" __cid="cuEFjuq"></i>  
+                      <span xid="span49" __cid="cuEFjuq" class="cuEFjuq"></span>
+                    </a> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-panel-bottom cuEFjuq" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuEFjuq"> 
+          <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified tb-shopping cuEFjuq" xid="buttonGroup4" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cuEFjuq"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cuEFjuq" xid="button16" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&#34;label&#34;:&#34;确定&#34;}" __cid="cuEFjuq"> 
+              <i xid="i26" __cid="cuEFjuq" class="cuEFjuq"></i>  
+              <span xid="span47" __cid="cuEFjuq" class="cuEFjuq">确定</span>
+            </a> 
+          </div> 
+        </div>  
+        <style __cid="cuEFjuq" class="cuEFjuq">.x-panel.pci63Qja-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pci63Qja-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pci63Qja-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pci63Qja-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pci63Qja-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pci63Qja-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pci63Qja-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pci63Qja-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pci63Qja-iosstatusbar >.x-panel-content {top: 0px;}</style>
+      </div> 
+    </div> 
+  </div>
+</div></div>
+        
+        <div id="downloadGCF" style="display:none;padding:50px;">
+        	<span>您使用的浏览器需要下载插件才能使用, </span>
+        	<a id="downloadGCFLink" href="#">下载地址</a>
+        	<p>(安装后请重新打开浏览器)</p>
+        </div>
+    	<script>
+    	
+    	            //判断浏览器, 判断GCF
+    	 			var browser = {
+    			        isIe: function () {
+    			            return navigator.appVersion.indexOf("MSIE") != -1;
+    			        },
+    			        navigator: navigator.appVersion,
+    			        getVersion: function() {
+    			            var version = 999; // we assume a sane browser
+    			            if (navigator.appVersion.indexOf("MSIE") != -1)
+    			                // bah, IE again, lets downgrade version number
+    			                version = parseFloat(navigator.appVersion.split("MSIE")[1]);
+    			            return version;
+    			        }
+    			    };
+    				function isGCFInstalled(){
+    			      try{
+    			        var i = new ActiveXObject('ChromeTab.ChromeFrame');
+    			        if (i) {
+    			          return true;
+    			        }
+    			      }catch(e){}
+    			      return false;
+    				}
+    	            //判断浏览器, 判断GCF
+    	            var __continueRun = true;
+    				if (browser.isIe() && (browser.getVersion() < 10) && !isGCFInstalled()) {
+    					document.getElementById("applicationHost").style.display = 'none';
+    					document.getElementById("downloadGCF").style.display = 'block';
+    					var downloadLink = "/" + location.pathname.match(/[^\/]+/)[0] + "/v8.msi";
+    					document.getElementById("downloadGCFLink").href = downloadLink; 
+    					__continueRun = false;
+    	            }
+		 	
+    	</script>
+        <script id="_metaJS" src="../../../v_335acd6279a94711bbadb5af738f8860l_zh_CNs_d_m/system/config/meta.js"> </script>
+        <script id="_requireJS" src="../../../v_d5d69d99b89845ca91470ea5e1193331l_zh_CNs_d_m/system/lib/require/require.2.1.10.js"> </script>
+        <script src="../../../v_e3d85f4a239f483c8242e3a1ffcd418fl_zh_CNs_d_m/system/core.min.js"></script><script src="../../../v_9186e85597f943b481674076bc8d1309l_zh_CNs_d_m/system/common.min.js"></script><script src="../../../v_3ac8a843ec4844f3aa91f746915afe4fl_zh_CNs_d_m/system/components/comp.min.js"></script><script src="../../../v_6207e127835b4a6782b0180faca54307l_zh_CNs_d_m/system/components/comp2.min.js"></script><script id="_mainScript">
+        
+			if (__continueRun) {
+                window.__justep.cssReady = function(fn){
+                	var promises = [];
+                	for (var p in window.__justep.__ResourceEngine.__loadingCss){
+                		if(window.__justep.__ResourceEngine.__loadingCss.hasOwnProperty(p))
+                			promises.push(window.__justep.__ResourceEngine.__loadingCss[p].promise());
+                	}
+                	$.when.apply($, promises).done(fn);
+                };
+                
+            	window.__justep.__ResourceEngine = {
+            		readyRegExp : navigator.platform === 'PLAYSTATION 3' ? /^complete$/ : /^(complete|loaded)$/,
+            		url: window.location.href,	
+            		/*contextPath: 不包括语言 */
+            		contextPath: "",
+            		serverPath: "",
+            		__loadedJS: [],
+            		__loadingCss: {},
+            		onLoadCss: function(url, node){
+            			if (!this.__loadingCss[url]){
+            				this.__loadingCss[url] = $.Deferred();	
+                			if (node.attachEvent &&
+                                    !(node.attachEvent.toString && node.attachEvent.toString().indexOf('[native code') < 0) &&
+                                    !(typeof opera !== 'undefined' && opera.toString() === '[object Opera]')) {
+                                node.attachEvent('onreadystatechange', this.onLinkLoad.bind(this));
+                            } else {
+                                node.addEventListener('load', this.onLinkLoad.bind(this), false);
+                                node.addEventListener('error', this.onLinkError.bind(this), false);
+                            }
+            			}
+            		},
+            		
+            		onLinkLoad: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+            	        if (evt.type === 'load' ||
+                                (this.readyRegExp.test(target.readyState))) {
+            	        	var url = target.getAttribute("href");
+            	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+            	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+            	        	}
+                        }
+            		},
+            		
+            		onLinkError: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+        	        	var url = target.getAttribute("href");
+        	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+        	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+        	        	}
+            		},
+            		
+            		initContextPath: function(){
+            			var baseURL = document.getElementById("_requireJS").src;
+            			var before = location.protocol + "//" + location.host;
+            			var after = "/system/lib/require/require.2.1.10";
+            			var i = baseURL.indexOf(after);
+            			if (i !== -1){
+    	        			var middle = baseURL.substring(before.length, i);
+    						var items = middle.split("/");
+    						
+    						
+    						if ((items[items.length-1].indexOf("v_") === 0) 
+    								&& (items[items.length-1].indexOf("l_") !== -1)
+    								&& (items[items.length-1].indexOf("s_") !== -1)
+    								&& (items[items.length-1].indexOf("d_") !== -1)
+    								|| (items[items.length-1]=="v_")){
+    							items.splice(items.length-1, 1);
+    						}
+    						
+    						
+    						if (items.length !== 1){
+    							window.__justep.__ResourceEngine.contextPath = items.join("/");
+    						}else{
+    							window.__justep.__ResourceEngine.contextPath = before;
+    						}
+    						var index = window.__justep.__ResourceEngine.contextPath.lastIndexOf("/");
+    						if (index != -1){
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath.substr(0, index);
+    						}else{
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath;
+    						}
+            			}else{
+            				throw new Error(baseURL + " hasn't  " + after);
+            			}
+            		},
+            	
+            		loadJs: function(urls){
+            			if (urls && urls.length>0){
+            				var loadeds = this._getResources("script", "src").concat(this.__loadedJS);
+    	       				for (var i=0; i<urls.length; i++){
+								var url = urls[i];
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					this.__loadedJS[this.__loadedJS.length] = url;
+    	        					/*
+    	        					var script = document.createElement("script");
+    	        					script.src = url;
+    	        					document.head.appendChild(script);
+    	        					*/
+    	        					//$("head").append("<script  src='" + url + "'/>");
+									var url = require.toUrl("$UI" + url);
+    	        					$.ajax({
+    	        						url: url,
+    	        						dataType: "script",
+    	        						cache: true,
+    	        						async: false,
+    	        						success: function(){}
+    	        						});
+    	        				} 
+    	       				}
+            			}
+            		},
+            		
+            		loadCss: function(styles){
+           				var loadeds = this._getResources("link", "href");
+            			if (styles && styles.length>0){
+            				for (var i=0; i<styles.length; i++){
+    	       					var url = window.__justep.__ResourceEngine.contextPath + styles[i].url.replace("/UI2/", "/");
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					var include = styles[i].include || "";
+    	        					var link = $("<link type='text/css' rel='stylesheet' href='" + url + "' include='" + include + "'/>");
+    	        					this.onLoadCss(url, link[0]);
+    	        					$("head").append(link);
+    	        				} 
+            				}
+            			}
+            			
+            		},
+            		
+            		
+            		_isLoaded: function(url, loadeds){
+            			if (url){
+            				var newUrl = "";
+            				var items = url.split("/");
+            				var isVls = false;
+            				for (var i=0; i<items.length; i++){
+            					if (isVls){
+                					newUrl += "/" + items[i];
+            					}else{
+                					if (items[i] && (items[i].indexOf("v_")===0)
+            								&& (items[i].indexOf("l_")!==-1)
+            								&& (items[i].indexOf("s_")!==-1)
+            								&& (items[i].indexOf("d_")!==-1)
+            								|| (items[i]=="v_")){
+                						isVls = true;
+                					}
+            					}
+            				}
+            				if (!newUrl)
+            					newUrl = url;
+            				
+            				for (var i=0; i<loadeds.length; i++){
+								var originUrl = this._getOriginUrl(loadeds[i]);
+								if (originUrl && (originUrl.indexOf(newUrl)!==-1)){
+									return true;
+								}
+    						}
+            			}
+    					return false;
+            		},
+
+					_getOriginUrl: function(url){
+						var result = "";
+						if (url && (url.indexOf(".md5_")!==-1)){
+							url = url.split("#")[0];
+							url = url.split("?")[0];
+							var items = url.split(".");
+							for (var i=0; i<items.length; i++){
+								if ((i===items.length-2) && (items[i].indexOf("md5_")!==-1)){
+									continue;
+								}else{
+									if (i>0) result += ".";
+									result += items[i];
+								}
+							}
+						}else{
+							result = url;
+						}
+						return result;
+					},
+            		
+            		_getResources: function(tag, attr){
+    					var result = [];
+    					var scripts = $(tag);
+    					for (var i=0; i<scripts.length; i++){
+    						var v = scripts[i][attr];
+    						if (v){
+    							result[result.length] = v;
+    						}
+    					}
+    					return result;
+            		}
+            	};
+            	
+            	window.__justep.__ResourceEngine.initContextPath();
+    			requirejs.config({
+    				baseUrl: window.__justep.__ResourceEngine.contextPath + '/v_93ed1b7be74c44a19f2818c7ef733bc9l_zh_CNs_d_m/wd/PlaceTheOrder',
+    			    paths: {
+    			    	/* 解决require.normalizeName与require.toUrl嵌套后不一致的bug   */
+    			    	'$model/UI2/v_': window.__justep.__ResourceEngine.contextPath + '/v_93ed1b7be74c44a19f2818c7ef733bc9l_zh_CNs_d_m',
+    			    	'$model/UI2': window.__justep.__ResourceEngine.contextPath + '/v_93ed1b7be74c44a19f2818c7ef733bc9l_zh_CNs_d_m',
+    			    	'$model': window.__justep.__ResourceEngine.serverPath,
+    			        'text': window.__justep.__ResourceEngine.contextPath + '/v_93ed1b7be74c44a19f2818c7ef733bc9l_zh_CNs_d_m/system/lib/require/text.2.0.10',
+    			        'bind': window.__justep.__ResourceEngine.contextPath + '/v_93ed1b7be74c44a19f2818c7ef733bc9l_zh_CNs_d_m/system/lib/bind/bind',
+    			        'jquery': window.__justep.__ResourceEngine.contextPath + '/v_93ed1b7be74c44a19f2818c7ef733bc9l_zh_CNs_d_m/system/lib/jquery/jquery-1.11.1.min'
+    			    },
+    			    map: {
+    				        '*': {
+    				            res: '$model/UI2/system/lib/require/res',
+    				            service: '$model/UI2/system/lib/require/service',
+    				            cordova: '$model/UI2/system/lib/require/cordova',
+    				            w: '$model/UI2/system/lib/require/w',
+    				            css: '$model/UI2/system/lib/require/css'
+    				        }
+    				},
+    				waitSeconds: 300
+    			});
+    			
+    			requirejs(['require', 'jquery', '$model/UI2/system/lib/base/composition', '$model/UI2/system/lib/base/url', '$model/UI2/system/lib/route/hashbangParser', '$model/UI2/system/components/justep/versionChecker/versionChecker', '$model/UI2/system/components/justep/loadingBar/loadingBar', '$model/UI2/system/lib/jquery/domEvent',  '$model/UI2/system/lib/cordova/cordova'],  function (require, $, composition, URL, HashbangParser,versionChecker) { 
+    				document.addEventListener('deviceready', function() {
+    	                if (navigator && navigator.splashscreen && navigator.splashscreen.hide) {
+    	                	/*延迟隐藏，视觉效果更理想*/
+    	                	setTimeout(function() {navigator.splashscreen.hide();}, 800);
+    	                }
+    	            }, false);
+					setTimeout(function(){
+						versionChecker.check();
+					},2000);
+    				var context = {};
+    				context.model = '$model/UI2/wd/PlaceTheOrder/test.w' + (document.location.search || "");
+    				context.view = $('#applicationHost').children()[0];
+    				var element = document.getElementById('applicationHost');
+
+					    				
+    				
+    				var ownerid = new URL(window.__justep.__ResourceEngine.url).getParam("$ownerid");
+    				var pwindow = opener;
+    				if (!pwindow && window.parent && window.parent.window){
+    					pwindow = window.parent.window;
+    				}
+    				if(ownerid && pwindow 
+    						&& pwindow.__justep && pwindow.__justep.windowOpeners
+    						&& pwindow.__justep.windowOpeners[ownerid]
+    						&& $.isFunction(pwindow.__justep.windowOpeners[ownerid].sendToWindow)){
+    					window.__justep.setParams = function(params){
+    						/* 给windowOpener提供再次传参数的接口  */
+    						params = params || {};
+    						composition.setParams(document.getElementById('applicationHost'), params);
+    					};
+    					var winOpener = pwindow.__justep.windowOpeners[ownerid];
+    					if(winOpener) winOpener.window = window;
+    					$(window).unload(function(event){
+    						if(winOpener && winOpener.dispatchCloseEvent) winOpener.dispatchCloseEvent();
+    					});
+    					var params = winOpener.sendToWindow();
+						context.owner = winOpener;
+						context.params = params || {};
+	        			composition.compose(element, context);
+    				}else{
+        				var params =  {};
+    					var state = new HashbangParser(window.location.hash).parse().__state;
+    					if (state){
+    						params = state.get("");
+    						try{
+    							params = JSON.parse(params);
+    							if (params.hasOwnProperty("__singleValue__")){
+    								params = params.__singleValue__;
+    							}
+    						}catch(e1){}
+    					}
+    					context.noUpdateState = true;
+        				context.params = params;
+        				composition.compose(element, context);
+    				}
+    			});    
+            }
+		 	
+        </script>
+    </body>
+</html>

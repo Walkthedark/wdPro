@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window ciYry2i" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ciYry2i" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.btn-radius.ciYry2i{border-radius: 15px} .btn-radius2.ciYry2i{border-radius: 30px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="ciYry2i" class="ciYry2i"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcNfQzUr-iosstatusbar ciYry2i" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ciYry2i"> 
+    <div class="x-panel-top ciYry2i" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciYry2i"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar ciYry2i" xid="titleBar2" style="background-color:#272F2C;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="ciYry2i"> 
+        <div class="x-titlebar-left ciYry2i" xid="left2" __cid="ciYry2i"/>  
+        <div class="x-titlebar-title ciYry2i" xid="title2" __cid="ciYry2i">采购详情</div>  
+        <div class="x-titlebar-right  ciYry2i" xid="right2" __cid="ciYry2i">
+          <div class="empty ciYry2i" __cid="ciYry2i"/>
+        </div>
+      </div> 
+    </div>  
+    <div class="x-panel-content ciYry2i" xid="content1" style="background-color:#EEEEEE;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciYry2i"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc2YrYz2-iosstatusbar ciYry2i" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ciYry2i"> 
+        <div class="x-panel-top ciYry2i" xid="top2" style="background-color:white;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciYry2i">
+          <div class="media ciYry2i" xid="media3" style="padding:0px 0px 0px 0px;" __cid="ciYry2i"> 
+            <div class="media-left ciYry2i" xid="mediaLeft3" __cid="ciYry2i"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label ciYry2i" xid="button13" style="color:#939393;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;e-commerce e-commerce-shizhong&quot;,&quot;label&quot;:&quot;上海熟食加工厂&quot;}" __cid="ciYry2i"> 
+                <i xid="i12" class="e-commerce e-commerce-shizhong ciYry2i" __cid="ciYry2i"/>  
+                <span xid="span19" __cid="ciYry2i" class="ciYry2i">上海熟食加工厂</span>
+              </a>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label ciYry2i" xid="button1" style="color:#939393;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;e-commerce e-commerce-shizhong&quot;,&quot;label&quot;:&quot;下单时间：09/13 09:43&quot;}" __cid="ciYry2i"> 
+                <i xid="i2" class="e-commerce e-commerce-shizhong ciYry2i" __cid="ciYry2i"/>  
+                <span xid="span2" __cid="ciYry2i" class="ciYry2i">下单时间：09/13 09:43</span>
+              </a>
+            </div>  
+            <div class="media-body ciYry2i" xid="mediaBody3" style="text-align:center;" __cid="ciYry2i"></div>  
+            <div class="media-right ciYry2i" xid="mediaRight1" style="text-align:right;" __cid="ciYry2i"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right ciYry2i" xid="button12" style="color:#939393;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-arrowrightl&quot;,&quot;label&quot;:&quot;已完成&quot;}" __cid="ciYry2i"> 
+                <i xid="i12" class="dataControl dataControl-arrowrightl ciYry2i" __cid="ciYry2i"/>  
+                <span xid="span15" __cid="ciYry2i" class="ciYry2i">已完成</span>
+              </a>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label ciYry2i" xid="button2" style="color:#939393;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;e-commerce e-commerce-shizhong&quot;,&quot;label&quot;:&quot;交货时间：09/13 13:00&quot;}" __cid="ciYry2i"> 
+                <i xid="i2" class="e-commerce e-commerce-shizhong ciYry2i" __cid="ciYry2i"/>  
+                <span xid="span7" __cid="ciYry2i" class="ciYry2i">交货时间：09/13 13:00</span>
+              </a>
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-panel-content ciYry2i" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciYry2i">
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row ciYry2i" xid="row1" style="height:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciYry2i"> 
+            <div class="x-col ciYry2i" xid="col1" __cid="ciYry2i"/>  
+            <div class="x-col ciYry2i" xid="col2" __cid="ciYry2i"/>  
+            <div class="x-col ciYry2i" xid="col3" __cid="ciYry2i"/>
+          </div>
+          <div xid="div5" class="list-group-item ciYry2i" style="padding:7px 3px 7px 3px;border-left-style:none;" __cid="ciYry2i"> 
+            <div class="media ciYry2i" xid="media1" __cid="ciYry2i"> 
+              <div class="media-left ciYry2i" xid="mediaLeft1" __cid="ciYry2i"> 
+                <a href="#" xid="a1" __cid="ciYry2i" class="ciYry2i"> 
+                  <img class="media-object ciYry2i" src="$model/UI2/mealChainSys/img/ji.jpg" alt="" xid="image1" style="width:60px;height:45px;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#E6E6E6 #E6E6E6 #E6E6E6 #E6E6E6;color:#DEDEDE;" __cid="ciYry2i"/>
+                </a> 
+              </div>  
+              <div class="media-body ciYry2i" xid="mediaBody1" __cid="ciYry2i"> 
+                <h5 xid="h51" class="media-heading  btn-color ciYry2i" style="font-size:18px;color:#4F4F4F;" __cid="ciYry2i">白斩鸡</h5>  
+                <h5 xid="h52" style="text-align:right;" class="media-heading ciYry2i" __cid="ciYry2i">
+                  <span xid="span3" style="color:#FF5A1D;font-size:18px;font-weight:bold;" __cid="ciYry2i" class="ciYry2i">2</span>
+                  <span xid="span4" style=";font-size:16px;color:#939393;" __cid="ciYry2i" class="ciYry2i">个=</span>
+                  <span xid="span5" style="color:#FF5A1D;font-size:18px;font-weight:bold;" __cid="ciYry2i" class="ciYry2i">6</span>
+                  <span xid="span6" style="font-size:16px;color:#939393;" __cid="ciYry2i" class="ciYry2i">斤</span>
+                </h5>
+                <div xid="div6" style="text-align:right;" __cid="ciYry2i" class="ciYry2i"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-label btn-radius ciYry2i" xid="button10" style="color:#407422;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#407422 #407422 #407422 #407422;margin-right:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;收&quot;}" __cid="ciYry2i"> 
+                    <i xid="i10" __cid="ciYry2i" class="ciYry2i"/>  
+                    <span xid="span11" __cid="ciYry2i" class="ciYry2i">收</span>
+                  </a>
+                  <span xid="span9" style="font-size:12px;color:#BABABA;margin-right:5px;" __cid="ciYry2i" class="ciYry2i">¥0.00/斤</span> 
+                </div>
+              </div> 
+            </div> 
+          </div>  
+          <div xid="div2" class="list-group-item ciYry2i" style="padding:7px 3px 7px 3px;border-left-style:none;" __cid="ciYry2i"> 
+            <div class="media ciYry2i" xid="media2" __cid="ciYry2i"> 
+              <div class="media-left ciYry2i" xid="mediaLeft2" __cid="ciYry2i"> 
+                <a href="#" xid="a2" __cid="ciYry2i" class="ciYry2i"> 
+                  <img class="media-object ciYry2i" src="$model/UI2/mealChainSys/img/ji.jpg" alt="" xid="image2" style="width:60px;height:45px;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#E6E6E6 #E6E6E6 #E6E6E6 #E6E6E6;color:#DEDEDE;" __cid="ciYry2i"/>
+                </a> 
+              </div>  
+              <div class="media-body ciYry2i" xid="mediaBody2" __cid="ciYry2i"> 
+                <h5 xid="h54" class="media-heading  btn-color ciYry2i" style="font-size:18px;color:#4F4F4F;" __cid="ciYry2i">白斩鸡</h5>  
+                <h5 xid="h53" style="text-align:right;" class="media-heading ciYry2i" __cid="ciYry2i"> 
+                  <span xid="span1" style="color:#FF5A1D;font-size:18px;font-weight:bold;" __cid="ciYry2i" class="ciYry2i">2</span>  
+                  <span xid="span8" style=";font-size:16px;color:#939393;" __cid="ciYry2i" class="ciYry2i">个=</span>  
+                  <span xid="span10" style="color:#FF5A1D;font-size:18px;font-weight:bold;" __cid="ciYry2i" class="ciYry2i">6</span>  
+                  <span xid="span12" style="font-size:16px;color:#939393;" __cid="ciYry2i" class="ciYry2i">斤</span>
+                </h5>  
+                <div xid="div1" style="text-align:right;" __cid="ciYry2i" class="ciYry2i"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-label btn-radius ciYry2i" xid="button3" style="color:#407422;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#407422 #407422 #407422 #407422;margin-right:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;收&quot;}" __cid="ciYry2i"> 
+                    <i xid="i1" __cid="ciYry2i" class="ciYry2i"/>  
+                    <span xid="span14" __cid="ciYry2i" class="ciYry2i">收</span>
+                  </a>  
+                  <span xid="span13" style="font-size:12px;color:#BABABA;margin-right:5px;" __cid="ciYry2i" class="ciYry2i">¥0.00/斤</span>
+                </div> 
+              </div> 
+            </div> 
+          </div>
+        </div>  
+        <div class="x-panel-bottom ciYry2i" xid="bottom1" style="text-align:center;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciYry2i">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-radius  btn-radius2 ciYry2i" xid="button4" style="background-color:#407422;color:#FFFFFF;width:40%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;联系供应商&quot;}" __cid="ciYry2i"> 
+            <i xid="i3" __cid="ciYry2i" class="ciYry2i"/>  
+            <span xid="span16" __cid="ciYry2i" class="ciYry2i">联系供应商</span>
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-radius btn-radius2 ciYry2i" xid="button5" style="background-color:#407422;color:#FFFFFF;width:40%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;微信分享&quot;}" __cid="ciYry2i"> 
+            <i xid="i4" __cid="ciYry2i" class="ciYry2i"/>  
+            <span xid="span17" __cid="ciYry2i" class="ciYry2i">微信分享</span>
+          </a>
+        </div>
+        <style __cid="ciYry2i" class="ciYry2i">.x-panel.pc2YrYz2-iosstatusbar &gt;.x-panel-top {height: 75px;}.x-panel.pc2YrYz2-iosstatusbar &gt;.x-panel-content { top: 75px;bottom: nullpx;}.x-panel.pc2YrYz2-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc2YrYz2-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2YrYz2-iosstatusbar &gt;.x-panel-top {height: 95px;}.iosstatusbar .x-panel.pc2YrYz2-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2YrYz2-iosstatusbar &gt;.x-panel-content { top: 95px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2YrYz2-iosstatusbar &gt;.x-panel-top {height: 75px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2YrYz2-iosstatusbar &gt;.x-panel-content {top: 75px;}</style>
+      </div>
+    </div>  
+    <style __cid="ciYry2i" class="ciYry2i">.x-panel.pcNfQzUr-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcNfQzUr-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcNfQzUr-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcNfQzUr-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcNfQzUr-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcNfQzUr-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcNfQzUr-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcNfQzUr-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcNfQzUr-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window crQvima" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="crQvima" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.font-Two.crQvima{font-weight: bold; color: rgb(250, 121, 34)} .no.crQvima{margin: 40px; width: 200px; height: 50px; line-height: 50px; text-align: center; background-color: grey; transform: rotate(40deg); -ms-transform: rotate(40deg); -moz-transform: rotate(40deg); -webkit-transform: rotate(40deg); -o-transform: rotate(40deg); margin: 40px} .has.crQvima{width: 10em; height: 2em; line-height: 2em; text-align: center; background-color: blue; transform: rotate(40deg); -ms-transform: rotate(40deg); -moz-transform: rotate(40deg); -webkit-transform: rotate(40deg); -o-transform: rotate(40deg); width: 10em} .box.crQvima{width: 100px; height: 100px; background-color: rgb(85, 85, 85); color: rgb(255, 255, 255); transform: rotate(45deg); -ms-transform: rotate(45deg); -moz-transform: rotate(45deg); -webkit-transform: rotate(45deg); -o-transform: rotate(45deg); position: absolute; right: -50px; top: -50px} .text.crQvima{position: absolute; top: 0} .lanren.crQvima{} .lanren.crQvima .ribbon-lanren-green.crQvima{width: 85px; height: 88px; overflow: hidden; position: absolute} .lanren.crQvima .ribbon-green.crQvima{font: bold 15px Sans-Serif; color: rgb(51, 51, 51); text-align: center; text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); position: relative; padding: 7px 0; left: -5px; top: 15px; width: 120px; background-color: rgb(191, 220, 122); background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(191, 220, 122)), to(rgb(142, 191, 69))); background-image: -webkit-linear-gradient(top, rgb(191, 220, 122), rgb(142, 191, 69)); background-image: -moz-linear-gradient(top, rgb(191, 220, 122), rgb(142, 191, 69)); background-image: -ms-linear-gradient(top, rgb(191, 220, 122), rgb(142, 191, 69)); background-image: -o-linear-gradient(top, rgb(191, 220, 122), rgb(142, 191, 69)); color: rgb(106, 99, 64); -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3); box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3)} .lanren.crQvima .ribbon-green.crQvima:before, .ribbon-green.crQvima:after{content: ""; border-top: 3px solid rgb(110, 137, 0); border-left: 3px solid transparent; border-right: 3px solid transparent; position: absolute; bottom: -3px} .lanren.crQvima .ribbon-green.crQvima:before{left: 0} .lanren.crQvima .ribbon-green.crQvima:after{right: 0} .lanren.crQvima .ribbon-grey.crQvima{font: bold 15px Sans-Serif; color: rgb(51, 51, 51); text-align: center; text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); position: relative; padding: 7px 0; left: -5px; top: 15px; width: 120px; background-color: rgb(192, 192, 192); background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(192, 192, 192)), to(rgb(200, 200, 200))); background-image: -webkit-linear-gradient(top, rgb(192, 192, 192), rgb(200, 200, 200)); background-image: -moz-linear-gradient(top, rgb(192, 192, 192), rgb(200, 200, 200)); background-image: -ms-linear-gradient(top, rgb(192, 192, 192), rgb(200, 200, 200)); background-image: -o-linear-gradient(top, rgb(192, 192, 192), rgb(200, 200, 200)); color: rgb(106, 99, 64); -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3); box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3)} .lanren.crQvima .ribbon-grey.crQvima:before, .ribbon-grey.crQvima:after{content: ""; border-top: 3px solid rgb(110, 137, 0); border-left: 3px solid transparent; border-right: 3px solid transparent; position: absolute; bottom: -3px} .lanren.crQvima .ribbon-grey.crQvima:before{left: 0} .lanren.crQvima .ribbon-grey.crQvima:after{right: 0}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="crQvima" class="crQvima"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="newDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onClose:newDialogClose" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Visit/dialog/newOrder.w&quot;}" __cid="crQvima" class="crQvima">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay crQvima" __cid="crQvima"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog crQvima" style="display:none;" __cid="crQvima">
+      <xhtml:div class="x-dialog-title crQvima" __cid="crQvima">
+        <xhtml:button class="close crQvima" __cid="crQvima">
+          <xhtml:span __cid="crQvima" class="crQvima">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text crQvima" __cid="crQvima"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body crQvima" __cid="crQvima"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="infoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Visit/dialog/orderInfo.w&quot;}" __cid="crQvima" class="crQvima">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay crQvima" __cid="crQvima"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog crQvima" style="display:none;" __cid="crQvima">
+      <xhtml:div class="x-dialog-title crQvima" __cid="crQvima">
+        <xhtml:button class="close crQvima" __cid="crQvima">
+          <xhtml:span __cid="crQvima" class="crQvima">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text crQvima" __cid="crQvima"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body crQvima" __cid="crQvima"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcNNjIR3-iosstatusbar crQvima" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="crQvima"> 
+    <div class="x-panel-top crQvima" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="crQvima"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title crQvima" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;订单汇报&quot;}" __cid="crQvima"> 
+        <div class="x-titlebar-left crQvima" xid="left2" __cid="crQvima"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label crQvima" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="crQvima"> 
+            <i xid="i1" __cid="crQvima" class="crQvima"/>  
+            <span xid="span4" __cid="crQvima" class="crQvima">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title crQvima" xid="title2" __cid="crQvima">订单汇报</div>  
+        <div class="x-titlebar-right  crQvima" xid="right2" __cid="crQvima">
+          <div class="empty crQvima" __cid="crQvima"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content crQvima" xid="content6" style="background-color:#f0f0f0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="crQvima"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcBZfI32-iosstatusbar crQvima" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="crQvima"> 
+        <div class="x-panel-top crQvima" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="crQvima"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two crQvima" xid="row3" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crQvima"> 
+            <div class="x-col x-col-20 crQvima" xid="col11" __cid="crQvima"/>  
+            <div class="x-col crQvima" xid="col12" __cid="crQvima"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn border-r crQvima" xid="button4" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;label&quot;:&quot;填 写&quot;}" __cid="crQvima"> 
+                <i xid="i5" __cid="crQvima" class="crQvima"/>  
+                <span xid="span6" __cid="crQvima" class="crQvima">填 写</span> 
+              </a> 
+            </div>  
+            <div class="x-col x-col-20 crQvima" xid="col13" __cid="crQvima"/> 
+          </div> 
+        </div>  
+        <div class="x-panel-content x-scroll-view crQvima" xid="content1" _xid="C7DF78904F900001988700701AF31363" style="background-size: cover; background-image: url(http://localhost:40527/x5/UI2/v_/TheSaleEnterprise/Visit/dialog/none);" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="crQvima"> 
+          <div class="x-scroll crQvima" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="crQvima"> 
+            <div class="x-content-center x-pull-down container crQvima" xid="div1" __cid="crQvima"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down crQvima" xid="i2" __cid="crQvima"/>  
+              <span class="x-pull-down-label crQvima" xid="span1" __cid="crQvima">下拉刷新...</span> 
+            </div>  
+            <div class="x-scroll-content crQvima" xid="div2" __cid="crQvima"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list crQvima" xid="list1" style="padding:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;orderData&quot;}" __cid="crQvima"> 
+                <ul class="x-list-template hide crQvima" xid="listTemplateUl1" style="margin:0px;" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="crQvima"> 
+                  <li xid="li1" class="border-Two crQvima" __cid="crQvima"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two crQvima" xid="row1" bind-click="li1Click" style="padding-right:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crQvima"> 
+                      <div class="x-col crQvima" xid="col1" __cid="crQvima"> 
+                        <div component="$model/UI2/system/components/bootstrap/row/row" class="row crQvima" xid="row4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="crQvima"> 
+                          <div class="col col-xs-12 crQvima" xid="col7" __cid="crQvima"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 crQvima" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="crQvima"> 
+                              <label class="x-label crQvima" xid="label1" style="width:80px;" __cid="crQvima">订单日期：</label>  
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit crQvima" xid="output1" data-bind="component:{ref:ref(&quot;sqrq&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="crQvima"/> 
+                            </div> 
+                          </div>  
+                          <div class="col col-xs-12 crQvima" xid="col8" __cid="crQvima"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 crQvima" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="crQvima"> 
+                              <label class="x-label crQvima" xid="label2" style="width:80px;" __cid="crQvima">订单编号：</label>  
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit crQvima" xid="output2" data-bind="component:{ref:ref(&quot;sn&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="crQvima"/> 
+                            </div> 
+                          </div>  
+                          <div class="col col-xs-12 crQvima" xid="col9" __cid="crQvima"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 crQvima" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="crQvima"> 
+                              <label class="x-label crQvima" xid="label3" style="width:80px;" __cid="crQvima">供应商：</label>  
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit crQvima" xid="output3" data-bind="component:{ref:ref(&quot;jxs&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="crQvima"/> 
+                            </div> 
+                          </div>  
+                          <div class="col col-xs-12 crQvima" xid="col15" __cid="crQvima"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 crQvima" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="crQvima"> 
+                              <label class="x-label crQvima" xid="label4" style="width:80px;" __cid="crQvima">收货地址：</label>  
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit crQvima" xid="output5" data-bind="component:{ref:ref(&quot;shdz&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="crQvima"/> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div>  
+                      <div xid="col17" style="overflow: hidden;margin:auto;margin-top:0px;width:85px;" class="lanren crQvima" __cid="crQvima"> 
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row crQvima" xid="row5" style="margin:0px;padding:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crQvima"> 
+                          <div class="x-col crQvima" xid="col2" style="margin:0px;padding:0px;height:88px;" __cid="crQvima">
+                            <div class="ribbon-lanren-green crQvima" __cid="crQvima"> 
+                              <div class="ribbon-green crQvima" bind-text=" val(&quot;status&quot;)" bind-css="{'ribbon-grey': val(&quot;status&quot;)=='未处理'}" __cid="crQvima"/> 
+                            </div>
+                          </div> 
+                        </div>  
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row crQvima" xid="row6" style="margin:0px;padding:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crQvima"> 
+                          <div class="x-col crQvima" xid="col10" style="margin:0px;padding:0px;" __cid="crQvima">
+                            <img src="$model/UI2/TheSaleEnterprise/Visit/dialog/img/dingdanjine.png" alt="" xid="image1" style="width:20px;margin-left:0px;" __cid="crQvima" class="crQvima"/>
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output font-Two crQvima" xid="output4" style="margin-top:-28px;margin-left:20px;" data-bind="component:{ref:ref(&quot;yszje&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="crQvima"/>
+                          </div> 
+                        </div>
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row crQvima" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crQvima"> 
+                      <div class="x-col crQvima" xid="col4" __cid="crQvima"/>  
+                      <div class="x-col crQvima" xid="col6" style="text-align:right;" __cid="crQvima"> 
+                        <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group crQvima" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="crQvima"> 
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link crQvima" xid="button2" style="color:#000000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;icon&quot;:&quot;linear linear-trash&quot;,&quot;label&quot;:&quot;删除&quot;}" __cid="crQvima"> 
+                            <i xid="i3" class="linear linear-trash crQvima" __cid="crQvima"/>  
+                            <span xid="span3" __cid="crQvima" class="crQvima">删除</span> 
+                          </a>  
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link crQvima" xid="button3" style="color:#000000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&quot;icon&quot;:&quot;linear linear-pencil&quot;,&quot;label&quot;:&quot;修改&quot;}" __cid="crQvima"> 
+                            <i xid="i4" class="linear linear-pencil crQvima" __cid="crQvima"/>  
+                            <span xid="span5" __cid="crQvima" class="crQvima">修改</span> 
+                          </a> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up crQvima" xid="div3" __cid="crQvima"> 
+              <span class="x-pull-up-label crQvima" xid="span2" __cid="crQvima">加载更多...</span> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="crQvima" class="crQvima">.x-panel.pcBZfI32-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcBZfI32-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcBZfI32-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcBZfI32-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBZfI32-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcBZfI32-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBZfI32-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBZfI32-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBZfI32-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div>  
+    <style __cid="crQvima" class="crQvima">.x-panel.pcNNjIR3-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcNNjIR3-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcNNjIR3-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcNNjIR3-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcNNjIR3-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcNNjIR3-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcNNjIR3-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcNNjIR3-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcNNjIR3-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="wReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:wReceiverReceive" __cid="crQvima" class="crQvima"/>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="editDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onClose:newDialogClose" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Visit/dialog/editOrder.w&quot;}" __cid="crQvima" class="crQvima">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay crQvima" __cid="crQvima"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog crQvima" style="display:none;" __cid="crQvima">
+      <xhtml:div class="x-dialog-title crQvima" __cid="crQvima">
+        <xhtml:button class="close crQvima" __cid="crQvima">
+          <xhtml:span __cid="crQvima" class="crQvima">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text crQvima" __cid="crQvima"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body crQvima" __cid="crQvima"/>
+    </xhtml:div>
+  </span> 
+</div>

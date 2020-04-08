@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cVNRVV3" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cVNRVV3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cVNRVV3" class="cVNRVV3"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcIreYJ3-iosstatusbar cVNRVV3" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cVNRVV3"> 
+    <div class="x-panel-top cVNRVV3" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVNRVV3"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cVNRVV3" xid="row1" style="padding:0px 0px 0px 0px;background-color:#EBEAF0;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVNRVV3"> 
+        <div xid="col3" style="width:0.5em;" __cid="cVNRVV3" class="cVNRVV3"/>  
+        <div class="x-col  cVNRVV3" xid="col4" __cid="cVNRVV3"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cVNRVV3" xid="input1" style="background-color:white;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;客户名称&quot;}" __cid="cVNRVV3"/> 
+        </div>  
+        <div xid="col5" style="width:0.5em;" __cid="cVNRVV3" class="cVNRVV3"/> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cVNRVV3" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVNRVV3"> 
+      <div xid="div1" __cid="cVNRVV3" class="cVNRVV3"> 
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cVNRVV3" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;ListData&quot;}" __cid="cVNRVV3"> 
+          <ul class="x-list-template hide cVNRVV3" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cVNRVV3"> 
+            <li xid="li1" __cid="cVNRVV3" class="cVNRVV3"> 
+              <div xid="div22" class="list-group-item cVNRVV3" style="padding:5px 5px 5px 5px;" __cid="cVNRVV3"> 
+                <div class="media cVNRVV3" xid="media9" __cid="cVNRVV3"> 
+                  <div class="media-body cVNRVV3" xid="mediaBody9" __cid="cVNRVV3"> 
+                    <h5 xid="h518" style="color:#181919;" bind-text=" val(&quot;client_name&quot;)" class="media-heading cVNRVV3" __cid="cVNRVV3">潜在用友客户</h5>  
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-sm cVNRVV3" xid="button2" style="color:#6F6F6F;" bind-text=" val(&quot;category&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;button&quot;}" __cid="cVNRVV3"> 
+                      <i xid="i3" __cid="cVNRVV3" class="cVNRVV3"/>  
+                      <span xid="span3" __cid="cVNRVV3" class="cVNRVV3"/> 
+                    </a> 
+                  </div>  
+                  <div class="media-right cVNRVV3" xid="mediaRight8" __cid="cVNRVV3"> 
+                    <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cVNRVV3" xid="checkbox1" checkedValue="1" uncheckedValue="0" data-config="{&quot;checked&quot;:false,&quot;checkedValue&quot;:&quot;1&quot;,&quot;disabled&quot;:false,&quot;uncheckedValue&quot;:&quot;0&quot;}" data-bind="component:{ref:ref(&quot;choose&quot;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cVNRVV3">
+                      <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cVNRVV3" class="cVNRVV3"/>
+                      <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cVNRVV3" class="cVNRVV3"/>
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </li> 
+          </ul> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cVNRVV3" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVNRVV3"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cVNRVV3" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cVNRVV3"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label cVNRVV3" xid="button1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cVNRVV3"> 
+          <i xid="i1" __cid="cVNRVV3" class="cVNRVV3"/>  
+          <span xid="span1" __cid="cVNRVV3" class="cVNRVV3">取消</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cVNRVV3" xid="okBtn" style="background-color:#4B76AE;color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:okBtnClick" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cVNRVV3"> 
+          <i xid="i2" __cid="cVNRVV3" class="cVNRVV3"/>  
+          <span xid="span2" __cid="cVNRVV3" class="cVNRVV3">确定</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cVNRVV3" class="cVNRVV3">.x-panel.pcIreYJ3-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcIreYJ3-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcIreYJ3-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcIreYJ3-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcIreYJ3-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcIreYJ3-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcIreYJ3-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcIreYJ3-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcIreYJ3-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

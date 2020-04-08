@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cVJRrim" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cVJRrim" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cVJRrim" class="cVJRrim"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="infoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/VisitSignIn/dialog/dealersInfoList.w&#34;}" __cid="cVJRrim" class="cVJRrim">
+    <div class="x-dialog-overlay cVJRrim" __cid="cVJRrim"></div>
+    <div class="x-dialog cVJRrim" style="display:none;" __cid="cVJRrim">
+      <div class="x-dialog-title cVJRrim" __cid="cVJRrim">
+        <button class="close cVJRrim" __cid="cVJRrim">
+          <span __cid="cVJRrim" class="cVJRrim">×</span>
+        </button>
+        <div class="x-dialog-title-text cVJRrim" __cid="cVJRrim"></div>
+      </div>
+      <div class="x-dialog-body cVJRrim" __cid="cVJRrim"></div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="wReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:wReceiverReceive" __cid="cVJRrim" class="cVJRrim"></span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcVfI3Iz-iosstatusbar cVJRrim" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cVJRrim"> 
+    <div class="x-panel-top cVJRrim" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVJRrim"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cVJRrim" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;拜访详情&#34;}" __cid="cVJRrim"> 
+        <div class="x-titlebar-left cVJRrim" xid="left2" __cid="cVJRrim"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cVJRrim" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;返回&#34;}" __cid="cVJRrim"> 
+            <i xid="i1" __cid="cVJRrim" class="cVJRrim"></i>  
+            <span xid="span4" __cid="cVJRrim" class="cVJRrim">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cVJRrim" xid="title2" __cid="cVJRrim">拜访详情</div>  
+        <div class="x-titlebar-right  cVJRrim" xid="right2" __cid="cVJRrim">
+          <div class="empty cVJRrim" __cid="cVJRrim"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cVJRrim" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVJRrim"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two cVJRrim" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVJRrim"> 
+        <div class="x-col cVJRrim" xid="col1" __cid="cVJRrim"> 
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output font-One cVJRrim" xid="output1" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'},text:&#34;本次(&#34;+ $model.BData.val(&#34;jxs_title&#34;) +&#34;)拜访&#34;+ $model.BData.val(&#34;bfrq&#34;)" __cid="cVJRrim"></div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two cVJRrim" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVJRrim"> 
+        <div class="x-col cVJRrim" xid="col4" __cid="cVJRrim"> 
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output font-Two cVJRrim" xid="output2" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'},text:$model.isVisit(event)" __cid="cVJRrim"></div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two cVJRrim" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVJRrim"> 
+        <div class="x-col cVJRrim" xid="col5" __cid="cVJRrim"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cVJRrim" xid="row4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cVJRrim"> 
+            <div class="col col-xs-12 cVJRrim" xid="col6" __cid="cVJRrim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVJRrim" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVJRrim"> 
+                <label class="x-label cVJRrim" xid="label3" style="width:6em;" __cid="cVJRrim">拜访签退：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cVJRrim" xid="output6" data-bind="component:{ref:$model.BData.ref(&#34;qtsj&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cVJRrim"></div> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cVJRrim" xid="col7" __cid="cVJRrim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVJRrim" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVJRrim"> 
+                <label class="x-label cVJRrim" xid="label2" style="width:6em;" __cid="cVJRrim">签退地址：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cVJRrim" xid="output5" data-bind="component:{ref:$model.BData.ref(&#34;qtdz&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cVJRrim"></div> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cVJRrim" xid="col8" __cid="cVJRrim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVJRrim" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVJRrim"> 
+                <label class="x-label cVJRrim" xid="label4" style="width:6em;" __cid="cVJRrim">签退拍照：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cVJRrim" xid="output7" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cVJRrim"></div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cVJRrim" xid="output10" data-bind="component:{ref:$model.BData.ref(&#34;qtpz&#34;),name:'$model/UI2/system/components/justep/output/output'}" data-events="onRender:output10Render" __cid="cVJRrim"></div>
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two cVJRrim" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVJRrim"> 
+        <div class="x-col cVJRrim" xid="col12" __cid="cVJRrim"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cVJRrim" xid="row6" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cVJRrim"> 
+            <div class="col col-xs-12 cVJRrim" xid="col11" __cid="cVJRrim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVJRrim" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVJRrim"> 
+                <label class="x-label cVJRrim" xid="label6" style="width:6em;" __cid="cVJRrim">拜访小结：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cVJRrim" xid="output9" data-bind="component:{ref:$model.BData.ref(&#34;bcbfxj&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cVJRrim"></div> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cVJRrim" xid="col9" __cid="cVJRrim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVJRrim" xid="labelEdit7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVJRrim"> 
+                <label class="x-label cVJRrim" xid="label5" style="width:6em;" __cid="cVJRrim">小结图片：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cVJRrim" xid="output8" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cVJRrim"></div>
+              </div>  
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cVJRrim" xid="output3" data-bind="component:{ref:$model.BData.ref(&#34;bcbfxjzp&#34;),name:'$model/UI2/system/components/justep/output/output'}" data-events="onRender:output8Render" __cid="cVJRrim"></div>
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two cVJRrim" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVJRrim"> 
+        <div class="x-col cVJRrim" xid="col16" __cid="cVJRrim"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cVJRrim" xid="row8" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cVJRrim"> 
+            <div class="col col-xs-12 cVJRrim" xid="col14" __cid="cVJRrim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVJRrim" xid="labelEdit8" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVJRrim"> 
+                <label class="x-label cVJRrim" xid="label10" style="width:8em;" __cid="cVJRrim">下次拜访时间：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cVJRrim" xid="output13" data-bind="component:{ref:$model.BData.ref(&#34;xcbfrq&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cVJRrim"></div> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cVJRrim" xid="col15" __cid="cVJRrim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVJRrim" xid="labelEdit9" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVJRrim"> 
+                <label class="x-label cVJRrim" xid="label9" style="width:8em;" __cid="cVJRrim">下次拜访目标：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cVJRrim" xid="output12" data-bind="component:{ref:$model.BData.ref(&#34;xcbfmb&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cVJRrim"></div> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cVJRrim" xid="col13" __cid="cVJRrim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVJRrim" xid="labelEdit10" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVJRrim"> 
+                <label class="x-label cVJRrim" xid="label8" style="width:8em;" __cid="cVJRrim">拜访计划图片：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cVJRrim" xid="output11" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cVJRrim"></div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cVJRrim" xid="output4" data-bind="component:{ref:$model.BData.ref(&#34;bfjhtp&#34;),name:'$model/UI2/system/components/justep/output/output'}" data-events="onRender:output11Render" __cid="cVJRrim"></div>
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cVJRrim" class="cVJRrim">.x-panel.pcVfI3Iz-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcVfI3Iz-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcVfI3Iz-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcVfI3Iz-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcVfI3Iz-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcVfI3Iz-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcVfI3Iz-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcVfI3Iz-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcVfI3Iz-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="showImg" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/Commonly/dialog/dialog/imgShow.w&#34;}" __cid="cVJRrim" class="cVJRrim">
+    <div class="x-dialog-overlay cVJRrim" __cid="cVJRrim"></div>
+    <div class="x-dialog cVJRrim" style="display:none;" __cid="cVJRrim">
+      <div class="x-dialog-title cVJRrim" __cid="cVJRrim">
+        <button class="close cVJRrim" __cid="cVJRrim">
+          <span __cid="cVJRrim" class="cVJRrim">×</span>
+        </button>
+        <div class="x-dialog-title-text cVJRrim" __cid="cVJRrim"></div>
+      </div>
+      <div class="x-dialog-body cVJRrim" __cid="cVJRrim"></div>
+    </div>
+  </span>
+</div>

@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cUzummq" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cUzummq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/bootstrap/progress/progress,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <style>.x-card1.btn-group.cUzummq .btn.active.cUzummq{color: rgb(255, 255, 255); background-color: rgb(250, 121, 34); border-color: rgb(250, 121, 34)}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cUzummq" class="cUzummq"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="customerCostDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/RankingList/dialog/customerCost.w&#34;}" __cid="cUzummq" class="cUzummq">
+    <div class="x-dialog-overlay cUzummq" __cid="cUzummq"></div>
+    <div class="x-dialog cUzummq" style="display:none;" __cid="cUzummq">
+      <div class="x-dialog-title cUzummq" __cid="cUzummq">
+        <button class="close cUzummq" __cid="cUzummq">
+          <span __cid="cUzummq" class="cUzummq">×</span>
+        </button>
+        <div class="x-dialog-title-text cUzummq" __cid="cUzummq"></div>
+      </div>
+      <div class="x-dialog-body cUzummq" __cid="cUzummq"></div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="customerDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/RankingList/dialog/customerVisit.w&#34;}" __cid="cUzummq" class="cUzummq">
+    <div class="x-dialog-overlay cUzummq" __cid="cUzummq"></div>
+    <div class="x-dialog cUzummq" style="display:none;" __cid="cUzummq">
+      <div class="x-dialog-title cUzummq" __cid="cUzummq">
+        <button class="close cUzummq" __cid="cUzummq">
+          <span __cid="cUzummq" class="cUzummq">×</span>
+        </button>
+        <div class="x-dialog-title-text cUzummq" __cid="cUzummq"></div>
+      </div>
+      <div class="x-dialog-body cUzummq" __cid="cUzummq"></div>
+    </div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc7ruIVb-iosstatusbar cUzummq" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cUzummq"> 
+    <div class="x-panel-top cUzummq" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUzummq"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cUzummq" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;龙虎榜&#34;}" __cid="cUzummq"> 
+        <div class="x-titlebar-left cUzummq" xid="left2" __cid="cUzummq"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cUzummq" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;返回&#34;}" __cid="cUzummq"> 
+            <i xid="i1" __cid="cUzummq" class="cUzummq"></i>  
+            <span xid="span4" __cid="cUzummq" class="cUzummq">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cUzummq" xid="title2" __cid="cUzummq">龙虎榜</div>  
+        <div class="x-titlebar-right  cUzummq" xid="right2" __cid="cUzummq">
+          <div class="empty cUzummq" __cid="cUzummq"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cUzummq" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUzummq"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcyIJvIz-iosstatusbar cUzummq" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cUzummq"> 
+        <div class="x-panel-content cUzummq" xid="content3" style="background-color:#f0f0f0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUzummq"> 
+          <div xid="div1" class="mar2 border-div cUzummq" style="background-color:white;" __cid="cUzummq"> 
+            <hr xid="hr1" __cid="cUzummq" class="cUzummq">  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two cUzummq" xid="row1" style="margin-top:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUzummq"> 
+              <div class="x-col cUzummq" xid="col1" __cid="cUzummq"> 
+                <img src="@justepContextPath@/v_d63cfba1561c4fa388dc40e3cf019492l_zh_CNs_d_m/TheSaleEnterprise/RankingList/img/002.png" alt="" xid="image1" style="width:30px;" __cid="cUzummq" class="cUzummq">  
+                <label xid="label1" class="font-five cUzummq" __cid="cUzummq">销售进度龙虎榜</label> 
+              </div>  
+              <div xid="col2" style="text-align:right;padding-top:7px;" __cid="cUzummq" class="cUzummq"> 
+                <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card1 cUzummq" xid="buttonGroup3" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cUzummq"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default5 active cUzummq" xid="button6" style="line-height: 12px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:$model.cDate.val(&#34;year&#34;)" __cid="cUzummq"> 
+                    <i xid="i6" __cid="cUzummq" class="cUzummq"></i>  
+                    <span xid="span1" style="margin-top:-4px;display:block;" __cid="cUzummq" class="cUzummq"></span> 
+                  </a> 
+                </div> 
+              </div>  
+              <div xid="col19" style="width:6em;padding-top:7px;height:30px;" __cid="cUzummq" class="cUzummq"> 
+                <select component="$model/UI2/system/components/justep/select/select" xid="select1" style="height:30px;" data-bind="component:{ref:$model.cDate.ref(&#34;khq1&#34;),name:'$model/UI2/system/components/justep/select/select'},optionsCaption:'请选择...',options:khq1.datas,optionsValue:'id',optionsText:'title',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cUzummq" class="cUzummq"></select> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cUzummq" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUzummq"> 
+              <div class="x-col cUzummq" xid="col4" __cid="cUzummq"> 
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row cUzummq" xid="row3" style="display:none" id="ListRow1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cUzummq"> 
+                  <div class="col col-xs-12 cUzummq" xid="col7" __cid="cUzummq"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cUzummq" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUzummq"> 
+                      <div class="x-col cUzummq" xid="col11" style="text-align:center;" __cid="cUzummq"> 
+                        <span xid="span3" class="font-four cUzummq" __cid="cUzummq">没有销售进度信息</span> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div>  
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row cUzummq" xid="row14" id="ListRow2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cUzummq"> 
+                  <div class="col col-xs-12 cUzummq" xid="col20" __cid="cUzummq"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cUzummq" xid="row13" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUzummq"> 
+                      <div class="x-col cUzummq" xid="col24" __cid="cUzummq"> 
+                        <span xid="span15" id="Name1" __cid="cUzummq" class="cUzummq">李四：</span> 
+                      </div>  
+                      <div class="x-col cUzummq" xid="col22" __cid="cUzummq"></div> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 border-Two cUzummq" xid="col21" __cid="cUzummq"> 
+                    <div class="progress cUzummq" component="$model/UI2/system/components/bootstrap/progress/progress" xid="progress2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/progress/progress'}" data-config="{&#34;valuemax&#34;:20,&#34;valuenow&#34;:20}" __cid="cUzummq"> 
+                      <div class="progress-bar progress-bar-success cUzummq" role="progressbar" xid="progressBar2" __cid="cUzummq"> 
+                        <span xid="span16" id="Num1" __cid="cUzummq" class="cUzummq">次</span> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 mar2 cUzummq" xid="col23" style="text-align:center;" __cid="cUzummq" data-bind="event:{click:$model._callModelFn.bind($model, 'col53Click')}"> 
+                    <span xid="span14" class="font-six cUzummq" __cid="cUzummq">点击查看更多</span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div xid="div7" class="mar2 border-div cUzummq" style="background-color:white;" __cid="cUzummq"> 
+            <hr xid="hr4" __cid="cUzummq" class="cUzummq">  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two cUzummq" xid="row21" style="margin-top:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUzummq"> 
+              <div class="x-col cUzummq" xid="col51" __cid="cUzummq"> 
+                <img src="@justepContextPath@/v_98e5fcc10da34e39a34357fbc81960aal_zh_CNs_d_m/TheSaleEnterprise/RankingList/img/001.png" alt="" xid="image2" style="width:30px;" __cid="cUzummq" class="cUzummq">  
+                <label xid="label8" class="font-five cUzummq" __cid="cUzummq">拜访客户龙虎榜</label> 
+              </div>  
+              <div xid="col35" style="text-align:right;padding-top:7px;" __cid="cUzummq" class="cUzummq"> 
+                <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card1 cUzummq" xid="buttonGroup4" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cUzummq"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default5 active cUzummq" xid="button8" style="line-height: 12px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:$model.cDate.val(&#34;year&#34;)" __cid="cUzummq"> 
+                    <i xid="i8" __cid="cUzummq" class="cUzummq"></i>  
+                    <span xid="span22" style="margin-top:-4px;display:block;" __cid="cUzummq" class="cUzummq"></span> 
+                  </a> 
+                </div> 
+              </div>  
+              <div xid="col36" style="width:6em;padding-top:7px;height:30px;" __cid="cUzummq" class="cUzummq"> 
+                <select component="$model/UI2/system/components/justep/select/select" xid="select2" style="height:30px;" data-bind="component:{ref:$model.cDate.ref(&#34;khq2&#34;),name:'$model/UI2/system/components/justep/select/select'},optionsCaption:'请选择...',options:khq2.datas,optionsValue:'id',optionsText:'title',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cUzummq" class="cUzummq"></select> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cUzummq" xid="row22" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUzummq"> 
+              <div class="x-col cUzummq" xid="col47" __cid="cUzummq"> 
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row cUzummq" xid="row24" id="ListRow3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cUzummq"> 
+                  <div class="col col-xs-12 cUzummq" xid="col46" __cid="cUzummq"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cUzummq" xid="row23" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUzummq"> 
+                      <div class="x-col cUzummq" xid="col52" __cid="cUzummq"> 
+                        <span xid="span27" id="Name2" __cid="cUzummq" class="cUzummq">李四：</span> 
+                      </div>  
+                      <div class="x-col cUzummq" xid="col54" __cid="cUzummq"></div> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 border-Two cUzummq" xid="col44" __cid="cUzummq"> 
+                    <div class="progress cUzummq" component="$model/UI2/system/components/bootstrap/progress/progress" xid="progress4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/progress/progress'}" data-config="{&#34;valuemax&#34;:20,&#34;valuenow&#34;:20}" __cid="cUzummq"> 
+                      <div class="progress-bar progress-bar-success cUzummq" role="progressbar" xid="progressBar4" __cid="cUzummq"> 
+                        <span xid="span26" id="Num2" __cid="cUzummq" class="cUzummq" data-bind="text:&#34;2次&#34;">2次</span> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 mar2 cUzummq" xid="col53" style="text-align:center;" __cid="cUzummq" data-bind="event:{click:$model._callModelFn.bind($model, 'col53Click')}"> 
+                    <span xid="span2" class="font-six cUzummq" __cid="cUzummq">点击查看更多</span> 
+                  </div> 
+                </div>  
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row cUzummq" xid="row17" style="display:none" id="ListRow4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cUzummq"> 
+                  <div class="col col-xs-12 cUzummq" xid="col26" __cid="cUzummq"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cUzummq" xid="row16" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUzummq"> 
+                      <div class="x-col cUzummq" xid="col27" style="text-align:center;" __cid="cUzummq"> 
+                        <span xid="span17" class="font-four cUzummq" __cid="cUzummq">没有拜访客户信息</span> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div xid="div3" class="mar2 border-div cUzummq" style="background-color:white;" __cid="cUzummq"> 
+            <hr xid="hr3" __cid="cUzummq" class="cUzummq">  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two cUzummq" xid="row9" style="margin-top:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUzummq"> 
+              <div class="x-col cUzummq" xid="col18" __cid="cUzummq"> 
+                <img src="@justepContextPath@/v_3d175f5f05c04cdcad38c283cec6d2cal_zh_CNs_d_m/TheSaleEnterprise/RankingList/img/002.png" alt="" xid="image4" style="width:30px;" __cid="cUzummq" class="cUzummq">  
+                <label xid="label3" class="font-five cUzummq" __cid="cUzummq">客户发货龙虎榜</label> 
+              </div>  
+              <div xid="col37" style="text-align:right;padding-top:7px;" __cid="cUzummq" class="cUzummq"> 
+                <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card1 cUzummq" xid="buttonGroup5" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cUzummq"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default5 active cUzummq" xid="button9" style="line-height: 12px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:$model.cDate.val(&#34;year&#34;)" __cid="cUzummq"> 
+                    <i xid="i9" __cid="cUzummq" class="cUzummq"></i>  
+                    <span xid="span23" style="margin-top:-4px;display:block;" __cid="cUzummq" class="cUzummq"></span> 
+                  </a> 
+                </div> 
+              </div>  
+              <div xid="col38" style="width:6em;padding-top:7px;height:30px;" __cid="cUzummq" class="cUzummq"> 
+                <select component="$model/UI2/system/components/justep/select/select" xid="select3" style="height:30px;" data-bind="component:{ref:$model.cDate.ref(&#34;khq3&#34;),name:'$model/UI2/system/components/justep/select/select'},optionsCaption:'请选择...',options:khq3.datas,optionsValue:'id',optionsText:'title',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cUzummq" class="cUzummq"></select> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cUzummq" xid="row11" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUzummq"> 
+              <div class="x-col cUzummq" xid="col16" __cid="cUzummq"> 
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row cUzummq" xid="row19" id="ListRow5" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cUzummq"> 
+                  <div class="col col-xs-12 cUzummq" xid="col28" __cid="cUzummq"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cUzummq" xid="row18" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUzummq"> 
+                      <div class="x-col cUzummq" xid="col32" __cid="cUzummq"> 
+                        <span xid="span19" id="Name3" __cid="cUzummq" class="cUzummq">李四：</span> 
+                      </div>  
+                      <div class="x-col cUzummq" xid="col30" __cid="cUzummq"></div> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 border-Two cUzummq" xid="col29" __cid="cUzummq"> 
+                    <div class="progress cUzummq" component="$model/UI2/system/components/bootstrap/progress/progress" xid="progress3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/progress/progress'}" data-config="{&#34;valuemax&#34;:20,&#34;valuenow&#34;:20}" __cid="cUzummq"> 
+                      <div class="progress-bar progress-bar-success cUzummq" role="progressbar" xid="progressBar3" __cid="cUzummq"> 
+                        <span xid="span20" id="Num3" __cid="cUzummq" class="cUzummq" data-bind="text:&#34;2次&#34;">2次</span> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 mar2 cUzummq" xid="col31" style="text-align:center;" __cid="cUzummq" data-bind="event:{click:$model._callModelFn.bind($model, 'col53Click')}"> 
+                    <span xid="span18" class="font-six cUzummq" __cid="cUzummq">点击查看更多</span> 
+                  </div> 
+                </div>  
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row cUzummq" xid="row10" style="display:none" id="ListRow6" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cUzummq"> 
+                  <div class="col col-xs-12 cUzummq" xid="col15" __cid="cUzummq"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cUzummq" xid="row12" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUzummq"> 
+                      <div class="x-col cUzummq" xid="col14" style="text-align:center;" __cid="cUzummq"> 
+                        <span xid="span12" class="font-four cUzummq" __cid="cUzummq">没有客户发货信息</span> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div xid="div2" class="mar2 border-div cUzummq" style="background-color:white;" __cid="cUzummq"> 
+            <hr xid="hr2" __cid="cUzummq" class="cUzummq">  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two cUzummq" xid="row7" style="margin-top:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUzummq"> 
+              <div class="x-col cUzummq" xid="col13" __cid="cUzummq"> 
+                <img src="@justepContextPath@/v_bd235b15fa694a0289f52fa9b92a22e9l_zh_CNs_d_m/TheSaleEnterprise/RankingList/img/004.png" alt="" xid="image3" style="width:30px;" __cid="cUzummq" class="cUzummq">  
+                <label xid="label2" class="font-five cUzummq" __cid="cUzummq">客户费用龙虎榜</label> 
+              </div>  
+              <div xid="col39" style="text-align:right;padding-top:7px;" __cid="cUzummq" class="cUzummq"> 
+                <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card1 cUzummq" xid="buttonGroup6" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cUzummq"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default5 active cUzummq" xid="button10" style="line-height: 12px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:$model.cDate.val(&#34;year&#34;)" __cid="cUzummq"> 
+                    <i xid="i10" __cid="cUzummq" class="cUzummq"></i>  
+                    <span xid="span24" style="margin-top:-4px;display:block;" __cid="cUzummq" class="cUzummq"></span> 
+                  </a> 
+                </div> 
+              </div>  
+              <div xid="col40" style="width:6em;padding-top:7px;height:30px;" __cid="cUzummq" class="cUzummq"> 
+                <select component="$model/UI2/system/components/justep/select/select" xid="select4" style="height:30px;" data-bind="component:{ref:$model.cDate.ref(&#34;khq4&#34;),name:'$model/UI2/system/components/justep/select/select'},optionsCaption:'请选择...',options:khq4.datas,optionsValue:'id',optionsText:'title',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cUzummq" class="cUzummq"></select> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cUzummq" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUzummq"> 
+              <div class="x-col cUzummq" xid="col5" __cid="cUzummq"> 
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row cUzummq" xid="row8" id="ListRow7" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cUzummq"> 
+                  <div class="col col-xs-12 cUzummq" xid="col6" __cid="cUzummq"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cUzummq" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUzummq"> 
+                      <div class="x-col cUzummq" xid="col12" __cid="cUzummq"> 
+                        <span xid="span7" id="Name4" __cid="cUzummq" class="cUzummq">陕西银泽贸易有限公司：</span> 
+                      </div>  
+                      <div class="x-col cUzummq" xid="col9" __cid="cUzummq"></div> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 border-Two cUzummq" xid="col8" __cid="cUzummq"> 
+                    <div class="progress cUzummq" component="$model/UI2/system/components/bootstrap/progress/progress" xid="progress1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/progress/progress'}" data-config="{&#34;valuemax&#34;:20,&#34;valuenow&#34;:60}" __cid="cUzummq"> 
+                      <div class="progress-bar progress-bar-success cUzummq" role="progressbar" xid="progressBar1" __cid="cUzummq"> 
+                        <span xid="span8" id="Num4" __cid="cUzummq" class="cUzummq" data-bind="text:&#34;2.12万元&#34;">2.12万元</span> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 mar2 cUzummq" xid="col10" style="text-align:center;" __cid="cUzummq" data-bind="event:{click:$model._callModelFn.bind($model, 'col10Click')}"> 
+                    <span xid="span9" class="font-six cUzummq" __cid="cUzummq">点击查看更多</span> 
+                  </div> 
+                </div>  
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row cUzummq" xid="row25" style="display:none" id="ListRow8" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cUzummq"> 
+                  <div class="col col-xs-12 cUzummq" xid="col34" __cid="cUzummq"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cUzummq" xid="row20" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUzummq"> 
+                      <div class="x-col cUzummq" xid="col33" style="text-align:center;" __cid="cUzummq"> 
+                        <span xid="span21" class="font-four cUzummq" __cid="cUzummq">没有客户费用信息</span> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <hr xid="hr7" __cid="cUzummq" class="cUzummq"> 
+        </div>  
+        <style __cid="cUzummq" class="cUzummq">.x-panel.pcyIJvIz-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcyIJvIz-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcyIJvIz-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcyIJvIz-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcyIJvIz-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcyIJvIz-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcyIJvIz-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcyIJvIz-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcyIJvIz-iosstatusbar >.x-panel-content {top: 0px;}</style>
+      </div> 
+    </div>  
+    <style __cid="cUzummq" class="cUzummq">.x-panel.pc7ruIVb-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pc7ruIVb-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc7ruIVb-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc7ruIVb-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7ruIVb-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc7ruIVb-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7ruIVb-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7ruIVb-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7ruIVb-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

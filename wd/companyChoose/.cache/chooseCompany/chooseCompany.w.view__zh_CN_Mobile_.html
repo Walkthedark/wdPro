@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cMriia2" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cMriia2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">  
+  <title __cid="cMriia2" class="cMriia2">请选择公司</title>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cMriia2" class="cMriia2"></div>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cMriia2" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;active&#34;:0}" __cid="cMriia2"> 
+    <div class="x-contents-content active cMriia2" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cMriia2">
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcBjIF7z-iosstatusbar cMriia2" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cMriia2"> 
+        <div class="x-panel-content cMriia2" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMriia2">
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cMriia2" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;data1&#34;}" __cid="cMriia2"> 
+            <ul class="x-list-template hide cMriia2" xid="listTemplateUl1" __cid="cMriia2" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+              <li xid="li1" __cid="cMriia2" class="cMriia2"> 
+                <div xid="div1" class="list-group-item cMriia2" style="padding:0px 0px 0px 0px;" __cid="cMriia2">
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cMriia2" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMriia2"> 
+                    <div class="x-col cMriia2" xid="col3" __cid="cMriia2">
+                      <span xid="span3" style="font-family:“Microsoft YaHei”;font-size:16px;" __cid="cMriia2" class="cMriia2" data-bind="text:val(&#34;client_name&#34;)"></span>
+                    </div>
+                    <div class="x-col x-col-25 cMriia2" xid="col2" __cid="cMriia2">
+                      <i xid="i3" class="e-commerce e-commerce-gou cMriia2" style="color:#12BEFF;" __cid="cMriia2" data-bind="visible:val(&#34;client_id&#34;) == $model.data1.val(&#34;client_id&#34;)"></i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul> 
+          </div>
+        </div>  
+        <div class="x-panel-bottom cMriia2" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMriia2">
+          <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cMriia2" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cMriia2"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cMriia2" xid="button1" style="background-color:#ff4400;color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&#34;label&#34;:&#34;确定&#34;}" __cid="cMriia2"> 
+              <i xid="i1" __cid="cMriia2" class="cMriia2"></i>  
+              <span xid="span1" __cid="cMriia2" class="cMriia2">确定</span>
+            </a> 
+          </div>
+        </div>
+        <style __cid="cMriia2" class="cMriia2">.x-panel.pcBjIF7z-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcBjIF7z-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcBjIF7z-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcBjIF7z-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBjIF7z-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcBjIF7z-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBjIF7z-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBjIF7z-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBjIF7z-iosstatusbar >.x-panel-content {top: 0px;}</style>
+      </div>
+    </div>
+  </div>
+</div>

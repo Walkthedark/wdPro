@@ -1,0 +1,191 @@
+html {
+	font-size: 62.5% !important; /*10 ÷ 16 × 100% = 55.5%*/
+}
+
+body {
+	font-size: 1.6rem 'Microsoft YaHei', arial, tahoma, \5b8b\4f53,
+		sans-serif !important; /*1.4 × 10px = 14px */
+}
+
+.text-white {
+	color: #fff;
+}
+
+.text-black {
+	color: #212121;
+}
+
+.x-titlebar {
+	background-color: #ff4400;
+	border: 0;
+}
+
+.panel.panel-default {
+	margin-bottom: 10px;
+}
+
+.panel-heading {
+	border-color: #dfdfdf;
+}
+
+.row {
+	margin: 0;
+}
+
+.btn i {
+	font-size: 20px;
+}
+
+.tb-noborder {
+	border: 0;
+}
+
+/*底部结算**/
+.x-panel-bottom .h4 {
+	margin: 5px 0;
+	padding-right: 10px;
+	line-height: 48px;
+}
+
+.tb-settlement {
+	background-color: #fd5001;
+	color: #fff;
+	font-size: 16px;
+}
+/*商品 */
+.tb-goodList {
+	margin-bottom: 5px;
+}
+
+.tb-goodList:last-child {
+	margin-bottom: 0px;
+}
+
+.tb-goodList .x-col:last-child {
+	position: relative;
+}
+
+.tb-goodList .h5 {
+	height: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.tb-goodList .h6 {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.tb-numberOperation {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.tb-numberOperation .btn {
+	border-radius: 0;
+}
+
+.tb-numberOperation span {
+	padding: 4px 15px;
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.tb-img-shop {
+	width: 20px;
+	height: 20px;
+}
+
+.tb-img-good {
+	width: 93%;
+	height: 100px;
+}
+
+.tb-nomargin {
+	margin: 0;
+}
+
+.tb-nopadding {
+	padding: 0;
+}
+/*配送方式*/
+.x-popOver-overlay {
+	background-color: #000;
+}
+
+.x-popOver-content {
+	width: 300px;
+	background-color: #fff;
+}
+
+.x-popOver .x-popOver-overlay {
+	background-color: #000;
+}
+
+.x-popOver .x-popOver-content {
+	width: 100%;
+	background-color: #fff;
+	bottom: 0 !important;
+}
+
+.tb-colorImg {
+	left: 10px;
+	width: 60px;
+	height: 70px;
+}
+
+.tb-title {
+	padding: 20px 0 0 130px;
+}
+
+.tb-close {
+	font-size: 30px;
+}
+
+.tb-colorList .col {
+	padding-left: 0;
+	padding-right: 10px;
+	margin-bottom: 10px;
+}
+
+.tb-colorList .col div {
+	line-height: 30px;
+	background-color: #efefef;
+	border-radius: 5px;
+}
+
+.current {
+	background-color: #ff4400;
+	color: #fff !important;
+}
+ 
+.current2 {
+	/* border-style: solid solid solid solid; */
+	border-style: solid solid solid solid !important;
+	border-width: medium medium medium medium !important; 
+	/* border-color: #47D1D1 #47D1D1 #47D1D1 #47D1D1 !important */
+	border-color: black black black black !important;
+	color: #8E8E8E !important;
+}
+
+.tb-numberOperation {
+	width: 100%;
+	height: 30px;
+}
+
+.tb-numberOperation .btn {
+	border-radius: 0;
+}
+
+.tb-numberOperation span {
+	padding: 4px 15px;
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.tb-colorOk {
+	background-color: #ff4400;
+	color: #fff;
+	border-radius: 0;
+}

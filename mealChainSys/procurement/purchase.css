@@ -1,0 +1,12 @@
+.btn-color {
+	background-color: #FFFFFF;
+	color:#407422;;
+}
+ .btn-group .btn.active {
+	background-color: #407422;
+	color: #FFFFFF;;
+} 
+.btn-radius{
+	border-radius: 5px;
+	/* #8BA5AC */
+}

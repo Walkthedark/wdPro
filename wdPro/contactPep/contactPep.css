@@ -1,0 +1,38 @@
+.x-popOver-overlay.tClass {
+	top: 80px !important;
+	background-color: #000 !important;;
+}
+
+.input-sty {
+	border-style: none none none none;
+	disabled:true !important;
+}
+html {
+	font-size: 62.5% !important; /*10 ÷ 16 × 100% = 55.5%*/
+}
+
+body {
+	font-size: 1.6rem 'Microsoft YaHei', arial, tahoma, \5b8b\4f53,
+		sans-serif !important; /*1.4 × 10px = 14px */
+}
+.list_btn {
+	height: 25px;
+	width: 25px;
+	background-color: #52A7F5;
+	text-align: center;
+	color: #FEFFFE;
+	margin-top: 10px;
+	line-height: 18px;
+}
+.btn-radius {
+	border-radius: 30px;
+}
+.x-popOver-content.ddd {
+	bottom: 0.6px !important;
+}
+.tb-settlement2 {
+	line-height: 40px;
+	background-color: #fff;
+	color: #fff;
+	font-size: 16px;
+}

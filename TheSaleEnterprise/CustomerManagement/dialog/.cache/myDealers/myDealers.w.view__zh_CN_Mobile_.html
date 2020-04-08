@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cMFnie2" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cMFnie2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cMFnie2" class="cMFnie2"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="infoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/CustomerManagement/dialog/myDealersInfo.w&#34;}" __cid="cMFnie2" class="cMFnie2">
+    <div class="x-dialog-overlay cMFnie2" __cid="cMFnie2"></div>
+    <div class="x-dialog cMFnie2" style="display:none;" __cid="cMFnie2">
+      <div class="x-dialog-title cMFnie2" __cid="cMFnie2">
+        <button class="close cMFnie2" __cid="cMFnie2">
+          <span __cid="cMFnie2" class="cMFnie2">×</span>
+        </button>
+        <div class="x-dialog-title-text cMFnie2" __cid="cMFnie2"></div>
+      </div>
+      <div class="x-dialog-body cMFnie2" __cid="cMFnie2"></div>
+    </div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcfI3mUv-iosstatusbar cMFnie2" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cMFnie2"> 
+    <div class="x-panel-top cMFnie2" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMFnie2"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cMFnie2" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;我的经销商&#34;}" __cid="cMFnie2"> 
+        <div class="x-titlebar-left cMFnie2" xid="left2" __cid="cMFnie2"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cMFnie2" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;返回&#34;}" __cid="cMFnie2"> 
+            <i xid="i1" __cid="cMFnie2" class="cMFnie2"></i>  
+            <span xid="span4" __cid="cMFnie2" class="cMFnie2">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cMFnie2" xid="title2" __cid="cMFnie2">我的经销商</div>  
+        <div class="x-titlebar-right  cMFnie2" xid="right2" __cid="cMFnie2">
+          <div class="empty cMFnie2" __cid="cMFnie2"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-scroll-view cMFnie2" xid="content6" _xid="C7E1BB556C000001138D1E5D797C1106" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMFnie2"> 
+      <div class="x-scroll cMFnie2" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cMFnie2"> 
+        <div class="x-content-center x-pull-down container cMFnie2" xid="div1" __cid="cMFnie2"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down cMFnie2" xid="i2" __cid="cMFnie2"></i>  
+          <span class="x-pull-down-label cMFnie2" xid="span1" __cid="cMFnie2">下拉刷新...</span> 
+        </div>  
+        <div class="x-scroll-content cMFnie2" xid="div2" __cid="cMFnie2"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cMFnie2" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;orderData&#34;}" __cid="cMFnie2"> 
+            <ul class="x-list-template hide cMFnie2" xid="listTemplateUl1" __cid="cMFnie2" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+              <li xid="li1" class="border-Two cMFnie2" __cid="cMFnie2" data-bind="event:{click:$model._callModelFn.bind($model, 'li1Click')}"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cMFnie2" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMFnie2"> 
+                  <div class="x-col cMFnie2" xid="col1" __cid="cMFnie2"> 
+                    <div component="$model/UI2/system/components/bootstrap/row/row" class="row cMFnie2" xid="row2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cMFnie2"> 
+                      <div class="col col-xs-12 cMFnie2" xid="col4" __cid="cMFnie2"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output font-One cMFnie2" xid="output1" data-bind="component:{ref:ref(&#34;title&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cMFnie2"></div> 
+                      </div>  
+                      <div class="col col-xs-12 cMFnie2" xid="col5" __cid="cMFnie2"> 
+                        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cMFnie2" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cMFnie2"> 
+                          <label class="x-label font-Three cMFnie2" xid="label1" __cid="cMFnie2">编号：</label>  
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-Three cMFnie2" xid="output2" data-bind="component:{ref:ref(&#34;sn&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cMFnie2"></div> 
+                        </div> 
+                      </div>  
+                      <div class="col col-xs-12 cMFnie2" xid="col6" __cid="cMFnie2"> 
+                        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cMFnie2" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cMFnie2"> 
+                          <img src="@justepContextPath@/v_a81f64e736b9447c9a144349ef9b4177l_zh_CNs_d_m/TheSaleEnterprise/CustomerManagement/dialog/img/dingwei_light.png" alt="" xid="image1" style="width:20px;" __cid="cMFnie2" class="cMFnie2">  
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cMFnie2" xid="output3" data-bind="component:{ref:ref(&#34;addr&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cMFnie2"></div> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="x-content-center x-pull-up cMFnie2" xid="div3" __cid="cMFnie2"> 
+          <span class="x-pull-up-label cMFnie2" xid="span2" __cid="cMFnie2">加载更多...</span> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cMFnie2" class="cMFnie2">.x-panel.pcfI3mUv-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcfI3mUv-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcfI3mUv-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcfI3mUv-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfI3mUv-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcfI3mUv-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfI3mUv-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfI3mUv-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfI3mUv-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

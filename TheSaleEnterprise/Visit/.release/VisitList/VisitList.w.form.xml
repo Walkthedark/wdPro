@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cruyeYb" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cruyeYb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-card.btn-group.cruyeYb .btn.active.cruyeYb{font-size: 16px; color: rgb(143, 196, 28); border-bottom: 2px solid rgb(143, 196, 28)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cruyeYb" class="cruyeYb"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="outDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Visit/dialog/outGrid.w&quot;}" __cid="cruyeYb" class="cruyeYb">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cruyeYb" __cid="cruyeYb"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cruyeYb" style="display:none;" __cid="cruyeYb">
+      <xhtml:div class="x-dialog-title cruyeYb" __cid="cruyeYb">
+        <xhtml:button class="close cruyeYb" __cid="cruyeYb">
+          <xhtml:span __cid="cruyeYb" class="cruyeYb">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cruyeYb" __cid="cruyeYb"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cruyeYb" __cid="cruyeYb"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="selectDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Visit/dialog/selectRoute.w&quot;}" __cid="cruyeYb" class="cruyeYb">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cruyeYb" __cid="cruyeYb"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cruyeYb" style="display:none;" __cid="cruyeYb">
+      <xhtml:div class="x-dialog-title cruyeYb" __cid="cruyeYb">
+        <xhtml:button class="close cruyeYb" __cid="cruyeYb">
+          <xhtml:span __cid="cruyeYb" class="cruyeYb">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cruyeYb" __cid="cruyeYb"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cruyeYb" __cid="cruyeYb"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="select2Dialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Visit/dialog/selectRoute.w&quot;}" __cid="cruyeYb" class="cruyeYb">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cruyeYb" __cid="cruyeYb"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cruyeYb" style="display:none;" __cid="cruyeYb">
+      <xhtml:div class="x-dialog-title cruyeYb" __cid="cruyeYb">
+        <xhtml:button class="close cruyeYb" __cid="cruyeYb">
+          <xhtml:span __cid="cruyeYb" class="cruyeYb">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cruyeYb" __cid="cruyeYb"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cruyeYb" __cid="cruyeYb"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="activityCheckDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Visit/dialog/activityCheck.w&quot;}" __cid="cruyeYb" class="cruyeYb">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cruyeYb" __cid="cruyeYb"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cruyeYb" style="display:none;" __cid="cruyeYb">
+      <xhtml:div class="x-dialog-title cruyeYb" __cid="cruyeYb">
+        <xhtml:button class="close cruyeYb" __cid="cruyeYb">
+          <xhtml:span __cid="cruyeYb" class="cruyeYb">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cruyeYb" __cid="cruyeYb"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cruyeYb" __cid="cruyeYb"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcnyuYRn-iosstatusbar cruyeYb" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cruyeYb"> 
+    <div class="x-panel-top cruyeYb" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cruyeYb"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cruyeYb" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;客户拜访&quot;}" __cid="cruyeYb"> 
+        <div class="x-titlebar-left cruyeYb" xid="left2" __cid="cruyeYb"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cruyeYb" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cruyeYb"> 
+            <i xid="i1" __cid="cruyeYb" class="cruyeYb"/>  
+            <span xid="span4" __cid="cruyeYb" class="cruyeYb">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cruyeYb" xid="title2" __cid="cruyeYb">客户拜访</div>  
+        <div class="x-titlebar-right  cruyeYb" xid="right2" __cid="cruyeYb">
+          <div class="empty cruyeYb" __cid="cruyeYb"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cruyeYb" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cruyeYb"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc7jAb6r-iosstatusbar cruyeYb" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cruyeYb"> 
+        <div class="x-panel-top cruyeYb" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cruyeYb"> 
+          <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified x-card cruyeYb" xid="buttonGroup1" style="background-color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cruyeYb"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link active cruyeYb" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;今日计划内&quot;,&quot;target&quot;:&quot;content4&quot;}" __cid="cruyeYb"> 
+              <i xid="i2" __cid="cruyeYb" class="cruyeYb"/>  
+              <span xid="span1" __cid="cruyeYb" class="cruyeYb">今日计划内</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cruyeYb" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;今日计划外&quot;,&quot;target&quot;:&quot;content5&quot;}" __cid="cruyeYb"> 
+              <i xid="i3" __cid="cruyeYb" class="cruyeYb"/>  
+              <span xid="span2" __cid="cruyeYb" class="cruyeYb">今日计划外</span> 
+            </a> 
+          </div> 
+        </div>  
+        <div class="x-panel-content cruyeYb" xid="content3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cruyeYb"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cruyeYb" xid="contents2" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;swipe&quot;:false}" __cid="cruyeYb"> 
+            <div class="x-contents-content active cruyeYb" xid="content4" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cruyeYb"> 
+              <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcamErma-iosstatusbar cruyeYb" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cruyeYb"> 
+                <div class="x-panel-top cruyeYb" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cruyeYb"> 
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cruyeYb" xid="row3" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cruyeYb"> 
+                    <div class="x-col x-col-20 cruyeYb" xid="col11" __cid="cruyeYb"/>  
+                    <div class="x-col cruyeYb" xid="col12" __cid="cruyeYb"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn border-r cruyeYb" xid="button4" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button5Click" data-config="{&quot;label&quot;:&quot;填 写&quot;,&quot;target&quot;:&quot;content4&quot;}" __cid="cruyeYb"> 
+                        <i xid="i5" __cid="cruyeYb" class="cruyeYb"/>  
+                        <span xid="span6" __cid="cruyeYb" class="cruyeYb">填 写</span> 
+                      </a> 
+                    </div>  
+                    <div class="x-col x-col-20 cruyeYb" xid="col13" __cid="cruyeYb"/> 
+                  </div> 
+                </div>  
+                <div class="x-panel-content x-scroll-view cruyeYb" xid="content1" _xid="C7DF23A047C000015332AA703E904750" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cruyeYb"> 
+                  <div class="x-scroll cruyeYb" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cruyeYb"> 
+                    <div class="x-content-center x-pull-down container cruyeYb" xid="div6" __cid="cruyeYb"> 
+                      <i class="x-pull-down-img glyphicon x-icon-pull-down cruyeYb" xid="i12" __cid="cruyeYb"/>  
+                      <span class="x-pull-down-label cruyeYb" xid="span8" __cid="cruyeYb">下拉刷新...</span> 
+                    </div>  
+                    <div class="x-scroll-content cruyeYb" xid="div5" __cid="cruyeYb"> 
+                      <div component="$model/UI2/system/components/justep/list/list" class="x-list cruyeYb" xid="list2" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;InData&quot;}" __cid="cruyeYb"> 
+                        <ul class="x-list-template hide cruyeYb" xid="listTemplateUl2" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="cruyeYb"> 
+                          <li xid="li2" class="border-Two cruyeYb" bind-click="li1Click" __cid="cruyeYb"> 
+                            <div component="$model/UI2/system/components/bootstrap/row/row" class="row row-padding cruyeYb" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cruyeYb"> 
+                              <div class="col col-xs-12 cruyeYb" xid="col2" __cid="cruyeYb"> 
+                                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit  cruyeYb" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cruyeYb"> 
+                                  <label class="x-label cruyeYb" xid="label8" __cid="cruyeYb">网点名称：</label>  
+                                  <div xid="div10" class="x-edit cruyeYb" __cid="cruyeYb"> 
+                                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cruyeYb" xid="output16" data-bind="component:{ref:ref(&quot;wdmc&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cruyeYb"/> 
+                                  </div> 
+                                </div> 
+                              </div>  
+                              <div class="col col-xs-12 cruyeYb" xid="col1" __cid="cruyeYb"> 
+                                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit  cruyeYb" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cruyeYb"> 
+                                  <label class="x-label cruyeYb" xid="label7" __cid="cruyeYb">状态：</label>  
+                                  <div class="x-edit cruyeYb" xid="div9" __cid="cruyeYb"> 
+                                    <div component="$model/UI2/system/components/justep/output/output" xid="output14" data-bind="component:{ref:ref(&quot;zt&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cruyeYb" class="cruyeYb"/> 
+                                  </div> 
+                                </div> 
+                              </div>  
+                              <div class="col col-xs-12 cruyeYb" xid="col7" __cid="cruyeYb"> 
+                                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit  cruyeYb" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cruyeYb"> 
+                                  <label class="x-label cruyeYb" xid="label6" __cid="cruyeYb">网点编号：</label>  
+                                  <div class="x-edit cruyeYb" xid="div8" __cid="cruyeYb"> 
+                                    <div component="$model/UI2/system/components/justep/output/output" xid="output9" style="float:left;" data-bind="component:{ref:ref(&quot;netsn&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cruyeYb" class="cruyeYb"/> 
+                                  </div> 
+                                </div> 
+                              </div>  
+                              <div class="col col-xs-12 cruyeYb" xid="col6" __cid="cruyeYb"> 
+                                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit  cruyeYb" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cruyeYb"> 
+                                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon cruyeYb" xid="button10" style="color:#000;padding:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-mapmarker&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cruyeYb"> 
+                                    <i xid="i11" class="linear linear-mapmarker cruyeYb" __cid="cruyeYb"/>  
+                                    <span xid="span5" __cid="cruyeYb" class="cruyeYb"/> 
+                                  </a>  
+                                  <div component="$model/UI2/system/components/justep/output/output" xid="output7" style="color:#000;" class="x-edit cruyeYb" data-bind="component:{ref:ref(&quot;wddz&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cruyeYb"/> 
+                                </div> 
+                              </div>  
+                              <div class="col col-xs-12 cruyeYb" xid="col5" __cid="cruyeYb"> 
+                                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit  cruyeYb" xid="labelEdit9" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cruyeYb"> 
+                                  <label class="x-label cruyeYb" xid="label10" __cid="cruyeYb">上次拜访：</label>  
+                                  <div class="x-edit cruyeYb" xid="div15" __cid="cruyeYb"> 
+                                    <div component="$model/UI2/system/components/justep/output/output" xid="output10" style="float:left;" data-bind="component:{ref:ref(&quot;shangci&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cruyeYb" class="cruyeYb"/> 
+                                  </div> 
+                                </div> 
+                              </div>  
+                              <div class="col col-xs-12 cruyeYb" xid="col4" __cid="cruyeYb"> 
+                                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cruyeYb" xid="button11" style="float:left;color:#FF8000;" bind-visible="val(&quot;isdg&quot;) ==1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;e-commerce e-commerce-shangpin&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cruyeYb"> 
+                                  <i xid="i13" class="e-commerce e-commerce-shangpin cruyeYb" __cid="cruyeYb"/>  
+                                  <span xid="span16" __cid="cruyeYb" class="cruyeYb"/> 
+                                </a>  
+                                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cruyeYb" xid="button9" style="float:left;color:#FF8000;margin-left:10px;" bind-visible="val(&quot;iskey&quot;) ==1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;e-commerce e-commerce-shangpu&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cruyeYb"> 
+                                  <i xid="i7" class="e-commerce e-commerce-shangpu cruyeYb" __cid="cruyeYb"/>  
+                                  <span xid="span15" __cid="cruyeYb" class="cruyeYb"/> 
+                                </a> 
+                              </div>  
+                              <div class="col col-xs-12 cruyeYb" xid="col3" style="display:none" __cid="cruyeYb"> 
+                                <div component="$model/UI2/system/components/justep/output/output" xid="output12" data-bind="component:{ref:ref(&quot;address&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cruyeYb" class="cruyeYb"/> 
+                              </div> 
+                            </div> 
+                          </li> 
+                        </ul> 
+                      </div> 
+                    </div>  
+                    <div class="x-content-center x-pull-up cruyeYb" xid="div4" __cid="cruyeYb"> 
+                      <span class="x-pull-up-label cruyeYb" xid="span17" __cid="cruyeYb">加载更多...</span> 
+                    </div> 
+                  </div>  
+                  <div xid="div7" style="margin-top:40px;display:none;" __cid="cruyeYb" class="cruyeYb"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cruyeYb" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cruyeYb"> 
+                      <div class="x-col cruyeYb" xid="col9" style="text-align:center;" __cid="cruyeYb"> 
+                        <span xid="span23" __cid="cruyeYb" class="cruyeYb">您没有需要拜访的客户：</span> 
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cruyeYb" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cruyeYb"> 
+                      <div class="x-col cruyeYb" xid="col17" style="text-align:center;" __cid="cruyeYb"> 
+                        <span xid="span22" __cid="cruyeYb" class="cruyeYb">您可以：</span> 
+                      </div>  
+                      <div class="x-col cruyeYb" xid="col19" __cid="cruyeYb"/>  
+                      <div class="x-col cruyeYb" xid="col27" __cid="cruyeYb"/> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cruyeYb" xid="row8" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cruyeYb"> 
+                      <div class="x-col cruyeYb" xid="col28" __cid="cruyeYb"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default2 cruyeYb" xid="button12" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button12Click" data-config="{&quot;label&quot;:&quot;选择拜访路线&quot;}" __cid="cruyeYb"> 
+                          <i xid="i14" __cid="cruyeYb" class="cruyeYb"/>  
+                          <span xid="span20" __cid="cruyeYb" class="cruyeYb">选择拜访路线</span> 
+                        </a> 
+                      </div>  
+                      <div class="x-col cruyeYb" xid="col29" __cid="cruyeYb"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default2 cruyeYb" xid="button13" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button13Click" data-config="{&quot;label&quot;:&quot;添加计划外拜访&quot;}" __cid="cruyeYb"> 
+                          <i xid="i15" __cid="cruyeYb" class="cruyeYb"/>  
+                          <span xid="span21" __cid="cruyeYb" class="cruyeYb">添加计划外拜访</span> 
+                        </a> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div>  
+                <style __cid="cruyeYb" class="cruyeYb">.x-panel.pcamErma-iosstatusbar &gt;.x-panel-top {height: 55px;}.x-panel.pcamErma-iosstatusbar &gt;.x-panel-content { top: 55px;bottom: nullpx;}.x-panel.pcamErma-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcamErma-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcamErma-iosstatusbar &gt;.x-panel-top {height: 75px;}.iosstatusbar .x-panel.pcamErma-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcamErma-iosstatusbar &gt;.x-panel-content { top: 75px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcamErma-iosstatusbar &gt;.x-panel-top {height: 55px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcamErma-iosstatusbar &gt;.x-panel-content {top: 55px;}</style>
+              </div> 
+            </div>  
+            <div class="x-contents-content  x-content-on-remoting-sibling cruyeYb" xid="content5" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cruyeYb"> 
+              <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcqiMn2a-iosstatusbar cruyeYb" xid="panel4" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cruyeYb"> 
+                <div class="x-panel-top cruyeYb" xid="top4" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cruyeYb"> 
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cruyeYb" xid="row4" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cruyeYb"> 
+                    <div class="x-col x-col-20 cruyeYb" xid="col16" __cid="cruyeYb"/>  
+                    <div class="x-col cruyeYb" xid="col15" __cid="cruyeYb"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn border-r cruyeYb" xid="button5" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button5Click" data-config="{&quot;label&quot;:&quot;填 写&quot;}" __cid="cruyeYb"> 
+                        <i xid="i6" __cid="cruyeYb" class="cruyeYb"/>  
+                        <span xid="span7" __cid="cruyeYb" class="cruyeYb">填 写</span> 
+                      </a> 
+                    </div>  
+                    <div class="x-col x-col-20 cruyeYb" xid="col14" __cid="cruyeYb"/> 
+                  </div>  
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cruyeYb" xid="row5" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cruyeYb"> 
+                    <div class="x-col cruyeYb" xid="col18" style="text-align:center;" __cid="cruyeYb"> 
+                      <a xid="visitListTitle" style="text-decoration:underline;" bind-click="a1Click" __cid="cruyeYb" class="cruyeYb">今日有6个网点正在做市场活动，请优先拜访核检。</a> 
+                    </div> 
+                  </div> 
+                </div>  
+                <div class="x-panel-content x-scroll-view cruyeYb" xid="content2" _xid="C7DF1CBB13E00001685AFC9516009210" style="bottom: 0px; background-size: cover; background-image: url(http://localhost:42772/x5/UI2/v_/TheSaleEnterprise/Visit/none); top: 96px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cruyeYb"> 
+                  <div class="x-scroll cruyeYb" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cruyeYb"> 
+                    <div class="x-content-center x-pull-down container cruyeYb" xid="div1" __cid="cruyeYb"> 
+                      <i class="x-pull-down-img glyphicon x-icon-pull-down cruyeYb" xid="i8" __cid="cruyeYb"/>  
+                      <span class="x-pull-down-label cruyeYb" xid="span9" __cid="cruyeYb">下拉刷新...</span> 
+                    </div>  
+                    <div class="x-scroll-content cruyeYb" xid="div2" __cid="cruyeYb"> 
+                      <div component="$model/UI2/system/components/justep/list/list" class="x-list cruyeYb" xid="list1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;OutData&quot;}" __cid="cruyeYb"> 
+                        <ul class="x-list-template hide cruyeYb" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cruyeYb"> 
+                          <li xid="li1" class="border-Two cruyeYb" bind-click="li1Click" __cid="cruyeYb"> 
+                            <div component="$model/UI2/system/components/bootstrap/row/row" class="row row-padding cruyeYb" xid="row6" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cruyeYb"> 
+                              <div class="col col-xs-12 cruyeYb" xid="col20" __cid="cruyeYb"> 
+                                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cruyeYb" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cruyeYb"> 
+                                  <label class="x-label cruyeYb" xid="label4" __cid="cruyeYb">网点名称：</label>  
+                                  <div class="x-edit cruyeYb" xid="div12" __cid="cruyeYb"> 
+                                    <div component="$model/UI2/system/components/justep/output/output" xid="output13" data-bind="component:{ref:ref(&quot;wdmc&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cruyeYb" class="cruyeYb"/> 
+                                  </div> 
+                                </div> 
+                              </div>  
+                              <div class="col col-xs-12 cruyeYb" xid="col21" __cid="cruyeYb"> 
+                                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cruyeYb" xid="labelEdit7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cruyeYb"> 
+                                  <label class="x-label cruyeYb" xid="label5" __cid="cruyeYb">状态：</label>  
+                                  <div class="x-edit cruyeYb" xid="div13" __cid="cruyeYb"> 
+                                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cruyeYb" xid="output15" data-bind="component:{ref:ref(&quot;zt&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cruyeYb"/> 
+                                  </div> 
+                                </div> 
+                              </div>  
+                              <div class="col col-xs-12 cruyeYb" xid="col22" __cid="cruyeYb"> 
+                                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cruyeYb" xid="labelEdit8" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cruyeYb"> 
+                                  <label class="x-label cruyeYb" xid="label9" __cid="cruyeYb">网点编号：</label>  
+                                  <div class="x-edit cruyeYb" xid="div14" __cid="cruyeYb"> 
+                                    <div component="$model/UI2/system/components/justep/output/output" xid="output1" style="float:left;" data-bind="component:{ref:ref(&quot;netsn&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cruyeYb" class="cruyeYb"/> 
+                                  </div> 
+                                </div> 
+                              </div>  
+                              <div class="col col-xs-12 cruyeYb" xid="col23" __cid="cruyeYb"> 
+                                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cruyeYb" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cruyeYb"> 
+                                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon cruyeYb" xid="button6" style="color:#000;padding:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-mapmarker&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cruyeYb"> 
+                                    <i xid="i4" class="linear linear-mapmarker cruyeYb" __cid="cruyeYb"/>  
+                                    <span xid="span3" __cid="cruyeYb" class="cruyeYb"/> 
+                                  </a>  
+                                  <div component="$model/UI2/system/components/justep/output/output" xid="output3" style="color:#000;" class="x-edit cruyeYb" data-bind="component:{ref:ref(&quot;wddz&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cruyeYb"/> 
+                                </div> 
+                              </div>  
+                              <div class="col col-xs-12 cruyeYb" xid="col24" __cid="cruyeYb"> 
+                                <span xid="span12" style="float:left;" __cid="cruyeYb" class="cruyeYb">上次拜访：</span>  
+                                <div component="$model/UI2/system/components/justep/output/output" xid="output2" style="float:left;" data-bind="component:{ref:ref(&quot;rq&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cruyeYb" class="cruyeYb"/> 
+                              </div>  
+                              <div class="col col-xs-12 cruyeYb" xid="col25" __cid="cruyeYb"> 
+                                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cruyeYb" xid="button7" style="float:left;color:#FF8000;" bind-visible="val(&quot;isdg&quot;) ==1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;e-commerce e-commerce-shangpin&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cruyeYb"> 
+                                  <i xid="i9" class="e-commerce e-commerce-shangpin cruyeYb" __cid="cruyeYb"/>  
+                                  <span xid="span13" __cid="cruyeYb" class="cruyeYb"/> 
+                                </a>  
+                                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cruyeYb" xid="button8" style="float:left;color:#FF8000;margin-left:10px;" bind-visible="val(&quot;iskey&quot;) ==1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;e-commerce e-commerce-shangpu&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cruyeYb"> 
+                                  <i xid="i10" class="e-commerce e-commerce-shangpu cruyeYb" __cid="cruyeYb"/>  
+                                  <span xid="span14" __cid="cruyeYb" class="cruyeYb"/> 
+                                </a> 
+                              </div>  
+                              <div class="col col-xs-12 cruyeYb" xid="col26" style="display:none" __cid="cruyeYb"> 
+                                <div component="$model/UI2/system/components/justep/output/output" class="x-output cruyeYb" xid="output6" data-bind="component:{ref:ref(&quot;qddd&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cruyeYb"/> 
+                              </div> 
+                            </div> 
+                          </li> 
+                        </ul> 
+                      </div> 
+                    </div>  
+                    <div class="x-content-center x-pull-up cruyeYb" xid="div3" __cid="cruyeYb"> 
+                      <span class="x-pull-up-label cruyeYb" xid="span10" __cid="cruyeYb">加载更多...</span> 
+                    </div> 
+                  </div> 
+                </div>  
+                <style __cid="cruyeYb" class="cruyeYb">.x-panel.pcqiMn2a-iosstatusbar &gt;.x-panel-top {height: 105px;}.x-panel.pcqiMn2a-iosstatusbar &gt;.x-panel-content { top: 105px;bottom: nullpx;}.x-panel.pcqiMn2a-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcqiMn2a-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcqiMn2a-iosstatusbar &gt;.x-panel-top {height: 125px;}.iosstatusbar .x-panel.pcqiMn2a-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcqiMn2a-iosstatusbar &gt;.x-panel-content { top: 125px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcqiMn2a-iosstatusbar &gt;.x-panel-top {height: 105px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcqiMn2a-iosstatusbar &gt;.x-panel-content {top: 105px;}</style>
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cruyeYb" class="cruyeYb">.x-panel.pc7jAb6r-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc7jAb6r-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc7jAb6r-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc7jAb6r-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7jAb6r-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc7jAb6r-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7jAb6r-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7jAb6r-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7jAb6r-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div>  
+    <style __cid="cruyeYb" class="cruyeYb">.x-panel.pcnyuYRn-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcnyuYRn-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcnyuYRn-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcnyuYRn-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcnyuYRn-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcnyuYRn-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcnyuYRn-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcnyuYRn-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcnyuYRn-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="wReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:wReceiverReceive" __cid="cruyeYb" class="cruyeYb"/>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="newDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onClose:newDialogClose" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Visit/newVisit.w&quot;}" __cid="cruyeYb" class="cruyeYb">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cruyeYb" __cid="cruyeYb"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cruyeYb" style="display:none;" __cid="cruyeYb">
+      <xhtml:div class="x-dialog-title cruyeYb" __cid="cruyeYb">
+        <xhtml:button class="close cruyeYb" __cid="cruyeYb">
+          <xhtml:span __cid="cruyeYb" class="cruyeYb">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cruyeYb" __cid="cruyeYb"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cruyeYb" __cid="cruyeYb"/>
+    </xhtml:div>
+  </span>
+</div>

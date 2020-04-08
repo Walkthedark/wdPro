@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window czAfi6n" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="czAfi6n" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="czAfi6n" class="czAfi6n"/>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full czAfi6n" xid="pages" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;routable&quot;:false,&quot;slidable&quot;:false,&quot;swipe&quot;:false,&quot;wrap&quot;:true}" __cid="czAfi6n"> 
+    <div class="x-contents-content active czAfi6n" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="czAfi6n"> 
+      <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container czAfi6n" xid="windowContainer1" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" __cid="czAfi6n"/>
+    </div> 
+  </div>
+</div>

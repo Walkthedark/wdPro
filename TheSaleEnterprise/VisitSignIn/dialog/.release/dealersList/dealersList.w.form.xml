@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cuqyuQn" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cuqyuQn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cuqyuQn" class="cuqyuQn"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="infoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onClose:infoDialogClose" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/VisitSignIn/dialog/dealersInfoList.w&quot;}" __cid="cuqyuQn" class="cuqyuQn">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cuqyuQn" __cid="cuqyuQn"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cuqyuQn" style="display:none;" __cid="cuqyuQn">
+      <xhtml:div class="x-dialog-title cuqyuQn" __cid="cuqyuQn">
+        <xhtml:button class="close cuqyuQn" __cid="cuqyuQn">
+          <xhtml:span __cid="cuqyuQn" class="cuqyuQn">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cuqyuQn" __cid="cuqyuQn"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cuqyuQn" __cid="cuqyuQn"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pciE7Jjm-iosstatusbar cuqyuQn" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cuqyuQn"> 
+    <div class="x-panel-top cuqyuQn" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuqyuQn"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cuqyuQn" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;经销商拜访&quot;}" __cid="cuqyuQn"> 
+        <div class="x-titlebar-left cuqyuQn" xid="left2" __cid="cuqyuQn"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cuqyuQn" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cuqyuQn"> 
+            <i xid="i1" __cid="cuqyuQn" class="cuqyuQn"/>  
+            <span xid="span4" __cid="cuqyuQn" class="cuqyuQn">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cuqyuQn" xid="title2" __cid="cuqyuQn">经销商拜访</div>  
+        <div class="x-titlebar-right  cuqyuQn" xid="right2" __cid="cuqyuQn">
+          <div class="empty cuqyuQn" __cid="cuqyuQn"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cuqyuQn" xid="content6" style="background-color:#f0f0f0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuqyuQn"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcjeey2y-iosstatusbar cuqyuQn" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cuqyuQn"> 
+        <div class="x-panel-top cuqyuQn" xid="top2" style="background-color:white;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuqyuQn"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cuqyuQn" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cuqyuQn"> 
+            <div class="x-col cuqyuQn" xid="col14" __cid="cuqyuQn"> 
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control cuqyuQn" xid="input2" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-events="onBlur:input2Blur" data-config="{&quot;placeHolder&quot;:&quot;请输入经销商关键字&quot;}" __cid="cuqyuQn"/> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-panel-content cuqyuQn" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuqyuQn"> 
+          <div class="x-scroll cuqyuQn" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cuqyuQn"> 
+            <div class="x-content-center x-pull-down container cuqyuQn" xid="div2" __cid="cuqyuQn"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cuqyuQn" xid="i4" __cid="cuqyuQn"/>  
+              <span class="x-pull-down-label cuqyuQn" xid="span3" __cid="cuqyuQn">下拉刷新...</span> 
+            </div>  
+            <div class="x-scroll-content cuqyuQn" xid="div3" __cid="cuqyuQn"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cuqyuQn" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;BData&quot;}" __cid="cuqyuQn"> 
+                <ul class="x-list-template hide cuqyuQn" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cuqyuQn"> 
+                  <li xid="li1" class="border-Two cuqyuQn" bind-click="li1Click" __cid="cuqyuQn"> 
+                    <div component="$model/UI2/system/components/bootstrap/row/row" class="row row-padding cuqyuQn" xid="row1" style="padding:5px;background-color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cuqyuQn"> 
+                      <div class="col col-xs-12 cuqyuQn" xid="col1" style="padding:0px;" __cid="cuqyuQn"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output font-One cuqyuQn" xid="output1" style="float:left;" data-bind="component:{ref:ref(&quot;title&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cuqyuQn"/>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cuqyuQn" xid="output4" style="color:#FA7922;float:left;" data-bind="component:{ref:&quot;已访问&quot;+val(&quot;cishu&quot;)+&quot;次&quot;,name:'$model/UI2/system/components/justep/output/output'}" __cid="cuqyuQn"/> 
+                      </div>  
+                      <div class="col col-xs-12 cuqyuQn" xid="col3" style="padding:0px;" __cid="cuqyuQn"> 
+                        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cuqyuQn" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuqyuQn"> 
+                          <label class="x-label cuqyuQn" xid="label1" style="width:80px;" __cid="cuqyuQn">客户编号：</label>  
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cuqyuQn" xid="output2" data-bind="component:{ref:ref(&quot;sn&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cuqyuQn"/> 
+                        </div> 
+                      </div>  
+                      <div class="col col-xs-6 cuqyuQn" xid="col5" style="padding:0px;" __cid="cuqyuQn"> 
+                        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cuqyuQn" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuqyuQn"> 
+                          <label class="x-label cuqyuQn" xid="label2" style="width:5em;" __cid="cuqyuQn">上次拜访:</label>  
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cuqyuQn" xid="output3" data-bind="component:{ref:ref(&quot;scbf&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cuqyuQn"/> 
+                        </div> 
+                      </div>  
+                      <div class="col col-xs-6 cuqyuQn" xid="col2" style="padding:0px;" __cid="cuqyuQn"> 
+                        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cuqyuQn" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuqyuQn"> 
+                          <label class="x-label cuqyuQn" xid="label3" style="width:5em;" __cid="cuqyuQn">计划拜访:</label>  
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cuqyuQn" xid="output6" data-bind="component:{ref:ref(&quot;jhbf&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cuqyuQn"/> 
+                        </div> 
+                      </div>  
+                      <div class="col col-xs-10 cuqyuQn" xid="col6" style="padding:0px;" __cid="cuqyuQn"> 
+                        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cuqyuQn" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuqyuQn"> 
+                          <label class="x-label cuqyuQn" xid="label4" style="width:5em;" __cid="cuqyuQn">地址:</label>  
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cuqyuQn" xid="output7" data-bind="component:{ref:ref(&quot;addr&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cuqyuQn"/> 
+                        </div> 
+                      </div>  
+                      <div class="col col-xs-2 cuqyuQn" xid="col4" __cid="cuqyuQn"> 
+                        <div component="$model/UI2/system/components/justep/output/output" xid="output5" style="float:right;margin-top:10px;" data-bind="component:{ref:ref(&quot;col3&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cuqyuQn" class="cuqyuQn"/>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cuqyuQn" xid="button10" style="float:right;color:#000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-mapmarker&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cuqyuQn"> 
+                          <i xid="i11" class="linear linear-mapmarker cuqyuQn" __cid="cuqyuQn"/>  
+                          <span xid="span7" __cid="cuqyuQn" class="cuqyuQn"/> 
+                        </a> 
+                      </div>
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up cuqyuQn" xid="div4" __cid="cuqyuQn"> 
+              <span class="x-pull-up-label cuqyuQn" xid="span5" __cid="cuqyuQn">加载更多...</span> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cuqyuQn" class="cuqyuQn">.x-panel.pcjeey2y-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcjeey2y-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcjeey2y-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcjeey2y-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcjeey2y-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcjeey2y-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcjeey2y-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcjeey2y-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcjeey2y-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div>  
+    <style __cid="cuqyuQn" class="cuqyuQn">.x-panel.pciE7Jjm-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pciE7Jjm-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pciE7Jjm-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pciE7Jjm-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciE7Jjm-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pciE7Jjm-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciE7Jjm-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciE7Jjm-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciE7Jjm-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="wReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:wReceiverReceive" __cid="cuqyuQn" class="cuqyuQn"/> 
+</div>

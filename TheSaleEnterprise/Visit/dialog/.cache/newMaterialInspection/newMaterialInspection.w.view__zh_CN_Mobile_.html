@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cZVFree" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cZVFree" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cZVFree" class="cZVFree"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcyuQnam-iosstatusbar cZVFree" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cZVFree"> 
+    <div class="x-panel-top cZVFree" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cZVFree"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cZVFree" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;物料检查&#34;}" __cid="cZVFree"> 
+        <div class="x-titlebar-left cZVFree" xid="left2" __cid="cZVFree"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cZVFree" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;返回&#34;}" __cid="cZVFree"> 
+            <i xid="i1" __cid="cZVFree" class="cZVFree"></i>  
+            <span xid="span4" __cid="cZVFree" class="cZVFree">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cZVFree" xid="title2" __cid="cZVFree">物料检查</div>  
+        <div class="x-titlebar-right  cZVFree" xid="right2" __cid="cZVFree">
+          <div class="empty cZVFree" __cid="cZVFree"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cZVFree" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cZVFree"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row border-One cZVFree" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cZVFree"> 
+        <div class="x-col cZVFree" xid="col8" __cid="cZVFree"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cZVFree" xid="row8" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cZVFree"> 
+            <div class="col col-xs-12 cZVFree" xid="col18" __cid="cZVFree"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZVFree" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZVFree"> 
+                <label class="x-label cZVFree" xid="label5" style="width:80px;" __cid="cZVFree">物料名称：</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cZVFree" xid="input1" data-bind="component:{ref:$model.cDate.ref(&#34;wlmc&#34;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;placeHolder&#34;:&#34;请输入关键字查询&#34;}" __cid="cZVFree"> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cZVFree" xid="col19" __cid="cZVFree"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZVFree" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZVFree"> 
+                <label class="x-label cZVFree" xid="label2" style="width:80px;" __cid="cZVFree">检查结果：</label>  
+                <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radios x-edit cZVFree" xid="radioGroup1" style="color: #FA7922;" data-bind="component:{ref:$model.cDate.ref(&#34;jcjg&#34;),name:'$model/UI2/system/components/justep/select/radioGroup'},foreach:{data:CData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" __cid="cZVFree">
+                  <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cZVFree" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref(&#34;type&#34;),value:ref(&#34;id&#34;)}" __cid="cZVFree">
+                    <input type="radio" __cid="cZVFree" class="cZVFree">
+                    <label __cid="cZVFree" class="cZVFree"></label>
+                  </span>
+                </span> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cZVFree" xid="col21" __cid="cZVFree"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZVFree" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZVFree"> 
+                <label class="x-label cZVFree" xid="label6" style="width:80px;" __cid="cZVFree">数量：</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cZVFree" xid="input2" data-bind="component:{ref:$model.cDate.ref(&#34;sl&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cZVFree"> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cZVFree" xid="col2" __cid="cZVFree"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cZVFree" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cZVFree"> 
+                <label class="x-label cZVFree" xid="label1" style="width:80px;" __cid="cZVFree">检查描述：</label>  
+                <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit cZVFree" xid="textarea1" data-bind="component:{ref:$model.cDate.ref(&#34;jcms&#34;),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cZVFree"></textarea> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cZVFree" xid="col1" __cid="cZVFree"> 
+              <span xid="span1" __cid="cZVFree" class="cZVFree">上传照片（最多录入6张。）</span> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cZVFree" xid="row2" style="margin-top:5px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cZVFree"> 
+        <div class="x-col cZVFree" xid="col4" __cid="cZVFree"> 
+          <div class="imgline cZVFree" xid="div74" id="newMaterialInspectionImg" __cid="cZVFree"> 
+            <div class="lfloat simg plusbtn cZVFree" xid="div57" id="newMaterialInspectionImg1" __cid="cZVFree">+
+              <input id="uploadnewMaterialInspection" type="file" class="upfile cZVFree" accept="image/*,video/*;" capture="camera" xid="file1" __cid="cZVFree"> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cZVFree" xid="row4" style="padding:20px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cZVFree"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label cZVFree" xid="button4" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&#34;label&#34;:&#34;提 交&#34;}" __cid="cZVFree"> 
+          <i xid="i4" __cid="cZVFree" class="cZVFree"></i>  
+          <span xid="span5" __cid="cZVFree" class="cZVFree">提 交</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cZVFree" class="cZVFree">.x-panel.pcyuQnam-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcyuQnam-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcyuQnam-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcyuQnam-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcyuQnam-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcyuQnam-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcyuQnam-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcyuQnam-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcyuQnam-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="wReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:wReceiverReceive" __cid="cZVFree" class="cZVFree"></span> 
+</div>

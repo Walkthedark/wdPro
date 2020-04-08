@@ -1,0 +1,149 @@
+html, body {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	background: #eee;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+.info {
+	color: grey;
+	font-size: 1.1em;
+	font-weight: normal;
+}
+
+.text-white {
+	color: #fff;
+}
+
+.text-black {
+	color: #212121;
+	height: 25px;
+}
+
+.panel.panel-default {
+	margin-bottom: 10px;
+}
+
+.panel-heading {
+	border-color: #dfdfdf;
+}
+
+.row {
+	margin: 0;
+}
+
+.tb-noborder {
+	border: 0;
+}
+
+.tb-img-shop {
+	width: 20px;
+	height: 20px;
+}
+
+.tb-img-good {
+	width: 80px;
+	height: 80px;
+}
+
+.sumbtn {
+	border: 0px;
+	width: 3em;
+	border-top: 1px solid #67C9FF;
+	border-bottom: 1px solid #67C9FF;
+	border-radius: 0px;
+	padding: 5px 0px;
+	text-align: center;
+}
+
+.addbtn {
+	border: 1px solid #67C9FF;
+	border-top-left-radius: 0em;
+	border-top-right-radius: 2em;
+	border-bottom-right-radius: 2em;
+	border-bottom-left-radius: 0em;
+}
+
+.div_radius {
+	border-radius: 10px
+}
+
+.inp_radius {
+	
+}
+.form-control {
+	border: none;
+	border: 0;
+	border-radius: 0;
+	color: #999;
+}
+
+.subbtn {
+	border: 1px solid #67C9FF;
+	border-top-left-radius: 2em;
+	border-top-right-radius: 0em;
+	border-bottom-right-radius: 0em;
+	border-bottom-left-radius: 2em;
+}
+
+.tb-goodList {
+	margin-bottom: 5px;
+}
+
+.tb-goodList:last-child {
+	margin-bottom: 0px;
+}
+
+.tb-goodList .x-col:first-child {
+	padding-top: 35px;
+}
+
+.tb-goodList .x-col:nth-child(2) {
+	width: 100px;
+	padding-right: 5px;
+}
+
+.tb-goodList .h5 {
+	height: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.tb-goodList .h6 {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.tb-numberOperation {
+	width: 100%;
+	height: 30px;
+}
+
+.tb-numberOperation .btn {
+	border-radius: 0;
+}
+
+.tb-numberOperation span {
+	padding: 4px 15px;
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+/*底部结算**/
+.x-panel-bottom .h4 {
+	margin: 5px 0;
+}
+
+.tb-settlement {
+	line-height: 40px;
+	background-color: #56AEF7;
+	color: #fff;
+	font-size: 16px;
+}

@@ -1,0 +1,974 @@
+<!DOCTYPE HTML>
+<html style="width:100%;height:100%" class="no-js">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+        <script src="../../../v_eb2850fb4d054f2795ba350fae68a176l_zh_CNs_d_m/system/lib/base/modernizr-2.8.3.min.js"></script>
+		<script id="__varReplace">
+    	
+    	    	window.__justep = window.__justep || {};
+				window.__justep.isDebug = true;
+				window.__justep.__packageMode = "1";
+				window.__justep.__isPackage = false;;
+				window.__justep.url = location.href;
+				window.__justep.versionInfo = {};
+		 
+    	</script>
+        <script id="__updateVersion">
+        
+				(function(url, mode){
+					if (("@"+"mode@") === mode) mode = "3";
+					if (("@"+"versionUrl@") === url) url = "system/service/common/app.j";
+					if ((mode!=="1" && (mode!="2") && (mode!="3"))) return;
+					var async = (mode=="1");
+					var x5Version = "noApp";
+					var x5AppAgents = /x5app\/([0-9.]*)/.exec(navigator.userAgent);
+					if(x5AppAgents && x5AppAgents.length > 1){
+					   	x5Version = x5AppAgents[1] || "";
+					} 
+					function createXhr(){
+						try {	
+							return new XMLHttpRequest();
+						}catch (tryMS) {	
+							var version = ["MSXML2.XMLHttp.6.0",
+							               "MSXML2.XMLHttp.3.0",
+							               "MSXML2.XMLHttp",
+							               "Miscrosoft.XMLHTTP"];
+							for(var i = 0; i < version.length; i++){
+								try{
+							    	return new ActiveXObject(version[i]);
+								}catch(e){}
+							}
+						}
+						throw new Error("您的系统或浏览器不支持XHR对象！");
+					}
+					
+					function createGuid(){	
+						var guid = '';	
+						for (var i = 1; i <= 32; i++){		
+							var n = Math.floor(Math.random()*16.0).toString(16);		
+							guid += n;		
+							if((i==8)||(i==12)||(i==16)||(i==20))			
+								guid += '-';	
+						}	
+						return guid;
+					}
+					
+					function parseUrl(href){
+						href = href.split("#")[0];
+						var items = href.split("?");
+						href = items[0];
+						var query = items[1] || "";
+						items = href.split("/");
+						var baseItems = [];
+						var pathItems = [];
+						var isPath = false;
+						for (var i=0; i<items.length; i++){
+							if (mode == "3"){
+								if (items[i] && (items[i].indexOf("v_") === 0) 
+										&& (items[i].indexOf("l_") !== -1)
+										&& (items[i].indexOf("s_") !== -1)
+										&& (items[i].indexOf("d_") !== -1)
+										|| (items[i]=="v_")){
+									isPath = true;
+									continue;
+								}
+							}else{
+								if (items[i] && (items[i].indexOf("v-")===0) && (items[i].charAt(items[i].length-1)=="-") ){
+									isPath = true;
+									continue;
+								}
+							}
+							if (isPath){
+								pathItems.push(items[i]);
+							}else{
+								baseItems.push(items[i]);	
+							}
+							
+						}
+						var base = baseItems.join("/");
+						if (base.charAt(base.length-1)!=="/") base += "/";
+						
+						var path = pathItems.join("/");
+						if (path.charAt(0) !== "/") path = "/" + path;
+						return [base, path, query];
+					}
+					
+					
+					var items = parseUrl(window.location.href);
+					var base = items[0];
+					var path = items[1];
+					var query = items[2];
+					var xhr = createXhr();
+					url += ((url.indexOf("?")!=-1) ? "&" : "?") +"_=" + createGuid();
+					if (mode === "3"){
+						url += "&url=" + path;
+						if (query)
+							url += "&" + query;
+					}
+					xhr.open('GET', base + url, async);
+					
+					if (async){
+						xhr.onreadystatechange=function(){
+							if((xhr.readyState == 4) && (xhr.status == 200) && xhr.responseText){
+								var versionInfo = JSON.parse(xhr.responseText);
+								window.__justep.versionInfo = versionInfo;
+								window.__justep.versionInfo.baseUrl = base;
+								if (query){
+									path = path + "?" + query;
+								}
+								path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+								var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+								versionInfo.resourceInfo.indexPageURL = indexUrl;
+								if(versionInfo.resourceInfo.resourceUpdateMode != "md5"){
+									if (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1){
+										versionInfo.resourceInfo.isNewVersion = true;
+									};
+								}
+							}
+						}
+					}
+					
+					try{
+						xhr.send(null);
+						if (!async && (xhr.status == 200) && xhr.responseText){
+							var versionInfo = JSON.parse(xhr.responseText);
+							window.__justep.versionInfo = versionInfo;
+							window.__justep.versionInfo.baseUrl = base;
+							if ((mode==="3") && window.__justep.isDebug){
+								/* 模式3且是调试模式不重定向 */
+							}else{
+								if (query){
+									path = path + "?" + query;
+								}
+								if(versionInfo.resourceInfo.resourceUpdateMode == "md5"){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									versionInfo.resourceInfo.indexPageURL = indexUrl; 
+								}else if (versionInfo.resourceInfo && versionInfo.resourceInfo.version && (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1)){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									window.location.href = indexUrl;
+								}
+							}
+						}
+					}catch(e2){}
+				}("@versionUrl@", "@mode@"));
+                 
+        </script>
+    <link rel="stylesheet" href="../../../v_9c6920c5489d4fc88d8cf0c107e96d8bl_zh_CNs_d_m/system/components/bootstrap.min.css" include="$model/UI2/system/components/bootstrap/lib/css/bootstrap,$model/UI2/system/components/bootstrap/lib/css/bootstrap-theme"><link rel="stylesheet" href="../../../v_c32181b71cb74ce6bfe2a6247e21fcdcl_zh_CNs_d_m/system/components/comp.min.css" include="$model/UI2/system/components/justep/lib/css2/dataControl,$model/UI2/system/components/justep/input/css/datePickerPC,$model/UI2/system/components/justep/messageDialog/css/messageDialog,$model/UI2/system/components/justep/lib/css3/round,$model/UI2/system/components/justep/input/css/datePicker,$model/UI2/system/components/justep/row/css/row,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/attachment/css/attachment,$model/UI2/system/components/justep/barcode/css/barcodeImage,$model/UI2/system/components/bootstrap/dropdown/css/dropdown,$model/UI2/system/components/justep/contents/css/contents,$model/UI2/system/components/justep/common/css/forms,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/locker/css/locker,$model/UI2/system/components/justep/menu/css/menu,$model/UI2/system/components/justep/scrollView/css/scrollView,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/dialog/css/dialog,$model/UI2/system/components/justep/bar/css/bar,$model/UI2/system/components/justep/popMenu/css/popMenu,$model/UI2/system/components/justep/lib/css/icons,$model/UI2/system/components/justep/lib/css4/e-commerce,$model/UI2/system/components/justep/toolBar/css/toolBar,$model/UI2/system/components/justep/popOver/css/popOver,$model/UI2/system/components/justep/panel/css/panel,$model/UI2/system/components/bootstrap/carousel/css/carousel,$model/UI2/system/components/justep/wing/css/wing,$model/UI2/system/components/bootstrap/scrollSpy/css/scrollSpy,$model/UI2/system/components/justep/titleBar/css/titleBar,$model/UI2/system/components/justep/lib/css1/linear,$model/UI2/system/components/justep/numberSelect/css/numberList,$model/UI2/system/components/justep/list/css/list,$model/UI2/system/components/justep/dataTables/css/dataTables"></head>
+	
+    <body style="width:100%;height:100%;margin: 0;">
+        <script intro="none"></script>
+    	<div id="applicationHost" class="applicationHost" style="width:100%;height:100%;" __component-context__="block"><div xid="window" class="window cRbeAFv" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cRbeAFv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <style>.x-popOver-overlay.tClass.cRbeAFv{top: 80px !important; background-color: rgb(0, 0, 0) !important} .input-sty.cRbeAFv{border-style: none none none none; disabled: true !important} html.cRbeAFv{font-size: 62.5% !important} body.cRbeAFv{font-size: 1.6rem "Microsoft YaHei", arial, tahoma, 宋体, sans-serif !important} .list_btn.cRbeAFv{height: 25px; width: 25px; background-color: rgb(82, 167, 245); text-align: center; color: rgb(254, 255, 254); margin-top: 10px; line-height: 18px} .btn-radius.cRbeAFv{border-radius: 30px} .x-popOver-content.ddd.cRbeAFv{bottom: 0.6px !important} .tb-settlement2.cRbeAFv{line-height: 40px; background-color: rgb(255, 255, 255); color: rgb(255, 255, 255); font-size: 16px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cRbeAFv" class="cRbeAFv"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcmqqUzi-iosstatusbar cRbeAFv" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cRbeAFv"> 
+    <div class="x-panel-top cRbeAFv" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRbeAFv"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cRbeAFv" xid="row1" style="padding:0px 0px 0px 0px;background-color:#EBEAF0;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cRbeAFv"> 
+        <div xid="col3" style="width:0.5em;" __cid="cRbeAFv" class="cRbeAFv"></div>  
+        <div class="x-col x-col-80 cRbeAFv" xid="col4" __cid="cRbeAFv"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cRbeAFv" xid="input1" style="background-color:white;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;placeHolder&#34;:&#34;姓名/手机号&#34;}" __cid="cRbeAFv">
+        </div>  
+        <div xid="col5" class="x-col cRbeAFv" __cid="cRbeAFv">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm cRbeAFv" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button12Click" data-config="{&#34;label&#34;:&#34;确定&#34;}" __cid="cRbeAFv"> 
+            <i xid="i2" __cid="cRbeAFv" class="cRbeAFv"></i>  
+            <span xid="span10" __cid="cRbeAFv" class="cRbeAFv">确定</span>
+          </a>
+        </div>
+      </div>  
+      <div xid="div1" class="list-group-item cRbeAFv" style="padding:0px 0px 0px 0px;" __cid="cRbeAFv"> 
+        <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cRbeAFv" xid="buttonGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cRbeAFv"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cRbeAFv" xid="button4" style="color:#585958;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&#34;icon&#34;:&#34;icon-arrow-down-b&#34;,&#34;label&#34;:&#34;分类&#34;}" __cid="cRbeAFv"> 
+            <i xid="i4" class="icon-arrow-down-b cRbeAFv" __cid="cRbeAFv"></i>  
+            <span xid="span4" __cid="cRbeAFv" class="cRbeAFv">分类</span>
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cRbeAFv" xid="button5" style="color:#585958;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button5Click" data-config="{&#34;icon&#34;:&#34;icon-arrow-down-b&#34;,&#34;label&#34;:&#34;销售区域&#34;}" __cid="cRbeAFv"> 
+            <i xid="i5" class="icon-arrow-down-b cRbeAFv" __cid="cRbeAFv"></i>  
+            <span xid="span5" __cid="cRbeAFv" class="cRbeAFv">销售区域</span>
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cRbeAFv" xid="button6" style="color:#585958;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button6Click" data-config="{&#34;icon&#34;:&#34;icon-arrow-down-b&#34;,&#34;label&#34;:&#34;创建人&#34;}" __cid="cRbeAFv"> 
+            <i xid="i6" class="icon-arrow-down-b cRbeAFv" __cid="cRbeAFv"></i>  
+            <span xid="span6" __cid="cRbeAFv" class="cRbeAFv">创建人</span>
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cRbeAFv" xid="button7" style="color:#585958;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button7Click" data-config="{&#34;icon&#34;:&#34;icon-arrow-down-b&#34;,&#34;label&#34;:&#34;更多&#34;}" __cid="cRbeAFv"> 
+            <i xid="i7" class="icon-arrow-down-b cRbeAFv" __cid="cRbeAFv"></i>  
+            <span xid="span7" __cid="cRbeAFv" class="cRbeAFv">更多</span>
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content  x-scroll-view cRbeAFv" xid="content1" _xid="C884D9EC587000016D262090F8F01CBA" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRbeAFv"> 
+      <div xid="div3" class="list-group-item cRbeAFv" style="background-color:#EBEAF0;" __cid="cRbeAFv"></div>  
+      <div class="x-scroll cRbeAFv" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-events="onPullUp:scrollView1PullUp" __cid="cRbeAFv"> 
+        <div class="x-scroll-content cRbeAFv" xid="div32" __cid="cRbeAFv">
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cRbeAFv" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;linkManData&#34;}" __cid="cRbeAFv"> 
+            <ul class="x-list-template hide cRbeAFv" xid="listTemplateUl1" __cid="cRbeAFv" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+              <li xid="li1" __cid="cRbeAFv" class="cRbeAFv">
+                <div xid="div72" class="list-group-item cRbeAFv" style="border-right-style:none;border-left-style:none;padding-right:0px;padding-top:2px;padding-bottom:2px;" __cid="cRbeAFv" data-bind="event:{click:$model._callModelFn.bind($model, 'div72Click')}"> 
+                  <div xid="div73" class="list-group-item cRbeAFv" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="cRbeAFv"> 
+                    <div class="media cRbeAFv" xid="media1" __cid="cRbeAFv"> 
+                      <div class="media-left cRbeAFv" xid="mediaLeft1" __cid="cRbeAFv"> 
+                        <a href="#" xid="a1" __cid="cRbeAFv" class="cRbeAFv"> 
+                          <img class="media-object cRbeAFv" src="../../../v_2c0d17685f8e47b9bc7b58971eafe9dcl_zh_CNs_d_m/wdPro/common/img/head1.png" alt="" xid="image1" style="width:45px;height:45px;" __cid="cRbeAFv">
+                        </a> 
+                      </div>  
+                      <div class="media-body cRbeAFv" xid="mediaBody1" __cid="cRbeAFv"> 
+                        <h4 class="media-heading cRbeAFv" xid="h41" __cid="cRbeAFv"> 
+                          <span xid="span1" style="color:#585958;" __cid="cRbeAFv" class="cRbeAFv" data-bind="text:val(&#34;staff_name&#34;)">张三</span>  
+                          <span xid="span2" style="color:#585958;font-size:12px" __cid="cRbeAFv" class="cRbeAFv" data-bind="text:val(&#34;phone&#34;)"></span> 
+                        </h4>  
+                        <h5 xid="h51" style="color:#585958;" __cid="cRbeAFv" class="cRbeAFv" data-bind="text:val(&#34;category&#34;)">苏宁电器商城</h5>
+                      </div>  
+                      <div class="media-right cRbeAFv" xid="mediaRight9" __cid="cRbeAFv"> 
+                        <div xid="div24" class="btn-radius list_btn cRbeAFv" style="margin-top:8px;" __cid="cRbeAFv" data-bind="event:{click:$model._callModelFn.bind($model, 'div9Click')}">...</div>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              </li>
+            </ul> 
+          </div>
+        </div>  
+        <div class="x-content-center x-pull-up cRbeAFv" xid="div33" __cid="cRbeAFv"> 
+          <span class="x-pull-up-label cRbeAFv" xid="span27" __cid="cRbeAFv">加载更多...</span>
+        </div> 
+      </div>
+    </div>  
+    <div class="x-panel-bottom cRbeAFv" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRbeAFv"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cRbeAFv" xid="buttonGroup1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cRbeAFv"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cRbeAFv" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&#34;icon&#34;:&#34;icon-plus-round&#34;,&#34;label&#34;:&#34;新增联系人&#34;}" __cid="cRbeAFv"> 
+          <i xid="i3" class="icon-plus-round cRbeAFv" __cid="cRbeAFv"></i>  
+          <span xid="span3" style="font-size:16px;" __cid="cRbeAFv" class="cRbeAFv">新增联系人</span>
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cRbeAFv" class="cRbeAFv">.x-panel.pcmqqUzi-iosstatusbar >.x-panel-top {height: 80px;}.x-panel.pcmqqUzi-iosstatusbar >.x-panel-content { top: 80px;bottom: nullpx;}.x-panel.pcmqqUzi-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcmqqUzi-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmqqUzi-iosstatusbar >.x-panel-top {height: 100px;}.iosstatusbar .x-panel.pcmqqUzi-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmqqUzi-iosstatusbar >.x-panel-content { top: 100px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmqqUzi-iosstatusbar >.x-panel-top {height: 80px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmqqUzi-iosstatusbar >.x-panel-content {top: 80px;}</style>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cRbeAFv" xid="popOver4" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;anchor&#34;:&#34;button4&#34;,&#34;direction&#34;:&#34;left-bottom&#34;}" __cid="cRbeAFv"> 
+    <div class="x-popOver-overlay tClass cRbeAFv" xid="div8" __cid="cRbeAFv"></div>  
+    <div class="x-popOver-content cRbeAFv" xid="div7" style="width:100%;height:100%;" __cid="cRbeAFv"> 
+      <div xid="div10" style="width:100%;height:60%;" __cid="cRbeAFv" class="cRbeAFv"> 
+        <div xid="div6" style="height:100%;width:100%;" __cid="cRbeAFv" class="cRbeAFv"> 
+          <div component="$model/UI2/system/components/justep/panel/panel" class=" x-full pcUVnmQf-iosstatusbar cRbeAFv" xid="panel5" style="height:100%;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cRbeAFv"> 
+            <div class="x-panel-content cRbeAFv" xid="content5" style="background-color:#EEEFEE;width:100%;height:60%;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRbeAFv"> 
+              <div xid="div37" class="list-group-item cRbeAFv" style="padding:5px 5px 5px 5px;" __cid="cRbeAFv"> 
+                <div class="media cRbeAFv" xid="media19" __cid="cRbeAFv"> 
+                  <div class="media-body cRbeAFv" xid="mediaBody19" __cid="cRbeAFv"> 
+                    <h5 xid="h527" style="color:#181919;" __cid="cRbeAFv" class="cRbeAFv">超期未联系客户</h5>
+                  </div>  
+                  <div class="media-right cRbeAFv" xid="mediaRight17" __cid="cRbeAFv"> 
+                    <span component="$model/UI2/system/components/justep/button/radio" class="x-radio x-radio-success x-radio-sm cRbeAFv" xid="radio11" style="margin-top:9px;" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cRbeAFv">
+                      <input type="radio" __cid="cRbeAFv" class="cRbeAFv">
+                      <label __cid="cRbeAFv" class="cRbeAFv"></label>
+                    </span>
+                  </div> 
+                </div> 
+              </div>  
+              <div xid="div43" class="list-group-item cRbeAFv" style="padding:5px 5px 5px 5px;" __cid="cRbeAFv"> 
+                <div class="media cRbeAFv" xid="media17" __cid="cRbeAFv"> 
+                  <div class="media-body cRbeAFv" xid="mediaBody20" __cid="cRbeAFv"> 
+                    <h5 xid="h528" style="color:#181919;" __cid="cRbeAFv" class="cRbeAFv">无联系客户</h5>
+                  </div>  
+                  <div class="media-right cRbeAFv" xid="mediaRight16" __cid="cRbeAFv"> 
+                    <span component="$model/UI2/system/components/justep/button/radio" class="x-radio x-radio-success x-radio-sm cRbeAFv" xid="radio15" style="margin-top:9px;" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cRbeAFv">
+                      <input type="radio" __cid="cRbeAFv" class="cRbeAFv">
+                      <label __cid="cRbeAFv" class="cRbeAFv"></label>
+                    </span>
+                  </div> 
+                </div> 
+              </div>  
+              <div xid="div38" class="list-group-item cRbeAFv" style="padding:5px 5px 5px 5px;" __cid="cRbeAFv"> 
+                <div class="media cRbeAFv" xid="media16" __cid="cRbeAFv"> 
+                  <div class="media-body cRbeAFv" xid="mediaBody16" __cid="cRbeAFv"> 
+                    <h5 xid="h529" style="color:#181919;" __cid="cRbeAFv" class="cRbeAFv">无跟单客户</h5>
+                  </div>  
+                  <div class="media-right cRbeAFv" xid="mediaRight18" __cid="cRbeAFv"> 
+                    <span component="$model/UI2/system/components/justep/button/radio" class="x-radio x-radio-success x-radio-sm cRbeAFv" xid="radio12" style="margin-top:9px;" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cRbeAFv">
+                      <input type="radio" __cid="cRbeAFv" class="cRbeAFv">
+                      <label __cid="cRbeAFv" class="cRbeAFv"></label>
+                    </span>
+                  </div> 
+                </div> 
+              </div>  
+              <div xid="div45" class="list-group-item cRbeAFv" style="padding:5px 5px 5px 5px;" __cid="cRbeAFv"> 
+                <div class="media cRbeAFv" xid="media20" __cid="cRbeAFv"> 
+                  <div class="media-body cRbeAFv" xid="mediaBody17" __cid="cRbeAFv"> 
+                    <h5 xid="h530" style="color:#181919;" __cid="cRbeAFv" class="cRbeAFv">无订货客户</h5>
+                  </div>  
+                  <div class="media-right cRbeAFv" xid="mediaRight20" __cid="cRbeAFv"> 
+                    <span component="$model/UI2/system/components/justep/button/radio" class="x-radio x-radio-success x-radio-sm cRbeAFv" xid="radio13" style="margin-top:9px;" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cRbeAFv">
+                      <input type="radio" __cid="cRbeAFv" class="cRbeAFv">
+                      <label __cid="cRbeAFv" class="cRbeAFv"></label>
+                    </span>
+                  </div> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cRbeAFv" xid="row7" style="height:5px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cRbeAFv"> 
+                <div class="x-col cRbeAFv" xid="col16" __cid="cRbeAFv"></div>
+              </div>  
+              <div xid="div11" class="list-group-item cRbeAFv" style="padding:5px 5px 5px 5px;" __cid="cRbeAFv"> 
+                <div class="media cRbeAFv" xid="media4" __cid="cRbeAFv"> 
+                  <div class="media-body cRbeAFv" xid="mediaBody4" __cid="cRbeAFv"> 
+                    <h5 xid="h54" style="color:#181919;" __cid="cRbeAFv" class="cRbeAFv">无订货客户</h5>
+                  </div>  
+                  <div class="media-right cRbeAFv" xid="mediaRight1" __cid="cRbeAFv"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cRbeAFv" xid="button15" style="margin-top:9px;color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-chevron-right&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cRbeAFv"> 
+                      <i xid="i17" class="icon-chevron-right cRbeAFv" __cid="cRbeAFv"></i>  
+                      <span xid="span19" __cid="cRbeAFv" class="cRbeAFv"></span>
+                    </a> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-panel-bottom cRbeAFv" xid="bottom5" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRbeAFv"> 
+              <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cRbeAFv" xid="buttonGroup6" style="height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cRbeAFv"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cRbeAFv" xid="button16" style="background-color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="cRbeAFv"> 
+                  <i xid="i16" __cid="cRbeAFv" class="cRbeAFv"></i>  
+                  <span xid="span18" __cid="cRbeAFv" class="cRbeAFv">取消</span>
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cRbeAFv" xid="button17" style="background-color:#4DA7F4;color:#FEFFFE;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;确认&#34;}" __cid="cRbeAFv"> 
+                  <i xid="i15" __cid="cRbeAFv" class="cRbeAFv"></i>  
+                  <span xid="span17" __cid="cRbeAFv" class="cRbeAFv">确认</span>
+                </a> 
+              </div> 
+            </div>  
+            <style __cid="cRbeAFv" class="cRbeAFv">.x-panel.pcUVnmQf-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcUVnmQf-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcUVnmQf-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcUVnmQf-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcUVnmQf-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcUVnmQf-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcUVnmQf-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcUVnmQf-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcUVnmQf-iosstatusbar >.x-panel-content {top: 0px;}</style>
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div9" style="width:100%;height:40%;" class="div_opacity cRbeAFv" __cid="cRbeAFv"></div>
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cRbeAFv" xid="popOver7" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;anchor&#34;:&#34;top1&#34;,&#34;direction&#34;:&#34;left-bottom&#34;}" __cid="cRbeAFv"> 
+    <div class="x-popOver-overlay tClass cRbeAFv" xid="div12" __cid="cRbeAFv"></div>  
+    <div class="x-popOver-content cRbeAFv" xid="div13" style="width:100%;height:60%;" __cid="cRbeAFv"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pceQzYVf-iosstatusbar cRbeAFv" xid="panel9" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cRbeAFv"> 
+        <div class="x-panel-content cRbeAFv" xid="content9" style="background-color:white;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRbeAFv"> 
+          <div xid="div2" __cid="cRbeAFv" class="cRbeAFv"> 
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list cRbeAFv" xid="list5" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;categoryData&#34;}" __cid="cRbeAFv"> 
+              <ul class="x-list-template hide cRbeAFv" xid="listTemplateUl5" __cid="cRbeAFv" data-bind="foreach:{data:$model.foreach_list5($element),afterRender:$model.foreach_afterRender_list5.bind($model,$element)}"> 
+                <li xid="li5" __cid="cRbeAFv" class="cRbeAFv"> 
+                  <div xid="div16" class="list-group-item cRbeAFv" style="padding:5px 5px 5px 5px;border-radius:0px" __cid="cRbeAFv"> 
+                    <div class="media cRbeAFv" xid="media2" __cid="cRbeAFv"> 
+                      <div class="media-body cRbeAFv" xid="mediaBody2" __cid="cRbeAFv"> 
+                        <h5 xid="h53" style="color:#181919;" __cid="cRbeAFv" class="cRbeAFv" data-bind="text:val(&#34;name&#34;)">未分类</h5>
+                      </div>  
+                      <div class="media-right cRbeAFv" xid="mediaRight4" __cid="cRbeAFv"> 
+                        <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cRbeAFv" xid="checkbox3" checkedValue="1" uncheckedValue="0" data-config="{&#34;checked&#34;:false,&#34;checkedValue&#34;:&#34;1&#34;,&#34;disabled&#34;:false,&#34;uncheckedValue&#34;:&#34;0&#34;}" data-bind="component:{ref:ref(&#34;choose&#34;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cRbeAFv">
+                          <input type="checkbox" __cid="cRbeAFv" class="cRbeAFv">
+                          <label __cid="cRbeAFv" class="cRbeAFv"></label>
+                        </span>
+                      </div> 
+                    </div> 
+                  </div> 
+                </li> 
+              </ul> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-panel-bottom cRbeAFv" xid="bottom7" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRbeAFv"> 
+          <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cRbeAFv" xid="buttonGroup7" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cRbeAFv"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cRbeAFv" xid="button26" style="background-color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;popOver7.hide&#34;}" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="cRbeAFv"> 
+              <i xid="i25" __cid="cRbeAFv" class="cRbeAFv"></i>  
+              <span xid="span11" __cid="cRbeAFv" class="cRbeAFv">取消</span>
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cRbeAFv" xid="button27" style="background-color:#4DA7F4;color:#FEFFFE;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button27Click" data-config="{&#34;label&#34;:&#34;确认&#34;}" __cid="cRbeAFv"> 
+              <i xid="i27" __cid="cRbeAFv" class="cRbeAFv"></i>  
+              <span xid="span12" __cid="cRbeAFv" class="cRbeAFv">确认</span>
+            </a> 
+          </div> 
+        </div>  
+        <style __cid="cRbeAFv" class="cRbeAFv">.x-panel.pceQzYVf-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pceQzYVf-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pceQzYVf-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pceQzYVf-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceQzYVf-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pceQzYVf-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceQzYVf-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceQzYVf-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceQzYVf-iosstatusbar >.x-panel-content {top: 0px;}</style>
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cRbeAFv" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;anchor&#34;:&#34;top1&#34;,&#34;direction&#34;:&#34;left-bottom&#34;}" __cid="cRbeAFv"> 
+    <div class="x-popOver-overlay tClass cRbeAFv" xid="div4" __cid="cRbeAFv"></div>  
+    <div class="x-popOver-content cRbeAFv" xid="div5" style="width:100%;height:60%;" __cid="cRbeAFv"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcZbmeUr-iosstatusbar cRbeAFv" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cRbeAFv"> 
+        <div class="x-panel-content cRbeAFv" xid="content2" style="background-color:white;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRbeAFv"> 
+          <div xid="div14" __cid="cRbeAFv" class="cRbeAFv"> 
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list cRbeAFv" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;region_idData&#34;}" __cid="cRbeAFv"> 
+              <ul class="x-list-template hide cRbeAFv" xid="listTemplateUl2" __cid="cRbeAFv" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}"> 
+                <li xid="li2" __cid="cRbeAFv" class="cRbeAFv"> 
+                  <div xid="div15" class="list-group-item cRbeAFv" style="padding:5px 5px 5px 5px;border-radius:0px" __cid="cRbeAFv"> 
+                    <div class="media cRbeAFv" xid="media3" __cid="cRbeAFv"> 
+                      <div class="media-body cRbeAFv" xid="mediaBody3" __cid="cRbeAFv"> 
+                        <h5 xid="h52" style="color:#181919;" __cid="cRbeAFv" class="cRbeAFv" data-bind="text:val(&#34;name&#34;)">未分类</h5>
+                      </div>  
+                      <div class="media-right cRbeAFv" xid="mediaRight2" __cid="cRbeAFv"> 
+                        <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cRbeAFv" xid="checkbox1" checkedValue="1" uncheckedValue="0" data-config="{&#34;checked&#34;:false,&#34;checkedValue&#34;:&#34;1&#34;,&#34;disabled&#34;:false,&#34;uncheckedValue&#34;:&#34;0&#34;}" data-bind="component:{ref:ref(&#34;choose&#34;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cRbeAFv">
+                          <input type="checkbox" __cid="cRbeAFv" class="cRbeAFv">
+                          <label __cid="cRbeAFv" class="cRbeAFv"></label>
+                        </span>
+                      </div> 
+                    </div> 
+                  </div> 
+                </li> 
+              </ul> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-panel-bottom cRbeAFv" xid="bottom2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRbeAFv"> 
+          <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cRbeAFv" xid="buttonGroup3" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cRbeAFv"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cRbeAFv" xid="button9" style="background-color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;popOver1.hide&#34;}" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="cRbeAFv"> 
+              <i xid="i8" __cid="cRbeAFv" class="cRbeAFv"></i>  
+              <span xid="span14" __cid="cRbeAFv" class="cRbeAFv">取消</span>
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cRbeAFv" xid="button8" style="background-color:#4DA7F4;color:#FEFFFE;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button8Click" data-config="{&#34;label&#34;:&#34;确认&#34;}" __cid="cRbeAFv"> 
+              <i xid="i9" __cid="cRbeAFv" class="cRbeAFv"></i>  
+              <span xid="span13" __cid="cRbeAFv" class="cRbeAFv">确认</span>
+            </a> 
+          </div> 
+        </div>  
+        <style __cid="cRbeAFv" class="cRbeAFv">.x-panel.pcZbmeUr-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcZbmeUr-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcZbmeUr-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcZbmeUr-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcZbmeUr-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcZbmeUr-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcZbmeUr-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcZbmeUr-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcZbmeUr-iosstatusbar >.x-panel-content {top: 0px;}</style>
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cRbeAFv" xid="popOver2" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;anchor&#34;:&#34;top1&#34;,&#34;direction&#34;:&#34;left-bottom&#34;}" __cid="cRbeAFv"> 
+    <div class="x-popOver-overlay tClass cRbeAFv" xid="div20" __cid="cRbeAFv"></div>  
+    <div class="x-popOver-content cRbeAFv" xid="div19" style="width:100%;height:60%;" __cid="cRbeAFv"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc6fEBFb-iosstatusbar cRbeAFv" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cRbeAFv"> 
+        <div class="x-panel-content cRbeAFv" xid="content3" style="background-color:white;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRbeAFv"> 
+          <div xid="div17" __cid="cRbeAFv" class="cRbeAFv"> 
+            <div xid="div21" __cid="cRbeAFv" class="cRbeAFv">
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cRbeAFv" xid="button12" style="font-size:14px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;请输入创建人名称&#34;}" __cid="cRbeAFv"> 
+                <i xid="i12" __cid="cRbeAFv" class="cRbeAFv"></i>  
+                <span xid="span20" __cid="cRbeAFv" class="cRbeAFv">请输入创建人名称</span>
+              </a>
+            </div>  
+            <div xid="div22" __cid="cRbeAFv" class="cRbeAFv">
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control cRbeAFv" xid="nameInp" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cRbeAFv">
+            </div>
+          </div> 
+        </div>  
+        <div class="x-panel-bottom cRbeAFv" xid="bottom3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRbeAFv"> 
+          <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cRbeAFv" xid="buttonGroup4" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cRbeAFv"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cRbeAFv" xid="button11" style="background-color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;popOver2.hide&#34;}" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="cRbeAFv"> 
+              <i xid="i10" __cid="cRbeAFv" class="cRbeAFv"></i>  
+              <span xid="span15" __cid="cRbeAFv" class="cRbeAFv">取消</span>
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cRbeAFv" xid="button10" style="background-color:#4DA7F4;color:#FEFFFE;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button10Click" data-config="{&#34;label&#34;:&#34;确认&#34;}" __cid="cRbeAFv"> 
+              <i xid="i11" __cid="cRbeAFv" class="cRbeAFv"></i>  
+              <span xid="span16" __cid="cRbeAFv" class="cRbeAFv">确认</span>
+            </a> 
+          </div> 
+        </div>  
+        <style __cid="cRbeAFv" class="cRbeAFv">.x-panel.pc6fEBFb-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pc6fEBFb-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pc6fEBFb-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc6fEBFb-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc6fEBFb-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pc6fEBFb-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc6fEBFb-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc6fEBFb-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc6fEBFb-iosstatusbar >.x-panel-content {top: 0px;}</style>
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cRbeAFv" xid="popOver3" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;anchor&#34;:&#34;top1&#34;,&#34;direction&#34;:&#34;left-bottom&#34;}" __cid="cRbeAFv"> 
+    <div class="x-popOver-overlay tClass cRbeAFv" xid="div27" __cid="cRbeAFv"></div>  
+    <div class="x-popOver-content cRbeAFv" xid="div26" style="width:100%;height:60%;" __cid="cRbeAFv"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcJFrMNj-iosstatusbar cRbeAFv" xid="panel4" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cRbeAFv"> 
+        <div class="x-panel-content cRbeAFv" xid="content4" style="background-color:white;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRbeAFv"> 
+          <div xid="div25" __cid="cRbeAFv" class="cRbeAFv"> 
+            <div xid="div29" class="list-group-item cRbeAFv" style="padding:5px 5px 5px 5px;border-radius:0px" __cid="cRbeAFv"> 
+              <div class="media cRbeAFv" xid="media7" __cid="cRbeAFv"> 
+                <div class="media-body cRbeAFv" xid="mediaBody7" __cid="cRbeAFv"> 
+                  <h5 xid="h56" style="color:#181919;" __cid="cRbeAFv" class="cRbeAFv">未关联客户的联系人</h5>
+                </div>  
+                <div class="media-right cRbeAFv" xid="mediaRight6" __cid="cRbeAFv"> 
+                  <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cRbeAFv" xid="checkbox4" checkedValue="1" uncheckedValue="0" data-config="{&#34;checked&#34;:false,&#34;checkedValue&#34;:&#34;1&#34;,&#34;disabled&#34;:false,&#34;uncheckedValue&#34;:&#34;0&#34;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cRbeAFv">
+                    <input type="checkbox" __cid="cRbeAFv" class="cRbeAFv">
+                    <label __cid="cRbeAFv" class="cRbeAFv"></label>
+                  </span>
+                </div> 
+              </div> 
+            </div>
+          </div>  
+          <div xid="div18" __cid="cRbeAFv" class="cRbeAFv"> 
+            <div xid="div23" class="list-group-item cRbeAFv" style="padding:5px 5px 5px 5px;border-radius:0px" __cid="cRbeAFv"> 
+              <div class="media cRbeAFv" xid="media5" __cid="cRbeAFv"> 
+                <div class="media-body cRbeAFv" xid="mediaBody5" __cid="cRbeAFv"> 
+                  <h5 xid="h55" style="color:#181919;" __cid="cRbeAFv" class="cRbeAFv">近期生日</h5>
+                </div>  
+                <div class="media-right cRbeAFv" xid="mediaRight3" __cid="cRbeAFv"> 
+                  <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cRbeAFv" xid="checkbox2" checkedValue="1" uncheckedValue="0" data-config="{&#34;checked&#34;:false,&#34;checkedValue&#34;:&#34;1&#34;,&#34;disabled&#34;:false,&#34;uncheckedValue&#34;:&#34;0&#34;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cRbeAFv">
+                    <input type="checkbox" __cid="cRbeAFv" class="cRbeAFv">
+                    <label __cid="cRbeAFv" class="cRbeAFv"></label>
+                  </span>
+                </div> 
+              </div> 
+            </div> 
+          </div>
+          <div xid="div28" class="list-group-item cRbeAFv" style="padding:5px 5px 5px 5px;border-radius:0px" __cid="cRbeAFv"> 
+            <div class="media cRbeAFv" xid="media6" __cid="cRbeAFv"> 
+              <div class="media-body cRbeAFv" xid="mediaBody6" __cid="cRbeAFv"> 
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cRbeAFv" xid="labelEdit7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRbeAFv"> 
+                  <label class="x-label cRbeAFv" xid="label7" __cid="cRbeAFv">关注状态</label>  
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit input-sty cRbeAFv" xid="input4" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cRbeAFv">
+                </div> 
+              </div>  
+              <div class="media-right cRbeAFv" xid="mediaRight5" __cid="cRbeAFv"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cRbeAFv" xid="button19" style="color:#909090;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button19Click" data-config="{&#34;icon&#34;:&#34;icon-arrow-right-b&#34;}" __cid="cRbeAFv"> 
+                  <i xid="i19" class="icon-arrow-right-b cRbeAFv" __cid="cRbeAFv"></i>  
+                  <span xid="span24" __cid="cRbeAFv" class="cRbeAFv"></span>
+                </a> 
+              </div> 
+            </div> 
+          </div>  
+          <div xid="div30" class="list-group-item cRbeAFv" style="padding:5px 5px 5px 5px;border-radius:0px" __cid="cRbeAFv"> 
+            <div class="media cRbeAFv" xid="media8" __cid="cRbeAFv"> 
+              <div class="media-body cRbeAFv" xid="mediaBody8" __cid="cRbeAFv"> 
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cRbeAFv" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRbeAFv"> 
+                  <label class="x-label cRbeAFv" xid="label1" __cid="cRbeAFv">联系人标签</label>  
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit input-sty cRbeAFv" xid="input5" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cRbeAFv">
+                </div> 
+              </div>  
+              <div class="media-right cRbeAFv" xid="mediaRight7" __cid="cRbeAFv"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cRbeAFv" xid="button20" style="color:#909090;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button20Click" data-config="{&#34;icon&#34;:&#34;icon-arrow-right-b&#34;}" __cid="cRbeAFv"> 
+                  <i xid="i20" class="icon-arrow-right-b cRbeAFv" __cid="cRbeAFv"></i>  
+                  <span xid="span25" __cid="cRbeAFv" class="cRbeAFv"></span>
+                </a> 
+              </div> 
+            </div> 
+          </div>  
+          <div xid="div31" class="list-group-item cRbeAFv" style="padding:5px 5px 5px 5px;border-radius:0px" __cid="cRbeAFv"> 
+            <div class="media cRbeAFv" xid="media9" __cid="cRbeAFv"> 
+              <div class="media-body cRbeAFv" xid="mediaBody9" __cid="cRbeAFv"> 
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cRbeAFv" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRbeAFv"> 
+                  <label class="x-label cRbeAFv" xid="label2" __cid="cRbeAFv">性别</label>  
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit input-sty cRbeAFv" xid="input6" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cRbeAFv">
+                </div> 
+              </div>  
+              <div class="media-right cRbeAFv" xid="mediaRight8" __cid="cRbeAFv"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cRbeAFv" xid="button21" style="color:#909090;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button21Click" data-config="{&#34;icon&#34;:&#34;icon-arrow-right-b&#34;}" __cid="cRbeAFv"> 
+                  <i xid="i21" class="icon-arrow-right-b cRbeAFv" __cid="cRbeAFv"></i>  
+                  <span xid="span26" __cid="cRbeAFv" class="cRbeAFv"></span>
+                </a> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-panel-bottom cRbeAFv" xid="bottom4" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRbeAFv"> 
+          <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cRbeAFv" xid="buttonGroup5" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cRbeAFv"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cRbeAFv" xid="button18" style="background-color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;popOver3.hide&#34;}" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="cRbeAFv"> 
+              <i xid="i14" __cid="cRbeAFv" class="cRbeAFv"></i>  
+              <span xid="span22" __cid="cRbeAFv" class="cRbeAFv">取消</span>
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cRbeAFv" xid="button13" style="background-color:#4DA7F4;color:#FEFFFE;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button13Click" data-config="{&#34;label&#34;:&#34;确认&#34;}" __cid="cRbeAFv"> 
+              <i xid="i13" __cid="cRbeAFv" class="cRbeAFv"></i>  
+              <span xid="span21" __cid="cRbeAFv" class="cRbeAFv">确认</span>
+            </a> 
+          </div> 
+        </div>  
+        <style __cid="cRbeAFv" class="cRbeAFv">.x-panel.pcJFrMNj-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcJFrMNj-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcJFrMNj-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcJFrMNj-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJFrMNj-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcJFrMNj-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJFrMNj-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJFrMNj-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJFrMNj-iosstatusbar >.x-panel-content {top: 0px;}</style>
+      </div> 
+    </div> 
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="tagWinDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/wdPro/contactPep/dialog/dialog/linkTagList.w&#34;}" __cid="cRbeAFv" class="cRbeAFv">
+    <div class="x-dialog-overlay cRbeAFv" __cid="cRbeAFv"></div>
+    <div class="x-dialog cRbeAFv" style="display:none;" __cid="cRbeAFv">
+      <div class="x-dialog-title cRbeAFv" __cid="cRbeAFv">
+        <button class="close cRbeAFv" __cid="cRbeAFv">
+          <span __cid="cRbeAFv" class="cRbeAFv">×</span>
+        </button>
+        <div class="x-dialog-title-text cRbeAFv" __cid="cRbeAFv"></div>
+      </div>
+      <div class="x-dialog-body cRbeAFv" __cid="cRbeAFv"></div>
+    </div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cRbeAFv" xid="popOver5" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;anchor&#34;:&#34;bottom1&#34;,&#34;direction&#34;:&#34;auto&#34;}" __cid="cRbeAFv"> 
+    <div class="x-popOver-overlay cRbeAFv" xid="div36" __cid="cRbeAFv"></div>  
+    <div class="x-popOver-content ddd cRbeAFv" xid="div34" style="width:100%;height:35%;" __cid="cRbeAFv"> 
+      <div xid="div35" style="height:100%;width:100%;background-color:white;" __cid="cRbeAFv" class="cRbeAFv"> 
+        <div component="$model/UI2/system/components/justep/panel/panel" class=" x-full pc6n2UFj-iosstatusbar cRbeAFv" xid="panel6" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cRbeAFv"> 
+          <div class="x-panel-content cRbeAFv" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRbeAFv"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cRbeAFv" xid="row15" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cRbeAFv"> 
+              <div class="x-col cRbeAFv" xid="col12" style="text-align:center;" __cid="cRbeAFv"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cRbeAFv" xid="button41" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button41Click" data-config="{&#34;icon&#34;:&#34;linear linear-phonehandset&#34;,&#34;label&#34;:&#34;打电话&#34;}" __cid="cRbeAFv"> 
+                  <i xid="i37" class="linear linear-phonehandset cRbeAFv" style="color:#BACE83;font-size:20px" __cid="cRbeAFv"></i>  
+                  <span xid="span39" __cid="cRbeAFv" class="cRbeAFv">打电话</span>
+                </a> 
+              </div>  
+              <div class="x-col cRbeAFv" xid="col13" style="text-align:center;" __cid="cRbeAFv"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cRbeAFv" xid="button40" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button40Click" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-save24&#34;,&#34;label&#34;:&#34;绑定外部联系人&#34;}" __cid="cRbeAFv"> 
+                  <i xid="i39" class="dataControl dataControl-save24 cRbeAFv" style="color:#DEAA64;font-size:20px" __cid="cRbeAFv"></i>  
+                  <span xid="span38" __cid="cRbeAFv" class="cRbeAFv">绑定外部联系人</span>
+                </a> 
+              </div>  
+              <div class="x-col cRbeAFv" xid="col1" style="text-align:center;" __cid="cRbeAFv"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cRbeAFv" xid="button1" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&#34;icon&#34;:&#34;linear linear-trash&#34;,&#34;label&#34;:&#34;删除&#34;}" __cid="cRbeAFv"> 
+                  <i xid="i43" class="linear linear-trash cRbeAFv" style="color:#9F96BC;font-size:20px" __cid="cRbeAFv"></i>  
+                  <span xid="span41" __cid="cRbeAFv" class="cRbeAFv">删除</span>
+                </a>
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cRbeAFv" xid="row8" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cRbeAFv"> 
+              <div class="x-col cRbeAFv" xid="col36" style="text-align:center;" __cid="cRbeAFv"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cRbeAFv" xid="button45" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button45Click" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-pencils&#34;,&#34;label&#34;:&#34;修改&#34;}" __cid="cRbeAFv"> 
+                  <i xid="i42" class="dataControl dataControl-pencils cRbeAFv" style="color:#469408;font-size:20px" __cid="cRbeAFv"></i>  
+                  <span xid="span8" __cid="cRbeAFv" class="cRbeAFv">修改</span>
+                </a>
+              </div>  
+              <div class="x-col cRbeAFv" xid="col35" style="text-align:center;" __cid="cRbeAFv"></div>  
+              <div class="x-col cRbeAFv" xid="col34" style="text-align:center;" __cid="cRbeAFv"></div>
+            </div> 
+          </div>  
+          <div class="x-panel-bottom cRbeAFv" xid="bottom6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRbeAFv"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cRbeAFv" xid="row13" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cRbeAFv"> 
+              <div class="x-col cRbeAFv" xid="col31" style="text-align:center;" __cid="cRbeAFv"></div>  
+              <div class="x-col cRbeAFv" xid="col32" style="text-align:center;" __cid="cRbeAFv"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top btn-only-label cRbeAFv" xid="button39" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;popOver5.hide&#34;}" data-config="{&#34;icon&#34;:&#34;linear linear-phonehandset&#34;,&#34;label&#34;:&#34;取消&#34;}" __cid="cRbeAFv"> 
+                  <i xid="i46" class="linear linear-phonehandset cRbeAFv" __cid="cRbeAFv"></i>  
+                  <span xid="span40" __cid="cRbeAFv" class="cRbeAFv">取消</span>
+                </a> 
+              </div>  
+              <div class="x-col cRbeAFv" xid="col33" style="text-align:center;" __cid="cRbeAFv"></div>
+            </div> 
+          </div>  
+          <style __cid="cRbeAFv" class="cRbeAFv">.x-panel.pc6n2UFj-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pc6n2UFj-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pc6n2UFj-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc6n2UFj-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc6n2UFj-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pc6n2UFj-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc6n2UFj-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc6n2UFj-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc6n2UFj-iosstatusbar >.x-panel-content {top: 0px;}</style>
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <span component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog1" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:messageDialog1OK" data-config="{&#34;message&#34;:&#34;是否要删除联系人？&#34;,&#34;title&#34;:&#34;温馨提示&#34;,&#34;type&#34;:&#34;OKCancel&#34;}" __cid="cRbeAFv" class="cRbeAFv">
+    <div class="x-modal-overlay cRbeAFv" __cid="cRbeAFv"></div>
+    <div class="x-modal cRbeAFv" __cid="cRbeAFv">
+      <div class="x-modal-inner cRbeAFv" __cid="cRbeAFv">
+        <div class="x-modal-title cRbeAFv" __cid="cRbeAFv">温馨提示</div>
+        <div class="x-modal-text cRbeAFv" __cid="cRbeAFv">是否要删除联系人？</div>
+        <input class="x-modal-prompt-input cRbeAFv" type="text" __cid="cRbeAFv">
+      </div>
+      <div class="x-modal-buttons cRbeAFv" __cid="cRbeAFv">
+        <a class="x-modal-button x-modal-button-bold OK cRbeAFv" value="ok" __cid="cRbeAFv">确定</a>
+        <a class="x-modal-button x-modal-button-bold Yes cRbeAFv" value="yes" __cid="cRbeAFv">是</a>
+        <a class="x-modal-button x-modal-button-bold No cRbeAFv" value="no" __cid="cRbeAFv">否</a>
+        <a class="x-modal-button x-modal-button-bold Cancel cRbeAFv" value="cancel" __cid="cRbeAFv">取消</a>
+      </div>
+    </div>
+  </span>
+</div></div>
+        
+        <div id="downloadGCF" style="display:none;padding:50px;">
+        	<span>您使用的浏览器需要下载插件才能使用, </span>
+        	<a id="downloadGCFLink" href="#">下载地址</a>
+        	<p>(安装后请重新打开浏览器)</p>
+        </div>
+    	<script>
+    	
+    	            //判断浏览器, 判断GCF
+    	 			var browser = {
+    			        isIe: function () {
+    			            return navigator.appVersion.indexOf("MSIE") != -1;
+    			        },
+    			        navigator: navigator.appVersion,
+    			        getVersion: function() {
+    			            var version = 999; // we assume a sane browser
+    			            if (navigator.appVersion.indexOf("MSIE") != -1)
+    			                // bah, IE again, lets downgrade version number
+    			                version = parseFloat(navigator.appVersion.split("MSIE")[1]);
+    			            return version;
+    			        }
+    			    };
+    				function isGCFInstalled(){
+    			      try{
+    			        var i = new ActiveXObject('ChromeTab.ChromeFrame');
+    			        if (i) {
+    			          return true;
+    			        }
+    			      }catch(e){}
+    			      return false;
+    				}
+    	            //判断浏览器, 判断GCF
+    	            var __continueRun = true;
+    				if (browser.isIe() && (browser.getVersion() < 10) && !isGCFInstalled()) {
+    					document.getElementById("applicationHost").style.display = 'none';
+    					document.getElementById("downloadGCF").style.display = 'block';
+    					var downloadLink = "/" + location.pathname.match(/[^\/]+/)[0] + "/v8.msi";
+    					document.getElementById("downloadGCFLink").href = downloadLink; 
+    					__continueRun = false;
+    	            }
+		 	
+    	</script>
+        <script id="_metaJS" src="../../../v_3eef81befb434a2c81290a58b45fc565l_zh_CNs_d_m/system/config/meta.js"> </script>
+        <script id="_requireJS" src="../../../v_a6ac23cc774d43e0bc57d0ec24df7493l_zh_CNs_d_m/system/lib/require/require.2.1.10.js"> </script>
+        <script src="../../../v_c8656fdb69f349919fafa685ce9769c3l_zh_CNs_d_m/system/core.min.js"></script><script src="../../../v_62b0aab8f6e34b9783558fe0a2502a89l_zh_CNs_d_m/system/common.min.js"></script><script src="../../../v_de10922d3b0c49968a25a0919b017d8bl_zh_CNs_d_m/system/components/comp.min.js"></script><script id="_mainScript">
+        
+			if (__continueRun) {
+                window.__justep.cssReady = function(fn){
+                	var promises = [];
+                	for (var p in window.__justep.__ResourceEngine.__loadingCss){
+                		if(window.__justep.__ResourceEngine.__loadingCss.hasOwnProperty(p))
+                			promises.push(window.__justep.__ResourceEngine.__loadingCss[p].promise());
+                	}
+                	$.when.apply($, promises).done(fn);
+                };
+                
+            	window.__justep.__ResourceEngine = {
+            		readyRegExp : navigator.platform === 'PLAYSTATION 3' ? /^complete$/ : /^(complete|loaded)$/,
+            		url: window.location.href,	
+            		/*contextPath: 不包括语言 */
+            		contextPath: "",
+            		serverPath: "",
+            		__loadedJS: [],
+            		__loadingCss: {},
+            		onLoadCss: function(url, node){
+            			if (!this.__loadingCss[url]){
+            				this.__loadingCss[url] = $.Deferred();	
+                			if (node.attachEvent &&
+                                    !(node.attachEvent.toString && node.attachEvent.toString().indexOf('[native code') < 0) &&
+                                    !(typeof opera !== 'undefined' && opera.toString() === '[object Opera]')) {
+                                node.attachEvent('onreadystatechange', this.onLinkLoad.bind(this));
+                            } else {
+                                node.addEventListener('load', this.onLinkLoad.bind(this), false);
+                                node.addEventListener('error', this.onLinkError.bind(this), false);
+                            }
+            			}
+            		},
+            		
+            		onLinkLoad: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+            	        if (evt.type === 'load' ||
+                                (this.readyRegExp.test(target.readyState))) {
+            	        	var url = target.getAttribute("href");
+            	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+            	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+            	        	}
+                        }
+            		},
+            		
+            		onLinkError: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+        	        	var url = target.getAttribute("href");
+        	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+        	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+        	        	}
+            		},
+            		
+            		initContextPath: function(){
+            			var baseURL = document.getElementById("_requireJS").src;
+            			var before = location.protocol + "//" + location.host;
+            			var after = "/system/lib/require/require.2.1.10";
+            			var i = baseURL.indexOf(after);
+            			if (i !== -1){
+    	        			var middle = baseURL.substring(before.length, i);
+    						var items = middle.split("/");
+    						
+    						
+    						if ((items[items.length-1].indexOf("v_") === 0) 
+    								&& (items[items.length-1].indexOf("l_") !== -1)
+    								&& (items[items.length-1].indexOf("s_") !== -1)
+    								&& (items[items.length-1].indexOf("d_") !== -1)
+    								|| (items[items.length-1]=="v_")){
+    							items.splice(items.length-1, 1);
+    						}
+    						
+    						
+    						if (items.length !== 1){
+    							window.__justep.__ResourceEngine.contextPath = items.join("/");
+    						}else{
+    							window.__justep.__ResourceEngine.contextPath = before;
+    						}
+    						var index = window.__justep.__ResourceEngine.contextPath.lastIndexOf("/");
+    						if (index != -1){
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath.substr(0, index);
+    						}else{
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath;
+    						}
+            			}else{
+            				throw new Error(baseURL + " hasn't  " + after);
+            			}
+            		},
+            	
+            		loadJs: function(urls){
+            			if (urls && urls.length>0){
+            				var loadeds = this._getResources("script", "src").concat(this.__loadedJS);
+    	       				for (var i=0; i<urls.length; i++){
+								var url = urls[i];
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					this.__loadedJS[this.__loadedJS.length] = url;
+    	        					/*
+    	        					var script = document.createElement("script");
+    	        					script.src = url;
+    	        					document.head.appendChild(script);
+    	        					*/
+    	        					//$("head").append("<script  src='" + url + "'/>");
+									var url = require.toUrl("$UI" + url);
+    	        					$.ajax({
+    	        						url: url,
+    	        						dataType: "script",
+    	        						cache: true,
+    	        						async: false,
+    	        						success: function(){}
+    	        						});
+    	        				} 
+    	       				}
+            			}
+            		},
+            		
+            		loadCss: function(styles){
+           				var loadeds = this._getResources("link", "href");
+            			if (styles && styles.length>0){
+            				for (var i=0; i<styles.length; i++){
+    	       					var url = window.__justep.__ResourceEngine.contextPath + styles[i].url.replace("/UI2/", "/");
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					var include = styles[i].include || "";
+    	        					var link = $("<link type='text/css' rel='stylesheet' href='" + url + "' include='" + include + "'/>");
+    	        					this.onLoadCss(url, link[0]);
+    	        					$("head").append(link);
+    	        				} 
+            				}
+            			}
+            			
+            		},
+            		
+            		
+            		_isLoaded: function(url, loadeds){
+            			if (url){
+            				var newUrl = "";
+            				var items = url.split("/");
+            				var isVls = false;
+            				for (var i=0; i<items.length; i++){
+            					if (isVls){
+                					newUrl += "/" + items[i];
+            					}else{
+                					if (items[i] && (items[i].indexOf("v_")===0)
+            								&& (items[i].indexOf("l_")!==-1)
+            								&& (items[i].indexOf("s_")!==-1)
+            								&& (items[i].indexOf("d_")!==-1)
+            								|| (items[i]=="v_")){
+                						isVls = true;
+                					}
+            					}
+            				}
+            				if (!newUrl)
+            					newUrl = url;
+            				
+            				for (var i=0; i<loadeds.length; i++){
+								var originUrl = this._getOriginUrl(loadeds[i]);
+								if (originUrl && (originUrl.indexOf(newUrl)!==-1)){
+									return true;
+								}
+    						}
+            			}
+    					return false;
+            		},
+
+					_getOriginUrl: function(url){
+						var result = "";
+						if (url && (url.indexOf(".md5_")!==-1)){
+							url = url.split("#")[0];
+							url = url.split("?")[0];
+							var items = url.split(".");
+							for (var i=0; i<items.length; i++){
+								if ((i===items.length-2) && (items[i].indexOf("md5_")!==-1)){
+									continue;
+								}else{
+									if (i>0) result += ".";
+									result += items[i];
+								}
+							}
+						}else{
+							result = url;
+						}
+						return result;
+					},
+            		
+            		_getResources: function(tag, attr){
+    					var result = [];
+    					var scripts = $(tag);
+    					for (var i=0; i<scripts.length; i++){
+    						var v = scripts[i][attr];
+    						if (v){
+    							result[result.length] = v;
+    						}
+    					}
+    					return result;
+            		}
+            	};
+            	
+            	window.__justep.__ResourceEngine.initContextPath();
+    			requirejs.config({
+    				baseUrl: window.__justep.__ResourceEngine.contextPath + '/v_053b2e36ae884ef2bdec1fb63e2d9d2cl_zh_CNs_d_m/wdPro/contactPep',
+    			    paths: {
+    			    	/* 解决require.normalizeName与require.toUrl嵌套后不一致的bug   */
+    			    	'$model/UI2/v_': window.__justep.__ResourceEngine.contextPath + '/v_053b2e36ae884ef2bdec1fb63e2d9d2cl_zh_CNs_d_m',
+    			    	'$model/UI2': window.__justep.__ResourceEngine.contextPath + '/v_053b2e36ae884ef2bdec1fb63e2d9d2cl_zh_CNs_d_m',
+    			    	'$model': window.__justep.__ResourceEngine.serverPath,
+    			        'text': window.__justep.__ResourceEngine.contextPath + '/v_053b2e36ae884ef2bdec1fb63e2d9d2cl_zh_CNs_d_m/system/lib/require/text.2.0.10',
+    			        'bind': window.__justep.__ResourceEngine.contextPath + '/v_053b2e36ae884ef2bdec1fb63e2d9d2cl_zh_CNs_d_m/system/lib/bind/bind',
+    			        'jquery': window.__justep.__ResourceEngine.contextPath + '/v_053b2e36ae884ef2bdec1fb63e2d9d2cl_zh_CNs_d_m/system/lib/jquery/jquery-1.11.1.min'
+    			    },
+    			    map: {
+    				        '*': {
+    				            res: '$model/UI2/system/lib/require/res',
+    				            service: '$model/UI2/system/lib/require/service',
+    				            cordova: '$model/UI2/system/lib/require/cordova',
+    				            w: '$model/UI2/system/lib/require/w',
+    				            css: '$model/UI2/system/lib/require/css'
+    				        }
+    				},
+    				waitSeconds: 300
+    			});
+    			
+    			requirejs(['require', 'jquery', '$model/UI2/system/lib/base/composition', '$model/UI2/system/lib/base/url', '$model/UI2/system/lib/route/hashbangParser', '$model/UI2/system/components/justep/versionChecker/versionChecker', '$model/UI2/system/components/justep/loadingBar/loadingBar', '$model/UI2/system/lib/jquery/domEvent',  '$model/UI2/system/lib/cordova/cordova'],  function (require, $, composition, URL, HashbangParser,versionChecker) { 
+    				document.addEventListener('deviceready', function() {
+    	                if (navigator && navigator.splashscreen && navigator.splashscreen.hide) {
+    	                	/*延迟隐藏，视觉效果更理想*/
+    	                	setTimeout(function() {navigator.splashscreen.hide();}, 800);
+    	                }
+    	            }, false);
+					setTimeout(function(){
+						versionChecker.check();
+					},2000);
+    				var context = {};
+    				context.model = '$model/UI2/wdPro/contactPep/contactPep.w' + (document.location.search || "");
+    				context.view = $('#applicationHost').children()[0];
+    				var element = document.getElementById('applicationHost');
+
+					    				
+    				
+    				var ownerid = new URL(window.__justep.__ResourceEngine.url).getParam("$ownerid");
+    				var pwindow = opener;
+    				if (!pwindow && window.parent && window.parent.window){
+    					pwindow = window.parent.window;
+    				}
+    				if(ownerid && pwindow 
+    						&& pwindow.__justep && pwindow.__justep.windowOpeners
+    						&& pwindow.__justep.windowOpeners[ownerid]
+    						&& $.isFunction(pwindow.__justep.windowOpeners[ownerid].sendToWindow)){
+    					window.__justep.setParams = function(params){
+    						/* 给windowOpener提供再次传参数的接口  */
+    						params = params || {};
+    						composition.setParams(document.getElementById('applicationHost'), params);
+    					};
+    					var winOpener = pwindow.__justep.windowOpeners[ownerid];
+    					if(winOpener) winOpener.window = window;
+    					$(window).unload(function(event){
+    						if(winOpener && winOpener.dispatchCloseEvent) winOpener.dispatchCloseEvent();
+    					});
+    					var params = winOpener.sendToWindow();
+						context.owner = winOpener;
+						context.params = params || {};
+	        			composition.compose(element, context);
+    				}else{
+        				var params =  {};
+    					var state = new HashbangParser(window.location.hash).parse().__state;
+    					if (state){
+    						params = state.get("");
+    						try{
+    							params = JSON.parse(params);
+    							if (params.hasOwnProperty("__singleValue__")){
+    								params = params.__singleValue__;
+    							}
+    						}catch(e1){}
+    					}
+    					context.noUpdateState = true;
+        				context.params = params;
+        				composition.compose(element, context);
+    				}
+    			});    
+            }
+		 	
+        </script>
+    </body>
+</html>

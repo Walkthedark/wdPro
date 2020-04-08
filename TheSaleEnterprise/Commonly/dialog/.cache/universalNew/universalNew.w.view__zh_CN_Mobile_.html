@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cjmiuAf" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cjmiuAf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/grid/grid,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <style>.x-state-default.cjmiuAf, .x-grid-widget-content.cjmiuAf .x-state-default.cjmiuAf, .x-grid-widget-header.cjmiuAf .x-state-default.cjmiuAf{border: 1px solid rgb(221, 221, 221); background-image: linear-gradient(to bottom, rgb(143, 196, 28) 0%, rgb(143, 196, 28) 100%); background-repeat: repeat-x; color: rgb(255, 255, 255)} th.cjmiuAf{text-align: center} .x-grid.cjmiuAf tr.x-row-ltr.cjmiuAf td.cjmiuAf{text-align: left; border-right-width: 1px; border: 1px solid rgb(221, 221, 221)}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cjmiuAf" class="cjmiuAf"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="depDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:depDialogReceive" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/Commonly/dialog/dialog/department.w&#34;}" __cid="cjmiuAf" class="cjmiuAf">
+    <div class="x-dialog-overlay cjmiuAf" __cid="cjmiuAf"></div>
+    <div class="x-dialog cjmiuAf" style="display:none;" __cid="cjmiuAf">
+      <div class="x-dialog-title cjmiuAf" __cid="cjmiuAf">
+        <button class="close cjmiuAf" __cid="cjmiuAf">
+          <span __cid="cjmiuAf" class="cjmiuAf">×</span>
+        </button>
+        <div class="x-dialog-title-text cjmiuAf" __cid="cjmiuAf"></div>
+      </div>
+      <div class="x-dialog-body cjmiuAf" __cid="cjmiuAf"></div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="periodDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:periodDialogReceive" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/Commonly/dialog/dialog/period.w&#34;}" __cid="cjmiuAf" class="cjmiuAf">
+    <div class="x-dialog-overlay cjmiuAf" __cid="cjmiuAf"></div>
+    <div class="x-dialog cjmiuAf" style="display:none;" __cid="cjmiuAf">
+      <div class="x-dialog-title cjmiuAf" __cid="cjmiuAf">
+        <button class="close cjmiuAf" __cid="cjmiuAf">
+          <span __cid="cjmiuAf" class="cjmiuAf">×</span>
+        </button>
+        <div class="x-dialog-title-text cjmiuAf" __cid="cjmiuAf"></div>
+      </div>
+      <div class="x-dialog-body cjmiuAf" __cid="cjmiuAf"></div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="personDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:personDialogReceive" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/Commonly/dialog/dialog/person.w&#34;}" __cid="cjmiuAf" class="cjmiuAf">
+    <div class="x-dialog-overlay cjmiuAf" __cid="cjmiuAf"></div>
+    <div class="x-dialog cjmiuAf" style="display:none;" __cid="cjmiuAf">
+      <div class="x-dialog-title cjmiuAf" __cid="cjmiuAf">
+        <button class="close cjmiuAf" __cid="cjmiuAf">
+          <span __cid="cjmiuAf" class="cjmiuAf">×</span>
+        </button>
+        <div class="x-dialog-title-text cjmiuAf" __cid="cjmiuAf"></div>
+      </div>
+      <div class="x-dialog-body cjmiuAf" __cid="cjmiuAf"></div>
+    </div>
+  </span>
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcEVr63u-iosstatusbar cjmiuAf" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cjmiuAf"> 
+    <div class="x-panel-top cjmiuAf" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cjmiuAf"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cjmiuAf" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;万用申请单添加&#34;}" __cid="cjmiuAf"> 
+        <div class="x-titlebar-left cjmiuAf" xid="left2" __cid="cjmiuAf"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cjmiuAf" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;返回&#34;}" __cid="cjmiuAf"> 
+            <i xid="i1" __cid="cjmiuAf" class="cjmiuAf"></i>  
+            <span xid="span4" __cid="cjmiuAf" class="cjmiuAf">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cjmiuAf" xid="title2" __cid="cjmiuAf">万用申请单添加</div>  
+        <div class="x-titlebar-right  cjmiuAf" xid="right2" __cid="cjmiuAf">
+          <div class="empty cjmiuAf" __cid="cjmiuAf"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cjmiuAf" xid="content6" style="background-color:#f0f0f0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cjmiuAf"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cjmiuAf" xid="row1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cjmiuAf"> 
+        <div class="x-col cjmiuAf" xid="col17" __cid="cjmiuAf"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cjmiuAf" xid="row4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cjmiuAf"> 
+            <div class="col col-xs-12 cjmiuAf" xid="col6" __cid="cjmiuAf"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cjmiuAf" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjmiuAf"> 
+                <label class="x-label cjmiuAf" xid="label6" style="width:80px;" __cid="cjmiuAf">主题：</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cjmiuAf" xid="input1" data-bind="component:{ref:$model.infoData.ref(&#34;title&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cjmiuAf"> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cjmiuAf" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjmiuAf"> 
+                <label class="x-label cjmiuAf" xid="label2" style="width:80px;" __cid="cjmiuAf">申请类型：</label>  
+                <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cjmiuAf" xid="select1" data-bind="component:{ref:$model.infoData.ref(&#34;type&#34;),name:'$model/UI2/system/components/justep/select/select'},options:typeList.datas,optionsValue:'id',optionsText:'title',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cjmiuAf"></select> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cjmiuAf" xid="labelEdit16" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjmiuAf"> 
+                <label class="x-label cjmiuAf" xid="label16" style="width:80px;" __cid="cjmiuAf">申请内容：</label>  
+                <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit cjmiuAf" xid="textarea1" data-bind="component:{ref:$model.infoData.ref(&#34;neirong&#34;),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cjmiuAf"></textarea> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cjmiuAf" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjmiuAf"> 
+                <label class="x-label cjmiuAf" xid="label4" style="width:80px;" __cid="cjmiuAf">涉及费用：</label>  
+                <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radios x-edit cjmiuAf" xid="radioGroup1" style="color: #FA7922;" data-bind="component:{ref:$model.infoData.ref(&#34;iscost&#34;),name:'$model/UI2/system/components/justep/select/radioGroup'},foreach:{data:CData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-events="onChange:radioGroup1Change" __cid="cjmiuAf">
+                  <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cjmiuAf" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref(&#34;text&#34;),value:ref(&#34;id&#34;)}" __cid="cjmiuAf">
+                    <input type="radio" __cid="cjmiuAf" class="cjmiuAf">
+                    <label __cid="cjmiuAf" class="cjmiuAf"></label>
+                  </span>
+                </span> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="cosrDiv" style="display:none" __cid="cjmiuAf" class="cjmiuAf"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cjmiuAf" xid="row6" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cjmiuAf"> 
+          <div class="x-col cjmiuAf" xid="col1" __cid="cjmiuAf"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cjmiuAf" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjmiuAf"> 
+              <label class="x-label cjmiuAf" xid="label3" style="width:80px;" __cid="cjmiuAf">部门：</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cjmiuAf" xid="depInput" data-bind="component:{ref:$model.infoData.ref(&#34;bmm&#34;),name:'$model/UI2/system/components/justep/input/input'},event:{click:$model._callModelFn.bind($model, 'depInputClick')}" __cid="cjmiuAf"> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cjmiuAf" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjmiuAf"> 
+              <label class="x-label cjmiuAf" xid="label5" style="width:80px;" __cid="cjmiuAf">考核期：</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cjmiuAf" xid="periodInput" data-bind="component:{ref:$model.infoData.ref(&#34;kaohem&#34;),name:'$model/UI2/system/components/justep/input/input'},event:{click:$model._callModelFn.bind($model, 'input4Click')}" __cid="cjmiuAf"> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cjmiuAf" xid="labelEdit8" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjmiuAf"> 
+              <label class="x-label cjmiuAf" xid="label8" style="width:80px;" __cid="cjmiuAf">支付方式：</label>  
+              <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cjmiuAf" xid="select2" data-bind="component:{ref:$model.infoData.ref(&#34;zhifu&#34;),name:'$model/UI2/system/components/justep/select/select'},options:payTypeList.datas,optionsValue:'id',optionsText:'title',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cjmiuAf"></select> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cjmiuAf" xid="labelEdit9" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjmiuAf"> 
+              <label class="x-label cjmiuAf" xid="label9" style="width:80px;" __cid="cjmiuAf">收款人：</label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cjmiuAf" xid="input6" data-bind="component:{ref:$model.infoData.ref(&#34;shoukuanm&#34;),name:'$model/UI2/system/components/justep/input/input'},event:{click:$model._callModelFn.bind($model, 'input6Click')}" __cid="cjmiuAf"> 
+            </div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cjmiuAf" xid="row7" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cjmiuAf"> 
+          <div class="x-col cjmiuAf" xid="col7" __cid="cjmiuAf"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default3 cjmiuAf" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&#34;label&#34;:&#34;添加费用&#34;}" __cid="cjmiuAf"> 
+              <i xid="i2" __cid="cjmiuAf" class="cjmiuAf"></i>  
+              <span xid="span2" __cid="cjmiuAf" class="cjmiuAf">添加费用</span> 
+            </a>  
+            <span xid="span3" __cid="cjmiuAf" class="cjmiuAf">（至少添加一条费用记录）</span> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cjmiuAf" xid="row8" style="margin:0px;padding:0px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cjmiuAf"> 
+          <div class="x-col cjmiuAf" xid="col10" style="margin:0px;padding:0px;" __cid="cjmiuAf"> 
+            <table component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="true" class="x-grid-no-bordered cjmiuAf" xid="grid1" data="costData" showRowNumber="false" headerMenu="hideColumn,setColumn,groupColumn,saveLayout" directEdit="false" data-config="{&#34;altRows&#34;:true,&#34;colModel&#34;:[{&#34;align&#34;:&#34;center&#34;,&#34;disableEditorDisplay&#34;:false,&#34;editable&#34;:false,&#34;label&#34;:&#34;费用科目&#34;,&#34;multiRowEditor&#34;:false,&#34;name&#34;:&#34;feetype&#34;,&#34;resizable&#34;:false,&#34;width&#34;:&#34;100&#34;,&#34;xid&#34;:&#34;column8&#34;},{&#34;align&#34;:&#34;center&#34;,&#34;editable&#34;:false,&#34;label&#34;:&#34;费用金额&#34;,&#34;name&#34;:&#34;fee&#34;,&#34;resizable&#34;:false,&#34;width&#34;:&#34;60&#34;,&#34;xid&#34;:&#34;column15&#34;},{&#34;align&#34;:&#34;center&#34;,&#34;editable&#34;:false,&#34;label&#34;:&#34;费用说明&#34;,&#34;name&#34;:&#34;remark&#34;,&#34;resizable&#34;:false,&#34;width&#34;:&#34;100&#34;,&#34;xid&#34;:&#34;column16&#34;},{&#34;align&#34;:&#34;center&#34;,&#34;editable&#34;:false,&#34;label&#34;:&#34;操作&#34;,&#34;name&#34;:&#34;handle&#34;,&#34;resizable&#34;:false,&#34;width&#34;:&#34;40&#34;,&#34;xid&#34;:&#34;column14&#34;}],&#34;data&#34;:&#34;costData&#34;,&#34;directEdit&#34;:false,&#34;editors&#34;:&#34;6459CA6B6C5F49DCB97DA903FD8295F3&#34;,&#34;headerMenu&#34;:&#34;hideColumn,setColumn,groupColumn,saveLayout&#34;,&#34;height&#34;:&#34;auto&#34;,&#34;hiddenCaptionbar&#34;:true,&#34;rownumbers&#34;:false,&#34;width&#34;:&#34;100%&#34;}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" data-events="onCellRender:grid1CellRender" __cid="cjmiuAf"></table>  
+            <div xid="6459CA6B6C5F49DCB97DA903FD8295F3" class="x-grid-editors cjmiuAf" __cid="cjmiuAf" data-bind="with:comp('grid1').getCellEditorsBindingObject()">
+              <div col="fee" __cid="cjmiuAf" class="cjmiuAf">
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit-focusin cjmiuAf" data-bind="component:{ref:ref('fee'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cjmiuAf">
+              </div>
+            </div>
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cjmiuAf" xid="row2" style="margin-top:5px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cjmiuAf"> 
+        <div class="x-col cjmiuAf" xid="col4" __cid="cjmiuAf"> 
+          <span xid="span1" __cid="cjmiuAf" class="cjmiuAf">上传照片（最多录入6张。）</span>  
+          <div class="imgline cjmiuAf" xid="div74" id="newUniversalImg" __cid="cjmiuAf"> 
+            <div class="lfloat simg plusbtn cjmiuAf" xid="div57" id="newUniversalImg1" __cid="cjmiuAf">+
+              <input id="uploadnewUniversal" type="file" class="upfile cjmiuAf" accept="image/*,video/*;" capture="camera" xid="file1" __cid="cjmiuAf"> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cjmiuAf" xid="row5" style="padding:20px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cjmiuAf"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label cjmiuAf" xid="button4" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&#34;label&#34;:&#34;提 交&#34;}" __cid="cjmiuAf"> 
+          <i xid="i4" __cid="cjmiuAf" class="cjmiuAf"></i>  
+          <span xid="span5" __cid="cjmiuAf" class="cjmiuAf">提 交</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cjmiuAf" class="cjmiuAf">.x-panel.pcEVr63u-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcEVr63u-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcEVr63u-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcEVr63u-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEVr63u-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcEVr63u-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEVr63u-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEVr63u-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEVr63u-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" __cid="cjmiuAf" class="cjmiuAf"></span>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cjmiuAf" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;direction&#34;:&#34;auto&#34;,&#34;dismissible&#34;:false}" __cid="cjmiuAf"> 
+    <div class="x-popOver-overlay cjmiuAf" xid="div1" __cid="cjmiuAf"></div>  
+    <div class="x-popOver-content cjmiuAf" xid="div2" style="background-color:white;" __cid="cjmiuAf"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cjmiuAf" xid="row3" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cjmiuAf"> 
+        <div class="x-col cjmiuAf" xid="col2" __cid="cjmiuAf"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cjmiuAf" xid="labelEdit7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjmiuAf"> 
+            <label class="x-label cjmiuAf" xid="label10" style="width:80px;" __cid="cjmiuAf">费用科目：</label>  
+            <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cjmiuAf" xid="select4" data-bind="component:{ref:$model.feeData.ref(&#34;feetype&#34;),name:'$model/UI2/system/components/justep/select/select',labelRef:$model.feeData.ref(&#34;feeTypeM&#34;)},options:feeTypeList.datas,optionsValue:'id',optionsText:'title',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cjmiuAf"></select> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cjmiuAf" xid="labelEdit10" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjmiuAf"> 
+            <label class="x-label cjmiuAf" xid="label1" style="width:80px;" __cid="cjmiuAf">费用金额：</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cjmiuAf" xid="input4" data-bind="component:{ref:$model.feeData.ref(&#34;fee&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cjmiuAf"> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cjmiuAf" xid="labelEdit11" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjmiuAf"> 
+            <label class="x-label cjmiuAf" xid="label7" style="width:80px;" __cid="cjmiuAf">费用说明：</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cjmiuAf" xid="input3" data-bind="component:{ref:$model.feeData.ref(&#34;remark&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cjmiuAf"> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cjmiuAf" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cjmiuAf"> 
+        <div class="x-col cjmiuAf" xid="col3" style="text-align:center" __cid="cjmiuAf"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cjmiuAf" xid="button3" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="cjmiuAf"> 
+            <i xid="i3" __cid="cjmiuAf" class="cjmiuAf"></i>  
+            <span xid="span6" __cid="cjmiuAf" class="cjmiuAf">取消</span> 
+          </a> 
+        </div>  
+        <div class="x-col cjmiuAf" xid="col9" style="text-align:center" __cid="cjmiuAf"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cjmiuAf" xid="button5" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button5Click" data-config="{&#34;label&#34;:&#34;提交&#34;}" __cid="cjmiuAf"> 
+            <i xid="i5" __cid="cjmiuAf" class="cjmiuAf"></i>  
+            <span xid="span7" __cid="cjmiuAf" class="cjmiuAf">提交</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div>

@@ -1,0 +1,40 @@
+define(function(require){
+require('$model/UI2/system/components/justep/model/model');
+require('$model/UI2/system/components/justep/loadingBar/loadingBar');
+require('$model/UI2/system/components/justep/button/button');
+require('$model/UI2/system/components/justep/input/input');
+require('$model/UI2/system/components/justep/select/radioGroup');
+require('$model/UI2/system/components/bootstrap/row/row');
+require('$model/UI2/system/components/justep/panel/child');
+require('$model/UI2/system/components/justep/labelEdit/labelEdit');
+require('$model/UI2/system/components/justep/textarea/textarea');
+require('$model/UI2/system/components/justep/panel/panel');
+require('$model/UI2/system/components/justep/windowReceiver/windowReceiver');
+require('$model/UI2/system/components/justep/row/row');
+require('$model/UI2/system/components/justep/select/select');
+require('$model/UI2/system/components/justep/output/output');
+require('$model/UI2/system/components/justep/titleBar/titleBar');
+require('$model/UI2/system/components/justep/button/radio');
+require('$model/UI2/system/components/justep/data/data');
+require('$model/UI2/system/components/justep/window/window');
+var __parent1=require('$model/UI2/system/lib/base/modelBase'); 
+var __parent0=require('$model/UI2/TheSaleEnterprise/Visit/dialog/competingGoodsNew'); 
+var __result = __parent1._extend(__parent0).extend({
+	constructor:function(contextUrl){
+	this.__sysParam='true';
+	this.__contextUrl=contextUrl;
+	this.__id='';
+	this.__cid='cUjUfEz';
+	this._flag_='671c064dc155d357571f47a0d6a0dac4';
+	this._wCfg_={};
+	this._appCfg_={};
+	this.callParent(contextUrl);
+ require('css!$UI/TheSaleEnterprise/css/style').load();
+ var __Data__ = require("$UI/system/components/justep/data/data");new __Data__(this,{"autoLoad":false,"autoNew":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"category":{"define":"category","name":"category","relation":"category","type":"String"},"category_id":{"define":"category_id","name":"category_id","relation":"category_id","type":"String"},"col8":{"define":"col8","name":"col8","relation":"col8","type":"String"},"competitor":{"define":"competitor","name":"competitor","relation":"competitor","type":"String"},"day":{"define":"day","name":"day","relation":"day","type":"String"},"hbr":{"define":"hbr","name":"hbr","relation":"hbr","type":"String"},"id":{"define":"id","name":"id","relation":"id","type":"String"},"jp_id":{"define":"jp_id","name":"jp_id","relation":"jp_id","type":"String"},"jpgg":{"define":"jpgg","name":"jpgg","relation":"jpgg","type":"String"},"jpms":{"define":"jpms","name":"jpms","relation":"jpms","type":"String"},"lsj":{"define":"lsj","name":"lsj","relation":"lsj","type":"String"},"net_id":{"define":"net_id","name":"net_id","relation":"net_id","type":"String"},"sfcx":{"define":"sfcx","name":"sfcx","relation":"sfcx","type":"String"}},"directDelete":false,"events":{},"idColumn":"id","isMain":false,"limit":20,"xid":"infoData"});
+ new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"category_name":{"define":"category_name","name":"category_name","relation":"category_name","type":"String"},"category_no":{"define":"category_no","name":"category_no","relation":"category_no","type":"String"},"id":{"define":"id","name":"id","relation":"id","type":"String"}},"directDelete":false,"events":{},"idColumn":"id","isMain":false,"limit":20,"xid":"typeList"});
+ new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"c_name":{"define":"c_name","name":"c_name","relation":"c_name","type":"String"},"format":{"define":"format","name":"format","relation":"format","type":"String"},"id":{"define":"id","name":"id","relation":"id","type":"String"}},"directDelete":false,"events":{},"idColumn":"id","isMain":false,"limit":20,"xid":"googdList"});
+ new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"id":{"define":"id","name":"id","relation":"id","type":"String"},"type":{"define":"type","name":"type","relation":"type","type":"String"}},"directDelete":false,"events":{},"idColumn":"id","initData":"[{\"id\":\"1\",\"type\":\"是\"},{\"id\":\"0\",\"type\":\"否\"}]","isMain":false,"limit":20,"xid":"CData"});
+ var justep = require('$UI/system/lib/justep');if(!this['__justep__']) this['__justep__'] = {};if(!this['__justep__'].selectOptionsAfterRender)	this['__justep__'].selectOptionsAfterRender = function($element) {		var comp = justep.Component.getComponent($element);		if(comp) comp._addDefaultOption();	};if(!this['__justep__'].selectOptionsBeforeRender)	this['__justep__'].selectOptionsBeforeRender = function($element) {		var comp = justep.Component.getComponent($element);		if(comp) comp._optionsBeforeRender();	};
+ var justep = require('$UI/system/lib/justep');if(!this['__justep__']) this['__justep__'] = {};if(!this['__justep__'].selectOptionsAfterRender)	this['__justep__'].selectOptionsAfterRender = function($element) {		var comp = justep.Component.getComponent($element);		if(comp) comp._addDefaultOption();	};if(!this['__justep__'].selectOptionsBeforeRender)	this['__justep__'].selectOptionsBeforeRender = function($element) {		var comp = justep.Component.getComponent($element);		if(comp) comp._optionsBeforeRender();	};
+}}); 
+return __result;});

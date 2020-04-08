@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window caii2e2" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="caii2e2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-inputText.caii2e2{background-color: rgba(255, 255, 255, 0.8)} .form-control-feedback.caii2e2{height: 34px; line-height: 34px} .input_radius.caii2e2{border-radius: 15px} .tb-settlement.caii2e2{line-height: 40px; background-color: rgb(64, 116, 34); color: rgb(255, 255, 255); font-size: 16px} .tb-nopadding.caii2e2{padding: 0} .btn-radius.caii2e2{border-radius: 15px} .btn-radius1.caii2e2{border-radius: 30px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="caii2e2" class="caii2e2"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcUjMNR3-iosstatusbar caii2e2" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="caii2e2"> 
+    <div class="x-panel-top caii2e2" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="caii2e2"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar caii2e2" xid="titleBar2" style="background-color:#272F2C;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="caii2e2"> 
+        <div class="x-titlebar-left caii2e2" xid="left2" __cid="caii2e2"/>  
+        <div class="x-titlebar-title caii2e2" xid="title2" __cid="caii2e2">下单</div>  
+        <div class="x-titlebar-right  caii2e2" xid="right2" __cid="caii2e2">
+          <div class="empty caii2e2" __cid="caii2e2"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content caii2e2" xid="content4" style="background-color:#EEEEEE;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="caii2e2"> 
+      <div xid="div1" class="list-group-item caii2e2" style="padding:7px 3px 7px 3px;" bind-click="div1Click" __cid="caii2e2">
+        <div class="media caii2e2" xid="media1" __cid="caii2e2"> 
+          <div class="media-left caii2e2" xid="mediaLeft1" __cid="caii2e2"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link caii2e2" xid="button4" style="color:#7B7B7B;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;明天06:30&quot;}" __cid="caii2e2"> 
+              <i xid="i4" __cid="caii2e2" class="caii2e2"/>  
+              <span xid="span4" __cid="caii2e2" class="caii2e2">明天06:30</span>
+            </a>
+          </div>  
+          <div class="media-body caii2e2" xid="mediaBody1" style="text-align:center;" __cid="caii2e2"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link caii2e2" xid="button2" style="color:#7B7B7B;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;厨房-张三&quot;}" __cid="caii2e2"> 
+              <i xid="i2" __cid="caii2e2" class="caii2e2"/>  
+              <span xid="span2" __cid="caii2e2" class="caii2e2">厨房-张三</span>
+            </a> 
+          </div>  
+          <div class="media-body caii2e2" xid="mediaBody2" style="text-align:center;" __cid="caii2e2"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link caii2e2" xid="button3" style="color:#D68872;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;¥0.00&quot;}" __cid="caii2e2"> 
+              <i xid="i3" __cid="caii2e2" class="caii2e2"/>  
+              <span xid="span3" __cid="caii2e2" class="caii2e2">¥0.00</span>
+            </a>
+          </div>  
+          <div class="media-right caii2e2" xid="mediaRight1" __cid="caii2e2"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right caii2e2" xid="button1" style="color:#D68872;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-arrowrightl&quot;,&quot;label&quot;:&quot;待审核&quot;}" __cid="caii2e2"> 
+              <i xid="i1" class="dataControl dataControl-arrowrightl caii2e2" __cid="caii2e2"/>  
+              <span xid="span1" style="color:#7B7B7B;" __cid="caii2e2" class="caii2e2">待审核</span>
+            </a>
+          </div>
+        </div>
+      </div>  
+      <div xid="div2" class="list-group-item caii2e2" style="padding:7px 3px 7px 3px;" __cid="caii2e2"> 
+        <div class="media caii2e2" xid="media2" __cid="caii2e2"> 
+          <div class="media-left caii2e2" xid="mediaLeft2" __cid="caii2e2"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link caii2e2" xid="button5" style="color:#7B7B7B;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;明天06:30&quot;}" __cid="caii2e2"> 
+              <i xid="i9" __cid="caii2e2" class="caii2e2"/>  
+              <span xid="span7" __cid="caii2e2" class="caii2e2">明天06:30</span>
+            </a> 
+          </div>  
+          <div class="media-body caii2e2" xid="mediaBody4" style="text-align:center;" __cid="caii2e2"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link caii2e2" xid="button6" style="color:#7B7B7B;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;厨房-张三&quot;}" __cid="caii2e2"> 
+              <i xid="i6" __cid="caii2e2" class="caii2e2"/>  
+              <span xid="span5" __cid="caii2e2" class="caii2e2">厨房-张三</span>
+            </a> 
+          </div>  
+          <div class="media-body caii2e2" xid="mediaBody3" style="text-align:center;" __cid="caii2e2"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link caii2e2" xid="button7" style="color:#D68872;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;¥0.00&quot;}" __cid="caii2e2"> 
+              <i xid="i7" __cid="caii2e2" class="caii2e2"/>  
+              <span xid="span6" __cid="caii2e2" class="caii2e2">¥0.00</span>
+            </a> 
+          </div>  
+          <div class="media-right caii2e2" xid="mediaRight2" __cid="caii2e2"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right caii2e2" xid="button9" style="color:#D68872;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-arrowrightl&quot;,&quot;label&quot;:&quot;待审核&quot;}" __cid="caii2e2"> 
+              <i xid="i5" class="dataControl dataControl-arrowrightl caii2e2" __cid="caii2e2"/>  
+              <span xid="span8" style="color:#7B7B7B;" __cid="caii2e2" class="caii2e2">待审核</span>
+            </a> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div3" class="list-group-item caii2e2" style="padding:7px 3px 7px 3px;" __cid="caii2e2"> 
+        <div class="media caii2e2" xid="media3" __cid="caii2e2"> 
+          <div class="media-left caii2e2" xid="mediaLeft3" __cid="caii2e2"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link caii2e2" xid="button10" style="color:#7B7B7B;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;明天06:30&quot;}" __cid="caii2e2"> 
+              <i xid="i13" __cid="caii2e2" class="caii2e2"/>  
+              <span xid="span11" __cid="caii2e2" class="caii2e2">明天06:30</span>
+            </a> 
+          </div>  
+          <div class="media-body caii2e2" xid="mediaBody6" style="text-align:center;" __cid="caii2e2"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link caii2e2" xid="button11" style="color:#7B7B7B;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;厨房-张三&quot;}" __cid="caii2e2"> 
+              <i xid="i11" __cid="caii2e2" class="caii2e2"/>  
+              <span xid="span9" __cid="caii2e2" class="caii2e2">厨房-张三</span>
+            </a> 
+          </div>  
+          <div class="media-body caii2e2" xid="mediaBody5" style="text-align:center;" __cid="caii2e2"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link caii2e2" xid="button12" style="color:#D68872;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;¥0.00&quot;}" __cid="caii2e2"> 
+              <i xid="i12" __cid="caii2e2" class="caii2e2"/>  
+              <span xid="span10" __cid="caii2e2" class="caii2e2">¥0.00</span>
+            </a> 
+          </div>  
+          <div class="media-right caii2e2" xid="mediaRight3" __cid="caii2e2"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right caii2e2" xid="button13" style="color:#D68872;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-arrowrightl&quot;,&quot;label&quot;:&quot;待审核&quot;}" __cid="caii2e2"> 
+              <i xid="i10" class="dataControl dataControl-arrowrightl caii2e2" __cid="caii2e2"/>  
+              <span xid="span12" style="color:#7B7B7B;" __cid="caii2e2" class="caii2e2">待审核</span>
+            </a> 
+          </div> 
+        </div> 
+      </div>
+    </div>  
+    <div class="x-panel-bottom caii2e2" xid="bottom2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:52}" __cid="caii2e2"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row tb-nopadding caii2e2" xid="row3" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caii2e2"> 
+        <div xid="col5" style="text-align:center;width:1em;" __cid="caii2e2" class="caii2e2"></div>  
+        <div class="x-col  caii2e2" xid="col8" style="line-height:40px; font-size:16px;" __cid="caii2e2"> 
+          <span xid="span17" __cid="caii2e2" class="caii2e2">总计：</span>  
+          <span xid="number" class="allNumber caii2e2" style="color:#D68872;" __cid="caii2e2">¥0.00</span>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon caii2e2" xid="button14" style="font-size:14px;color:#407422;width:39px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-arrowdowncircle&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="caii2e2"> 
+            <i xid="i14" class="linear linear-arrowdowncircle caii2e2" __cid="caii2e2"/>  
+            <span xid="span14" __cid="caii2e2" class="caii2e2"/>
+          </a>
+          <span xid="span16" style="color:#407422;" __cid="caii2e2" class="caii2e2">0%</span> 
+        </div>  
+        <div class="x-col x-col-25 text-center tb-settlement caii2e2" xid="col9" bind-click="settlementClick" __cid="caii2e2"> 
+          <span xid="span13" __cid="caii2e2" class="caii2e2">下单</span>
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="caii2e2" class="caii2e2">.x-panel.pcUjMNR3-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcUjMNR3-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: 52px;}.x-panel.pcUjMNR3-iosstatusbar &gt;.x-panel-bottom {height: 52px;}.iosstatusbar .x-panel.pcUjMNR3-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcUjMNR3-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcUjMNR3-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcUjMNR3-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcUjMNR3-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcUjMNR3-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

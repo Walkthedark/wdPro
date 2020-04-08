@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<div class="main13 cJvUbya" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cJvUbya" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <style>.text-black.cJvUbya{color: rgb(51, 51, 51)} .tb-nopadding.cJvUbya{padding-left: 0; padding-right: 0} .x-panel-top.cJvUbya .x-titlebar.cJvUbya{background-color: rgb(255, 68, 0)} .x-titlebar.cJvUbya .x-titlebar-title.cJvUbya{font-weight: normal} .x-cards.cJvUbya{padding: 0} .tb-box.cJvUbya, .tb-box.cJvUbya > .col.cJvUbya{height: 100%; margin: 0; padding: 0} .tb-box.cJvUbya > .col.cJvUbya{overflow: auto} .tb-box.cJvUbya > .col.cJvUbya:first-child{padding-right: 10px} .list-group.cJvUbya{box-shadow: none} .list-group-item.cJvUbya{background-color: rgb(245, 245, 245); border-radius: 0; border-color: rgb(225, 225, 225)} .list-group-item.current.cJvUbya{background-color: rgb(255, 255, 255); border-right: 0; color: rgb(207, 2, 2)} .list-group-item.current.cJvUbya h5.cJvUbya{color: rgb(207, 2, 2)} .tb-listBox.cJvUbya{padding-left: 0px; padding-right: 10px; margin-bottom: 10px} .tb-listBox.cJvUbya div.cJvUbya{background-color: rgb(255, 255, 255)} .tb-listBox.cJvUbya p.cJvUbya{font-size: 13px; margin-top: 5px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cJvUbya" class="cJvUbya"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-card x-has-iosstatusbar pcUbiuue-iosstatusbar cJvUbya" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cJvUbya"> 
+    <div class="x-panel-top cJvUbya" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJvUbya"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cJvUbya" style="background-color:#47D1D1;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;商品分类&#34;}" __cid="cJvUbya"> 
+        <div class="x-titlebar-left cJvUbya" __cid="cJvUbya"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cJvUbya" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;,&#34;label&#34;:&#34;分类&#34;}" __cid="cJvUbya"> 
+            <i xid="i6" class="icon-chevron-left cJvUbya" __cid="cJvUbya"></i>  
+            <span xid="span6" __cid="cJvUbya" class="cJvUbya">分类</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cJvUbya" __cid="cJvUbya">商品分类</div>  
+        <div class="x-titlebar-right  cJvUbya" __cid="cJvUbya">
+          <div class="empty cJvUbya" __cid="cJvUbya"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div xid="content" class="x-panel-content x-cards cJvUbya" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJvUbya"> 
+      <div component="$model/UI2/system/components/bootstrap/row/row" class="row tb-box cJvUbya" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cJvUbya"> 
+        <div class="col col-xs-3 cJvUbya" xid="col10" __cid="cJvUbya"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list tb-root cJvUbya" xid="rootClassList" dataItemAlias="rootClassRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;rootClassData&#34;}" __cid="cJvUbya"> 
+            <ul class="x-list-template list-group hide cJvUbya" xid="listTemplateUl1" __cid="cJvUbya" data-bind="foreach:{data:$model.foreach_rootClassList($element),afterRender:$model.foreach_afterRender_rootClassList.bind($model,$element),as:'rootClassRow'}"> 
+              <li xid="li1" class="list-group-item text-center tb-nopadding cJvUbya" __cid="cJvUbya" data-bind="css:{'current':rootClassRow.val('fID')==$model.rootClassData.val('fID')}"> 
+                <h5 xid="h52" class="text-black cJvUbya" __cid="cJvUbya" data-bind="text:ref('fClassName')"></h5> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="col col-xs-9 cJvUbya" xid="col11" __cid="cJvUbya"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cJvUbya" xid="secondClassList" dataItemAlias="secondClassRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;secondClassData&#34;,&#34;filter&#34;:&#34;$row.val(\&#34;fRootID\&#34;)==$model.rootClassData.val(\&#34;fID\&#34;)&#34;}" __cid="cJvUbya"> 
+            <ul class="x-list-template hide cJvUbya" xid="listTemplateUl2" __cid="cJvUbya" data-bind="foreach:{data:$model.foreach_secondClassList($element),afterRender:$model.foreach_afterRender_secondClassList.bind($model,$element),as:'secondClassRow'}"> 
+              <li xid="li2" __cid="cJvUbya" class="cJvUbya"> 
+                <h5 class="text-muted cJvUbya" __cid="cJvUbya" data-bind="text:ref('fClassName')"></h5>  
+                <div component="$model/UI2/system/components/justep/list/list" class="x-list clearfix cJvUbya" xid="threeClassList" dataItemAlias="threeClassRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'},event:{click:$model._callModelFn.bind($model, 'listClick')}" data-config="{&#34;data&#34;:&#34;threeClassData&#34;,&#34;filter&#34;:&#34;$row.val('fSecondID')==secondClassRow.val('fID')&#34;}" __cid="cJvUbya"> 
+                  <ul class="x-list-template hide cJvUbya" xid="listTemplateUl3" __cid="cJvUbya" data-bind="foreach:{data:$model.foreach_threeClassList($element),afterRender:$model.foreach_afterRender_threeClassList.bind($model,$element),as:'threeClassRow'}"> 
+                    <li xid="li3" class="col col-xs-4 text-center tb-listBox text-black cJvUbya" __cid="cJvUbya"> 
+                      <div __cid="cJvUbya" class="cJvUbya">
+                        <img src="" alt="" class="img-responsive cJvUbya" __cid="cJvUbya" data-bind="attr:{src:$model.getImageUrl(val(&#34;fClassImg&#34;))}">
+                        <p __cid="cJvUbya" class="cJvUbya" data-bind="text:val(&#34;fClassName&#34;)"></p>
+                      </div> 
+                    </li> 
+                  </ul> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cJvUbya" class="cJvUbya">.x-panel.pcUbiuue-iosstatusbar >.x-panel-top {height: 49px;}.x-panel.pcUbiuue-iosstatusbar >.x-panel-content { top: 49px;bottom: nullpx;}.x-panel.pcUbiuue-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcUbiuue-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcUbiuue-iosstatusbar >.x-panel-top {height: 69px;}.iosstatusbar .x-panel.pcUbiuue-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcUbiuue-iosstatusbar >.x-panel-content { top: 69px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcUbiuue-iosstatusbar >.x-panel-top {height: 49px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcUbiuue-iosstatusbar >.x-panel-content {top: 49px;}</style>
+  </div> 
+</div>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cb6ryui" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cb6ryui" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.btn-befo-color.cb6ryui{border-style: solid solid solid solid; border-width: thin thin thin thin; border-color: rgb(192, 192, 192) rgb(192, 192, 192) rgb(192, 192, 192) rgb(192, 192, 192); color: rgb(192, 192, 192)} .btn-radius.cb6ryui{border-radius: 30px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cb6ryui" class="cb6ryui"/>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cb6ryui" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cb6ryui"> 
+    <div class="x-contents-content active cb6ryui" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cb6ryui">
+      <div xid="div2" style="text-align:right;" __cid="cb6ryui" class="cb6ryui"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon cb6ryui" xid="button1" style="color:#8E8E8E;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-closel&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cb6ryui"> 
+          <i xid="i3" class="dataControl dataControl-closel cb6ryui" __cid="cb6ryui"/>  
+          <span xid="span5" __cid="cb6ryui" class="cb6ryui"/>
+        </a>
+      </div>
+      <div xid="div1" style="text-align:center;" __cid="cb6ryui" class="cb6ryui">
+        <h5 xid="h51" __cid="cb6ryui" class="cb6ryui"> 
+          <span xid="span1" style="color:#414141;font-size:18px;font-weight:normal;" __cid="cb6ryui" class="cb6ryui">确定将</span>
+          <span xid="span2" style="color:#407422;font-size:18px;font-weight:normal;" __cid="cb6ryui" class="cb6ryui">烧鸡</span>  
+          <span xid="span3" style="color:#414141;font-size:18px;font-weight:normal;" __cid="cb6ryui" class="cb6ryui">设置为拒收吗？</span>
+        </h5>
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cb6ryui" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cb6ryui"> 
+        <div class="x-col cb6ryui" xid="col6" style="text-align:center;" __cid="cb6ryui">
+          <h5 xid="h52" __cid="cb6ryui" class="cb6ryui"> 
+            <span xid="span6" style="color:#414141;font-size:16px;font-weight:bold;" __cid="cb6ryui" class="cb6ryui">拒收原因</span> 
+          </h5>
+        </div>  
+        <div class="x-col cb6ryui" xid="col4" style="text-align:center;" __cid="cb6ryui"></div>  
+        <div class="x-col cb6ryui" xid="col5" __cid="cb6ryui"/>
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cb6ryui" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cb6ryui"> 
+        <div class="x-col cb6ryui" xid="col9" __cid="cb6ryui">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm  cb6ryui" xid="button16" style="background-color:#407422;color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;物料质量有问题&quot;}" __cid="cb6ryui"> 
+            <i xid="i16" __cid="cb6ryui" class="cb6ryui"/>  
+            <span xid="span16" __cid="cb6ryui" class="cb6ryui">物料质量有问题</span>
+          </a> 
+        </div>  
+        <div class="x-col cb6ryui" xid="col3" __cid="cb6ryui">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-befo-color cb6ryui" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;货不对号&quot;}" __cid="cb6ryui"> 
+            <i xid="i4" __cid="cb6ryui" class="cb6ryui"/>  
+            <span xid="span10" __cid="cb6ryui" class="cb6ryui">货不对号</span>
+          </a>
+        </div>
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cb6ryui" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cb6ryui"> 
+        <div class="x-col cb6ryui" xid="col7" __cid="cb6ryui"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-befo-color cb6ryui" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;数量不对&quot;}" __cid="cb6ryui"> 
+            <i xid="i1" __cid="cb6ryui" class="cb6ryui"/>  
+            <span xid="span4" __cid="cb6ryui" class="cb6ryui">数量不对</span>
+          </a> 
+        </div>  
+        <div class="x-col cb6ryui" xid="col8" style="text-align:center;" __cid="cb6ryui"></div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cb6ryui" xid="row4" style="height:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cb6ryui"> 
+        <div class="x-col cb6ryui" xid="col10" __cid="cb6ryui"></div>  
+        <div class="x-col cb6ryui" xid="col11" __cid="cb6ryui"></div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cb6ryui" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cb6ryui"> 
+        <div class="x-col cb6ryui" xid="col13" style="text-align:center;" __cid="cb6ryui">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label  btn-radius cb6ryui" xid="button2" style="color:#407422;margin-top:5px;width:80%;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#407422 #407422 #407422 #407422;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cb6ryui"> 
+            <i xid="i2" __cid="cb6ryui" class="cb6ryui"/>  
+            <span xid="span11" __cid="cb6ryui" class="cb6ryui">取消</span>
+          </a>
+        </div>  
+        <div class="x-col cb6ryui" xid="col14" style="text-align:center;" __cid="cb6ryui">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label btn-radius cb6ryui" xid="button7" style="background-color:#407422;color:#FFFFFF;margin-top:5px;width:80%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cb6ryui"> 
+            <i xid="i7" __cid="cb6ryui" class="cb6ryui"/>  
+            <span xid="span12" __cid="cb6ryui" class="cb6ryui">确定</span>
+          </a>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>

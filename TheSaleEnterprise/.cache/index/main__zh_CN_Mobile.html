@@ -1,0 +1,719 @@
+<!DOCTYPE HTML>
+<html style="width:100%;height:100%" class="no-js">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+        <script src="../../v_e0b7d87f62e34c01b644e0207a351c1fl_zh_CNs_d_m/system/lib/base/modernizr-2.8.3.min.js"></script>
+		<script id="__varReplace">
+    	
+    	    	window.__justep = window.__justep || {};
+				window.__justep.isDebug = true;
+				window.__justep.__packageMode = "1";
+				window.__justep.__isPackage = false;;
+				window.__justep.url = location.href;
+				window.__justep.versionInfo = {};
+		 
+    	</script>
+        <script id="__updateVersion">
+        
+				(function(url, mode){
+					if (("@"+"mode@") === mode) mode = "3";
+					if (("@"+"versionUrl@") === url) url = "system/service/common/app.j";
+					if ((mode!=="1" && (mode!="2") && (mode!="3"))) return;
+					var async = (mode=="1");
+					var x5Version = "noApp";
+					var x5AppAgents = /x5app\/([0-9.]*)/.exec(navigator.userAgent);
+					if(x5AppAgents && x5AppAgents.length > 1){
+					   	x5Version = x5AppAgents[1] || "";
+					} 
+					function createXhr(){
+						try {	
+							return new XMLHttpRequest();
+						}catch (tryMS) {	
+							var version = ["MSXML2.XMLHttp.6.0",
+							               "MSXML2.XMLHttp.3.0",
+							               "MSXML2.XMLHttp",
+							               "Miscrosoft.XMLHTTP"];
+							for(var i = 0; i < version.length; i++){
+								try{
+							    	return new ActiveXObject(version[i]);
+								}catch(e){}
+							}
+						}
+						throw new Error("您的系统或浏览器不支持XHR对象！");
+					}
+					
+					function createGuid(){	
+						var guid = '';	
+						for (var i = 1; i <= 32; i++){		
+							var n = Math.floor(Math.random()*16.0).toString(16);		
+							guid += n;		
+							if((i==8)||(i==12)||(i==16)||(i==20))			
+								guid += '-';	
+						}	
+						return guid;
+					}
+					
+					function parseUrl(href){
+						href = href.split("#")[0];
+						var items = href.split("?");
+						href = items[0];
+						var query = items[1] || "";
+						items = href.split("/");
+						var baseItems = [];
+						var pathItems = [];
+						var isPath = false;
+						for (var i=0; i<items.length; i++){
+							if (mode == "3"){
+								if (items[i] && (items[i].indexOf("v_") === 0) 
+										&& (items[i].indexOf("l_") !== -1)
+										&& (items[i].indexOf("s_") !== -1)
+										&& (items[i].indexOf("d_") !== -1)
+										|| (items[i]=="v_")){
+									isPath = true;
+									continue;
+								}
+							}else{
+								if (items[i] && (items[i].indexOf("v-")===0) && (items[i].charAt(items[i].length-1)=="-") ){
+									isPath = true;
+									continue;
+								}
+							}
+							if (isPath){
+								pathItems.push(items[i]);
+							}else{
+								baseItems.push(items[i]);	
+							}
+							
+						}
+						var base = baseItems.join("/");
+						if (base.charAt(base.length-1)!=="/") base += "/";
+						
+						var path = pathItems.join("/");
+						if (path.charAt(0) !== "/") path = "/" + path;
+						return [base, path, query];
+					}
+					
+					
+					var items = parseUrl(window.location.href);
+					var base = items[0];
+					var path = items[1];
+					var query = items[2];
+					var xhr = createXhr();
+					url += ((url.indexOf("?")!=-1) ? "&" : "?") +"_=" + createGuid();
+					if (mode === "3"){
+						url += "&url=" + path;
+						if (query)
+							url += "&" + query;
+					}
+					xhr.open('GET', base + url, async);
+					
+					if (async){
+						xhr.onreadystatechange=function(){
+							if((xhr.readyState == 4) && (xhr.status == 200) && xhr.responseText){
+								var versionInfo = JSON.parse(xhr.responseText);
+								window.__justep.versionInfo = versionInfo;
+								window.__justep.versionInfo.baseUrl = base;
+								if (query){
+									path = path + "?" + query;
+								}
+								path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+								var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+								versionInfo.resourceInfo.indexPageURL = indexUrl;
+								if(versionInfo.resourceInfo.resourceUpdateMode != "md5"){
+									if (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1){
+										versionInfo.resourceInfo.isNewVersion = true;
+									};
+								}
+							}
+						}
+					}
+					
+					try{
+						xhr.send(null);
+						if (!async && (xhr.status == 200) && xhr.responseText){
+							var versionInfo = JSON.parse(xhr.responseText);
+							window.__justep.versionInfo = versionInfo;
+							window.__justep.versionInfo.baseUrl = base;
+							if ((mode==="3") && window.__justep.isDebug){
+								/* 模式3且是调试模式不重定向 */
+							}else{
+								if (query){
+									path = path + "?" + query;
+								}
+								if(versionInfo.resourceInfo.resourceUpdateMode == "md5"){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									versionInfo.resourceInfo.indexPageURL = indexUrl; 
+								}else if (versionInfo.resourceInfo && versionInfo.resourceInfo.version && (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1)){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									window.location.href = indexUrl;
+								}
+							}
+						}
+					}catch(e2){}
+				}("@versionUrl@", "@mode@"));
+                 
+        </script>
+    <link rel="stylesheet" href="../../v_bfa1c3d775204a658fc2ff87538c4325l_zh_CNs_d_m/system/components/bootstrap.min.css" include="$model/UI2/system/components/bootstrap/lib/css/bootstrap,$model/UI2/system/components/bootstrap/lib/css/bootstrap-theme"><link rel="stylesheet" href="../../v_90e506fa3f0e4653967ed4d3fa733d08l_zh_CNs_d_m/system/components/comp.min.css" include="$model/UI2/system/components/justep/lib/css2/dataControl,$model/UI2/system/components/justep/input/css/datePickerPC,$model/UI2/system/components/justep/messageDialog/css/messageDialog,$model/UI2/system/components/justep/lib/css3/round,$model/UI2/system/components/justep/input/css/datePicker,$model/UI2/system/components/justep/row/css/row,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/attachment/css/attachment,$model/UI2/system/components/justep/barcode/css/barcodeImage,$model/UI2/system/components/bootstrap/dropdown/css/dropdown,$model/UI2/system/components/justep/contents/css/contents,$model/UI2/system/components/justep/common/css/forms,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/locker/css/locker,$model/UI2/system/components/justep/menu/css/menu,$model/UI2/system/components/justep/scrollView/css/scrollView,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/dialog/css/dialog,$model/UI2/system/components/justep/bar/css/bar,$model/UI2/system/components/justep/popMenu/css/popMenu,$model/UI2/system/components/justep/lib/css/icons,$model/UI2/system/components/justep/lib/css4/e-commerce,$model/UI2/system/components/justep/toolBar/css/toolBar,$model/UI2/system/components/justep/popOver/css/popOver,$model/UI2/system/components/justep/panel/css/panel,$model/UI2/system/components/bootstrap/carousel/css/carousel,$model/UI2/system/components/justep/wing/css/wing,$model/UI2/system/components/bootstrap/scrollSpy/css/scrollSpy,$model/UI2/system/components/justep/titleBar/css/titleBar,$model/UI2/system/components/justep/lib/css1/linear,$model/UI2/system/components/justep/numberSelect/css/numberList,$model/UI2/system/components/justep/list/css/list,$model/UI2/system/components/justep/dataTables/css/dataTables"></head>
+	
+    <body style="width:100%;height:100%;margin: 0;">
+        <script intro="none"></script>
+    	<div id="applicationHost" class="applicationHost" style="width:100%;height:100%;" __component-context__="block"><div xid="window" class="window czq2qqm" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="czq2qqm" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,,">  
+  <script src="http://api.map.baidu.com/api?v=2.0&amp;ak=EzfQTH533pbevnhohMX4QZRK" __cid="czq2qqm" class="czq2qqm"></script>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="czq2qqm" class="czq2qqm"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcYfEZJj-iosstatusbar czq2qqm" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="czq2qqm"> 
+    <div class="x-panel-content czq2qqm" xid="pages2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czq2qqm"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full czq2qqm" xid="pages" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;active&#34;:0,&#34;swipe&#34;:false}" __cid="czq2qqm"> 
+        <div class="x-contents-content active czq2qqm" xid="content2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="czq2qqm"> 
+          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container czq2qqm" xid="windowContainer1" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/main/mian.w&#34;}" __cid="czq2qqm">
+            <div xid="window" class="window ceEF7Vr" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ceEF7Vr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">  
+              <style>.x-card.btn-group.ceEF7Vr .btn.ceEF7Vr{font-weight: normal !important} .x-card.btn-group.ceEF7Vr .btn.active.ceEF7Vr{color: rgb(250, 121, 34)}</style>  
+              <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstructDone:modelModelConstructDone" __cid="ceEF7Vr" class="ceEF7Vr"></div>  
+              <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcrY7rmi-iosstatusbar ceEF7Vr" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ceEF7Vr">  
+                <div class="x-panel-content ceEF7Vr" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceEF7Vr"> 
+                  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full ceEF7Vr" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;active&#34;:0,&#34;swipe&#34;:false}" __cid="ceEF7Vr"> 
+                    <div class="x-contents-content active ceEF7Vr" xid="content2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="ceEF7Vr"> 
+                      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcZj26ri-iosstatusbar ceEF7Vr" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ceEF7Vr"> 
+                        <div class="x-panel-top ceEF7Vr" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceEF7Vr"> 
+                          <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title ceEF7Vr" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;企业营销门户 EMP&#34;}" __cid="ceEF7Vr"> 
+                            <div class="x-titlebar-left ceEF7Vr" xid="left2" __cid="ceEF7Vr"></div>  
+                            <div class="x-titlebar-title ceEF7Vr" xid="title2" __cid="ceEF7Vr">企业营销门户 EMP</div>  
+                            <div class="x-titlebar-right  ceEF7Vr" xid="right2" __cid="ceEF7Vr"> 
+                              <div class="empty ceEF7Vr" __cid="ceEF7Vr"></div> 
+                            </div> 
+                          </div> 
+                        </div>  
+                        <div class="x-panel-content ceEF7Vr" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceEF7Vr"> 
+                          <div component="$model/UI2/system/components/bootstrap/row/row" class="row ceEF7Vr" xid="row2" style="text-align:center;margin:0px;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="ceEF7Vr"> 
+                            <div class="col col-xs-4 title-two col-one ceEF7Vr" xid="col4" __cid="ceEF7Vr"> 
+                              <div component="$model/UI2/system/components/justep/row/row" class="x-row ceEF7Vr" xid="row4" style="height:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceEF7Vr"> 
+                                <div class="x-col ceEF7Vr" xid="col12" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col11" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col10" __cid="ceEF7Vr"></div> 
+                              </div>  
+                              <img src="../../v_e6c7a1a5035f4bac91597a4d392e8c7fl_zh_CNs_d_m/TheSaleEnterprise/main/Img/head.png" alt="" xid="image2" style="width:40px;height:40px;border-radius:25px;" height="80%" __cid="ceEF7Vr" class="ceEF7Vr">  
+                              <span xid="span5" style="font-size:14px;text-align:center;color:#ffffff;" class="center-block ceEF7Vr" __cid="ceEF7Vr" data-bind="text:MyData.val(&#34;id&#34;)+&#34;，您好！&#34;"></span> 
+                            </div>  
+                            <div class="col col-xs-4 title-three col-one ceEF7Vr" xid="col5" __cid="ceEF7Vr" data-bind="event:{click:$model._callModelFn.bind($model, 'col5Click')}"> 
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output ceEF7Vr" xid="output1" style="font-size:33px;font-weight:bold;color:#FFFFFF;" data-bind="component:{ref:$model.processData.ref(&#34;id&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="ceEF7Vr"></div>  
+                              <span xid="span25" style="font-size:14px;text-align:center;color:#ffffff;" class="center-block ceEF7Vr" __cid="ceEF7Vr">待办流程</span> 
+                            </div>  
+                            <div class="col col-xs-4 title-four col-one ceEF7Vr" xid="col6" __cid="ceEF7Vr" data-bind="event:{click:$model._callModelFn.bind($model, 'col6Click')}"> 
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output ceEF7Vr" xid="output2" style="font-size:33px;font-weight:bold;color:#FFFFFF;" data-bind="component:{ref:$model.visitData.ref(&#34;id&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="ceEF7Vr"></div>  
+                              <span xid="span4" style="font-size:14px;text-align:center;color:#ffffff;" class="center-block ceEF7Vr" __cid="ceEF7Vr">拜访任务</span> 
+                            </div>  
+                            <div class="col col-xs-4 border-One ceEF7Vr" xid="col15" __cid="ceEF7Vr" data-bind="event:{click:$model._callModelFn.bind($model, 'col15Click')}"> 
+                              <div component="$model/UI2/system/components/justep/row/row" class="x-row ceEF7Vr" xid="row5" style="height:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceEF7Vr"> 
+                                <div class="x-col ceEF7Vr" xid="col14" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col13" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col16" __cid="ceEF7Vr"></div> 
+                              </div>  
+                              <img src="../../v_d7d823b58e7c43d0b7b5f40153305947l_zh_CNs_d_m/TheSaleEnterprise/main/Img/001.png" alt="" xid="image3" style="width:40px;height:40px;" height="80%" __cid="ceEF7Vr" class="ceEF7Vr">  
+                              <span xid="span6" style="font-size:14px;text-align:center;" class="center-block ceEF7Vr" __cid="ceEF7Vr">上班打卡</span> 
+                            </div>  
+                            <div class="col col-xs-4 border-One ceEF7Vr" xid="col18" __cid="ceEF7Vr" data-bind="event:{click:$model._callModelFn.bind($model, 'col18Click')}"> 
+                              <div component="$model/UI2/system/components/justep/row/row" class="x-row ceEF7Vr" xid="row6" style="height:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceEF7Vr"> 
+                                <div class="x-col ceEF7Vr" xid="col19" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col20" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col17" __cid="ceEF7Vr"></div> 
+                              </div>  
+                              <img src="../../v_8f482e7dad174984a82f3a18bdfebc11l_zh_CNs_d_m/TheSaleEnterprise/main/Img/002.png" alt="" xid="image4" style="width:40px;height:40px;" height="80%" __cid="ceEF7Vr" class="ceEF7Vr">  
+                              <span xid="span7" style="font-size:14px;text-align:center;" class="center-block ceEF7Vr" __cid="ceEF7Vr">下班打卡</span> 
+                            </div>  
+                            <div class="col col-xs-4 border-One ceEF7Vr" xid="col22" __cid="ceEF7Vr" data-bind="event:{click:$model._callModelFn.bind($model, 'col22Click')}"> 
+                              <div component="$model/UI2/system/components/justep/row/row" class="x-row ceEF7Vr" xid="row7" style="height:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceEF7Vr"> 
+                                <div class="x-col ceEF7Vr" xid="col23" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col24" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col21" __cid="ceEF7Vr"></div> 
+                              </div>  
+                              <img src="../../v_c05bb08fe3204cc186099d591689e48dl_zh_CNs_d_m/TheSaleEnterprise/main/Img/003.png" alt="" xid="image5" style="width:40px;height:40px;" height="80%" __cid="ceEF7Vr" class="ceEF7Vr">  
+                              <span xid="span8" style="font-size:14px;text-align:center;" class="center-block ceEF7Vr" __cid="ceEF7Vr">工作日报</span> 
+                            </div>  
+                            <div class="col col-xs-4 border-One ceEF7Vr" xid="col28" __cid="ceEF7Vr" data-bind="event:{click:$model._callModelFn.bind($model, 'col28Click')}"> 
+                              <div component="$model/UI2/system/components/justep/row/row" class="x-row ceEF7Vr" xid="row10" style="height:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceEF7Vr"> 
+                                <div class="x-col ceEF7Vr" xid="col29" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col30" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col27" __cid="ceEF7Vr"></div> 
+                              </div>  
+                              <img src="../../v_32f746dcbbcb488cb39fb64b429a3ea5l_zh_CNs_d_m/TheSaleEnterprise/main/Img/004.png" alt="" xid="image7" style="width:40px;height:40px;" height="80%" __cid="ceEF7Vr" class="ceEF7Vr">  
+                              <span xid="span9" style="font-size:14px;text-align:center;" class="center-block ceEF7Vr" __cid="ceEF7Vr">待办流程</span> 
+                            </div>  
+                            <div class="col col-xs-4 border-One ceEF7Vr" xid="col25" __cid="ceEF7Vr" data-bind="event:{click:$model._callModelFn.bind($model, 'col25Click')}"> 
+                              <div component="$model/UI2/system/components/justep/row/row" class="x-row ceEF7Vr" xid="row9" style="height:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceEF7Vr"> 
+                                <div class="x-col ceEF7Vr" xid="col34" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col36" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col26" __cid="ceEF7Vr"></div> 
+                              </div>  
+                              <img src="../../v_31cf51a3e62c40daa5106a75108badacl_zh_CNs_d_m/TheSaleEnterprise/main/Img/005.png" alt="" xid="image8" style="width:40px;height:40px;" height="80%" __cid="ceEF7Vr" class="ceEF7Vr">  
+                              <span xid="span10" style="font-size:14px;text-align:center;" class="center-block ceEF7Vr" __cid="ceEF7Vr">拜访签到</span> 
+                            </div>  
+                            <div class="col col-xs-4 border-One ceEF7Vr" xid="col33" __cid="ceEF7Vr" data-bind="event:{click:$model._callModelFn.bind($model, 'col33Click')}"> 
+                              <div component="$model/UI2/system/components/justep/row/row" class="x-row ceEF7Vr" xid="row8" style="height:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceEF7Vr"> 
+                                <div class="x-col ceEF7Vr" xid="col32" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col31" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col35" __cid="ceEF7Vr"></div> 
+                              </div>  
+                              <img src="../../v_d462203da0e44a0fae31774b4a9b7ebfl_zh_CNs_d_m/TheSaleEnterprise/main/Img/006.png" alt="" xid="image6" style="width:40px;height:40px;" height="80%" __cid="ceEF7Vr" class="ceEF7Vr">  
+                              <span xid="span11" style="font-size:14px;text-align:center;" class="center-block ceEF7Vr" __cid="ceEF7Vr">常用申请</span> 
+                            </div>  
+                            <div class="col col-xs-4 border-One ceEF7Vr" xid="col40" __cid="ceEF7Vr" data-bind="event:{click:$model._callModelFn.bind($model, 'col40Click')}"> 
+                              <div component="$model/UI2/system/components/justep/row/row" class="x-row ceEF7Vr" xid="row13" style="height:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceEF7Vr"> 
+                                <div class="x-col ceEF7Vr" xid="col41" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col42" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col39" __cid="ceEF7Vr"></div> 
+                              </div>  
+                              <img src="../../v_cf7b7fc3947443dabc467aa767d2d033l_zh_CNs_d_m/TheSaleEnterprise/main/Img/007.png" alt="" xid="image10" style="width:40px;height:40px;" height="80%" __cid="ceEF7Vr" class="ceEF7Vr">  
+                              <span xid="span12" style="font-size:14px;text-align:center;" class="center-block ceEF7Vr" __cid="ceEF7Vr">渠道费用</span> 
+                            </div>  
+                            <div class="col col-xs-4 border-One ceEF7Vr" xid="col37" __cid="ceEF7Vr" data-bind="event:{click:$model._callModelFn.bind($model, 'col37Click')}"> 
+                              <div component="$model/UI2/system/components/justep/row/row" class="x-row ceEF7Vr" xid="row12" style="height:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceEF7Vr"> 
+                                <div class="x-col ceEF7Vr" xid="col46" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col48" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col38" __cid="ceEF7Vr"></div> 
+                              </div>  
+                              <img src="../../v_bfe9a9efb0d3427784ffbc84f61ca96dl_zh_CNs_d_m/TheSaleEnterprise/main/Img/008.png" alt="" xid="image11" style="width:40px;height:40px;" height="80%" __cid="ceEF7Vr" class="ceEF7Vr">  
+                              <span xid="span13" style="font-size:14px;text-align:center;" class="center-block ceEF7Vr" __cid="ceEF7Vr">销售进度</span> 
+                            </div>  
+                            <div class="col col-xs-4 border-One ceEF7Vr" xid="col45" __cid="ceEF7Vr" data-bind="event:{click:$model._callModelFn.bind($model, 'col45Click')}"> 
+                              <div component="$model/UI2/system/components/justep/row/row" class="x-row ceEF7Vr" xid="row11" style="height:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceEF7Vr"> 
+                                <div class="x-col ceEF7Vr" xid="col44" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col43" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col47" __cid="ceEF7Vr"></div> 
+                              </div>  
+                              <img src="../../v_c3c92dde7f5940afbad47626db00d636l_zh_CNs_d_m/TheSaleEnterprise/main/Img/009.png" alt="" xid="image9" style="width:40px;height:40px;" height="80%" __cid="ceEF7Vr" class="ceEF7Vr">  
+                              <span xid="span14" style="font-size:14px;text-align:center;" class="center-block ceEF7Vr" __cid="ceEF7Vr">龙虎榜</span> 
+                            </div>  
+                            <div class="col col-xs-4 border-One ceEF7Vr" xid="col52" __cid="ceEF7Vr" data-bind="event:{click:$model._callModelFn.bind($model, 'col52Click')}"> 
+                              <div component="$model/UI2/system/components/justep/row/row" class="x-row ceEF7Vr" xid="row16" style="height:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceEF7Vr"> 
+                                <div class="x-col ceEF7Vr" xid="col53" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col54" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col51" __cid="ceEF7Vr"></div> 
+                              </div>  
+                              <img src="../../v_db21e0fd56d643e7be13818dffa5369el_zh_CNs_d_m/TheSaleEnterprise/main/Img/010.png" alt="" xid="image13" style="width:40px;height:40px;" height="80%" __cid="ceEF7Vr" class="ceEF7Vr">  
+                              <span xid="span15" style="font-size:14px;text-align:center;" class="center-block ceEF7Vr" __cid="ceEF7Vr">客户管理</span> 
+                            </div>  
+                            <div class="col col-xs-4 border-One ceEF7Vr" xid="col49" __cid="ceEF7Vr" data-bind="event:{click:$model._callModelFn.bind($model, 'col49Click')}"> 
+                              <div component="$model/UI2/system/components/justep/row/row" class="x-row ceEF7Vr" xid="row15" style="height:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceEF7Vr"> 
+                                <div class="x-col ceEF7Vr" xid="col58" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col60" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col50" __cid="ceEF7Vr"></div> 
+                              </div>  
+                              <img src="../../v_6d0e842f4e624cbfad7d1f5edd2d6629l_zh_CNs_d_m/TheSaleEnterprise/main/Img/011.png" alt="" xid="image14" style="width:40px;height:40px;" height="80%" __cid="ceEF7Vr" class="ceEF7Vr">  
+                              <span xid="span16" style="font-size:14px;text-align:center;" class="center-block ceEF7Vr" __cid="ceEF7Vr">下属管理</span> 
+                            </div>  
+                            <div class="col col-xs-4 border-One ceEF7Vr" xid="col57" __cid="ceEF7Vr" data-bind="event:{click:$model._callModelFn.bind($model, 'col57Click')}"> 
+                              <div component="$model/UI2/system/components/justep/row/row" class="x-row ceEF7Vr" xid="row14" style="height:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceEF7Vr"> 
+                                <div class="x-col ceEF7Vr" xid="col56" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col55" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col59" __cid="ceEF7Vr"></div> 
+                              </div>  
+                              <img src="../../v_29731644de3c42cfa74b5a473663bf60l_zh_CNs_d_m/TheSaleEnterprise/main/Img/012.png" alt="" xid="image12" style="width:40px;height:40px;" height="80%" __cid="ceEF7Vr" class="ceEF7Vr">  
+                              <span xid="span17" style="font-size:14px;text-align:center;" class="center-block ceEF7Vr" __cid="ceEF7Vr">导购管理</span> 
+                            </div>  
+                            <div class="col col-xs-4 border-One ceEF7Vr" xid="col64" __cid="ceEF7Vr" data-bind="event:{click:$model._callModelFn.bind($model, 'col64Click')}"> 
+                              <div component="$model/UI2/system/components/justep/row/row" class="x-row ceEF7Vr" xid="row19" style="height:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceEF7Vr"> 
+                                <div class="x-col ceEF7Vr" xid="col65" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col66" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col63" __cid="ceEF7Vr"></div> 
+                              </div>  
+                              <img src="../../v_8974a89fb39a4887acc0bf4be92fd3b1l_zh_CNs_d_m/TheSaleEnterprise/main/Img/013.png" alt="" xid="image16" style="width:40px;height:40px;" height="80%" __cid="ceEF7Vr" class="ceEF7Vr">  
+                              <span xid="span18" style="font-size:14px;text-align:center;" class="center-block ceEF7Vr" __cid="ceEF7Vr">项目管理</span> 
+                            </div>  
+                            <div class="col col-xs-4 border-One ceEF7Vr" xid="col61" __cid="ceEF7Vr" data-bind="event:{click:$model._callModelFn.bind($model, 'col61Click')}"> 
+                              <div component="$model/UI2/system/components/justep/row/row" class="x-row ceEF7Vr" xid="row18" style="height:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceEF7Vr"> 
+                                <div class="x-col ceEF7Vr" xid="col70" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col72" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col62" __cid="ceEF7Vr"></div> 
+                              </div>  
+                              <img src="../../v_5c22f46f20204ec8820869aa2007d0b9l_zh_CNs_d_m/TheSaleEnterprise/main/Img/014.png" alt="" xid="image17" style="width:40px;height:40px;" height="80%" __cid="ceEF7Vr" class="ceEF7Vr">  
+                              <span xid="span19" style="font-size:14px;text-align:center;" class="center-block ceEF7Vr" __cid="ceEF7Vr">日程管理</span> 
+                            </div>  
+                            <div class="col col-xs-4 border-One ceEF7Vr" xid="col69" __cid="ceEF7Vr" data-bind="event:{click:$model._callModelFn.bind($model, 'col69Click')}"> 
+                              <div component="$model/UI2/system/components/justep/row/row" class="x-row ceEF7Vr" xid="row17" style="height:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceEF7Vr"> 
+                                <div class="x-col ceEF7Vr" xid="col68" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col67" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col71" __cid="ceEF7Vr"></div> 
+                              </div>  
+                              <img src="../../v_d2c6fad65778445b836349030e648301l_zh_CNs_d_m/TheSaleEnterprise/main/Img/015.png" alt="" xid="image15" style="width:40px;height:40px;" height="80%" __cid="ceEF7Vr" class="ceEF7Vr">  
+                              <span xid="span20" style="font-size:14px;text-align:center;" class="center-block ceEF7Vr" __cid="ceEF7Vr">综合查询</span> 
+                            </div>  
+                            <div class="col col-xs-4 border-One ceEF7Vr" xid="col1" __cid="ceEF7Vr" data-bind="event:{click:$model._callModelFn.bind($model, 'col1Click')}"> 
+                              <div component="$model/UI2/system/components/justep/row/row" class="x-row ceEF7Vr" xid="row1" style="height:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceEF7Vr"> 
+                                <div class="x-col ceEF7Vr" xid="col2" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col3" __cid="ceEF7Vr"></div>  
+                                <div class="x-col ceEF7Vr" xid="col7" __cid="ceEF7Vr"></div> 
+                              </div>  
+                              <img src="../../v_3c89bdc5351e45ca9676d53baa7c9c70l_zh_CNs_d_m/TheSaleEnterprise/main/Img/015.png" alt="" xid="image1" style="width:40px;height:40px;" height="80%" __cid="ceEF7Vr" class="ceEF7Vr">  
+                              <span xid="span21" style="font-size:14px;text-align:center;" class="center-block ceEF7Vr" __cid="ceEF7Vr">代下单</span> 
+                            </div> 
+                          </div> 
+                        </div>  
+                        <style __cid="ceEF7Vr" class="ceEF7Vr">.x-panel.pcZj26ri-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcZj26ri-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcZj26ri-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcZj26ri-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcZj26ri-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcZj26ri-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcZj26ri-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcZj26ri-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcZj26ri-iosstatusbar >.x-panel-content {top: 48px;}</style> 
+                      </div> 
+                    </div>  
+                    <div class="x-contents-content ceEF7Vr" xid="content4" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="ceEF7Vr"> 
+                      <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container ceEF7Vr" xid="MsgContainer" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&#34;autoLoad&#34;:false,&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/main/other/Message.w&#34;}" __cid="ceEF7Vr"></div> 
+                    </div>  
+                    <div class="x-contents-content ceEF7Vr" xid="content5" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="ceEF7Vr"> 
+                      <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container ceEF7Vr" xid="moreContainer" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&#34;autoLoad&#34;:false,&#34;src&#34;:&#34;$model/UI2/TheSaleEnterprise/main/other/more.w&#34;}" __cid="ceEF7Vr"></div> 
+                    </div> 
+                  </div> 
+                </div>  
+                <div class="x-panel-bottom ceEF7Vr" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceEF7Vr"> 
+                  <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified x-card ceEF7Vr" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="ceEF7Vr"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top active ceEF7Vr" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;glyphicon glyphicon-home&#34;,&#34;label&#34;:&#34;工作&#34;,&#34;target&#34;:&#34;content2&#34;}" __cid="ceEF7Vr"> 
+                      <i xid="i1" class="glyphicon glyphicon-home ceEF7Vr" __cid="ceEF7Vr"></i>  
+                      <span xid="span1" __cid="ceEF7Vr" class="ceEF7Vr">工作</span> 
+                    </a>  
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top ceEF7Vr" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&#34;icon&#34;:&#34;glyphicon glyphicon-envelope&#34;,&#34;label&#34;:&#34;消息&#34;,&#34;target&#34;:&#34;content4&#34;}" __cid="ceEF7Vr"> 
+                      <i xid="i2" class="glyphicon glyphicon-envelope ceEF7Vr" __cid="ceEF7Vr"></i>  
+                      <span xid="span2" __cid="ceEF7Vr" class="ceEF7Vr">消息</span> 
+                    </a>  
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top ceEF7Vr" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&#34;icon&#34;:&#34;glyphicon glyphicon-option-horizontal&#34;,&#34;label&#34;:&#34;更多&#34;,&#34;target&#34;:&#34;content5&#34;}" __cid="ceEF7Vr"> 
+                      <i xid="i3" class="glyphicon glyphicon-option-horizontal ceEF7Vr" __cid="ceEF7Vr"></i>  
+                      <span xid="span3" __cid="ceEF7Vr" class="ceEF7Vr">更多</span> 
+                    </a> 
+                  </div> 
+                </div>  
+                <style __cid="ceEF7Vr" class="ceEF7Vr">.x-panel.pcrY7rmi-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcrY7rmi-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcrY7rmi-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcrY7rmi-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcrY7rmi-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcrY7rmi-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcrY7rmi-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcrY7rmi-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcrY7rmi-iosstatusbar >.x-panel-content {top: 48px;}</style> 
+              </div> 
+            </div>
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="czq2qqm" class="czq2qqm">.x-panel.pcYfEZJj-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcYfEZJj-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcYfEZJj-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcYfEZJj-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYfEZJj-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcYfEZJj-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYfEZJj-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYfEZJj-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYfEZJj-iosstatusbar >.x-panel-content {top: 0px;}</style>
+  </div> 
+</div></div>
+        
+        <div id="downloadGCF" style="display:none;padding:50px;">
+        	<span>您使用的浏览器需要下载插件才能使用, </span>
+        	<a id="downloadGCFLink" href="#">下载地址</a>
+        	<p>(安装后请重新打开浏览器)</p>
+        </div>
+    	<script>
+    	
+    	            //判断浏览器, 判断GCF
+    	 			var browser = {
+    			        isIe: function () {
+    			            return navigator.appVersion.indexOf("MSIE") != -1;
+    			        },
+    			        navigator: navigator.appVersion,
+    			        getVersion: function() {
+    			            var version = 999; // we assume a sane browser
+    			            if (navigator.appVersion.indexOf("MSIE") != -1)
+    			                // bah, IE again, lets downgrade version number
+    			                version = parseFloat(navigator.appVersion.split("MSIE")[1]);
+    			            return version;
+    			        }
+    			    };
+    				function isGCFInstalled(){
+    			      try{
+    			        var i = new ActiveXObject('ChromeTab.ChromeFrame');
+    			        if (i) {
+    			          return true;
+    			        }
+    			      }catch(e){}
+    			      return false;
+    				}
+    	            //判断浏览器, 判断GCF
+    	            var __continueRun = true;
+    				if (browser.isIe() && (browser.getVersion() < 10) && !isGCFInstalled()) {
+    					document.getElementById("applicationHost").style.display = 'none';
+    					document.getElementById("downloadGCF").style.display = 'block';
+    					var downloadLink = "/" + location.pathname.match(/[^\/]+/)[0] + "/v8.msi";
+    					document.getElementById("downloadGCFLink").href = downloadLink; 
+    					__continueRun = false;
+    	            }
+		 	
+    	</script>
+        <script id="_metaJS" src="../../v_07dccfa866a449cdafa2753db1e0a561l_zh_CNs_d_m/system/config/meta.js"> </script>
+        <script id="_requireJS" src="../../v_3753b7e666804d2b98b912c42234b66dl_zh_CNs_d_m/system/lib/require/require.2.1.10.js"> </script>
+        <script src="../../v_a95972b8e41e41ba93f61f58c36c5fb3l_zh_CNs_d_m/system/core.min.js"></script><script src="../../v_3a7393d391ff446eba2f80da2facb6cel_zh_CNs_d_m/system/common.min.js"></script><script src="../../v_2141a535824d4807b11d3ae85a33695al_zh_CNs_d_m/system/components/comp.min.js"></script><script id="_mainScript">
+        
+			if (__continueRun) {
+                window.__justep.cssReady = function(fn){
+                	var promises = [];
+                	for (var p in window.__justep.__ResourceEngine.__loadingCss){
+                		if(window.__justep.__ResourceEngine.__loadingCss.hasOwnProperty(p))
+                			promises.push(window.__justep.__ResourceEngine.__loadingCss[p].promise());
+                	}
+                	$.when.apply($, promises).done(fn);
+                };
+                
+            	window.__justep.__ResourceEngine = {
+            		readyRegExp : navigator.platform === 'PLAYSTATION 3' ? /^complete$/ : /^(complete|loaded)$/,
+            		url: window.location.href,	
+            		/*contextPath: 不包括语言 */
+            		contextPath: "",
+            		serverPath: "",
+            		__loadedJS: [],
+            		__loadingCss: {},
+            		onLoadCss: function(url, node){
+            			if (!this.__loadingCss[url]){
+            				this.__loadingCss[url] = $.Deferred();	
+                			if (node.attachEvent &&
+                                    !(node.attachEvent.toString && node.attachEvent.toString().indexOf('[native code') < 0) &&
+                                    !(typeof opera !== 'undefined' && opera.toString() === '[object Opera]')) {
+                                node.attachEvent('onreadystatechange', this.onLinkLoad.bind(this));
+                            } else {
+                                node.addEventListener('load', this.onLinkLoad.bind(this), false);
+                                node.addEventListener('error', this.onLinkError.bind(this), false);
+                            }
+            			}
+            		},
+            		
+            		onLinkLoad: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+            	        if (evt.type === 'load' ||
+                                (this.readyRegExp.test(target.readyState))) {
+            	        	var url = target.getAttribute("href");
+            	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+            	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+            	        	}
+                        }
+            		},
+            		
+            		onLinkError: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+        	        	var url = target.getAttribute("href");
+        	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+        	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+        	        	}
+            		},
+            		
+            		initContextPath: function(){
+            			var baseURL = document.getElementById("_requireJS").src;
+            			var before = location.protocol + "//" + location.host;
+            			var after = "/system/lib/require/require.2.1.10";
+            			var i = baseURL.indexOf(after);
+            			if (i !== -1){
+    	        			var middle = baseURL.substring(before.length, i);
+    						var items = middle.split("/");
+    						
+    						
+    						if ((items[items.length-1].indexOf("v_") === 0) 
+    								&& (items[items.length-1].indexOf("l_") !== -1)
+    								&& (items[items.length-1].indexOf("s_") !== -1)
+    								&& (items[items.length-1].indexOf("d_") !== -1)
+    								|| (items[items.length-1]=="v_")){
+    							items.splice(items.length-1, 1);
+    						}
+    						
+    						
+    						if (items.length !== 1){
+    							window.__justep.__ResourceEngine.contextPath = items.join("/");
+    						}else{
+    							window.__justep.__ResourceEngine.contextPath = before;
+    						}
+    						var index = window.__justep.__ResourceEngine.contextPath.lastIndexOf("/");
+    						if (index != -1){
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath.substr(0, index);
+    						}else{
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath;
+    						}
+            			}else{
+            				throw new Error(baseURL + " hasn't  " + after);
+            			}
+            		},
+            	
+            		loadJs: function(urls){
+            			if (urls && urls.length>0){
+            				var loadeds = this._getResources("script", "src").concat(this.__loadedJS);
+    	       				for (var i=0; i<urls.length; i++){
+								var url = urls[i];
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					this.__loadedJS[this.__loadedJS.length] = url;
+    	        					/*
+    	        					var script = document.createElement("script");
+    	        					script.src = url;
+    	        					document.head.appendChild(script);
+    	        					*/
+    	        					//$("head").append("<script  src='" + url + "'/>");
+									var url = require.toUrl("$UI" + url);
+    	        					$.ajax({
+    	        						url: url,
+    	        						dataType: "script",
+    	        						cache: true,
+    	        						async: false,
+    	        						success: function(){}
+    	        						});
+    	        				} 
+    	       				}
+            			}
+            		},
+            		
+            		loadCss: function(styles){
+           				var loadeds = this._getResources("link", "href");
+            			if (styles && styles.length>0){
+            				for (var i=0; i<styles.length; i++){
+    	       					var url = window.__justep.__ResourceEngine.contextPath + styles[i].url.replace("/UI2/", "/");
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					var include = styles[i].include || "";
+    	        					var link = $("<link type='text/css' rel='stylesheet' href='" + url + "' include='" + include + "'/>");
+    	        					this.onLoadCss(url, link[0]);
+    	        					$("head").append(link);
+    	        				} 
+            				}
+            			}
+            			
+            		},
+            		
+            		
+            		_isLoaded: function(url, loadeds){
+            			if (url){
+            				var newUrl = "";
+            				var items = url.split("/");
+            				var isVls = false;
+            				for (var i=0; i<items.length; i++){
+            					if (isVls){
+                					newUrl += "/" + items[i];
+            					}else{
+                					if (items[i] && (items[i].indexOf("v_")===0)
+            								&& (items[i].indexOf("l_")!==-1)
+            								&& (items[i].indexOf("s_")!==-1)
+            								&& (items[i].indexOf("d_")!==-1)
+            								|| (items[i]=="v_")){
+                						isVls = true;
+                					}
+            					}
+            				}
+            				if (!newUrl)
+            					newUrl = url;
+            				
+            				for (var i=0; i<loadeds.length; i++){
+								var originUrl = this._getOriginUrl(loadeds[i]);
+								if (originUrl && (originUrl.indexOf(newUrl)!==-1)){
+									return true;
+								}
+    						}
+            			}
+    					return false;
+            		},
+
+					_getOriginUrl: function(url){
+						var result = "";
+						if (url && (url.indexOf(".md5_")!==-1)){
+							url = url.split("#")[0];
+							url = url.split("?")[0];
+							var items = url.split(".");
+							for (var i=0; i<items.length; i++){
+								if ((i===items.length-2) && (items[i].indexOf("md5_")!==-1)){
+									continue;
+								}else{
+									if (i>0) result += ".";
+									result += items[i];
+								}
+							}
+						}else{
+							result = url;
+						}
+						return result;
+					},
+            		
+            		_getResources: function(tag, attr){
+    					var result = [];
+    					var scripts = $(tag);
+    					for (var i=0; i<scripts.length; i++){
+    						var v = scripts[i][attr];
+    						if (v){
+    							result[result.length] = v;
+    						}
+    					}
+    					return result;
+            		}
+            	};
+            	
+            	window.__justep.__ResourceEngine.initContextPath();
+    			requirejs.config({
+    				baseUrl: window.__justep.__ResourceEngine.contextPath + '/v_7d6bd3782fcd431082ad01366a85cd1bl_zh_CNs_d_m/TheSaleEnterprise',
+    			    paths: {
+    			    	/* 解决require.normalizeName与require.toUrl嵌套后不一致的bug   */
+    			    	'$model/UI2/v_': window.__justep.__ResourceEngine.contextPath + '/v_7d6bd3782fcd431082ad01366a85cd1bl_zh_CNs_d_m',
+    			    	'$model/UI2': window.__justep.__ResourceEngine.contextPath + '/v_7d6bd3782fcd431082ad01366a85cd1bl_zh_CNs_d_m',
+    			    	'$model': window.__justep.__ResourceEngine.serverPath,
+    			        'text': window.__justep.__ResourceEngine.contextPath + '/v_7d6bd3782fcd431082ad01366a85cd1bl_zh_CNs_d_m/system/lib/require/text.2.0.10',
+    			        'bind': window.__justep.__ResourceEngine.contextPath + '/v_7d6bd3782fcd431082ad01366a85cd1bl_zh_CNs_d_m/system/lib/bind/bind',
+    			        'jquery': window.__justep.__ResourceEngine.contextPath + '/v_7d6bd3782fcd431082ad01366a85cd1bl_zh_CNs_d_m/system/lib/jquery/jquery-1.11.1.min'
+    			    },
+    			    map: {
+    				        '*': {
+    				            res: '$model/UI2/system/lib/require/res',
+    				            service: '$model/UI2/system/lib/require/service',
+    				            cordova: '$model/UI2/system/lib/require/cordova',
+    				            w: '$model/UI2/system/lib/require/w',
+    				            css: '$model/UI2/system/lib/require/css'
+    				        }
+    				},
+    				waitSeconds: 300
+    			});
+    			
+    			requirejs(['require', 'jquery', '$model/UI2/system/lib/base/composition', '$model/UI2/system/lib/base/url', '$model/UI2/system/lib/route/hashbangParser', '$model/UI2/system/components/justep/versionChecker/versionChecker', '$model/UI2/system/components/justep/loadingBar/loadingBar', '$model/UI2/system/lib/jquery/domEvent',  '$model/UI2/system/lib/cordova/cordova'],  function (require, $, composition, URL, HashbangParser,versionChecker) { 
+    				document.addEventListener('deviceready', function() {
+    	                if (navigator && navigator.splashscreen && navigator.splashscreen.hide) {
+    	                	/*延迟隐藏，视觉效果更理想*/
+    	                	setTimeout(function() {navigator.splashscreen.hide();}, 800);
+    	                }
+    	            }, false);
+					setTimeout(function(){
+						versionChecker.check();
+					},2000);
+    				var context = {};
+    				context.model = '$model/UI2/TheSaleEnterprise/index.w' + (document.location.search || "");
+    				context.view = $('#applicationHost').children()[0];
+    				var element = document.getElementById('applicationHost');
+
+					    				
+    				
+    				var ownerid = new URL(window.__justep.__ResourceEngine.url).getParam("$ownerid");
+    				var pwindow = opener;
+    				if (!pwindow && window.parent && window.parent.window){
+    					pwindow = window.parent.window;
+    				}
+    				if(ownerid && pwindow 
+    						&& pwindow.__justep && pwindow.__justep.windowOpeners
+    						&& pwindow.__justep.windowOpeners[ownerid]
+    						&& $.isFunction(pwindow.__justep.windowOpeners[ownerid].sendToWindow)){
+    					window.__justep.setParams = function(params){
+    						/* 给windowOpener提供再次传参数的接口  */
+    						params = params || {};
+    						composition.setParams(document.getElementById('applicationHost'), params);
+    					};
+    					var winOpener = pwindow.__justep.windowOpeners[ownerid];
+    					if(winOpener) winOpener.window = window;
+    					$(window).unload(function(event){
+    						if(winOpener && winOpener.dispatchCloseEvent) winOpener.dispatchCloseEvent();
+    					});
+    					var params = winOpener.sendToWindow();
+						context.owner = winOpener;
+						context.params = params || {};
+	        			composition.compose(element, context);
+    				}else{
+        				var params =  {};
+    					var state = new HashbangParser(window.location.hash).parse().__state;
+    					if (state){
+    						params = state.get("");
+    						try{
+    							params = JSON.parse(params);
+    							if (params.hasOwnProperty("__singleValue__")){
+    								params = params.__singleValue__;
+    							}
+    						}catch(e1){}
+    					}
+    					context.noUpdateState = true;
+        				context.params = params;
+        				composition.compose(element, context);
+    				}
+    			});    
+            }
+		 	
+        </script>
+    </body>
+</html>

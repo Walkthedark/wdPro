@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cUfArmu" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cUfArmu" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-inputText.cUfArmu{background-color: rgba(255, 255, 255, 0.8)} .form-control-feedback.cUfArmu{height: 34px; line-height: 34px} .input_radius.cUfArmu{border-radius: 15px} .tb-settlement.cUfArmu{line-height: 40px; background-color: rgb(64, 116, 34); color: rgb(255, 255, 255); font-size: 16px} .tb-nopadding.cUfArmu{padding: 0} .btn-radius1.cUfArmu{border-radius: 30px} .btn-group.cUfArmu .btn.active.cUfArmu{color: rgb(64, 116, 34); border-bottom-color: rgb(64, 116, 34); border-bottom-style: groove; border-bottom-width: 2px} .btn-color.cUfArmu{color: rgb(17, 17, 17)} .listxz.cUfArmu{color: rgb(64, 116, 34); border-left-color: rgb(64, 116, 34); border-left-style: groove; border-left-width: 4px} .listxz2.cUfArmu{color: rgb(64, 116, 34)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cUfArmu" class="cUfArmu"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pceUVbQf-iosstatusbar cUfArmu" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cUfArmu"> 
+    <div class="x-panel-top cUfArmu" xid="top1" style="background-color:#439657;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUfArmu"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cUfArmu" xid="titleBar1" style="background-color:#439657;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cUfArmu"> 
+        <div class="x-titlebar-left cUfArmu" xid="left1" __cid="cUfArmu"/>  
+        <div class="x-titlebar-title cUfArmu" xid="title1" __cid="cUfArmu">添加商品</div>  
+        <div class="x-titlebar-right  cUfArmu" xid="right1" __cid="cUfArmu">
+          <div class="empty cUfArmu" __cid="cUfArmu"/>
+        </div>
+      </div> 
+    </div>  
+    <div class="x-panel-content cUfArmu" xid="content1" style="background-color:#EEEEEE;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUfArmu"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcZZZ7Vn-iosstatusbar cUfArmu" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cUfArmu"> 
+        <div class="x-panel-top cUfArmu" xid="top3" style="background-color:white;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUfArmu"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cUfArmu" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUfArmu"> 
+            <div class="x-col cUfArmu" xid="col1" __cid="cUfArmu"/>  
+            <div class="x-col x-col-90 cUfArmu" xid="col6" __cid="cUfArmu"> 
+              <div class="content_bg input_radius form-group has-feedback text-muted cUfArmu" xid="formGroup1" style="height:40;" __cid="cUfArmu"> 
+                <input component="$model/UI2/system/components/justep/input/input" class="input_radius form-control x-inputText cUfArmu" xid="key" style="background-color:#EEEEEE;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;搜索分类、商品分类&quot;}" __cid="cUfArmu"/>  
+                <i class="icon-ios7-search-strong form-control-feedback cUfArmu" xid="col4" __cid="cUfArmu"/>
+              </div> 
+            </div>  
+            <div class="x-col cUfArmu" xid="col7" __cid="cUfArmu"/>
+          </div> 
+        </div>  
+        <div class="x-panel-content cUfArmu" xid="content5" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUfArmu">
+          <div xid="div1" style="width:30%;height:100%;float:left;background-color:white;" __cid="cUfArmu" class="cUfArmu"> 
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list cUfArmu" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data1&quot;}" __cid="cUfArmu"> 
+              <ul class="x-list-template hide cUfArmu" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cUfArmu"> 
+                <li xid="li1" bind-css="{'listxz':   $model.data1.val(&quot;col0&quot;)==$object.val('col0')}" __cid="cUfArmu" class="cUfArmu"> 
+                  <div xid="div4" class="list-group-item cUfArmu" style="padding:3px 3px 3px 3px;" __cid="cUfArmu"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label  btn-color cUfArmu" xid="button7" bind-text=" val(&quot;col1&quot;)" bind-css="{'listxz2':   $model.data1.val(&quot;col0&quot;)==$object.val('col0')}" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;鸡&quot;,&quot;target&quot;:&quot;content2&quot;}" __cid="cUfArmu"> 
+                      <i xid="i7" __cid="cUfArmu" class="cUfArmu"/>  
+                      <span xid="span8" __cid="cUfArmu" class="cUfArmu">鸡</span>
+                    </a> 
+                  </div> 
+                </li> 
+              </ul> 
+            </div> 
+          </div>  
+          <div xid="div2" style="height:100%;float:right;background-color:white;width:67%;" __cid="cUfArmu" class="cUfArmu"> 
+            <div xid="div3" class="list-group-item cUfArmu" __cid="cUfArmu">
+              <div class="media cUfArmu" xid="media1" __cid="cUfArmu"> 
+                <div class="media-body cUfArmu" xid="mediaBody1" __cid="cUfArmu"> 
+                  <h5 xid="h51" class="media-heading cUfArmu" style="color:#505050;" __cid="cUfArmu">补3月份小菜新菜差价</h5>  
+                  <h5 xid="h52" class="media-heading cUfArmu" style="color:#C5C5C5;" __cid="cUfArmu">单位：元</h5>
+                </div>  
+                <div class="media-right cUfArmu" xid="mediaRight1" __cid="cUfArmu"> 
+                  <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cUfArmu" xid="radio1" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cUfArmu">
+                    <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="radio" __cid="cUfArmu" class="cUfArmu"/>
+                    <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cUfArmu" class="cUfArmu"/>
+                  </span>
+                </div> 
+              </div>
+            </div>  
+            <div xid="div5" class="list-group-item cUfArmu" __cid="cUfArmu"> 
+              <div class="media cUfArmu" xid="media2" __cid="cUfArmu"> 
+                <div class="media-body cUfArmu" xid="mediaBody3" __cid="cUfArmu"> 
+                  <h5 xid="h54" class="media-heading cUfArmu" style="color:#505050;" __cid="cUfArmu">困鸡</h5>  
+                  <h5 xid="h53" class="media-heading cUfArmu" style="color:#C5C5C5;" __cid="cUfArmu">单位：元</h5>
+                </div>  
+                <div class="media-right cUfArmu" xid="mediaRight2" __cid="cUfArmu"> 
+                  <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cUfArmu" xid="radio2" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cUfArmu">
+                    <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="radio" __cid="cUfArmu" class="cUfArmu"/>
+                    <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cUfArmu" class="cUfArmu"/>
+                  </span>
+                </div> 
+              </div> 
+            </div>  
+            <div xid="div6" class="list-group-item cUfArmu" __cid="cUfArmu"> 
+              <div class="media cUfArmu" xid="media3" __cid="cUfArmu"> 
+                <div class="media-body cUfArmu" xid="mediaBody4" __cid="cUfArmu"> 
+                  <h5 xid="h56" class="media-heading cUfArmu" style="color:#505050;" __cid="cUfArmu">白豆腐</h5>  
+                  <h5 xid="h55" class="media-heading cUfArmu" style="color:#C5C5C5;" __cid="cUfArmu">单位：元</h5>
+                </div>  
+                <div class="media-right cUfArmu" xid="mediaRight3" __cid="cUfArmu"> 
+                  <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cUfArmu" xid="radio3" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cUfArmu">
+                    <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="radio" __cid="cUfArmu" class="cUfArmu"/>
+                    <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cUfArmu" class="cUfArmu"/>
+                  </span>
+                </div> 
+              </div> 
+            </div>
+          </div>
+        </div>
+        <style __cid="cUfArmu" class="cUfArmu">.x-panel.pcZZZ7Vn-iosstatusbar &gt;.x-panel-top {height: 52px;}.x-panel.pcZZZ7Vn-iosstatusbar &gt;.x-panel-content { top: 52px;bottom: nullpx;}.x-panel.pcZZZ7Vn-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcZZZ7Vn-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcZZZ7Vn-iosstatusbar &gt;.x-panel-top {height: 72px;}.iosstatusbar .x-panel.pcZZZ7Vn-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcZZZ7Vn-iosstatusbar &gt;.x-panel-content { top: 72px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcZZZ7Vn-iosstatusbar &gt;.x-panel-top {height: 52px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcZZZ7Vn-iosstatusbar &gt;.x-panel-content {top: 52px;}</style>
+      </div>
+    </div>  
+    <div class="x-panel-bottom cUfArmu" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUfArmu">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row tb-nopadding cUfArmu" xid="row3" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUfArmu"> 
+        <div class="x-col x-col-20 x-col-center cUfArmu" xid="col5" style="text-align:center;" __cid="cUfArmu"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn-radius1 btn btn-link btn-only-icon cUfArmu" xid="button8" style="background-color:#407422;color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;e-commerce e-commerce-shangpin1&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cUfArmu"> 
+            <i xid="i8" class="e-commerce e-commerce-shangpin1 cUfArmu" __cid="cUfArmu"/>  
+            <span xid="span14" __cid="cUfArmu" class="cUfArmu"/>
+          </a> 
+        </div>  
+        <div class="x-col  cUfArmu" xid="col8" style="line-height:40px; font-size:16px;" __cid="cUfArmu"> 
+          <span xid="span17" __cid="cUfArmu" class="cUfArmu">已选择</span>  
+          <span xid="number" class="allNumber cUfArmu" style="color:#FF5A1D;" __cid="cUfArmu">3</span>  
+          <span xid="span16" __cid="cUfArmu" class="cUfArmu">项</span>
+        </div>  
+        <div class="x-col x-col-50 text-center tb-settlement cUfArmu" xid="col9" bind-click="settlementClick" __cid="cUfArmu"> 
+          <span xid="span13" __cid="cUfArmu" class="cUfArmu">我选好了</span>
+        </div> 
+      </div>
+    </div>
+    <style __cid="cUfArmu" class="cUfArmu">.x-panel.pceUVbQf-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pceUVbQf-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pceUVbQf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pceUVbQf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceUVbQf-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pceUVbQf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceUVbQf-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceUVbQf-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceUVbQf-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

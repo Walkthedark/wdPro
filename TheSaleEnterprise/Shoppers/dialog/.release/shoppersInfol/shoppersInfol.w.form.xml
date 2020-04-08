@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window c7NVrYv" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c7NVrYv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/grid/grid,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-state-default.c7NVrYv, .x-grid-widget-content.c7NVrYv .x-state-default.c7NVrYv, .x-grid-widget-header.c7NVrYv .x-state-default.c7NVrYv{border: 1px solid rgb(221, 221, 221); background-image: linear-gradient(to bottom, rgb(62, 160, 255) 0%, rgb(62, 160, 255) 100%); background-repeat: repeat-x; color: rgb(255, 255, 255)} th.c7NVrYv{text-align: center} .x-grid.c7NVrYv tr.x-row-ltr.c7NVrYv td.c7NVrYv{text-align: left; border-right-width: 1px; border: 1px solid rgb(221, 221, 221)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="c7NVrYv" class="c7NVrYv"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="infoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Shoppers/dialog/shoppersSalesCheck.w&quot;}" __cid="c7NVrYv" class="c7NVrYv">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay c7NVrYv" __cid="c7NVrYv"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog c7NVrYv" style="display:none;" __cid="c7NVrYv">
+      <xhtml:div class="x-dialog-title c7NVrYv" __cid="c7NVrYv">
+        <xhtml:button class="close c7NVrYv" __cid="c7NVrYv">
+          <xhtml:span __cid="c7NVrYv" class="c7NVrYv">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text c7NVrYv" __cid="c7NVrYv"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body c7NVrYv" __cid="c7NVrYv"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="newDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Commonly/dialog/salesOrderNew.w&quot;}" __cid="c7NVrYv" class="c7NVrYv">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay c7NVrYv" __cid="c7NVrYv"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog c7NVrYv" style="display:none;" __cid="c7NVrYv">
+      <xhtml:div class="x-dialog-title c7NVrYv" __cid="c7NVrYv">
+        <xhtml:button class="close c7NVrYv" __cid="c7NVrYv">
+          <xhtml:span __cid="c7NVrYv" class="c7NVrYv">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text c7NVrYv" __cid="c7NVrYv"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body c7NVrYv" __cid="c7NVrYv"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcRVBf6z-iosstatusbar c7NVrYv" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c7NVrYv"> 
+    <div class="x-panel-top c7NVrYv" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7NVrYv"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title c7NVrYv" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;所属导购档案&quot;}" __cid="c7NVrYv"> 
+        <div class="x-titlebar-left c7NVrYv" xid="left2" __cid="c7NVrYv"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label c7NVrYv" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="c7NVrYv"> 
+            <i xid="i1" __cid="c7NVrYv" class="c7NVrYv"/>  
+            <span xid="span4" __cid="c7NVrYv" class="c7NVrYv">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title c7NVrYv" xid="title2" __cid="c7NVrYv">所属导购档案</div>  
+        <div class="x-titlebar-right  c7NVrYv" xid="right2" __cid="c7NVrYv">
+          <div class="empty c7NVrYv" __cid="c7NVrYv"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content c7NVrYv" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7NVrYv"> 
+      <xhtml:table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="true" class="x-grid-no-bordered c7NVrYv" xid="grid1" data="checkData" useFooter="false" frozenColumnCount="1" data-config="{&quot;altRows&quot;:true,&quot;colModel&quot;:[{&quot;label&quot;:&quot;姓名&quot;,&quot;name&quot;:&quot;col1&quot;,&quot;width&quot;:&quot;100&quot;,&quot;xid&quot;:&quot;column26&quot;},{&quot;label&quot;:&quot;年龄&quot;,&quot;name&quot;:&quot;col2&quot;,&quot;width&quot;:&quot;100&quot;,&quot;xid&quot;:&quot;column27&quot;},{&quot;label&quot;:&quot;岗位类型&quot;,&quot;name&quot;:&quot;col3&quot;,&quot;width&quot;:&quot;100&quot;,&quot;xid&quot;:&quot;column28&quot;},{&quot;label&quot;:&quot;手机号&quot;,&quot;name&quot;:&quot;col4&quot;,&quot;width&quot;:&quot;100&quot;,&quot;xid&quot;:&quot;column29&quot;},{&quot;label&quot;:&quot;负责网点&quot;,&quot;name&quot;:&quot;col5&quot;,&quot;width&quot;:&quot;100&quot;,&quot;xid&quot;:&quot;column30&quot;},{&quot;label&quot;:&quot;入职日期&quot;,&quot;name&quot;:&quot;col6&quot;,&quot;width&quot;:&quot;100&quot;,&quot;xid&quot;:&quot;column31&quot;}],&quot;data&quot;:&quot;checkData&quot;,&quot;footerrow&quot;:false,&quot;frozenColumnCount&quot;:1,&quot;height&quot;:&quot;auto&quot;,&quot;hiddenCaptionbar&quot;:true,&quot;width&quot;:&quot;100%&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" __cid="c7NVrYv"/> 
+    </div>  
+    <style __cid="c7NVrYv" class="c7NVrYv">.x-panel.pcRVBf6z-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcRVBf6z-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcRVBf6z-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcRVBf6z-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcRVBf6z-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcRVBf6z-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcRVBf6z-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcRVBf6z-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcRVBf6z-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

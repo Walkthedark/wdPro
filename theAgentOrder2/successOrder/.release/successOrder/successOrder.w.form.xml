@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cryeQbi" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cryeQbi" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.btn-radius.cryeQbi{border-radius: 60px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cryeQbi" class="cryeQbi"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcVZBzQz-iosstatusbar cryeQbi" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cryeQbi"> 
+    <div class="x-panel-top cryeQbi" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cryeQbi">
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cryeQbi" style="background-color:#00BFFF;" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;收货地址&quot;}" __cid="cryeQbi"> 
+        <div class="x-titlebar-left cryeQbi" xid="left1" __cid="cryeQbi"></div>  
+        <div class="x-titlebar-title cryeQbi" xid="title1" __cid="cryeQbi">订单状态</div>  
+        <div class="x-titlebar-right  cryeQbi" xid="right1" __cid="cryeQbi">
+          <div class="empty cryeQbi" __cid="cryeQbi"/>
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-content cryeQbi" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cryeQbi">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cryeQbi" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cryeQbi"> 
+        <div class="x-col cryeQbi" xid="col1" __cid="cryeQbi"/>  
+        <div class="x-col x-col-80 cryeQbi" xid="col2" style="text-align:center;" __cid="cryeQbi">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon btn-radius cryeQbi" xid="button1" style="color:#00BFFF;border-style:solid solid solid solid;border-width:medium medium medium medium;border-color:#00BFFF #00BFFF #00BFFF #00BFFF;height:100px;width:100px;line-height:100px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-checkmark&quot;}" __cid="cryeQbi"> 
+            <i xid="i4" class="icon-android-checkmark cryeQbi" style="font-size:40px;" __cid="cryeQbi"/>  
+            <span xid="span3" __cid="cryeQbi" class="cryeQbi"/>
+          </a>  
+          <h5 xid="h51" style="font-size:20px;color:#111111;font-weight:bold;" __cid="cryeQbi" class="cryeQbi">下单成功</h5>
+        </div>  
+        <div class="x-col cryeQbi" xid="col3" __cid="cryeQbi"/>
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cryeQbi" xid="row2" style="height:140px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cryeQbi"> 
+        <div class="x-col cryeQbi" xid="col4" __cid="cryeQbi"/>  
+        <div class="x-col cryeQbi" xid="col5" __cid="cryeQbi"/>  
+        <div class="x-col cryeQbi" xid="col6" __cid="cryeQbi"/>
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cryeQbi" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cryeQbi"> 
+        <div class="x-col cryeQbi" xid="col13" style="text-align:center;" __cid="cryeQbi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label  btn-radius cryeQbi" xid="button2" style="color:#00BFFF;margin-top:5px;width:80%;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#00BFFF #00BFFF #00BFFF #00BFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;label&quot;:&quot;查看订单&quot;}" __cid="cryeQbi"> 
+            <i xid="i3" __cid="cryeQbi" class="cryeQbi"/>  
+            <span xid="span11" __cid="cryeQbi" class="cryeQbi">查看订单</span>
+          </a> 
+        </div>  
+        <div class="x-col cryeQbi" xid="col14" style="text-align:center;" __cid="cryeQbi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label btn-radius cryeQbi" xid="button7" style="color:#FFFFFF;margin-top:5px;width:80%;background-color:#00BFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button7Click" data-config="{&quot;label&quot;:&quot;继续下单&quot;}" __cid="cryeQbi"> 
+            <i xid="i7" __cid="cryeQbi" class="cryeQbi"/>  
+            <span xid="span12" __cid="cryeQbi" class="cryeQbi">继续下单</span>
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cryeQbi" class="cryeQbi">.x-panel.pcVZBzQz-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcVZBzQz-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcVZBzQz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcVZBzQz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcVZBzQz-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcVZBzQz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcVZBzQz-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcVZBzQz-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcVZBzQz-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

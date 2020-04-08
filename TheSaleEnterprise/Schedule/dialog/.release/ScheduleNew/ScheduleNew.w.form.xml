@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cENVzum" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cENVzum" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cENVzum" class="cENVzum"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="listDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Project/dialog/ProjectArchive.w&quot;}" __cid="cENVzum" class="cENVzum">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cENVzum" __cid="cENVzum"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cENVzum" style="display:none;" __cid="cENVzum">
+      <xhtml:div class="x-dialog-title cENVzum" __cid="cENVzum">
+        <xhtml:button class="close cENVzum" __cid="cENVzum">
+          <xhtml:span __cid="cENVzum" class="cENVzum">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cENVzum" __cid="cENVzum"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cENVzum" __cid="cENVzum"/>
+    </xhtml:div>
+  </span>
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="staffDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:staffDialogReceive" data-config="{&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Schedule/dialog/staff.w&quot;}" __cid="cENVzum" class="cENVzum">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cENVzum" __cid="cENVzum"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cENVzum" style="display:none;" __cid="cENVzum">
+      <xhtml:div class="x-dialog-title cENVzum" __cid="cENVzum">
+        <xhtml:button class="close cENVzum" __cid="cENVzum">
+          <xhtml:span __cid="cENVzum" class="cENVzum">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cENVzum" __cid="cENVzum"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cENVzum" __cid="cENVzum"/>
+    </xhtml:div>
+  </span>
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcuAFvIz-iosstatusbar cENVzum" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cENVzum"> 
+    <div class="x-panel-top cENVzum" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cENVzum"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cENVzum" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;新的日程安排&quot;}" __cid="cENVzum"> 
+        <div class="x-titlebar-left cENVzum" xid="left2" __cid="cENVzum"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cENVzum" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cENVzum"> 
+            <i xid="i1" __cid="cENVzum" class="cENVzum"/>  
+            <span xid="span4" __cid="cENVzum" class="cENVzum">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cENVzum" xid="title2" __cid="cENVzum">新的日程安排</div>  
+        <div class="x-titlebar-right  cENVzum" xid="right2" __cid="cENVzum">
+          <div class="empty cENVzum" __cid="cENVzum"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cENVzum" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cENVzum"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cENVzum" xid="row1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cENVzum"> 
+        <div class="x-col cENVzum" xid="col17" __cid="cENVzum"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cENVzum" xid="row4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cENVzum"> 
+            <div class="col col-xs-12 cENVzum" xid="col1" __cid="cENVzum"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cENVzum" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cENVzum"> 
+                <label class="x-label cENVzum" xid="label3" style="width:80px;" __cid="cENVzum">类型：</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cENVzum" xid="input1" data-bind="component:{ref:$model.infoData.ref(&quot;lx&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cENVzum"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cENVzum" xid="col2" __cid="cENVzum"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cENVzum" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cENVzum"> 
+                <label class="x-label cENVzum" xid="label4" style="width:80px;" __cid="cENVzum">开始：</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cENVzum" xid="input2" data-bind="component:{ref:$model.infoData.ref(&quot;ks&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Date&quot;}" __cid="cENVzum"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cENVzum" xid="col4" __cid="cENVzum"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cENVzum" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cENVzum"> 
+                <label class="x-label cENVzum" xid="label6" style="width:80px;" __cid="cENVzum">结束：</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cENVzum" xid="input3" data-bind="component:{ref:$model.infoData.ref(&quot;js&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Date&quot;}" __cid="cENVzum"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cENVzum" xid="col3" __cid="cENVzum"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cENVzum" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cENVzum"> 
+                <label class="x-label cENVzum" xid="label1" style="width:80px;" __cid="cENVzum">地点：</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cENVzum" xid="input4" data-bind="component:{ref:$model.infoData.ref(&quot;dd&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cENVzum"/>
+              </div> 
+            </div>
+          </div> 
+        </div> 
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cENVzum" xid="row5" style="display:none;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cENVzum"> 
+        <div class="x-col cENVzum" xid="col5" __cid="cENVzum"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cENVzum" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;更多选项&quot;}" __cid="cENVzum"> 
+            <i xid="i4" __cid="cENVzum" class="cENVzum"/>  
+            <span xid="span3" __cid="cENVzum" class="cENVzum">更多选项</span>
+          </a> 
+        </div> 
+      </div>
+      <div xid="more" __cid="cENVzum" class="cENVzum"/>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cENVzum" xid="row8" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cENVzum"> 
+        <div class="x-col cENVzum" xid="col7" __cid="cENVzum"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cENVzum" xid="row7" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cENVzum"> 
+            <div class="col col-xs-12 cENVzum" xid="col6" __cid="cENVzum"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cENVzum" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cENVzum"> 
+                <label class="x-label cENVzum" xid="label2" style="width:80px;" __cid="cENVzum">邀请：</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cENVzum" xid="staffInput" data-bind="component:{ref:$model.infoData.ref(&quot;yq&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cENVzum"/>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cENVzum" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button5Click" data-config="{&quot;label&quot;:&quot;批量邀请&quot;}" __cid="cENVzum"> 
+                  <i xid="i5" __cid="cENVzum" class="cENVzum"/>  
+                  <span xid="span5" __cid="cENVzum" class="cENVzum">批量邀请</span>
+                </a> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cENVzum" xid="row2" style="padding:20px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cENVzum"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label cENVzum" xid="button2" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;label&quot;:&quot;添 加&quot;}" __cid="cENVzum"> 
+          <i xid="i2" __cid="cENVzum" class="cENVzum"/>  
+          <span xid="span1" __cid="cENVzum" class="cENVzum">添 加</span> 
+        </a> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cENVzum" xid="row3" style="padding:20px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cENVzum"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default3 btn-only-label cENVzum" xid="button3" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cENVzum"> 
+          <i xid="i3" __cid="cENVzum" class="cENVzum"/>  
+          <span xid="span2" __cid="cENVzum" class="cENVzum">取消</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cENVzum" class="cENVzum">.x-panel.pcuAFvIz-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcuAFvIz-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcuAFvIz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcuAFvIz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuAFvIz-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcuAFvIz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuAFvIz-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuAFvIz-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuAFvIz-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" __cid="cENVzum" class="cENVzum"/>
+</div>

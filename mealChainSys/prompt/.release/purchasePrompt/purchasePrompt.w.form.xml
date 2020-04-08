@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cqYfQJn" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cqYfQJn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.btn-radius.cqYfQJn{border-radius: 60px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cqYfQJn" class="cqYfQJn"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcvimA73-iosstatusbar cqYfQJn" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cqYfQJn"> 
+    <div class="x-panel-top cqYfQJn" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqYfQJn">
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cqYfQJn" xid="titleBar2" style="background-color:#272F2C;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cqYfQJn"> 
+        <div class="x-titlebar-left cqYfQJn" xid="left2" __cid="cqYfQJn"/>  
+        <div class="x-titlebar-title cqYfQJn" xid="title2" __cid="cqYfQJn">申购成功</div>  
+        <div class="x-titlebar-right  cqYfQJn" xid="right2" __cid="cqYfQJn">
+          <div class="empty cqYfQJn" __cid="cqYfQJn"/>
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-content cqYfQJn" xid="content1" style="background-color:#F2F2F2;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqYfQJn">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cqYfQJn" xid="row1" style="height:40px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqYfQJn"> 
+        <div class="x-col cqYfQJn" xid="col1" __cid="cqYfQJn"/>  
+        <div class="x-col cqYfQJn" xid="col2" __cid="cqYfQJn"/>  
+        <div class="x-col cqYfQJn" xid="col3" __cid="cqYfQJn"/>
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cqYfQJn" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqYfQJn"> 
+        <div class="x-col cqYfQJn" xid="col4" __cid="cqYfQJn"/>  
+        <div class="x-col x-col-80 cqYfQJn" xid="col5" style="text-align:center;" __cid="cqYfQJn">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon btn-radius cqYfQJn" xid="button1" style="color:#407422;border-style:solid solid solid solid;border-width:medium medium medium medium;border-color:#407422 #407422 #407422 #407422;height:100px;width:100px;line-height:100px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-checkmark&quot;}" __cid="cqYfQJn"> 
+            <i xid="i1" class="icon-android-checkmark cqYfQJn" style="font-size:40px;" __cid="cqYfQJn"/>
+            <span xid="span1" __cid="cqYfQJn" class="cqYfQJn"/>
+          </a>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cqYfQJn" xid="row3" style="height:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqYfQJn"> 
+            <div class="x-col cqYfQJn" xid="col7" __cid="cqYfQJn"/>  
+            <div class="x-col cqYfQJn" xid="col8" __cid="cqYfQJn"/>  
+            <div class="x-col cqYfQJn" xid="col9" __cid="cqYfQJn"/>
+          </div>
+          <h5 xid="h51" style="font-size:20px;color:#111111;font-weight:bold;" __cid="cqYfQJn" class="cqYfQJn">物料申购成功！</h5> 
+        </div>  
+        <div class="x-col cqYfQJn" xid="col6" __cid="cqYfQJn"/>
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cqYfQJn" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqYfQJn"> 
+        <div xid="col10" style="width:0.5em;" __cid="cqYfQJn" class="cqYfQJn"/>  
+        <div class="x-col cqYfQJn" xid="col11" style="text-align:center;" __cid="cqYfQJn">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cqYfQJn" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-infoo&quot;,&quot;label&quot;:&quot;申购单已提交，请等待厨师长或者相关负责人审核&quot;}" __cid="cqYfQJn"> 
+            <i xid="i3" class="dataControl dataControl-infoo cqYfQJn" style="color:#F66833;" __cid="cqYfQJn"/>  
+            <span xid="span3" style="color:#757575;" __cid="cqYfQJn" class="cqYfQJn">申购单已提交，请等待厨师长或者相关负责人审核</span>
+          </a>
+        </div>  
+        <div xid="col12" style="width:0.5em;" __cid="cqYfQJn" class="cqYfQJn"/>
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cqYfQJn" xid="row5" style="height:40px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqYfQJn"> 
+        <div class="x-col cqYfQJn" xid="col15" __cid="cqYfQJn"/>  
+        <div class="x-col cqYfQJn" xid="col13" __cid="cqYfQJn"/>  
+        <div class="x-col cqYfQJn" xid="col14" __cid="cqYfQJn"/>
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cqYfQJn" xid="row6" style="height:40px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqYfQJn"> 
+        <div class="x-col cqYfQJn" xid="col18" __cid="cqYfQJn"/>  
+        <div class="x-col x-col-80 cqYfQJn" xid="col16" style="text-align:center;" __cid="cqYfQJn">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label btn-radius cqYfQJn" xid="button2" style="background-color:#407422;color:#FFFFFF;margin-top:5px;width:80%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;确定退货&quot;}" __cid="cqYfQJn"> 
+            <i xid="i2" __cid="cqYfQJn" class="cqYfQJn"/>  
+            <span xid="span2" __cid="cqYfQJn" class="cqYfQJn">确定退货</span>
+          </a>
+        </div>  
+        <div class="x-col cqYfQJn" xid="col17" __cid="cqYfQJn"/>
+      </div>
+    </div>  
+    <style __cid="cqYfQJn" class="cqYfQJn">.x-panel.pcvimA73-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcvimA73-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcvimA73-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcvimA73-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvimA73-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcvimA73-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvimA73-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvimA73-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvimA73-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cZZ7NVj" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cZZ7NVj" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">html.cZZ7NVj{font-size: 62.5% !important} body.cZZ7NVj{font-size: 1.6rem "Microsoft YaHei", arial, tahoma, 宋体, sans-serif !important}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cZZ7NVj" class="cZZ7NVj"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcMFzIJj-iosstatusbar cZZ7NVj" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cZZ7NVj"> 
+    <div class="x-panel-content cZZ7NVj" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cZZ7NVj"> 
+      <div xid="div1" class="list-group-item cZZ7NVj" style="padding:5px 5px 5px 5px;background-color:#EBEAF0;" __cid="cZZ7NVj"> 
+        <div class="media cZZ7NVj" xid="media1" __cid="cZZ7NVj"> 
+          <div class="media-body cZZ7NVj" xid="mediaBody1" __cid="cZZ7NVj"> 
+            <h5 xid="h51" style="color:#181919;" __cid="cZZ7NVj" class="cZZ7NVj">业务模式</h5>
+          </div> 
+        </div> 
+      </div>
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cZZ7NVj" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;business_Type_Data&quot;}" __cid="cZZ7NVj"> 
+        <ul class="x-list-template hide cZZ7NVj" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cZZ7NVj"> 
+          <li xid="li1" __cid="cZZ7NVj" class="cZZ7NVj"> 
+            <div xid="div22" class="list-group-item cZZ7NVj" style="padding:5px 5px 5px 5px;" __cid="cZZ7NVj"> 
+              <div class="media cZZ7NVj" xid="media9" __cid="cZZ7NVj"> 
+                <div class="media-body cZZ7NVj" xid="mediaBody9" __cid="cZZ7NVj"> 
+                  <h5 xid="h518" style="color:#181919;" bind-text=" val(&quot;name&quot;)" __cid="cZZ7NVj" class="cZZ7NVj"/> 
+                </div>  
+                <div class="media-right cZZ7NVj" xid="mediaRight8" __cid="cZZ7NVj"> 
+                  <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cZZ7NVj" xid="radio1" checked="true" name="chooseName" checkedValue="1" uncheckedValue="0" data-config="{&quot;checked&quot;:true,&quot;checkedValue&quot;:&quot;1&quot;,&quot;disabled&quot;:false,&quot;name&quot;:&quot;chooseName&quot;,&quot;uncheckedValue&quot;:&quot;0&quot;}" data-bind="component:{ref:ref(&quot;choose&quot;),name:'$model/UI2/system/components/justep/button/radio'}" data-events="onChange:radio1Change" __cid="cZZ7NVj">
+                    <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="radio" name="chooseName" __cid="cZZ7NVj" class="cZZ7NVj"/>
+                    <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cZZ7NVj" class="cZZ7NVj"/>
+                  </span>
+                </div> 
+              </div> 
+            </div> 
+          </li> 
+        </ul> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cZZ7NVj" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cZZ7NVj"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cZZ7NVj" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cZZ7NVj"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label cZZ7NVj" xid="button1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cZZ7NVj"> 
+          <i xid="i1" __cid="cZZ7NVj" class="cZZ7NVj"/>  
+          <span xid="span1" __cid="cZZ7NVj" class="cZZ7NVj">取消</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cZZ7NVj" xid="okBtn" style="background-color:#4B76AE;color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:okBtnClick" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cZZ7NVj"> 
+          <i xid="i2" __cid="cZZ7NVj" class="cZZ7NVj"/>  
+          <span xid="span2" __cid="cZZ7NVj" class="cZZ7NVj">确定</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cZZ7NVj" class="cZZ7NVj">.x-panel.pcMFzIJj-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcMFzIJj-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcMFzIJj-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcMFzIJj-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcMFzIJj-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcMFzIJj-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcMFzIJj-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcMFzIJj-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcMFzIJj-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div> 
+</div>

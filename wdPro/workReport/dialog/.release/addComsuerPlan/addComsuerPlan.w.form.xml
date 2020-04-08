@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cnAvMVn" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cnAvMVn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">html.cnAvMVn{font-size: 62.5% !important} body.cnAvMVn{font-size: 1.6rem "Microsoft YaHei", arial, tahoma, 宋体, sans-serif !important} .tb-listBox.cnAvMVn{padding: 5px} .tb-listBox.cnAvMVn div.cnAvMVn{background-color: rgb(255, 255, 255)} .tb-listBox.cnAvMVn p.cnAvMVn{font-size: 13px; margin-top: 5px} .x-popOver-content.ddd.cnAvMVn{bottom: 0.6px !important}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cnAvMVn" class="cnAvMVn"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pciY7BZ3-iosstatusbar cnAvMVn" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cnAvMVn"> 
+    <div class="x-panel-content cnAvMVn" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnAvMVn">
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cnAvMVn" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cnAvMVn"> 
+        <div class="x-contents-content active cnAvMVn" xid="content1" style="background-color:#F3F4F3;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cnAvMVn">
+          <div xid="div1" class="list-group-item cnAvMVn" __cid="cnAvMVn"> 
+            <div xid="div2" __cid="cnAvMVn" class="cnAvMVn">
+              <label xid="label1" class="x-label cnAvMVn" style="font-weight:bold;" __cid="cnAvMVn">汇报内容</label>
+            </div>  
+            <div xid="div3" __cid="cnAvMVn" class="cnAvMVn">
+              <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control cnAvMVn" xid="textarea1" style="height:40px;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cnAvMVn"/>
+            </div>
+          </div>  
+          <div xid="div6" class="list-group-item cnAvMVn" __cid="cnAvMVn"> 
+            <div xid="div5" __cid="cnAvMVn" class="cnAvMVn"> 
+              <label xid="label4" class="x-label cnAvMVn" style="font-weight:bold;" __cid="cnAvMVn">开始时间</label>
+            </div>  
+            <div xid="div4" __cid="cnAvMVn" class="cnAvMVn"> 
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control cnAvMVn" xid="input3" style="border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Date&quot;}" __cid="cnAvMVn"/>
+            </div> 
+          </div>  
+          <div xid="div13" class="list-group-item cnAvMVn" __cid="cnAvMVn"> 
+            <div xid="div14" __cid="cnAvMVn" class="cnAvMVn"> 
+              <label xid="label7" class="x-label cnAvMVn" style="font-weight:bold;" __cid="cnAvMVn">结束时间</label>
+            </div>  
+            <div xid="div15" __cid="cnAvMVn" class="cnAvMVn"> 
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control cnAvMVn" xid="input4" style="border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Date&quot;}" __cid="cnAvMVn"/>
+            </div> 
+          </div>  
+          <div xid="div27" __cid="cnAvMVn" class="cnAvMVn">
+            <div xid="div7" class="list-group-item cnAvMVn" style="border-left-style:none;padding:5px 5px 5px 5px;border-top-style:none;" __cid="cnAvMVn">
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cnAvMVn" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-plus&quot;,&quot;label&quot;:&quot;添加关联附件&quot;}" __cid="cnAvMVn"> 
+                <i xid="i1" class="dataControl dataControl-plus cnAvMVn" __cid="cnAvMVn"/>  
+                <span xid="span1" style="color:#2D2D2D;font-weight:bold;" __cid="cnAvMVn" class="cnAvMVn">添加关联附件</span>
+              </a> 
+            </div>
+            <div xid="div25" style="width:100%;background-color:white;" __cid="cnAvMVn" class="cnAvMVn">
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cnAvMVn" xid="list4" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;imageData&quot;}" __cid="cnAvMVn"> 
+                <ul class="x-list-template hide cnAvMVn" xid="listTemplateUl5" bind-foreach="{data:$model.foreach_list4($element),afterRender:$model.foreach_afterRender_list4.bind($model,$element)}" __cid="cnAvMVn"> 
+                  <li xid="li5" __cid="cnAvMVn" class="cnAvMVn">
+                    <div xid="div26" __cid="cnAvMVn" class="cnAvMVn"> 
+                      <img src="$model/UI2/wdPro/common/img/head4.jpeg" alt="" class="img-responsive cnAvMVn" xid="image4" style="margin-top:5px;width:61px;height:61px;" bind-attr-src="val(&quot;url&quot;)" __cid="cnAvMVn"/> 
+                    </div>
+                  </li>
+                </ul> 
+              </div>
+            </div>
+          </div>  
+          <div xid="div28" __cid="cnAvMVn" class="cnAvMVn">
+            <div xid="div8" class="list-group-item cnAvMVn" style="border-left-style:none;padding:5px 5px 5px 5px;" __cid="cnAvMVn"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cnAvMVn" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-plus&quot;,&quot;label&quot;:&quot;添加关联客户&quot;}" __cid="cnAvMVn"> 
+                <i xid="i2" class="dataControl dataControl-plus cnAvMVn" __cid="cnAvMVn"/>  
+                <span xid="span2" style="color:#2D2D2D;font-weight:bold;" __cid="cnAvMVn" class="cnAvMVn">添加关联客户</span>
+              </a> 
+            </div>
+            <div xid="div20" style="background-color:white;" __cid="cnAvMVn" class="cnAvMVn"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cnAvMVn" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;rlinkManList&quot;}" __cid="cnAvMVn"> 
+                <ul class="x-list-template hide cnAvMVn" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cnAvMVn"> 
+                  <li xid="li1" __cid="cnAvMVn" class="cnAvMVn"> 
+                    <div xid="div21" style="padding:5px 5px 5px 5px;" class="list-group-item cnAvMVn" __cid="cnAvMVn"> 
+                      <div class="media cnAvMVn" xid="media1" __cid="cnAvMVn"> 
+                        <div class="media-left cnAvMVn" xid="mediaLeft1" __cid="cnAvMVn"> 
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cnAvMVn" xid="button4" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;icon&quot;:&quot;linear linear-trash&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cnAvMVn"> 
+                            <i xid="i7" class="linear linear-trash cnAvMVn" __cid="cnAvMVn"/>  
+                            <span xid="span7" __cid="cnAvMVn" class="cnAvMVn"/>
+                          </a> 
+                        </div>  
+                        <div class="media-body cnAvMVn" xid="mediaBody1" __cid="cnAvMVn"> 
+                          <h4 xid="h41" bind-text=" val(&quot;client_name&quot;)" style="color:#181919;" __cid="cnAvMVn" class="cnAvMVn"/>
+                        </div> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>
+          </div>  
+          <div xid="div29" __cid="cnAvMVn" class="cnAvMVn">
+            <div xid="div10" class="list-group-item cnAvMVn" style="border-left-style:none;padding:5px 5px 5px 5px;border-bottom-style:none;" __cid="cnAvMVn"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cnAvMVn" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-plus&quot;,&quot;label&quot;:&quot;添加关联联系人&quot;}" __cid="cnAvMVn"> 
+                <i xid="i3" class="dataControl dataControl-plus cnAvMVn" __cid="cnAvMVn"/>  
+                <span xid="span3" style="color:#2D2D2D;font-weight:bold;" __cid="cnAvMVn" class="cnAvMVn">添加关联联系人</span>
+              </a> 
+            </div>
+            <div xid="div18" style="background-color:white;" __cid="cnAvMVn" class="cnAvMVn"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cnAvMVn" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;ListData&quot;}" __cid="cnAvMVn"> 
+                <ul class="x-list-template hide cnAvMVn" xid="listTemplateUl2" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="cnAvMVn"> 
+                  <li xid="li2" __cid="cnAvMVn" class="cnAvMVn"> 
+                    <div xid="div17" style="padding:5px 5px 5px 5px;" class="list-group-item cnAvMVn" __cid="cnAvMVn"> 
+                      <div class="media cnAvMVn" xid="media2" __cid="cnAvMVn"> 
+                        <div class="media-left cnAvMVn" xid="mediaLeft2" __cid="cnAvMVn"> 
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cnAvMVn" xid="button5" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button5Click" data-config="{&quot;icon&quot;:&quot;linear linear-trash&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cnAvMVn"> 
+                            <i xid="i4" class="linear linear-trash cnAvMVn" __cid="cnAvMVn"/>  
+                            <span xid="span4" __cid="cnAvMVn" class="cnAvMVn"/>
+                          </a> 
+                        </div>  
+                        <div class="media-body cnAvMVn" xid="mediaBody2" __cid="cnAvMVn"> 
+                          <h4 xid="h42" bind-text=" val(&quot;staff_name&quot;)" style="color:#181919;" __cid="cnAvMVn" class="cnAvMVn"/>
+                        </div> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>
+          </div>
+          <div xid="div11" style="height:10px;" __cid="cnAvMVn" class="cnAvMVn"/>
+          <div xid="div12" class="list-group-item cnAvMVn" __cid="cnAvMVn">
+            <div xid="div16" __cid="cnAvMVn" class="cnAvMVn"> 
+              <label xid="label2" class="x-label cnAvMVn" style="font-weight:bold;" __cid="cnAvMVn">抄送</label> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list clearfix cnAvMVn" xid="threeClassList" dataItemAlias="threeClassRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;client&quot;}" __cid="cnAvMVn"> 
+              <ul class="x-list-template hide cnAvMVn" xid="listTemplateUl3" bind-foreach="{data:$model.foreach_threeClassList($element),afterRender:$model.foreach_afterRender_threeClassList.bind($model,$element),as:'threeClassRow'}" __cid="cnAvMVn"> 
+                <li xid="li3" class="col col-xs-3 text-center tb-listBox text-black cnAvMVn" __cid="cnAvMVn"> 
+                  <div xid="div19" __cid="cnAvMVn" class="cnAvMVn"> 
+                    <img src="$model/UI2/wdPro/common/img/head4.jpeg" alt="" class="img-responsive cnAvMVn" xid="image2" style=";margin-top:5px;width:61px;height:61px;" __cid="cnAvMVn"/>  
+                    <h5 xid="h51" bind-text=" val(&quot;staff_name&quot;)" style="text-align:left;" __cid="cnAvMVn" class="cnAvMVn">h5</h5>
+                  </div> 
+                </li> 
+              </ul> 
+            </div>
+            <div xid="div22" class="col col-xs-3 text-center tb-listBox text-black cnAvMVn" align="left" style="text-align:left;" __cid="cnAvMVn">
+              <img src="$model/UI2/wdPro/common/img/add.png" alt="" xid="image1" style="border-style:dotted dotted dotted dotted;border-width:thin thin thin thin;border-color:#D0D0D0 #D0D0D0 #D0D0D0 #D0D0D0;margin-top:5px;width:61px;height:61px;" bind-click="image1Click" __cid="cnAvMVn" class="cnAvMVn"/> 
+            </div>
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cnAvMVn" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cnAvMVn"> 
+              <div class="x-col cnAvMVn" xid="col1" __cid="cnAvMVn"/>  
+              <div class="x-col cnAvMVn" xid="col2" __cid="cnAvMVn"/>  
+              <div class="x-col cnAvMVn" xid="col3" __cid="cnAvMVn"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-bottom cnAvMVn" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnAvMVn">
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cnAvMVn" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cnAvMVn"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cnAvMVn" xid="button6" style="color:white;background-color:#4B76AE;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button6Click" data-config="{&quot;label&quot;:&quot;保存&quot;}" __cid="cnAvMVn"> 
+          <i xid="i6" __cid="cnAvMVn" class="cnAvMVn"/>  
+          <span xid="span6" __cid="cnAvMVn" class="cnAvMVn">保存</span>
+        </a> 
+      </div>
+    </div>
+    <style __cid="cnAvMVn" class="cnAvMVn">.x-panel.pciY7BZ3-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pciY7BZ3-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pciY7BZ3-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pciY7BZ3-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciY7BZ3-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pciY7BZ3-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciY7BZ3-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciY7BZ3-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciY7BZ3-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="alreadyWinDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/wdPro/contactPep/dialog/dialog/linkManPop.w&quot;}" __cid="cnAvMVn" class="cnAvMVn">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cnAvMVn" __cid="cnAvMVn"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cnAvMVn" style="display:none;" __cid="cnAvMVn">
+      <xhtml:div class="x-dialog-title cnAvMVn" __cid="cnAvMVn">
+        <xhtml:button class="close cnAvMVn" __cid="cnAvMVn">
+          <xhtml:span __cid="cnAvMVn" class="cnAvMVn">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cnAvMVn" __cid="cnAvMVn"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cnAvMVn" __cid="cnAvMVn"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="linkWinDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/wdPro/workReport/dialog/dialog/staffList.w&quot;}" __cid="cnAvMVn" class="cnAvMVn">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cnAvMVn" __cid="cnAvMVn"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cnAvMVn" style="display:none;" __cid="cnAvMVn">
+      <xhtml:div class="x-dialog-title cnAvMVn" __cid="cnAvMVn">
+        <xhtml:button class="close cnAvMVn" __cid="cnAvMVn">
+          <xhtml:span __cid="cnAvMVn" class="cnAvMVn">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cnAvMVn" __cid="cnAvMVn"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cnAvMVn" __cid="cnAvMVn"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="addTongWinDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/wdPro/workReport/dialog/dialog/addTongshi.w&quot;}" __cid="cnAvMVn" class="cnAvMVn">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cnAvMVn" __cid="cnAvMVn"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cnAvMVn" style="display:none;" __cid="cnAvMVn">
+      <xhtml:div class="x-dialog-title cnAvMVn" __cid="cnAvMVn">
+        <xhtml:button class="close cnAvMVn" __cid="cnAvMVn">
+          <xhtml:span __cid="cnAvMVn" class="cnAvMVn">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cnAvMVn" __cid="cnAvMVn"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cnAvMVn" __cid="cnAvMVn"/>
+    </xhtml:div>
+  </span>
+</div>

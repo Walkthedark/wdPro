@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window caEZb63" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="caEZb63" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.btn-radius.caEZb63{border-radius: 30px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="caEZb63" class="caEZb63"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcY7vEny-iosstatusbar caEZb63" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="caEZb63"> 
+    <div class="x-panel-top caEZb63" xid="top1" style="background-color:#439657;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="caEZb63"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar caEZb63" xid="titleBar1" style="background-color:#439657;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="caEZb63"> 
+        <div class="x-titlebar-left caEZb63" xid="left1" __cid="caEZb63"/>  
+        <div class="x-titlebar-title caEZb63" xid="title1" __cid="caEZb63">仓库</div>  
+        <div class="x-titlebar-right  caEZb63" xid="right1" __cid="caEZb63">
+          <div class="empty caEZb63" __cid="caEZb63"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon caEZb63" xid="button1" style="font-size:20px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;icon&quot;:&quot;icon-gear-a&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="caEZb63"> 
+            <i xid="i1" class="icon-gear-a caEZb63" __cid="caEZb63"/>  
+            <span xid="span1" __cid="caEZb63" class="caEZb63"/>
+          </a>
+        </div>
+      </div> 
+    </div>  
+    <div class="x-panel-content caEZb63" xid="content1" style="background-color:#EEEEEE;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="caEZb63"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row caEZb63" xid="row1" style="height:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEZb63"/>  
+      <div xid="div10" class="list-group-item caEZb63" style="padding:7px 3px 7px 3px;" __cid="caEZb63"> 
+        <div class="media caEZb63" xid="media10" __cid="caEZb63"> 
+          <div class="media-body caEZb63" xid="mediaBody9" __cid="caEZb63"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link caEZb63" xid="button17" style="color:#7B7B7B;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;部门商品&quot;}" __cid="caEZb63"> 
+              <i xid="i20" __cid="caEZb63" class="caEZb63"/>  
+              <span xid="span19" __cid="caEZb63" class="caEZb63">部门商品</span>
+            </a> 
+          </div>  
+          <div class="media-right caEZb63" xid="mediaRight10" __cid="caEZb63"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right caEZb63" xid="button20" style="color:#D68872;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button20Click" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-arrowrightl&quot;,&quot;label&quot;:&quot;0个&quot;}" __cid="caEZb63"> 
+              <i xid="i17" class="dataControl dataControl-arrowrightl caEZb63" style="color:#7B7B7B;" __cid="caEZb63"/>  
+              <span xid="span20" style="color:#7B7B7B;" __cid="caEZb63" class="caEZb63">0个</span>
+            </a> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row caEZb63" xid="row2" style="height:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEZb63"/>  
+      <div xid="div1" class="list-group-item caEZb63" style="padding:7px 3px 7px 3px;" __cid="caEZb63"> 
+        <div class="media caEZb63" xid="media1" __cid="caEZb63"> 
+          <div class="media-left caEZb63" xid="mediaLeft3" __cid="caEZb63"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link caEZb63" xid="button5" style="color:#7B7B7B;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;e-commerce e-commerce-zhuce&quot;,&quot;label&quot;:&quot;部门人员(0)&quot;}" __cid="caEZb63"> 
+              <i xid="i5" class="e-commerce e-commerce-zhuce caEZb63" style="color:#407422;" __cid="caEZb63"/>  
+              <span xid="span5" __cid="caEZb63" class="caEZb63">部门人员(0)</span>
+            </a> 
+          </div>  
+          <div class="media-body caEZb63" xid="mediaBody2" __cid="caEZb63"></div>  
+          <div class="media-right caEZb63" xid="mediaRight1" __cid="caEZb63"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right caEZb63" xid="button4" style="color:#D68872;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-arrowrightl&quot;,&quot;label&quot;:&quot;添加成员&quot;}" __cid="caEZb63"> 
+              <i xid="i4" class="dataControl dataControl-arrowrightl caEZb63" style="color:#7B7B7B;" __cid="caEZb63"/>  
+              <span xid="span4" style="color:#7B7B7B;" __cid="caEZb63" class="caEZb63">添加成员</span>
+            </a> 
+          </div> 
+        </div> 
+      </div>
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row caEZb63" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caEZb63"> 
+        <div class="x-col caEZb63" xid="col1" __cid="caEZb63"/>  
+        <div class="x-col x-col-80 caEZb63" xid="col2" style="text-align:center;" __cid="caEZb63"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label btn-radius caEZb63" xid="button3" style="background-color:#407422;color:#FFFFFF;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;删除部门&quot;}" __cid="caEZb63"> 
+            <i xid="i3" __cid="caEZb63" class="caEZb63"/>  
+            <span xid="span3" __cid="caEZb63" class="caEZb63">删除部门</span>
+          </a> 
+        </div>  
+        <div class="x-col caEZb63" xid="col3" __cid="caEZb63"/>
+      </div> 
+    </div>  
+    <style __cid="caEZb63" class="caEZb63">.x-panel.pcY7vEny-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcY7vEny-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcY7vEny-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcY7vEny-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcY7vEny-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcY7vEny-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcY7vEny-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcY7vEny-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcY7vEny-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

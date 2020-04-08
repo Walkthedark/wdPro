@@ -1,0 +1,920 @@
+<!DOCTYPE HTML>
+<html style="width:100%;height:100%" class="no-js">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+        <script src="../../../../v_bab7697217754aa2a318464471287345l_zh_CNs_d_m/system/lib/base/modernizr-2.8.3.min.js"></script>
+		<script id="__varReplace">
+    	
+    	    	window.__justep = window.__justep || {};
+				window.__justep.isDebug = true;
+				window.__justep.__packageMode = "1";
+				window.__justep.__isPackage = false;;
+				window.__justep.url = location.href;
+				window.__justep.versionInfo = {};
+		 
+    	</script>
+        <script id="__updateVersion">
+        
+				(function(url, mode){
+					if (("@"+"mode@") === mode) mode = "3";
+					if (("@"+"versionUrl@") === url) url = "system/service/common/app.j";
+					if ((mode!=="1" && (mode!="2") && (mode!="3"))) return;
+					var async = (mode=="1");
+					var x5Version = "noApp";
+					var x5AppAgents = /x5app\/([0-9.]*)/.exec(navigator.userAgent);
+					if(x5AppAgents && x5AppAgents.length > 1){
+					   	x5Version = x5AppAgents[1] || "";
+					} 
+					function createXhr(){
+						try {	
+							return new XMLHttpRequest();
+						}catch (tryMS) {	
+							var version = ["MSXML2.XMLHttp.6.0",
+							               "MSXML2.XMLHttp.3.0",
+							               "MSXML2.XMLHttp",
+							               "Miscrosoft.XMLHTTP"];
+							for(var i = 0; i < version.length; i++){
+								try{
+							    	return new ActiveXObject(version[i]);
+								}catch(e){}
+							}
+						}
+						throw new Error("您的系统或浏览器不支持XHR对象！");
+					}
+					
+					function createGuid(){	
+						var guid = '';	
+						for (var i = 1; i <= 32; i++){		
+							var n = Math.floor(Math.random()*16.0).toString(16);		
+							guid += n;		
+							if((i==8)||(i==12)||(i==16)||(i==20))			
+								guid += '-';	
+						}	
+						return guid;
+					}
+					
+					function parseUrl(href){
+						href = href.split("#")[0];
+						var items = href.split("?");
+						href = items[0];
+						var query = items[1] || "";
+						items = href.split("/");
+						var baseItems = [];
+						var pathItems = [];
+						var isPath = false;
+						for (var i=0; i<items.length; i++){
+							if (mode == "3"){
+								if (items[i] && (items[i].indexOf("v_") === 0) 
+										&& (items[i].indexOf("l_") !== -1)
+										&& (items[i].indexOf("s_") !== -1)
+										&& (items[i].indexOf("d_") !== -1)
+										|| (items[i]=="v_")){
+									isPath = true;
+									continue;
+								}
+							}else{
+								if (items[i] && (items[i].indexOf("v-")===0) && (items[i].charAt(items[i].length-1)=="-") ){
+									isPath = true;
+									continue;
+								}
+							}
+							if (isPath){
+								pathItems.push(items[i]);
+							}else{
+								baseItems.push(items[i]);	
+							}
+							
+						}
+						var base = baseItems.join("/");
+						if (base.charAt(base.length-1)!=="/") base += "/";
+						
+						var path = pathItems.join("/");
+						if (path.charAt(0) !== "/") path = "/" + path;
+						return [base, path, query];
+					}
+					
+					
+					var items = parseUrl(window.location.href);
+					var base = items[0];
+					var path = items[1];
+					var query = items[2];
+					var xhr = createXhr();
+					url += ((url.indexOf("?")!=-1) ? "&" : "?") +"_=" + createGuid();
+					if (mode === "3"){
+						url += "&url=" + path;
+						if (query)
+							url += "&" + query;
+					}
+					xhr.open('GET', base + url, async);
+					
+					if (async){
+						xhr.onreadystatechange=function(){
+							if((xhr.readyState == 4) && (xhr.status == 200) && xhr.responseText){
+								var versionInfo = JSON.parse(xhr.responseText);
+								window.__justep.versionInfo = versionInfo;
+								window.__justep.versionInfo.baseUrl = base;
+								if (query){
+									path = path + "?" + query;
+								}
+								path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+								var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+								versionInfo.resourceInfo.indexPageURL = indexUrl;
+								if(versionInfo.resourceInfo.resourceUpdateMode != "md5"){
+									if (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1){
+										versionInfo.resourceInfo.isNewVersion = true;
+									};
+								}
+							}
+						}
+					}
+					
+					try{
+						xhr.send(null);
+						if (!async && (xhr.status == 200) && xhr.responseText){
+							var versionInfo = JSON.parse(xhr.responseText);
+							window.__justep.versionInfo = versionInfo;
+							window.__justep.versionInfo.baseUrl = base;
+							if ((mode==="3") && window.__justep.isDebug){
+								/* 模式3且是调试模式不重定向 */
+							}else{
+								if (query){
+									path = path + "?" + query;
+								}
+								if(versionInfo.resourceInfo.resourceUpdateMode == "md5"){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									versionInfo.resourceInfo.indexPageURL = indexUrl; 
+								}else if (versionInfo.resourceInfo && versionInfo.resourceInfo.version && (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1)){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									window.location.href = indexUrl;
+								}
+							}
+						}
+					}catch(e2){}
+				}("@versionUrl@", "@mode@"));
+                 
+        </script>
+    <link rel="stylesheet" href="../../../../v_1bffb87bc4e24777918cc460fa382aeal_zh_CNs_d_m/system/components/bootstrap.min.css" include="$model/UI2/system/components/bootstrap/lib/css/bootstrap,$model/UI2/system/components/bootstrap/lib/css/bootstrap-theme"><link rel="stylesheet" href="../../../../v_658c0e25a2a2436ab173c641e836116cl_zh_CNs_d_m/system/components/comp.min.css" include="$model/UI2/system/components/justep/lib/css2/dataControl,$model/UI2/system/components/justep/input/css/datePickerPC,$model/UI2/system/components/justep/messageDialog/css/messageDialog,$model/UI2/system/components/justep/lib/css3/round,$model/UI2/system/components/justep/input/css/datePicker,$model/UI2/system/components/justep/row/css/row,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/attachment/css/attachment,$model/UI2/system/components/justep/barcode/css/barcodeImage,$model/UI2/system/components/bootstrap/dropdown/css/dropdown,$model/UI2/system/components/justep/contents/css/contents,$model/UI2/system/components/justep/common/css/forms,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/locker/css/locker,$model/UI2/system/components/justep/menu/css/menu,$model/UI2/system/components/justep/scrollView/css/scrollView,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/dialog/css/dialog,$model/UI2/system/components/justep/bar/css/bar,$model/UI2/system/components/justep/popMenu/css/popMenu,$model/UI2/system/components/justep/lib/css/icons,$model/UI2/system/components/justep/lib/css4/e-commerce,$model/UI2/system/components/justep/toolBar/css/toolBar,$model/UI2/system/components/justep/popOver/css/popOver,$model/UI2/system/components/justep/panel/css/panel,$model/UI2/system/components/bootstrap/carousel/css/carousel,$model/UI2/system/components/justep/wing/css/wing,$model/UI2/system/components/bootstrap/scrollSpy/css/scrollSpy,$model/UI2/system/components/justep/titleBar/css/titleBar,$model/UI2/system/components/justep/lib/css1/linear,$model/UI2/system/components/justep/numberSelect/css/numberList,$model/UI2/system/components/justep/list/css/list,$model/UI2/system/components/justep/dataTables/css/dataTables"></head>
+	
+    <body style="width:100%;height:100%;margin: 0;">
+        <script intro="none"></script>
+    	<div id="applicationHost" class="applicationHost" style="width:100%;height:100%;" __component-context__="block"><div xid="window" class="window cae22Q3" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cae22Q3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <style>.list_btn.cae22Q3{height: 25px; width: 25px; background-color: rgb(82, 167, 245); text-align: center; color: rgb(254, 255, 254); margin-top: 10px; line-height: 18px} .btn-radius.cae22Q3{border-radius: 30px} html.cae22Q3{font-size: 62.5%} body.cae22Q3{font-size: 1.6rem} body.cae22Q3{} html.cae22Q3{font-size: 62.5%} span.cae22Q3{font-size: 1.6rem} .btn-radius.cae22Q3{border-radius: 30px} .x-popOver-overlay.tClass.cae22Q3{top: 80px !important; background-color: rgb(0, 0, 0) !important} .tb-sorting.cae22Q3{width: 100%; background-color: rgb(255, 255, 255); border-top: 1px solid rgb(225, 225, 225)} .list_btn.cae22Q3{height: 25px; width: 25px; background-color: rgb(82, 167, 245); text-align: center; color: rgb(254, 255, 254); margin-top: 25px; line-height: 18px} .div_opacity.cae22Q3{opacity: 1} .x-panel-bottom.cae22Q3{border-top: 1px solid rgb(220, 220, 220)} .x-panel-bottom.cae22Q3 .h4.cae22Q3{margin: 5px 0} .tb-settlement.cae22Q3{line-height: 40px; background-color: rgb(77, 167, 244); color: rgb(255, 255, 255); font-size: 16px} .x-popOver-content.ddd.cae22Q3{bottom: 0.6px !important} .tb-settlement2.cae22Q3{line-height: 40px; background-color: rgb(255, 255, 255); color: rgb(255, 255, 255); font-size: 16px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cae22Q3" class="cae22Q3"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc3A7jAr-iosstatusbar cae22Q3" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cae22Q3"> 
+    <div class="x-panel-content cae22Q3" xid="content1" style="background-color:#EBEAF0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cae22Q3">
+      <div xid="div1" class="list-group-item cae22Q3" style="background-color:transparent;padding:5px 5px 5px 5px;" __cid="cae22Q3">
+        <div xid="div2" style="background-color:white;padding:5px 5px 5px 5px;" class="list-group-item cae22Q3" __cid="cae22Q3">
+          <div xid="div3" __cid="cae22Q3" class="cae22Q3">
+            <h4 xid="h41" __cid="cae22Q3" class="cae22Q3" data-bind="text:$model.clientData.val(&#34;client_name&#34;)">h4</h4>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray cae22Q3" xid="button1" style="color:#6F6F6F;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:$model.clientData.val(&#34;category_name&#34;)" data-config="{&#34;label&#34;:&#34;button&#34;}" __cid="cae22Q3"> 
+              <i xid="i1" __cid="cae22Q3" class="cae22Q3"></i>  
+              <span xid="span1" __cid="cae22Q3" class="cae22Q3"></span>
+            </a>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cae22Q3" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cae22Q3"> 
+              <label class="x-label cae22Q3" xid="label1" __cid="cae22Q3">业务模式</label>  
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cae22Q3" xid="output1" data-bind="component:{ref:$model.clientData.ref(&#34;business_type&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cae22Q3"></div>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cae22Q3" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cae22Q3"> 
+              <label class="x-label cae22Q3" xid="label2" __cid="cae22Q3">客户来源</label>  
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cae22Q3" xid="output2" data-bind="component:{ref:$model.clientData.ref(&#34;source&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cae22Q3"></div>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cae22Q3" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cae22Q3"> 
+              <label class="x-label cae22Q3" xid="label3" __cid="cae22Q3">应收款</label>  
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cae22Q3" xid="output3" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cae22Q3"></div>
+            </div>
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cae22Q3" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cae22Q3"> 
+              <label class="x-label cae22Q3" xid="label4" __cid="cae22Q3">最后联系</label>  
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cae22Q3" xid="output4" data-bind="component:{ref:$model.clientData.ref(&#34;last_contract_time&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cae22Q3"></div>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cae22Q3" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cae22Q3"> 
+              <label class="x-label cae22Q3" xid="label5" __cid="cae22Q3">创建人</label>  
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cae22Q3" xid="output5" data-bind="component:{ref:$model.clientData.ref(&#34;create_staff&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cae22Q3"></div>
+            </div>  
+            <div xid="div27" __cid="cae22Q3" class="cae22Q3">
+              <div class="media cae22Q3" xid="media3" __cid="cae22Q3" data-bind="event:{click:$model._callModelFn.bind($model, 'media3Click')}"> 
+                <div class="media-body cae22Q3" xid="mediaBody3" __cid="cae22Q3"> 
+                  <label class="x-label cae22Q3" xid="label6" style="margin-top:6px;" __cid="cae22Q3">查看更多详细信息</label> 
+                </div>  
+                <div class="media-right cae22Q3" xid="mediaRight3" __cid="cae22Q3"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cae22Q3" xid="button36" style="color:#3C3C3C;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-chevron-right&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cae22Q3"> 
+                    <i xid="i36" class="icon-chevron-right cae22Q3" __cid="cae22Q3"></i>  
+                    <span xid="span33" __cid="cae22Q3" class="cae22Q3"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cae22Q3" xid="row1" style="height:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cae22Q3"> 
+        <div class="x-col cae22Q3" xid="col3" __cid="cae22Q3"></div>
+      </div>  
+      <div xid="div4" __cid="cae22Q3" class="cae22Q3">
+        <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified text-primary cae22Q3" xid="buttonGroup2" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cae22Q3"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cae22Q3" xid="button35" style="border-right-style:solid;border-right-width:thin;border-right-color:#D4D4D4;font-size:16px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button35Click" __cid="cae22Q3"> 
+            <i xid="i35" __cid="cae22Q3" class="cae22Q3"></i>  
+            <span xid="span32" __cid="cae22Q3" class="cae22Q3">关联客户</span>  
+            <span xid="span31" __cid="cae22Q3" class="cae22Q3" data-bind="text:&#34;(&#34; + $model.relevanceDlientData.getCount() +&#34;)&#34;"></span>
+          </a>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cae22Q3" xid="button4" style="border-right-style:solid;border-right-width:thin;border-right-color:#D4D4D4;font-size:16px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;附件&#34;}" __cid="cae22Q3"> 
+            <i xid="i4" __cid="cae22Q3" class="cae22Q3"></i>  
+            <span xid="span4" __cid="cae22Q3" class="cae22Q3">附件</span>
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cae22Q3" xid="button5" style="font-size:16px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button5Click" data-config="{&#34;label&#34;:&#34;图片&#34;}" __cid="cae22Q3"> 
+            <i xid="i5" __cid="cae22Q3" class="cae22Q3"></i>  
+            <span xid="span5" __cid="cae22Q3" class="cae22Q3">图片</span>
+            <span xid="span30" __cid="cae22Q3" class="cae22Q3" data-bind="text:&#34;(&#34; + $model.imageData.getCount() +&#34;)&#34;">(0)</span>
+          </a> 
+        </div>
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cae22Q3" xid="row2" style="height:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cae22Q3"> 
+        <div class="x-col cae22Q3" xid="col1" __cid="cae22Q3"></div>
+      </div>
+      <div xid="div5" __cid="cae22Q3" class="cae22Q3">
+        <div xid="div6" style="background-color:white;padding:5px 5px 5px 10px;" class="list-group-item cae22Q3" __cid="cae22Q3">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs cae22Q3" xid="button6" style="color:#6F6F6F;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;联系人&#34;}" __cid="cae22Q3"> 
+            <i xid="i6" __cid="cae22Q3" class="cae22Q3"></i>  
+            <span xid="span6" __cid="cae22Q3" class="cae22Q3">联系人</span>
+          </a>
+        </div>  
+        <div xid="div7" style="background-color:white;padding:5px 5px 5px 10px;" class="list-group-item cae22Q3" __cid="cae22Q3"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cae22Q3" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;linkmanData&#34;}" __cid="cae22Q3"> 
+            <ul class="x-list-template hide cae22Q3" xid="listTemplateUl1" __cid="cae22Q3" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+              <li xid="li1" __cid="cae22Q3" class="cae22Q3"> 
+                <div xid="div31" class="list-group-item cae22Q3" style="padding:5px 5px 5px 5px;border-right-style:none;border-left-style:none;" __cid="cae22Q3">
+                  <div class="media cae22Q3" xid="media1" __cid="cae22Q3"> 
+                    <div class="media-left cae22Q3" xid="mediaLeft1" __cid="cae22Q3"> 
+                      <a href="#" xid="a1" __cid="cae22Q3" class="cae22Q3"> 
+                        <img class="media-object cae22Q3" src="../../../../v_3c9ef547c7ed4a6ca63c3b22f2db24f7l_zh_CNs_d_m/wdPro/common/img/head1.png" alt="" xid="image1" style="width:49px;height:49px;" height="30px" __cid="cae22Q3">
+                      </a> 
+                    </div>  
+                    <div class="media-body cae22Q3" xid="mediaBody1" __cid="cae22Q3"> 
+                      <h4 xid="h42" style="color:#3C3C3C;" class="media-heading cae22Q3" __cid="cae22Q3" data-bind="text:val(&#34;staff_name&#34;)">Media heading</h4>  
+                      <span xid="span9" class="media-heading cae22Q3" __cid="cae22Q3">18231233123</span>
+                    </div>  
+                    <div class="media-right cae22Q3" xid="mediaRight1" __cid="cae22Q3"> 
+                      <div xid="div9" class="btn-radius list_btn cae22Q3" style="margin-top:8px;" __cid="cae22Q3" data-bind="event:{click:$model._callModelFn.bind($model, 'div9Click')}">...</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul> 
+          </div>
+        </div>
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cae22Q3" xid="row3" style="height:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cae22Q3"> 
+        <div class="x-col cae22Q3" xid="col2" __cid="cae22Q3"></div>
+      </div>
+      <div xid="div12" __cid="cae22Q3" class="cae22Q3"> 
+        <div xid="div11" style="background-color:white;padding:5px 5px 5px 10px;" class="list-group-item cae22Q3" __cid="cae22Q3"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs cae22Q3" xid="button9" style="color:#6F6F6F;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;跟单&#34;}" __cid="cae22Q3"> 
+            <i xid="i9" __cid="cae22Q3" class="cae22Q3"></i>  
+            <span xid="span10" __cid="cae22Q3" class="cae22Q3">跟单</span>
+          </a> 
+        </div>  
+        <div xid="div10" style="background-color:white;padding:5px 5px 5px 20px;" class="list-group-item cae22Q3" __cid="cae22Q3"> 
+          <div class="media cae22Q3" xid="media2" __cid="cae22Q3" data-bind="event:{click:$model._callModelFn.bind($model, 'media2Click')}"> 
+            <div class="media-body cae22Q3" xid="mediaBody2" __cid="cae22Q3"> 
+              <h4 xid="h43" style="color:#3C3C3C;" class="media-heading cae22Q3" __cid="cae22Q3" data-bind="text:$model.documentaryData.val(&#34;title&#34;)">Media heading</h4>  
+              <span xid="span11" class="media-heading cae22Q3" __cid="cae22Q3" data-bind="text:$model.documentaryData.val(&#34;department&#34;)">18231233123</span>  
+              <h5 xid="h51" style="color:#3C3C3C;" class="media-heading cae22Q3" __cid="cae22Q3">
+                <span xid="span13" class="media-heading cae22Q3" __cid="cae22Q3" data-bind="text:$model.documentaryData.val(&#34;update_staff&#34;)">18231233123</span>
+                <span xid="span14" class="media-heading cae22Q3" __cid="cae22Q3" data-bind="text:$model.documentaryData.val(&#34;create_at&#34;)"></span>
+              </h5>
+            </div>  
+            <div class="media-right cae22Q3" xid="mediaRight2" __cid="cae22Q3"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cae22Q3" xid="button10" style="margin-top:15px;color:#6F6F6F;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-chevron-right&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cae22Q3"> 
+                <i xid="i10" class="icon-chevron-right cae22Q3" __cid="cae22Q3"></i>  
+                <span xid="span12" __cid="cae22Q3" class="cae22Q3"></span>
+              </a>
+            </div> 
+          </div>
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cae22Q3" xid="row4" style="height:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cae22Q3"> 
+        <div class="x-col cae22Q3" xid="col4" __cid="cae22Q3"></div>
+      </div>  
+      <div xid="div13" __cid="cae22Q3" class="cae22Q3"> 
+        <div xid="div14" style="background-color:white;padding:5px 5px 5px 10px;" class="list-group-item cae22Q3" __cid="cae22Q3"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs cae22Q3" xid="button14" style="color:#6F6F6F;font-size:16px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;客户动态&#34;}" __cid="cae22Q3"> 
+            <i xid="i14" __cid="cae22Q3" class="cae22Q3"></i>  
+            <span xid="span18" __cid="cae22Q3" class="cae22Q3">客户动态</span>
+          </a> 
+        </div>
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cae22Q3" xid="row5" style="height:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cae22Q3"> 
+        <div class="x-col cae22Q3" xid="col5" __cid="cae22Q3"></div>
+      </div>  
+      <div xid="div18" class="list-group-item cae22Q3" style="background-color:transparent;padding:5px 5px 5px 5px;" __cid="cae22Q3"> 
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cae22Q3" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;documentaryListData&#34;}" __cid="cae22Q3"> 
+          <ul class="x-list-template hide cae22Q3" xid="listTemplateUl3" __cid="cae22Q3" data-bind="foreach:{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)}"> 
+            <li xid="li3" __cid="cae22Q3" class="cae22Q3">
+              <div xid="div17" style="padding:5px 5px 5px 5px;background-color:transparent;" class="list-group-item cae22Q3" __cid="cae22Q3"> 
+                <div xid="div19" __cid="cae22Q3" class="cae22Q3">
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs cae22Q3" xid="button25" style="color:#3C3C3C;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;e-commerce e-commerce-shizhong&#34;}" __cid="cae22Q3"> 
+                    <i xid="i25" class="e-commerce e-commerce-shizhong cae22Q3" __cid="cae22Q3"></i>  
+                    <span xid="span29" __cid="cae22Q3" class="cae22Q3" data-bind="text:val(&#34;create_at&#34;)"></span>
+                  </a>
+                </div>
+              </div>  
+              <div xid="div20" style="padding:5px 5px 5px 5px;background-color:white;" class="list-group-item cae22Q3" __cid="cae22Q3"> 
+                <div xid="div22" __cid="cae22Q3" class="cae22Q3">
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary btn-xs btn-only-label cae22Q3" xid="button18" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;e-commerce e-commerce-shizhong&#34;,&#34;label&#34;:&#34;跟单&#34;}" __cid="cae22Q3"> 
+                    <i xid="i18" class="e-commerce e-commerce-shizhong cae22Q3" __cid="cae22Q3"></i>  
+                    <span xid="span22" __cid="cae22Q3" class="cae22Q3">跟单</span>
+                  </a>
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-label cae22Q3" xid="button19" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:val(&#34;create_staff&#34;)" __cid="cae22Q3"> 
+                    <i xid="i19" __cid="cae22Q3" class="cae22Q3"></i>  
+                    <span xid="span23" __cid="cae22Q3" class="cae22Q3"></span>
+                  </a>
+                </div>  
+                <div xid="div23" style="margin-top:10px;" __cid="cae22Q3" class="cae22Q3">
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-label cae22Q3" xid="button20" style="color:#3C3C3C;font-size:16px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:&#34;跟单主题：&#34; + val(&#34;title&#34;)" data-config="{&#34;label&#34;:&#34;button&#34;}" __cid="cae22Q3"> 
+                    <i xid="i20" __cid="cae22Q3" class="cae22Q3"></i>  
+                    <span xid="span24" __cid="cae22Q3" class="cae22Q3"></span>
+                  </a>
+                </div>  
+                <div xid="div24" __cid="cae22Q3" class="cae22Q3"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-label cae22Q3" xid="button21" style="color:#3C3C3C;font-size:16px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:&#34;跟单阶段：&#34; +  val(&#34;stage&#34;)" data-config="{&#34;label&#34;:&#34;button&#34;}" __cid="cae22Q3"> 
+                    <i xid="i21" __cid="cae22Q3" class="cae22Q3"></i>  
+                    <span xid="span25" __cid="cae22Q3" class="cae22Q3"></span>
+                  </a> 
+                </div>
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cae22Q3" xid="row6" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cae22Q3"> 
+                  <div class="x-col cae22Q3" xid="col6" __cid="cae22Q3"></div>  
+                  <div class="x-col cae22Q3" xid="col7" __cid="cae22Q3"></div>  
+                  <div class="x-col cae22Q3" xid="col8" style="text-align:center;" __cid="cae22Q3">
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cae22Q3" xid="button22" style="font-size:16px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;e-commerce e-commerce-zan&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cae22Q3"> 
+                      <i xid="i22" class="e-commerce e-commerce-zan cae22Q3" __cid="cae22Q3"></i>  
+                      <span xid="span26" __cid="cae22Q3" class="cae22Q3"></span>
+                    </a>  
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cae22Q3" xid="button23" style="font-size:16px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;linear linear-bubble&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cae22Q3"> 
+                      <i xid="i23" class="linear linear-bubble cae22Q3" __cid="cae22Q3"></i>  
+                      <span xid="span27" __cid="cae22Q3" class="cae22Q3"></span>
+                    </a>  
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cae22Q3" xid="button24" style="font-size:16px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;e-commerce e-commerce-jiahao&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cae22Q3"> 
+                      <i xid="i24" class="e-commerce e-commerce-jiahao cae22Q3" __cid="cae22Q3"></i>  
+                      <span xid="span28" __cid="cae22Q3" class="cae22Q3"></span>
+                    </a>
+                  </div>
+                </div>
+              </div> 
+            </li>
+          </ul> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cae22Q3" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;reportData&#34;}" __cid="cae22Q3"> 
+          <ul class="x-list-template hide cae22Q3" xid="listTemplateUl2" __cid="cae22Q3" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}"> 
+            <li xid="li2" __cid="cae22Q3" class="cae22Q3"> 
+              <div xid="div25" style="padding:5px 5px 5px 5px;background-color:transparent;" class="list-group-item cae22Q3" __cid="cae22Q3"> 
+                <div xid="div26" __cid="cae22Q3" class="cae22Q3"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs cae22Q3" xid="button26" style="color:#3C3C3C;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;e-commerce e-commerce-shizhong&#34;}" __cid="cae22Q3"> 
+                    <i xid="i34" class="e-commerce e-commerce-shizhong cae22Q3" __cid="cae22Q3"></i>  
+                    <span xid="span7" __cid="cae22Q3" class="cae22Q3" data-bind="text:val(&#34;create_at&#34;)"></span>
+                  </a> 
+                </div> 
+              </div>  
+              <div xid="div21" style="padding:5px 5px 5px 5px;background-color:white;" class="list-group-item cae22Q3" __cid="cae22Q3"> 
+                <div xid="div16" __cid="cae22Q3" class="cae22Q3"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary btn-xs btn-only-label cae22Q3" xid="button33" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;e-commerce e-commerce-shizhong&#34;,&#34;label&#34;:&#34;汇报&#34;}" __cid="cae22Q3"> 
+                    <i xid="i27" class="e-commerce e-commerce-shizhong cae22Q3" __cid="cae22Q3"></i>  
+                    <span xid="span21" __cid="cae22Q3" class="cae22Q3">汇报</span>
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-label cae22Q3" xid="button34" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:val(&#34;report_action&#34;)" __cid="cae22Q3"> 
+                    <i xid="i13" __cid="cae22Q3" class="cae22Q3"></i>  
+                    <span xid="span20" __cid="cae22Q3" class="cae22Q3"></span>
+                  </a> 
+                </div>  
+                <div xid="div8" style="margin-top:10px;" __cid="cae22Q3" class="cae22Q3"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-label cae22Q3" xid="button30" style="color:#3C3C3C;font-size:16px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:&#34;汇报人：&#34; + val(&#34;create_staff&#34;)" data-config="{&#34;label&#34;:&#34;button&#34;}" __cid="cae22Q3"> 
+                    <i xid="i29" __cid="cae22Q3" class="cae22Q3"></i>  
+                    <span xid="span16" __cid="cae22Q3" class="cae22Q3"></span>
+                  </a> 
+                </div>  
+                <div xid="div15" __cid="cae22Q3" class="cae22Q3"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-label cae22Q3" xid="button29" style="color:#3C3C3C;font-size:16px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:&#34;汇报内容：&#34; +   val(&#34;report_content&#34;)" data-config="{&#34;label&#34;:&#34;button&#34;}" __cid="cae22Q3"> 
+                    <i xid="i31" __cid="cae22Q3" class="cae22Q3"></i>  
+                    <span xid="span15" __cid="cae22Q3" class="cae22Q3"></span>
+                  </a> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cae22Q3" xid="row7" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cae22Q3"> 
+                  <div class="x-col cae22Q3" xid="col10" __cid="cae22Q3"></div>  
+                  <div class="x-col cae22Q3" xid="col11" __cid="cae22Q3"></div>  
+                  <div class="x-col cae22Q3" xid="col9" style="text-align:center;" __cid="cae22Q3"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cae22Q3" xid="button32" style="font-size:16px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;e-commerce e-commerce-zan&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cae22Q3"> 
+                      <i xid="i30" class="e-commerce e-commerce-zan cae22Q3" __cid="cae22Q3"></i>  
+                      <span xid="span19" __cid="cae22Q3" class="cae22Q3"></span>
+                    </a>  
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cae22Q3" xid="button31" style="font-size:16px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;linear linear-bubble&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cae22Q3"> 
+                      <i xid="i33" class="linear linear-bubble cae22Q3" __cid="cae22Q3"></i>  
+                      <span xid="span17" __cid="cae22Q3" class="cae22Q3"></span>
+                    </a>  
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cae22Q3" xid="button27" style="font-size:16px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;e-commerce e-commerce-jiahao&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cae22Q3"> 
+                      <i xid="i32" class="e-commerce e-commerce-jiahao cae22Q3" __cid="cae22Q3"></i>  
+                      <span xid="span8" __cid="cae22Q3" class="cae22Q3"></span>
+                    </a> 
+                  </div> 
+                </div> 
+              </div> 
+            </li> 
+          </ul> 
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-bottom cae22Q3" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cae22Q3">
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cae22Q3" xid="buttonGroup1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cae22Q3"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cae22Q3" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&#34;icon&#34;:&#34;icon-plus-round&#34;,&#34;label&#34;:&#34;新增&#34;}" __cid="cae22Q3"> 
+          <i xid="i3" class="icon-plus-round cae22Q3" __cid="cae22Q3"></i>  
+          <span xid="span3" style="font-size:16px;" __cid="cae22Q3" class="cae22Q3">新增</span>
+        </a> 
+      </div>
+    </div>
+    <style __cid="cae22Q3" class="cae22Q3">.x-panel.pc3A7jAr-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pc3A7jAr-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pc3A7jAr-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc3A7jAr-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3A7jAr-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pc3A7jAr-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3A7jAr-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3A7jAr-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3A7jAr-iosstatusbar >.x-panel-content {top: 0px;}</style>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cae22Q3" xid="popOver6" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;anchor&#34;:&#34;bottom1&#34;,&#34;direction&#34;:&#34;auto&#34;}" __cid="cae22Q3"> 
+    <div class="x-popOver-overlay cae22Q3" xid="div52" __cid="cae22Q3"></div>  
+    <div class="x-popOver-content ddd cae22Q3" xid="div53" style="width:100%;height:45%;" __cid="cae22Q3"> 
+      <div xid="div54" style="height:100%;width:100%;background-color:white;" __cid="cae22Q3" class="cae22Q3"> 
+        <div component="$model/UI2/system/components/justep/panel/panel" class=" x-full pceYzuYn-iosstatusbar cae22Q3" xid="panel6" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cae22Q3"> 
+          <div class="x-panel-content cae22Q3" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cae22Q3"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cae22Q3" xid="row9" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cae22Q3"> 
+              <div class="x-col cae22Q3" xid="col18" style="text-align:center;" __cid="cae22Q3"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cae22Q3" xid="button16" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button16Click" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-save24&#34;,&#34;label&#34;:&#34;新增汇报&#34;}" __cid="cae22Q3"> 
+                  <i xid="i16" class="dataControl dataControl-save24 cae22Q3" style="color:#DEAA64;font-size:20px" __cid="cae22Q3"></i>  
+                  <span xid="span45" __cid="cae22Q3" class="cae22Q3">新增汇报</span>
+                </a>
+              </div>  
+              <div class="x-col cae22Q3" xid="col19" style="text-align:center;" __cid="cae22Q3"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cae22Q3" xid="button17" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button17Click" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-saveas&#34;,&#34;label&#34;:&#34;新增跟单&#34;}" __cid="cae22Q3"> 
+                  <i xid="i17" class="dataControl dataControl-saveas cae22Q3" style="color:#99473F;font-size:20px" __cid="cae22Q3"></i>  
+                  <span xid="span46" __cid="cae22Q3" class="cae22Q3">新增跟单</span>
+                </a>
+              </div>  
+              <div class="x-col cae22Q3" xid="col20" style="text-align:center;" __cid="cae22Q3"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cae22Q3" xid="button15" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button15Click" data-config="{&#34;icon&#34;:&#34;linear linear-phonehandset&#34;,&#34;label&#34;:&#34;新增审批&#34;}" __cid="cae22Q3"> 
+                  <i xid="i15" class="linear linear-phonehandset cae22Q3" style="color:#BACE83;font-size:20px" __cid="cae22Q3"></i>  
+                  <span xid="span44" __cid="cae22Q3" class="cae22Q3">新增审批</span>
+                </a>
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cae22Q3" xid="row10" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cae22Q3"> 
+              <div class="x-col cae22Q3" xid="col21" style="text-align:center;" __cid="cae22Q3"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cae22Q3" xid="button13" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-saveas&#34;,&#34;label&#34;:&#34;关联审批&#34;}" __cid="cae22Q3"> 
+                  <i xid="i8" class="dataControl dataControl-saveas cae22Q3" style="font-size:20px" __cid="cae22Q3"></i>  
+                  <span xid="span49" __cid="cae22Q3" class="cae22Q3">关联审批</span>
+                </a> 
+              </div>  
+              <div class="x-col cae22Q3" xid="col22" style="text-align:center;" __cid="cae22Q3"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cae22Q3" xid="button12" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button12Click" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-save&#34;,&#34;label&#34;:&#34;新增联系人&#34;}" __cid="cae22Q3"> 
+                  <i xid="i12" class="dataControl dataControl-save cae22Q3" style="color:#658BC0;font-size:20px" __cid="cae22Q3"></i>  
+                  <span xid="span48" __cid="cae22Q3" class="cae22Q3">新增联系人</span>
+                </a> 
+              </div>  
+              <div class="x-col cae22Q3" xid="col23" style="text-align:center;" __cid="cae22Q3"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cae22Q3" xid="button11" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button11Click" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-permission&#34;,&#34;label&#34;:&#34;关联联系人&#34;}" __cid="cae22Q3"> 
+                  <i xid="i7" class="dataControl dataControl-permission cae22Q3" style="color:#62B193;font-size:20px" __cid="cae22Q3"></i>  
+                  <span xid="span47" __cid="cae22Q3" class="cae22Q3">关联联系人</span>
+                </a> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cae22Q3" xid="row11" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cae22Q3"> 
+              <div class="x-col cae22Q3" xid="col24" style="text-align:center;" __cid="cae22Q3"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cae22Q3" xid="button7" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button7Click" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-user&#34;,&#34;label&#34;:&#34;关联已有客户&#34;}" __cid="cae22Q3"> 
+                  <i xid="i11" class="dataControl dataControl-user cae22Q3" style="color:#9F96BC;font-size:20px" __cid="cae22Q3"></i>  
+                  <span xid="span56" __cid="cae22Q3" class="cae22Q3">关联已有客户</span>
+                </a> 
+              </div>  
+              <div class="x-col cae22Q3" xid="col25" style="text-align:center;" __cid="cae22Q3"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cae22Q3" xid="button8" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;e-commerce e-commerce-shangpu&#34;,&#34;label&#34;:&#34;新增巡店&#34;}" __cid="cae22Q3"> 
+                  <i xid="i26" class="e-commerce e-commerce-shangpu cae22Q3" style="color:#96C1D3;font-size:20px" __cid="cae22Q3"></i>  
+                  <span xid="span55" __cid="cae22Q3" class="cae22Q3">新增巡店</span>
+                </a> 
+              </div>  
+              <div class="x-col cae22Q3" xid="col26" style="text-align:center;" __cid="cae22Q3"></div>
+            </div> 
+          </div>  
+          <div class="x-panel-bottom cae22Q3" xid="bottom6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cae22Q3"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cae22Q3" xid="row12" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cae22Q3"> 
+              <div class="x-col cae22Q3" xid="col29" style="text-align:center;" __cid="cae22Q3"></div>  
+              <div class="x-col cae22Q3" xid="col28" style="text-align:center;" __cid="cae22Q3"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top btn-only-label cae22Q3" xid="button28" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;popOver6.hide&#34;}" data-config="{&#34;icon&#34;:&#34;linear linear-phonehandset&#34;,&#34;label&#34;:&#34;取消&#34;}" __cid="cae22Q3"> 
+                  <i xid="i28" class="linear linear-phonehandset cae22Q3" __cid="cae22Q3"></i>  
+                  <span xid="span59" __cid="cae22Q3" class="cae22Q3">取消</span>
+                </a> 
+              </div>  
+              <div class="x-col cae22Q3" xid="col27" style="text-align:center;" __cid="cae22Q3"></div>
+            </div> 
+          </div>  
+          <style __cid="cae22Q3" class="cae22Q3">.x-panel.pceYzuYn-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pceYzuYn-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pceYzuYn-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pceYzuYn-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceYzuYn-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pceYzuYn-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceYzuYn-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceYzuYn-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceYzuYn-iosstatusbar >.x-panel-content {top: 0px;}</style>
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cae22Q3" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;anchor&#34;:&#34;bottom1&#34;,&#34;direction&#34;:&#34;auto&#34;}" __cid="cae22Q3"> 
+    <div class="x-popOver-overlay cae22Q3" xid="div29" __cid="cae22Q3"></div>  
+    <div class="x-popOver-content ddd cae22Q3" xid="div30" style="width:100%;height:35%;" __cid="cae22Q3"> 
+      <div xid="div28" style="height:100%;width:100%;background-color:white;" __cid="cae22Q3" class="cae22Q3"> 
+        <div component="$model/UI2/system/components/justep/panel/panel" class=" x-full pcF7bmQf-iosstatusbar cae22Q3" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cae22Q3"> 
+          <div class="x-panel-content cae22Q3" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cae22Q3"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cae22Q3" xid="row15" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cae22Q3"> 
+              <div class="x-col cae22Q3" xid="col12" style="text-align:center;" __cid="cae22Q3"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cae22Q3" xid="button41" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button41Click" data-config="{&#34;icon&#34;:&#34;linear linear-phonehandset&#34;,&#34;label&#34;:&#34;打电话&#34;}" __cid="cae22Q3"> 
+                  <i xid="i37" class="linear linear-phonehandset cae22Q3" style="color:#BACE83;font-size:20px" __cid="cae22Q3"></i>  
+                  <span xid="span39" __cid="cae22Q3" class="cae22Q3">打电话</span>
+                </a> 
+              </div>  
+              <div class="x-col cae22Q3" xid="col13" style="text-align:center;" __cid="cae22Q3"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cae22Q3" xid="button40" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button40Click" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-save24&#34;,&#34;label&#34;:&#34;绑定外部联系人&#34;}" __cid="cae22Q3"> 
+                  <i xid="i39" class="dataControl dataControl-save24 cae22Q3" style="color:#DEAA64;font-size:20px" __cid="cae22Q3"></i>  
+                  <span xid="span38" __cid="cae22Q3" class="cae22Q3">绑定外部联系人</span>
+                </a> 
+              </div>  
+              <div class="x-col cae22Q3" xid="col16" style="text-align:center;" __cid="cae22Q3"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cae22Q3" xid="button43" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button43Click" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-saveas&#34;,&#34;label&#34;:&#34;解除关联&#34;}" __cid="cae22Q3"> 
+                  <i xid="i38" class="dataControl dataControl-saveas cae22Q3" style="color:#99473F;font-size:20px" __cid="cae22Q3"></i>  
+                  <span xid="span35" __cid="cae22Q3" class="cae22Q3">解除关联</span>
+                </a> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cae22Q3" xid="row8" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cae22Q3"> 
+              <div class="x-col cae22Q3" xid="col36" style="text-align:center;" __cid="cae22Q3"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cae22Q3" xid="button2" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&#34;icon&#34;:&#34;linear linear-trash&#34;,&#34;label&#34;:&#34;删除&#34;}" __cid="cae22Q3"> 
+                  <i xid="i43" class="linear linear-trash cae22Q3" style="color:#9F96BC;font-size:20px" __cid="cae22Q3"></i>  
+                  <span xid="span41" __cid="cae22Q3" class="cae22Q3">删除</span>
+                </a> 
+              </div>  
+              <div class="x-col cae22Q3" xid="col35" style="text-align:center;" __cid="cae22Q3"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cae22Q3" xid="button45" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button45Click" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-pencils&#34;,&#34;label&#34;:&#34;修改&#34;}" __cid="cae22Q3"> 
+                  <i xid="i42" class="dataControl dataControl-pencils cae22Q3" style="color:#469408;font-size:20px" __cid="cae22Q3"></i>  
+                  <span xid="span2" __cid="cae22Q3" class="cae22Q3">修改</span>
+                </a>
+              </div>  
+              <div class="x-col cae22Q3" xid="col34" style="text-align:center;" __cid="cae22Q3"></div> 
+            </div> 
+          </div>  
+          <div class="x-panel-bottom cae22Q3" xid="bottom2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cae22Q3"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cae22Q3" xid="row13" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cae22Q3"> 
+              <div class="x-col cae22Q3" xid="col31" style="text-align:center;" __cid="cae22Q3"></div>  
+              <div class="x-col cae22Q3" xid="col32" style="text-align:center;" __cid="cae22Q3"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top btn-only-label cae22Q3" xid="button39" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;popOver1.hide&#34;}" data-config="{&#34;icon&#34;:&#34;linear linear-phonehandset&#34;,&#34;label&#34;:&#34;取消&#34;}" __cid="cae22Q3"> 
+                  <i xid="i46" class="linear linear-phonehandset cae22Q3" __cid="cae22Q3"></i>  
+                  <span xid="span40" __cid="cae22Q3" class="cae22Q3">取消</span>
+                </a> 
+              </div>  
+              <div class="x-col cae22Q3" xid="col33" style="text-align:center;" __cid="cae22Q3"></div>
+            </div> 
+          </div>  
+          <style __cid="cae22Q3" class="cae22Q3">.x-panel.pcF7bmQf-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcF7bmQf-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcF7bmQf-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcF7bmQf-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcF7bmQf-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcF7bmQf-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcF7bmQf-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcF7bmQf-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcF7bmQf-iosstatusbar >.x-panel-content {top: 0px;}</style>
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <span component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog1" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:messageDialog1OK" data-config="{&#34;message&#34;:&#34;是否要删除联系人？&#34;,&#34;title&#34;:&#34;温馨提示&#34;,&#34;type&#34;:&#34;OKCancel&#34;}" __cid="cae22Q3" class="cae22Q3">
+    <div class="x-modal-overlay cae22Q3" __cid="cae22Q3"></div>
+    <div class="x-modal cae22Q3" __cid="cae22Q3">
+      <div class="x-modal-inner cae22Q3" __cid="cae22Q3">
+        <div class="x-modal-title cae22Q3" __cid="cae22Q3">温馨提示</div>
+        <div class="x-modal-text cae22Q3" __cid="cae22Q3">是否要删除联系人？</div>
+        <input class="x-modal-prompt-input cae22Q3" type="text" __cid="cae22Q3">
+      </div>
+      <div class="x-modal-buttons cae22Q3" __cid="cae22Q3">
+        <a class="x-modal-button x-modal-button-bold OK cae22Q3" value="ok" __cid="cae22Q3">确定</a>
+        <a class="x-modal-button x-modal-button-bold Yes cae22Q3" value="yes" __cid="cae22Q3">是</a>
+        <a class="x-modal-button x-modal-button-bold No cae22Q3" value="no" __cid="cae22Q3">否</a>
+        <a class="x-modal-button x-modal-button-bold Cancel cae22Q3" value="cancel" __cid="cae22Q3">取消</a>
+      </div>
+    </div>
+  </span>
+</div></div>
+        
+        <div id="downloadGCF" style="display:none;padding:50px;">
+        	<span>您使用的浏览器需要下载插件才能使用, </span>
+        	<a id="downloadGCFLink" href="#">下载地址</a>
+        	<p>(安装后请重新打开浏览器)</p>
+        </div>
+    	<script>
+    	
+    	            //判断浏览器, 判断GCF
+    	 			var browser = {
+    			        isIe: function () {
+    			            return navigator.appVersion.indexOf("MSIE") != -1;
+    			        },
+    			        navigator: navigator.appVersion,
+    			        getVersion: function() {
+    			            var version = 999; // we assume a sane browser
+    			            if (navigator.appVersion.indexOf("MSIE") != -1)
+    			                // bah, IE again, lets downgrade version number
+    			                version = parseFloat(navigator.appVersion.split("MSIE")[1]);
+    			            return version;
+    			        }
+    			    };
+    				function isGCFInstalled(){
+    			      try{
+    			        var i = new ActiveXObject('ChromeTab.ChromeFrame');
+    			        if (i) {
+    			          return true;
+    			        }
+    			      }catch(e){}
+    			      return false;
+    				}
+    	            //判断浏览器, 判断GCF
+    	            var __continueRun = true;
+    				if (browser.isIe() && (browser.getVersion() < 10) && !isGCFInstalled()) {
+    					document.getElementById("applicationHost").style.display = 'none';
+    					document.getElementById("downloadGCF").style.display = 'block';
+    					var downloadLink = "/" + location.pathname.match(/[^\/]+/)[0] + "/v8.msi";
+    					document.getElementById("downloadGCFLink").href = downloadLink; 
+    					__continueRun = false;
+    	            }
+		 	
+    	</script>
+        <script id="_metaJS" src="../../../../v_2eeacd4532ff43c49abb687292b47371l_zh_CNs_d_m/system/config/meta.js"> </script>
+        <script id="_requireJS" src="../../../../v_c264c7ee8f1a478887568adc5de0f0bbl_zh_CNs_d_m/system/lib/require/require.2.1.10.js"> </script>
+        <script src="../../../../v_b2d11c97d24240a29b9fd54fd6009ce7l_zh_CNs_d_m/system/core.min.js"></script><script src="../../../../v_c5dca877726f47adb64477140ce4abd0l_zh_CNs_d_m/system/common.min.js"></script><script src="../../../../v_c5142296332e4b77b26ef01261ddfe6cl_zh_CNs_d_m/system/components/comp.min.js"></script><script id="_mainScript">
+        
+			if (__continueRun) {
+                window.__justep.cssReady = function(fn){
+                	var promises = [];
+                	for (var p in window.__justep.__ResourceEngine.__loadingCss){
+                		if(window.__justep.__ResourceEngine.__loadingCss.hasOwnProperty(p))
+                			promises.push(window.__justep.__ResourceEngine.__loadingCss[p].promise());
+                	}
+                	$.when.apply($, promises).done(fn);
+                };
+                
+            	window.__justep.__ResourceEngine = {
+            		readyRegExp : navigator.platform === 'PLAYSTATION 3' ? /^complete$/ : /^(complete|loaded)$/,
+            		url: window.location.href,	
+            		/*contextPath: 不包括语言 */
+            		contextPath: "",
+            		serverPath: "",
+            		__loadedJS: [],
+            		__loadingCss: {},
+            		onLoadCss: function(url, node){
+            			if (!this.__loadingCss[url]){
+            				this.__loadingCss[url] = $.Deferred();	
+                			if (node.attachEvent &&
+                                    !(node.attachEvent.toString && node.attachEvent.toString().indexOf('[native code') < 0) &&
+                                    !(typeof opera !== 'undefined' && opera.toString() === '[object Opera]')) {
+                                node.attachEvent('onreadystatechange', this.onLinkLoad.bind(this));
+                            } else {
+                                node.addEventListener('load', this.onLinkLoad.bind(this), false);
+                                node.addEventListener('error', this.onLinkError.bind(this), false);
+                            }
+            			}
+            		},
+            		
+            		onLinkLoad: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+            	        if (evt.type === 'load' ||
+                                (this.readyRegExp.test(target.readyState))) {
+            	        	var url = target.getAttribute("href");
+            	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+            	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+            	        	}
+                        }
+            		},
+            		
+            		onLinkError: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+        	        	var url = target.getAttribute("href");
+        	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+        	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+        	        	}
+            		},
+            		
+            		initContextPath: function(){
+            			var baseURL = document.getElementById("_requireJS").src;
+            			var before = location.protocol + "//" + location.host;
+            			var after = "/system/lib/require/require.2.1.10";
+            			var i = baseURL.indexOf(after);
+            			if (i !== -1){
+    	        			var middle = baseURL.substring(before.length, i);
+    						var items = middle.split("/");
+    						
+    						
+    						if ((items[items.length-1].indexOf("v_") === 0) 
+    								&& (items[items.length-1].indexOf("l_") !== -1)
+    								&& (items[items.length-1].indexOf("s_") !== -1)
+    								&& (items[items.length-1].indexOf("d_") !== -1)
+    								|| (items[items.length-1]=="v_")){
+    							items.splice(items.length-1, 1);
+    						}
+    						
+    						
+    						if (items.length !== 1){
+    							window.__justep.__ResourceEngine.contextPath = items.join("/");
+    						}else{
+    							window.__justep.__ResourceEngine.contextPath = before;
+    						}
+    						var index = window.__justep.__ResourceEngine.contextPath.lastIndexOf("/");
+    						if (index != -1){
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath.substr(0, index);
+    						}else{
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath;
+    						}
+            			}else{
+            				throw new Error(baseURL + " hasn't  " + after);
+            			}
+            		},
+            	
+            		loadJs: function(urls){
+            			if (urls && urls.length>0){
+            				var loadeds = this._getResources("script", "src").concat(this.__loadedJS);
+    	       				for (var i=0; i<urls.length; i++){
+								var url = urls[i];
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					this.__loadedJS[this.__loadedJS.length] = url;
+    	        					/*
+    	        					var script = document.createElement("script");
+    	        					script.src = url;
+    	        					document.head.appendChild(script);
+    	        					*/
+    	        					//$("head").append("<script  src='" + url + "'/>");
+									var url = require.toUrl("$UI" + url);
+    	        					$.ajax({
+    	        						url: url,
+    	        						dataType: "script",
+    	        						cache: true,
+    	        						async: false,
+    	        						success: function(){}
+    	        						});
+    	        				} 
+    	       				}
+            			}
+            		},
+            		
+            		loadCss: function(styles){
+           				var loadeds = this._getResources("link", "href");
+            			if (styles && styles.length>0){
+            				for (var i=0; i<styles.length; i++){
+    	       					var url = window.__justep.__ResourceEngine.contextPath + styles[i].url.replace("/UI2/", "/");
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					var include = styles[i].include || "";
+    	        					var link = $("<link type='text/css' rel='stylesheet' href='" + url + "' include='" + include + "'/>");
+    	        					this.onLoadCss(url, link[0]);
+    	        					$("head").append(link);
+    	        				} 
+            				}
+            			}
+            			
+            		},
+            		
+            		
+            		_isLoaded: function(url, loadeds){
+            			if (url){
+            				var newUrl = "";
+            				var items = url.split("/");
+            				var isVls = false;
+            				for (var i=0; i<items.length; i++){
+            					if (isVls){
+                					newUrl += "/" + items[i];
+            					}else{
+                					if (items[i] && (items[i].indexOf("v_")===0)
+            								&& (items[i].indexOf("l_")!==-1)
+            								&& (items[i].indexOf("s_")!==-1)
+            								&& (items[i].indexOf("d_")!==-1)
+            								|| (items[i]=="v_")){
+                						isVls = true;
+                					}
+            					}
+            				}
+            				if (!newUrl)
+            					newUrl = url;
+            				
+            				for (var i=0; i<loadeds.length; i++){
+								var originUrl = this._getOriginUrl(loadeds[i]);
+								if (originUrl && (originUrl.indexOf(newUrl)!==-1)){
+									return true;
+								}
+    						}
+            			}
+    					return false;
+            		},
+
+					_getOriginUrl: function(url){
+						var result = "";
+						if (url && (url.indexOf(".md5_")!==-1)){
+							url = url.split("#")[0];
+							url = url.split("?")[0];
+							var items = url.split(".");
+							for (var i=0; i<items.length; i++){
+								if ((i===items.length-2) && (items[i].indexOf("md5_")!==-1)){
+									continue;
+								}else{
+									if (i>0) result += ".";
+									result += items[i];
+								}
+							}
+						}else{
+							result = url;
+						}
+						return result;
+					},
+            		
+            		_getResources: function(tag, attr){
+    					var result = [];
+    					var scripts = $(tag);
+    					for (var i=0; i<scripts.length; i++){
+    						var v = scripts[i][attr];
+    						if (v){
+    							result[result.length] = v;
+    						}
+    					}
+    					return result;
+            		}
+            	};
+            	
+            	window.__justep.__ResourceEngine.initContextPath();
+    			requirejs.config({
+    				baseUrl: window.__justep.__ResourceEngine.contextPath + '/v_5503fadb7f4f452b97ae1c54f556d764l_zh_CNs_d_m/wdPro/client/dialog',
+    			    paths: {
+    			    	/* 解决require.normalizeName与require.toUrl嵌套后不一致的bug   */
+    			    	'$model/UI2/v_': window.__justep.__ResourceEngine.contextPath + '/v_5503fadb7f4f452b97ae1c54f556d764l_zh_CNs_d_m',
+    			    	'$model/UI2': window.__justep.__ResourceEngine.contextPath + '/v_5503fadb7f4f452b97ae1c54f556d764l_zh_CNs_d_m',
+    			    	'$model': window.__justep.__ResourceEngine.serverPath,
+    			        'text': window.__justep.__ResourceEngine.contextPath + '/v_5503fadb7f4f452b97ae1c54f556d764l_zh_CNs_d_m/system/lib/require/text.2.0.10',
+    			        'bind': window.__justep.__ResourceEngine.contextPath + '/v_5503fadb7f4f452b97ae1c54f556d764l_zh_CNs_d_m/system/lib/bind/bind',
+    			        'jquery': window.__justep.__ResourceEngine.contextPath + '/v_5503fadb7f4f452b97ae1c54f556d764l_zh_CNs_d_m/system/lib/jquery/jquery-1.11.1.min'
+    			    },
+    			    map: {
+    				        '*': {
+    				            res: '$model/UI2/system/lib/require/res',
+    				            service: '$model/UI2/system/lib/require/service',
+    				            cordova: '$model/UI2/system/lib/require/cordova',
+    				            w: '$model/UI2/system/lib/require/w',
+    				            css: '$model/UI2/system/lib/require/css'
+    				        }
+    				},
+    				waitSeconds: 300
+    			});
+    			
+    			requirejs(['require', 'jquery', '$model/UI2/system/lib/base/composition', '$model/UI2/system/lib/base/url', '$model/UI2/system/lib/route/hashbangParser', '$model/UI2/system/components/justep/versionChecker/versionChecker', '$model/UI2/system/components/justep/loadingBar/loadingBar', '$model/UI2/system/lib/jquery/domEvent',  '$model/UI2/system/lib/cordova/cordova'],  function (require, $, composition, URL, HashbangParser,versionChecker) { 
+    				document.addEventListener('deviceready', function() {
+    	                if (navigator && navigator.splashscreen && navigator.splashscreen.hide) {
+    	                	/*延迟隐藏，视觉效果更理想*/
+    	                	setTimeout(function() {navigator.splashscreen.hide();}, 800);
+    	                }
+    	            }, false);
+					setTimeout(function(){
+						versionChecker.check();
+					},2000);
+    				var context = {};
+    				context.model = '$model/UI2/wdPro/client/dialog/clientInfo.w' + (document.location.search || "");
+    				context.view = $('#applicationHost').children()[0];
+    				var element = document.getElementById('applicationHost');
+
+					    				
+    				
+    				var ownerid = new URL(window.__justep.__ResourceEngine.url).getParam("$ownerid");
+    				var pwindow = opener;
+    				if (!pwindow && window.parent && window.parent.window){
+    					pwindow = window.parent.window;
+    				}
+    				if(ownerid && pwindow 
+    						&& pwindow.__justep && pwindow.__justep.windowOpeners
+    						&& pwindow.__justep.windowOpeners[ownerid]
+    						&& $.isFunction(pwindow.__justep.windowOpeners[ownerid].sendToWindow)){
+    					window.__justep.setParams = function(params){
+    						/* 给windowOpener提供再次传参数的接口  */
+    						params = params || {};
+    						composition.setParams(document.getElementById('applicationHost'), params);
+    					};
+    					var winOpener = pwindow.__justep.windowOpeners[ownerid];
+    					if(winOpener) winOpener.window = window;
+    					$(window).unload(function(event){
+    						if(winOpener && winOpener.dispatchCloseEvent) winOpener.dispatchCloseEvent();
+    					});
+    					var params = winOpener.sendToWindow();
+						context.owner = winOpener;
+						context.params = params || {};
+	        			composition.compose(element, context);
+    				}else{
+        				var params =  {};
+    					var state = new HashbangParser(window.location.hash).parse().__state;
+    					if (state){
+    						params = state.get("");
+    						try{
+    							params = JSON.parse(params);
+    							if (params.hasOwnProperty("__singleValue__")){
+    								params = params.__singleValue__;
+    							}
+    						}catch(e1){}
+    					}
+    					context.noUpdateState = true;
+        				context.params = params;
+        				composition.compose(element, context);
+    				}
+    			});    
+            }
+		 	
+        </script>
+    </body>
+</html>

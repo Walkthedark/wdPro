@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window ci6jUv2" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ci6jUv2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">
+  <style>html.ci6jUv2{font-size: 62.5% !important} body.ci6jUv2{font-size: 1.6rem "Microsoft YaHei", arial, tahoma, 宋体, sans-serif !important}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="ci6jUv2" class="ci6jUv2"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc2muU3m-iosstatusbar ci6jUv2" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ci6jUv2"> 
+    <div class="x-panel-content ci6jUv2" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ci6jUv2"> 
+      <div xid="div1" class="list-group-item ci6jUv2" style="padding:5px 5px 5px 5px;background-color:#EBEAF0;" __cid="ci6jUv2"> 
+        <div class="media ci6jUv2" xid="media1" __cid="ci6jUv2"> 
+          <div class="media-body ci6jUv2" xid="mediaBody1" __cid="ci6jUv2"> 
+            <h5 xid="common_Span" style="color:#181919;" __cid="ci6jUv2" class="ci6jUv2">客户标签</h5> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list ci6jUv2" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;tagData&#34;}" __cid="ci6jUv2"> 
+        <ul class="x-list-template hide ci6jUv2" xid="listTemplateUl1" __cid="ci6jUv2" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+          <li xid="li1" __cid="ci6jUv2" class="ci6jUv2"> 
+            <div xid="div22" class="list-group-item ci6jUv2" style="padding:5px 5px 5px 5px;" __cid="ci6jUv2"> 
+              <div class="media ci6jUv2" xid="media9" __cid="ci6jUv2"> 
+                <div class="media-body ci6jUv2" xid="mediaBody9" __cid="ci6jUv2"> 
+                  <h5 xid="h518" style="color:#181919;" __cid="ci6jUv2" class="ci6jUv2" data-bind="text:val(&#34;tag_name&#34;)"></h5> 
+                </div>  
+                <div class="media-right ci6jUv2" xid="mediaRight8" __cid="ci6jUv2"> 
+                  <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox ci6jUv2" xid="checkbox1" checkedValue="1" uncheckedValue="0" data-config="{&#34;checked&#34;:false,&#34;checkedValue&#34;:&#34;1&#34;,&#34;disabled&#34;:false,&#34;uncheckedValue&#34;:&#34;0&#34;}" data-bind="component:{ref:ref(&#34;choose&#34;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="ci6jUv2">
+                    <input type="checkbox" __cid="ci6jUv2" class="ci6jUv2">
+                    <label __cid="ci6jUv2" class="ci6jUv2"></label>
+                  </span>
+                </div> 
+              </div> 
+            </div> 
+          </li> 
+        </ul> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom ci6jUv2" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ci6jUv2"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified ci6jUv2" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="ci6jUv2"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label ci6jUv2" xid="button1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="ci6jUv2"> 
+          <i xid="i1" __cid="ci6jUv2" class="ci6jUv2"></i>  
+          <span xid="span1" __cid="ci6jUv2" class="ci6jUv2">取消</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default ci6jUv2" xid="okBtn" style="background-color:#4B76AE;color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:okBtnClick" data-config="{&#34;label&#34;:&#34;确定&#34;}" __cid="ci6jUv2"> 
+          <i xid="i2" __cid="ci6jUv2" class="ci6jUv2"></i>  
+          <span xid="span2" __cid="ci6jUv2" class="ci6jUv2">确定</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="ci6jUv2" class="ci6jUv2">.x-panel.pc2muU3m-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pc2muU3m-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pc2muU3m-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc2muU3m-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2muU3m-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pc2muU3m-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2muU3m-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2muU3m-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2muU3m-iosstatusbar >.x-panel-content {top: 0px;}</style>
+  </div> 
+</div>

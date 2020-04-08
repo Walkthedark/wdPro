@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cjuAFFv" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cjuAFFv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <style>.btn_radius.cjuAFFv{border-radius: 15px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cjuAFFv" class="cjuAFFv"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcnqErEz-iosstatusbar cjuAFFv" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cjuAFFv"> 
+    <div class="x-panel-top cjuAFFv" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cjuAFFv"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cjuAFFv" style="background-color:#00BFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;收货地址&#34;}" __cid="cjuAFFv"> 
+        <div class="x-titlebar-left cjuAFFv" __cid="cjuAFFv"></div>  
+        <div class="x-titlebar-title cjuAFFv" __cid="cjuAFFv">收货地址</div>  
+        <div class="x-titlebar-right  cjuAFFv" __cid="cjuAFFv">
+          <div class="empty cjuAFFv" __cid="cjuAFFv"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content  x-scroll-view cjuAFFv" xid="content1" _xid="C8BC393539100001D7971F10AEC01941" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cjuAFFv"> 
+      <div class="x-scroll cjuAFFv" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-events="onPullUp:scrollView1PullUp" __cid="cjuAFFv"> 
+        <div class="x-scroll-content cjuAFFv" xid="div4" __cid="cjuAFFv">
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cjuAFFv" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;adressData&#34;,&#34;limit&#34;:10}" __cid="cjuAFFv"> 
+            <ul class="x-list-template hide cjuAFFv" xid="listTemplateUl1" __cid="cjuAFFv" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+              <li xid="li1" style="border-bottom:1px solid #e6e7e8;box-shadow:1px 2px 2px #ccc;" __cid="cjuAFFv" class="cjuAFFv"> 
+                <div xid="div1" __cid="cjuAFFv" class="cjuAFFv">
+                  <div xid="div2" style="padding-left:10px;padding-top:5px;" __cid="cjuAFFv" class="cjuAFFv">
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs  cjuAFFv" xid="button4" style="border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#FF3616 #FF3616 #FF3616 #FF3616;background-color:white;color:#FF3715;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:val(&#34;is_default&#34;) ==1" data-config="{&#34;label&#34;:&#34;默认地址&#34;}" __cid="cjuAFFv"> 
+                      <i xid="i4" __cid="cjuAFFv" class="cjuAFFv"></i>  
+                      <span xid="span2" __cid="cjuAFFv" class="cjuAFFv">默认地址</span>
+                    </a>
+                  </div>
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cjuAFFv" xid="row1" style="padding-top:2px;padding-bottom:2px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'},event:{click:$model._callModelFn.bind($model, 'row1Click')}" __cid="cjuAFFv"> 
+                    <div class="x-col  cjuAFFv" xid="col3" __cid="cjuAFFv">
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cjuAFFv" xid="row2" style="padding-top:2px;padding-bottom:2px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cjuAFFv"> 
+                        <div class="x-col cjuAFFv" xid="col2" __cid="cjuAFFv">
+                          <span xid="span1" style="display:inline-block;font-size:16px;color:#292929;" __cid="cjuAFFv" class="cjuAFFv" data-bind="text:&#34;收货人：&#34;+val(&#34;consignee&#34;)"></span>
+                        </div>  
+                        <div class="x-col cjuAFFv" xid="col4" style="text-align:left;" __cid="cjuAFFv">
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output pull-right cjuAFFv" xid="output2" data-bind="component:{ref:ref(&#34;phone&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cjuAFFv"></div>
+                        </div>
+                      </div>
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cjuAFFv" xid="row3" style="padding-top:2px;padding-bottom:2px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cjuAFFv"> 
+                        <div class="x-col cjuAFFv" xid="col5" __cid="cjuAFFv"> 
+                          <span xid="span5" style="display:inline-block;" __cid="cjuAFFv" class="cjuAFFv" data-bind="text:&#34;收货地址：&#34;+val(&#34;address&#34;)"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              </li>
+            </ul> 
+          </div>
+        </div>  
+        <div class="x-content-center x-pull-up cjuAFFv" xid="div5" __cid="cjuAFFv"> 
+          <span class="x-pull-up-label cjuAFFv" xid="span6" __cid="cjuAFFv">加载更多...</span>
+        </div> 
+      </div>
+    </div>  
+    <div class="x-panel-bottom cjuAFFv" xid="bottom1" style="text-align:center;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cjuAFFv">
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn_radius cjuAFFv" xid="button3" style="width:80%;margin-top:5px;background-color:#00BFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{click:$model._callModelFn.bind($model, 'button3Click')}" data-config="{&#34;label&#34;:&#34;添加新地址&#34;}" __cid="cjuAFFv"> 
+        <i xid="i3" __cid="cjuAFFv" class="cjuAFFv"></i>  
+        <span xid="span3" __cid="cjuAFFv" class="cjuAFFv">添加新地址</span>
+      </a>
+    </div>
+    <style __cid="cjuAFFv" class="cjuAFFv">.x-panel.pcnqErEz-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcnqErEz-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcnqErEz-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcnqErEz-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcnqErEz-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcnqErEz-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcnqErEz-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcnqErEz-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcnqErEz-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog1" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;src&#34;:&#34;$model/UI2/theAgentOrder2/adress/dialog/addAdressInfo.w&#34;}" __cid="cjuAFFv" class="cjuAFFv">
+    <div class="x-dialog-overlay cjuAFFv" __cid="cjuAFFv"></div>
+    <div class="x-dialog cjuAFFv" style="display:none;" __cid="cjuAFFv">
+      <div class="x-dialog-title cjuAFFv" __cid="cjuAFFv">
+        <button class="close cjuAFFv" __cid="cjuAFFv">
+          <span __cid="cjuAFFv" class="cjuAFFv">×</span>
+        </button>
+        <div class="x-dialog-title-text cjuAFFv" __cid="cjuAFFv"></div>
+      </div>
+      <div class="x-dialog-body cjuAFFv" __cid="cjuAFFv"></div>
+    </div>
+  </span>
+</div>

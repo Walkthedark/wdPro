@@ -1,0 +1,32 @@
+window.__justep.__ResourceEngine.loadCss([{url: '/UI2/v_d070d55dabf14e5995418bd4ed3da24bl_zh_CNs_d_m/system/components/bootstrap.min.css', include: '$model/UI2/system/components/bootstrap/lib/css/bootstrap,$model/UI2/system/components/bootstrap/lib/css/bootstrap-theme'},{url: '/UI2/v_4f04f5970af64eb0b1548e0f07101132l_zh_CNs_d_m/system/components/comp.min.css', include: '$model/UI2/system/components/justep/lib/css2/dataControl,$model/UI2/system/components/justep/input/css/datePickerPC,$model/UI2/system/components/justep/messageDialog/css/messageDialog,$model/UI2/system/components/justep/lib/css3/round,$model/UI2/system/components/justep/input/css/datePicker,$model/UI2/system/components/justep/row/css/row,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/attachment/css/attachment,$model/UI2/system/components/justep/barcode/css/barcodeImage,$model/UI2/system/components/bootstrap/dropdown/css/dropdown,$model/UI2/system/components/justep/contents/css/contents,$model/UI2/system/components/justep/common/css/forms,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/locker/css/locker,$model/UI2/system/components/justep/menu/css/menu,$model/UI2/system/components/justep/scrollView/css/scrollView,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/dialog/css/dialog,$model/UI2/system/components/justep/bar/css/bar,$model/UI2/system/components/justep/popMenu/css/popMenu,$model/UI2/system/components/justep/lib/css/icons,$model/UI2/system/components/justep/lib/css4/e-commerce,$model/UI2/system/components/justep/toolBar/css/toolBar,$model/UI2/system/components/justep/popOver/css/popOver,$model/UI2/system/components/justep/panel/css/panel,$model/UI2/system/components/bootstrap/carousel/css/carousel,$model/UI2/system/components/justep/wing/css/wing,$model/UI2/system/components/bootstrap/scrollSpy/css/scrollSpy,$model/UI2/system/components/justep/titleBar/css/titleBar,$model/UI2/system/components/justep/lib/css1/linear,$model/UI2/system/components/justep/numberSelect/css/numberList,$model/UI2/system/components/justep/list/css/list,$model/UI2/system/components/justep/dataTables/css/dataTables'}]);window.__justep.__ResourceEngine.loadJs(['/v_83507db124044ee4bf81bacfe03d5f2el_zh_CNs_d_m/system/core.min.js','/v_3966f0dec49a4e85bc1753a62acc32fcl_zh_CNs_d_m/system/common.min.js','/v_d71bc6b41fd34fb1a83c05721ae4bec3l_zh_CNs_d_m/system/components/comp.min.js']);define(function(require){
+require('$model/UI2/system/components/justep/model/model');
+require('$model/UI2/system/components/justep/loadingBar/loadingBar');
+require('$model/UI2/system/components/justep/button/button');
+require('$model/UI2/system/components/justep/scrollView/scrollView');
+require('$model/UI2/system/components/justep/list/list');
+require('$model/UI2/system/components/justep/panel/child');
+require('$model/UI2/system/components/justep/windowDialog/windowDialog');
+require('$model/UI2/system/components/justep/panel/panel');
+require('$model/UI2/system/components/justep/row/row');
+require('$model/UI2/system/components/justep/output/output');
+require('$model/UI2/system/components/justep/titleBar/titleBar');
+require('$model/UI2/system/components/justep/data/data');
+require('$model/UI2/system/components/justep/window/window');
+var __parent1=require('$model/UI2/system/lib/base/modelBase'); 
+var __parent0=require('$model/UI2/TheSaleEnterprise/Underling/dialog/underlingClockInInfo'); 
+var __result = __parent1._extend(__parent0).extend({
+	constructor:function(contextUrl){
+	this.__sysParam='true';
+	this.__contextUrl=contextUrl;
+	this.__id='';
+	this.__cid='cmqUnU3';
+	this._flag_='a939626c7a3ad77db7ff2c3533fa085d';
+	this._wCfg_={};
+	this._appCfg_={};
+	this.callParent(contextUrl);
+ require('css!$UI/TheSaleEnterprise/css/style').load();
+ var __Data__ = require("$UI/system/components/justep/data/data");new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"col1":{"define":"col1","name":"col1","relation":"col1","type":"String"},"col2":{"define":"col2","name":"col2","relation":"col2","type":"String"},"col3":{"define":"col3","name":"col3","relation":"col3","type":"String"},"col4":{"define":"col4","name":"col4","relation":"col4","type":"String"},"col5":{"define":"col5","name":"col5","relation":"col5","type":"String"},"col6":{"define":"col6","name":"col6","relation":"col6","type":"String"},"col7":{"define":"col7","name":"col7","relation":"col7","type":"String"},"col8":{"define":"col8","name":"col8","relation":"col8","type":"String"},"id":{"define":"id","name":"id","relation":"id","type":"String"}},"directDelete":false,"events":{},"idColumn":"id","initData":"[{\"id\":\"1\",\"col1\":\"张三\",\"col2\":\"1\",\"col3\":\"1\",\"col4\":\"0\",\"col5\":\"0\",\"col6\":\"\",\"col7\":\"\",\"col8\":\"\"}]","isMain":false,"limit":20,"xid":"pData"});
+ new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"id":{"define":"id","name":"id","relation":"id","type":"String"},"text":{"define":"text","name":"text","relation":"text","type":"String"}},"directDelete":false,"events":{},"idColumn":"id","initData":"[{\"id\":\"0\",\"text\":\"只看直接下属\"},{\"id\":\"1\",\"text\":\"查看所有下属\"}]","isMain":false,"limit":20,"xid":"CData"});
+ new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"col1":{"define":"col1","name":"col1","relation":"col1","type":"String"},"col2":{"define":"col2","name":"col2","relation":"col2","type":"String"},"col3":{"define":"col3","name":"col3","relation":"col3","type":"String"},"col4":{"define":"col4","name":"col4","relation":"col4","type":"String"},"col5":{"define":"col5","name":"col5","relation":"col5","type":"String"},"col6":{"define":"col6","name":"col6","relation":"col6","type":"String"},"col7":{"define":"col7","name":"col7","relation":"col7","type":"String"},"col8":{"define":"col8","name":"col8","relation":"col8","type":"String"},"id":{"define":"id","name":"id","relation":"id","type":"String"}},"directDelete":false,"events":{},"idColumn":"id","initData":"[{\"id\":\"1\",\"col1\":\"2018-01-01\",\"col2\":\"上班打卡\",\"col3\":\"下班打卡\",\"col4\":\"\",\"col5\":\"\",\"col6\":\"\",\"col7\":\"\",\"col8\":\"\"},{\"id\":\"2\",\"col1\":\"缺勤\",\"col2\":\"无\",\"col3\":\"无\"},{\"id\":\"3\",\"col1\":\"迟到下班未打卡\",\"col2\":\"15：29：30广东省广州市\",\"col3\":\"无\"},{\"id\":\"4\"}]","isMain":false,"limit":20,"xid":"InData"});
+}}); 
+return __result;});

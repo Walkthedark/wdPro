@@ -1,0 +1,7 @@
+.x-card.btn-group .btn {
+	font-weight: normal !important;
+}
+
+.x-card.btn-group .btn.active {
+	color: #FA7922;
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window c77rUNb" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c77rUNb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="c77rUNb" class="c77rUNb"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcry6RR3-iosstatusbar c77rUNb" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c77rUNb"> 
+    <div class="x-panel-top c77rUNb" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c77rUNb"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title c77rUNb" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;添加请假申请&quot;}" __cid="c77rUNb"> 
+        <div class="x-titlebar-left c77rUNb" xid="left2" __cid="c77rUNb"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label c77rUNb" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="c77rUNb"> 
+            <i xid="i1" __cid="c77rUNb" class="c77rUNb"/>  
+            <span xid="span4" __cid="c77rUNb" class="c77rUNb">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title c77rUNb" xid="title2" __cid="c77rUNb">添加请假申请</div>  
+        <div class="x-titlebar-right  c77rUNb" xid="right2" __cid="c77rUNb">
+          <div class="empty c77rUNb" __cid="c77rUNb"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content c77rUNb" xid="content6" style="background-color:#f0f0f0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c77rUNb"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row c77rUNb" xid="row1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c77rUNb"> 
+        <div class="x-col c77rUNb" xid="col17" __cid="c77rUNb"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row c77rUNb" xid="row4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="c77rUNb"> 
+            <div class="col col-xs-12 c77rUNb" xid="col6" __cid="c77rUNb"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c77rUNb" xid="labelEdit7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c77rUNb"> 
+                <label class="x-label c77rUNb" xid="label7" style="width:80px;" __cid="c77rUNb">主题：</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c77rUNb" xid="input4" data-bind="component:{ref:$model.infoData.ref(&quot;title&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="c77rUNb"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 c77rUNb" xid="col15" __cid="c77rUNb"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c77rUNb" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c77rUNb"> 
+                <label class="x-label c77rUNb" xid="label2" style="width:80px;" __cid="c77rUNb">开始时间：</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c77rUNb" xid="input3" data-bind="component:{ref:$model.infoData.ref(&quot;qjsj_ks&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="c77rUNb"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 c77rUNb" xid="col16" __cid="c77rUNb"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c77rUNb" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c77rUNb"> 
+                <label class="x-label c77rUNb" xid="label3" style="width:80px;" __cid="c77rUNb">结束时间：</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c77rUNb" xid="input5" data-bind="component:{ref:$model.infoData.ref(&quot;qjsj_js&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="c77rUNb"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 c77rUNb" xid="col1" __cid="c77rUNb"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c77rUNb" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c77rUNb"> 
+                <label class="x-label c77rUNb" xid="label6" style="width:80px;" __cid="c77rUNb">请假时长：</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c77rUNb" xid="input1" data-bind="component:{ref:$model.infoData.ref(&quot;qjts&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="c77rUNb"/>  
+                <span xid="span2" __cid="c77rUNb" class="c77rUNb">天</span>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c77rUNb" xid="input2" data-bind="component:{ref:$model.infoData.ref(&quot;qjxs&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="c77rUNb"/>  
+                <span xid="span3" __cid="c77rUNb" class="c77rUNb">小时</span> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 c77rUNb" xid="col2" __cid="c77rUNb"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c77rUNb" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c77rUNb"> 
+                <label class="x-label c77rUNb" xid="label1" style="width:80px;" __cid="c77rUNb">请假类别：</label>  
+                <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit c77rUNb" xid="select3" bind-options="typeList.datas" bind-optionsValue="'id'" bind-optionsText="'title'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{ref:$model.infoData.ref(&quot;type&quot;),name:'$model/UI2/system/components/justep/select/select'}" __cid="c77rUNb"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 c77rUNb" xid="col3" __cid="c77rUNb"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c77rUNb" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c77rUNb"> 
+                <label class="x-label c77rUNb" xid="label5" style="width:80px;" __cid="c77rUNb">说明：</label>  
+                <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit c77rUNb" xid="textarea1" data-bind="component:{ref:$model.infoData.ref(&quot;qjsy&quot;),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="c77rUNb"/> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row c77rUNb" xid="row2" style="margin-top:5px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c77rUNb"> 
+        <div class="x-col c77rUNb" xid="col4" __cid="c77rUNb"> 
+          <span xid="span1" __cid="c77rUNb" class="c77rUNb">上传照片（最多录入6张。）</span> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row c77rUNb" xid="row3" style="margin-top:5px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c77rUNb"> 
+        <div class="x-col c77rUNb" xid="col5" __cid="c77rUNb"> 
+          <div class="imgline c77rUNb" xid="div74" id="newAskForLeaveImg" __cid="c77rUNb"> 
+            <div class="lfloat simg plusbtn c77rUNb" xid="div57" id="newAskForLeaveImg1" __cid="c77rUNb">+
+              <input id="uploadnewAskForLeave" type="file" class="upfile c77rUNb" accept="image/*,video/*;" capture="camera" xid="file1" __cid="c77rUNb"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row c77rUNb" xid="row5" style="padding:20px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c77rUNb"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label c77rUNb" xid="button4" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;label&quot;:&quot;提 交&quot;}" __cid="c77rUNb"> 
+          <i xid="i4" __cid="c77rUNb" class="c77rUNb"/>  
+          <span xid="span5" __cid="c77rUNb" class="c77rUNb">提 交</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="c77rUNb" class="c77rUNb">.x-panel.pcry6RR3-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcry6RR3-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcry6RR3-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcry6RR3-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcry6RR3-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcry6RR3-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcry6RR3-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcry6RR3-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcry6RR3-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" __cid="c77rUNb" class="c77rUNb"/> 
+</div>

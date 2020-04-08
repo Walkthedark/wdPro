@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window czUjUjm" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="czUjUjm" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-radio.czUjUjm input[type="radio"].czUjUjm:checked + label.czUjUjm:before, .x-checkbox.czUjUjm input[type="checkbox"].czUjUjm:checked + label.czUjUjm:before{background-color: rgb(250, 121, 34)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="czUjUjm" class="czUjUjm"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcfA73i2-iosstatusbar czUjUjm" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="czUjUjm"> 
+    <div class="x-panel-top czUjUjm" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czUjUjm"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title czUjUjm" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;企业营销门户 EMP&quot;}" __cid="czUjUjm"> 
+        <div class="x-titlebar-left czUjUjm" xid="left2" __cid="czUjUjm"/>  
+        <div class="x-titlebar-title czUjUjm" xid="title2" __cid="czUjUjm">企业营销门户 EMP</div>  
+        <div class="x-titlebar-right  czUjUjm" xid="right2" __cid="czUjUjm">
+          <div class="empty czUjUjm" __cid="czUjUjm"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content czUjUjm" xid="content6" style="background-color:#f0f0f0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czUjUjm"> 
+      <div component="$model/UI2/system/components/bootstrap/row/row" class="row  czUjUjm" xid="row2" style="background-color:#FFFFFF;margin-top:30px;padding:10px;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="czUjUjm"> 
+        <div class="col col-xs-7 czUjUjm" xid="col4" __cid="czUjUjm"> 
+          <span xid="span1" class="font-One czUjUjm" __cid="czUjUjm">拍照提交时是否有闪退现象</span> 
+        </div>  
+        <div class="col col-xs-5 czUjUjm" xid="col5" __cid="czUjUjm"> 
+          <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radio-group czUjUjm" xid="radioGroup1" bind-foreach="{data:CData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-bind="component:{ref:$model.CData.ref(&quot;id&quot;),name:'$model/UI2/system/components/justep/select/radioGroup'}" __cid="czUjUjm">
+            <xhtml:span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/radio" class="x-radio czUjUjm" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref(&quot;text&quot;),value:ref(&quot;id&quot;)}" __cid="czUjUjm">
+              <xhtml:input type="radio" __cid="czUjUjm" class="czUjUjm"/>
+              <xhtml:label __cid="czUjUjm" class="czUjUjm"/>
+            </xhtml:span>
+          </span> 
+        </div>  
+        <div class="col col-xs-12 czUjUjm" xid="col6" __cid="czUjUjm"> 
+          <span xid="span2" __cid="czUjUjm" class="czUjUjm">拍照时如果页面出现闪退无法显示照片，请选择“是”并且拍照前降低相机分辨率</span> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="czUjUjm" class="czUjUjm">.x-panel.pcfA73i2-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcfA73i2-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcfA73i2-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcfA73i2-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfA73i2-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcfA73i2-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfA73i2-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfA73i2-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfA73i2-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

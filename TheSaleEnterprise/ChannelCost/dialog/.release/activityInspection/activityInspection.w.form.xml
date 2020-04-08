@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window czIbMvq" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="czIbMvq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <script src="http://api.map.baidu.com/api?v=2.0&amp;ak=EzfQTH533pbevnhohMX4QZRK" __cid="czIbMvq" class="czIbMvq"/>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="czIbMvq" class="czIbMvq"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc2YB7zi-iosstatusbar czIbMvq" xid="panel6" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="czIbMvq"> 
+    <div class="x-panel-top czIbMvq" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czIbMvq"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title czIbMvq" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;活动执行检查&quot;}" __cid="czIbMvq"> 
+        <div class="x-titlebar-left czIbMvq" xid="left2" __cid="czIbMvq"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label czIbMvq" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="czIbMvq"> 
+            <i xid="i1" __cid="czIbMvq" class="czIbMvq"/>  
+            <span xid="span4" __cid="czIbMvq" class="czIbMvq">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title czIbMvq" xid="title2" __cid="czIbMvq">活动执行检查</div>  
+        <div class="x-titlebar-right  czIbMvq" xid="right2" __cid="czIbMvq">
+          <div class="empty czIbMvq" __cid="czIbMvq"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-scroll-view czIbMvq" xid="content8" _xid="C7DF23A047C000015332AA703E904750" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czIbMvq"> 
+      <div class="x-scroll czIbMvq" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="czIbMvq"> 
+        <div class="x-content-center x-pull-down container czIbMvq" xid="div6" __cid="czIbMvq"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down czIbMvq" xid="i7" __cid="czIbMvq"/>  
+          <span class="x-pull-down-label czIbMvq" xid="span10" __cid="czIbMvq">下拉刷新...</span> 
+        </div>  
+        <div class="x-scroll-content czIbMvq" xid="div5" __cid="czIbMvq"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list czIbMvq" xid="list2" style="padding-top:10p;xbackground-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;pData&quot;}" __cid="czIbMvq"> 
+            <ul class="x-list-template hide czIbMvq" xid="listTemplateUl2" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="czIbMvq"> 
+              <li xid="li2" class="border-Two czIbMvq" bind-click="li2Click" __cid="czIbMvq"> 
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row row-padding czIbMvq" xid="row3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="czIbMvq"> 
+                  <div class="col col-xs-9 czIbMvq" xid="col20" style="font-weight:bold;" __cid="czIbMvq"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit czIbMvq" xid="labelEdit13" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czIbMvq"> 
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-One czIbMvq" xid="output5" data-bind="component:{ref:ref(&quot;title&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="czIbMvq"/> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-3 czIbMvq" xid="col17" style="text-align:right;" __cid="czIbMvq"/>  
+                  <div class="col col-xs-6 czIbMvq" xid="col19" __cid="czIbMvq"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit czIbMvq" xid="labelEdit12" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czIbMvq"> 
+                      <label class="x-label czIbMvq" xid="label6" __cid="czIbMvq">编号：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit czIbMvq" xid="output6" data-bind="component:{ref:ref(&quot;sn&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="czIbMvq"/> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-6 czIbMvq" xid="col23" __cid="czIbMvq"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit czIbMvq" xid="labelEdit11" style="margin-top:-10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czIbMvq"> 
+                      <label class="x-label czIbMvq" xid="label8" style="x;" __cid="czIbMvq"/>  
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon czIbMvq" xid="button10" style="float:right;color:#000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-mapmarker&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="czIbMvq"> 
+                        <i xid="i11" class="linear linear-mapmarker czIbMvq" __cid="czIbMvq"/>  
+                        <span xid="span5" __cid="czIbMvq" class="czIbMvq"/> 
+                      </a>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit czIbMvq" xid="output7" data-bind="component:{ref:ref(&quot;sn&quot;),name:'$model/UI2/system/components/justep/output/output'}" data-events="onRender:output7Render" __cid="czIbMvq"/> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 czIbMvq" xid="col18" __cid="czIbMvq"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit czIbMvq" xid="labelEdit17" style="margin-top:-10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czIbMvq"> 
+                      <label class="x-label czIbMvq" xid="label5" __cid="czIbMvq">地址：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit czIbMvq" xid="output8" data-bind="component:{ref:ref(&quot;detailAddress&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="czIbMvq"/> 
+                    </div> 
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="x-content-center x-pull-up czIbMvq" xid="div4" __cid="czIbMvq"> 
+          <span class="x-pull-up-label czIbMvq" xid="span8" __cid="czIbMvq">加载更多...</span> 
+        </div> 
+      </div>  
+      <div xid="div1" id="BMap" __cid="czIbMvq" class="czIbMvq"/>
+    </div>  
+    <style __cid="czIbMvq" class="czIbMvq">.x-panel.pc2YB7zi-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc2YB7zi-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc2YB7zi-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc2YB7zi-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2YB7zi-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc2YB7zi-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2YB7zi-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2YB7zi-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2YB7zi-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="wReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:wReceiverReceive" __cid="czIbMvq" class="czIbMvq"/>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="activityInspectionInfoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/ChannelCost/dialog/activityInspectionInfo.w&quot;}" __cid="czIbMvq" class="czIbMvq">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay czIbMvq" __cid="czIbMvq"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog czIbMvq" style="display:none;" __cid="czIbMvq">
+      <xhtml:div class="x-dialog-title czIbMvq" __cid="czIbMvq">
+        <xhtml:button class="close czIbMvq" __cid="czIbMvq">
+          <xhtml:span __cid="czIbMvq" class="czIbMvq">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text czIbMvq" __cid="czIbMvq"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body czIbMvq" __cid="czIbMvq"/>
+    </xhtml:div>
+  </span> 
+</div>

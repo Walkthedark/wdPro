@@ -1,0 +1,31 @@
+.btn-radius {
+	border-radius: 15px;
+	/* #8BA5AC */
+}
+.btn-radius1 {
+	border-radius: 30px;
+	/* #8BA5AC */
+}
+.x-inputText {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.form-control-feedback {
+	height: 34px;
+	line-height: 34px;
+}
+
+.input_radius {
+	border-radius: 15px;
+}
+
+.tb-settlement {
+	line-height: 40px;
+	background-color: #407422;
+	color: #fff;
+	font-size: 16px;
+}
+
+.tb-nopadding {
+	padding: 0;
+}

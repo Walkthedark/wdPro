@@ -1,0 +1,158 @@
+.font-Two {
+	font-weight: bold;
+	color: #FA7922;
+}
+
+.no {
+	margin: 40px;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: grey;
+	/* Rotate div */
+	transform: rotate(40deg);
+	-ms-transform: rotate(40deg); /* Internet Explorer */
+	-moz-transform: rotate(40deg); /* Firefox */
+	-webkit-transform: rotate(40deg); /* Safari 和 Chrome */
+	-o-transform: rotate(40deg);
+	margin: 40px; /* Opera */
+}
+
+.has {
+	width: 10em;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+	background-color: blue;
+	/* Rotate div */
+	transform: rotate(40deg);
+	-ms-transform: rotate(40deg); /* Internet Explorer */
+	-moz-transform: rotate(40deg); /* Firefox */
+	-webkit-transform: rotate(40deg); /* Safari 和 Chrome */
+	-o-transform: rotate(40deg);
+	width: 10em; /* Opera */
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	background-color: #555;
+	color: #fff;
+	/* Rotate div */
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg); /* Internet Explorer */
+	-moz-transform: rotate(45deg); /* Firefox */
+	-webkit-transform: rotate(45deg); /* Safari 和 Chrome */
+	-o-transform: rotate(45deg); /* Opera */
+	position: absolute;
+	right: -50px;
+	top: -50px;
+}
+
+.text {
+	position: absolute;
+	top: 0;
+}
+
+.lanren {
+	/* position: relative;
+	z-index: 999; */
+	
+}
+
+.lanren .ribbon-lanren-green {
+	width: 85px;
+	height: 88px;
+	overflow: hidden;
+	position: absolute;
+}
+
+.lanren .ribbon-green {
+	font: bold 15px Sans-Serif;
+	color: #333;
+	text-align: center;
+	text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	position: relative;
+	padding: 7px 0;
+	left: -5px;
+	top: 15px;
+	width: 120px;
+	background-color: #BFDC7A;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#BFDC7A),
+		to(#8EBF45));
+	background-image: -webkit-linear-gradient(top, #BFDC7A, #8EBF45);
+	background-image: -moz-linear-gradient(top, #BFDC7A, #8EBF45);
+	background-image: -ms-linear-gradient(top, #BFDC7A, #8EBF45);
+	background-image: -o-linear-gradient(top, #BFDC7A, #8EBF45);
+	color: #6a6340;
+	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.lanren .ribbon-green:before,.ribbon-green:after {
+	content: "";
+	border-top: 3px solid #6e8900;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	position: absolute;
+	bottom: -3px;
+}
+
+.lanren .ribbon-green:before {
+	left: 0;
+}
+
+.lanren .ribbon-green:after {
+	right: 0;
+}
+
+.lanren .ribbon-grey {
+	font: bold 15px Sans-Serif;
+	color: #333;
+	text-align: center;
+	text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	position: relative;
+	padding: 7px 0;
+	left: -5px;
+	top: 15px;
+	width: 120px;
+	background-color: #C0C0C0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#C0C0C0),
+		to(#C8C8C8));
+	background-image: -webkit-linear-gradient(top, #C0C0C0, #C8C8C8);
+	background-image: -moz-linear-gradient(top, #C0C0C0, #C8C8C8);
+	background-image: -ms-linear-gradient(top, #C0C0C0, #C8C8C8);
+	background-image: -o-linear-gradient(top, #C0C0C0, #C8C8C8);
+	color: #6a6340;
+	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.lanren .ribbon-grey:before,.ribbon-grey:after {
+	content: "";
+	border-top: 3px solid #6e8900;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	position: absolute;
+	bottom: -3px;
+}
+
+.lanren .ribbon-grey:before {
+	left: 0;
+}
+
+.lanren .ribbon-grey:after {
+	right: 0;
+}
+​

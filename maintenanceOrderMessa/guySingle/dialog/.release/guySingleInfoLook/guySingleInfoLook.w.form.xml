@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cJvuIje" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cJvuIje" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.top_back.cJvuIje{background-image: url($model/UI2/maintenanceOrderMessa/common/img/jb.jpg)} .btn-group.cJvuIje .btn.active.cJvuIje{background-color: rgb(139, 165, 172); color: rgb(255, 255, 255)} .btn-color.cJvuIje{color: rgb(159, 158, 160)} .btngroup-radius.cJvuIje{border-radius: 10px} .li_class.cJvuIje{border-left: 3px solid rgb(139, 165, 172); position: relative; padding-left: 20px; padding-bottom: 5px; display: list-item; text-align: -webkit-match-parent} .li_class.cJvuIje:BEFORE{border: 2px solid rgb(139, 165, 172); border-radius: 8px; content: " "; width: 15px; height: 15px; display: block; position: absolute; left: -8.5px; top: 0px; background-color: rgb(139, 165, 172)} .li_class.cJvuIje:BEFORE{border-color: rgb(139, 165, 172)} .li_class.cJvuIje:last-of-type{border-left: 0} .li_class:last-of-type.cJvuIje:BEFORE{left: -5px} .span-index.cJvuIje{position: absolute; left: -70px; top: 0px} .li_class2.cJvuIje{border-left: 3px solid rgb(139, 165, 172); position: relative; margin-left: 70px; padding-left: 20px; min-height: 50px; padding-bottom: 5px; display: list-item; text-align: -webkit-match-parent} .li_class2.cJvuIje:BEFORE{border: 2px solid rgb(139, 165, 172); border-radius: 8px; content: " "; width: 15px; height: 15px; display: block; position: absolute; left: -8.5px; top: 0px; background-color: rgb(139, 165, 172)} .li_class2.cJvuIje:BEFORE{border-color: rgb(139, 165, 172)} .li_class2.cJvuIje:last-of-type{border-left: 0} .li_class2:last-of-type.cJvuIje:BEFORE{left: -5px} .li_class2.cJvuIje:last-of-type .span-index.cJvuIje{left: -67px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cJvuIje" class="cJvuIje"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcRJNJ73-iosstatusbar cJvuIje" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cJvuIje"> 
+    <div class="x-panel-top cJvuIje" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJvuIje">
+      <div xid="div1" style="text-align:center;height:200px;" class="top_back cJvuIje" __cid="cJvuIje"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cJvuIje" xid="row1" style="height:5px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJvuIje"></div>  
+        <div xid="div2" style="padding:2px 5px 2px 2px;text-align:left;background-color:transparent;" __cid="cJvuIje" class="cJvuIje"> 
+          <div class="media cJvuIje" xid="media9" __cid="cJvuIje"> 
+            <div class="media-left cJvuIje" xid="mediaLeft1" __cid="cJvuIje"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cJvuIje" xid="button1" style="color:#FDFCFF;font-size:16px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-project24&quot;,&quot;label&quot;:&quot;工单信息&quot;}" __cid="cJvuIje"> 
+                <i xid="i1" class="dataControl dataControl-project24 cJvuIje" style="font-size:18px;" __cid="cJvuIje"/>  
+                <span xid="span1" __cid="cJvuIje" class="cJvuIje">工单信息</span>
+              </a>
+            </div>  
+            <div class="media-body cJvuIje" xid="mediaBody9" __cid="cJvuIje"></div>  
+            <div class="media-right cJvuIje" xid="mediaRight1" __cid="cJvuIje"></div>
+          </div>
+        </div>  
+        <div xid="div3" __cid="cJvuIje" class="cJvuIje"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJvuIje" xid="labelEdit1" style="color:#FDFCFF;padding:8px 2px 8px 17px;text-align:left;background-color:transparent;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJvuIje"> 
+            <label class="x-label cJvuIje" xid="label1" __cid="cJvuIje">电梯注册：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cJvuIje" xid="output1" style="color:#FDFCFF;" data-bind="component:{ref:$model.hithData.ref(&quot;liftIDNo&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJvuIje"/>
+          </div>
+        </div>  
+        <div xid="div4" __cid="cJvuIje" class="cJvuIje"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJvuIje" xid="labelEdit2" style="color:#FDFCFF;padding:8px 2px 8px 17px;text-align:left;background-color:transparent;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJvuIje"> 
+            <label class="x-label cJvuIje" xid="label2" __cid="cJvuIje">电梯位置：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cJvuIje" xid="output2" style="color:#FDFCFF;" bind-text=" $model.hithData.val(&quot;buildingNo&quot;) +&quot;-&quot; + $model.hithData.val(&quot;liftNo&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cJvuIje"/>
+          </div>
+        </div>  
+        <div xid="div5" __cid="cJvuIje" class="cJvuIje"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJvuIje" xid="labelEdit3" style="color:#FDFCFF;padding:8px 2px 8px 17px;text-align:left;background-color:transparent;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJvuIje"> 
+            <label class="x-label cJvuIje" xid="label3" __cid="cJvuIje">合同编号：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cJvuIje" xid="output3" style="color:#FDFCFF;" data-bind="component:{ref:$model.hithData.ref(&quot;contractNo&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJvuIje"/>
+          </div>
+        </div>  
+        <div xid="div6" __cid="cJvuIje" class="cJvuIje"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJvuIje" xid="labelEdit4" style="color:#FDFCFF;padding:8px 2px 8px 17px;text-align:left;background-color:transparent;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJvuIje"> 
+            <label class="x-label cJvuIje" xid="label4" __cid="cJvuIje">维保工人：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cJvuIje" xid="output4" style="color:#FDFCFF;" data-bind="component:{ref:$model.hithData.ref(&quot;signInUser&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJvuIje"/>
+          </div> 
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-content cJvuIje" xid="content4" style="background-color:#F4F4F4;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJvuIje">
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel  pcqQZnei-iosstatusbar cJvuIje" xid="panel3" style="background-color:white;height:340px;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cJvuIje"> 
+        <div class="x-panel-top cJvuIje" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJvuIje"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cJvuIje" xid="row2" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJvuIje"> 
+            <div xid="col1" style="width:0.5em;" __cid="cJvuIje" class="cJvuIje"/>  
+            <div class="x-col  cJvuIje" xid="col2" __cid="cJvuIje">
+              <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group  btn-group-justified btngroup-radius cJvuIje" xid="buttonGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cJvuIje"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn active btn-link btn-color btngroup-radius cJvuIje" xid="sortingBtn" style="border-style:solid none solid solid;border-width:thin thin thin thin;border-color:#666666 #666666 #666666 #666666;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;维修人员&quot;,&quot;target&quot;:&quot;content6&quot;}" __cid="cJvuIje"> 
+                  <i xid="i6" __cid="cJvuIje" class="cJvuIje"/>  
+                  <span xid="span3" __cid="cJvuIje" class="cJvuIje">维修人员</span>
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-color btngroup-radius cJvuIje" xid="button6" style="border-style:solid solid solid none;border-width:thin thin thin thin;border-color:#666666 #666666 #666666 #666666;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;事件节点&quot;,&quot;target&quot;:&quot;content7&quot;}" __cid="cJvuIje"> 
+                  <i xid="i7" __cid="cJvuIje" class="cJvuIje"/>  
+                  <span xid="span6" __cid="cJvuIje" class="cJvuIje">事件节点</span>
+                </a> 
+              </div>
+            </div>  
+            <div xid="col3" style="width:0.5em;" __cid="cJvuIje" class="cJvuIje"/>
+          </div>
+        </div>  
+        <div class="x-panel-content cJvuIje" xid="content5" style="height:auto;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJvuIje">
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cJvuIje" xid="contents3" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cJvuIje"> 
+            <div class="x-contents-content active cJvuIje" xid="content6" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cJvuIje">
+              <div xid="div10" style="height:100%;" class="list-group-item cJvuIje" __cid="cJvuIje"> 
+                <div xid="div9" style="padding:5px 5px 5px 0px;" __cid="cJvuIje" class="cJvuIje"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cJvuIje" xid="button19" style="color:#252425;font-size:14px;font-weight:bold;" bind-text=" $model.hithData.val(&quot;signInUser&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" __cid="cJvuIje"> 
+                    <i xid="i20" __cid="cJvuIje" class="cJvuIje"/>  
+                    <span xid="span19" __cid="cJvuIje" class="cJvuIje"/>
+                  </a>
+                </div>  
+                <div xid="div8" style="background-color:#F4F4F4;padding:8px 3px 3px 5px;" __cid="cJvuIje" class="cJvuIje"> 
+                  <ul xid="ul2" __cid="cJvuIje" class="cJvuIje"> 
+                    <li xid="li1" class="li_class2 cJvuIje" __cid="cJvuIje"> 
+                      <div xid="div8" __cid="cJvuIje" class="cJvuIje"> 
+                        <div class="media cJvuIje" xid="media3" style="margin-left:2px;" __cid="cJvuIje"> 
+                          <div class="media-body cJvuIje" xid="mediaBody1" __cid="cJvuIje"> 
+                            <h5 xid="h58" class="media-heading cJvuIje" style="font-size:14px;color:#8C8C8C;" bind-text=" $model.hithData.val(&quot;faultTime&quot;)" __cid="cJvuIje"/>  
+                            <h5 xid="h520" class="media-heading cJvuIje" bind-text=" $model.hithData.val(&quot;address&quot;)" __cid="cJvuIje"/>
+                          </div> 
+                        </div> 
+                      </div>  
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn x-purple btn-xs span-index cJvuIje" xid="button9" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;故障发生&quot;}" __cid="cJvuIje"> 
+                        <i xid="i10" __cid="cJvuIje" class="cJvuIje"/>  
+                        <span xid="span10" __cid="cJvuIje" class="cJvuIje">故障发生</span>
+                      </a>
+                    </li>  
+                    <li xid="li4" class="li_class2 cJvuIje" __cid="cJvuIje"> 
+                      <div xid="div9" __cid="cJvuIje" class="cJvuIje"> 
+                        <div class="media cJvuIje" xid="media1" style="margin-left:2px;" __cid="cJvuIje"> 
+                          <div class="media-body cJvuIje" xid="mediaBody3" __cid="cJvuIje"> 
+                            <h5 xid="h510" class="media-heading cJvuIje" style="font-size:14px;color:#8C8C8C;" bind-text=" $model.hithData.val(&quot;signInTime&quot;)" __cid="cJvuIje"/>  
+                            <h5 xid="h521" class="media-heading cJvuIje" bind-text=" $model.hithData.val(&quot;signInAddr&quot;)" __cid="cJvuIje"/>
+                          </div> 
+                        </div> 
+                      </div>  
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn x-purple btn-xs span-index cJvuIje" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;到达时间&quot;}" __cid="cJvuIje"> 
+                        <i xid="i2" __cid="cJvuIje" class="cJvuIje"/>  
+                        <span xid="span2" __cid="cJvuIje" class="cJvuIje">到达时间</span>
+                      </a>
+                    </li>  
+                    <li xid="li3" class="li_class2 cJvuIje" __cid="cJvuIje"> 
+                      <div xid="div12" __cid="cJvuIje" class="cJvuIje"> 
+                        <div class="media cJvuIje" xid="media4" style="margin-left:2px;" __cid="cJvuIje"> 
+                          <div class="media-body cJvuIje" xid="mediaBody4" __cid="cJvuIje"> 
+                            <h5 xid="h54" class="media-heading cJvuIje" style="font-size:14px;color:#8C8C8C;" bind-text=" $model.hithData.val(&quot;finishTime&quot;)" __cid="cJvuIje"/>  
+                            <h5 xid="h522" class="media-heading cJvuIje" bind-text=" $model.hithData.val(&quot;address&quot;)" __cid="cJvuIje"/>
+                          </div> 
+                        </div> 
+                      </div>  
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-success btn-xs span-index cJvuIje" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;修好时间&quot;}" __cid="cJvuIje"> 
+                        <i xid="i4" __cid="cJvuIje" class="cJvuIje"/>  
+                        <span xid="span11" __cid="cJvuIje" class="cJvuIje">修好时间</span>
+                      </a>
+                    </li>
+                    <li xid="li2" class="li_class2 cJvuIje" __cid="cJvuIje"> 
+                      <div xid="div11" __cid="cJvuIje" class="cJvuIje"> 
+                        <div class="media cJvuIje" xid="media2" style="margin-left:2px;" __cid="cJvuIje"> 
+                          <div class="media-body cJvuIje" xid="mediaBody2" __cid="cJvuIje"> 
+                            <h5 xid="h51" class="media-heading cJvuIje" style="font-size:14px;color:#8C8C8C;" bind-text=" $model.hithData.val(&quot;signOutTime&quot;)" __cid="cJvuIje"/>  
+                            <h5 xid="h523" class="media-heading cJvuIje" bind-text=" $model.hithData.val(&quot;signOutAddr&quot;)" __cid="cJvuIje"/>
+                          </div> 
+                        </div> 
+                      </div>  
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary btn-xs span-index cJvuIje" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;签退时间&quot;}" __cid="cJvuIje"> 
+                        <i xid="i3" __cid="cJvuIje" class="cJvuIje"/>  
+                        <span xid="span4" __cid="cJvuIje" class="cJvuIje">签退时间</span>
+                      </a>
+                    </li> 
+                  </ul> 
+                </div> 
+              </div>
+            </div>  
+            <div class="x-contents-content cJvuIje" xid="content7" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cJvuIje">
+              <div xid="div14" style="height:100%;" class="list-group-item cJvuIje" __cid="cJvuIje"> 
+                <div xid="div16" style="padding:5px 5px 5px 0px;" __cid="cJvuIje" class="cJvuIje"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cJvuIje" xid="button20" style="color:#252425;font-size:14px;font-weight:bold;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;维修工人&quot;}" __cid="cJvuIje"> 
+                    <i xid="i13" __cid="cJvuIje" class="cJvuIje"/>  
+                    <span xid="span16" __cid="cJvuIje" class="cJvuIje">维修工人</span>
+                  </a> 
+                </div>  
+                <div xid="div29" style="background-color:#F4F4F4;padding:8px 3px 3px 5px;" __cid="cJvuIje" class="cJvuIje"> 
+                  <ul xid="ul1" __cid="cJvuIje" class="cJvuIje"> 
+                    <li xid="li6" class="li_class2 cJvuIje" __cid="cJvuIje"> 
+                      <div xid="div29" __cid="cJvuIje" class="cJvuIje"> 
+                        <div class="media cJvuIje" xid="media7" style="margin-left:2px;" __cid="cJvuIje"> 
+                          <div class="media-body cJvuIje" xid="mediaBody8" __cid="cJvuIje"> 
+                            <h5 xid="h55" class="media-heading cJvuIje" style="font-size:14px;color:#8C8C8C;" bind-text=" $model.hithData.val(&quot;faultTime&quot;)" __cid="cJvuIje"/>  
+                            <h5 xid="h513" class="media-heading cJvuIje" style="font-size:14px;color:#8C8C8C;" bind-text=" $model.hithData.val(&quot;enteringPort&quot;)" __cid="cJvuIje"/>
+                            <h5 xid="h514" class="media-heading cJvuIje" style="font-size:14px;color:#8C8C8C;" bind-text=" $model.hithData.val(&quot;enteringUser&quot;)" __cid="cJvuIje"/>
+                            <h5 xid="h57" class="media-heading cJvuIje" bind-text=" $model.hithData.val(&quot;address&quot;)" style="font-size:14px;color:#8C8C8C;" __cid="cJvuIje"/> 
+                          </div> 
+                        </div> 
+                      </div>  
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn x-purple btn-xs span-index cJvuIje" xid="button11" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;故障发生&quot;}" __cid="cJvuIje"> 
+                        <i xid="i8" __cid="cJvuIje" class="cJvuIje"/>  
+                        <span xid="span9" __cid="cJvuIje" class="cJvuIje">故障发生</span>
+                      </a> 
+                    </li>  
+                    <li xid="li7" class="li_class2 cJvuIje" __cid="cJvuIje"> 
+                      <div xid="div17" __cid="cJvuIje" class="cJvuIje"> 
+                        <div class="media cJvuIje" xid="media8" style="margin-left:2px;" __cid="cJvuIje"> 
+                          <div class="media-body cJvuIje" xid="mediaBody6" __cid="cJvuIje"> 
+                            <h5 xid="h56" class="media-heading cJvuIje" style="font-size:14px;color:#8C8C8C;" bind-text=" $model.hithData.val(&quot;signInTime&quot;)" __cid="cJvuIje"/>  
+                            <h5 xid="h515" class="media-heading cJvuIje" style="font-size:14px;color:#8C8C8C;" bind-text=" $model.hithData.val(&quot;signInUser&quot;)" __cid="cJvuIje"/>
+                            <h5 xid="h59" class="media-heading cJvuIje" bind-text=" $model.hithData.val(&quot;signInAddr&quot;)" style="font-size:14px;color:#8C8C8C;" __cid="cJvuIje"/> 
+                          </div> 
+                        </div> 
+                      </div>  
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn x-purple btn-xs span-index cJvuIje" xid="button8" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;到达时间&quot;}" __cid="cJvuIje"> 
+                        <i xid="i9" __cid="cJvuIje" class="cJvuIje"/>  
+                        <span xid="span7" __cid="cJvuIje" class="cJvuIje">到达时间</span>
+                      </a> 
+                    </li>  
+                    <li xid="li8" class="li_class2 cJvuIje" __cid="cJvuIje"> 
+                      <div xid="div13" __cid="cJvuIje" class="cJvuIje"> 
+                        <div class="media cJvuIje" xid="media5" style="margin-left:2px;" __cid="cJvuIje"> 
+                          <div class="media-body cJvuIje" xid="mediaBody7" __cid="cJvuIje"> 
+                            <h5 xid="h53" class="media-heading cJvuIje" style="font-size:14px;color:#8C8C8C;" bind-text=" $model.hithData.val(&quot;finishTime&quot;)" __cid="cJvuIje"/>  
+                            <h5 xid="h516" class="media-heading cJvuIje" style="font-size:14px;color:#8C8C8C;" bind-text=" $model.hithData.val(&quot;signInUser&quot;)" __cid="cJvuIje"/>
+                            <h5 xid="h511" class="media-heading cJvuIje" bind-text=" $model.hithData.val(&quot;address&quot;)" style="font-size:14px;color:#8C8C8C;" __cid="cJvuIje"/> 
+                          </div> 
+                        </div> 
+                      </div>  
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-success btn-xs span-index cJvuIje" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;修好时间&quot;}" __cid="cJvuIje"> 
+                        <i xid="i12" __cid="cJvuIje" class="cJvuIje"/>  
+                        <span xid="span12" __cid="cJvuIje" class="cJvuIje">修好时间</span>
+                      </a> 
+                    </li>  
+                    <li xid="li5" class="li_class2 cJvuIje" __cid="cJvuIje"> 
+                      <div xid="div15" __cid="cJvuIje" class="cJvuIje"> 
+                        <div class="media cJvuIje" xid="media6" style="margin-left:2px;" __cid="cJvuIje"> 
+                          <div class="media-body cJvuIje" xid="mediaBody5" __cid="cJvuIje"> 
+                            <h5 xid="h52" class="media-heading cJvuIje" style="font-size:14px;color:#8C8C8C;" bind-text=" $model.hithData.val(&quot;signOutTime&quot;)" __cid="cJvuIje"/>  
+                            <h5 xid="h517" class="media-heading cJvuIje" style="font-size:14px;color:#8C8C8C;" bind-text=" $model.hithData.val(&quot;signOutUser&quot;)" __cid="cJvuIje"/>
+                            <h5 xid="h512" class="media-heading cJvuIje" bind-text=" $model.hithData.val(&quot;signOutAddr&quot;)" style="font-size:14px;color:#8C8C8C;" __cid="cJvuIje"/> 
+                          </div> 
+                        </div> 
+                      </div>  
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary btn-xs span-index cJvuIje" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;签退时间&quot;}" __cid="cJvuIje"> 
+                        <i xid="i11" __cid="cJvuIje" class="cJvuIje"/>  
+                        <span xid="span8" __cid="cJvuIje" class="cJvuIje">签退时间</span>
+                      </a> 
+                    </li> 
+                  </ul> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <style __cid="cJvuIje" class="cJvuIje">.x-panel.pcqQZnei-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcqQZnei-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcqQZnei-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcqQZnei-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcqQZnei-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcqQZnei-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcqQZnei-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcqQZnei-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcqQZnei-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div>  
+      <div xid="div7" __cid="cJvuIje" class="cJvuIje">
+        <div xid="div18" style="padding:5px 5px 5px 0px;background-color:white;" __cid="cJvuIje" class="cJvuIje">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cJvuIje" xid="button21" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-warning-sign&quot;,&quot;label&quot;:&quot;故障原因&quot;}" __cid="cJvuIje"> 
+            <i xid="i22" class="glyphicon glyphicon-warning-sign cJvuIje" __cid="cJvuIje"/>  
+            <span xid="span22" style="color:#252425;font-size:14px;" __cid="cJvuIje" class="cJvuIje">故障原因</span>
+          </a>
+        </div>  
+        <div xid="div19" __cid="cJvuIje" class="cJvuIje">
+          <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control cJvuIje" xid="textarea1" style="background-color:white;height:50px;" data-bind="component:{ref:$model.hithData.ref(&quot;faultReason&quot;),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cJvuIje"/>
+        </div>
+      </div>  
+      <div xid="div28" __cid="cJvuIje" class="cJvuIje"> 
+        <div xid="div26" style="padding:5px 5px 5px 0px;background-color:white;" __cid="cJvuIje" class="cJvuIje"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cJvuIje" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-warning-sign&quot;,&quot;label&quot;:&quot;解决方案&quot;}" __cid="cJvuIje"> 
+            <i xid="i5" class="glyphicon glyphicon-warning-sign cJvuIje" __cid="cJvuIje"/>  
+            <span xid="span5" style="color:#252425;font-size:14px;" __cid="cJvuIje" class="cJvuIje">解决方案</span>
+          </a> 
+        </div>  
+        <div xid="div27" __cid="cJvuIje" class="cJvuIje"> 
+          <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control cJvuIje" xid="textarea4" style="background-color:white;height:50px;" data-bind="component:{ref:$model.hithData.ref(&quot;solution&quot;),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cJvuIje"/>
+        </div> 
+      </div>
+      <div xid="div22" bind-visible="$model.hithData.val(&quot;is_pj&quot;)==&quot;null&quot;  || $model.hithData.val(&quot;is_pj&quot;)==0" __cid="cJvuIje" class="cJvuIje"> 
+        <div xid="div20" style="padding:5px 5px 5px 0px;background-color:white;" __cid="cJvuIje" class="cJvuIje"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cJvuIje" xid="button22" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-wrench&quot;,&quot;label&quot;:&quot;更换配件&quot;}" __cid="cJvuIje"> 
+            <i xid="i23" class="glyphicon glyphicon-wrench cJvuIje" __cid="cJvuIje"/>  
+            <span xid="span23" style="color:#252425;font-size:14px;" __cid="cJvuIje" class="cJvuIje">更换配件</span>
+          </a> 
+        </div>  
+        <div xid="div21" __cid="cJvuIje" class="cJvuIje"> 
+          <div xid="div31" style="height:auto;" __cid="cJvuIje" class="cJvuIje"> 
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list cJvuIje" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;Accessories&quot;}" __cid="cJvuIje"> 
+              <ul class="x-list-template hide cJvuIje" xid="listTemplateUl2" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="cJvuIje"> 
+                <li xid="li10" style="box-shadow: 1px 1px 2px 2px #888888;background-color:#F3F3F3;" __cid="cJvuIje" class="cJvuIje"> 
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cJvuIje" xid="row6" style="border-bottom:1px #BBBBBB solid;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJvuIje"> 
+                    <div class="x-col  cJvuIje" xid="col13" __cid="cJvuIje"> 
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row  cJvuIje" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJvuIje"> 
+                        <div class="x-col cJvuIje" xid="col4" __cid="cJvuIje"> 
+                          <div component="$model/UI2/system/components/justep/output/output" class="my-output cJvuIje" xid="output14" data-bind="component:{ref:ref(&quot;date&quot;),name:'$model/UI2/system/components/justep/output/output'}" data-events="onRender:output2Render" __cid="cJvuIje"/>
+                        </div> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row  cJvuIje" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJvuIje"> 
+                        <div class="x-col cJvuIje" xid="col8" __cid="cJvuIje"> 
+                          <div component="$model/UI2/system/components/justep/output/output" class="my-output cJvuIje" xid="output13" data-bind="component:{ref:ref(&quot;model&quot;),name:'$model/UI2/system/components/justep/output/output'}" data-events="onRender:output13Render" __cid="cJvuIje"/>
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </li> 
+              </ul> 
+            </div> 
+          </div>
+        </div> 
+      </div>  
+      <div xid="div25" __cid="cJvuIje" class="cJvuIje"> 
+        <div xid="div23" style="padding:5px 5px 5px 0px;background-color:white;" __cid="cJvuIje" class="cJvuIje"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cJvuIje" xid="button23" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-picture&quot;,&quot;label&quot;:&quot;工单照片&quot;}" __cid="cJvuIje"> 
+            <i xid="i24" class="glyphicon glyphicon-picture cJvuIje" __cid="cJvuIje"/>  
+            <span xid="span24" style="color:#252425;font-size:14px;" __cid="cJvuIje" class="cJvuIje">工单照片</span>
+          </a> 
+        </div>  
+        <div xid="div24" __cid="cJvuIje" class="cJvuIje"> 
+          <ul component="$model/UI2/system/components/justep/list/list" class="x-list x-list-template hide cJvuIje" xid="list1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;imageList&quot;}" __cid="cJvuIje"> 
+            <li xid="li9" __cid="cJvuIje" class="cJvuIje"> 
+              <div xid="div30" style="float:left;padding:5px 5px 5px 5px;margin-left:5px;" __cid="cJvuIje" class="cJvuIje">
+                <img src=" " alt="" xid="image1" style="width:60px;height:60px;" bind-attr-src="val(&quot;newUrl&quot;)" bind-click="image1Click" __cid="cJvuIje" class="cJvuIje"/>
+              </div>
+            </li>
+          </ul>
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cJvuIje" class="cJvuIje">.x-panel.pcRJNJ73-iosstatusbar &gt;.x-panel-top {height: 200px;}.x-panel.pcRJNJ73-iosstatusbar &gt;.x-panel-content { top: 200px;bottom: nullpx;}.x-panel.pcRJNJ73-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcRJNJ73-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcRJNJ73-iosstatusbar &gt;.x-panel-top {height: 220px;}.iosstatusbar .x-panel.pcRJNJ73-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcRJNJ73-iosstatusbar &gt;.x-panel-content { top: 220px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcRJNJ73-iosstatusbar &gt;.x-panel-top {height: 200px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcRJNJ73-iosstatusbar &gt;.x-panel-content {top: 200px;}</style>
+  </div>
+</div>

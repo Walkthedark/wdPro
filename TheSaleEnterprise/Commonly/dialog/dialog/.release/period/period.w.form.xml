@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cm6rqQz" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cm6rqQz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-control-group-title.cm6rqQz{background-color: rgb(143, 196, 28); margin-bottom: 0.625em; padding: 0.625em; border-radius: 4px; color: rgb(255, 255, 255); font-weight: bold; font-size: 1.125em; cursor: pointer} .x-radio-group-vertical.cm6rqQz .x-radio.cm6rqQz, .x-checkbox-group-vertical.cm6rqQz .x-checkbox.cm6rqQz{display: block; margin-bottom: 0.625em; border: 1px solid rgb(204, 204, 204); padding: 10px; font-size: 15px} .x-radio.cm6rqQz input[type="radio"].cm6rqQz + label.cm6rqQz, .x-checkbox.cm6rqQz input[type="checkbox"].cm6rqQz + label.cm6rqQz{display: inline-block; left: 1.65em; position: relative; text-align: left; margin: 0 1.65em 0 0; min-height: 1em; width: 100%} .btn-btn5.cm6rqQz{margin-top: 10px; margin-left: 10px; color: rgb(62, 62, 62); height: 40px; font-size: 16px; background-color: rgb(224, 236, 245); font-size: 16px; float: left; text-align: center; border: 1px solid rgb(62, 62, 62)}</xhtml:style>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="periodReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" __cid="cm6rqQz" class="cm6rqQz"/>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cm6rqQz" class="cm6rqQz"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcIB3M7j-iosstatusbar cm6rqQz" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cm6rqQz"> 
+    <div class="x-panel-top cm6rqQz" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cm6rqQz"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cm6rqQz" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;考核期&quot;}" __cid="cm6rqQz"> 
+        <div class="x-titlebar-left cm6rqQz" xid="left2" __cid="cm6rqQz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cm6rqQz" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cm6rqQz"> 
+            <i xid="i1" __cid="cm6rqQz" class="cm6rqQz"/>  
+            <span xid="span4" __cid="cm6rqQz" class="cm6rqQz">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cm6rqQz" xid="title2" __cid="cm6rqQz">考核期</div>  
+        <div class="x-titlebar-right  cm6rqQz" xid="right2" __cid="cm6rqQz">
+          <div class="empty cm6rqQz" __cid="cm6rqQz"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cm6rqQz" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cm6rqQz"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cm6rqQz" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;periodList&quot;}" __cid="cm6rqQz"> 
+        <ul class="x-list-template hide cm6rqQz" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cm6rqQz"> 
+          <li xid="li1" class="border-Two cm6rqQz" bind-click="li1Click" __cid="cm6rqQz"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cm6rqQz" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cm6rqQz"> 
+              <div class="x-col cm6rqQz" xid="col1" __cid="cm6rqQz"> 
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row cm6rqQz" xid="row2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cm6rqQz"> 
+                  <div class="col col-xs-12 cm6rqQz" xid="col4" __cid="cm6rqQz"> 
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output font-One cm6rqQz" xid="output1" data-bind="component:{ref:ref(&quot;title&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cm6rqQz"/>
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </li> 
+        </ul> 
+      </div>
+    </div>  
+    <style __cid="cm6rqQz" class="cm6rqQz">.x-panel.pcIB3M7j-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcIB3M7j-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcIB3M7j-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcIB3M7j-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcIB3M7j-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcIB3M7j-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcIB3M7j-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcIB3M7j-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcIB3M7j-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

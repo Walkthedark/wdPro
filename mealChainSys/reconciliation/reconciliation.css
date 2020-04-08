@@ -1,0 +1,12 @@
+.top_back {
+	background-image: url("../img/duizhangbg.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.div-radius{
+	border-radius: 30px;
+	/* #8BA5AC */
+}
+.cid{
+	color:#ff8811
+}

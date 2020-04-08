@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window czEbYBv" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="czEbYBv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/bootstrap/progress/progress,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-card1.btn-group.czEbYBv .btn.active.czEbYBv{color: rgb(255, 255, 255); background-color: rgb(250, 121, 34); border-color: rgb(250, 121, 34)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="czEbYBv" class="czEbYBv"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="customerCostDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/RankingList/dialog/customerCost.w&quot;}" __cid="czEbYBv" class="czEbYBv">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay czEbYBv" __cid="czEbYBv"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog czEbYBv" style="display:none;" __cid="czEbYBv">
+      <xhtml:div class="x-dialog-title czEbYBv" __cid="czEbYBv">
+        <xhtml:button class="close czEbYBv" __cid="czEbYBv">
+          <xhtml:span __cid="czEbYBv" class="czEbYBv">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text czEbYBv" __cid="czEbYBv"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body czEbYBv" __cid="czEbYBv"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="customerDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/RankingList/dialog/customerVisit.w&quot;}" __cid="czEbYBv" class="czEbYBv">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay czEbYBv" __cid="czEbYBv"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog czEbYBv" style="display:none;" __cid="czEbYBv">
+      <xhtml:div class="x-dialog-title czEbYBv" __cid="czEbYBv">
+        <xhtml:button class="close czEbYBv" __cid="czEbYBv">
+          <xhtml:span __cid="czEbYBv" class="czEbYBv">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text czEbYBv" __cid="czEbYBv"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body czEbYBv" __cid="czEbYBv"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="processDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/RankingList/dialog/customerSale.w&quot;}" __cid="czEbYBv" class="czEbYBv">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay czEbYBv" __cid="czEbYBv"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog czEbYBv" style="display:none;" __cid="czEbYBv">
+      <xhtml:div class="x-dialog-title czEbYBv" __cid="czEbYBv">
+        <xhtml:button class="close czEbYBv" __cid="czEbYBv">
+          <xhtml:span __cid="czEbYBv" class="czEbYBv">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text czEbYBv" __cid="czEbYBv"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body czEbYBv" __cid="czEbYBv"/>
+    </xhtml:div>
+  </span>
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="sendDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/RankingList/dialog/customerSend.w&quot;}" __cid="czEbYBv" class="czEbYBv">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay czEbYBv" __cid="czEbYBv"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog czEbYBv" style="display:none;" __cid="czEbYBv">
+      <xhtml:div class="x-dialog-title czEbYBv" __cid="czEbYBv">
+        <xhtml:button class="close czEbYBv" __cid="czEbYBv">
+          <xhtml:span __cid="czEbYBv" class="czEbYBv">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text czEbYBv" __cid="czEbYBv"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body czEbYBv" __cid="czEbYBv"/>
+    </xhtml:div>
+  </span>
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcbUraUv-iosstatusbar czEbYBv" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="czEbYBv"> 
+    <div class="x-panel-top czEbYBv" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czEbYBv"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title czEbYBv" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;分区龙虎榜&quot;}" __cid="czEbYBv"> 
+        <div class="x-titlebar-left czEbYBv" xid="left2" __cid="czEbYBv"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label czEbYBv" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="czEbYBv"> 
+            <i xid="i1" __cid="czEbYBv" class="czEbYBv"/>  
+            <span xid="span4" __cid="czEbYBv" class="czEbYBv">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title czEbYBv" xid="title2" __cid="czEbYBv">分区龙虎榜</div>  
+        <div class="x-titlebar-right  czEbYBv" xid="right2" __cid="czEbYBv">
+          <div class="empty czEbYBv" __cid="czEbYBv"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content czEbYBv" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czEbYBv"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcERNvMr-iosstatusbar czEbYBv" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="czEbYBv"> 
+        <div class="x-panel-content czEbYBv" xid="content3" style="background-color:#f0f0f0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czEbYBv"> 
+          <div xid="div1" class="mar2 border-div czEbYBv" style="background-color:white;" __cid="czEbYBv"> 
+            <hr xid="hr1" __cid="czEbYBv" class="czEbYBv"/>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two czEbYBv" xid="row1" style="margin-top:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="czEbYBv"> 
+              <div class="x-col czEbYBv" xid="col1" __cid="czEbYBv"> 
+                <img src="$model/UI2/TheSaleEnterprise/RankingList/img/002.png" alt="" xid="image1" style="width:30px;" __cid="czEbYBv" class="czEbYBv"/>  
+                <label xid="label1" class="font-five czEbYBv" __cid="czEbYBv">销售进度龙虎榜</label> 
+              </div>  
+              <div xid="col2" style="text-align:right;padding-top:7px;" __cid="czEbYBv" class="czEbYBv"> 
+                <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card1 czEbYBv" xid="buttonGroup3" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="czEbYBv"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default5 active czEbYBv" xid="button6" bind-text=" $model.cDate.val(&quot;year&quot;)" style="line-height: 12px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" __cid="czEbYBv"> 
+                    <i xid="i6" __cid="czEbYBv" class="czEbYBv"/>  
+                    <span xid="span1" style="margin-top:-4px;display:block;" __cid="czEbYBv" class="czEbYBv"/> 
+                  </a> 
+                </div> 
+              </div>  
+              <div xid="col19" style="width:6em;padding-top:7px;height:30px;" __cid="czEbYBv" class="czEbYBv"> 
+                <select component="$model/UI2/system/components/justep/select/select" bind-optionsCaption="'请选择...'" xid="select1" bind-options="khq1.datas" bind-optionsValue="'id'" style="height:30px;" bind-optionsText="'title'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{ref:$model.cDate.ref(&quot;khq1&quot;),name:'$model/UI2/system/components/justep/select/select'}" __cid="czEbYBv" class="czEbYBv"/> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row czEbYBv" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="czEbYBv"> 
+              <div class="x-col czEbYBv" xid="col4" __cid="czEbYBv"> 
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row czEbYBv" xid="row3" style="display:none" id="fqListRow1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="czEbYBv"> 
+                  <div class="col col-xs-12 czEbYBv" xid="col7" __cid="czEbYBv"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row czEbYBv" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="czEbYBv"> 
+                      <div class="x-col czEbYBv" xid="col11" style="text-align:center;" __cid="czEbYBv"> 
+                        <span xid="span3" class="font-four czEbYBv" __cid="czEbYBv">没有销售进度信息</span> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div>  
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row czEbYBv" xid="row14" id="fqListRow2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="czEbYBv"> 
+                  <div class="col col-xs-12 czEbYBv" xid="col20" __cid="czEbYBv"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row czEbYBv" xid="row13" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="czEbYBv"> 
+                      <div class="x-col czEbYBv" xid="col24" __cid="czEbYBv"> 
+                        <span xid="span15" id="fqName1" __cid="czEbYBv" class="czEbYBv">李四：</span> 
+                      </div>  
+                      <div class="x-col czEbYBv" xid="col22" __cid="czEbYBv"/> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 border-Two czEbYBv" xid="col21" __cid="czEbYBv"> 
+                    <div class="progress czEbYBv" component="$model/UI2/system/components/bootstrap/progress/progress" xid="progress2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/progress/progress'}" data-config="{&quot;valuemax&quot;:20,&quot;valuenow&quot;:20}" __cid="czEbYBv"> 
+                      <div class="progress-bar progress-bar-success czEbYBv" role="progressbar" xid="progressBar2" __cid="czEbYBv"> 
+                        <span xid="span16" id="fqNum1" __cid="czEbYBv" class="czEbYBv">次</span> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 mar2 czEbYBv" xid="col23" style="text-align:center;" bind-click="col23Click" __cid="czEbYBv"> 
+                    <span xid="span14" class="font-six czEbYBv" __cid="czEbYBv">点击查看更多</span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div xid="div7" class="mar2 border-div czEbYBv" style="background-color:white;" __cid="czEbYBv"> 
+            <hr xid="hr4" __cid="czEbYBv" class="czEbYBv"/>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two czEbYBv" xid="row21" style="margin-top:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="czEbYBv"> 
+              <div class="x-col czEbYBv" xid="col51" __cid="czEbYBv"> 
+                <img src="$model/UI2/TheSaleEnterprise/RankingList/img/001.png" alt="" xid="image2" style="width:30px;" __cid="czEbYBv" class="czEbYBv"/>  
+                <label xid="label8" class="font-five czEbYBv" __cid="czEbYBv">拜访客户龙虎榜</label> 
+              </div>  
+              <div xid="col35" style="text-align:right;padding-top:7px;" __cid="czEbYBv" class="czEbYBv"> 
+                <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card1 czEbYBv" xid="buttonGroup4" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="czEbYBv"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default5 active czEbYBv" xid="button8" bind-text=" $model.cDate.val(&quot;year&quot;)" style="line-height: 12px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" __cid="czEbYBv"> 
+                    <i xid="i8" __cid="czEbYBv" class="czEbYBv"/>  
+                    <span xid="span22" style="margin-top:-4px;display:block;" __cid="czEbYBv" class="czEbYBv"/> 
+                  </a> 
+                </div> 
+              </div>  
+              <div xid="col36" style="width:6em;padding-top:7px;height:30px;" __cid="czEbYBv" class="czEbYBv"> 
+                <select component="$model/UI2/system/components/justep/select/select" bind-optionsCaption="'请选择...'" xid="select2" bind-options="khq2.datas" bind-optionsValue="'id'" style="height:30px;" bind-optionsText="'title'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{ref:$model.cDate.ref(&quot;khq2&quot;),name:'$model/UI2/system/components/justep/select/select'}" __cid="czEbYBv" class="czEbYBv"/> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row czEbYBv" xid="row22" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="czEbYBv"> 
+              <div class="x-col czEbYBv" xid="col47" __cid="czEbYBv"> 
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row czEbYBv" xid="row24" id="fqListRow3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="czEbYBv"> 
+                  <div class="col col-xs-12 czEbYBv" xid="col46" __cid="czEbYBv"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row czEbYBv" xid="row23" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="czEbYBv"> 
+                      <div class="x-col czEbYBv" xid="col52" __cid="czEbYBv"> 
+                        <span xid="span27" id="fqName2" __cid="czEbYBv" class="czEbYBv">李四：</span> 
+                      </div>  
+                      <div class="x-col czEbYBv" xid="col54" __cid="czEbYBv"/> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 border-Two czEbYBv" xid="col44" __cid="czEbYBv"> 
+                    <div class="progress czEbYBv" component="$model/UI2/system/components/bootstrap/progress/progress" xid="progress4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/progress/progress'}" data-config="{&quot;valuemax&quot;:20,&quot;valuenow&quot;:20}" __cid="czEbYBv"> 
+                      <div class="progress-bar progress-bar-success czEbYBv" role="progressbar" xid="progressBar4" __cid="czEbYBv"> 
+                        <span xid="span26" bind-text="&quot;2次&quot;" id="fqNum2" __cid="czEbYBv" class="czEbYBv">2次</span> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 mar2 czEbYBv" xid="col53" style="text-align:center;" bind-click="col53Click" __cid="czEbYBv"> 
+                    <span xid="span2" class="font-six czEbYBv" __cid="czEbYBv">点击查看更多</span> 
+                  </div> 
+                </div>  
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row czEbYBv" xid="row17" style="display:none" id="fqListRow4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="czEbYBv"> 
+                  <div class="col col-xs-12 czEbYBv" xid="col26" __cid="czEbYBv"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row czEbYBv" xid="row16" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="czEbYBv"> 
+                      <div class="x-col czEbYBv" xid="col27" style="text-align:center;" __cid="czEbYBv"> 
+                        <span xid="span17" class="font-four czEbYBv" __cid="czEbYBv">没有拜访客户信息</span> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div xid="div3" class="mar2 border-div czEbYBv" style="background-color:white;" __cid="czEbYBv"> 
+            <hr xid="hr3" __cid="czEbYBv" class="czEbYBv"/>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two czEbYBv" xid="row9" style="margin-top:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="czEbYBv"> 
+              <div class="x-col czEbYBv" xid="col18" __cid="czEbYBv"> 
+                <img src="$model/UI2/TheSaleEnterprise/RankingList/img/002.png" alt="" xid="image4" style="width:30px;" __cid="czEbYBv" class="czEbYBv"/>  
+                <label xid="label3" class="font-five czEbYBv" __cid="czEbYBv">客户发货龙虎榜</label> 
+              </div>  
+              <div xid="col37" style="text-align:right;padding-top:7px;" __cid="czEbYBv" class="czEbYBv"> 
+                <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card1 czEbYBv" xid="buttonGroup5" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="czEbYBv"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default5 active czEbYBv" xid="button9" bind-text=" $model.cDate.val(&quot;year&quot;)" style="line-height: 12px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" __cid="czEbYBv"> 
+                    <i xid="i9" __cid="czEbYBv" class="czEbYBv"/>  
+                    <span xid="span23" style="margin-top:-4px;display:block;" __cid="czEbYBv" class="czEbYBv"/> 
+                  </a> 
+                </div> 
+              </div>  
+              <div xid="col38" style="width:6em;padding-top:7px;height:30px;" __cid="czEbYBv" class="czEbYBv"> 
+                <select component="$model/UI2/system/components/justep/select/select" bind-optionsCaption="'请选择...'" xid="select3" bind-options="khq3.datas" bind-optionsValue="'id'" style="height:30px;" bind-optionsText="'title'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{ref:$model.cDate.ref(&quot;khq3&quot;),name:'$model/UI2/system/components/justep/select/select'}" __cid="czEbYBv" class="czEbYBv"/> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row czEbYBv" xid="row11" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="czEbYBv"> 
+              <div class="x-col czEbYBv" xid="col16" __cid="czEbYBv"> 
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row czEbYBv" xid="row19" id="fqListRow5" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="czEbYBv"> 
+                  <div class="col col-xs-12 czEbYBv" xid="col28" __cid="czEbYBv"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row czEbYBv" xid="row18" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="czEbYBv"> 
+                      <div class="x-col czEbYBv" xid="col32" __cid="czEbYBv"> 
+                        <span xid="span19" id="fqName3" __cid="czEbYBv" class="czEbYBv">李四：</span> 
+                      </div>  
+                      <div class="x-col czEbYBv" xid="col30" __cid="czEbYBv"/> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 border-Two czEbYBv" xid="col29" __cid="czEbYBv"> 
+                    <div class="progress czEbYBv" component="$model/UI2/system/components/bootstrap/progress/progress" xid="progress3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/progress/progress'}" data-config="{&quot;valuemax&quot;:20,&quot;valuenow&quot;:20}" __cid="czEbYBv"> 
+                      <div class="progress-bar progress-bar-success czEbYBv" role="progressbar" xid="progressBar3" __cid="czEbYBv"> 
+                        <span xid="span20" bind-text="&quot;2次&quot;" id="fqNum3" __cid="czEbYBv" class="czEbYBv">2次</span> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 mar2 czEbYBv" xid="col31" style="text-align:center;" bind-click="col31Click" __cid="czEbYBv"> 
+                    <span xid="span18" class="font-six czEbYBv" __cid="czEbYBv">点击查看更多</span> 
+                  </div> 
+                </div>  
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row czEbYBv" xid="row10" style="display:none" id="fqListRow6" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="czEbYBv"> 
+                  <div class="col col-xs-12 czEbYBv" xid="col15" __cid="czEbYBv"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row czEbYBv" xid="row12" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="czEbYBv"> 
+                      <div class="x-col czEbYBv" xid="col14" style="text-align:center;" __cid="czEbYBv"> 
+                        <span xid="span12" class="font-four czEbYBv" __cid="czEbYBv">没有客户发货信息</span> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div xid="div2" class="mar2 border-div czEbYBv" style="background-color:white;" __cid="czEbYBv"> 
+            <hr xid="hr2" __cid="czEbYBv" class="czEbYBv"/>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two czEbYBv" xid="row7" style="margin-top:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="czEbYBv"> 
+              <div class="x-col czEbYBv" xid="col13" __cid="czEbYBv"> 
+                <img src="$model/UI2/TheSaleEnterprise/RankingList/img/004.png" alt="" xid="image3" style="width:30px;" __cid="czEbYBv" class="czEbYBv"/>  
+                <label xid="label2" class="font-five czEbYBv" __cid="czEbYBv">客户费用龙虎榜</label> 
+              </div>  
+              <div xid="col39" style="text-align:right;padding-top:7px;" __cid="czEbYBv" class="czEbYBv"> 
+                <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card1 czEbYBv" xid="buttonGroup6" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="czEbYBv"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default5 active czEbYBv" xid="button10" bind-text=" $model.cDate.val(&quot;year&quot;)" style="line-height: 12px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" __cid="czEbYBv"> 
+                    <i xid="i10" __cid="czEbYBv" class="czEbYBv"/>  
+                    <span xid="span24" style="margin-top:-4px;display:block;" __cid="czEbYBv" class="czEbYBv"/> 
+                  </a> 
+                </div> 
+              </div>  
+              <div xid="col40" style="width:6em;padding-top:7px;height:30px;" __cid="czEbYBv" class="czEbYBv"> 
+                <select component="$model/UI2/system/components/justep/select/select" bind-optionsCaption="'请选择...'" xid="select4" bind-options="khq4.datas" bind-optionsValue="'id'" style="height:30px;" bind-optionsText="'title'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{ref:$model.cDate.ref(&quot;khq4&quot;),name:'$model/UI2/system/components/justep/select/select'}" __cid="czEbYBv" class="czEbYBv"/> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row czEbYBv" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="czEbYBv"> 
+              <div class="x-col czEbYBv" xid="col5" __cid="czEbYBv"> 
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row czEbYBv" xid="row8" id="fqListRow7" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="czEbYBv"> 
+                  <div class="col col-xs-12 czEbYBv" xid="col6" __cid="czEbYBv"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row czEbYBv" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="czEbYBv"> 
+                      <div class="x-col czEbYBv" xid="col12" __cid="czEbYBv"> 
+                        <span xid="span7" id="fqName4" __cid="czEbYBv" class="czEbYBv">陕西银泽贸易有限公司：</span> 
+                      </div>  
+                      <div class="x-col czEbYBv" xid="col9" __cid="czEbYBv"/> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 border-Two czEbYBv" xid="col8" __cid="czEbYBv"> 
+                    <div class="progress czEbYBv" component="$model/UI2/system/components/bootstrap/progress/progress" xid="progress1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/progress/progress'}" data-config="{&quot;valuemax&quot;:20,&quot;valuenow&quot;:60}" __cid="czEbYBv"> 
+                      <div class="progress-bar progress-bar-success czEbYBv" role="progressbar" xid="progressBar1" __cid="czEbYBv"> 
+                        <span xid="span8" bind-text="&quot;2.12万元&quot;" id="fqNum4" __cid="czEbYBv" class="czEbYBv">2.12万元</span> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 mar2 czEbYBv" xid="col10" style="text-align:center;" bind-click="col10Click" __cid="czEbYBv"> 
+                    <span xid="span9" class="font-six czEbYBv" __cid="czEbYBv">点击查看更多</span> 
+                  </div> 
+                </div>  
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row czEbYBv" xid="row25" style="display:none" id="fqListRow8" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="czEbYBv"> 
+                  <div class="col col-xs-12 czEbYBv" xid="col34" __cid="czEbYBv"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row czEbYBv" xid="row20" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="czEbYBv"> 
+                      <div class="x-col czEbYBv" xid="col33" style="text-align:center;" __cid="czEbYBv"> 
+                        <span xid="span21" class="font-four czEbYBv" __cid="czEbYBv">没有客户费用信息</span> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <hr xid="hr7" __cid="czEbYBv" class="czEbYBv"/> 
+        </div>  
+        <style __cid="czEbYBv" class="czEbYBv">.x-panel.pcERNvMr-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcERNvMr-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcERNvMr-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcERNvMr-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcERNvMr-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcERNvMr-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcERNvMr-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcERNvMr-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcERNvMr-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+      </div> 
+    </div>  
+    <style __cid="czEbYBv" class="czEbYBv">.x-panel.pcbUraUv-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcbUraUv-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcbUraUv-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcbUraUv-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcbUraUv-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcbUraUv-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcbUraUv-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcbUraUv-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcbUraUv-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

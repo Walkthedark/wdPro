@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cUneYZv" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cUneYZv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/picker/picker,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/picker/popPicker,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.div_radius.cUneYZv{border-radius: 10px} .btn_radius.cUneYZv{border-radius: 15px} .div_radius1.cUneYZv{border-radius: 15px 15px 0px 0px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cUneYZv" class="cUneYZv"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc636bMz-iosstatusbar cUneYZv" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cUneYZv"> 
+    <div class="x-panel-top cUneYZv" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUneYZv">
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cUneYZv" xid="titleBar1" style="background-color:#56AEF7;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;发票类型选择&quot;}" __cid="cUneYZv"> 
+        <div class="x-titlebar-left cUneYZv" xid="left1" __cid="cUneYZv">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cUneYZv" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-arrow-down-b&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cUneYZv"> 
+            <i xid="i10" class="icon-arrow-down-b cUneYZv" __cid="cUneYZv"/>  
+            <span xid="span9" __cid="cUneYZv" class="cUneYZv"/>
+          </a>
+        </div>  
+        <div class="x-titlebar-title cUneYZv" xid="title1" __cid="cUneYZv">发票类型选择</div>  
+        <div class="x-titlebar-right  cUneYZv" xid="right1" __cid="cUneYZv">
+          <div class="empty cUneYZv" __cid="cUneYZv"/>
+        </div>
+      </div>
+    </div>
+    <div class="x-panel-content cUneYZv" xid="content1" style="background-color:#F4F3F4;border-style:none none none none;height:100%;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUneYZv">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cUneYZv" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUneYZv"> 
+        <div class="x-col cUneYZv" xid="col3" __cid="cUneYZv">
+          <div xid="div1" class="list-group-item div_radius cUneYZv" __cid="cUneYZv">
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cUneYZv" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cUneYZv"> 
+              <label class="x-label cUneYZv" xid="label1" __cid="cUneYZv">发票类型</label>  
+              <div class="x-edit cUneYZv" xid="div2" style="text-align:right;" __cid="cUneYZv">
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-icon-right cUneYZv" xid="button1" style="color:#212121;" bind-click="button1Click" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-chevronright&quot;,&quot;label&quot;:&quot;不开发票&quot;}" __cid="cUneYZv"> 
+                  <i xid="i1" class="linear linear-chevronright cUneYZv" __cid="cUneYZv"/>  
+                  <span xid="span1" __cid="cUneYZv" class="cUneYZv">不开发票</span>
+                </a>
+              </div>
+            </div>  
+            <div xid="div20" __cid="cUneYZv" class="cUneYZv">
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cUneYZv" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cUneYZv"> 
+                <label class="x-label cUneYZv" xid="label2" __cid="cUneYZv">发票方式</label>  
+                <div class="x-edit cUneYZv" xid="div3" style="text-align:right;" __cid="cUneYZv"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-icon-right btn-only-label cUneYZv" xid="button2" style="color:#212121;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-chevronright&quot;,&quot;label&quot;:&quot;纸质&quot;}" __cid="cUneYZv"> 
+                    <i xid="i2" class="linear linear-chevronright cUneYZv" __cid="cUneYZv"/>  
+                    <span xid="span2" __cid="cUneYZv" class="cUneYZv">纸质</span>
+                  </a> 
+                </div> 
+              </div>
+              <div xid="div22" style="display:none" __cid="cUneYZv" class="cUneYZv">
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cUneYZv" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cUneYZv"> 
+                  <label class="x-label cUneYZv" xid="label4" __cid="cUneYZv">发票抬头</label>  
+                  <div class="x-edit cUneYZv" xid="div6" style="text-align:right;" __cid="cUneYZv"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-label cUneYZv" xid="button4" style="color:#212121;" bind-text=" $model.blankData.val(&quot;invoice&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-chevronright&quot;}" __cid="cUneYZv"> 
+                      <i xid="i4" class="linear linear-chevronright cUneYZv" __cid="cUneYZv"/>  
+                      <span xid="span4" __cid="cUneYZv" class="cUneYZv"/>
+                    </a> 
+                  </div> 
+                </div>
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cUneYZv" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cUneYZv"> 
+                  <label class="x-label cUneYZv" xid="label5" __cid="cUneYZv">税号</label>  
+                  <div class="x-edit cUneYZv" xid="div7" style="text-align:right;" __cid="cUneYZv"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-label cUneYZv" style="color:#212121;" bind-text=" $model.blankData.val(&quot;tax_num&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-chevronright&quot;}" __cid="cUneYZv"> 
+                      <i xid="i5" class="linear linear-chevronright cUneYZv" __cid="cUneYZv"/>  
+                      <span xid="span5" __cid="cUneYZv" class="cUneYZv"/>
+                    </a> 
+                  </div> 
+                </div>
+              </div>
+              <div xid="div21" style="display:none" __cid="cUneYZv" class="cUneYZv">
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cUneYZv" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cUneYZv"> 
+                  <label class="x-label cUneYZv" xid="label6" __cid="cUneYZv">开户银行</label>  
+                  <div class="x-edit cUneYZv" xid="div8" style="text-align:right;" __cid="cUneYZv"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-label cUneYZv" xid="button6" style="color:#212121;" bind-text=" $model.blankData.val(&quot;bank_name&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-chevronright&quot;}" __cid="cUneYZv"> 
+                      <i xid="i6" class="linear linear-chevronright cUneYZv" __cid="cUneYZv"/>  
+                      <span xid="span6" __cid="cUneYZv" class="cUneYZv"/>
+                    </a> 
+                  </div> 
+                </div>
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cUneYZv" xid="labelEdit7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cUneYZv"> 
+                  <label class="x-label cUneYZv" xid="label7" __cid="cUneYZv">银行帐号</label>  
+                  <div class="x-edit cUneYZv" xid="div9" style="text-align:right;" __cid="cUneYZv"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-label cUneYZv" xid="button7" style="color:#212121;" bind-text=" $model.blankData.val(&quot;bank&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-chevronright&quot;}" __cid="cUneYZv"> 
+                      <i xid="i7" class="linear linear-chevronright cUneYZv" __cid="cUneYZv"/>  
+                      <span xid="span7" __cid="cUneYZv" class="cUneYZv"/>
+                    </a> 
+                  </div> 
+                </div>
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cUneYZv" xid="labelEdit8" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cUneYZv"> 
+                  <label class="x-label cUneYZv" xid="label8" __cid="cUneYZv">企业地址</label>  
+                  <div class="x-edit cUneYZv" xid="div10" style="text-align:right;" __cid="cUneYZv"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-label cUneYZv" xid="button8" style="color:#212121;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-chevronright&quot;}" __cid="cUneYZv"> 
+                      <i xid="i8" class="linear linear-chevronright cUneYZv" __cid="cUneYZv"/>  
+                      <span xid="span8" __cid="cUneYZv" class="cUneYZv"/>
+                    </a> 
+                  </div> 
+                </div>
+              </div> 
+            </div>
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cUneYZv" xid="row2" style="height:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUneYZv"> 
+            <div class="x-col cUneYZv" xid="col4" __cid="cUneYZv"/>  
+            <div class="x-col cUneYZv" xid="col5" __cid="cUneYZv"/>  
+            <div class="x-col cUneYZv" xid="col6" __cid="cUneYZv"/>
+          </div>
+          <div xid="div19" class="list-group-item div_radius cUneYZv" __cid="cUneYZv"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cUneYZv" xid="labelEdit12" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cUneYZv"> 
+              <label class="x-label cUneYZv" xid="label14" __cid="cUneYZv">发票内容</label>  
+              <div class="x-edit cUneYZv" xid="div18" style="text-align:right;" __cid="cUneYZv"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-icon-right btn-only-label cUneYZv" xid="button16" style="color:#212121;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-chevronright&quot;,&quot;label&quot;:&quot;明细&quot;}" __cid="cUneYZv"> 
+                  <i xid="i9" class="linear linear-chevronright cUneYZv" __cid="cUneYZv"/>  
+                  <span xid="span16" __cid="cUneYZv" class="cUneYZv">明细</span>
+                </a> 
+              </div> 
+            </div> 
+          </div> 
+        </div>
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cUneYZv" xid="bottom1" style="text-align:center;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUneYZv">
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn_radius cUneYZv" xid="button3" style="width:80%;margin-top:5px;background-color:#56AEF7;" bind-click="button3Click" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cUneYZv"> 
+        <i xid="i3" __cid="cUneYZv" class="cUneYZv"/>  
+        <span xid="span3" __cid="cUneYZv" class="cUneYZv">确定</span>
+      </a>
+    </div>
+    <style __cid="cUneYZv" class="cUneYZv">.x-panel.pc636bMz-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc636bMz-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc636bMz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc636bMz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc636bMz-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc636bMz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc636bMz-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc636bMz-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc636bMz-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <div component="$model/UI2/system/components/justep/picker/popPicker" class="x-popPicker cUneYZv" xid="popPicker1" data-bind="component:{name:'$model/UI2/system/components/justep/picker/popPicker'}" __cid="cUneYZv"> 
+    <div class="x-popPicker-overlay cUneYZv" xid="div27" __cid="cUneYZv"/>  
+    <div class="x-popPicker-content cUneYZv" xid="div28" __cid="cUneYZv"> 
+      <div class="x-poppicker-header cUneYZv" xid="div29" __cid="cUneYZv"> 
+        <button class="btn btn-default x-btn-ok cUneYZv" xid="button18" bind-click="button18Click" __cid="cUneYZv">确定</button>
+      </div>  
+      <div component="$model/UI2/system/components/justep/picker/picker" class="x-picker cUneYZv" xid="picker1" data-bind="component:{name:'$model/UI2/system/components/justep/picker/picker'}" data-config="{&quot;data&quot;:&quot;invoiceData&quot;}" __cid="cUneYZv"> 
+        <div class="x-picker-inner cUneYZv" xid="div30" __cid="cUneYZv"> 
+          <div class="x-pciker-rule x-pciker-rule-ft cUneYZv" xid="div31" __cid="cUneYZv"/>  
+          <ul class="x-list-template x-pciker-list hide cUneYZv" xid="listTemplateUl2" bind-foreach="{data:$model.foreach_picker1($element),afterRender:$model.foreach_afterRender_picker1.bind($model,$element)}" __cid="cUneYZv"> 
+            <li xid="li2" bind-text="val(&quot;name&quot;)" __cid="cUneYZv" class="cUneYZv"/>
+          </ul>  
+          <div class="x-pciker-rule x-pciker-rule-bg cUneYZv" xid="div32" __cid="cUneYZv"/>
+        </div> 
+      </div> 
+    </div> 
+  </div>
+</div>

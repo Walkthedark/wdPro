@@ -1,0 +1,634 @@
+<!DOCTYPE HTML>
+<html style="width:100%;height:100%" class="no-js">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+        <script src="../../../../v_c9e6ee8267fa4460803d617c27d2a099l_zh_CNs_d_m/system/lib/base/modernizr-2.8.3.min.js"></script>
+		<script id="__varReplace">
+    	
+    	    	window.__justep = window.__justep || {};
+				window.__justep.isDebug = true;
+				window.__justep.__packageMode = "1";
+				window.__justep.__isPackage = false;;
+				window.__justep.url = location.href;
+				window.__justep.versionInfo = {};
+		 
+    	</script>
+        <script id="__updateVersion">
+        
+				(function(url, mode){
+					if (("@"+"mode@") === mode) mode = "3";
+					if (("@"+"versionUrl@") === url) url = "system/service/common/app.j";
+					if ((mode!=="1" && (mode!="2") && (mode!="3"))) return;
+					var async = (mode=="1");
+					var x5Version = "noApp";
+					var x5AppAgents = /x5app\/([0-9.]*)/.exec(navigator.userAgent);
+					if(x5AppAgents && x5AppAgents.length > 1){
+					   	x5Version = x5AppAgents[1] || "";
+					} 
+					function createXhr(){
+						try {	
+							return new XMLHttpRequest();
+						}catch (tryMS) {	
+							var version = ["MSXML2.XMLHttp.6.0",
+							               "MSXML2.XMLHttp.3.0",
+							               "MSXML2.XMLHttp",
+							               "Miscrosoft.XMLHTTP"];
+							for(var i = 0; i < version.length; i++){
+								try{
+							    	return new ActiveXObject(version[i]);
+								}catch(e){}
+							}
+						}
+						throw new Error("您的系统或浏览器不支持XHR对象！");
+					}
+					
+					function createGuid(){	
+						var guid = '';	
+						for (var i = 1; i <= 32; i++){		
+							var n = Math.floor(Math.random()*16.0).toString(16);		
+							guid += n;		
+							if((i==8)||(i==12)||(i==16)||(i==20))			
+								guid += '-';	
+						}	
+						return guid;
+					}
+					
+					function parseUrl(href){
+						href = href.split("#")[0];
+						var items = href.split("?");
+						href = items[0];
+						var query = items[1] || "";
+						items = href.split("/");
+						var baseItems = [];
+						var pathItems = [];
+						var isPath = false;
+						for (var i=0; i<items.length; i++){
+							if (mode == "3"){
+								if (items[i] && (items[i].indexOf("v_") === 0) 
+										&& (items[i].indexOf("l_") !== -1)
+										&& (items[i].indexOf("s_") !== -1)
+										&& (items[i].indexOf("d_") !== -1)
+										|| (items[i]=="v_")){
+									isPath = true;
+									continue;
+								}
+							}else{
+								if (items[i] && (items[i].indexOf("v-")===0) && (items[i].charAt(items[i].length-1)=="-") ){
+									isPath = true;
+									continue;
+								}
+							}
+							if (isPath){
+								pathItems.push(items[i]);
+							}else{
+								baseItems.push(items[i]);	
+							}
+							
+						}
+						var base = baseItems.join("/");
+						if (base.charAt(base.length-1)!=="/") base += "/";
+						
+						var path = pathItems.join("/");
+						if (path.charAt(0) !== "/") path = "/" + path;
+						return [base, path, query];
+					}
+					
+					
+					var items = parseUrl(window.location.href);
+					var base = items[0];
+					var path = items[1];
+					var query = items[2];
+					var xhr = createXhr();
+					url += ((url.indexOf("?")!=-1) ? "&" : "?") +"_=" + createGuid();
+					if (mode === "3"){
+						url += "&url=" + path;
+						if (query)
+							url += "&" + query;
+					}
+					xhr.open('GET', base + url, async);
+					
+					if (async){
+						xhr.onreadystatechange=function(){
+							if((xhr.readyState == 4) && (xhr.status == 200) && xhr.responseText){
+								var versionInfo = JSON.parse(xhr.responseText);
+								window.__justep.versionInfo = versionInfo;
+								window.__justep.versionInfo.baseUrl = base;
+								if (query){
+									path = path + "?" + query;
+								}
+								path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+								var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+								versionInfo.resourceInfo.indexPageURL = indexUrl;
+								if(versionInfo.resourceInfo.resourceUpdateMode != "md5"){
+									if (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1){
+										versionInfo.resourceInfo.isNewVersion = true;
+									};
+								}
+							}
+						}
+					}
+					
+					try{
+						xhr.send(null);
+						if (!async && (xhr.status == 200) && xhr.responseText){
+							var versionInfo = JSON.parse(xhr.responseText);
+							window.__justep.versionInfo = versionInfo;
+							window.__justep.versionInfo.baseUrl = base;
+							if ((mode==="3") && window.__justep.isDebug){
+								/* 模式3且是调试模式不重定向 */
+							}else{
+								if (query){
+									path = path + "?" + query;
+								}
+								if(versionInfo.resourceInfo.resourceUpdateMode == "md5"){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									versionInfo.resourceInfo.indexPageURL = indexUrl; 
+								}else if (versionInfo.resourceInfo && versionInfo.resourceInfo.version && (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1)){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									window.location.href = indexUrl;
+								}
+							}
+						}
+					}catch(e2){}
+				}("@versionUrl@", "@mode@"));
+                 
+        </script>
+    <link rel="stylesheet" href="../../../../v_b81f622b2946418693e8fc610ec8579cl_zh_CNs_d_m/system/components/bootstrap.min.css" include="$model/UI2/system/components/bootstrap/lib/css/bootstrap,$model/UI2/system/components/bootstrap/lib/css/bootstrap-theme"><link rel="stylesheet" href="../../../../v_a0dfb2aae5ae4b589dcf6b930b91267cl_zh_CNs_d_m/system/components/comp.min.css" include="$model/UI2/system/components/justep/lib/css2/dataControl,$model/UI2/system/components/justep/input/css/datePickerPC,$model/UI2/system/components/justep/messageDialog/css/messageDialog,$model/UI2/system/components/justep/lib/css3/round,$model/UI2/system/components/justep/input/css/datePicker,$model/UI2/system/components/justep/row/css/row,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/attachment/css/attachment,$model/UI2/system/components/justep/barcode/css/barcodeImage,$model/UI2/system/components/bootstrap/dropdown/css/dropdown,$model/UI2/system/components/justep/contents/css/contents,$model/UI2/system/components/justep/common/css/forms,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/locker/css/locker,$model/UI2/system/components/justep/menu/css/menu,$model/UI2/system/components/justep/scrollView/css/scrollView,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/dialog/css/dialog,$model/UI2/system/components/justep/bar/css/bar,$model/UI2/system/components/justep/popMenu/css/popMenu,$model/UI2/system/components/justep/lib/css/icons,$model/UI2/system/components/justep/lib/css4/e-commerce,$model/UI2/system/components/justep/toolBar/css/toolBar,$model/UI2/system/components/justep/popOver/css/popOver,$model/UI2/system/components/justep/panel/css/panel,$model/UI2/system/components/bootstrap/carousel/css/carousel,$model/UI2/system/components/justep/wing/css/wing,$model/UI2/system/components/bootstrap/scrollSpy/css/scrollSpy,$model/UI2/system/components/justep/titleBar/css/titleBar,$model/UI2/system/components/justep/lib/css1/linear,$model/UI2/system/components/justep/numberSelect/css/numberList,$model/UI2/system/components/justep/list/css/list,$model/UI2/system/components/justep/dataTables/css/dataTables"></head>
+	
+    <body style="width:100%;height:100%;margin: 0;">
+        <script intro="none"></script>
+    	<div id="applicationHost" class="applicationHost" style="width:100%;height:100%;" __component-context__="block"><div xid="window" class="window cBRRzuy" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cBRRzuy" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/grid/grid,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <style>.x-state-default.cBRRzuy, .x-grid-widget-content.cBRRzuy .x-state-default.cBRRzuy, .x-grid-widget-header.cBRRzuy .x-state-default.cBRRzuy{border: 1px solid rgb(221, 221, 221); background-image: linear-gradient(to bottom, rgb(143, 196, 28) 0%, rgb(143, 196, 28) 100%); background-repeat: repeat-x; color: rgb(255, 255, 255)} th.cBRRzuy{text-align: center} .x-grid.cBRRzuy tr.x-row-ltr.cBRRzuy td.cBRRzuy{text-align: left; border-right-width: 1px; border: 1px solid rgb(221, 221, 221)}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cBRRzuy" class="cBRRzuy"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcziU3Yr-iosstatusbar cBRRzuy" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBRRzuy"> 
+    <div class="x-panel-top cBRRzuy" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBRRzuy"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cBRRzuy" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;万用申请详情&#34;}" __cid="cBRRzuy"> 
+        <div class="x-titlebar-left cBRRzuy" xid="left2" __cid="cBRRzuy"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cBRRzuy" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;window.close&#34;}" data-config="{&#34;label&#34;:&#34;返回&#34;}" __cid="cBRRzuy"> 
+            <i xid="i1" __cid="cBRRzuy" class="cBRRzuy"></i>  
+            <span xid="span4" __cid="cBRRzuy" class="cBRRzuy">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cBRRzuy" xid="title2" __cid="cBRRzuy">万用申请详情</div>  
+        <div class="x-titlebar-right  cBRRzuy" xid="right2" __cid="cBRRzuy">
+          <div class="empty cBRRzuy" __cid="cBRRzuy"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cBRRzuy" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBRRzuy"> 
+      <div component="$model/UI2/system/components/bootstrap/row/row" class="row row-padding border-Two cBRRzuy" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cBRRzuy"> 
+        <div class="col col-xs-12 col-padding cBRRzuy" xid="col1" __cid="cBRRzuy"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cBRRzuy" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBRRzuy"> 
+            <div class="x-col x-col-25 cBRRzuy" xid="col7" style="margin:auto;text-align:center;" __cid="cBRRzuy"> 
+              <img src="../../../../v_581a1b898cd648388e3b1f96ad766e86l_zh_CNs_d_m/TheSaleEnterprise/Commonly/img/006.png" alt="" xid="image1" class="wh cBRRzuy" __cid="cBRRzuy"> 
+            </div>  
+            <div class="x-col cBRRzuy" xid="col8" __cid="cBRRzuy"> 
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row cBRRzuy" xid="row3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cBRRzuy"> 
+                <div class="col col-xs-12 cBRRzuy" xid="col10" __cid="cBRRzuy"> 
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output font-One cBRRzuy" xid="output1" data-bind="component:{ref:$model.CData.val(&#34;cuser&#34;) + &#34;的万用申请&#34;,name:'$model/UI2/system/components/justep/output/output'}" __cid="cBRRzuy"></div> 
+                </div>  
+                <div class="col col-xs-12 cBRRzuy" xid="col11" __cid="cBRRzuy"> 
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output font-Three cBRRzuy" xid="output5" data-bind="component:{ref:$model.CData.val(&#34;cuser&#34;) + &#34;(&#34;+$model.CData.val(&#34;cuser_bm&#34;)+&#34;)&#34;,name:'$model/UI2/system/components/justep/output/output'}" __cid="cBRRzuy"></div> 
+                </div>  
+                <div class="col col-xs-12 cBRRzuy" xid="col12" __cid="cBRRzuy"> 
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output font-Three cBRRzuy" xid="output7" data-bind="component:{ref:$model.CData.val(&#34;ctime&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cBRRzuy"></div> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="col col-xs-12 col-padding cBRRzuy" xid="col2" __cid="cBRRzuy"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cBRRzuy" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBRRzuy"> 
+            <label class="x-label cBRRzuy" xid="label2" style="width: 80px;" __cid="cBRRzuy">编号：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cBRRzuy" xid="output8" data-bind="component:{ref:$model.CData.ref(&#34;no&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cBRRzuy"></div> 
+          </div> 
+        </div>  
+        <div class="col col-xs-12 col-padding cBRRzuy" xid="col3" __cid="cBRRzuy"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cBRRzuy" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBRRzuy"> 
+            <label class="x-label cBRRzuy" xid="label3" style="width: 80px;" __cid="cBRRzuy">申请类型：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cBRRzuy" xid="output9" data-bind="component:{ref:$model.CData.ref(&#34;typetitle&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cBRRzuy"></div> 
+          </div> 
+        </div>  
+        <div class="col col-xs-12 col-padding cBRRzuy" xid="col4" __cid="cBRRzuy"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cBRRzuy" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBRRzuy"> 
+            <label class="x-label cBRRzuy" xid="label4" style="width: 80px;" __cid="cBRRzuy">申请内容：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cBRRzuy" xid="output10" data-bind="component:{ref:$model.CData.ref(&#34;neirong&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cBRRzuy"></div> 
+          </div> 
+        </div>  
+        <div class="col col-xs-12 col-padding cBRRzuy" xid="col13" __cid="cBRRzuy"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cBRRzuy" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBRRzuy"> 
+            <label class="x-label cBRRzuy" xid="label5" style="width: 80px;" __cid="cBRRzuy">涉及费用：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cBRRzuy" xid="output11" data-bind="component:{ref:$model.CData.ref(&#34;iscost&#34;),name:'$model/UI2/system/components/justep/output/output'}" data-events="onRender:output11Render" __cid="cBRRzuy"></div> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="cosrDiv1" __cid="cBRRzuy" class="cBRRzuy"> 
+        <div component="$model/UI2/system/components/bootstrap/row/row" class="row cBRRzuy" xid="row5" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cBRRzuy"> 
+          <div class="col col-xs-12 col-padding cBRRzuy" xid="col16" __cid="cBRRzuy"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cBRRzuy" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBRRzuy"> 
+              <label class="x-label cBRRzuy" xid="label10" style="width: 80px;" __cid="cBRRzuy">部门：</label>  
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cBRRzuy" xid="output2" data-bind="component:{ref:$model.CData.ref(&#34;bm_title&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cBRRzuy"></div> 
+            </div> 
+          </div>  
+          <div class="col col-xs-12 col-padding cBRRzuy" xid="col17" __cid="cBRRzuy"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cBRRzuy" xid="labelEdit7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBRRzuy"> 
+              <label class="x-label cBRRzuy" xid="label11" style="width: 80px;" __cid="cBRRzuy">考核期：</label>  
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cBRRzuy" xid="output3" data-bind="component:{ref:$model.CData.ref(&#34;kaohe_title&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cBRRzuy"></div> 
+            </div> 
+          </div>  
+          <div class="col col-xs-12 col-padding cBRRzuy" xid="col18" __cid="cBRRzuy"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cBRRzuy" xid="labelEdit10" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBRRzuy"> 
+              <label class="x-label cBRRzuy" xid="label12" style="width: 80px;" __cid="cBRRzuy">支付方式：</label>  
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cBRRzuy" xid="output4" data-bind="component:{ref:$model.CData.ref(&#34;zhifu_title&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cBRRzuy"></div> 
+            </div> 
+          </div>  
+          <div class="col col-xs-12 col-padding cBRRzuy" xid="col19" __cid="cBRRzuy"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cBRRzuy" xid="labelEdit11" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBRRzuy"> 
+              <label class="x-label cBRRzuy" xid="label13" style="width: 80px;" __cid="cBRRzuy">收款人：</label>  
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cBRRzuy" xid="output12" data-bind="component:{ref:$model.CData.ref(&#34;shoukuan_title&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cBRRzuy"></div> 
+            </div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cBRRzuy" xid="row8" style="margin:0px;padding:0px;background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBRRzuy"> 
+          <div class="x-col cBRRzuy" xid="col15" style="margin:0px;padding:0px;" __cid="cBRRzuy"> 
+            <table component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="true" class="x-grid-no-bordered x-grid-title-center clearfix cBRRzuy" xid="grid1" data="feeList" showRowNumber="false" headerMenu="hideColumn,setColumn,groupColumn,saveLayout" directEdit="false" data-config="{&#34;altRows&#34;:true,&#34;colModel&#34;:[{&#34;align&#34;:&#34;center&#34;,&#34;editable&#34;:false,&#34;label&#34;:&#34;费用科目&#34;,&#34;name&#34;:&#34;feetype_title&#34;,&#34;xid&#34;:&#34;column1&#34;},{&#34;align&#34;:&#34;center&#34;,&#34;editable&#34;:false,&#34;label&#34;:&#34;费用金额&#34;,&#34;name&#34;:&#34;fee&#34;,&#34;xid&#34;:&#34;column2&#34;},{&#34;align&#34;:&#34;center&#34;,&#34;editable&#34;:false,&#34;label&#34;:&#34;费用说明&#34;,&#34;name&#34;:&#34;remark&#34;,&#34;resizable&#34;:true,&#34;xid&#34;:&#34;column3&#34;}],&#34;data&#34;:&#34;feeList&#34;,&#34;directEdit&#34;:false,&#34;headerMenu&#34;:&#34;hideColumn,setColumn,groupColumn,saveLayout&#34;,&#34;height&#34;:&#34;auto&#34;,&#34;hiddenCaptionbar&#34;:true,&#34;rownumbers&#34;:false,&#34;width&#34;:&#34;100%&#34;}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" __cid="cBRRzuy"></table> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cBRRzuy" xid="row26" style="text-align:center;border-bottom:3px solid #cccccc;margin-left:2%;width:96%;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBRRzuy"> 
+        <div class="x-col cBRRzuy" xid="col62" __cid="cBRRzuy"> 
+          <label xid="label1" __cid="cBRRzuy" class="cBRRzuy">审批意见</label> 
+        </div>  
+        <div class="x-col cBRRzuy" xid="col63" __cid="cBRRzuy"></div>  
+        <div class="x-col cBRRzuy" xid="col64" __cid="cBRRzuy"></div> 
+      </div>  
+      <div xid="div7" __cid="cBRRzuy" class="cBRRzuy"> 
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cBRRzuy" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;spData&#34;}" __cid="cBRRzuy"> 
+          <ul class="x-list-template hide cBRRzuy" xid="listTemplateUl1" __cid="cBRRzuy" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+            <li xid="li1" __cid="cBRRzuy" class="cBRRzuy"> 
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row row-padding cBRRzuy" xid="row4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cBRRzuy"> 
+                <div class="col col-xs-2 cBRRzuy" xid="col5" __cid="cBRRzuy"> 
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cBRRzuy" xid="output6" data-bind="component:{ref:ref(&#34;USERNAME&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cBRRzuy"></div> 
+                </div>  
+                <div class="col col-xs-1 cBRRzuy" xid="col68" __cid="cBRRzuy"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-only-icon cBRRzuy" xid="sp2" style="margin-left:-15px;margin-top:-6px;color:#81C160;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;e-commerce e-commerce-quancha&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cBRRzuy"> 
+                    <i xid="i2" class="e-commerce e-commerce-quangou e-commerce-quancha cBRRzuy" __cid="cBRRzuy" data-bind="style:{color: val(&#34;type&#34;) == 1 ? '#FF8000' : '#81C160'},css:{ 'e-commerce e-commerce-quancha':  val('type') == '1', 'e-commerce e-commerce-quangou':  val('type') != '1'}"></i>  
+                    <span xid="span40" __cid="cBRRzuy" class="cBRRzuy"></span> 
+                  </a> 
+                </div>  
+                <div class="col col-xs-8 cBRRzuy" xid="col6" __cid="cBRRzuy"> 
+                  <div component="$model/UI2/system/components/bootstrap/row/row" class="row cBRRzuy" xid="row27" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cBRRzuy"> 
+                    <div class="col col-xs-12 cBRRzuy" xid="col65" __cid="cBRRzuy"> 
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output cBRRzuy" xid="output21" style="float:left;" data-bind="component:{ref:ref(&#34;MEMO&#34;),name:'$model/UI2/system/components/justep/output/output'}" data-events="onRender:output21Render" __cid="cBRRzuy"></div> 
+                    </div>  
+                    <div class="col col-xs-12 cBRRzuy" xid="col66" __cid="cBRRzuy"> 
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output cBRRzuy" xid="output22" data-bind="component:{ref:ref(&#34;ACTIONTIME&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cBRRzuy"></div> 
+                    </div>  
+                    <div class="col col-xs-12 cBRRzuy" xid="col67" __cid="cBRRzuy"> 
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output cBRRzuy" xid="output23" data-bind="component:{ref:ref(&#34;COMMENTS&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cBRRzuy"></div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </div> 
+            </li> 
+          </ul> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cBRRzuy" class="cBRRzuy">.x-panel.pcziU3Yr-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcziU3Yr-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcziU3Yr-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcziU3Yr-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcziU3Yr-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcziU3Yr-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcziU3Yr-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcziU3Yr-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcziU3Yr-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="wReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:wReceiverReceive" __cid="cBRRzuy" class="cBRRzuy"></span> 
+</div></div>
+        
+        <div id="downloadGCF" style="display:none;padding:50px;">
+        	<span>您使用的浏览器需要下载插件才能使用, </span>
+        	<a id="downloadGCFLink" href="#">下载地址</a>
+        	<p>(安装后请重新打开浏览器)</p>
+        </div>
+    	<script>
+    	
+    	            //判断浏览器, 判断GCF
+    	 			var browser = {
+    			        isIe: function () {
+    			            return navigator.appVersion.indexOf("MSIE") != -1;
+    			        },
+    			        navigator: navigator.appVersion,
+    			        getVersion: function() {
+    			            var version = 999; // we assume a sane browser
+    			            if (navigator.appVersion.indexOf("MSIE") != -1)
+    			                // bah, IE again, lets downgrade version number
+    			                version = parseFloat(navigator.appVersion.split("MSIE")[1]);
+    			            return version;
+    			        }
+    			    };
+    				function isGCFInstalled(){
+    			      try{
+    			        var i = new ActiveXObject('ChromeTab.ChromeFrame');
+    			        if (i) {
+    			          return true;
+    			        }
+    			      }catch(e){}
+    			      return false;
+    				}
+    	            //判断浏览器, 判断GCF
+    	            var __continueRun = true;
+    				if (browser.isIe() && (browser.getVersion() < 10) && !isGCFInstalled()) {
+    					document.getElementById("applicationHost").style.display = 'none';
+    					document.getElementById("downloadGCF").style.display = 'block';
+    					var downloadLink = "/" + location.pathname.match(/[^\/]+/)[0] + "/v8.msi";
+    					document.getElementById("downloadGCFLink").href = downloadLink; 
+    					__continueRun = false;
+    	            }
+		 	
+    	</script>
+        <script id="_metaJS" src="../../../../v_6276f3bbc1094af7a30c6aa586c8c8abl_zh_CNs_d_m/system/config/meta.js"> </script>
+        <script id="_requireJS" src="../../../../v_e8a942f7e3b44cc69d0b0e790e64333fl_zh_CNs_d_m/system/lib/require/require.2.1.10.js"> </script>
+        <script src="../../../../v_c60d7317ee164094a237cd9ecbc5573al_zh_CNs_d_m/system/core.min.js"></script><script src="../../../../v_9c54261081c54386b3e3de6c6c86ccdbl_zh_CNs_d_m/system/common.min.js"></script><script src="../../../../v_29ab98d1bd904830b908f17e7be25084l_zh_CNs_d_m/system/components/comp.min.js"></script><script src="../../../../v_1211956299074bf7b9c5d4c47c178b5el_zh_CNs_d_m/system/components/comp2.min.js"></script><script src="../../../../v_f09f346a482446a3912938d48746a72fl_zh_CNs_d_m/system/components/pc.addon.min.js"></script><script id="_mainScript">
+        
+			if (__continueRun) {
+                window.__justep.cssReady = function(fn){
+                	var promises = [];
+                	for (var p in window.__justep.__ResourceEngine.__loadingCss){
+                		if(window.__justep.__ResourceEngine.__loadingCss.hasOwnProperty(p))
+                			promises.push(window.__justep.__ResourceEngine.__loadingCss[p].promise());
+                	}
+                	$.when.apply($, promises).done(fn);
+                };
+                
+            	window.__justep.__ResourceEngine = {
+            		readyRegExp : navigator.platform === 'PLAYSTATION 3' ? /^complete$/ : /^(complete|loaded)$/,
+            		url: window.location.href,	
+            		/*contextPath: 不包括语言 */
+            		contextPath: "",
+            		serverPath: "",
+            		__loadedJS: [],
+            		__loadingCss: {},
+            		onLoadCss: function(url, node){
+            			if (!this.__loadingCss[url]){
+            				this.__loadingCss[url] = $.Deferred();	
+                			if (node.attachEvent &&
+                                    !(node.attachEvent.toString && node.attachEvent.toString().indexOf('[native code') < 0) &&
+                                    !(typeof opera !== 'undefined' && opera.toString() === '[object Opera]')) {
+                                node.attachEvent('onreadystatechange', this.onLinkLoad.bind(this));
+                            } else {
+                                node.addEventListener('load', this.onLinkLoad.bind(this), false);
+                                node.addEventListener('error', this.onLinkError.bind(this), false);
+                            }
+            			}
+            		},
+            		
+            		onLinkLoad: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+            	        if (evt.type === 'load' ||
+                                (this.readyRegExp.test(target.readyState))) {
+            	        	var url = target.getAttribute("href");
+            	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+            	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+            	        	}
+                        }
+            		},
+            		
+            		onLinkError: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+        	        	var url = target.getAttribute("href");
+        	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+        	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+        	        	}
+            		},
+            		
+            		initContextPath: function(){
+            			var baseURL = document.getElementById("_requireJS").src;
+            			var before = location.protocol + "//" + location.host;
+            			var after = "/system/lib/require/require.2.1.10";
+            			var i = baseURL.indexOf(after);
+            			if (i !== -1){
+    	        			var middle = baseURL.substring(before.length, i);
+    						var items = middle.split("/");
+    						
+    						
+    						if ((items[items.length-1].indexOf("v_") === 0) 
+    								&& (items[items.length-1].indexOf("l_") !== -1)
+    								&& (items[items.length-1].indexOf("s_") !== -1)
+    								&& (items[items.length-1].indexOf("d_") !== -1)
+    								|| (items[items.length-1]=="v_")){
+    							items.splice(items.length-1, 1);
+    						}
+    						
+    						
+    						if (items.length !== 1){
+    							window.__justep.__ResourceEngine.contextPath = items.join("/");
+    						}else{
+    							window.__justep.__ResourceEngine.contextPath = before;
+    						}
+    						var index = window.__justep.__ResourceEngine.contextPath.lastIndexOf("/");
+    						if (index != -1){
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath.substr(0, index);
+    						}else{
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath;
+    						}
+            			}else{
+            				throw new Error(baseURL + " hasn't  " + after);
+            			}
+            		},
+            	
+            		loadJs: function(urls){
+            			if (urls && urls.length>0){
+            				var loadeds = this._getResources("script", "src").concat(this.__loadedJS);
+    	       				for (var i=0; i<urls.length; i++){
+								var url = urls[i];
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					this.__loadedJS[this.__loadedJS.length] = url;
+    	        					/*
+    	        					var script = document.createElement("script");
+    	        					script.src = url;
+    	        					document.head.appendChild(script);
+    	        					*/
+    	        					//$("head").append("<script  src='" + url + "'/>");
+									var url = require.toUrl("$UI" + url);
+    	        					$.ajax({
+    	        						url: url,
+    	        						dataType: "script",
+    	        						cache: true,
+    	        						async: false,
+    	        						success: function(){}
+    	        						});
+    	        				} 
+    	       				}
+            			}
+            		},
+            		
+            		loadCss: function(styles){
+           				var loadeds = this._getResources("link", "href");
+            			if (styles && styles.length>0){
+            				for (var i=0; i<styles.length; i++){
+    	       					var url = window.__justep.__ResourceEngine.contextPath + styles[i].url.replace("/UI2/", "/");
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					var include = styles[i].include || "";
+    	        					var link = $("<link type='text/css' rel='stylesheet' href='" + url + "' include='" + include + "'/>");
+    	        					this.onLoadCss(url, link[0]);
+    	        					$("head").append(link);
+    	        				} 
+            				}
+            			}
+            			
+            		},
+            		
+            		
+            		_isLoaded: function(url, loadeds){
+            			if (url){
+            				var newUrl = "";
+            				var items = url.split("/");
+            				var isVls = false;
+            				for (var i=0; i<items.length; i++){
+            					if (isVls){
+                					newUrl += "/" + items[i];
+            					}else{
+                					if (items[i] && (items[i].indexOf("v_")===0)
+            								&& (items[i].indexOf("l_")!==-1)
+            								&& (items[i].indexOf("s_")!==-1)
+            								&& (items[i].indexOf("d_")!==-1)
+            								|| (items[i]=="v_")){
+                						isVls = true;
+                					}
+            					}
+            				}
+            				if (!newUrl)
+            					newUrl = url;
+            				
+            				for (var i=0; i<loadeds.length; i++){
+								var originUrl = this._getOriginUrl(loadeds[i]);
+								if (originUrl && (originUrl.indexOf(newUrl)!==-1)){
+									return true;
+								}
+    						}
+            			}
+    					return false;
+            		},
+
+					_getOriginUrl: function(url){
+						var result = "";
+						if (url && (url.indexOf(".md5_")!==-1)){
+							url = url.split("#")[0];
+							url = url.split("?")[0];
+							var items = url.split(".");
+							for (var i=0; i<items.length; i++){
+								if ((i===items.length-2) && (items[i].indexOf("md5_")!==-1)){
+									continue;
+								}else{
+									if (i>0) result += ".";
+									result += items[i];
+								}
+							}
+						}else{
+							result = url;
+						}
+						return result;
+					},
+            		
+            		_getResources: function(tag, attr){
+    					var result = [];
+    					var scripts = $(tag);
+    					for (var i=0; i<scripts.length; i++){
+    						var v = scripts[i][attr];
+    						if (v){
+    							result[result.length] = v;
+    						}
+    					}
+    					return result;
+            		}
+            	};
+            	
+            	window.__justep.__ResourceEngine.initContextPath();
+    			requirejs.config({
+    				baseUrl: window.__justep.__ResourceEngine.contextPath + '/v_69fbfee8e0224dbfa37bbed23e9582f0l_zh_CNs_d_m/TheSaleEnterprise/Commonly/dialog',
+    			    paths: {
+    			    	/* 解决require.normalizeName与require.toUrl嵌套后不一致的bug   */
+    			    	'$model/UI2/v_': window.__justep.__ResourceEngine.contextPath + '/v_69fbfee8e0224dbfa37bbed23e9582f0l_zh_CNs_d_m',
+    			    	'$model/UI2': window.__justep.__ResourceEngine.contextPath + '/v_69fbfee8e0224dbfa37bbed23e9582f0l_zh_CNs_d_m',
+    			    	'$model': window.__justep.__ResourceEngine.serverPath,
+    			        'text': window.__justep.__ResourceEngine.contextPath + '/v_69fbfee8e0224dbfa37bbed23e9582f0l_zh_CNs_d_m/system/lib/require/text.2.0.10',
+    			        'bind': window.__justep.__ResourceEngine.contextPath + '/v_69fbfee8e0224dbfa37bbed23e9582f0l_zh_CNs_d_m/system/lib/bind/bind',
+    			        'jquery': window.__justep.__ResourceEngine.contextPath + '/v_69fbfee8e0224dbfa37bbed23e9582f0l_zh_CNs_d_m/system/lib/jquery/jquery-1.11.1.min'
+    			    },
+    			    map: {
+    				        '*': {
+    				            res: '$model/UI2/system/lib/require/res',
+    				            service: '$model/UI2/system/lib/require/service',
+    				            cordova: '$model/UI2/system/lib/require/cordova',
+    				            w: '$model/UI2/system/lib/require/w',
+    				            css: '$model/UI2/system/lib/require/css'
+    				        }
+    				},
+    				waitSeconds: 300
+    			});
+    			
+    			requirejs(['require', 'jquery', '$model/UI2/system/lib/base/composition', '$model/UI2/system/lib/base/url', '$model/UI2/system/lib/route/hashbangParser', '$model/UI2/system/components/justep/versionChecker/versionChecker', '$model/UI2/system/components/justep/loadingBar/loadingBar', '$model/UI2/system/lib/jquery/domEvent',  '$model/UI2/system/lib/cordova/cordova'],  function (require, $, composition, URL, HashbangParser,versionChecker) { 
+    				document.addEventListener('deviceready', function() {
+    	                if (navigator && navigator.splashscreen && navigator.splashscreen.hide) {
+    	                	/*延迟隐藏，视觉效果更理想*/
+    	                	setTimeout(function() {navigator.splashscreen.hide();}, 800);
+    	                }
+    	            }, false);
+					setTimeout(function(){
+						versionChecker.check();
+					},2000);
+    				var context = {};
+    				context.model = '$model/UI2/TheSaleEnterprise/Commonly/dialog/universalInfo.w' + (document.location.search || "");
+    				context.view = $('#applicationHost').children()[0];
+    				var element = document.getElementById('applicationHost');
+
+					    				
+    				
+    				var ownerid = new URL(window.__justep.__ResourceEngine.url).getParam("$ownerid");
+    				var pwindow = opener;
+    				if (!pwindow && window.parent && window.parent.window){
+    					pwindow = window.parent.window;
+    				}
+    				if(ownerid && pwindow 
+    						&& pwindow.__justep && pwindow.__justep.windowOpeners
+    						&& pwindow.__justep.windowOpeners[ownerid]
+    						&& $.isFunction(pwindow.__justep.windowOpeners[ownerid].sendToWindow)){
+    					window.__justep.setParams = function(params){
+    						/* 给windowOpener提供再次传参数的接口  */
+    						params = params || {};
+    						composition.setParams(document.getElementById('applicationHost'), params);
+    					};
+    					var winOpener = pwindow.__justep.windowOpeners[ownerid];
+    					if(winOpener) winOpener.window = window;
+    					$(window).unload(function(event){
+    						if(winOpener && winOpener.dispatchCloseEvent) winOpener.dispatchCloseEvent();
+    					});
+    					var params = winOpener.sendToWindow();
+						context.owner = winOpener;
+						context.params = params || {};
+	        			composition.compose(element, context);
+    				}else{
+        				var params =  {};
+    					var state = new HashbangParser(window.location.hash).parse().__state;
+    					if (state){
+    						params = state.get("");
+    						try{
+    							params = JSON.parse(params);
+    							if (params.hasOwnProperty("__singleValue__")){
+    								params = params.__singleValue__;
+    							}
+    						}catch(e1){}
+    					}
+    					context.noUpdateState = true;
+        				context.params = params;
+        				composition.compose(element, context);
+    				}
+    			});    
+            }
+		 	
+        </script>
+    </body>
+</html>

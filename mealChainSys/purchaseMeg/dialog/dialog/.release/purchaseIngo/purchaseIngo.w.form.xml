@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cUN7RNr" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cUN7RNr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-inputText.cUN7RNr{background-color: rgba(255, 255, 255, 0.8)} .form-control-feedback.cUN7RNr{height: 34px; line-height: 34px} .input_radius.cUN7RNr{border-radius: 15px} .tb-settlement.cUN7RNr{line-height: 40px; background-color: rgb(64, 116, 34); color: rgb(255, 255, 255); font-size: 16px} .tb-nopadding.cUN7RNr{padding: 0} .btn-radius.cUN7RNr{border-radius: 15px} .btn-radius1.cUN7RNr{border-radius: 30px} .btn-group.cUN7RNr .btn.active.cUN7RNr{color: rgb(64, 116, 34); border-bottom-color: rgb(64, 116, 34); border-bottom-style: groove; border-bottom-width: 2px} .btn-color.cUN7RNr{color: rgb(17, 17, 17)} .listxz.cUN7RNr{background-color: white; color: rgb(64, 116, 34); border-left-color: rgb(64, 116, 34); border-left-style: groove; border-left-width: 4px} .listxz2.cUN7RNr{background-color: white; color: rgb(64, 116, 34)} .listxz3.cUN7RNr{background-color: white} .div-color.cUN7RNr{background-color: transparent} .btn_radius.cUN7RNr{border-radius: 5px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cUN7RNr" class="cUN7RNr"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcAR3EBr-iosstatusbar cUN7RNr" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cUN7RNr"> 
+    <div class="x-panel-top cUN7RNr" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUN7RNr"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cUN7RNr" xid="titleBar2" style="background-color:#272F2C;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cUN7RNr"> 
+        <div class="x-titlebar-left cUN7RNr" xid="left2" __cid="cUN7RNr"/>  
+        <div class="x-titlebar-title cUN7RNr" xid="title2" __cid="cUN7RNr">申购详情</div>  
+        <div class="x-titlebar-right  cUN7RNr" xid="right2" __cid="cUN7RNr">
+          <div class="empty cUN7RNr" __cid="cUN7RNr"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cUN7RNr" xid="content4" style="background-color:#EEEEEE;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUN7RNr"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcVrUFJz-iosstatusbar cUN7RNr" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cUN7RNr"> 
+        <div class="x-panel-top cUN7RNr" xid="top3" style="background-color:white;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUN7RNr"> 
+          <div class="media cUN7RNr" xid="media3" style="padding:0px 0px 0px 0px;" __cid="cUN7RNr"> 
+            <div class="media-left cUN7RNr" xid="mediaLeft3" __cid="cUN7RNr"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cUN7RNr" xid="button13" style="color:#939393;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;e-commerce e-commerce-shizhong&quot;,&quot;label&quot;:&quot;09/13 09:44&quot;}" __cid="cUN7RNr"> 
+                <i xid="i12" class="e-commerce e-commerce-shizhong cUN7RNr" __cid="cUN7RNr"/>  
+                <span xid="span19" __cid="cUN7RNr" class="cUN7RNr">09/13 09:44</span>
+              </a> 
+            </div>  
+            <div class="media-body cUN7RNr" xid="mediaBody3" style="text-align:center;" __cid="cUN7RNr"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cUN7RNr" xid="button12" style="color:#407422;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;e-commerce e-commerce-shizhong&quot;,&quot;label&quot;:&quot;厨房&quot;}" __cid="cUN7RNr"> 
+                <i xid="i13" class="e-commerce e-commerce-shizhong cUN7RNr" __cid="cUN7RNr"/>  
+                <span xid="span18" __cid="cUN7RNr" class="cUN7RNr">厨房</span>
+              </a> 
+            </div>  
+            <div class="media-right cUN7RNr" xid="mediaRight1" __cid="cUN7RNr"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right cUN7RNr" xid="button12" style="color:#939393;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button12Click" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-arrowrightl&quot;,&quot;label&quot;:&quot;已下单&quot;}" __cid="cUN7RNr"> 
+                <i xid="i12" class="dataControl dataControl-arrowrightl cUN7RNr" __cid="cUN7RNr"/>  
+                <span xid="span15" __cid="cUN7RNr" class="cUN7RNr">已下单</span>
+              </a> 
+            </div> 
+          </div>  
+          <div class="media cUN7RNr" xid="media5" style="padding:0px 0px 0px 0px;" __cid="cUN7RNr"> 
+            <div class="media-left cUN7RNr" xid="mediaLeft5" __cid="cUN7RNr"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cUN7RNr" xid="button1" style="color:#939393;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;e-commerce e-commerce-shizhong&quot;,&quot;label&quot;:&quot;交货时间：09/13 13:00&quot;}" __cid="cUN7RNr"> 
+                <i xid="i2" class="e-commerce e-commerce-shizhong cUN7RNr" __cid="cUN7RNr"/>  
+                <span xid="span2" __cid="cUN7RNr" class="cUN7RNr">交货时间：09/13 13:00</span>
+              </a> 
+            </div>  
+            <div class="media-body cUN7RNr" xid="mediaBody5" style="text-align:right;" __cid="cUN7RNr"></div>  
+            <div class="media-right cUN7RNr" xid="mediaRight2" __cid="cUN7RNr"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cUN7RNr" xid="button2" style="color:#939393;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;e-commerce e-commerce-shizhong&quot;,&quot;label&quot;:&quot;收购人：张三&quot;}" __cid="cUN7RNr"> 
+                <i xid="i2" class="e-commerce e-commerce-shizhong cUN7RNr" __cid="cUN7RNr"/>  
+                <span xid="span7" __cid="cUN7RNr" class="cUN7RNr">收购人：张三</span>
+              </a> 
+            </div> 
+          </div>
+          <div class="media cUN7RNr" xid="media4" style="background-color:#EEEEEE;" __cid="cUN7RNr"> 
+            <div class="media-left cUN7RNr" xid="mediaLeft4" __cid="cUN7RNr"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cUN7RNr" xid="button14" style="color:#939393;font-size:14px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;e-commerce e-commerce-shizhong&quot;,&quot;label&quot;:&quot;申购列表（3）&quot;}" __cid="cUN7RNr"> 
+                <i xid="i15" class="e-commerce e-commerce-shizhong cUN7RNr" __cid="cUN7RNr"/>  
+                <span xid="span21" __cid="cUN7RNr" class="cUN7RNr">申购列表（3）</span>
+              </a> 
+            </div>  
+            <div class="media-body cUN7RNr" xid="mediaBody4" style="text-align:right;" __cid="cUN7RNr"></div> 
+          </div> 
+        </div>  
+        <div class="x-panel-content cUN7RNr" xid="content5" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUN7RNr"> 
+          <div xid="div3" style="background-color:white;width:100%;height:100%;" __cid="cUN7RNr" class="cUN7RNr"> 
+            <div xid="div1" style="width:30%;height:100%;float:left;background-color:#EEEEEE;" __cid="cUN7RNr" class="cUN7RNr"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cUN7RNr" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data1&quot;}" __cid="cUN7RNr"> 
+                <ul class="x-list-template hide cUN7RNr" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cUN7RNr"> 
+                  <li xid="li1" bind-css="{'listxz':   $model.data1.val(&quot;col0&quot;)==$object.val('col0')}" __cid="cUN7RNr" class="cUN7RNr"> 
+                    <div xid="div4" class="list-group-item div-color cUN7RNr" style="padding:3px 3px 3px 3px;border-right-style:none;" bind-css="{'listxz3':   $model.data1.val(&quot;col0&quot;)==$object.val('col0')}" __cid="cUN7RNr"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label  btn-color cUN7RNr" xid="button7" bind-text=" val(&quot;col1&quot;)" bind-css="{'listxz2':   $model.data1.val(&quot;col0&quot;)==$object.val('col0')}" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;鸡&quot;,&quot;target&quot;:&quot;content2&quot;}" __cid="cUN7RNr"> 
+                        <i xid="i7" __cid="cUN7RNr" class="cUN7RNr"/>  
+                        <span xid="span8" __cid="cUN7RNr" class="cUN7RNr">鸡</span>
+                      </a> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div xid="div2" style="height:100%;float:left;background-color:white;width:70%;" __cid="cUN7RNr" class="cUN7RNr"> 
+              <div xid="div5" class="list-group-item cUN7RNr" style="padding:7px 3px 7px 3px;border-left-style:none;" __cid="cUN7RNr"> 
+                <div class="media cUN7RNr" xid="media1" __cid="cUN7RNr"> 
+                  <div class="media-left cUN7RNr" xid="mediaLeft1" __cid="cUN7RNr"> 
+                    <a href="#" xid="a1" __cid="cUN7RNr" class="cUN7RNr"> 
+                      <img class="media-object cUN7RNr" src="$model/UI2/mealChainSys/img/ji.jpg" alt="" xid="image1" style="width:60px;height:45px;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#E6E6E6 #E6E6E6 #E6E6E6 #E6E6E6;color:#DEDEDE;" __cid="cUN7RNr"/>
+                    </a> 
+                  </div>  
+                  <div class="media-body cUN7RNr" xid="mediaBody1" __cid="cUN7RNr"> 
+                    <h5 xid="h51" class="media-heading  btn-color cUN7RNr" style="font-size:18px;" __cid="cUN7RNr">白斩鸡</h5>  
+                    <h5 xid="h52" class="media-heading cUN7RNr" style="color:#989898;" __cid="cUN7RNr">1个等于3斤</h5>
+                  </div> 
+                </div>  
+                <div xid="div8" style="text-align:right;" __cid="cUN7RNr" class="cUN7RNr"> 
+                  <span xid="span3" style="color:#FF5A1D;font-size:18px;font-weight:bold;" __cid="cUN7RNr" class="cUN7RNr">2</span>  
+                  <span xid="span4" style=";font-size:16px;" __cid="cUN7RNr" class="cUN7RNr">个=</span>  
+                  <span xid="span5" style="color:#FF5A1D;font-size:18px;font-weight:bold;" __cid="cUN7RNr" class="cUN7RNr">6</span>  
+                  <span xid="span6" style="font-size:16px;" __cid="cUN7RNr" class="cUN7RNr">斤</span>
+                </div>  
+                <div xid="div6" style="text-align:right;" __cid="cUN7RNr" class="cUN7RNr"> 
+                  <span xid="span9" style="font-size:12px;color:#BABABA;margin-right:5px;" __cid="cUN7RNr" class="cUN7RNr">¥0.00/斤</span>  
+                  <span xid="span10" style="font-size:12px;color:#BABABA;" __cid="cUN7RNr" class="cUN7RNr">¥120.00</span>
+                </div> 
+              </div>  
+              <div xid="div10" class="list-group-item cUN7RNr" style="padding:7px 3px 7px 3px;border-left-style:none;" __cid="cUN7RNr"> 
+                <div class="media cUN7RNr" xid="media2" __cid="cUN7RNr"> 
+                  <div class="media-left cUN7RNr" xid="mediaLeft2" __cid="cUN7RNr"> 
+                    <a href="#" xid="a2" __cid="cUN7RNr" class="cUN7RNr"> 
+                      <img class="media-object cUN7RNr" src="$model/UI2/mealChainSys/img/ji.jpg" alt="" xid="image2" style="width:60px;height:45px;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#E6E6E6 #E6E6E6 #E6E6E6 #E6E6E6;color:#DEDEDE;" __cid="cUN7RNr"/>
+                    </a> 
+                  </div>  
+                  <div class="media-body cUN7RNr" xid="mediaBody2" __cid="cUN7RNr"> 
+                    <h5 xid="h54" class="media-heading  btn-color cUN7RNr" style="font-size:18px;" __cid="cUN7RNr">白斩鸡</h5>  
+                    <h5 xid="h53" class="media-heading cUN7RNr" style="color:#989898;" __cid="cUN7RNr">1个等于3斤</h5>
+                  </div> 
+                </div>  
+                <div xid="div7" style="text-align:right;" __cid="cUN7RNr" class="cUN7RNr"> 
+                  <span xid="span14" style="color:#FF5A1D;font-size:18px;font-weight:bold;" __cid="cUN7RNr" class="cUN7RNr">2</span>  
+                  <span xid="span16" style=";font-size:16px;" __cid="cUN7RNr" class="cUN7RNr">个=</span>  
+                  <span xid="span17" style="color:#FF5A1D;font-size:18px;font-weight:bold;" __cid="cUN7RNr" class="cUN7RNr">6</span>  
+                  <span xid="span23" style="font-size:16px;" __cid="cUN7RNr" class="cUN7RNr">斤</span>
+                </div>  
+                <div xid="div9" style="text-align:right;" __cid="cUN7RNr" class="cUN7RNr"> 
+                  <span xid="span24" style="font-size:12px;color:#BABABA;margin-right:5px;" __cid="cUN7RNr" class="cUN7RNr">¥0.00/斤</span>  
+                  <span xid="span12" style="font-size:12px;color:#BABABA;" __cid="cUN7RNr" class="cUN7RNr">¥120.00</span>
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cUN7RNr" class="cUN7RNr">.x-panel.pcVrUFJz-iosstatusbar &gt;.x-panel-top {height: 144px;}.x-panel.pcVrUFJz-iosstatusbar &gt;.x-panel-content { top: 144px;bottom: nullpx;}.x-panel.pcVrUFJz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcVrUFJz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcVrUFJz-iosstatusbar &gt;.x-panel-top {height: 164px;}.iosstatusbar .x-panel.pcVrUFJz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcVrUFJz-iosstatusbar &gt;.x-panel-content { top: 164px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcVrUFJz-iosstatusbar &gt;.x-panel-top {height: 144px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcVrUFJz-iosstatusbar &gt;.x-panel-content {top: 144px;}</style>
+      </div> 
+    </div>  
+    <style __cid="cUN7RNr" class="cUN7RNr">.x-panel.pcAR3EBr-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcAR3EBr-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcAR3EBr-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcAR3EBr-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcAR3EBr-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcAR3EBr-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcAR3EBr-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcAR3EBr-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcAR3EBr-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

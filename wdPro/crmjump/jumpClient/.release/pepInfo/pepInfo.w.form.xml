@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cuYRnym" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cuYRnym" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-popOver-content.ddd.cuYRnym{bottom: 0.6px !important} .tb-settlement2.cuYRnym{line-height: 40px; background-color: rgb(255, 255, 255); color: rgb(255, 255, 255); font-size: 16px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cuYRnym" class="cuYRnym"></div>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cuYRnym" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cuYRnym"> 
+    <div class="x-contents-content active cuYRnym" xid="content1" style="background-color:#F3F4F3;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cuYRnym">
+      <div xid="div1" style="padding:5px 5px 5px 5px;" __cid="cuYRnym" class="cuYRnym">
+        <div xid="div2" class="list-group-item cuYRnym" __cid="cuYRnym">
+          <div class="media cuYRnym" xid="media1" __cid="cuYRnym"> 
+            <div class="media-left cuYRnym" xid="mediaLeft1" __cid="cuYRnym"> 
+              <a href="#" xid="a1" __cid="cuYRnym" class="cuYRnym"> 
+                <img class="media-object cuYRnym" src="" alt="" xid="image1" style="width:50px;height:45px;" bind-attr-src=" $model.linkManData.val(&quot;head_img&quot;)" __cid="cuYRnym"/>
+              </a> 
+            </div>  
+            <div class="media-body cuYRnym" xid="mediaBody1" __cid="cuYRnym"> 
+              <h4 class="media-heading cuYRnym" xid="h42" __cid="cuYRnym">
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cuYRnym" xid="button1" style="color:#585958;font-size:16px" bind-text=" $model.linkManData.val(&quot;staff_name&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;姓名&quot;}" __cid="cuYRnym"> 
+                  <i xid="i1" __cid="cuYRnym" class="cuYRnym"/>  
+                  <span xid="span1" __cid="cuYRnym" class="cuYRnym">姓名</span>
+                </a>
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cuYRnym" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-social-user&quot;,&quot;label&quot;:&quot;手机号&quot;}" __cid="cuYRnym"> 
+                  <i xid="i2" class="icon-android-social-user cuYRnym" __cid="cuYRnym"/>  
+                  <span xid="span2" bind-text=" $model.linkManData.val(&quot;phone&quot;)" __cid="cuYRnym" class="cuYRnym">手机号</span>
+                </a>
+              </h4>
+            </div> 
+          </div> 
+        </div>
+      </div>  
+      <div xid="div3" style="height:15px;" __cid="cuYRnym" class="cuYRnym"/>  
+      <div xid="div4" class="list-group-item cuYRnym" __cid="cuYRnym">
+        <div class="media cuYRnym" xid="media2" __cid="cuYRnym"> 
+          <div class="media-body cuYRnym" xid="mediaBody2" __cid="cuYRnym"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cuYRnym" xid="button3" style="color:#585958;font-size:16px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;所属客户&quot;}" __cid="cuYRnym"> 
+              <i xid="i3" __cid="cuYRnym" class="cuYRnym"/>  
+              <span xid="span3" __cid="cuYRnym" class="cuYRnym">所属客户</span>
+            </a>
+          </div>  
+          <div class="media-right cuYRnym" xid="mediaRight1" __cid="cuYRnym"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cuYRnym" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;label&quot;:&quot;编辑&quot;}" __cid="cuYRnym"> 
+              <i xid="i4" __cid="cuYRnym" class="cuYRnym"/>  
+              <span xid="span4" __cid="cuYRnym" class="cuYRnym">编辑</span>
+            </a>
+          </div>
+        </div>  
+        <div xid="div5" __cid="cuYRnym" class="cuYRnym">
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cuYRnym" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;relevanceDlientData&quot;}" __cid="cuYRnym"> 
+            <ul class="x-list-template hide cuYRnym" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cuYRnym"> 
+              <li xid="li1" __cid="cuYRnym" class="cuYRnym">
+                <div xid="div6" class="list-group-item cuYRnym" style="padding:5px 5px 5px 5px;;border-top-style:none;border-right-style:none;border-left-style:none;" __cid="cuYRnym"> 
+                  <div class="media cuYRnym" xid="media3" __cid="cuYRnym"> 
+                    <div class="media-body cuYRnym" xid="mediaBody3" __cid="cuYRnym"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cuYRnym" xid="button5" style=";font-size:16px" bind-text=" val(&quot;client_name&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button5Click" data-config="{&quot;label&quot;:&quot;客户名称&quot;}" __cid="cuYRnym"> 
+                        <i xid="i6" __cid="cuYRnym" class="cuYRnym"/>  
+                        <span xid="span5" __cid="cuYRnym" class="cuYRnym">客户名称</span>
+                      </a> 
+                    </div>  
+                    <div class="media-right cuYRnym" xid="mediaRight2" __cid="cuYRnym"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cuYRnym" xid="button6" bind-visible=" val(&quot;choose&quot;)==1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;label&quot;:&quot;解除关联&quot;}" __cid="cuYRnym"> 
+                        <i xid="i5" __cid="cuYRnym" class="cuYRnym"/>  
+                        <span xid="span6" __cid="cuYRnym" class="cuYRnym">解除关联</span>
+                      </a> 
+                    </div> 
+                  </div> 
+                </div>
+              </li>
+            </ul> 
+          </div>
+        </div>  
+        <div xid="div7" style="text-align:center;display:none" __cid="cuYRnym" class="cuYRnym">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cuYRnym" xid="button7" style="color:#585958" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;popOver6.show&quot;}" data-config="{&quot;icon&quot;:&quot;icon-plus&quot;,&quot;label&quot;:&quot;关联客户&quot;}" __cid="cuYRnym"> 
+            <i xid="i7" class="icon-plus cuYRnym" __cid="cuYRnym"/>  
+            <span xid="span7" __cid="cuYRnym" class="cuYRnym">关联客户</span>
+          </a>
+        </div>
+      </div>  
+      <div xid="div8" style="height:15px;" __cid="cuYRnym" class="cuYRnym"/>  
+      <div xid="div9" class="list-group-item cuYRnym" style="padding:0px 0px 0px 0px;" __cid="cuYRnym">
+        <div xid="div10" class="list-group-item cuYRnym" __cid="cuYRnym">
+          <span xid="span8" style="color:#6B6C6C;" __cid="cuYRnym" class="cuYRnym">状态</span>
+        </div>
+        <div xid="div11" class="list-group-item cuYRnym" __cid="cuYRnym">
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cuYRnym" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuYRnym"> 
+            <label class="x-label cuYRnym" xid="label1" style="width:140px;" __cid="cuYRnym">是否成为下游人员</label>  
+            <div class="x-edit cuYRnym" xid="div12" style="text-align:right;" __cid="cuYRnym">
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cuYRnym" xid="button8" style="color:#585958" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;否&quot;}" __cid="cuYRnym"> 
+                <i xid="i8" __cid="cuYRnym" class="cuYRnym"/>  
+                <span xid="span9" __cid="cuYRnym" class="cuYRnym">否</span>
+              </a>
+            </div>
+          </div>
+        </div>  
+        <div xid="div14" class="list-group-item cuYRnym" __cid="cuYRnym"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cuYRnym" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuYRnym"> 
+            <label class="x-label cuYRnym" xid="label2" style="width:140px;" __cid="cuYRnym">绑定外部联系人</label>  
+            <div class="x-edit cuYRnym" xid="div13" style="text-align:right;" __cid="cuYRnym"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cuYRnym" xid="button9" style="color:#585958" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;未绑定&quot;}" __cid="cuYRnym"> 
+                <i xid="i9" __cid="cuYRnym" class="cuYRnym"/>  
+                <span xid="span10" __cid="cuYRnym" class="cuYRnym">未绑定</span>
+              </a> 
+            </div> 
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cuYRnym" xid="popOver6" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;anchor&quot;:&quot;bottom1&quot;,&quot;position&quot;:&quot;bottom&quot;}" __cid="cuYRnym"> 
+    <div class="x-popOver-overlay cuYRnym" xid="div52" __cid="cuYRnym"/>  
+    <div class="x-popOver-content ddd cuYRnym" xid="div53" style="width:100%;height:30%;" __cid="cuYRnym"> 
+      <div xid="div54" style="height:100%;width:100%;background-color:white;" __cid="cuYRnym" class="cuYRnym"> 
+        <div component="$model/UI2/system/components/justep/panel/panel" class=" x-full pcau63Yv-iosstatusbar cuYRnym" xid="panel6" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cuYRnym"> 
+          <div class="x-panel-content cuYRnym" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuYRnym"> 
+            <div xid="div15" class="list-group-item cuYRnym" style="text-align:center;" __cid="cuYRnym">
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cuYRnym" xid="button10" style="color:#585958" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button10Click" data-config="{&quot;label&quot;:&quot;直接新增&quot;}" __cid="cuYRnym"> 
+                <i xid="i10" __cid="cuYRnym" class="cuYRnym"/>  
+                <span xid="span11" __cid="cuYRnym" class="cuYRnym">直接新增</span>
+              </a>
+            </div>  
+            <div xid="div16" class="list-group-item cuYRnym" style="text-align:center;" __cid="cuYRnym"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cuYRnym" xid="button11" style="color:#585958" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button11Click" data-config="{&quot;label&quot;:&quot;关联现有&quot;}" __cid="cuYRnym"> 
+                <i xid="i11" __cid="cuYRnym" class="cuYRnym"/>  
+                <span xid="span12" __cid="cuYRnym" class="cuYRnym">关联现有</span>
+              </a> 
+            </div>
+          </div>  
+          <div class="x-panel-bottom cuYRnym" xid="bottom6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuYRnym"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cuYRnym" xid="row12" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cuYRnym"> 
+              <div class="x-col cuYRnym" xid="col29" style="text-align:center;" __cid="cuYRnym"/>  
+              <div class="x-col cuYRnym" xid="col28" style="text-align:center;" __cid="cuYRnym"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top btn-only-label cuYRnym" xid="button28" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;popOver6.hide&quot;}" data-config="{&quot;icon&quot;:&quot;linear linear-phonehandset&quot;,&quot;label&quot;:&quot;取消&quot;}" __cid="cuYRnym"> 
+                  <i xid="i28" class="linear linear-phonehandset cuYRnym" __cid="cuYRnym"/>  
+                  <span xid="span59" __cid="cuYRnym" class="cuYRnym">取消</span>
+                </a> 
+              </div>  
+              <div class="x-col cuYRnym" xid="col27" style="text-align:center;" __cid="cuYRnym"/>
+            </div> 
+          </div>  
+          <style __cid="cuYRnym" class="cuYRnym">.x-panel.pcau63Yv-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcau63Yv-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcau63Yv-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcau63Yv-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcau63Yv-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcau63Yv-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcau63Yv-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcau63Yv-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcau63Yv-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+        </div> 
+      </div> 
+    </div> 
+  </div>
+</div>

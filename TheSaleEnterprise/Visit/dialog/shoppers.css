@@ -1,0 +1,12 @@
+/* .x-card.btn-group .btn { */
+/* 	font-weight: normal !important; */
+/* } */
+.x-card.btn-group .btn.active {
+	font-size: 16px;
+	color: #8FC41C;
+	border-bottom: 2px solid #8FC41C;
+}
+.btn-default.disabled, .btn-default[disabled], fieldset[disabled] .btn-default, .btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled.focus, .btn-default[disabled].focus, fieldset[disabled] .btn-default.focus, .btn-default.disabled:active, .btn-default[disabled]:active, fieldset[disabled] .btn-default:active, .btn-default.disabled.active, .btn-default[disabled].active, fieldset[disabled] .btn-default.active {
+    background-color: #999999;
+    border-color: #999999;
+}

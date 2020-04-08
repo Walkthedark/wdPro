@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cQRBnue" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQRBnue" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.btn-default4.cQRBnue{color: rgb(250, 121, 34); background-color: rgb(255, 255, 255); border-color: rgb(250, 121, 34)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cQRBnue" class="cQRBnue"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="infoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/VisitSignIn/dialog/belongsMarketApproach.w&quot;}" __cid="cQRBnue" class="cQRBnue">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cQRBnue" __cid="cQRBnue"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cQRBnue" style="display:none;" __cid="cQRBnue">
+      <xhtml:div class="x-dialog-title cQRBnue" __cid="cQRBnue">
+        <xhtml:button class="close cQRBnue" __cid="cQRBnue">
+          <xhtml:span __cid="cQRBnue" class="cQRBnue">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cQRBnue" __cid="cQRBnue"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cQRBnue" __cid="cQRBnue"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcYVJNze-iosstatusbar cQRBnue" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cQRBnue"> 
+    <div class="x-panel-top cQRBnue" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQRBnue"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cQRBnue" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;市场活动检查&quot;}" __cid="cQRBnue"> 
+        <div class="x-titlebar-left cQRBnue" xid="left2" __cid="cQRBnue"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cQRBnue" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cQRBnue"> 
+            <i xid="i1" __cid="cQRBnue" class="cQRBnue"/>  
+            <span xid="span4" __cid="cQRBnue" class="cQRBnue">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cQRBnue" xid="title2" __cid="cQRBnue">市场活动检查</div>  
+        <div class="x-titlebar-right  cQRBnue" xid="right2" __cid="cQRBnue">
+          <div class="empty cQRBnue" __cid="cQRBnue"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-scroll-view cQRBnue" xid="content6" _xid="C7DFADB3D7F00001A85171B66873D660" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQRBnue"> 
+      <div class="x-scroll cQRBnue" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cQRBnue"> 
+        <div class="x-content-center x-pull-down container cQRBnue" xid="div1" __cid="cQRBnue"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down cQRBnue" xid="i2" __cid="cQRBnue"/>  
+          <span class="x-pull-down-label cQRBnue" xid="span1" __cid="cQRBnue">下拉刷新...</span> 
+        </div>  
+        <div class="x-scroll-content cQRBnue" xid="div2" __cid="cQRBnue"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cQRBnue" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;BData&quot;}" __cid="cQRBnue"> 
+            <ul class="x-list-template hide cQRBnue" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cQRBnue"> 
+              <li xid="li1" class="border-Two cQRBnue" bind-click="li1Click" __cid="cQRBnue"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cQRBnue" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cQRBnue"> 
+                  <div class="x-col cQRBnue" xid="col1" __cid="cQRBnue"> 
+                    <div component="$model/UI2/system/components/bootstrap/row/row" class="row cQRBnue" xid="row2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cQRBnue"> 
+                      <div class="col col-xs-9 font-One cQRBnue" xid="col4" style="height:40px; padding-right: 0px;" __cid="cQRBnue"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output font-One cQRBnue" xid="output1" style="float:left;" data-bind="component:{ref:ref(&quot;hd_sn&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQRBnue"/>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default4 cQRBnue" xid="button2" style="height:25px;float:left;margin-top:7px;margin-left:5px;padding:2px 12px;" bind-text=" val(&quot;type&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;button&quot;}" __cid="cQRBnue"> 
+                          <i xid="i3" __cid="cQRBnue" class="cQRBnue"/>  
+                          <span xid="span3" bind-text="ref(&quot;col2&quot;)" style="display:block;margin-top:-7px;" __cid="cQRBnue" class="cQRBnue"/> 
+                        </a> 
+                      </div>  
+                      <div class="col col-xs-3 cQRBnue" xid="col5" style="text-align:right;height:40px;" __cid="cQRBnue"> 
+                        <img src="$model/UI2/TheSaleEnterprise/VisitSignIn/dialog/img/007.png" alt="" xid="image1" style="width:35px;" __cid="cQRBnue" class="cQRBnue"/> 
+                      </div>  
+                      <div class="col col-xs-12 cQRBnue" xid="col6" __cid="cQRBnue"> 
+                        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQRBnue" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQRBnue"> 
+                          <label class="x-label cQRBnue" xid="label2" style="width:80px;" __cid="cQRBnue">活动产品：</label>  
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cQRBnue" xid="output3" data-bind="component:{ref:ref(&quot;pro&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQRBnue"/> 
+                        </div> 
+                      </div>  
+                      <div class="col col-xs-12 cQRBnue" xid="col7" __cid="cQRBnue"> 
+                        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQRBnue" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQRBnue"> 
+                          <label class="x-label cQRBnue" xid="label1" style="width:80px;" __cid="cQRBnue">费用类型：</label>  
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cQRBnue" xid="output2" data-bind="component:{ref:ref(&quot;feetype&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQRBnue"/> 
+                        </div> 
+                      </div>  
+                      <div class="col col-xs-12 cQRBnue" xid="col8" __cid="cQRBnue"> 
+                        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQRBnue" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQRBnue"> 
+                          <label class="x-label cQRBnue" xid="label3" style="width:80px;" __cid="cQRBnue">活动时间：</label>  
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cQRBnue" xid="output4" data-bind="component:{ref:ref(&quot;start&quot;),name:'$model/UI2/system/components/justep/output/output'}" data-events="onRender:output4Render" __cid="cQRBnue"/> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="x-content-center x-pull-up cQRBnue" xid="div3" __cid="cQRBnue"> 
+          <span class="x-pull-up-label cQRBnue" xid="span2" __cid="cQRBnue">加载更多...</span> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cQRBnue" class="cQRBnue">.x-panel.pcYVJNze-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcYVJNze-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcYVJNze-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcYVJNze-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYVJNze-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcYVJNze-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYVJNze-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYVJNze-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYVJNze-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="wReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:wReceiverReceive" __cid="cQRBnue" class="cQRBnue"/> 
+</div>

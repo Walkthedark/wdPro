@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window crEVnmm" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="crEVnmm" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.second.crEVnmm select.crEVnmm{width: 100%; height: 20em; margin: 0px; outline: none; border: 1px solid rgb(153, 153, 153); margin: 0px} .second.crEVnmm input.crEVnmm{width: 100%; top: 2px; outline: none; border: 0pt; line-height: 30px; height: 30px; border: 1px solid rgb(153, 153, 153)} .second.crEVnmm ul.crEVnmm{position: absolute; top: 27px; border: 1px solid rgb(153, 153, 153); left: 8px; width: 125px; line-height: 16px} .ul.crEVnmm li.crEVnmm{list-style: none; width: 161px; margin-left: -40px; font-family: 微软雅黑; padding-left: 4px} .blue.crEVnmm{background: rgb(30, 145, 255)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="crEVnmm" class="crEVnmm"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcJrmUzm-iosstatusbar crEVnmm" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="crEVnmm"> 
+    <div class="x-panel-top crEVnmm" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="crEVnmm"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title crEVnmm" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;销售订单&quot;}" __cid="crEVnmm"> 
+        <div class="x-titlebar-left crEVnmm" xid="left2" __cid="crEVnmm"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label crEVnmm" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="crEVnmm"> 
+            <i xid="i1" __cid="crEVnmm" class="crEVnmm"/>  
+            <span xid="span4" __cid="crEVnmm" class="crEVnmm">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title crEVnmm" xid="title2" __cid="crEVnmm">销售订单</div>  
+        <div class="x-titlebar-right  crEVnmm" xid="right2" __cid="crEVnmm">
+          <div class="empty crEVnmm" __cid="crEVnmm"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content crEVnmm" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="crEVnmm"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row mar2 crEVnmm" xid="row1" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crEVnmm"> 
+        <div class="x-col crEVnmm" xid="col1" __cid="crEVnmm"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row crEVnmm" xid="row2" style="margin-left:5%;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="crEVnmm"> 
+            <div class="col col-xs-12 crEVnmm" xid="col4" style="text-align:center;" __cid="crEVnmm"> 
+              <label xid="label1" class="font-One crEVnmm" __cid="crEVnmm">请选择下订单的经销商</label> 
+            </div>  
+            <div class="col col-xs-12 crEVnmm" xid="col5" __cid="crEVnmm"> 
+              <span class="second crEVnmm" __cid="crEVnmm"> 
+                <input type="text" name="makeupCo" id="makeupCo" onfocus="setfocus(this)" oninput="setinput(this);" placeholder="请选择或输入" bind-value="$model.CData.ref(&quot;title&quot;)" __cid="crEVnmm" class="crEVnmm"/>  
+                <select name="makeupCoSe" id="typenum" onchange="changeF(this)" size="10" style="display:none;" __cid="crEVnmm" class="crEVnmm"/> 
+              </span> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom crEVnmm" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="crEVnmm"> 
+      <div component="$model/UI2/system/components/bootstrap/row/row" class="row crEVnmm" xid="row3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="crEVnmm"> 
+        <div class="col col-xs-12 crEVnmm" xid="col6" __cid="crEVnmm"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default crEVnmm" xid="button2" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;label&quot;:&quot;提交&quot;}" __cid="crEVnmm"> 
+            <i xid="i2" __cid="crEVnmm" class="crEVnmm"/>  
+            <span xid="span1" __cid="crEVnmm" class="crEVnmm">提交</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="crEVnmm" class="crEVnmm">.x-panel.pcJrmUzm-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcJrmUzm-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcJrmUzm-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcJrmUzm-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJrmUzm-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcJrmUzm-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJrmUzm-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJrmUzm-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJrmUzm-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" __cid="crEVnmm" class="crEVnmm"/>
+</div>

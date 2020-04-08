@@ -1,0 +1,163 @@
+.tagtree {
+	border: 1px solid #d7d7d7;
+	background-color: #fcfcfc;
+	padding: 0px;
+	height: 100%;
+}
+
+.tagtree ul {
+	/*  margin-left:-20px; */
+	
+}
+
+.tagtree li {
+	margin: 0;
+	/*  padding:2px 0px 0 2px; */
+	position: relative;
+	list-style-type: none;
+}
+
+.tagtree li::before, .tagtree li::after {
+	/*  content:'';
+    left:-20px;
+    position:absolute;
+    right:auto */
+	
+}
+
+.tagtree li::before {
+	/*  border-left:1px dashed #795548;
+    bottom:50px;
+    height:100%;
+    top:-4;
+    width:1px */
+	
+}
+
+.tagtree li::after {
+	border-top: 1px dashed #795548;
+	height: 20px;
+	top: 25px;
+	width: 25px
+}
+
+.tagtree li span {
+	position: relative;
+	z-index: 1;
+	/* background-color: #1ABC9C;; */
+	/* height: 40px; */
+	display: block;
+	padding: 0 8 0 5;
+	line-height: 40px;
+	font-family: “Microsoft YaHei” !important; font-weight : bold;
+	font-size: 15px;
+	padding-left: 5px;
+	font-weight: bolder;
+	/*
+	 color: white; */
+	  color:black !important;
+}
+
+.tagtree li span:before {
+	/*  content: "";
+    position: absolute;
+    z-index: -1;
+    border-top: 14px solid transparent;
+    border-right: 10px solid #1ABC9C;
+    border-bottom: 14px solid transparent;
+    left: -10px; */
+	
+}
+
+.tagtree li span {
+	cursor: pointer
+}
+
+.tagtree>ul>li::before, .tagtree>ul>li::after {
+	/* border:0 */
+	
+}
+
+.tagtree li:last-child::before {
+	/* height:30px */
+	
+}
+
+.tagtree ul>li:hover {
+	background: white;
+	/* background: #16A085; */
+	/* color:white; */
+}
+
+.tagtree li span:hover {
+	/*  background:white;  */
+	/* background: #16A085;  */
+	/* color:#16A085; */
+	
+}
+
+.tagtree>ul>li ul>li>span {
+	/* padding-left: 5px; */
+	font-size: 14px;
+	/* font-weight: 500 */
+	font-weight: bold;
+	font-family: “Microsoft YaHei” ! important;
+	 color:#555555 !important;
+}
+
+.tagtree>ul>li ul>li>ul>li>span {
+	/* padding-left: 10px; */
+	font-size: 14px;
+	/* font-weight: 500; */
+	font-weight: bold;
+	font-family: “Microsoft YaHei” ! important;
+}
+
+.tagtree>ul>li ul>li>ul>li>ul>li>span {
+	/* padding-left: 15px */;
+	font-size: 14px;
+	/* font-weight: 500; */
+	font-weight: bold;
+	font-family: “Microsoft YaHei” ! important;
+}
+
+.tagtree>ul>li ul>li>ul>li>ul>li>ul>li>span {
+	/* padding-left: 20px; */
+	font-size: 14px;
+	font-weight: bold;
+/* 	font-weight: 500; */
+	font-family: “Microsoft YaHei” ! important;
+}
+
+.tagtree li span:hover::before {
+	/* border-right: 10px solid #16A085; */
+	
+}
+
+.node-count {
+	display: inline-block;
+	font-size: 10px;
+	margin-left: 3px;
+	height: 16px;
+	width: 16px;
+	background-color: #8bc34a;
+	text-align: center;
+	line-height: 16px;
+	color: white;
+	border-radius: 8px;
+}
+
+.tagtree li span i {
+	margin: 0 1 0 6;
+	color: #ECF0F1;
+	font-size: 18px;
+}
+
+.tagtree li span i:hover {
+	color: #FFEB3B;
+}
+
+span .i-check {
+	display: inline-block;
+	color: #FFEB3B !important;
+}

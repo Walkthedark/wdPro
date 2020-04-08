@@ -1,0 +1,11 @@
+.btn-radius {
+	border-radius: 30px;
+	/* #8BA5AC */
+}
+
+.btn-befo-color {
+	border-style: solid solid solid solid;
+	border-width: thin thin thin thin;
+	border-color: #C0C0C0 #C0C0C0 #C0C0C0 #C0C0C0;
+	color: #C0C0C0;
+}

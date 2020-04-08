@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cUNbAry" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cUNbAry" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cUNbAry" class="cUNbAry"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="infoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Commonly/dialog/salesOrderInfo.w&quot;}" __cid="cUNbAry" class="cUNbAry">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cUNbAry" __cid="cUNbAry"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cUNbAry" style="display:none;" __cid="cUNbAry">
+      <xhtml:div class="x-dialog-title cUNbAry" __cid="cUNbAry">
+        <xhtml:button class="close cUNbAry" __cid="cUNbAry">
+          <xhtml:span __cid="cUNbAry" class="cUNbAry">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cUNbAry" __cid="cUNbAry"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cUNbAry" __cid="cUNbAry"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="newDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Commonly/dialog/salesOrderNew.w&quot;}" __cid="cUNbAry" class="cUNbAry">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cUNbAry" __cid="cUNbAry"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cUNbAry" style="display:none;" __cid="cUNbAry">
+      <xhtml:div class="x-dialog-title cUNbAry" __cid="cUNbAry">
+        <xhtml:button class="close cUNbAry" __cid="cUNbAry">
+          <xhtml:span __cid="cUNbAry" class="cUNbAry">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cUNbAry" __cid="cUNbAry"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cUNbAry" __cid="cUNbAry"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pca6jm2m-iosstatusbar cUNbAry" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cUNbAry"> 
+    <div class="x-panel-top cUNbAry" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUNbAry"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cUNbAry" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;所属区域拜访&quot;}" __cid="cUNbAry"> 
+        <div class="x-titlebar-left cUNbAry" xid="left2" __cid="cUNbAry"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cUNbAry" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cUNbAry"> 
+            <i xid="i1" __cid="cUNbAry" class="cUNbAry"/>  
+            <span xid="span4" __cid="cUNbAry" class="cUNbAry">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cUNbAry" xid="title2" __cid="cUNbAry">所属区域拜访</div>  
+        <div class="x-titlebar-right  cUNbAry" xid="right2" __cid="cUNbAry">
+          <div class="empty cUNbAry" __cid="cUNbAry"/>
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two cUNbAry" xid="row3" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUNbAry"> 
+        <div class="x-col cUNbAry" xid="col12" __cid="cUNbAry"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cUNbAry" xid="button2" style="color: #8FC41C;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-filter&quot;,&quot;label&quot;:&quot;筛选&quot;}" __cid="cUNbAry"> 
+            <i xid="i2" class="glyphicon glyphicon-filter cUNbAry" __cid="cUNbAry"/>  
+            <span xid="span1" __cid="cUNbAry" class="cUNbAry">筛选</span> 
+          </a>  
+          <span xid="span2" class="font-Three cUNbAry" __cid="cUNbAry">（可按分区，省份，城市，报告日期筛选查看）</span>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cUNbAry" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cUNbAry"> 
+            <label class="x-label cUNbAry" xid="label1" __cid="cUNbAry">时间：</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cUNbAry" xid="input1" data-bind="component:{ref:$model.cDate.ref(&quot;startTime&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Date&quot;,&quot;format&quot;:&quot;yyyy-MM-dd&quot;}" __cid="cUNbAry"/>  
+            <label class="x-label cUNbAry" xid="label2" __cid="cUNbAry">至</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cUNbAry" xid="input2" data-bind="component:{ref:$model.cDate.ref(&quot;endTime&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Date&quot;,&quot;format&quot;:&quot;yyyy-MM-dd&quot;}" __cid="cUNbAry"/> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cUNbAry" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cUNbAry"> 
+            <label class="x-label cUNbAry" xid="label3" __cid="cUNbAry">区域类型：</label>  
+            <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cUNbAry" xid="select1" data-bind="component:{name:'$model/UI2/system/components/justep/select/select'}" __cid="cUNbAry"/> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row  cUNbAry" xid="row1" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUNbAry"> 
+        <div class="x-col cUNbAry" xid="col1" __cid="cUNbAry"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cUNbAry" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cUNbAry"> 
+            <i xid="i4" __cid="cUNbAry" class="cUNbAry"/>  
+            <span xid="span6" __cid="cUNbAry" class="cUNbAry">确定</span> 
+          </a> 
+        </div>  
+        <div class="x-col cUNbAry" xid="col2" __cid="cUNbAry"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default3 cUNbAry" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button5Click" data-config="{&quot;label&quot;:&quot;清除&quot;}" __cid="cUNbAry"> 
+            <i xid="i5" __cid="cUNbAry" class="cUNbAry"/>  
+            <span xid="span7" __cid="cUNbAry" class="cUNbAry">清除</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content  x-scroll-view cUNbAry" xid="content6" _xid="C8216975B180000191D5C69F1144A280" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUNbAry"> 
+      <div class="x-scroll cUNbAry" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cUNbAry"> 
+        <div class="x-content-center x-pull-down container cUNbAry" xid="div6" __cid="cUNbAry"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down cUNbAry" xid="i7" __cid="cUNbAry"/>  
+          <span class="x-pull-down-label cUNbAry" xid="span10" __cid="cUNbAry">下拉刷新...</span> 
+        </div>  
+        <div class="x-scroll-content cUNbAry" xid="div5" __cid="cUNbAry"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cUNbAry" xid="list2" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;pData&quot;}" __cid="cUNbAry"> 
+            <ul class="x-list-template hide cUNbAry" xid="listTemplateUl2" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="cUNbAry"> 
+              <li xid="li2" class="border-Two cUNbAry" __cid="cUNbAry"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cUNbAry" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUNbAry"> 
+                  <div class="x-col cUNbAry" xid="col21" __cid="cUNbAry"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cUNbAry" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cUNbAry"> 
+                      <label class="x-label cUNbAry" xid="label4" style="width:80px;" __cid="cUNbAry">经销商：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cUNbAry" xid="output2" data-bind="component:{ref:ref(&quot;jxs_title&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cUNbAry"/> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cUNbAry" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cUNbAry"> 
+                      <label class="x-label cUNbAry" xid="label5" style="width:80px;" __cid="cUNbAry">签到时间：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cUNbAry" xid="output3" data-bind="component:{ref:ref(&quot;qdsj&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cUNbAry"/> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cUNbAry" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cUNbAry"> 
+                      <label class="x-label cUNbAry" xid="label6" style="width:80px;" __cid="cUNbAry">签退时间：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cUNbAry" xid="output5" data-bind="component:{ref:ref(&quot;qtsj&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cUNbAry"/> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cUNbAry" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cUNbAry"> 
+                      <label class="x-label cUNbAry" xid="label4" style="width:80px;" __cid="cUNbAry">用时：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cUNbAry" xid="output4" data-bind="component:{ref:ref(&quot;ys&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cUNbAry"/> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cUNbAry" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cUNbAry"> 
+                      <label class="x-label cUNbAry" xid="label5" style="width:80px;" __cid="cUNbAry">签到地址：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cUNbAry" xid="output7" data-bind="component:{ref:ref(&quot;qdjl&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cUNbAry"/> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cUNbAry" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cUNbAry"> 
+                      <label class="x-label cUNbAry" xid="label6" style="width:80px;" __cid="cUNbAry">距离偏差：</label>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cUNbAry" xid="output6" data-bind="component:{ref:ref(&quot;jlpc&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cUNbAry"/> 
+                    </div> 
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="x-content-center x-pull-up cUNbAry" xid="div4" __cid="cUNbAry"> 
+          <span class="x-pull-up-label cUNbAry" xid="span8" __cid="cUNbAry">加载更多...</span> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cUNbAry" class="cUNbAry">.x-panel.pca6jm2m-iosstatusbar &gt;.x-panel-top {height: 280px;}.x-panel.pca6jm2m-iosstatusbar &gt;.x-panel-content { top: 280px;bottom: nullpx;}.x-panel.pca6jm2m-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pca6jm2m-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pca6jm2m-iosstatusbar &gt;.x-panel-top {height: 300px;}.iosstatusbar .x-panel.pca6jm2m-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pca6jm2m-iosstatusbar &gt;.x-panel-content { top: 300px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pca6jm2m-iosstatusbar &gt;.x-panel-top {height: 280px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pca6jm2m-iosstatusbar &gt;.x-panel-content {top: 280px;}</style>
+  </div> 
+</div>

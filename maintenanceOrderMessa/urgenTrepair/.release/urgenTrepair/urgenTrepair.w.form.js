@@ -1,0 +1,35 @@
+define(function(require){
+require('$model/UI2/system/components/justep/model/model');
+require('$model/UI2/system/components/justep/loadingBar/loadingBar');
+require('$model/UI2/system/components/justep/button/button');
+require('$model/UI2/system/components/justep/list/list');
+require('$model/UI2/system/components/justep/panel/child');
+require('$model/UI2/system/components/justep/windowDialog/windowDialog');
+require('$model/UI2/system/components/justep/labelEdit/labelEdit');
+require('$model/UI2/system/components/justep/panel/panel');
+require('$model/UI2/system/components/justep/contents/content');
+require('$model/UI2/system/components/justep/row/row');
+require('$model/UI2/system/components/justep/output/output');
+require('$model/UI2/system/components/justep/contents/contents');
+require('$model/UI2/system/components/justep/data/data');
+require('$model/UI2/system/components/justep/window/window');
+require('$model/UI2/system/components/justep/button/buttonGroup');
+var __parent1=require('$model/UI2/system/lib/base/modelBase'); 
+var __parent0=require('$model/UI2/maintenanceOrderMessa/urgenTrepair/urgenTrepair'); 
+var __result = __parent1._extend(__parent0).extend({
+	constructor:function(contextUrl){
+	this.__sysParam='true';
+	this.__contextUrl=contextUrl;
+	this.__id='';
+	this.__cid='cfyQBve';
+	this._flag_='ad3b5de6340e80843f076313036084bc';
+	this._wCfg_={};
+	this._appCfg_={};
+	this.callParent(contextUrl);
+ require('css!$UI/maintenanceOrderMessa/common/style').load();
+ var __Data__ = require("$UI/system/components/justep/data/data");new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"address":{"define":"address","name":"address","relation":"address","type":"String"},"contract_expire":{"define":"contract_expire","name":"contract_expire","relation":"contract_expire","type":"String"},"depart_addr":{"define":"depart_addr","name":"depart_addr","relation":"depart_addr","type":"String"},"depart_time":{"define":"depart_time","name":"depart_time","relation":"depart_time","type":"String"},"depart_user":{"define":"depart_user","name":"depart_user","relation":"depart_user","type":"String"},"faultDes":{"define":"faultDes","name":"faultDes","relation":"faultDes","type":"String"},"faultReason":{"define":"faultReason","name":"faultReason","relation":"faultReason","type":"String"},"faultType":{"define":"faultType","name":"faultType","relation":"faultType","type":"String"},"fpEvaluate1":{"define":"fpEvaluate1","name":"fpEvaluate1","relation":"fpEvaluate1","type":"String"},"fpEvaluate2":{"define":"fpEvaluate2","name":"fpEvaluate2","relation":"fpEvaluate2","type":"String"},"hitch_image":{"define":"hitch_image","name":"hitch_image","relation":"hitch_image","type":"String"},"id":{"define":"id","name":"id","relation":"id","type":"String"},"month_hitch":{"define":"month_hitch","name":"month_hitch","relation":"month_hitch","type":"String"},"opSign":{"define":"opSign","name":"opSign","relation":"opSign","type":"String"},"receipt_addr":{"define":"receipt_addr","name":"receipt_addr","relation":"receipt_addr","type":"String"},"receipt_time":{"define":"receipt_time","name":"receipt_time","relation":"receipt_time","type":"String"},"remark":{"define":"remark","name":"remark","relation":"remark","type":"String"},"repairman":{"define":"repairman","name":"repairman","relation":"repairman","type":"String"},"result":{"define":"result","name":"result","relation":"result","type":"String"},"scene_image":{"define":"scene_image","name":"scene_image","relation":"scene_image","type":"String"},"season_hitch":{"define":"season_hitch","name":"season_hitch","relation":"season_hitch","type":"String"},"sheetNo":{"define":"sheetNo","name":"sheetNo","relation":"sheetNo","type":"String"},"signInAddr":{"define":"signInAddr","name":"signInAddr","relation":"signInAddr","type":"String"},"signInTime":{"define":"signInTime","name":"signInTime","relation":"signInTime","type":"String"},"signInUser":{"define":"signInUser","name":"signInUser","relation":"signInUser","type":"String"},"signOutAddr":{"define":"signOutAddr","name":"signOutAddr","relation":"signOutAddr","type":"String"},"signOutTime":{"define":"signOutTime","name":"signOutTime","relation":"signOutTime","type":"String"},"signOutUser":{"define":"signOutUser","name":"signOutUser","relation":"signOutUser","type":"String"},"solution":{"define":"solution","name":"solution","relation":"solution","type":"String"},"state":{"define":"state","name":"state","relation":"state","type":"String"},"teamName":{"define":"teamName","name":"teamName","relation":"teamName","type":"String"},"total_arrange":{"define":"total_arrange","name":"total_arrange","relation":"total_arrange","type":"String"},"total_hitch":{"define":"total_hitch","name":"total_hitch","relation":"total_hitch","type":"String"}},"directDelete":false,"events":{},"idColumn":"id","isMain":false,"limit":20,"xid":"BillData"});
+ new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"newUrl":{"define":"newUrl","name":"newUrl","relation":"newUrl","type":"String"},"position":{"define":"position","name":"position","relation":"position","type":"String"},"uploadDate":{"define":"uploadDate","name":"uploadDate","relation":"uploadDate","type":"String"},"uploadUser":{"define":"uploadUser","name":"uploadUser","relation":"uploadUser","type":"String"}},"directDelete":false,"events":{},"idColumn":"newUrl","isMain":false,"limit":20,"xid":"imageList"});
+ new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"date":{"define":"date","name":"date","relation":"date","type":"String"},"id":{"define":"id","name":"id","relation":"id","type":"String"},"material":{"define":"material","name":"material","relation":"material","type":"String"},"num":{"define":"num","name":"num","relation":"num","type":"String"},"plan_id":{"define":"plan_id","name":"plan_id","relation":"plan_id","type":"String"},"plan_type":{"define":"plan_type","name":"plan_type","relation":"plan_type","type":"String"},"plan_type_trans":{"define":"plan_type_trans","name":"plan_type_trans","relation":"plan_type_trans","type":"String"},"project":{"define":"project","name":"project","relation":"project","type":"String"},"remark":{"define":"remark","name":"remark","relation":"remark","type":"String"},"user":{"define":"user","name":"user","relation":"user","type":"String"},"user_id":{"define":"user_id","name":"user_id","relation":"user_id","type":"String"},"usingUnit":{"define":"usingUnit","name":"usingUnit","relation":"usingUnit","type":"String"}},"directDelete":false,"events":{},"idColumn":"id","isMain":false,"limit":20,"xid":"historyParData"});
+ new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"history_id":{"define":"history_id","name":"history_id","relation":"history_id","type":"String"},"material":{"define":"material","name":"material","relation":"material","type":"String"},"num":{"define":"num","name":"num","relation":"num","type":"String"}},"directDelete":false,"events":{},"idColumn":"history_id","isMain":false,"limit":20,"xid":"historySonMaterialData"});
+}}); 
+return __result;});

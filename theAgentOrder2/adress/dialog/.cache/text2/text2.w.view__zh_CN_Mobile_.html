@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window c6bma2i" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c6bma2i" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/tabs/tabs,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <style>.current2.c6bma2i{color: rgb(255, 108, 33) !important}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="c6bma2i" class="c6bma2i"></div>  
+  <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs c6bma2i" xid="tabs7" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="c6bma2i"> 
+    <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel pc2iEVzm-iosstatusbar c6bma2i" xid="panel5" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c6bma2i"> 
+      <div class="x-panel-top c6bma2i" xid="top5" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c6bma2i"> 
+        <ul class="nav nav-tabs c6bma2i" xid="navs4" __cid="c6bma2i"> 
+          <li class="active c6bma2i" xid="li17" __cid="c6bma2i"> 
+            <a content="tabContent_1" xid="tabItem12" __cid="c6bma2i" class="c6bma2i">d</a>
+          </li> 
+        </ul> 
+      </div>  
+      <div class="x-panel-content c6bma2i" xid="content9" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c6bma2i"> 
+        <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents c6bma2i" xid="contents5" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;active&#34;:0}" __cid="c6bma2i"> 
+          <div class="x-contents-content active active c6bma2i" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c6bma2i">
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c6bma2i" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;button123&#34;}" __cid="c6bma2i"> 
+              <i xid="i4" __cid="c6bma2i" class="c6bma2i"></i>  
+              <span xid="span6" __cid="c6bma2i" class="c6bma2i">button123</span>
+            </a>  
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list c6bma2i" xid="list6" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;regionData&#34;}" __cid="c6bma2i"> 
+              <ul class="x-list-template hide c6bma2i" xid="listTemplateUl6" __cid="c6bma2i" data-bind="foreach:{data:$model.foreach_list6($element),afterRender:$model.foreach_afterRender_list6.bind($model,$element)}"> 
+                <li xid="li18" __cid="c6bma2i" class="c6bma2i"> 
+                  <div xid="div13" class="list-group-item c6bma2i" style="padding:0px 0px 0px 0px;" __cid="c6bma2i" data-bind="css:{'current2':val(&#34;id&#34;) == $model.regionData.val(&#34;id&#34;)}"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row c6bma2i" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c6bma2i"> 
+                      <div class="x-col c6bma2i" xid="col10" __cid="c6bma2i"> 
+                        <span xid="span7" style="font-family:“Microsoft YaHei”;font-size:16px;" __cid="c6bma2i" class="c6bma2i" data-bind="text:val(&#34;name&#34;)"></span>
+                      </div>  
+                      <div class="x-col x-col-25 c6bma2i" xid="col9" __cid="c6bma2i"> 
+                        <i xid="i5" class="e-commerce e-commerce-gou c6bma2i" style="color:#FF6C21;" __cid="c6bma2i" data-bind="visible:val(&#34;id&#34;) == $model.regionData.val(&#34;id&#34;)"></i>
+                      </div> 
+                    </div> 
+                  </div> 
+                </li> 
+              </ul> 
+            </div>
+          </div>  
+          <div class="x-contents-content c6bma2i" xid="content10" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c6bma2i"></div>
+        </div> 
+      </div>  
+      <style __cid="c6bma2i" class="c6bma2i">.x-panel.pc2iEVzm-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pc2iEVzm-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc2iEVzm-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc2iEVzm-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2iEVzm-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc2iEVzm-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2iEVzm-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2iEVzm-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2iEVzm-iosstatusbar >.x-panel-content {top: 48px;}</style>
+    </div> 
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window ca2IFBf" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ca2IFBf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/fragment/bottomNavBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-card.btn-group.ca2IFBf .btn.active.ca2IFBf{border-bottom-color: rgb(23, 1, 83); border-bottom-style: groove; border-bottom-width: 2px; color: rgb(23, 1, 83)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="ca2IFBf" class="ca2IFBf"/>  
+  <title __cid="ca2IFBf" class="ca2IFBf">订单详情</title>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcq6Fnya-iosstatusbar ca2IFBf" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ca2IFBf"> 
+    <div class="x-panel-top ca2IFBf" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ca2IFBf"> 
+      <div class="btn-group btn-group-justified x-card ca2IFBf" component="$model/UI2/system/components/fragment/bottomNavBar" xid="bottomNavBar1" style="background-color:transparent;" __cid="ca2IFBf"> 
+        <a class="btn btn-default btn-xs active ca2IFBf" component="$model/UI2/system/components/justep/button/button" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;订货单&quot;,&quot;target&quot;:&quot;content3&quot;}" __cid="ca2IFBf"> 
+          <i class="icon ca2IFBf" xid="i3" style="font-size:12px;" __cid="ca2IFBf"/>  
+          <span xid="span5" __cid="ca2IFBf" class="ca2IFBf">订货单</span> 
+        </a>  
+        <a class="btn btn-link ca2IFBf" component="$model/UI2/system/components/justep/button/button" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;收款记录&quot;,&quot;target&quot;:&quot;content4&quot;}" __cid="ca2IFBf"> 
+          <i class="icon ca2IFBf" xid="i3" style="font-size:12px;" __cid="ca2IFBf"/>  
+          <span xid="span5" __cid="ca2IFBf" class="ca2IFBf">收款记录</span> 
+        </a> 
+      </div> 
+    </div>  
+    <div class="x-panel-content ca2IFBf" xid="content2" style="background-color:#F2F1F2;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ca2IFBf"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full ca2IFBf" xid="contents2" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="ca2IFBf"> 
+        <div class="x-contents-content active ca2IFBf" xid="content3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:content3Active" __cid="ca2IFBf"> 
+          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container ca2IFBf" xid="windowContainer1" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:false,&quot;src&quot;:&quot;$model/UI2/theAgentOrder2/main/dialog/dialog/placeAnOrder.w&quot;}" __cid="ca2IFBf"/> 
+        </div>  
+        <div class="x-contents-content ca2IFBf" xid="content4" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:content4Active" __cid="ca2IFBf">
+          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container ca2IFBf" xid="windowContainer2" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:false,&quot;src&quot;:&quot;$model/UI2/theAgentOrder2/main/dialog/dialog/orderMoney.w&quot;}" __cid="ca2IFBf"/>
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="ca2IFBf" class="ca2IFBf">.x-panel.pcq6Fnya-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcq6Fnya-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcq6Fnya-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcq6Fnya-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcq6Fnya-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcq6Fnya-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcq6Fnya-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcq6Fnya-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcq6Fnya-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

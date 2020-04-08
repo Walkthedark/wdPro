@@ -1,0 +1,4 @@
+.x-radio input[type="radio"]:checked+label:before,.x-checkbox input[type="checkbox"]:checked+label:before
+	{
+	background-color: #FA7922;
+}

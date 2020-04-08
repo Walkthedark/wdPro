@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cnI7Nry" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cnI7Nry" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-inputText.cnI7Nry{background-color: rgba(255, 255, 255, 0.8)} .form-control-feedback.cnI7Nry{height: 34px; line-height: 34px} .input_radius.cnI7Nry{border-radius: 15px} .tb-settlement.cnI7Nry{line-height: 40px; background-color: rgb(64, 116, 34); color: rgb(255, 255, 255); font-size: 16px} .tb-nopadding.cnI7Nry{padding: 0}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cnI7Nry" class="cnI7Nry"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcUzyEZn-iosstatusbar cnI7Nry" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cnI7Nry"> 
+    <div class="x-panel-top cnI7Nry" xid="top1" style="background-color:#439657;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnI7Nry"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cnI7Nry" xid="titleBar1" style="background-color:#439657;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cnI7Nry"> 
+        <div class="x-titlebar-left cnI7Nry" xid="left1" __cid="cnI7Nry"/>  
+        <div class="x-titlebar-title cnI7Nry" xid="title1" __cid="cnI7Nry">仓库申购商品</div>  
+        <div class="x-titlebar-right  cnI7Nry" xid="right1" __cid="cnI7Nry">
+          <div class="empty cnI7Nry" __cid="cnI7Nry"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cnI7Nry" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;icon&quot;:&quot;e-commerce e-commerce-jiahao&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cnI7Nry"> 
+            <i xid="i1" class="e-commerce e-commerce-jiahao cnI7Nry" __cid="cnI7Nry"/>  
+            <span xid="span1" __cid="cnI7Nry" class="cnI7Nry"/>
+          </a>
+        </div>
+      </div> 
+    </div>  
+    <div class="x-panel-content cnI7Nry" xid="content1" style="background-color:#EEEEEE;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnI7Nry"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcEJvUZ3-iosstatusbar cnI7Nry" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cnI7Nry"> 
+        <div class="x-panel-top cnI7Nry" xid="top3" style="background-color:white;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnI7Nry"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cnI7Nry" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cnI7Nry"> 
+            <div class="x-col cnI7Nry" xid="col5" __cid="cnI7Nry"/>  
+            <div class="x-col x-col-90 cnI7Nry" xid="col6" __cid="cnI7Nry">
+              <div class="content_bg input_radius form-group has-feedback text-muted cnI7Nry" xid="formGroup1" style="height:40;" __cid="cnI7Nry"> 
+                <input component="$model/UI2/system/components/justep/input/input" class="input_radius form-control x-inputText cnI7Nry" xid="key" style="background-color:#EEEEEE;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;搜索分类、商品分类&quot;}" __cid="cnI7Nry"/>  
+                <i class="icon-ios7-search-strong form-control-feedback cnI7Nry" xid="col4" __cid="cnI7Nry"/>
+              </div>
+            </div>  
+            <div class="x-col cnI7Nry" xid="col7" __cid="cnI7Nry"/>
+          </div>
+        </div>  
+        <div class="x-panel-content cnI7Nry" xid="content5" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnI7Nry"></div>  
+        <style __cid="cnI7Nry" class="cnI7Nry">.x-panel.pcEJvUZ3-iosstatusbar &gt;.x-panel-top {height: 52px;}.x-panel.pcEJvUZ3-iosstatusbar &gt;.x-panel-content { top: 52px;bottom: nullpx;}.x-panel.pcEJvUZ3-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcEJvUZ3-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEJvUZ3-iosstatusbar &gt;.x-panel-top {height: 72px;}.iosstatusbar .x-panel.pcEJvUZ3-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEJvUZ3-iosstatusbar &gt;.x-panel-content { top: 72px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEJvUZ3-iosstatusbar &gt;.x-panel-top {height: 52px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEJvUZ3-iosstatusbar &gt;.x-panel-content {top: 52px;}</style>
+      </div>
+    </div>  
+    <style __cid="cnI7Nry" class="cnI7Nry">.x-panel.pcUzyEZn-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcUzyEZn-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcUzyEZn-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcUzyEZn-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcUzyEZn-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcUzyEZn-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcUzyEZn-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcUzyEZn-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcUzyEZn-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

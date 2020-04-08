@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cJJjeaa" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cJJjeaa" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cJJjeaa" class="cJJjeaa"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcRvIryi-iosstatusbar cJJjeaa" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cJJjeaa"> 
+    <div class="x-panel-top cJJjeaa" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJJjeaa"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cJJjeaa" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;拜访小结&quot;}" __cid="cJJjeaa"> 
+        <div class="x-titlebar-left cJJjeaa" xid="left2" __cid="cJJjeaa"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cJJjeaa" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cJJjeaa"> 
+            <i xid="i1" __cid="cJJjeaa" class="cJJjeaa"/>  
+            <span xid="span4" __cid="cJJjeaa" class="cJJjeaa">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cJJjeaa" xid="title2" __cid="cJJjeaa">拜访小结</div>  
+        <div class="x-titlebar-right  cJJjeaa" xid="right2" __cid="cJJjeaa">
+          <div class="empty cJJjeaa" __cid="cJJjeaa"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cJJjeaa" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJJjeaa"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row border-One cJJjeaa" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJJjeaa"> 
+        <div class="x-col cJJjeaa" xid="col8" __cid="cJJjeaa"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cJJjeaa" xid="row8" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cJJjeaa"> 
+            <div class="col col-xs-12 cJJjeaa" xid="col1" __cid="cJJjeaa"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cJJjeaa" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJJjeaa"> 
+                <label class="x-label cJJjeaa" xid="label1" __cid="cJJjeaa">本次拜访小结：</label>  
+                <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit cJJjeaa" xid="textarea1" data-bind="component:{ref:$model.data1.ref(&quot;bcpfxj&quot;),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cJJjeaa"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cJJjeaa" xid="col5" __cid="cJJjeaa"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cJJjeaa" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJJjeaa"> 
+                <label class="x-label cJJjeaa" xid="label4" __cid="cJJjeaa">下次拜访日期：</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cJJjeaa" xid="input1" data-bind="component:{ref:$model.data1.ref(&quot;xcpfrq&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cJJjeaa"/> 
+              </div> 
+            </div>  
+            <div class="col col-xs-12 cJJjeaa" xid="col6" __cid="cJJjeaa"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cJJjeaa" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJJjeaa"> 
+                <label class="x-label cJJjeaa" xid="label2" __cid="cJJjeaa">下次拜访目标：</label>  
+                <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit cJJjeaa" xid="textarea2" data-bind="component:{ref:$model.data1.ref(&quot;xcpfmb&quot;),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cJJjeaa"/> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cJJjeaa" xid="row4" style="padding:20px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJJjeaa"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label cJJjeaa" xid="button4" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;label&quot;:&quot;提 交&quot;}" __cid="cJJjeaa"> 
+          <i xid="i4" __cid="cJJjeaa" class="cJJjeaa"/>  
+          <span xid="span5" __cid="cJJjeaa" class="cJJjeaa">提 交</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cJJjeaa" class="cJJjeaa">.x-panel.pcRvIryi-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcRvIryi-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcRvIryi-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcRvIryi-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcRvIryi-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcRvIryi-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcRvIryi-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcRvIryi-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcRvIryi-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="wReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:wReceiverReceive" __cid="cJJjeaa" class="cJJjeaa"/> 
+</div>

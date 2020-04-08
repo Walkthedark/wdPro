@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cmiamIj" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cmiamIj" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-card.btn-group.cmiamIj .btn.active.cmiamIj{border-bottom-color: rgb(75, 118, 174); border-bottom-style: groove; border-bottom-width: 2px; color: rgb(75, 118, 174)} html.cmiamIj{font-size: 62.5% !important} body.cmiamIj{font-size: 1.6rem "Microsoft YaHei", arial, tahoma, 宋体, sans-serif !important} .imag.cmiamIj{border-radius: 5px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cmiamIj" class="cmiamIj"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcrqYzm2-iosstatusbar cmiamIj" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cmiamIj"> 
+    <div class="x-panel-top cmiamIj" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmiamIj">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cmiamIj" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmiamIj"> 
+        <div class="x-col cmiamIj" xid="col1" style="text-align:right;" __cid="cmiamIj">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon cmiamIj" xid="button2" style="color:#4E4E4E;font-size:14px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;icon&quot;:&quot;icon-arrow-left-b&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cmiamIj"> 
+            <i xid="i2" class="icon-arrow-left-b cmiamIj" __cid="cmiamIj"/>  
+            <span xid="span2" __cid="cmiamIj" class="cmiamIj"/>
+          </a>
+        </div>  
+        <div class="x-col x-col-50 cmiamIj" xid="col2" __cid="cmiamIj">
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cmiamIj" xid="input2" style="height:100%;border-style:none none none none;text-align:center;font-size:16px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;format&quot;:&quot;yyyy-MM-dd&quot;}" __cid="cmiamIj"/>
+        </div>  
+        <div class="x-col cmiamIj" xid="col3" style="text-align:left;" __cid="cmiamIj">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon cmiamIj" xid="button1" style="color:#4E4E4E;font-size:14px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;icon&quot;:&quot;icon-arrow-right-b&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cmiamIj"> 
+            <i xid="i1" class="icon-arrow-right-b cmiamIj" __cid="cmiamIj"/>  
+            <span xid="span1" __cid="cmiamIj" class="cmiamIj"/>
+          </a>
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-content cmiamIj" xid="content1" style="background-color:#F3F4F3;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmiamIj"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cmiamIj" xid="list1" dataItemAlias="fatherList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;myreData&quot;}" __cid="cmiamIj"> 
+        <ul class="x-list-template hide cmiamIj" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element),as:'fatherList'}" __cid="cmiamIj"> 
+          <li xid="li1" bind-click="li1Click" __cid="cmiamIj" class="cmiamIj">
+            <div xid="div1" class="list-group-item cmiamIj" style="padding:5px 5px 5px 5px;" __cid="cmiamIj">
+              <div class="media cmiamIj" xid="media1" __cid="cmiamIj"> 
+                <div class="media-left cmiamIj" xid="mediaLeft1" __cid="cmiamIj"> 
+                  <a href="#" xid="a1" __cid="cmiamIj" class="cmiamIj"> 
+                    <img class="media-object imag cmiamIj" src="$model/UI2/wdPro/common/img/head4.jpeg" alt="" xid="image1" style="width:57px;height:46px;" __cid="cmiamIj"/>
+                    <h5 xid="h51" bind-text="val(&quot;create_staff&quot;)" style="text-align:center;font-size:16px;color:#2C2C2C;" __cid="cmiamIj" class="cmiamIj"/>
+                  </a> 
+                </div>  
+                <div class="media-body cmiamIj" xid="mediaBody1" __cid="cmiamIj"> 
+                  <h4 xid="h41" style="font-size:16px;color:#2C2C2C;" class="media-heading cmiamIj" __cid="cmiamIj"> 
+                    <span xid="span4" bind-text=" val(&quot;create_at&quot;).substring(5,val(&quot;create_at&quot;).length)" __cid="cmiamIj" class="cmiamIj"/>  
+                    <span xid="span5" bind-text="$model.getWeek(val(&quot;create_at&quot;))" __cid="cmiamIj" class="cmiamIj"/> 
+                  </h4>  
+                  <h4 xid="h44" style="font-size:16px;color:#2C2C2C;" class="media-heading cmiamIj" __cid="cmiamIj"> 
+                    <div component="$model/UI2/system/components/justep/list/list" class="x-list cmiamIj" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;$model.cc_staffData&quot;,&quot;filter&quot;:&quot;$row.val('fID') == fatherList.val('report_id') &quot;}" __cid="cmiamIj"> 
+                      <ul class="x-list-template hide cmiamIj" xid="listTemplateUl2" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="cmiamIj"> 
+                        <li xid="li2" __cid="cmiamIj" class="cmiamIj"> 
+                          <h5 xid="h52" __cid="cmiamIj" class="cmiamIj">
+                            <span xid="span9" style="float:left;" bind-text="&quot;@&quot;+val(&quot;staff_name&quot;)" __cid="cmiamIj" class="cmiamIj">@哈哈</span>
+                          </h5>
+                        </li>
+                      </ul> 
+                    </div>
+                  </h4>
+                </div> 
+              </div> 
+            </div>  
+            <div xid="div2" class="list-group-item cmiamIj" style="padding:0px 0px 0px 0px;" __cid="cmiamIj">
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cmiamIj" xid="button5" bind-text=" val(&quot;report_action&quot;)+&quot;总结&quot;" style="font-size:14px;color:#949494;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;button&quot;}" __cid="cmiamIj"> 
+                <i xid="i6" __cid="cmiamIj" class="cmiamIj"/>  
+                <span xid="span14" __cid="cmiamIj" class="cmiamIj"/>
+              </a>
+              <div xid="div3" __cid="cmiamIj" class="cmiamIj">
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cmiamIj" xid="button4" bind-text=" val(&quot;report_content&quot;)" style="color:#767676;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;button&quot;}" __cid="cmiamIj"> 
+                  <i xid="i5" __cid="cmiamIj" class="cmiamIj"/>  
+                  <span xid="span12" __cid="cmiamIj" class="cmiamIj"/>
+                </a>
+              </div> 
+            </div>  
+            <div xid="div5" class=" list-group-item cmiamIj" style="padding:0px 0px 0px 0px;text-align:right;" __cid="cmiamIj"> 
+              <div xid="div9" style="height:100%;width:100%;" __cid="cmiamIj" class="cmiamIj"> 
+                <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cmiamIj" xid="buttonGroup2" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cmiamIj"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cmiamIj" xid="button6" style="font-size:14px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;e-commerce e-commerce-zan&quot;,&quot;label&quot;:&quot;点赞&quot;}" __cid="cmiamIj"> 
+                    <i xid="i9" class="e-commerce e-commerce-zan cmiamIj" style="font-size:14px" __cid="cmiamIj"/>  
+                    <span xid="span15" bind-text=" val(&quot;likes&quot;)" __cid="cmiamIj" class="cmiamIj">点赞</span>
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cmiamIj" xid="button8" style="font-size:14px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;e-commerce e-commerce-xiaoxi&quot;,&quot;label&quot;:&quot;评论&quot;}" __cid="cmiamIj"> 
+                    <i xid="i8" class="e-commerce e-commerce-xiaoxi cmiamIj" style="font-size:14px" __cid="cmiamIj"/>  
+                    <span xid="span6" bind-text="val(&quot;comment&quot;)" __cid="cmiamIj" class="cmiamIj">评论</span>
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-icon cmiamIj" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;e-commerce e-commerce-jinru1&quot;,&quot;label&quot;:&quot;操作&quot;}" __cid="cmiamIj"> 
+                    <i xid="i7" class="e-commerce e-commerce-jinru1 cmiamIj" style="font-size:14px" __cid="cmiamIj"/>  
+                    <span xid="span13" __cid="cmiamIj" class="cmiamIj">操作</span>
+                  </a> 
+                </div> 
+              </div>
+            </div>  
+            <div xid="div6" style="height:7px;" __cid="cmiamIj" class="cmiamIj"/>
+          </li>
+        </ul> 
+      </div>
+    </div>  
+    <style __cid="cmiamIj" class="cmiamIj">.x-panel.pcrqYzm2-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcrqYzm2-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcrqYzm2-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcrqYzm2-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcrqYzm2-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcrqYzm2-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcrqYzm2-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcrqYzm2-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcrqYzm2-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

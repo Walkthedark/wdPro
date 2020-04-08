@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window czMnume" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="czMnume" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <style>.h-style.czMnume{padding: 3px 0; color: rgb(102, 102, 102); font-size: 12px} .box.czMnume{width: 100%; height: 80px; overflow: hidden; position: relative} .box.czMnume em.czMnume{position: absolute; width: 15px; height: 15px; border-radius: 50%; background-color: rgb(242, 241, 242)} .btn_bord.czMnume{border-radius: 30px; color: white; font-weight: bold; margin-top: 30px; width: 80px; line-height: 30px; height: 50px; background-color: black} .box.czMnume em.first.czMnume{left: -7px; top: 30px} .box.czMnume em.last.czMnume{right: -7px; top: 30px} .btn_radius.czMnume{border-radius: 30px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="czMnume" class="czMnume"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcUF3Ave-iosstatusbar czMnume" xid="panel4" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="czMnume"> 
+    <div class="x-panel-top czMnume" xid="top4" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czMnume"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar czMnume" xid="titleBar4" style="background-color:#47D1D1;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="czMnume"> 
+        <div class="x-titlebar-left czMnume" xid="left4" __cid="czMnume"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon czMnume" xid="seachBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:seachBtnClick" data-config="{&#34;icon&#34;:&#34;linear linear-magnifier&#34;}" __cid="czMnume"> 
+            <i xid="i9" class="linear linear-magnifier czMnume" __cid="czMnume"></i>  
+            <span xid="span14" __cid="czMnume" class="czMnume"></span>
+          </a> 
+        </div>  
+        <div class="x-titlebar-title czMnume" xid="title4" __cid="czMnume">订货单</div>  
+        <div class="x-titlebar-right  czMnume" xid="right4" __cid="czMnume">
+          <div class="empty czMnume" __cid="czMnume"></div>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon czMnume" xid="orderStaticBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:orderStaticBtnClick" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-report&#34;}" __cid="czMnume"> 
+            <i xid="i8" class="dataControl dataControl-report czMnume" __cid="czMnume"></i>  
+            <span xid="span13" __cid="czMnume" class="czMnume"></span>
+          </a>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon czMnume" xid="cartBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;linear linear-cart&#34;}" __cid="czMnume"> 
+            <i xid="i7" class="linear linear-cart czMnume" __cid="czMnume"></i>  
+            <span xid="span12" __cid="czMnume" class="czMnume"></span>
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content  x-scroll-view czMnume" xid="content4" _xid="C85DE7522A8000011552F0305BEF11D5" style="background-color:#e6e7e8;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czMnume">
+      <div class="x-scroll czMnume" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="czMnume"> 
+        <div class="x-content-center x-pull-down container czMnume" xid="div1" __cid="czMnume"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down czMnume" xid="i1" __cid="czMnume"></i>  
+          <span class="x-pull-down-label czMnume" xid="span1" __cid="czMnume">下拉刷新...</span>
+        </div>  
+        <div class="x-scroll-content czMnume" xid="div2" __cid="czMnume"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list czMnume" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;orderData&#34;}" __cid="czMnume"> 
+            <ul class="x-list-template hide czMnume" xid="listTemplateUl1" __cid="czMnume" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}"> 
+              <li xid="li2" __cid="czMnume" class="czMnume" data-bind="event:{click:$model._callModelFn.bind($model, 'li2Click')}"> 
+                <div xid="div11" style="padding:5px 5px 5px 5px;" __cid="czMnume" class="czMnume"> 
+                  <div xid="div10" class="box  czMnume" style="background-color:white;padding-right:8px;padding-left:8px;" __cid="czMnume"> 
+                    <em class="first czMnume" xid="default1" __cid="czMnume"></em>  
+                    <em class="last czMnume" xid="default2" __cid="czMnume"></em>  
+                    <div class="media czMnume" xid="media4" style="margin-top:5px;" __cid="czMnume"> 
+                      <div class="media-body czMnume" xid="mediaBody4" __cid="czMnume"> 
+                        <h4 class="media-heading czMnume" xid="h44" __cid="czMnume"> 
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs czMnume" xid="button5" style="background-color:white;color:#00BFFF;border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#00BFFF #00BFFF #00BFFF #00BFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;订&#34;}" __cid="czMnume"> 
+                            <i xid="i5" __cid="czMnume" class="czMnume"></i>  
+                            <span xid="span22" __cid="czMnume" class="czMnume">订</span>
+                          </a>  
+                          <span xid="span17" style="font-size:16px;color:#242424;margin-left:3px;" __cid="czMnume" class="czMnume" data-bind="text:val(&#34;name&#34;)">瑞龙商务公司</span>
+                        </h4> 
+                      </div>  
+                      <div class="media-right czMnume" xid="mediaRight3" __cid="czMnume"></div> 
+                    </div>  
+                    <div class="media czMnume" xid="media3" style="margin-top:5px;" __cid="czMnume"> 
+                      <div class="media-body czMnume" xid="mediaBody3" __cid="czMnume"> 
+                        <h4 class="media-heading czMnume" xid="h46" style="font-size:14px;color:#818181;" __cid="czMnume"> 
+                          <span xid="span19" __cid="czMnume" class="czMnume">应收：¥</span>  
+                          <span xid="span20" __cid="czMnume" class="czMnume" data-bind="text:val(&#34;price&#34;)+&#34;元&#34;">80元</span>  
+                          <span xid="span21" __cid="czMnume" class="czMnume">(待收</span>  
+                          <span xid="span27" style="color:#00BFFF" __cid="czMnume" class="czMnume" data-bind="text:val(&#34;is_discount&#34;)==0?&#34;¥&#34;+val(&#34;price&#34;):val(&#34;discount_price&#34;)">¥80.00</span>  
+                          <span xid="span29" __cid="czMnume" class="czMnume">)</span>
+                        </h4>  
+                        <h4 class="media-heading czMnume" xid="h45" style="font-size:14px;color:#818181;" __cid="czMnume"> 
+                          <span xid="span28" __cid="czMnume" class="czMnume" data-bind="text:val(&#34;make&#34;) +&#34;&#34;">张三 2019/09/26 15:43</span>  
+                          <span xid="span16" __cid="czMnume" class="czMnume" data-bind="text:val(&#34;order_time&#34;)"></span>
+                        </h4> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div>
+        </div>  
+        <div class="x-content-center x-pull-up czMnume" xid="div3" __cid="czMnume"> 
+          <span class="x-pull-up-label czMnume" xid="span2" __cid="czMnume">加载更多...</span>
+        </div> 
+      </div>
+    </div>
+    <style __cid="czMnume" class="czMnume">.x-panel.pcUF3Ave-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcUF3Ave-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcUF3Ave-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcUF3Ave-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcUF3Ave-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcUF3Ave-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcUF3Ave-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcUF3Ave-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcUF3Ave-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

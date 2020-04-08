@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cQzeyei" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQzeyei" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/bootstrap/progress/progress,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cQzeyei" class="cQzeyei"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="infoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Commonly/dialog/salesOrderInfo.w&quot;}" __cid="cQzeyei" class="cQzeyei">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cQzeyei" __cid="cQzeyei"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cQzeyei" style="display:none;" __cid="cQzeyei">
+      <xhtml:div class="x-dialog-title cQzeyei" __cid="cQzeyei">
+        <xhtml:button class="close cQzeyei" __cid="cQzeyei">
+          <xhtml:span __cid="cQzeyei" class="cQzeyei">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cQzeyei" __cid="cQzeyei"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cQzeyei" __cid="cQzeyei"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="newDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Commonly/dialog/salesOrderNew.w&quot;}" __cid="cQzeyei" class="cQzeyei">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cQzeyei" __cid="cQzeyei"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cQzeyei" style="display:none;" __cid="cQzeyei">
+      <xhtml:div class="x-dialog-title cQzeyei" __cid="cQzeyei">
+        <xhtml:button class="close cQzeyei" __cid="cQzeyei">
+          <xhtml:span __cid="cQzeyei" class="cQzeyei">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cQzeyei" __cid="cQzeyei"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cQzeyei" __cid="cQzeyei"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcfUVVRv-iosstatusbar cQzeyei" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cQzeyei"> 
+    <div class="x-panel-top cQzeyei" xid="top3" style="background-color:#f0f0f0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQzeyei"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cQzeyei" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;销售进度&quot;}" __cid="cQzeyei"> 
+        <div class="x-titlebar-left cQzeyei" xid="left2" __cid="cQzeyei"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cQzeyei" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cQzeyei"> 
+            <i xid="i1" __cid="cQzeyei" class="cQzeyei"/>  
+            <span xid="span4" __cid="cQzeyei" class="cQzeyei">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cQzeyei" xid="title2" __cid="cQzeyei">销售进度</div>  
+        <div class="x-titlebar-right  cQzeyei" xid="right2" __cid="cQzeyei">
+          <div class="empty cQzeyei" __cid="cQzeyei"/>
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit border-div cQzeyei" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQzeyei"> 
+        <label class="x-label cQzeyei" xid="label2" __cid="cQzeyei">选择区域：</label>  
+        <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cQzeyei" xid="select1" bind-options="areaList.datas" bind-optionsValue="'id'" bind-optionsText="'title'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{ref:$model.cDate.ref(&quot;area&quot;),name:'$model/UI2/system/components/justep/select/select'}" __cid="cQzeyei"/> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cQzeyei" xid="content6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQzeyei"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcAjq67z-iosstatusbar cQzeyei" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cQzeyei"> 
+        <div class="x-panel-content cQzeyei" xid="content3" style="background-color:#f0f0f0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQzeyei"> 
+          <div xid="div1" class="mar2 border-div cQzeyei" style="background-color:white;" __cid="cQzeyei"> 
+            <hr xid="hr1" __cid="cQzeyei" class="cQzeyei"/>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two cQzeyei" xid="row1" style="margin-top:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cQzeyei"> 
+              <div class="x-col cQzeyei" xid="col1" __cid="cQzeyei"> 
+                <label xid="label1" class="font-five cQzeyei" __cid="cQzeyei">销售进度及费用使用进度（单位：万元）</label> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cQzeyei" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cQzeyei"> 
+              <div class="x-col cQzeyei" xid="col4" __cid="cQzeyei"> 
+                <div component="$model/UI2/system/components/bootstrap/row/row" class="row cQzeyei" xid="row3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cQzeyei"> 
+                  <div class="col col-xs-12 cQzeyei" xid="col7" __cid="cQzeyei"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cQzeyei" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cQzeyei"> 
+                      <div class="x-col cQzeyei" xid="col10" __cid="cQzeyei"> 
+                        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cQzeyei" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQzeyei"> 
+                          <label class="x-label cQzeyei" xid="label3" __cid="cQzeyei">销售目标：</label>  
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cQzeyei" xid="output1" data-bind="component:{ref:$model.pDate.ref(&quot;target&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQzeyei"/> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 cQzeyei" xid="col2" __cid="cQzeyei"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cQzeyei" xid="row10" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cQzeyei"> 
+                      <div class="x-col cQzeyei" xid="col3" __cid="cQzeyei"> 
+                        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cQzeyei" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQzeyei"> 
+                          <label class="x-label cQzeyei" xid="label4" __cid="cQzeyei">销售达成：</label>  
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cQzeyei" xid="output2" data-bind="component:{ref:$model.pDate.ref(&quot;target&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQzeyei"/> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 cQzeyei" xid="col8" __cid="cQzeyei"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cQzeyei" xid="row11" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cQzeyei"> 
+                      <div class="x-col x-col-25 cQzeyei" xid="col5" style="padding-top:12px;" __cid="cQzeyei"> 
+                        <span xid="span15" __cid="cQzeyei" class="cQzeyei">费用预算：</span> 
+                      </div>  
+                      <div class="x-col cQzeyei" xid="col11" __cid="cQzeyei"> 
+                        <div class="progress cQzeyei" component="$model/UI2/system/components/bootstrap/progress/progress" xid="progress1" style="display:none" data-bind="component:{name:'$model/UI2/system/components/bootstrap/progress/progress'}" data-config="{&quot;valuenow&quot;:80}" __cid="cQzeyei"> 
+                          <div class="progress-bar progress-bar-success cQzeyei" role="progressbar" xid="progressBar1" __cid="cQzeyei"> 
+                            <span xid="span10" __cid="cQzeyei" class="cQzeyei"/> 
+                          </div> 
+                        </div>  
+                        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cQzeyei" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQzeyei"> 
+                          <label class="x-label cQzeyei" xid="label5" bind-text="$model.pDate.val(&quot;yusuan&quot;)" __cid="cQzeyei"/>  
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cQzeyei" xid="output3" data-bind="component:{ref:$model.pDate.ref(&quot;yjfyl&quot;),name:'$model/UI2/system/components/justep/output/output'}" data-events="onRender:output3Render" __cid="cQzeyei"/> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="col col-xs-12 cQzeyei" xid="col9" __cid="cQzeyei"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cQzeyei" xid="row12" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cQzeyei"> 
+                      <div class="x-col x-col-25 cQzeyei" xid="col18" style="padding-top:12px;" __cid="cQzeyei"> 
+                        <span xid="span37" __cid="cQzeyei" class="cQzeyei">已支费用：</span> 
+                      </div>  
+                      <div class="x-col cQzeyei" xid="col15" __cid="cQzeyei"> 
+                        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cQzeyei" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQzeyei"> 
+                          <label class="x-label cQzeyei" xid="label6" bind-text="$model.pDate.val(&quot;yizhi&quot;)" __cid="cQzeyei"/>  
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cQzeyei" xid="output4" data-bind="component:{ref:$model.pDate.ref(&quot;sjfyl&quot;),name:'$model/UI2/system/components/justep/output/output'}" data-events="onRender:output4Render" __cid="cQzeyei"/> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div xid="div3" class="mar2 border-div cQzeyei" style="background-color:white;" __cid="cQzeyei"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two cQzeyei" xid="row5" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cQzeyei"> 
+              <div class="x-col cQzeyei" xid="col13" __cid="cQzeyei"> 
+                <div id="gauge1" style="width:100%;height:300px;" xid="div5" __cid="cQzeyei" class="cQzeyei"/> 
+              </div> 
+            </div> 
+          </div>  
+          <div xid="div33" class="mar2 border-div cQzeyei" style="background-color:white;" __cid="cQzeyei"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row border-Two cQzeyei" xid="row35" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cQzeyei"> 
+              <div class="x-col cQzeyei" xid="col25" __cid="cQzeyei"> 
+                <div id="gauge2" style="width:100%;height:300px;" xid="div32" __cid="cQzeyei" class="cQzeyei"/> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cQzeyei" class="cQzeyei">.x-panel.pcAjq67z-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcAjq67z-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcAjq67z-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcAjq67z-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcAjq67z-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcAjq67z-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcAjq67z-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcAjq67z-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcAjq67z-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+      </div> 
+    </div>  
+    <style __cid="cQzeyei" class="cQzeyei">.x-panel.pcfUVVRv-iosstatusbar &gt;.x-panel-top {height: 100px;}.x-panel.pcfUVVRv-iosstatusbar &gt;.x-panel-content { top: 100px;bottom: nullpx;}.x-panel.pcfUVVRv-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcfUVVRv-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfUVVRv-iosstatusbar &gt;.x-panel-top {height: 120px;}.iosstatusbar .x-panel.pcfUVVRv-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfUVVRv-iosstatusbar &gt;.x-panel-content { top: 120px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfUVVRv-iosstatusbar &gt;.x-panel-top {height: 100px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfUVVRv-iosstatusbar &gt;.x-panel-content {top: 100px;}</style>
+  </div> 
+</div>

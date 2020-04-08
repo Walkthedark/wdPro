@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cuyiQBv" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cuyiQBv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.font-style.cuyiQBv{font-size: 12px; color: rgb(153, 153, 153)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cuyiQBv" class="cuyiQBv"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="newDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Commonly/dialog/businessTripNew.w&quot;}" __cid="cuyiQBv" class="cuyiQBv">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cuyiQBv" __cid="cuyiQBv"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cuyiQBv" style="display:none;" __cid="cuyiQBv">
+      <xhtml:div class="x-dialog-title cuyiQBv" __cid="cuyiQBv">
+        <xhtml:button class="close cuyiQBv" __cid="cuyiQBv">
+          <xhtml:span __cid="cuyiQBv" class="cuyiQBv">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cuyiQBv" __cid="cuyiQBv"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cuyiQBv" __cid="cuyiQBv"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="infoDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/TheSaleEnterprise/Commonly/dialog/businessTripInfo.w&quot;}" __cid="cuyiQBv" class="cuyiQBv">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cuyiQBv" __cid="cuyiQBv"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cuyiQBv" style="display:none;" __cid="cuyiQBv">
+      <xhtml:div class="x-dialog-title cuyiQBv" __cid="cuyiQBv">
+        <xhtml:button class="close cuyiQBv" __cid="cuyiQBv">
+          <xhtml:span __cid="cuyiQBv" class="cuyiQBv">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cuyiQBv" __cid="cuyiQBv"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cuyiQBv" __cid="cuyiQBv"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc3MFVRf-iosstatusbar cuyiQBv" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cuyiQBv"> 
+    <div class="x-panel-top cuyiQBv" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuyiQBv"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar title-one index-title cuyiQBv" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;出差申请&quot;}" __cid="cuyiQBv"> 
+        <div class="x-titlebar-left cuyiQBv" xid="left2" __cid="cuyiQBv"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cuyiQBv" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="cuyiQBv"> 
+            <i xid="i1" __cid="cuyiQBv" class="cuyiQBv"/>  
+            <span xid="span4" __cid="cuyiQBv" class="cuyiQBv">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cuyiQBv" xid="title2" __cid="cuyiQBv">出差申请</div>  
+        <div class="x-titlebar-right  cuyiQBv" xid="right2" __cid="cuyiQBv">
+          <div class="empty cuyiQBv" __cid="cuyiQBv"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cuyiQBv" xid="content6" style="background-color:#f0f0f0;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuyiQBv"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcFrEV3y-iosstatusbar cuyiQBv" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cuyiQBv"> 
+        <div class="x-panel-top cuyiQBv" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuyiQBv"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cuyiQBv" xid="row3" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cuyiQBv"> 
+            <div class="x-col x-col-20 cuyiQBv" xid="col11" __cid="cuyiQBv"/>  
+            <div class="x-col cuyiQBv" xid="col12" __cid="cuyiQBv"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn border-r cuyiQBv" xid="button4" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;label&quot;:&quot;填 写&quot;}" __cid="cuyiQBv"> 
+                <i xid="i5" __cid="cuyiQBv" class="cuyiQBv"/>  
+                <span xid="span6" __cid="cuyiQBv" class="cuyiQBv">填 写</span> 
+              </a> 
+            </div>  
+            <div class="x-col x-col-20 cuyiQBv" xid="col13" __cid="cuyiQBv"/> 
+          </div> 
+        </div>  
+        <div class="x-panel-content x-scroll-view cuyiQBv" xid="content1" _xid="C7DF78904F900001988700701AF31363" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuyiQBv"> 
+          <div class="x-scroll cuyiQBv" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cuyiQBv"> 
+            <div class="x-content-center x-pull-down container cuyiQBv" xid="div1" __cid="cuyiQBv"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cuyiQBv" xid="i2" __cid="cuyiQBv"/>  
+              <span class="x-pull-down-label cuyiQBv" xid="span1" __cid="cuyiQBv">下拉刷新...</span> 
+            </div>  
+            <div class="x-scroll-content cuyiQBv" xid="div2" __cid="cuyiQBv"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cuyiQBv" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;businessTripData&quot;}" __cid="cuyiQBv"> 
+                <ul class="x-list-template hide cuyiQBv" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cuyiQBv"> 
+                  <li xid="li1" class="mar2 cuyiQBv" __cid="cuyiQBv"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cuyiQBv" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cuyiQBv"> 
+                      <div class="x-col cuyiQBv" xid="col1" __cid="cuyiQBv"> 
+                        <div component="$model/UI2/system/components/bootstrap/row/row" class="row cuyiQBv" xid="row4" bind-click="li1Click" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cuyiQBv"> 
+                          <div class="col col-xs-12 cuyiQBv" xid="col7" __cid="cuyiQBv"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cuyiQBv" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuyiQBv"> 
+                              <label class="x-label font-One cuyiQBv" xid="label1" __cid="cuyiQBv"/>  
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit font-One cuyiQBv" xid="output1" data-bind="component:{ref:ref(&quot;sn&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cuyiQBv"/> 
+                            </div> 
+                          </div>  
+                          <div class="col col-xs-6 border-Two font-style cuyiQBv" xid="col8" style="height:30px;" __cid="cuyiQBv"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cuyiQBv" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuyiQBv"> 
+                              <label class="x-label cuyiQBv" xid="label2" __cid="cuyiQBv"/>  
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit  font-style cuyiQBv" xid="output2" data-bind="component:{ref:ref(&quot;title&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cuyiQBv"/> 
+                            </div> 
+                          </div>  
+                          <div class="col col-xs-6 border-Two font-style cuyiQBv" xid="col9" style="text-align:right;height:30px;" __cid="cuyiQBv"/>  
+                          <div class="col col-xs-6 cuyiQBv" xid="col15" __cid="cuyiQBv"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cuyiQBv" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuyiQBv"> 
+                              <label class="x-label cuyiQBv" xid="label4" __cid="cuyiQBv"/>  
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cuyiQBv" xid="output5" data-bind="component:{ref:ref(&quot;state&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cuyiQBv"/> 
+                            </div> 
+                          </div>  
+                          <div class="col col-xs-6 cuyiQBv" xid="col10" style="text-align:right;padding:0px;" __cid="cuyiQBv"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cuyiQBv" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuyiQBv"> 
+                              <label class="x-label cuyiQBv" xid="label5" __cid="cuyiQBv"/>  
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cuyiQBv" xid="output6" data-bind="component:{ref:ref(&quot;ctime&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cuyiQBv"/> 
+                            </div> 
+                          </div> 
+                        </div>  
+                        <div component="$model/UI2/system/components/bootstrap/row/row" class="row cuyiQBv" xid="row6" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cuyiQBv"> 
+                          <div class="col col-xs-12 cuyiQBv" xid="col17" style="text-align:right;padding:0px;" __cid="cuyiQBv">
+                            <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group cuyiQBv" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cuyiQBv"> 
+                              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cuyiQBv" xid="button3" style="color:#000000;" bind-visible=" val(&quot;state&quot;)=='草稿'" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&quot;icon&quot;:&quot;linear linear-cross&quot;,&quot;label&quot;:&quot;删除&quot;}" __cid="cuyiQBv"> 
+                                <i xid="i4" class="linear linear-cross cuyiQBv" __cid="cuyiQBv"/>  
+                                <span xid="span5" __cid="cuyiQBv" class="cuyiQBv">删除</span>
+                              </a> 
+                            </div>
+                          </div> 
+                        </div>
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up cuyiQBv" xid="div3" __cid="cuyiQBv"> 
+              <span class="x-pull-up-label cuyiQBv" xid="span2" __cid="cuyiQBv">加载更多...</span> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-panel-bottom cuyiQBv" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuyiQBv"/>  
+        <style __cid="cuyiQBv" class="cuyiQBv">.x-panel.pcFrEV3y-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcFrEV3y-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcFrEV3y-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcFrEV3y-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcFrEV3y-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcFrEV3y-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcFrEV3y-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcFrEV3y-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcFrEV3y-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div>  
+    <style __cid="cuyiQBv" class="cuyiQBv">.x-panel.pc3MFVRf-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc3MFVRf-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc3MFVRf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc3MFVRf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3MFVRf-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc3MFVRf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3MFVRf-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3MFVRf-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3MFVRf-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="wReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:wReceiverReceive" __cid="cuyiQBv" class="cuyiQBv"/> 
+</div>

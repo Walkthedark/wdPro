@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window czeuuim" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="czeuuim" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">html.czeuuim{font-size: 62.5% !important} body.czeuuim{font-size: 1.6rem "Microsoft YaHei", arial, tahoma, 宋体, sans-serif !important} .x-label.czeuuim{color: rgb(53, 53, 53)} .btn-group.czeuuim .btn.active.czeuuim{background-color: rgb(75, 118, 174); color: rgb(255, 255, 255)} .btn-radius.czeuuim{border-radius: 5px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="czeuuim" class="czeuuim"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="choosePopWinDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/wdPro/salesOrder/dialog/choosePopRodia.w&quot;}" __cid="czeuuim" class="czeuuim">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay czeuuim" __cid="czeuuim"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog czeuuim" style="display:none;" __cid="czeuuim">
+      <xhtml:div class="x-dialog-title czeuuim" __cid="czeuuim">
+        <xhtml:button class="close czeuuim" __cid="czeuuim">
+          <xhtml:span __cid="czeuuim" class="czeuuim">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text czeuuim" __cid="czeuuim"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body czeuuim" __cid="czeuuim"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="TagWinDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/wdPro/salesOrder/dialog/tagChoose.w&quot;}" __cid="czeuuim" class="czeuuim">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay czeuuim" __cid="czeuuim"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog czeuuim" style="display:none;" __cid="czeuuim">
+      <xhtml:div class="x-dialog-title czeuuim" __cid="czeuuim">
+        <xhtml:button class="close czeuuim" __cid="czeuuim">
+          <xhtml:span __cid="czeuuim" class="czeuuim">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text czeuuim" __cid="czeuuim"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body czeuuim" __cid="czeuuim"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="goodsWinDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/wdPro/salesOrder/dialog/goodsChoose.w&quot;}" __cid="czeuuim" class="czeuuim">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay czeuuim" __cid="czeuuim"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog czeuuim" style="display:none;" __cid="czeuuim">
+      <xhtml:div class="x-dialog-title czeuuim" __cid="czeuuim">
+        <xhtml:button class="close czeuuim" __cid="czeuuim">
+          <xhtml:span __cid="czeuuim" class="czeuuim">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text czeuuim" __cid="czeuuim"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body czeuuim" __cid="czeuuim"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="linkWinDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/wdPro/salesOrder/dialog/linkM.w&quot;}" __cid="czeuuim" class="czeuuim">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay czeuuim" __cid="czeuuim"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog czeuuim" style="display:none;" __cid="czeuuim">
+      <xhtml:div class="x-dialog-title czeuuim" __cid="czeuuim">
+        <xhtml:button class="close czeuuim" __cid="czeuuim">
+          <xhtml:span __cid="czeuuim" class="czeuuim">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text czeuuim" __cid="czeuuim"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body czeuuim" __cid="czeuuim"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcBRbqMf-iosstatusbar czeuuim" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="czeuuim"> 
+    <div class="x-panel-top czeuuim" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czeuuim">
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified czeuuim" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="czeuuim"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default czeuuim" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;基本信息&quot;,&quot;target&quot;:&quot;content1&quot;}" __cid="czeuuim"> 
+          <i xid="i5" __cid="czeuuim" class="czeuuim"/>  
+          <span xid="span10" __cid="czeuuim" class="czeuuim">基本信息</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default czeuuim" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;跟单内容&quot;,&quot;target&quot;:&quot;content3&quot;}" __cid="czeuuim"> 
+          <i xid="i7" __cid="czeuuim" class="czeuuim"/>  
+          <span xid="span12" __cid="czeuuim" class="czeuuim">跟单内容</span>
+        </a> 
+      </div>
+    </div>  
+    <div class="x-panel-content czeuuim" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czeuuim">
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full czeuuim" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;routable&quot;:false,&quot;slidable&quot;:false,&quot;swipe&quot;:false,&quot;wrap&quot;:false}" __cid="czeuuim"> 
+        <div class="x-contents-content active czeuuim" xid="content1" style="background-color:#EBEAF0;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="czeuuim"> 
+          <div xid="div1" class="list-group-item czeuuim" style="background-color:#EBEAF0;" __cid="czeuuim"> 
+            <span xid="span1" __cid="czeuuim" class="czeuuim">基本信息</span> 
+          </div>
+          <div xid="div2" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding-right:0px;padding-top:2px;padding-bottom:2px;" __cid="czeuuim"> 
+            <div xid="div3" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label1" style="width:80px;" __cid="czeuuim">跟单标题
+                  <span xid="span5" style="color:#FD3240;" __cid="czeuuim" class="czeuuim">*</span> 
+                </label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input1" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/> 
+              </div> 
+            </div>  
+            <div xid="div7" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit czeuuim" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" style="width:80px;" xid="label4" __cid="czeuuim">关联客户
+                  <span xid="span7" style="color:#FD3240;" __cid="czeuuim" class="czeuuim">*</span> 
+                </label>  
+                <div class="x-edit czeuuim" xid="div8" __cid="czeuuim"> 
+                  <div class="input-group czeuuim" xid="div6" __cid="czeuuim"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control czeuuim" xid="input4" style="background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;disabled&quot;:true,&quot;placeHolder&quot;:&quot;请选择&quot;}" __cid="czeuuim"/>  
+                    <span class="input-group-btn czeuuim" xid="span2" __cid="czeuuim"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon czeuuim" xid="button1" style="color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;icon&quot;:&quot;icon-chevron-right&quot;}" __cid="czeuuim"> 
+                        <i class="icon-chevron-right czeuuim" xid="i1" __cid="czeuuim"/> 
+                      </a> 
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div xid="div28" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit czeuuim" xid="labelEdit21" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" style="width:80px;" xid="label21" __cid="czeuuim">跟单阶段
+                  <span xid="span6" style="color:#FD3240;" __cid="czeuuim" class="czeuuim">*</span> 
+                </label>  
+                <div class="x-edit czeuuim" xid="div26" __cid="czeuuim"> 
+                  <div class="input-group czeuuim" xid="div27" __cid="czeuuim"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control czeuuim" xid="input21" style="background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;disabled&quot;:true,&quot;placeHolder&quot;:&quot;请选择&quot;}" __cid="czeuuim"/>  
+                    <span class="input-group-btn czeuuim" xid="span4" __cid="czeuuim"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon czeuuim" xid="button3" style="color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&quot;icon&quot;:&quot;icon-chevron-right&quot;}" __cid="czeuuim"> 
+                        <i class="icon-chevron-right czeuuim" xid="i3" __cid="czeuuim"/> 
+                      </a> 
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div xid="div4" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label2" style="width:80px;" __cid="czeuuim">跟单金额</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input2" style="background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/> 
+              </div> 
+            </div>  
+            <div xid="div10" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit czeuuim" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" style="width:80px;" xid="label5" __cid="czeuuim">跟单产品</label>  
+                <div class="x-edit czeuuim" xid="div11" __cid="czeuuim"> 
+                  <div class="input-group czeuuim" xid="div9" __cid="czeuuim"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control czeuuim" xid="input5" style="background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;disabled&quot;:true,&quot;placeHolder&quot;:&quot;请选择&quot;}" __cid="czeuuim"/>  
+                    <span class="input-group-btn czeuuim" xid="span3" __cid="czeuuim"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon czeuuim" xid="goodsChooseBtn" style="color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:goodsChooseBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-right&quot;}" __cid="czeuuim"> 
+                        <i class="icon-chevron-right czeuuim" xid="i2" __cid="czeuuim"/> 
+                      </a> 
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div xid="div12" __cid="czeuuim" class="czeuuim">
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list czeuuim" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;goodsData&quot;}" __cid="czeuuim"> 
+                <ul class="x-list-template hide czeuuim" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="czeuuim"> 
+                  <li xid="li1" __cid="czeuuim" class="czeuuim">
+                    <div xid="div21" style="padding:5px 5px 5px 5px;" class="list-group-item czeuuim" __cid="czeuuim"> 
+                      <div class="media czeuuim" xid="media1" __cid="czeuuim"> 
+                        <div class="media-left czeuuim" xid="mediaLeft1" __cid="czeuuim"> 
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon czeuuim" xid="button4" style="color:#181919;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;icon&quot;:&quot;linear linear-trash&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="czeuuim"> 
+                            <i xid="i6" class="linear linear-trash czeuuim" __cid="czeuuim"/>  
+                            <span xid="span8" __cid="czeuuim" class="czeuuim"/>
+                          </a> 
+                        </div>  
+                        <div class="media-body czeuuim" xid="mediaBody1" __cid="czeuuim"> 
+                          <h4 xid="h41" bind-text=" val(&quot;goods_name&quot;)" style="color:#181919;" __cid="czeuuim" class="czeuuim"/>  
+                          <h5 xid="h51" class="media-heading czeuuim" __cid="czeuuim"> 
+                            <span xid="span9" bind-text="&quot;商品规格：&quot; + val(&quot;specification&quot;)" __cid="czeuuim" class="czeuuim"/> 
+                          </h5>
+                        </div> 
+                      </div> 
+                    </div>
+                  </li>
+                </ul> 
+              </div>
+            </div>  
+            <div xid="div13" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit czeuuim" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" style="width:80px;" xid="label6" __cid="czeuuim">联系人</label>  
+                <div class="x-edit czeuuim" xid="div14" __cid="czeuuim"> 
+                  <div class="input-group czeuuim" xid="div15" __cid="czeuuim"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control czeuuim" xid="input6" style="background-color:white;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;disabled&quot;:true,&quot;placeHolder&quot;:&quot;请选择&quot;}" __cid="czeuuim"/>  
+                    <span class="input-group-btn czeuuim" xid="span11" __cid="czeuuim"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon czeuuim" xid="button2" style="color:#838484;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;icon&quot;:&quot;icon-chevron-right&quot;}" __cid="czeuuim"> 
+                        <i class="icon-chevron-right czeuuim" xid="i4" __cid="czeuuim"/>
+                      </a> 
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div xid="div5" class="list-group-item czeuuim" style="display:none;border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label3" style="width:80px;" __cid="czeuuim">跟单说明</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input3" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入&quot;}" __cid="czeuuim"/> 
+              </div> 
+            </div>
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row czeuuim" xid="row3" style="height:50px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="czeuuim"> 
+            <div class="x-col czeuuim" xid="col1" __cid="czeuuim"/> 
+          </div> 
+        </div>  
+        <div class="x-contents-content czeuuim" xid="content3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="czeuuim">
+          <div xid="div68" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding-right:0px;padding-top:2px;padding-bottom:2px;" __cid="czeuuim">
+            <div xid="div17" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label7" style="width:90px;font-size:16px" __cid="czeuuim">婚宴城市</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="nameInp" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div16" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit8" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label8" style="width:90px;font-size:16px" __cid="czeuuim">婚宴酒店</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input7" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div19" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit9" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="WedBanquetDate1" style="width:90px;font-size:16px" __cid="czeuuim">婚宴日期</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input8" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Date&quot;}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div18" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit10" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label10" style="width:90px;font-size:16px" __cid="czeuuim">婚宴餐标</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input9" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div22" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit11" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label12" style="width:90px;font-size:16px" __cid="czeuuim">婚宴形式</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input12" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div20" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit13" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label13" style="width:90px;font-size:16px" __cid="czeuuim">婚宴禁忌</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input13" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div24" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit12" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label14" style="width:90px;font-size:16px" __cid="czeuuim">来宾人数</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input11" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div23" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit14" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label11" style="width:90px;font-size:16px" __cid="czeuuim">来宾成分</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input10" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div29" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit18" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label15" style="width:90px;font-size:16px" __cid="czeuuim">来宾占比</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input16" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div25" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit20" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label16" style="width:90px;font-size:16px" __cid="czeuuim">布置预算</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input17" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div31" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit19" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label17" style="width:90px;font-size:16px" __cid="czeuuim">布置主题</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input15" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div30" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit17" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label18" style="width:90px;font-size:16px" __cid="czeuuim">布置色调</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input14" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div34" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit15" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label22" style="width:90px;font-size:16px" __cid="czeuuim">布置风格</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input22" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div35" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit22" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label20" style="width:90px;font-size:16px" __cid="czeuuim">领证日期</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input18" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Date&quot;}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div33" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit16" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label19" style="width:90px;font-size:16px" __cid="czeuuim">恋爱过程</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input20" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div32" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit23" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label23" style="width:90px;font-size:16px" __cid="czeuuim">恋爱时间</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input19" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div49" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit37" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label27" style="width:90px;font-size:16px" __cid="czeuuim">是否求婚</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input27" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div48" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit39" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label28" style="width:90px;font-size:16px" __cid="czeuuim">婚房布置</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input28" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div51" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit38" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label29" style="width:90px;font-size:16px" __cid="czeuuim">迎亲习俗</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input26" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div50" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit36" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label35" style="width:90px;font-size:16px" __cid="czeuuim">摄影</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input25" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div44" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit34" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label38" style="width:90px;font-size:16px" __cid="czeuuim">摄像</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input35" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div47" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit26" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label37" style="width:90px;font-size:16px" __cid="czeuuim">转播</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input29" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div43" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit35" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label36" style="width:90px;font-size:16px" __cid="czeuuim">化妆师</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input34" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div42" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit27" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label39" style="width:90px;font-size:16px" __cid="czeuuim">司仪</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input33" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div46" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit30" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label33" style="width:90px;font-size:16px" __cid="czeuuim">甜品</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input32" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div45" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit33" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label32" style="width:90px;font-size:16px" __cid="czeuuim">演艺</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input36" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div41" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit28" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label31" style="width:90px;font-size:16px" __cid="czeuuim">婚礼管家</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input31" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div40" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit29" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label30" style="width:90px;font-size:16px" __cid="czeuuim">婚礼秘书</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input30" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div36" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit24" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label26" style="width:90px;font-size:16px" __cid="czeuuim">婚车</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input24" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div37" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit31" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label24" style="width:90px;font-size:16px" __cid="czeuuim">婚纱</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input37" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div39" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit25" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label34" style="width:90px;font-size:16px" __cid="czeuuim">西服</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input23" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div38" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit32" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label25" style="width:90px;font-size:16px" __cid="czeuuim">中式礼服</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input38" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div65" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit53" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label43" style="width:90px;font-size:16px" __cid="czeuuim">婚纱照</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input43" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div64" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit55" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label44" style="width:90px;font-size:16px" __cid="czeuuim">喜糖</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input44" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div67" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit54" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label45" style="width:90px;font-size:16px" __cid="czeuuim">伴手礼</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input42" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div66" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit52" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label51" style="width:90px;font-size:16px" __cid="czeuuim">请柬</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input41" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div60" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit50" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label54" style="width:90px;font-size:16px" __cid="czeuuim">电子请柬</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input51" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div63" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit42" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label53" style="width:90px;font-size:16px" __cid="czeuuim">证婚人</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input45" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div59" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit51" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label52" style="width:90px;font-size:16px" __cid="czeuuim">伴郎伴娘</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input50" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div58" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit43" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label55" style="width:90px;font-size:16px" __cid="czeuuim">流程素材</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input49" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div62" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit46" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label49" style="width:90px;font-size:16px" __cid="czeuuim">流程道具</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input48" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div61" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit49" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label48" style="width:90px;font-size:16px" __cid="czeuuim">抽奖环节</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input52" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div57" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit44" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label47" style="width:90px;font-size:16px" __cid="czeuuim">晨袍拍摄</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input47" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div56" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit45" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label46" style="width:90px;font-size:16px" __cid="czeuuim">外景拍摄</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input46" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div52" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit40" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label42" style="width:90px;font-size:16px" __cid="czeuuim">婚前拍摄</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input40" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div53" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit47" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label40" style="width:90px;font-size:16px" __cid="czeuuim">拍摄要求</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input53" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>  
+            <div xid="div55" class="list-group-item czeuuim" style="border-right-style:none;border-left-style:none;padding:5px 5px 5px 5px;" __cid="czeuuim"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czeuuim" xid="labelEdit41" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czeuuim"> 
+                <label class="x-label czeuuim" xid="label50" style="width:90px;font-size:16px" __cid="czeuuim">迎亲地址</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit czeuuim" xid="input39" required="required" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czeuuim"/>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-bottom czeuuim" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czeuuim">
+      <div xid="div77" class="list-group-item czeuuim" style="text-align:center;background-color:#4B76AE;padding:5px 5px 5px 5px;position:relative;bottom:0px;" bind-click="div77Click" __cid="czeuuim"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-label czeuuim" xid="button18" style="color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-plus-round&quot;,&quot;label&quot;:&quot;保存&quot;}" __cid="czeuuim"> 
+          <i xid="i18" class="icon-plus-round czeuuim" __cid="czeuuim"/>  
+          <span xid="span19" style="font-size:16px;" __cid="czeuuim" class="czeuuim">保存</span> 
+        </a> 
+      </div>
+    </div>
+    <style __cid="czeuuim" class="czeuuim">.x-panel.pcBRbqMf-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcBRbqMf-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcBRbqMf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcBRbqMf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBRbqMf-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcBRbqMf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBRbqMf-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBRbqMf-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBRbqMf-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

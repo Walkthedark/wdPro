@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cZrmABb" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cZrmABb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">body.cZrmABb{font-family: “Microsoft YaHei” !important} .btn-color.cZrmABb{color: rgb(255, 254, 255) !important}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cZrmABb" class="cZrmABb"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcra2INr-iosstatusbar cZrmABb" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cZrmABb"> 
+    <div class="x-panel-content cZrmABb" xid="content3" style="background-color:#F2F2F3;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cZrmABb">
+      <div xid="div2" class="list-group-item cZrmABb" style="padding:0px 0px 0px 0px;background-color:transparent;" __cid="cZrmABb"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cZrmABb" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cZrmABb"> 
+          <div class="x-col cZrmABb" xid="col11" __cid="cZrmABb">
+            <span xid="span7" __cid="cZrmABb" class="cZrmABb">状态</span>
+          </div>
+        </div>
+      </div>
+      <div xid="div1" class="list-group-item cZrmABb" style="padding:0px 0px 0px 0px;" __cid="cZrmABb"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cZrmABb" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cZrmABb"> 
+          <div class="x-col cZrmABb" xid="col1" __cid="cZrmABb">
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm cZrmABb" xid="button5" style="border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#CDCDCD #CDCDCD #CDCDCD #CDCDCD;background-color:white;color:#565656;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;促销中&quot;}" __cid="cZrmABb"> 
+              <i xid="i12" __cid="cZrmABb" class="cZrmABb"/>  
+              <span xid="span24" __cid="cZrmABb" class="cZrmABb">促销中</span>
+            </a>
+          </div>  
+          <div class="x-col cZrmABb" xid="col2" __cid="cZrmABb">
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm cZrmABb" xid="button1" style="border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#CDCDCD #CDCDCD #CDCDCD #CDCDCD;background-color:white;color:#565656;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;收藏的&quot;}" __cid="cZrmABb"> 
+              <i xid="i1" __cid="cZrmABb" class="cZrmABb"/>  
+              <span xid="span1" __cid="cZrmABb" class="cZrmABb">收藏的</span>
+            </a>
+          </div>  
+          <div class="x-col cZrmABb" xid="col3" __cid="cZrmABb">
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm cZrmABb" xid="button2" style="border-style:solid solid solid solid;border-width:thin thin thin thin;border-color:#CDCDCD #CDCDCD #CDCDCD #CDCDCD;background-color:white;color:#565656;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;买过的&quot;}" __cid="cZrmABb"> 
+              <i xid="i2" __cid="cZrmABb" class="cZrmABb"/>  
+              <span xid="span2" __cid="cZrmABb" class="cZrmABb">买过的</span>
+            </a>
+          </div>  
+          <div class="x-col cZrmABb" xid="col4" __cid="cZrmABb"/>
+        </div> 
+      </div>
+      <div xid="div3" class="list-group-item cZrmABb" style="padding:0px 0px 0px 0px;background-color:transparent;" __cid="cZrmABb"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cZrmABb" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cZrmABb"> 
+          <div class="x-col cZrmABb" xid="col12" __cid="cZrmABb"> 
+            <span xid="span8" __cid="cZrmABb" class="cZrmABb">商品标签</span>
+          </div> 
+        </div> 
+      </div>
+      <div xid="div4" style="padding:4px 5px px 0px;" class="list-group-item cZrmABb" __cid="cZrmABb"> 
+        <div xid="div6" style="padding:0px 0px 0px 0px;" __cid="cZrmABb" class="cZrmABb">
+          <div class="media  cZrmABb" xid="media2" __cid="cZrmABb"> 
+            <div class="media-left cZrmABb" xid="mediaLeft2" style="padding-top:4px;" __cid="cZrmABb"> 
+              <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cZrmABb" xid="radio2" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cZrmABb">
+                <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="radio" __cid="cZrmABb" class="cZrmABb"/>
+                <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cZrmABb" class="cZrmABb"/>
+              </span>
+            </div>  
+            <div class="media-body cZrmABb" xid="mediaBody2" __cid="cZrmABb"> 
+              <h4 xid="h42" style="color:#565656" __cid="cZrmABb" class="cZrmABb">新品上架</h4>
+            </div> 
+          </div>
+        </div>  
+        <div xid="div7" style="padding:0px 0px 0px 0px;" __cid="cZrmABb" class="cZrmABb">
+          <div class="media cZrmABb" xid="media3" __cid="cZrmABb"> 
+            <div class="media-left cZrmABb" xid="mediaLeft3" style="padding-top:4px;" __cid="cZrmABb"> 
+              <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cZrmABb" xid="radio3" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cZrmABb">
+                <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="radio" __cid="cZrmABb" class="cZrmABb"/>
+                <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cZrmABb" class="cZrmABb"/>
+              </span>
+            </div>  
+            <div class="media-body cZrmABb" xid="mediaBody3" __cid="cZrmABb"> 
+              <h4 xid="h43" style="color:#565656" __cid="cZrmABb" class="cZrmABb">清仓优惠</h4>
+            </div> 
+          </div>
+        </div>
+        <div xid="div5" style="padding:0px 0px 0px 0px;" __cid="cZrmABb" class="cZrmABb">
+          <div class="media  cZrmABb" xid="media1" __cid="cZrmABb"> 
+            <div class="media-left cZrmABb" xid="mediaLeft1" style="padding-top:4px;" __cid="cZrmABb"> 
+              <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cZrmABb" xid="radio1" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" __cid="cZrmABb">
+                <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="radio" __cid="cZrmABb" class="cZrmABb"/>
+                <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cZrmABb" class="cZrmABb"/>
+              </span>
+            </div>  
+            <div class="media-body cZrmABb" xid="mediaBody1" __cid="cZrmABb"> 
+              <h4 xid="h41" style="color:#565656" __cid="cZrmABb" class="cZrmABb">打折促销</h4>
+            </div> 
+          </div>
+        </div>
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cZrmABb" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cZrmABb">
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cZrmABb" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cZrmABb"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cZrmABb" xid="button11" style="background-color:white;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cZrmABb"> 
+          <i xid="i10" __cid="cZrmABb" class="cZrmABb"/>  
+          <span xid="span14" __cid="cZrmABb" class="cZrmABb">取消</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-color cZrmABb" xid="button12" style="background-color:#cf0202;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cZrmABb"> 
+          <i xid="i11" __cid="cZrmABb" class="cZrmABb"/>  
+          <span xid="span15" __cid="cZrmABb" class="cZrmABb">确定</span>
+        </a> 
+      </div>
+    </div>
+    <style __cid="cZrmABb" class="cZrmABb">.x-panel.pcra2INr-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcra2INr-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcra2INr-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcra2INr-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcra2INr-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcra2INr-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcra2INr-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcra2INr-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcra2INr-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div>
+</div>

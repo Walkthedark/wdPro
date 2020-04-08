@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cU3Evei" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cU3Evei" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cU3Evei" class="cU3Evei"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pceQNzIv-iosstatusbar cU3Evei" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cU3Evei"> 
+    <div class="x-panel-top cU3Evei" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cU3Evei"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cU3Evei" style="background-color:#47D1D1;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;订单统计&quot;}" __cid="cU3Evei"> 
+        <div class="x-titlebar-left cU3Evei" __cid="cU3Evei"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cU3Evei" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cU3Evei"> 
+            <i class="icon-chevron-left cU3Evei" __cid="cU3Evei"/>  
+            <span __cid="cU3Evei" class="cU3Evei"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cU3Evei" __cid="cU3Evei">订单统计</div>  
+        <div class="x-titlebar-right  cU3Evei" __cid="cU3Evei">
+          <div class="empty cU3Evei" __cid="cU3Evei"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cU3Evei" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cU3Evei">
+      <div xid="div1" style="height:100%;display:flex;flex-direction:column;" __cid="cU3Evei" class="cU3Evei">
+        <div xid="div2" style="flex:1;background-color:#23DCDC;color:#fff;" __cid="cU3Evei" class="cU3Evei">
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cU3Evei" xid="row1" style="margin-top:22%;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cU3Evei"> 
+            <div class="x-col cU3Evei" xid="col1" style="text-align:center;" __cid="cU3Evei">
+              <span xid="span1" __cid="cU3Evei" class="cU3Evei">订单金额(¥)</span> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cU3Evei" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cU3Evei"> 
+            <div class="x-col cU3Evei" xid="col4" style="font-size:22px;text-align:center;" __cid="cU3Evei">
+              <span xid="span3" __cid="cU3Evei" class="cU3Evei">0.00</span>
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cU3Evei" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cU3Evei"> 
+            <div class="x-col cU3Evei" xid="col7" style="text-align:center;" __cid="cU3Evei">
+              <span xid="span8" __cid="cU3Evei" class="cU3Evei">0</span>  
+              <span xid="span9" __cid="cU3Evei" class="cU3Evei">笔</span>
+            </div> 
+          </div>
+        </div>  
+        <div xid="div3" style="flex:1;position:relative;" __cid="cU3Evei" class="cU3Evei">
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cU3Evei" xid="row4" style="margin-top:20%;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cU3Evei"> 
+            <div class="x-col cU3Evei" xid="col10" style="text-align:center;" __cid="cU3Evei">
+              <span xid="span4" __cid="cU3Evei" class="cU3Evei">退货金额(¥)</span>
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cU3Evei" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cU3Evei"> 
+            <div class="x-col cU3Evei" xid="col13" style="font-size:22px;text-align:center;" __cid="cU3Evei">
+              <span xid="span5" __cid="cU3Evei" class="cU3Evei">0.00</span>
+            </div>
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cU3Evei" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cU3Evei"> 
+            <div class="x-col cU3Evei" xid="col14" style="text-align:center;" __cid="cU3Evei">
+              <span xid="span6" __cid="cU3Evei" class="cU3Evei">0</span>  
+              <span xid="span7" __cid="cU3Evei" class="cU3Evei">笔</span>
+            </div>
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cU3Evei" xid="row7" style="position:absolute;bottom:0;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cU3Evei"> 
+            <div class="x-col cU3Evei" xid="col15" style="text-align:center;" __cid="cU3Evei">
+              <span xid="span10" __cid="cU3Evei" class="cU3Evei">2019年03月15日</span>  
+              <span xid="span11" __cid="cU3Evei" class="cU3Evei">-</span>  
+              <span xid="span12" __cid="cU3Evei" class="cU3Evei">2019年03月16日</span>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>  
+    <style __cid="cU3Evei" class="cU3Evei">.x-panel.pceQNzIv-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pceQNzIv-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pceQNzIv-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pceQNzIv-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceQNzIv-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pceQNzIv-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceQNzIv-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceQNzIv-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceQNzIv-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>
