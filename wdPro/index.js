@@ -164,18 +164,18 @@ define(function(require) {
 		params.code = code;
 		params.company_id = state;
 		params.type = 'crm';// replace是代下单
-		var res = asCore.setGetFalseLogin(interFace.login, params);
-		if (res.errcode == 0) {//
-			localStorage.setItem("token", res.data.token);
-			localStorage.setItem("staff_id", res.data.staff_id);
-			localStorage.setItem("userId", res.data.user);
-			localStorage.setItem("staff_name", res.data.staff_name);
-			localStorage.setItem("company_id", state);
+		// var res = asCore.setGetFalseLogin(interFace.login, params);
+		// if (res.errcode == 0) {//
+		// 	localStorage.setItem("token", res.data.token);
+		// 	localStorage.setItem("staff_id", res.data.staff_id);
+		// 	localStorage.setItem("userId", res.data.user);
+		// 	localStorage.setItem("staff_name", res.data.staff_name);
+		// 	localStorage.setItem("company_id", state);
 			justep.Shell.showPage("main");
-		} else {
-			justep.Util.hint("用户信息读取失败");
+		// } else {
+		// 	justep.Util.hint("用户信息读取失败");
 
-		}
+		// }
 	};
 
 	return Model;
